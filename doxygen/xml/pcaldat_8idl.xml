@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pcaldat_8idl" kind="file" language="IDL">
+    <compoundname>pcaldat.idl</compoundname>
+    <includes local="yes">clndrdte.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pcaldat.idl</label>
+        <link refid="pcaldat_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="3">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="2">
+        <label>clndrdte.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_calendar_date" prot="public">PosCalendarDate</innerclass>
+    <innerclass refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal" prot="public">PosCalendarDate::SetCalendarInfoFailedSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pfa/pcaldat.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>20:30:38<sp/>[<sp/>7/13/07<sp/>20:30:39<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Module:<sp/>PosCalendarDate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Factory_Management_Functional_Group::Poseidon_Factory_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Source<sp/>file:<sp/><sp/>F:/home/POSFW/POSCIMFW/PFa/PCalDat.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/pfa/pcaldat.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosCalendarDate_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosCalendarDate_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clndrdte.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PosCalendarDate<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>is<sp/>a<sp/>subclass<sp/>of<sp/>CalendarDate<sp/>for<sp/>Poseidon.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Category:<sp/>Poseidon<sp/>Factory<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem:<sp/>Poseidon<sp/>Factory<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="interface_pos_calendar_date" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_calendar_date" kindref="compound">PosCalendarDate</ref><sp/>:<sp/>CalendarDate,<sp/>MOFW_CachedManagedObject</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//begin<sp/>PosCalendarDate.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//end<sp/>PosCalendarDate.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal" kindref="compound">SetCalendarInfoFailedSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//begin<sp/>SetCalendarInfoFailedSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//end<sp/>SetCalendarInfoFailedSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal_1ac9e712cdd0cca7cf896ce8415be285ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal_1ac9e712cdd0cca7cf896ce8415be285ec" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//begin<sp/>SetCalendarInfoFailedSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//end<sp/>SetCalendarInfoFailedSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>setShopDate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>shop<sp/>date.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="interface_pos_calendar_date_1af64eb88e1e2579d0911a796171607d6a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1af64eb88e1e2579d0911a796171607d6a" kindref="member">setShopDate</ref>(in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aShopDate)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>getShopDate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>shop<sp/>date<sp/>for<sp/>the<sp/>factory.<sp/>The<sp/>shop<sp/>date</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>during<sp/>the<sp/>factory<sp/>shutdown<sp/>isn&apos;t<sp/>incremented.<sp/>The</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>shop<sp/>date<sp/>will<sp/>be<sp/>set<sp/>automatically<sp/>according<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>definition<sp/>of<sp/>shifts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="interface_pos_calendar_date_1a4e84dfa44f4f951a28c9f78750e115db" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1a4e84dfa44f4f951a28c9f78750e115db" kindref="member">getShopDate</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>setShopMonth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>shop<sp/>month<sp/>which<sp/>means<sp/>fiscal<sp/>month.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="interface_pos_calendar_date_1ab43560a85eef35a469f4f4b67fd6f48b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1ab43560a85eef35a469f4f4b67fd6f48b" kindref="member">setShopMonth</ref>(in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aShopMonth)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>getShopMonth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>shop<sp/>month.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="interface_pos_calendar_date_1aa36cde5297ab397a20c9138dd6106de6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1aa36cde5297ab397a20c9138dd6106de6" kindref="member">getShopMonth</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>setShopWeek</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>shop<sp/>week<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="interface_pos_calendar_date_1a69ab80e73c2932b5229f0c5b689ad051" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1a69ab80e73c2932b5229f0c5b689ad051" kindref="member">setShopWeek</ref>(in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aShopWeek)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>getShopWeek</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>shop<sp/>week<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="interface_pos_calendar_date_1adface50deb8e24208d28d5922253648e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1adface50deb8e24208d28d5922253648e" kindref="member">getShopWeek</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operation:<sp/>setCalendarInfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>data<sp/>members<sp/>of<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="interface_pos_calendar_date_1adbd8fb4a2ffa2f317fac2c821926da69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1adbd8fb4a2ffa2f317fac2c821926da69" kindref="member">setCalendarInfo</ref>(in<sp/>brCalendarInfo<sp/>aCalendarInfo)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_calendar_date_1_1_set_calendar_info_failed_signal" kindref="compound">SetCalendarInfoFailedSignal</ref>,<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="interface_pos_calendar_date_1a67c314849904bcb4fdf1616d2549f88b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_calendar_date_1a67c314849904bcb4fdf1616d2549f88b" kindref="member">PosCalendarDate_init</ref>()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//void<sp/>PosCalendarDate_uninit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//begin<sp/>PosCalendarDate.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//end<sp/>PosCalendarDate.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pcaldat.idl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pcustmr_8idl" kind="file" language="IDL">
+    <compoundname>pcustmr.idl</compoundname>
+    <includes local="yes">nmdntity.idl</includes>
+    <includes refid="pprspgl_8idl" local="yes">pprspgl.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includes refid="pfwgls_8idl" local="yes">pfwgls.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pcustmr.idl</label>
+        <link refid="pcustmr_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pfwgls.idl</label>
+        <link refid="pfwgls_8idl"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pprspgl.idl</label>
+        <link refid="pprspgl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="5">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="4">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="8">
+        <label>fwglobls.idl</label>
+      </node>
+      <node id="2">
+        <label>nmdntity.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_customer" prot="public">PosCustomer</innerclass>
+    <innerclass refid="exception_pos_customer_1_1_customer_product_not_found_signal" prot="public">PosCustomer::CustomerProductNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_customer_1_1_set_customer_info_failed_signal" prot="public">PosCustomer::SetCustomerInfoFailedSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pprsp/pcustmr.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>21:35:06<sp/>[<sp/>7/13/07<sp/>21:35:07<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Module:<sp/>PosCustomer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Specification_Management_Functional_Group::Poseidon_Product_Specification_Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>E:/posfw/POSCIMFW/PPrSp/PCustmr.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/pprsp/pcustmr.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosCustomer_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosCustomer_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nmdntity.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pprspgl_8idl" kindref="compound">pprspgl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pfwgls_8idl" kindref="compound">pfwgls.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification_manager" kindref="compound">PosProductSpecificationManager</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosCustomer<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>class<sp/>contains<sp/>customer<sp/>product<sp/>information.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="interface_pos_customer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref><sp/>:<sp/>NamedEntity,<sp/>MOFW_CachedManagedObject</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosCustomer.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosCustomer.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="exception_pos_customer_1_1_customer_product_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_customer_1_1_customer_product_not_found_signal" kindref="compound">CustomerProductNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>CustomerProductNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>CustomerProductNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="exception_pos_customer_1_1_customer_product_not_found_signal_1a666c96d6da0fc7d7400b90b1706c8e5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_customer_1_1_customer_product_not_found_signal_1a666c96d6da0fc7d7400b90b1706c8e5c" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>CustomerProductNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>CustomerProductNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="exception_pos_customer_1_1_set_customer_info_failed_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_customer_1_1_set_customer_info_failed_signal" kindref="compound">SetCustomerInfoFailedSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetCustomerInfoFailedSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetCustomerInfoFailedSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="exception_pos_customer_1_1_set_customer_info_failed_signal_1a1191480b4cf424864d34220c2b4a4df4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_customer_1_1_set_customer_info_failed_signal_1a1191480b4cf424864d34220c2b4a4df4" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetCustomerInfoFailedSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetCustomerInfoFailedSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="interface_pos_customer_1a17a18bd826723c0ec45f6dcd85bc7730" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1a17a18bd826723c0ec45f6dcd85bc7730" kindref="member">PosCustomer_init</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//void<sp/>PosCustomer_uninit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>Identifier<sp/>of<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0" kindref="member">setIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>the<sp/>Identifier<sp/>of<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732" kindref="member">getIdentifier</ref>()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>Description<sp/>to<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0" kindref="member">setDescription</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>description)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>the<sp/>Description<sp/>assigned<sp/>to<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62" kindref="member">getDescription</ref>()</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createCustomerProductNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>CustomerProduct,<sp/>places<sp/>by<sp/>the<sp/>identifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>the<sp/>ProductSpecification<sp/>in<sp/>the<sp/>collection<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>CustomerProduct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref><sp/><ref refid="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85" kindref="member">createCustomerProductNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier,<sp/>in<sp/><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref><sp/>aProductSpecification)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>DuplicateIdentifierSignal,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findCustomerProductNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>CustomerProduct<sp/>from<sp/>the<sp/>collection<sp/>of<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>CustomerProduct,<sp/>returns<sp/>a<sp/>CustomerProduct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref><sp/><ref refid="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98" kindref="member">findCustomerProductNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allCustomerProducts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>set<sp/>of<sp/>all<sp/>CustomerProducts<sp/>that<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>managed<sp/>by<sp/>PosCustomer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pprspgl_8idl_1acc6dba5d6861249785d3c6dad65c8984" kindref="member">PosCustomerProductSequence</ref><sp/><ref refid="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7" kindref="member">allCustomerProducts</ref>()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeCustomerProduct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>a<sp/>CustomerProduct<sp/>from<sp/>the<sp/>collection<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>CustomerProduct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a" kindref="member">removeCustomerProduct</ref>(in<sp/><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref><sp/>aCustomerProduct)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_customer_1_1_customer_product_not_found_signal" kindref="compound">CustomerProductNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAllCustomerProducts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>all<sp/>CustomerProduct<sp/>objects<sp/>which<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>inculuded<sp/>in<sp/>the<sp/>collection<sp/>list<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>CustomerProduct,and<sp/>sets<sp/>Null<sp/>to<sp/>the<sp/>list.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="interface_pos_customer_1ae676acc827993e4a0529f95922f261be" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1ae676acc827993e4a0529f95922f261be" kindref="member">removeAllCustomerProducts</ref>()</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setCustomerInfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>all<sp/>data<sp/>members<sp/>of<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec" kindref="member">setCustomerInfo</ref>(in<sp/>brCustomerInfo<sp/>customerInfo)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_customer_1_1_set_customer_info_failed_signal" kindref="compound">SetCustomerInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosCustomer.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosCustomer.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pcustmr.idl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_bank" kind="interface" language="IDL" prot="public">
+    <compoundname>PosBank</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pbank_8idl" local="no">pbank.idl</includes>
+    <innerclass refid="exception_pos_bank_1_1_lot_already_bank_in_signal" prot="public">PosBank::LotAlreadyBankInSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_lot_is_not_bank_in_signal" prot="public">PosBank::LotIsNotBankInSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_product_already_bank_in_signal" prot="public">PosBank::ProductAlreadyBankInSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_product_is_not_bank_in_signal" prot="public">PosBank::ProductIsNotBankInSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_duplicate_destination_bank_signal" prot="public">PosBank::DuplicateDestinationBankSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_destination_bank_not_found_signal" prot="public">PosBank::DestinationBankNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_bank_1_1_set_bank_info_failed_signal" prot="public">PosBank::SetBankInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_bank_1a2700a71fd0c3a18344fd28a28e7182bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosBank::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="228" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ad6aa3e2aa5691d4757cb2c694cb2cd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBank::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosBank::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a7cf26364bb592b30a3ea7313b16fe648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosBank::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="240" column="8"/>
+        <references refid="interface_pos_bank_1a7cf26364bb592b30a3ea7313b16fe648">setDescription</references>
+        <referencedby refid="interface_pos_bank_1a7cf26364bb592b30a3ea7313b16fe648">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a5265cc228400683498db3b3dd3d101a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBank::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosBank::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="246" column="10"/>
+        <references refid="interface_pos_bank_1a5265cc228400683498db3b3dd3d101a4">getDescription</references>
+        <referencedby refid="interface_pos_bank_1a5265cc228400683498db3b3dd3d101a4">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1acb0310ba15570bc394aff954847f1037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isBankInBank</definition>
+        <argsstring>()</argsstring>
+        <name>isBankInBank</name>
+        <qualifiedname>PosBank::isBankInBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="252" column="11"/>
+        <references refid="interface_pos_bank_1acb0310ba15570bc394aff954847f1037">isBankInBank</references>
+        <referencedby refid="interface_pos_bank_1acb0310ba15570bc394aff954847f1037">isBankInBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a625054bd516cf9efe84a90ccf115b202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeBankInBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeBankInBankOff</name>
+        <qualifiedname>PosBank::makeBankInBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="258" column="8"/>
+        <references refid="interface_pos_bank_1a625054bd516cf9efe84a90ccf115b202">makeBankInBankOff</references>
+        <referencedby refid="interface_pos_bank_1a625054bd516cf9efe84a90ccf115b202">makeBankInBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1af2e182b18e52f0526ff43c50ec2a077a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeBankInBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeBankInBankOn</name>
+        <qualifiedname>PosBank::makeBankInBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="264" column="8"/>
+        <references refid="interface_pos_bank_1af2e182b18e52f0526ff43c50ec2a077a">makeBankInBankOn</references>
+        <referencedby refid="interface_pos_bank_1af2e182b18e52f0526ff43c50ec2a077a">makeBankInBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a0ca6f698b073d6d2a7e38d1776f45215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isShipBank</definition>
+        <argsstring>()</argsstring>
+        <name>isShipBank</name>
+        <qualifiedname>PosBank::isShipBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="270" column="11"/>
+        <references refid="interface_pos_bank_1a0ca6f698b073d6d2a7e38d1776f45215">isShipBank</references>
+        <referencedby refid="interface_pos_bank_1a0ca6f698b073d6d2a7e38d1776f45215">isShipBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1af2bf2e79459bc1a0591a80a5a7fa6935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeShipBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeShipBankOn</name>
+        <qualifiedname>PosBank::makeShipBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="276" column="8"/>
+        <references refid="interface_pos_bank_1af2bf2e79459bc1a0591a80a5a7fa6935">makeShipBankOn</references>
+        <referencedby refid="interface_pos_bank_1af2bf2e79459bc1a0591a80a5a7fa6935">makeShipBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ab3185c420d9cadab69c839c11872d934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeShipBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeShipBankOff</name>
+        <qualifiedname>PosBank::makeShipBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="282" column="8"/>
+        <references refid="interface_pos_bank_1ab3185c420d9cadab69c839c11872d934">makeShipBankOff</references>
+        <referencedby refid="interface_pos_bank_1ab3185c420d9cadab69c839c11872d934">makeShipBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ae77f080721ecb6b6424b8b041cc725ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isWaferIDAssignmentRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isWaferIDAssignmentRequired</name>
+        <qualifiedname>PosBank::isWaferIDAssignmentRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="289" column="11"/>
+        <references refid="interface_pos_bank_1ae77f080721ecb6b6424b8b041cc725ea">isWaferIDAssignmentRequired</references>
+        <referencedby refid="interface_pos_bank_1ae77f080721ecb6b6424b8b041cc725ea">isWaferIDAssignmentRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a0791dbf747834679947ad3151464151d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeWaferIDAssignmentRequiredOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeWaferIDAssignmentRequiredOn</name>
+        <qualifiedname>PosBank::makeWaferIDAssignmentRequiredOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="296" column="8"/>
+        <references refid="interface_pos_bank_1a0791dbf747834679947ad3151464151d">makeWaferIDAssignmentRequiredOn</references>
+        <referencedby refid="interface_pos_bank_1a0791dbf747834679947ad3151464151d">makeWaferIDAssignmentRequiredOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a8920010e9f1d9305e3686525902b3af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeWaferIDAssignmentRequiredOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeWaferIDAssignmentRequiredOff</name>
+        <qualifiedname>PosBank::makeWaferIDAssignmentRequiredOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="304" column="8"/>
+        <references refid="interface_pos_bank_1a8920010e9f1d9305e3686525902b3af7">makeWaferIDAssignmentRequiredOff</references>
+        <referencedby refid="interface_pos_bank_1a8920010e9f1d9305e3686525902b3af7">makeWaferIDAssignmentRequiredOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a03d871b905628b80f4b60d7ea280f536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setStorageMachine</definition>
+        <argsstring>(in PosStorageMachine aStorageMachine)</argsstring>
+        <name>setStorageMachine</name>
+        <qualifiedname>PosBank::setStorageMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aStorageMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="310" column="8"/>
+        <references refid="interface_pos_bank_1a03d871b905628b80f4b60d7ea280f536">setStorageMachine</references>
+        <referencedby refid="interface_pos_bank_1a03d871b905628b80f4b60d7ea280f536">setStorageMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ac329b6d0ccc133ea4d5f88ec44b46f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+        <definition>PosStorageMachine PosBank::getStorageMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getStorageMachine</name>
+        <qualifiedname>PosBank::getStorageMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="316" column="21"/>
+        <references refid="interface_pos_bank_1ac329b6d0ccc133ea4d5f88ec44b46f3e">getStorageMachine</references>
+        <referencedby refid="interface_pos_bank_1ac329b6d0ccc133ea4d5f88ec44b46f3e">getStorageMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a9b7666f7183ca2efdd6465ad94bc2db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isProductionBank</definition>
+        <argsstring>()</argsstring>
+        <name>isProductionBank</name>
+        <qualifiedname>PosBank::isProductionBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="322" column="11"/>
+        <references refid="interface_pos_bank_1a9b7666f7183ca2efdd6465ad94bc2db3">isProductionBank</references>
+        <referencedby refid="interface_pos_bank_1a9b7666f7183ca2efdd6465ad94bc2db3">isProductionBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a414d959c7ac1527280ea5ba6e924e8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeProductionBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeProductionBankOn</name>
+        <qualifiedname>PosBank::makeProductionBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="329" column="8"/>
+        <references refid="interface_pos_bank_1a414d959c7ac1527280ea5ba6e924e8c0">makeProductionBankOn</references>
+        <referencedby refid="interface_pos_bank_1a414d959c7ac1527280ea5ba6e924e8c0">makeProductionBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a48f4b7330896e36b6ca4eeed76c8e9aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeProductionBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeProductionBankOff</name>
+        <qualifiedname>PosBank::makeProductionBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="336" column="8"/>
+        <references refid="interface_pos_bank_1a48f4b7330896e36b6ca4eeed76c8e9aa">makeProductionBankOff</references>
+        <referencedby refid="interface_pos_bank_1a48f4b7330896e36b6ca4eeed76c8e9aa">makeProductionBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1aab2d8365e013c9d55c5ff057a0ab1132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isRecycleBank</definition>
+        <argsstring>()</argsstring>
+        <name>isRecycleBank</name>
+        <qualifiedname>PosBank::isRecycleBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="343" column="11"/>
+        <references refid="interface_pos_bank_1aab2d8365e013c9d55c5ff057a0ab1132">isRecycleBank</references>
+        <referencedby refid="interface_pos_bank_1aab2d8365e013c9d55c5ff057a0ab1132">isRecycleBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a909b64019dc5131eb8ac0847b64ac9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeRecycleBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeRecycleBankOn</name>
+        <qualifiedname>PosBank::makeRecycleBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="349" column="8"/>
+        <references refid="interface_pos_bank_1a909b64019dc5131eb8ac0847b64ac9f2">makeRecycleBankOn</references>
+        <referencedby refid="interface_pos_bank_1a909b64019dc5131eb8ac0847b64ac9f2">makeRecycleBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a1b0d138c0c29e2b5c08a5aa64d017212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeRecycleBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeRecycleBankOff</name>
+        <qualifiedname>PosBank::makeRecycleBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="355" column="8"/>
+        <references refid="interface_pos_bank_1a1b0d138c0c29e2b5c08a5aa64d017212">makeRecycleBankOff</references>
+        <referencedby refid="interface_pos_bank_1a1b0d138c0c29e2b5c08a5aa64d017212">makeRecycleBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a817b6bc6c47c8389382dd7c92834d1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isControlWaferBank</definition>
+        <argsstring>()</argsstring>
+        <name>isControlWaferBank</name>
+        <qualifiedname>PosBank::isControlWaferBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="362" column="11"/>
+        <references refid="interface_pos_bank_1a817b6bc6c47c8389382dd7c92834d1e2">isControlWaferBank</references>
+        <referencedby refid="interface_pos_bank_1a817b6bc6c47c8389382dd7c92834d1e2">isControlWaferBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a76fbecb6119c1596672b8b7f50f99ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeControlWaferBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeControlWaferBankOn</name>
+        <qualifiedname>PosBank::makeControlWaferBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="368" column="8"/>
+        <references refid="interface_pos_bank_1a76fbecb6119c1596672b8b7f50f99ccd">makeControlWaferBankOn</references>
+        <referencedby refid="interface_pos_bank_1a76fbecb6119c1596672b8b7f50f99ccd">makeControlWaferBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a0abb1bf72880bd33ffa02fe1d4d0b78a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeControlWaferBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeControlWaferBankOff</name>
+        <qualifiedname>PosBank::makeControlWaferBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="374" column="8"/>
+        <references refid="interface_pos_bank_1a0abb1bf72880bd33ffa02fe1d4d0b78a">makeControlWaferBankOff</references>
+        <referencedby refid="interface_pos_bank_1a0abb1bf72880bd33ffa02fe1d4d0b78a">makeControlWaferBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ac99380487fa543c70eb5d3063c3a5133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::addDestinationBank</definition>
+        <argsstring>(in PosBank aDestinationBank)</argsstring>
+        <name>addDestinationBank</name>
+        <qualifiedname>PosBank::addDestinationBank</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+          <declname>aDestinationBank</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_bank_1_1_duplicate_destination_bank_signal" kindref="compound">DuplicateDestinationBankSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="381" column="8"/>
+        <references refid="interface_pos_bank_1ac99380487fa543c70eb5d3063c3a5133">addDestinationBank</references>
+        <referencedby refid="interface_pos_bank_1ac99380487fa543c70eb5d3063c3a5133">addDestinationBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1ae54723c9568c6c71db9d8ab613414959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::removeDestinationBank</definition>
+        <argsstring>(in PosBank aDestinationBank)</argsstring>
+        <name>removeDestinationBank</name>
+        <qualifiedname>PosBank::removeDestinationBank</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+          <declname>aDestinationBank</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="388" column="8"/>
+        <references refid="interface_pos_bank_1ae54723c9568c6c71db9d8ab613414959">removeDestinationBank</references>
+        <referencedby refid="interface_pos_bank_1ae54723c9568c6c71db9d8ab613414959">removeDestinationBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a26bf217346a8644e62e1858b83cba7a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1ae572021b9f4dec9c84013b1a784bb1da" kindref="member">PosBankSequence</ref></type>
+        <definition>PosBankSequence PosBank::allDestinationBanks</definition>
+        <argsstring>()</argsstring>
+        <name>allDestinationBanks</name>
+        <qualifiedname>PosBank::allDestinationBanks</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="395" column="19"/>
+        <references refid="interface_pos_bank_1a26bf217346a8644e62e1858b83cba7a0">allDestinationBanks</references>
+        <referencedby refid="interface_pos_bank_1a26bf217346a8644e62e1858b83cba7a0">allDestinationBanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1addb5f6db2d893a492dd613d9b3ff945a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank PosBank::findDestinationBankNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findDestinationBankNamed</name>
+        <qualifiedname>PosBank::findDestinationBankNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="402" column="11"/>
+        <references refid="interface_pos_bank_1addb5f6db2d893a492dd613d9b3ff945a">findDestinationBankNamed</references>
+        <referencedby refid="interface_pos_bank_1addb5f6db2d893a492dd613d9b3ff945a">findDestinationBankNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1abfe9b6da887a47a29c970cbfe944c6e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isReceiveBank</definition>
+        <argsstring>()</argsstring>
+        <name>isReceiveBank</name>
+        <qualifiedname>PosBank::isReceiveBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="409" column="11"/>
+        <references refid="interface_pos_bank_1abfe9b6da887a47a29c970cbfe944c6e8">isReceiveBank</references>
+        <referencedby refid="interface_pos_bank_1abfe9b6da887a47a29c970cbfe944c6e8">isReceiveBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a88e1747dce947d590d06af2502f4c59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeReceiveBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeReceiveBankOn</name>
+        <qualifiedname>PosBank::makeReceiveBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="415" column="8"/>
+        <references refid="interface_pos_bank_1a88e1747dce947d590d06af2502f4c59f">makeReceiveBankOn</references>
+        <referencedby refid="interface_pos_bank_1a88e1747dce947d590d06af2502f4c59f">makeReceiveBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1aa102eb19bced3e9cc4fbe6e3d4ccf27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeReceiveBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeReceiveBankOff</name>
+        <qualifiedname>PosBank::makeReceiveBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="421" column="8"/>
+        <references refid="interface_pos_bank_1aa102eb19bced3e9cc4fbe6e3d4ccf27f">makeReceiveBankOff</references>
+        <referencedby refid="interface_pos_bank_1aa102eb19bced3e9cc4fbe6e3d4ccf27f">makeReceiveBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1aa0c025ee4e3e2e4ab891525577791d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosBank::isSTBBank</definition>
+        <argsstring>()</argsstring>
+        <name>isSTBBank</name>
+        <qualifiedname>PosBank::isSTBBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="428" column="11"/>
+        <references refid="interface_pos_bank_1aa0c025ee4e3e2e4ab891525577791d5f">isSTBBank</references>
+        <referencedby refid="interface_pos_bank_1aa0c025ee4e3e2e4ab891525577791d5f">isSTBBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a7d0b7036bf613a87991a978b52f9c2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeSTBBankOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeSTBBankOn</name>
+        <qualifiedname>PosBank::makeSTBBankOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="434" column="8"/>
+        <references refid="interface_pos_bank_1a7d0b7036bf613a87991a978b52f9c2fa">makeSTBBankOn</references>
+        <referencedby refid="interface_pos_bank_1a7d0b7036bf613a87991a978b52f9c2fa">makeSTBBankOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a77ac7418ece522fb1ff800dadf91a524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::makeSTBBankOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeSTBBankOff</name>
+        <qualifiedname>PosBank::makeSTBBankOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="440" column="8"/>
+        <references refid="interface_pos_bank_1a77ac7418ece522fb1ff800dadf91a524">makeSTBBankOff</references>
+        <referencedby refid="interface_pos_bank_1a77ac7418ece522fb1ff800dadf91a524">makeSTBBankOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a83ab73de1969032f7cd614a5386d086e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setBankInfo</definition>
+        <argsstring>(in brBankInfo aBankInfo)</argsstring>
+        <name>setBankInfo</name>
+        <qualifiedname>PosBank::setBankInfo</qualifiedname>
+        <param>
+          <type>in brBankInfo</type>
+          <declname>aBankInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_bank_1_1_set_bank_info_failed_signal" kindref="compound">SetBankInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="446" column="8"/>
+        <references refid="interface_pos_bank_1a83ab73de1969032f7cd614a5386d086e">setBankInfo</references>
+        <referencedby refid="interface_pos_bank_1a83ab73de1969032f7cd614a5386d086e">setBankInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a7ae99e66003ea3bde4ce09d1df15a9f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBank::getProductType</definition>
+        <argsstring>()</argsstring>
+        <name>getProductType</name>
+        <qualifiedname>PosBank::getProductType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="452" column="10"/>
+        <references refid="interface_pos_bank_1a7ae99e66003ea3bde4ce09d1df15a9f8">getProductType</references>
+        <referencedby refid="interface_pos_bank_1a7ae99e66003ea3bde4ce09d1df15a9f8">getProductType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a4f3164a34db86434bcf19c21e49b25f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setProductType</definition>
+        <argsstring>(in string aProductType)</argsstring>
+        <name>setProductType</name>
+        <qualifiedname>PosBank::setProductType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aProductType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="458" column="8"/>
+        <references refid="interface_pos_bank_1a4f3164a34db86434bcf19c21e49b25f8">setProductType</references>
+        <referencedby refid="interface_pos_bank_1a4f3164a34db86434bcf19c21e49b25f8">setProductType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1aaad91b06fbe9a148adb6b930a7f95225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::PosBank_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosBank_init</name>
+        <qualifiedname>PosBank::PosBank_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="464" column="8"/>
+        <references refid="interface_pos_bank_1aaad91b06fbe9a148adb6b930a7f95225">PosBank_init</references>
+        <referencedby refid="interface_pos_bank_1aaad91b06fbe9a148adb6b930a7f95225">PosBank_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_bank_1a1a90c1bac3a87576d8c7abc928c222df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBank::setBankInfo__100</definition>
+        <argsstring>(in brBankInfo__100 aBankInfo__100)</argsstring>
+        <name>setBankInfo__100</name>
+        <qualifiedname>PosBank::setBankInfo__100</qualifiedname>
+        <param>
+          <type>in brBankInfo__100</type>
+          <declname>aBankInfo__100</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_bank_1_1_set_bank_info_failed_signal" kindref="compound">SetBankInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbank.idl" line="471" column="8"/>
+        <references refid="interface_pos_bank_1a1a90c1bac3a87576d8c7abc928c222df">setBankInfo__100</references>
+        <referencedby refid="interface_pos_bank_1a1a90c1bac3a87576d8c7abc928c222df">setBankInfo__100</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosBank</label>
+        <link refid="interface_pos_bank"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosBank</label>
+        <link refid="interface_pos_bank"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pbank.idl" line="52" column="11" bodyfile="poscimfw/include/pbank.idl" bodystart="52" bodyend="479"/>
+    <listofallmembers>
+      <member refid="interface_pos_bank_1ac99380487fa543c70eb5d3063c3a5133" prot="public" virt="non-virtual"><scope>PosBank</scope><name>addDestinationBank</name></member>
+      <member refid="interface_pos_bank_1a26bf217346a8644e62e1858b83cba7a0" prot="public" virt="non-virtual"><scope>PosBank</scope><name>allDestinationBanks</name></member>
+      <member refid="interface_pos_bank_1addb5f6db2d893a492dd613d9b3ff945a" prot="public" virt="non-virtual"><scope>PosBank</scope><name>findDestinationBankNamed</name></member>
+      <member refid="interface_pos_bank_1a5265cc228400683498db3b3dd3d101a4" prot="public" virt="non-virtual"><scope>PosBank</scope><name>getDescription</name></member>
+      <member refid="interface_pos_bank_1ad6aa3e2aa5691d4757cb2c694cb2cd08" prot="public" virt="non-virtual"><scope>PosBank</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_bank_1a7ae99e66003ea3bde4ce09d1df15a9f8" prot="public" virt="non-virtual"><scope>PosBank</scope><name>getProductType</name></member>
+      <member refid="interface_pos_bank_1ac329b6d0ccc133ea4d5f88ec44b46f3e" prot="public" virt="non-virtual"><scope>PosBank</scope><name>getStorageMachine</name></member>
+      <member refid="interface_pos_bank_1acb0310ba15570bc394aff954847f1037" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isBankInBank</name></member>
+      <member refid="interface_pos_bank_1a817b6bc6c47c8389382dd7c92834d1e2" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isControlWaferBank</name></member>
+      <member refid="interface_pos_bank_1a9b7666f7183ca2efdd6465ad94bc2db3" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isProductionBank</name></member>
+      <member refid="interface_pos_bank_1abfe9b6da887a47a29c970cbfe944c6e8" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isReceiveBank</name></member>
+      <member refid="interface_pos_bank_1aab2d8365e013c9d55c5ff057a0ab1132" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isRecycleBank</name></member>
+      <member refid="interface_pos_bank_1a0ca6f698b073d6d2a7e38d1776f45215" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isShipBank</name></member>
+      <member refid="interface_pos_bank_1aa0c025ee4e3e2e4ab891525577791d5f" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isSTBBank</name></member>
+      <member refid="interface_pos_bank_1ae77f080721ecb6b6424b8b041cc725ea" prot="public" virt="non-virtual"><scope>PosBank</scope><name>isWaferIDAssignmentRequired</name></member>
+      <member refid="interface_pos_bank_1a625054bd516cf9efe84a90ccf115b202" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeBankInBankOff</name></member>
+      <member refid="interface_pos_bank_1af2e182b18e52f0526ff43c50ec2a077a" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeBankInBankOn</name></member>
+      <member refid="interface_pos_bank_1a0abb1bf72880bd33ffa02fe1d4d0b78a" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeControlWaferBankOff</name></member>
+      <member refid="interface_pos_bank_1a76fbecb6119c1596672b8b7f50f99ccd" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeControlWaferBankOn</name></member>
+      <member refid="interface_pos_bank_1a48f4b7330896e36b6ca4eeed76c8e9aa" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeProductionBankOff</name></member>
+      <member refid="interface_pos_bank_1a414d959c7ac1527280ea5ba6e924e8c0" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeProductionBankOn</name></member>
+      <member refid="interface_pos_bank_1aa102eb19bced3e9cc4fbe6e3d4ccf27f" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeReceiveBankOff</name></member>
+      <member refid="interface_pos_bank_1a88e1747dce947d590d06af2502f4c59f" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeReceiveBankOn</name></member>
+      <member refid="interface_pos_bank_1a1b0d138c0c29e2b5c08a5aa64d017212" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeRecycleBankOff</name></member>
+      <member refid="interface_pos_bank_1a909b64019dc5131eb8ac0847b64ac9f2" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeRecycleBankOn</name></member>
+      <member refid="interface_pos_bank_1ab3185c420d9cadab69c839c11872d934" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeShipBankOff</name></member>
+      <member refid="interface_pos_bank_1af2bf2e79459bc1a0591a80a5a7fa6935" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeShipBankOn</name></member>
+      <member refid="interface_pos_bank_1a77ac7418ece522fb1ff800dadf91a524" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeSTBBankOff</name></member>
+      <member refid="interface_pos_bank_1a7d0b7036bf613a87991a978b52f9c2fa" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeSTBBankOn</name></member>
+      <member refid="interface_pos_bank_1a8920010e9f1d9305e3686525902b3af7" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeWaferIDAssignmentRequiredOff</name></member>
+      <member refid="interface_pos_bank_1a0791dbf747834679947ad3151464151d" prot="public" virt="non-virtual"><scope>PosBank</scope><name>makeWaferIDAssignmentRequiredOn</name></member>
+      <member refid="interface_pos_bank_1aaad91b06fbe9a148adb6b930a7f95225" prot="public" virt="non-virtual"><scope>PosBank</scope><name>PosBank_init</name></member>
+      <member refid="interface_pos_bank_1ae54723c9568c6c71db9d8ab613414959" prot="public" virt="non-virtual"><scope>PosBank</scope><name>removeDestinationBank</name></member>
+      <member refid="interface_pos_bank_1a83ab73de1969032f7cd614a5386d086e" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setBankInfo</name></member>
+      <member refid="interface_pos_bank_1a1a90c1bac3a87576d8c7abc928c222df" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setBankInfo__100</name></member>
+      <member refid="interface_pos_bank_1a7cf26364bb592b30a3ea7313b16fe648" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setDescription</name></member>
+      <member refid="interface_pos_bank_1a2700a71fd0c3a18344fd28a28e7182bf" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_bank_1a4f3164a34db86434bcf19c21e49b25f8" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setProductType</name></member>
+      <member refid="interface_pos_bank_1a03d871b905628b80f4b60d7ea280f536" prot="public" virt="non-virtual"><scope>PosBank</scope><name>setStorageMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

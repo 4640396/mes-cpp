@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pcodegl_8idl" kind="file" language="IDL">
+    <compoundname>pcodegl.idl</compoundname>
+    <includes local="yes">brgbldef.idl</includes>
+    <includedby refid="pcatgry_8idl" local="yes">poscimfw/include/pcatgry.idl</includedby>
+    <includedby refid="pcdmgr_8idl" local="yes">poscimfw/include/pcdmgr.idl</includedby>
+    <includedby refid="pe10st_8idl" local="yes">poscimfw/include/pe10st.idl</includedby>
+    <includedby refid="pmom_8idl" local="yes">poscimfw/include/pmom.idl</includedby>
+    <includedby refid="pportrs_8idl" local="yes">poscimfw/include/pportrs.idl</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pcodegl.idl</label>
+        <link refid="pcodegl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>brgbldef.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pcatgry.idl</label>
+        <link refid="pcatgry_8idl"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pcdmgr.idl</label>
+        <link refid="pcdmgr_8idl"/>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pcodegl.idl</label>
+        <link refid="pcodegl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pdrmg.idl</label>
+        <link refid="pdrmg_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pe10st.idl</label>
+        <link refid="pe10st_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/peninmg.idl</label>
+        <link refid="peninmg_8idl"/>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pmc.idl</label>
+        <link refid="pmc_8idl"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/pmom.idl</label>
+        <link refid="pmom_8idl"/>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/pportrs.idl</label>
+        <link refid="pportrs_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/prpprt.idl</label>
+        <link refid="prpprt_8idl"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/prtclp.idl</label>
+        <link refid="prtclp_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_operation_mode_info__struct" prot="public">posOperationModeInfo_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pcodegl_8idl_1a8b11f732cfb99f505ffbf54b5346377c" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_code" kindref="compound">PosCode</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosCode&gt; PosCodeSequence</definition>
+        <argsstring></argsstring>
+        <name>PosCodeSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="43" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a7f34dafd4894752176b7a2fc6059406e" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_category" kindref="compound">PosCategory</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosCategory&gt; PosCategorySequence</definition>
+        <argsstring></argsstring>
+        <name>PosCategorySequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="51" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1af53f7768ff03815117fc2d3e5c866993" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_script" kindref="compound">PosScript</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosScript&gt; PosScriptSequence</definition>
+        <argsstring></argsstring>
+        <name>PosScriptSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="59" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a14b2c8e1a19d49a99a025825e7d034b9" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_system_message_code" kindref="compound">PosSystemMessageCode</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosSystemMessageCode&gt; PosSystemMessageCodeSequence</definition>
+        <argsstring></argsstring>
+        <name>PosSystemMessageCodeSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="68" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1acc9b194a25acb5dfee78d70a4a0e750f" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosMachineState&gt; PosMachineStateSequence</definition>
+        <argsstring></argsstring>
+        <name>PosMachineStateSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="77" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a303ffd160cc6cc0f810d022409d75afb" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_e10_state" kindref="compound">PosE10State</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosE10State&gt; PosE10StateSequence</definition>
+        <argsstring></argsstring>
+        <name>PosE10StateSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="85" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a0161579adba3adab17bbd4e1163f5fb8" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosRawMachineStateSet&gt; PosRawMachineStateSetSequence</definition>
+        <argsstring></argsstring>
+        <name>PosRawMachineStateSetSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="94" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a262b60626ea3555ec05ba2b6c80ca548" prot="public" static="no">
+        <type><ref refid="structpos_operation_mode_info__struct" kindref="compound">posOperationModeInfo_struct</ref></type>
+        <definition>typedef posOperationModeInfo_struct posOperationModeInfo</definition>
+        <argsstring></argsstring>
+        <name>posOperationModeInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="130" column="37" bodyfile="poscimfw/include/pcodegl.idl" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a584b699d9217e0affe94c7001346fce8" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pcodegl_8idl_1a262b60626ea3555ec05ba2b6c80ca548" kindref="member">posOperationModeInfo</ref> &gt;</type>
+        <definition>typedef sequence&lt;posOperationModeInfo&gt; PosOperationModeInfoSequence</definition>
+        <argsstring></argsstring>
+        <name>PosOperationModeInfoSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="139" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a0f3c37f14566be04c252a116d2a8ca01" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosMachineOperationMode&gt; PosMachineOperationModeSequence</definition>
+        <argsstring></argsstring>
+        <name>PosMachineOperationModeSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="148" column="18" bodyfile="poscimfw/include/pcodegl.idl" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pcodegl_8idl_1a0f259cb0651e2ad2896ee0ff0adee506" prot="public" static="no">
+        <type>brEquipmentStateInfo__100</type>
+        <definition>typedef brEquipmentStateInfo__100 spEquipmentStateInfo</definition>
+        <argsstring></argsstring>
+        <name>spEquipmentStateInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcodegl.idl" line="154" column="35" bodyfile="poscimfw/include/pcodegl.idl" bodystart="154" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PCodeGl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Utility_Class_Group::Siview_Code_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\superpos\src\spclass\source\poscimfw\poscimfw\pcdmg\pcodegl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PCodeGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCodeGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_category" kindref="compound">PosCategory</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_system_message_code" kindref="compound">PosSystemMessageCode</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_script" kindref="compound">PosScript</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_code" kindref="compound">PosCode</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_e10_state" kindref="compound">PosE10State</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosCodeSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosCode&gt;<sp/>PosCodeSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="pcodegl_8idl_1a8b11f732cfb99f505ffbf54b5346377c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosCode&gt;<sp/><ref refid="pcodegl_8idl_1a8b11f732cfb99f505ffbf54b5346377c" kindref="member">PosCodeSequence</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosCategorySequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosCategory&gt;<sp/>PosCategorySequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="pcodegl_8idl_1a7f34dafd4894752176b7a2fc6059406e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosCategory&gt;<sp/><ref refid="pcodegl_8idl_1a7f34dafd4894752176b7a2fc6059406e" kindref="member">PosCategorySequence</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosScriptSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosScript&gt;<sp/>PosScriptSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="pcodegl_8idl_1af53f7768ff03815117fc2d3e5c866993" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosScript&gt;<sp/><ref refid="pcodegl_8idl_1af53f7768ff03815117fc2d3e5c866993" kindref="member">PosScriptSequence</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosSystemMessageCodeSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosSystemMessageCode&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosSystemMessageCodeSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="pcodegl_8idl_1a14b2c8e1a19d49a99a025825e7d034b9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosSystemMessageCode&gt;<sp/><ref refid="pcodegl_8idl_1a14b2c8e1a19d49a99a025825e7d034b9" kindref="member">PosSystemMessageCodeSequence</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosMachineStateSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosMachineState&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosMachineStateSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="pcodegl_8idl_1acc9b194a25acb5dfee78d70a4a0e750f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosMachineState&gt;<sp/><ref refid="pcodegl_8idl_1acc9b194a25acb5dfee78d70a4a0e750f" kindref="member">PosMachineStateSequence</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosE10StateSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosE10State&gt;<sp/>PosE10StateSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="pcodegl_8idl_1a303ffd160cc6cc0f810d022409d75afb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosE10State&gt;<sp/><ref refid="pcodegl_8idl_1a303ffd160cc6cc0f810d022409d75afb" kindref="member">PosE10StateSequence</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosRawMachineStateSetSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosRawMachineStateSet&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosRawMachineStateSetSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="pcodegl_8idl_1a0161579adba3adab17bbd4e1163f5fb8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosRawMachineStateSet&gt;<sp/><ref refid="pcodegl_8idl_1a0161579adba3adab17bbd4e1163f5fb8" kindref="member">PosRawMachineStateSetSequence</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structpos_operation_mode_info__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_operation_mode_info__struct" kindref="compound">posOperationModeInfo_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posOperationModeInfo_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posOperationModeInfo_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structpos_operation_mode_info__struct_1ac1dc2b5b42de662cf10766d2bc42b874" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct_1ac1dc2b5b42de662cf10766d2bc42b874" kindref="member">onlineMode</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structpos_operation_mode_info__struct_1a33b2a4c615550fd267b94c0839b9f446" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct_1a33b2a4c615550fd267b94c0839b9f446" kindref="member">accessMode</ref>;</highlight></codeline>
+<codeline lineno="108" refid="structpos_operation_mode_info__struct_1a49c294673aec94e7050a70c01589c70d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct_1a49c294673aec94e7050a70c01589c70d" kindref="member">dispatchMode</ref>;</highlight></codeline>
+<codeline lineno="109" refid="structpos_operation_mode_info__struct_1a10e34747cf63a4e1231764fbac812d5a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct_1a10e34747cf63a4e1231764fbac812d5a" kindref="member">operationStartMode</ref>;</highlight></codeline>
+<codeline lineno="110" refid="structpos_operation_mode_info__struct_1a18eaed6f3ab0a9b040fdca5cdcfbf465" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct_1a18eaed6f3ab0a9b040fdca5cdcfbf465" kindref="member">operationCompMode</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posOperationModeInfo_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posOperationModeInfo_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posOperationModeInfo<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posOperationModeInfo_struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>posOperationModeInfo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="pcodegl_8idl_1a262b60626ea3555ec05ba2b6c80ca548" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_operation_mode_info__struct" kindref="compound">posOperationModeInfo_struct</ref><sp/><ref refid="pcodegl_8idl_1a262b60626ea3555ec05ba2b6c80ca548" kindref="member">posOperationModeInfo</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosOperationModeInfoSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posOperationModeInfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosOperationModeInfoSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="pcodegl_8idl_1a584b699d9217e0affe94c7001346fce8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posOperationModeInfo&gt;<sp/><ref refid="pcodegl_8idl_1a584b699d9217e0affe94c7001346fce8" kindref="member">PosOperationModeInfoSequence</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosMachineOperationModeSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosMachineOperationMode&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosMachineOperationModeSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="pcodegl_8idl_1a0f3c37f14566be04c252a116d2a8ca01" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosMachineOperationMode&gt;<sp/><ref refid="pcodegl_8idl_1a0f3c37f14566be04c252a116d2a8ca01" kindref="member">PosMachineOperationModeSequence</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Code<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="pcodegl_8idl_1a0f259cb0651e2ad2896ee0ff0adee506" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>brEquipmentStateInfo__100<sp/><ref refid="pcodegl_8idl_1a0f259cb0651e2ad2896ee0ff0adee506" kindref="member">spEquipmentStateInfo</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pcodegl.idl"/>
+  </compounddef>
+</doxygen>

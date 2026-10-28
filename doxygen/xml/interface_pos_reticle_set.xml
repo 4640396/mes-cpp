@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_reticle_set" kind="interface" language="IDL" prot="public">
+    <compoundname>PosReticleSet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="prtcls_8idl" local="no">prtcls.idl</includes>
+    <innerclass refid="exception_pos_reticle_set_1_1_set_reticle_set_info_failed_signal" prot="public">PosReticleSet::SetReticleSetInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_reticle_set_1_1_specific_reticle_group_data_not_found_signal" prot="public">PosReticleSet::SpecificReticleGroupDataNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_reticle_set_1_1_default_reticle_group_data_not_found_signal" prot="public">PosReticleSet::DefaultReticleGroupDataNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_reticle_set_1_1_default_reticle_group_data_duplicate_signal" prot="public">PosReticleSet::DefaultReticleGroupDataDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_reticle_set_1_1_specific_reticle_group_data_duplicate_signal" prot="public">PosReticleSet::SpecificReticleGroupDataDuplicateSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_reticle_set_1ad3fdf9e1c8ded03bd717bea204e08305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::setReticleSetInfo</definition>
+        <argsstring>(in brReticleSetInfo reticleSetInfo)</argsstring>
+        <name>setReticleSetInfo</name>
+        <qualifiedname>PosReticleSet::setReticleSetInfo</qualifiedname>
+        <param>
+          <type>in brReticleSetInfo</type>
+          <declname>reticleSetInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_reticle_set_1_1_set_reticle_set_info_failed_signal" kindref="compound">SetReticleSetInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="166" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1a5c67cb08271503b808e3da3114950008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::PosReticleSet_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosReticleSet_init</name>
+        <qualifiedname>PosReticleSet::PosReticleSet_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="172" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1ad3fcf526a4bb5404edbb31a0c55c5703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::PosReticleSet_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosReticleSet_uninit</name>
+        <qualifiedname>PosReticleSet::PosReticleSet_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="178" column="8"/>
+        <references refid="interface_pos_reticle_set_1ad3fcf526a4bb5404edbb31a0c55c5703">PosReticleSet_uninit</references>
+        <referencedby refid="interface_pos_reticle_set_1ad3fcf526a4bb5404edbb31a0c55c5703">PosReticleSet_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1a33ffe479a28e1672d3408eb6dcbe25ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosReticleSet::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="184" column="8"/>
+        <references refid="interface_pos_reticle_set_1a33ffe479a28e1672d3408eb6dcbe25ab">setDescription</references>
+        <referencedby refid="interface_pos_reticle_set_1a33ffe479a28e1672d3408eb6dcbe25ab">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1a949efff7694e0cadeb14864acad71464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosReticleSet::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosReticleSet::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="190" column="10"/>
+        <references refid="interface_pos_reticle_set_1a949efff7694e0cadeb14864acad71464">getDescription</references>
+        <referencedby refid="interface_pos_reticle_set_1a949efff7694e0cadeb14864acad71464">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1ae91096410d736aa6eb421c48722aa41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosReticleSet::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosReticleSet::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="196" column="10"/>
+        <references refid="interface_pos_reticle_set_1ae91096410d736aa6eb421c48722aa41d">getIdentifier</references>
+        <referencedby refid="interface_pos_reticle_set_1ae91096410d736aa6eb421c48722aa41d">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1aa4487d1ca4ac6ff99d49e64b15f63a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosReticleSet::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="202" column="8"/>
+        <references refid="interface_pos_reticle_set_1aa4487d1ca4ac6ff99d49e64b15f63a06">setIdentifier</references>
+        <referencedby refid="interface_pos_reticle_set_1aa4487d1ca4ac6ff99d49e64b15f63a06">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1a24761954b3c46d60094a0022bab808f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::setDefaultReticleGroupData</definition>
+        <argsstring>(in PosDefaultReticleGroupDataSequence defaultReticleGroupDataSeq)</argsstring>
+        <name>setDefaultReticleGroupData</name>
+        <qualifiedname>PosReticleSet::setDefaultReticleGroupData</qualifiedname>
+        <param>
+          <type>in <ref refid="pdrmggl_8idl_1a0fd51da2593ba2c5f3a774cb4bda4e7e" kindref="member">PosDefaultReticleGroupDataSequence</ref></type>
+          <declname>defaultReticleGroupDataSeq</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="208" column="8"/>
+        <references refid="interface_pos_reticle_set_1a24761954b3c46d60094a0022bab808f9">setDefaultReticleGroupData</references>
+        <referencedby refid="interface_pos_reticle_set_1a24761954b3c46d60094a0022bab808f9">setDefaultReticleGroupData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1ab03b18e56b8f96d060babaff2452d304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1a0fd51da2593ba2c5f3a774cb4bda4e7e" kindref="member">PosDefaultReticleGroupDataSequence</ref></type>
+        <definition>PosDefaultReticleGroupDataSequence PosReticleSet::getDefaultReticleGroupData</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultReticleGroupData</name>
+        <qualifiedname>PosReticleSet::getDefaultReticleGroupData</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="214" column="38"/>
+        <references refid="interface_pos_reticle_set_1ab03b18e56b8f96d060babaff2452d304">getDefaultReticleGroupData</references>
+        <referencedby refid="interface_pos_reticle_set_1ab03b18e56b8f96d060babaff2452d304">getDefaultReticleGroupData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1ac6211f2b985960657b8a54fc7997e56b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosReticleSet::setSpecificReticleGroupData</definition>
+        <argsstring>(in PosSpecificReticleGroupDataSequence specificReticleGroupDataSeq)</argsstring>
+        <name>setSpecificReticleGroupData</name>
+        <qualifiedname>PosReticleSet::setSpecificReticleGroupData</qualifiedname>
+        <param>
+          <type>in <ref refid="pdrmggl_8idl_1a3987ca378685ab651f06516a6aab3616" kindref="member">PosSpecificReticleGroupDataSequence</ref></type>
+          <declname>specificReticleGroupDataSeq</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="220" column="8"/>
+        <references refid="interface_pos_reticle_set_1ac6211f2b985960657b8a54fc7997e56b">setSpecificReticleGroupData</references>
+        <referencedby refid="interface_pos_reticle_set_1ac6211f2b985960657b8a54fc7997e56b">setSpecificReticleGroupData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_reticle_set_1a141b07a5013cb3344d2e19a96a3e02cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1a3987ca378685ab651f06516a6aab3616" kindref="member">PosSpecificReticleGroupDataSequence</ref></type>
+        <definition>PosSpecificReticleGroupDataSequence PosReticleSet::getSpecificReticleGroupData</definition>
+        <argsstring>()</argsstring>
+        <name>getSpecificReticleGroupData</name>
+        <qualifiedname>PosReticleSet::getSpecificReticleGroupData</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prtcls.idl" line="226" column="39"/>
+        <references refid="interface_pos_reticle_set_1a141b07a5013cb3344d2e19a96a3e02cd">getSpecificReticleGroupData</references>
+        <referencedby refid="interface_pos_reticle_set_1a141b07a5013cb3344d2e19a96a3e02cd">getSpecificReticleGroupData</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosReticleSet</label>
+        <link refid="interface_pos_reticle_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosReticleSet</label>
+        <link refid="interface_pos_reticle_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/prtcls.idl" line="38" column="11" bodyfile="poscimfw/include/prtcls.idl" bodystart="38" bodyend="234"/>
+    <listofallmembers>
+      <member refid="interface_pos_reticle_set_1ab03b18e56b8f96d060babaff2452d304" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>getDefaultReticleGroupData</name></member>
+      <member refid="interface_pos_reticle_set_1a949efff7694e0cadeb14864acad71464" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>getDescription</name></member>
+      <member refid="interface_pos_reticle_set_1ae91096410d736aa6eb421c48722aa41d" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_reticle_set_1a141b07a5013cb3344d2e19a96a3e02cd" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>getSpecificReticleGroupData</name></member>
+      <member refid="interface_pos_reticle_set_1a5c67cb08271503b808e3da3114950008" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>PosReticleSet_init</name></member>
+      <member refid="interface_pos_reticle_set_1ad3fcf526a4bb5404edbb31a0c55c5703" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>PosReticleSet_uninit</name></member>
+      <member refid="interface_pos_reticle_set_1a24761954b3c46d60094a0022bab808f9" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>setDefaultReticleGroupData</name></member>
+      <member refid="interface_pos_reticle_set_1a33ffe479a28e1672d3408eb6dcbe25ab" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>setDescription</name></member>
+      <member refid="interface_pos_reticle_set_1aa4487d1ca4ac6ff99d49e64b15f63a06" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_reticle_set_1ad3fdf9e1c8ded03bd717bea204e08305" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>setReticleSetInfo</name></member>
+      <member refid="interface_pos_reticle_set_1ac6211f2b985960657b8a54fc7997e56b" prot="public" virt="non-virtual"><scope>PosReticleSet</scope><name>setSpecificReticleGroupData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

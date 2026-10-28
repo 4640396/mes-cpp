@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_durable_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDurableManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DurableManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pdrmg_8idl" local="no">pdrmg.idl</includes>
+    <innerclass refid="exception_pos_durable_manager_1_1_process_durable_capability_retrieval_failed_signal" prot="public">PosDurableManager::ProcessDurableCapabilityRetrievalFailedSignal</innerclass>
+    <innerclass refid="exception_pos_durable_manager_1_1_process_durable_capability_not_found_signal" prot="public">PosDurableManager::ProcessDurableCapabilityNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_durable_manager_1_1_reticle_pod_not_found_signal" prot="public">PosDurableManager::ReticlePodNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_durable_manager_1_1_reticle_set_not_found_signal" prot="public">PosDurableManager::ReticleSetNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_durable_manager_1_1_durable_control_job_not_found_signal" prot="public">PosDurableManager::DurableControlJobNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_durable_manager_1_1_durable_sub_state_not_found_signal" prot="public">PosDurableManager::DurableSubStateNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_durable_manager_1a5bfc535a496fbf41bbc33826552fc75e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::PosDurableManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosDurableManager_init</name>
+        <qualifiedname>PosDurableManager::PosDurableManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="190" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1acbe65c890d008fa1a6b24f6f7770ff9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_durable_capability" kindref="compound">PosProcessDurableCapability</ref></type>
+        <definition>PosProcessDurableCapability PosDurableManager::createProcessDurableCapabilityNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createProcessDurableCapabilityNamed</name>
+        <qualifiedname>PosDurableManager::createProcessDurableCapabilityNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="197" column="31"/>
+        <references refid="interface_pos_durable_manager_1acbe65c890d008fa1a6b24f6f7770ff9f">createProcessDurableCapabilityNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1acbe65c890d008fa1a6b24f6f7770ff9f">createProcessDurableCapabilityNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ab5f3266ac71d6e8b84665588016dd8c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeProcessDurableCapability</definition>
+        <argsstring>(in PosProcessDurableCapability aProcessDurableCapability)</argsstring>
+        <name>removeProcessDurableCapability</name>
+        <qualifiedname>PosDurableManager::removeProcessDurableCapability</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_durable_capability" kindref="compound">PosProcessDurableCapability</ref></type>
+          <declname>aProcessDurableCapability</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_process_durable_capability_not_found_signal" kindref="compound">ProcessDurableCapabilityNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="203" column="8"/>
+        <references refid="interface_pos_durable_manager_1ab5f3266ac71d6e8b84665588016dd8c1">removeProcessDurableCapability</references>
+        <referencedby refid="interface_pos_durable_manager_1ab5f3266ac71d6e8b84665588016dd8c1">removeProcessDurableCapability</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a921c8d778dccce78a3530f7b893d5ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_durable_capability" kindref="compound">PosProcessDurableCapability</ref></type>
+        <definition>PosProcessDurableCapability PosDurableManager::findProcessDurableCapabilityNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findProcessDurableCapabilityNamed</name>
+        <qualifiedname>PosDurableManager::findProcessDurableCapabilityNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="210" column="31"/>
+        <references refid="interface_pos_durable_manager_1a921c8d778dccce78a3530f7b893d5ef8">findProcessDurableCapabilityNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a921c8d778dccce78a3530f7b893d5ef8">findProcessDurableCapabilityNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1adf4c440121b1c1df27a259c717033e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1ac07db8b80b4660be85e150c1a7403b79" kindref="member">PosProcessDurableCapabilitySequence</ref></type>
+        <definition>PosProcessDurableCapabilitySequence PosDurableManager::allProcessDurableCapabilities</definition>
+        <argsstring>()</argsstring>
+        <name>allProcessDurableCapabilities</name>
+        <qualifiedname>PosDurableManager::allProcessDurableCapabilities</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="216" column="39"/>
+        <references refid="interface_pos_durable_manager_1adf4c440121b1c1df27a259c717033e2d">allProcessDurableCapabilities</references>
+        <referencedby refid="interface_pos_durable_manager_1adf4c440121b1c1df27a259c717033e2d">allProcessDurableCapabilities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ae9a6a7b02b3cba2f0b3522ce1a2af536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeAllProcessDurableCapabilities</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllProcessDurableCapabilities</name>
+        <qualifiedname>PosDurableManager::removeAllProcessDurableCapabilities</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="222" column="8"/>
+        <references refid="interface_pos_durable_manager_1ae9a6a7b02b3cba2f0b3522ce1a2af536">removeAllProcessDurableCapabilities</references>
+        <referencedby refid="interface_pos_durable_manager_1ae9a6a7b02b3cba2f0b3522ce1a2af536">removeAllProcessDurableCapabilities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a8c32de9bb81073715d4d7e30d9ed942b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_pod" kindref="compound">PosReticlePod</ref></type>
+        <definition>PosReticlePod PosDurableManager::createReticlePodNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createReticlePodNamed</name>
+        <qualifiedname>PosDurableManager::createReticlePodNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="228" column="17"/>
+        <references refid="interface_pos_durable_manager_1a8c32de9bb81073715d4d7e30d9ed942b">createReticlePodNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a8c32de9bb81073715d4d7e30d9ed942b">createReticlePodNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a40c74079be0937d4007c42e6cbfba305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeReticlePodNamed</definition>
+        <argsstring>(in PosReticlePod aReticlePod)</argsstring>
+        <name>removeReticlePodNamed</name>
+        <qualifiedname>PosDurableManager::removeReticlePodNamed</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_reticle_pod" kindref="compound">PosReticlePod</ref></type>
+          <declname>aReticlePod</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_reticle_pod_not_found_signal" kindref="compound">ReticlePodNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="234" column="8"/>
+        <references refid="interface_pos_durable_manager_1a40c74079be0937d4007c42e6cbfba305">removeReticlePodNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a40c74079be0937d4007c42e6cbfba305">removeReticlePodNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1aed6412ee4a014d15945f71cad5a3da69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_pod" kindref="compound">PosReticlePod</ref></type>
+        <definition>PosReticlePod PosDurableManager::findReticlePodNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findReticlePodNamed</name>
+        <qualifiedname>PosDurableManager::findReticlePodNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="240" column="17"/>
+        <references refid="interface_pos_durable_manager_1aed6412ee4a014d15945f71cad5a3da69">findReticlePodNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1aed6412ee4a014d15945f71cad5a3da69">findReticlePodNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a9598f4f45e6a93600ad243619b5c2a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1a19339437eb4bad4550f4a8fc69adf682" kindref="member">PosReticlePodSequence</ref></type>
+        <definition>PosReticlePodSequence PosDurableManager::allReticlePods</definition>
+        <argsstring>()</argsstring>
+        <name>allReticlePods</name>
+        <qualifiedname>PosDurableManager::allReticlePods</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="246" column="25"/>
+        <references refid="interface_pos_durable_manager_1a9598f4f45e6a93600ad243619b5c2a63">allReticlePods</references>
+        <referencedby refid="interface_pos_durable_manager_1a9598f4f45e6a93600ad243619b5c2a63">allReticlePods</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a492d4fa0692ef151356aeaa04d86665a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeAllReticlePods</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllReticlePods</name>
+        <qualifiedname>PosDurableManager::removeAllReticlePods</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="252" column="8"/>
+        <references refid="interface_pos_durable_manager_1a492d4fa0692ef151356aeaa04d86665a">removeAllReticlePods</references>
+        <referencedby refid="interface_pos_durable_manager_1a492d4fa0692ef151356aeaa04d86665a">removeAllReticlePods</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ad497d220e04640a264fa5af5eb6e6f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref></type>
+        <definition>PosReticleSet PosDurableManager::createReticleSetNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createReticleSetNamed</name>
+        <qualifiedname>PosDurableManager::createReticleSetNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="258" column="17"/>
+        <references refid="interface_pos_durable_manager_1ad497d220e04640a264fa5af5eb6e6f31">createReticleSetNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1ad497d220e04640a264fa5af5eb6e6f31">createReticleSetNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ab69af7db768861f74efe5cb44937bf3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeReticleSetNamed</definition>
+        <argsstring>(in PosReticleSet aReticleSet)</argsstring>
+        <name>removeReticleSetNamed</name>
+        <qualifiedname>PosDurableManager::removeReticleSetNamed</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref></type>
+          <declname>aReticleSet</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_reticle_set_not_found_signal" kindref="compound">ReticleSetNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="264" column="8"/>
+        <references refid="interface_pos_durable_manager_1ab69af7db768861f74efe5cb44937bf3f">removeReticleSetNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1ab69af7db768861f74efe5cb44937bf3f">removeReticleSetNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a724ca16096cceb6b8875cda54247fb78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref></type>
+        <definition>PosReticleSet PosDurableManager::findReticleSetNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findReticleSetNamed</name>
+        <qualifiedname>PosDurableManager::findReticleSetNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="270" column="17"/>
+        <references refid="interface_pos_durable_manager_1a724ca16096cceb6b8875cda54247fb78">findReticleSetNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a724ca16096cceb6b8875cda54247fb78">findReticleSetNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ad5e618b3c42c4cc1ab869dccd81d3058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1a8ca5976bb420e67f54f716e1648d137e" kindref="member">PosReticleSetSequence</ref></type>
+        <definition>PosReticleSetSequence PosDurableManager::allReticleSets</definition>
+        <argsstring>()</argsstring>
+        <name>allReticleSets</name>
+        <qualifiedname>PosDurableManager::allReticleSets</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="276" column="25"/>
+        <references refid="interface_pos_durable_manager_1ad5e618b3c42c4cc1ab869dccd81d3058">allReticleSets</references>
+        <referencedby refid="interface_pos_durable_manager_1ad5e618b3c42c4cc1ab869dccd81d3058">allReticleSets</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1aa8306c9d9dcc2f3c1a4351fe6d752b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeAllReticleSets</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllReticleSets</name>
+        <qualifiedname>PosDurableManager::removeAllReticleSets</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="282" column="8"/>
+        <references refid="interface_pos_durable_manager_1aa8306c9d9dcc2f3c1a4351fe6d752b93">removeAllReticleSets</references>
+        <referencedby refid="interface_pos_durable_manager_1aa8306c9d9dcc2f3c1a4351fe6d752b93">removeAllReticleSets</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a070d1f2033c06f8e425813b98385155c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref></type>
+        <definition>PosDurableControlJob PosDurableManager::createDurableControlJob</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createDurableControlJob</name>
+        <qualifiedname>PosDurableManager::createDurableControlJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="291" column="24"/>
+        <references refid="interface_pos_durable_manager_1a070d1f2033c06f8e425813b98385155c">createDurableControlJob</references>
+        <referencedby refid="interface_pos_durable_manager_1a070d1f2033c06f8e425813b98385155c">createDurableControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1ada5077ff7d407d8a766866e2c39f14bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeDurableControlJob</definition>
+        <argsstring>(in PosDurableControlJob aDurableControlJob)</argsstring>
+        <name>removeDurableControlJob</name>
+        <qualifiedname>PosDurableManager::removeDurableControlJob</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref></type>
+          <declname>aDurableControlJob</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_durable_control_job_not_found_signal" kindref="compound">DurableControlJobNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="297" column="8"/>
+        <references refid="interface_pos_durable_manager_1ada5077ff7d407d8a766866e2c39f14bb">removeDurableControlJob</references>
+        <referencedby refid="interface_pos_durable_manager_1ada5077ff7d407d8a766866e2c39f14bb">removeDurableControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a0967caf34325c2a6febb76e3296fb6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref></type>
+        <definition>PosDurableControlJob PosDurableManager::findDurableControlJobNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findDurableControlJobNamed</name>
+        <qualifiedname>PosDurableManager::findDurableControlJobNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="304" column="24"/>
+        <references refid="interface_pos_durable_manager_1a0967caf34325c2a6febb76e3296fb6c9">findDurableControlJobNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a0967caf34325c2a6febb76e3296fb6c9">findDurableControlJobNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a1c9063e8acb76beaee04d823b1b129c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeAllDurableControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllDurableControlJobs</name>
+        <qualifiedname>PosDurableManager::removeAllDurableControlJobs</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_durable_control_job_not_found_signal" kindref="compound">DurableControlJobNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="311" column="8"/>
+        <references refid="interface_pos_durable_manager_1a1c9063e8acb76beaee04d823b1b129c1">removeAllDurableControlJobs</references>
+        <referencedby refid="interface_pos_durable_manager_1a1c9063e8acb76beaee04d823b1b129c1">removeAllDurableControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1acd6cdd0dca2b62790d43af334674ae37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1acdfa133c86de9b815ea2a50d50b4194f" kindref="member">PosDurableControlJobSequence</ref></type>
+        <definition>PosDurableControlJobSequence PosDurableManager::allDurableControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>allDurableControlJobs</name>
+        <qualifiedname>PosDurableManager::allDurableControlJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="318" column="32"/>
+        <references refid="interface_pos_durable_manager_1acd6cdd0dca2b62790d43af334674ae37">allDurableControlJobs</references>
+        <referencedby refid="interface_pos_durable_manager_1acd6cdd0dca2b62790d43af334674ae37">allDurableControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1af099f54e8b6b6e8518feb9e34206f073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref></type>
+        <definition>PosDurableSubState PosDurableManager::createDurableSubState</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createDurableSubState</name>
+        <qualifiedname>PosDurableManager::createDurableSubState</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="326" column="22"/>
+        <references refid="interface_pos_durable_manager_1af099f54e8b6b6e8518feb9e34206f073">createDurableSubState</references>
+        <referencedby refid="interface_pos_durable_manager_1af099f54e8b6b6e8518feb9e34206f073">createDurableSubState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1acbdaff9b2a665ec03ec11c3251f4d541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeDurableSubState</definition>
+        <argsstring>(in PosDurableSubState aDurableSubState)</argsstring>
+        <name>removeDurableSubState</name>
+        <qualifiedname>PosDurableManager::removeDurableSubState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref></type>
+          <declname>aDurableSubState</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_durable_sub_state_not_found_signal" kindref="compound">DurableSubStateNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="332" column="8"/>
+        <references refid="interface_pos_durable_manager_1acbdaff9b2a665ec03ec11c3251f4d541">removeDurableSubState</references>
+        <referencedby refid="interface_pos_durable_manager_1acbdaff9b2a665ec03ec11c3251f4d541">removeDurableSubState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a970f7e4b76a403cf2a6732a9508b44ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref></type>
+        <definition>PosDurableSubState PosDurableManager::findDurableSubStateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findDurableSubStateNamed</name>
+        <qualifiedname>PosDurableManager::findDurableSubStateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="338" column="22"/>
+        <references refid="interface_pos_durable_manager_1a970f7e4b76a403cf2a6732a9508b44ce">findDurableSubStateNamed</references>
+        <referencedby refid="interface_pos_durable_manager_1a970f7e4b76a403cf2a6732a9508b44ce">findDurableSubStateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a7145e19d393b0675055808d9fe826895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableManager::removeAllDurableSubStates</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllDurableSubStates</name>
+        <qualifiedname>PosDurableManager::removeAllDurableSubStates</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_durable_manager_1_1_durable_sub_state_not_found_signal" kindref="compound">DurableSubStateNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="345" column="8"/>
+        <references refid="interface_pos_durable_manager_1a7145e19d393b0675055808d9fe826895">removeAllDurableSubStates</references>
+        <referencedby refid="interface_pos_durable_manager_1a7145e19d393b0675055808d9fe826895">removeAllDurableSubStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_manager_1a0d88f68f5ff890a704836446ae0f081b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1af988fa8e2b78ba240977e5e08a888baf" kindref="member">PosDurableSubStateSequence</ref></type>
+        <definition>PosDurableSubStateSequence PosDurableManager::allDurableSubStates</definition>
+        <argsstring>()</argsstring>
+        <name>allDurableSubStates</name>
+        <qualifiedname>PosDurableManager::allDurableSubStates</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdrmg.idl" line="352" column="30"/>
+        <references refid="interface_pos_durable_manager_1a0d88f68f5ff890a704836446ae0f081b">allDurableSubStates</references>
+        <referencedby refid="interface_pos_durable_manager_1a0d88f68f5ff890a704836446ae0f081b">allDurableSubStates</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DurableManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableManager</label>
+        <link refid="interface_pos_durable_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DurableManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableManager</label>
+        <link refid="interface_pos_durable_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdrmg.idl" line="42" column="11" bodyfile="poscimfw/include/pdrmg.idl" bodystart="42" bodyend="360"/>
+    <listofallmembers>
+      <member refid="interface_pos_durable_manager_1acd6cdd0dca2b62790d43af334674ae37" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>allDurableControlJobs</name></member>
+      <member refid="interface_pos_durable_manager_1a0d88f68f5ff890a704836446ae0f081b" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>allDurableSubStates</name></member>
+      <member refid="interface_pos_durable_manager_1adf4c440121b1c1df27a259c717033e2d" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>allProcessDurableCapabilities</name></member>
+      <member refid="interface_pos_durable_manager_1a9598f4f45e6a93600ad243619b5c2a63" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>allReticlePods</name></member>
+      <member refid="interface_pos_durable_manager_1ad5e618b3c42c4cc1ab869dccd81d3058" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>allReticleSets</name></member>
+      <member refid="interface_pos_durable_manager_1a070d1f2033c06f8e425813b98385155c" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>createDurableControlJob</name></member>
+      <member refid="interface_pos_durable_manager_1af099f54e8b6b6e8518feb9e34206f073" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>createDurableSubState</name></member>
+      <member refid="interface_pos_durable_manager_1acbe65c890d008fa1a6b24f6f7770ff9f" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>createProcessDurableCapabilityNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a8c32de9bb81073715d4d7e30d9ed942b" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>createReticlePodNamed</name></member>
+      <member refid="interface_pos_durable_manager_1ad497d220e04640a264fa5af5eb6e6f31" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>createReticleSetNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a0967caf34325c2a6febb76e3296fb6c9" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>findDurableControlJobNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a970f7e4b76a403cf2a6732a9508b44ce" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>findDurableSubStateNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a921c8d778dccce78a3530f7b893d5ef8" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>findProcessDurableCapabilityNamed</name></member>
+      <member refid="interface_pos_durable_manager_1aed6412ee4a014d15945f71cad5a3da69" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>findReticlePodNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a724ca16096cceb6b8875cda54247fb78" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>findReticleSetNamed</name></member>
+      <member refid="interface_pos_durable_manager_1a5bfc535a496fbf41bbc33826552fc75e" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>PosDurableManager_init</name></member>
+      <member refid="interface_pos_durable_manager_1a1c9063e8acb76beaee04d823b1b129c1" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeAllDurableControlJobs</name></member>
+      <member refid="interface_pos_durable_manager_1a7145e19d393b0675055808d9fe826895" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeAllDurableSubStates</name></member>
+      <member refid="interface_pos_durable_manager_1ae9a6a7b02b3cba2f0b3522ce1a2af536" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeAllProcessDurableCapabilities</name></member>
+      <member refid="interface_pos_durable_manager_1a492d4fa0692ef151356aeaa04d86665a" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeAllReticlePods</name></member>
+      <member refid="interface_pos_durable_manager_1aa8306c9d9dcc2f3c1a4351fe6d752b93" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeAllReticleSets</name></member>
+      <member refid="interface_pos_durable_manager_1ada5077ff7d407d8a766866e2c39f14bb" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeDurableControlJob</name></member>
+      <member refid="interface_pos_durable_manager_1acbdaff9b2a665ec03ec11c3251f4d541" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeDurableSubState</name></member>
+      <member refid="interface_pos_durable_manager_1ab5f3266ac71d6e8b84665588016dd8c1" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeProcessDurableCapability</name></member>
+      <member refid="interface_pos_durable_manager_1a40c74079be0937d4007c42e6cbfba305" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeReticlePodNamed</name></member>
+      <member refid="interface_pos_durable_manager_1ab69af7db768861f74efe5cb44937bf3f" prot="public" virt="non-virtual"><scope>PosDurableManager</scope><name>removeReticleSetNamed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

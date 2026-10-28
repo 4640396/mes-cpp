@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="ppsmgr_8idl" kind="file" language="IDL">
+    <compoundname>ppsmgr.idl</compoundname>
+    <includes local="yes">MOFW.idl</includes>
+    <includes local="yes">prsnmngr.idl</includes>
+    <includes refid="ppsmggl_8idl" local="yes">ppsmggl.idl</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>ppsmggl.idl</label>
+        <link refid="ppsmggl_8idl"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/ppsmgr.idl</label>
+        <link refid="ppsmgr_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="5">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="3">
+        <label>prsnmngr.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_person_manager" prot="public">PosPersonManager</innerclass>
+    <innerclass refid="exception_pos_person_manager_1_1_area_group_not_found_signal" prot="public">PosPersonManager::AreaGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" prot="public">PosPersonManager::PrivilegeGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_manager_1_1_user_group_not_found_signal" prot="public">PosPersonManager::UserGroupNotFoundSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosPersonManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Labor_Management_Functional_Group::Siview_Person_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\superpos\src\spclass\source\poscimfw\ppsmg\ppsmgr.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosPersonManager_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosPersonManager_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFW.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prsnmngr.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ppsmggl_8idl" kindref="compound">ppsmggl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="interface_pos_person_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_person_manager" kindref="compound">PosPersonManager</ref><sp/>:<sp/>PersonManager,<sp/>MOFW_ManagedObject<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosPersonManager.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosPersonManager.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="exception_pos_person_manager_1_1_area_group_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_person_manager_1_1_area_group_not_found_signal" kindref="compound">AreaGroupNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>AreaGroupNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>AreaGroupNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="exception_pos_person_manager_1_1_area_group_not_found_signal_1afd5bdd2e05c58946ac53d0bdbfc3fdb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_person_manager_1_1_area_group_not_found_signal_1afd5bdd2e05c58946ac53d0bdbfc3fdb5" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>AreaGroupNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>AreaGroupNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" kindref="compound">PrivilegeGroupNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PrivilegeGroupNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PrivilegeGroupNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal_1ab1fd612e25c45b668ad32a5a86218ba0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal_1ab1fd612e25c45b668ad32a5a86218ba0" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PrivilegeGroupNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PrivilegeGroupNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="exception_pos_person_manager_1_1_user_group_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_person_manager_1_1_user_group_not_found_signal" kindref="compound">UserGroupNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>UserGroupNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>UserGroupNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="exception_pos_person_manager_1_1_user_group_not_found_signal_1a540b23e9ba5d98bb1902a9d7d76eb3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_person_manager_1_1_user_group_not_found_signal_1a540b23e9ba5d98bb1902a9d7d76eb3fc" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>UserGroupNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>UserGroupNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosPersonManager_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Initializes<sp/>data<sp/>member<sp/>of<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="interface_pos_person_manager_1a025b8ee5538adcb62a14369b26f64190" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1a025b8ee5538adcb62a14369b26f64190" kindref="member">PosPersonManager_init</ref>()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createAreaGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>an<sp/>area<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref><sp/><ref refid="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982" kindref="member">createAreaGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>DuplicateIdentifierSignal,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAreaGroup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>and<sp/>deletes<sp/>an<sp/>area<sp/>group<sp/>from<sp/>a<sp/>collection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>area<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a" kindref="member">removeAreaGroup</ref>(in<sp/><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref><sp/>anAreaGroup)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_person_manager_1_1_area_group_not_found_signal" kindref="compound">AreaGroupNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allAreaGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>Area<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" kindref="member">PosAreaGroupSequence</ref><sp/><ref refid="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f" kindref="member">allAreaGroups</ref>()</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findAreaGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Searches<sp/>and<sp/>returns<sp/>a<sp/>specified<sp/>Area<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref><sp/><ref refid="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7" kindref="member">findAreaGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAllAreaGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>all<sp/>area<sp/>groups<sp/>from<sp/>a<sp/>collection<sp/>of<sp/>area</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9" kindref="member">removeAllAreaGroups</ref>()</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createPrivilegeGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>privilege<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref><sp/><ref refid="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa" kindref="member">createPrivilegeGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>DuplicateIdentifierSignal,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removePrivilegeGroup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>and<sp/>deletes<sp/>a<sp/>privilege<sp/>group<sp/>from<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>collection<sp/>of<sp/>privilege<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05" kindref="member">removePrivilegeGroup</ref>(in<sp/><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref><sp/>aPrivilegeGroup)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" kindref="compound">PrivilegeGroupNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allPrivilegeGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>privilege<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" kindref="member">PosPrivilegeGroupSequence</ref><sp/><ref refid="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990" kindref="member">allPrivilegeGroups</ref>()</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findPrivilegeGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Searches<sp/>and<sp/>returns<sp/>a<sp/>specified<sp/>privilege<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref><sp/><ref refid="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b" kindref="member">findPrivilegeGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAllPrivilegeGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>all<sp/>privilege<sp/>groups<sp/>from<sp/>a<sp/>collection<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>privilege<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2" kindref="member">removeAllPrivilegeGroups</ref>()</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createUserGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>an<sp/>user<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref><sp/><ref refid="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f" kindref="member">createUserGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>DuplicateIdentifierSignal,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeUserGroup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>and<sp/>deletes<sp/>an<sp/>user<sp/>group<sp/>from<sp/>a<sp/>collection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>user<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5" kindref="member">removeUserGroup</ref>(in<sp/><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref><sp/>aUserGroup)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_person_manager_1_1_user_group_not_found_signal" kindref="compound">UserGroupNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allUserGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>user<sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ppsmggl_8idl_1aeab1cdc216112749031a0cb42f5624db" kindref="member">PosUserGrpSequence</ref><sp/><ref refid="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9" kindref="member">allUserGroups</ref>()</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findUserGroupNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Searches<sp/>and<sp/>returns<sp/>a<sp/>specified<sp/>user<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref><sp/><ref refid="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226" kindref="member">findUserGroupNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>anIdentifier)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAllUserGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>all<sp/>user<sp/>groups<sp/>from<sp/>a<sp/>collection<sp/>of<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>groups.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288" kindref="member">removeAllUserGroups</ref>()</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosPersonManager.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosPersonManager.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/ppsmgr.idl"/>
+  </compounddef>
+</doxygen>

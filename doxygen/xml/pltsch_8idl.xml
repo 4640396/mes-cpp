@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pltsch_8idl" kind="file" language="IDL">
+    <compoundname>pltsch.idl</compoundname>
+    <includes local="no">MOFW.idl</includes>
+    <includes refid="pplgl_8idl" local="yes">pplgl.idl</includes>
+    <includes local="yes">nmdntity.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pltsch.idl</label>
+        <link refid="pltsch_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pplgl.idl</label>
+        <link refid="pplgl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="4">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="5">
+        <label>nmdntity.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_lot_schedule" prot="public">PosLotSchedule</innerclass>
+    <innerclass refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" prot="public">PosLotSchedule::LotOperationScheduleNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" prot="public">PosLotSchedule::DuplicateIdentifierSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/ppl/pltsch.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>21:09:45<sp/>[<sp/>7/13/07<sp/>21:09:46<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Module:<sp/>PosLotSchedule</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Plan_Management_Functional_Group::Poseidon_Planning</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\ppt-reviewed\POSCIMFW\PPl\PLotSchedule.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/ppl/pltsch.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosLotSchedule_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosLotSchedule_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pplgl_8idl" kindref="compound">pplgl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nmdntity.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosLotSchedule<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>class<sp/>will<sp/>be<sp/>created<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosProductRequestScheduleData<sp/>that<sp/>is<sp/>interfaced</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>Schedular<sp/>subsystem<sp/>in<sp/>Si<sp/>View.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>instance<sp/>of<sp/>this<sp/>class<sp/>will<sp/>be<sp/>associated<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>lot<sp/>that<sp/>will<sp/>be<sp/>created<sp/>at<sp/>the<sp/>STB.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Planning<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Planning</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="interface_pos_lot_schedule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref><sp/>:<sp/>MOFW_CachedManagedObject,<sp/>NamedEntity<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosLotSchedule.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosLotSchedule.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" kindref="compound">LotOperationScheduleNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>LotOperationScheduleNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>LotOperationScheduleNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>LotOperationScheduleNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>LotOperationScheduleNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" kindref="compound">DuplicateIdentifierSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DuplicateIdentifierSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DuplicateIdentifierSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DuplicateIdentifierSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DuplicateIdentifierSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosLotSchedule_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosLotSchedule<sp/>initialize.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="interface_pos_lot_schedule_1ab0c18ff36c64e179798d28193dcadf1e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_lot_schedule_1ab0c18ff36c64e179798d28193dcadf1e" kindref="member">PosLotSchedule_init</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosLotSchedule_uninit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosLotSchedule<sp/>uninitialize.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//void<sp/>PosLotSchedule_uninit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createLotOperationScheduleNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>Lot<sp/>Operation<sp/>Schedule<sp/>when<sp/>Product</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Request<sp/>released.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref><sp/><ref refid="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371" kindref="member">createLotOperationScheduleNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/><ref refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" kindref="compound">DuplicateIdentifierSignal</ref><sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeLotOperationSchedule</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>a<sp/>Lot<sp/>Schedule.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57" kindref="member">removeLotOperationSchedule</ref>(in<sp/><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref><sp/>aLotOperationSchedule)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/><ref refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" kindref="compound">LotOperationScheduleNotFoundSignal</ref><sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeAllLotOperationSchedules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Remove<sp/>all<sp/>lot<sp/>schedule.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332" kindref="member">removeAllLotOperationSchedules</ref>()</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/><ref refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" kindref="compound">LotOperationScheduleNotFoundSignal</ref><sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findLotOperationScheduleNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>the<sp/>Lot<sp/>Operation<sp/>Schedule<sp/>with<sp/>the<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref><sp/><ref refid="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0" kindref="member">findLotOperationScheduleNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allLotOperationSchedules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>Lot<sp/>Operation<sp/>Schedules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pplgl_8idl_1a1ed17d1df8c03fcd770aa01c3a26f0ad" kindref="member">PosLotOperationScheduleSequence</ref><sp/><ref refid="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d" kindref="member">allLotOperationSchedules</ref>()</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>Identifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4" kindref="member">setIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>the<sp/>Identifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f" kindref="member">getIdentifier</ref>()</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosLotSchedule.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosLotSchedule.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pltsch.idl"/>
+  </compounddef>
+</doxygen>

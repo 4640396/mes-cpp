@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pmsgdfn_8idl" kind="file" language="IDL">
+    <compoundname>pmsgdfn.idl</compoundname>
+    <includes local="yes">nmdntity.idl</includes>
+    <includes refid="ppsmggl_8idl" local="yes">ppsmggl.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includes refid="pfwgls_8idl" local="yes">pfwgls.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>pfwgls.idl</label>
+        <link refid="pfwgls_8idl"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pmsgdfn.idl</label>
+        <link refid="pmsgdfn_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ppsmggl.idl</label>
+        <link refid="ppsmggl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="5">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="4">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="8">
+        <label>fwglobls.idl</label>
+      </node>
+      <node id="2">
+        <label>nmdntity.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_message_definition" prot="public">PosMessageDefinition</innerclass>
+    <innerclass refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" prot="public">PosMessageDefinition::DestinationPersonDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" prot="public">PosMessageDefinition::DestinationPersonNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" prot="public">PosMessageDefinition::SetMessageDistributionInfoFailedSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pmsds/pmsgdfn.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>20:56:45<sp/>[<sp/>7/13/07<sp/>20:56:46<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Module:<sp/>PosMessageDefinition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Utility_Class_Group::Poseidon_Message_Distribution_Class_Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>H:/home/POSFW/exported<sp/>ptl/POSCIMFW/PMsDs/PMsgDfn.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/pmsds/pmsgdfn.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosMessageDefinition_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosMessageDefinition_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nmdntity.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ppsmggl_8idl" kindref="compound">ppsmggl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pfwgls_8idl" kindref="compound">pfwgls.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_person" kindref="compound">PosPerson</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_message_distribution_manager" kindref="compound">PosMessageDistributionManager</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosMessageDefinition<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>class<sp/>is<sp/>for<sp/>the<sp/>definition<sp/>of<sp/>the<sp/>Message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Distiribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Message<sp/>Distribution<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Message<sp/>Distribution<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="interface_pos_message_definition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_message_definition" kindref="compound">PosMessageDefinition</ref><sp/>:<sp/>NamedEntity,<sp/>MOFW_CachedManagedObject</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosMessageDefinition.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosMessageDefinition.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" kindref="compound">DestinationPersonDuplicateSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DestinationPersonDuplicateSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DestinationPersonDuplicateSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal_1a03657a7bc7f7f3f6a3cd07f240808bd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal_1a03657a7bc7f7f3f6a3cd07f240808bd3" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DestinationPersonDuplicateSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DestinationPersonDuplicateSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" kindref="compound">DestinationPersonNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DestinationPersonNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DestinationPersonNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="exception_pos_message_definition_1_1_destination_person_not_found_signal_1a519e2288b37ccda15b6fe6e390249084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_message_definition_1_1_destination_person_not_found_signal_1a519e2288b37ccda15b6fe6e390249084" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DestinationPersonNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DestinationPersonNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" kindref="compound">SetMessageDistributionInfoFailedSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetMessageDistributionInfoFailedSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetMessageDistributionInfoFailedSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal_1ab324612614dd739b96e0f9d9eb723d94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal_1ab324612614dd739b96e0f9d9eb723d94" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetMessageDistributionInfoFailedSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetMessageDistributionInfoFailedSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="interface_pos_message_definition_1a56389ea762ce28fa4361d9658c65a2e0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a56389ea762ce28fa4361d9658c65a2e0" kindref="member">PosMessageDefinition_init</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//void<sp/>PosMessageDefinition_uninit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>identifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838" kindref="member">setIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>identifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1" kindref="member">getIdentifier</ref>()</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>description.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec" kindref="member">setDescription</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>description)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Get<sp/>the<sp/>description.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8" kindref="member">getDescription</ref>()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMessageMediaID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>Message<sp/>Media<sp/>ID.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9" kindref="member">setMessageMediaID</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>messageMediaId)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getMessageMediaID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>Message<sp/>Media<sp/>ID.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1" kindref="member">getMessageMediaID</ref>()</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMessageType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>Message<sp/>Type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7" kindref="member">setMessageType</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>messageType)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getMesssageType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>Message<sp/>Type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb" kindref="member">getMesssageType</ref>()</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setTemplateFileName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>template<sp/>file<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3" kindref="member">setTemplateFileName</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>templateFileName)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getTemplateFileName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>template<sp/>file<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83" kindref="member">getTemplateFileName</ref>()</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMessageDistributionType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>Message<sp/>Distribution<sp/>Type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f" kindref="member">setMessageDistributionType</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>messageDistributionType)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getMessageDistributionType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>Message<sp/>distribution<sp/>Type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90" kindref="member">getMessageDistributionType</ref>()</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setPrimaryMessage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>Primary<sp/>Message<sp/>.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd" kindref="member">setPrimaryMessage</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>primaryMessage)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getPrimaryMessage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>Primary<sp/>Message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb" kindref="member">getPrimaryMessage</ref>()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSecondaryMessage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>Secondary<sp/>Message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2" kindref="member">setSecondaryMessage</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>secondaryMessage)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getSecondaryMessage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>Secondary<sp/>Message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5" kindref="member">getSecondaryMessage</ref>()</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSubsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>subsystem.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d" kindref="member">setSubsystem</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subsystem)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getSubsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>subsystem.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1" kindref="member">getSubsystem</ref>()</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>addDestinationPerson</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Add<sp/>a<sp/>destination<sp/>person<sp/>into<sp/>a<sp/>collection<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>destination<sp/>persons.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371" kindref="member">addDestinationPerson</ref>(in<sp/><ref refid="interface_pos_person" kindref="compound">PosPerson</ref><sp/>aDestinationPerson)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" kindref="compound">DestinationPersonDuplicateSignal</ref>,<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeDestinationPerson</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Remove<sp/>a<sp/>destination<sp/>person<sp/>from<sp/>a<sp/>collection<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>destination<sp/>persons.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df" kindref="member">removeDestinationPerson</ref>(in<sp/><ref refid="interface_pos_person" kindref="compound">PosPerson</ref><sp/>aDestinationPerson)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" kindref="compound">DestinationPersonNotFoundSignal</ref>,<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allDestinationPersons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>all<sp/>the<sp/><sp/>destination<sp/>person<sp/>from<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>collection<sp/>of<sp/>destination<sp/>persons.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" kindref="member">PosPersonSequence</ref><sp/><ref refid="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f" kindref="member">allDestinationPersons</ref>()</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findDestinationPersonNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Searche<sp/>and<sp/>return<sp/>the<sp/>specified<sp/>destination<sp/>person</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>a<sp/>collection<sp/>of<sp/>destination<sp/>persons.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_person" kindref="compound">PosPerson</ref><sp/><ref refid="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308" kindref="member">findDestinationPersonNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMessageDistributionInfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>all<sp/>data<sp/>members<sp/>for<sp/>the<sp/>Message<sp/>Distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Object<sp/>except<sp/>theName<sp/>and<sp/>theIdentifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d" kindref="member">setMessageDistributionInfo</ref>(in<sp/>brMessageDistributionInfo<sp/>messageDistributionInfo)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" kindref="compound">SetMessageDistributionInfoFailedSignal</ref>,<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosMessageDefinition.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosMessageDefinition.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pmsgdfn.idl"/>
+  </compounddef>
+</doxygen>

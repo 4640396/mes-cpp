@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_buffer_resource" kind="interface" language="IDL" prot="public">
+    <compoundname>PosBufferResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BufferResource</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pbufrs_8idl" local="no">pbufrs.idl</includes>
+    <innerclass refid="exception_pos_buffer_resource_1_1_material_location_quantity_invalid_signal" prot="public">PosBufferResource::MaterialLocationQuantityInvalidSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_buffer_resource_1ae0a5985a6ac1d1dc3784f402cef013cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosBufferResource::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1ae9ea08b718662e06fb17eb42b9d0a744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosBufferResource::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosBufferResource::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="84" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a4cb245ace2d2e1576e811dd6e9492820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aLastClaimedPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosBufferResource::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastClaimedPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="90" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a4cb245ace2d2e1576e811dd6e9492820">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1a4cb245ace2d2e1576e811dd6e9492820">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1ac9f37fe4d900646106eee45d1ac53a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosBufferResource::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosBufferResource::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="96" column="13"/>
+        <references refid="interface_pos_buffer_resource_1ac9f37fe4d900646106eee45d1ac53a0a">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1ac9f37fe4d900646106eee45d1ac53a0a">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a08ccda643b5efe4de2e66aa4e977784e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastMaintenanceTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastMaintenanceTimeStamp)</argsstring>
+        <name>setLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosBufferResource::setLastMaintenanceTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastMaintenanceTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="102" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a08ccda643b5efe4de2e66aa4e977784e">setLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_buffer_resource_1a08ccda643b5efe4de2e66aa4e977784e">setLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a5314fd2fb9e4e0d932d5ded113a97c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosBufferResource::getLastMaintenanceTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosBufferResource::getLastMaintenanceTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="108" column="13"/>
+        <references refid="interface_pos_buffer_resource_1a5314fd2fb9e4e0d932d5ded113a97c03">getLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_buffer_resource_1a5314fd2fb9e4e0d932d5ded113a97c03">getLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a47bb6e0647c11f519ff3858e60b20c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastMaintenancePerson</definition>
+        <argsstring>(in PosPerson aLastMaintenancePerson)</argsstring>
+        <name>setLastMaintenancePerson</name>
+        <qualifiedname>PosBufferResource::setLastMaintenancePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastMaintenancePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="114" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a47bb6e0647c11f519ff3858e60b20c90">setLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1a47bb6e0647c11f519ff3858e60b20c90">setLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a74413ec2e1803bfec38378a9ba5b41c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosBufferResource::getLastMaintenancePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePerson</name>
+        <qualifiedname>PosBufferResource::getLastMaintenancePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="120" column="13"/>
+        <references refid="interface_pos_buffer_resource_1a74413ec2e1803bfec38378a9ba5b41c0">getLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1a74413ec2e1803bfec38378a9ba5b41c0">getLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1aace9c2298b9e49980548b2a7f81ad974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastStatusChangeTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastStatusChangeTimeStamp)</argsstring>
+        <name>setLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosBufferResource::setLastStatusChangeTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastStatusChangeTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="126" column="8"/>
+        <references refid="interface_pos_buffer_resource_1aace9c2298b9e49980548b2a7f81ad974">setLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_buffer_resource_1aace9c2298b9e49980548b2a7f81ad974">setLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a162a3cff9eb3e82b52550e57c538a839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosBufferResource::getLastStatusChangeTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosBufferResource::getLastStatusChangeTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="132" column="13"/>
+        <references refid="interface_pos_buffer_resource_1a162a3cff9eb3e82b52550e57c538a839">getLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_buffer_resource_1a162a3cff9eb3e82b52550e57c538a839">getLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1ad6896b8f6df2147dffd2130349540675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setLastStatusChangePerson</definition>
+        <argsstring>(in PosPerson aLastStatusChangePerson)</argsstring>
+        <name>setLastStatusChangePerson</name>
+        <qualifiedname>PosBufferResource::setLastStatusChangePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastStatusChangePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="138" column="8"/>
+        <references refid="interface_pos_buffer_resource_1ad6896b8f6df2147dffd2130349540675">setLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1ad6896b8f6df2147dffd2130349540675">setLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1afab8a8f4f0ae61645b487dbd2db47478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosBufferResource::getLastStatusChangePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePerson</name>
+        <qualifiedname>PosBufferResource::getLastStatusChangePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="144" column="13"/>
+        <references refid="interface_pos_buffer_resource_1afab8a8f4f0ae61645b487dbd2db47478">getLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_buffer_resource_1afab8a8f4f0ae61645b487dbd2db47478">getLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a1559f35cadd76f3e4e1a7ed1028c6523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::PosBufferResource_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosBufferResource_init</name>
+        <qualifiedname>PosBufferResource::PosBufferResource_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="150" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a1559f35cadd76f3e4e1a7ed1028c6523">PosBufferResource_init</references>
+        <referencedby refid="interface_pos_buffer_resource_1a1559f35cadd76f3e4e1a7ed1028c6523">PosBufferResource_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a1bdf4c1bc44f3a37d0f0cd367f191c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosBufferResource::getCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getCapacity</name>
+        <qualifiedname>PosBufferResource::getCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="158" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a1bdf4c1bc44f3a37d0f0cd367f191c6e">getCapacity</references>
+        <referencedby refid="interface_pos_buffer_resource_1a1bdf4c1bc44f3a37d0f0cd367f191c6e">getCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a3eb8797a18c43da8adc6670982a3f165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setCapacity</definition>
+        <argsstring>(in long capacity)</argsstring>
+        <name>setCapacity</name>
+        <qualifiedname>PosBufferResource::setCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>capacity</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="164" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a3eb8797a18c43da8adc6670982a3f165">setCapacity</references>
+        <referencedby refid="interface_pos_buffer_resource_1a3eb8797a18c43da8adc6670982a3f165">setCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a99cbe40f00c822e5f6e92c1248cb4523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBufferResource::getCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getCategory</name>
+        <qualifiedname>PosBufferResource::getCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="170" column="10"/>
+        <references refid="interface_pos_buffer_resource_1a99cbe40f00c822e5f6e92c1248cb4523">getCategory</references>
+        <referencedby refid="interface_pos_buffer_resource_1a99cbe40f00c822e5f6e92c1248cb4523">getCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a6c3e5572581bdb53d14eeda357b3d287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::setCategory</definition>
+        <argsstring>(in string aCategory)</argsstring>
+        <name>setCategory</name>
+        <qualifiedname>PosBufferResource::setCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="176" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a6c3e5572581bdb53d14eeda357b3d287">setCategory</references>
+        <referencedby refid="interface_pos_buffer_resource_1a6c3e5572581bdb53d14eeda357b3d287">setCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1aaea4290c974767d566b73376b2a6c208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBufferResource::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosBufferResource::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="182" column="10"/>
+        <references refid="interface_pos_buffer_resource_1aaea4290c974767d566b73376b2a6c208">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_buffer_resource_1aaea4290c974767d566b73376b2a6c208">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1adf054795193256db5934f7dbff70b477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBufferResource::getLastMaintenancePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePersonID</name>
+        <qualifiedname>PosBufferResource::getLastMaintenancePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="188" column="10"/>
+        <references refid="interface_pos_buffer_resource_1adf054795193256db5934f7dbff70b477">getLastMaintenancePersonID</references>
+        <referencedby refid="interface_pos_buffer_resource_1adf054795193256db5934f7dbff70b477">getLastMaintenancePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1af1be7792bb12937aa27d6b6ebee1abcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBufferResource::getLastStatusChangePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePersonID</name>
+        <qualifiedname>PosBufferResource::getLastStatusChangePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="194" column="10"/>
+        <references refid="interface_pos_buffer_resource_1af1be7792bb12937aa27d6b6ebee1abcb">getLastStatusChangePersonID</references>
+        <referencedby refid="interface_pos_buffer_resource_1af1be7792bb12937aa27d6b6ebee1abcb">getLastStatusChangePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a2649fc732c91089241ee7bebe58fb5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::increaseCapacity</definition>
+        <argsstring>(in long capacity)</argsstring>
+        <name>increaseCapacity</name>
+        <qualifiedname>PosBufferResource::increaseCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>capacity</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_buffer_resource_1_1_material_location_quantity_invalid_signal" kindref="compound">MaterialLocationQuantityInvalidSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="200" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a2649fc732c91089241ee7bebe58fb5e9">increaseCapacity</references>
+        <referencedby refid="interface_pos_buffer_resource_1a2649fc732c91089241ee7bebe58fb5e9">increaseCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a1c3218f5dd044818cf9ea0fbe798050d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::decreaseCapacity</definition>
+        <argsstring>(in long capacity)</argsstring>
+        <name>decreaseCapacity</name>
+        <qualifiedname>PosBufferResource::decreaseCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>capacity</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_buffer_resource_1_1_material_location_quantity_invalid_signal" kindref="compound">MaterialLocationQuantityInvalidSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="206" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a1c3218f5dd044818cf9ea0fbe798050d">decreaseCapacity</references>
+        <referencedby refid="interface_pos_buffer_resource_1a1c3218f5dd044818cf9ea0fbe798050d">decreaseCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1aef7f984fc45b526411e851b564e9997e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosBufferResource::getActualCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getActualCapacity</name>
+        <qualifiedname>PosBufferResource::getActualCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="212" column="8"/>
+        <references refid="interface_pos_buffer_resource_1aef7f984fc45b526411e851b564e9997e">getActualCapacity</references>
+        <referencedby refid="interface_pos_buffer_resource_1aef7f984fc45b526411e851b564e9997e">getActualCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a0fce6eec773d9d989e4a50c98fbb3743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::addMaterialLocationList</definition>
+        <argsstring>(in MaterialLocation aMaterialLocation)</argsstring>
+        <name>addMaterialLocationList</name>
+        <qualifiedname>PosBufferResource::addMaterialLocationList</qualifiedname>
+        <param>
+          <type>in MaterialLocation</type>
+          <declname>aMaterialLocation</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="218" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a0fce6eec773d9d989e4a50c98fbb3743">addMaterialLocationList</references>
+        <referencedby refid="interface_pos_buffer_resource_1a0fce6eec773d9d989e4a50c98fbb3743">addMaterialLocationList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a0812ff4884d7ae77b6f51145770549e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBufferResource::removeMaterialLocationList</definition>
+        <argsstring>(in MaterialLocation aMaterialLocation)</argsstring>
+        <name>removeMaterialLocationList</name>
+        <qualifiedname>PosBufferResource::removeMaterialLocationList</qualifiedname>
+        <param>
+          <type>in MaterialLocation</type>
+          <declname>aMaterialLocation</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="224" column="8"/>
+        <references refid="interface_pos_buffer_resource_1a0812ff4884d7ae77b6f51145770549e6">removeMaterialLocationList</references>
+        <referencedby refid="interface_pos_buffer_resource_1a0812ff4884d7ae77b6f51145770549e6">removeMaterialLocationList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1aecddb452e5bc127716017b56c4cbbcb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MaterialLocationSequence</type>
+        <definition>MaterialLocationSequence PosBufferResource::getDynamicMaterialLocations</definition>
+        <argsstring>()</argsstring>
+        <name>getDynamicMaterialLocations</name>
+        <qualifiedname>PosBufferResource::getDynamicMaterialLocations</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="230" column="28"/>
+        <references refid="interface_pos_buffer_resource_1aecddb452e5bc127716017b56c4cbbcb8">getDynamicMaterialLocations</references>
+        <referencedby refid="interface_pos_buffer_resource_1aecddb452e5bc127716017b56c4cbbcb8">getDynamicMaterialLocations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_buffer_resource_1a2c8eee895f9e8cdf04c47da247e698e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_buffer_resource" kindref="compound">PosBufferResource</ref></type>
+        <definition>PosBufferResource PosBufferResource::findDynamicBufferResource</definition>
+        <argsstring>()</argsstring>
+        <name>findDynamicBufferResource</name>
+        <qualifiedname>PosBufferResource::findDynamicBufferResource</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbufrs.idl" line="236" column="21"/>
+        <references refid="interface_pos_buffer_resource_1a2c8eee895f9e8cdf04c47da247e698e0">findDynamicBufferResource</references>
+        <referencedby refid="interface_pos_buffer_resource_1a2c8eee895f9e8cdf04c47da247e698e0">findDynamicBufferResource</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BufferResource</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosBufferResource</label>
+        <link refid="interface_pos_buffer_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BufferResource</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosBufferResource</label>
+        <link refid="interface_pos_buffer_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pbufrs.idl" line="38" column="11" bodyfile="poscimfw/include/pbufrs.idl" bodystart="38" bodyend="244"/>
+    <listofallmembers>
+      <member refid="interface_pos_buffer_resource_1a0fce6eec773d9d989e4a50c98fbb3743" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>addMaterialLocationList</name></member>
+      <member refid="interface_pos_buffer_resource_1a1c3218f5dd044818cf9ea0fbe798050d" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>decreaseCapacity</name></member>
+      <member refid="interface_pos_buffer_resource_1a2c8eee895f9e8cdf04c47da247e698e0" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>findDynamicBufferResource</name></member>
+      <member refid="interface_pos_buffer_resource_1aef7f984fc45b526411e851b564e9997e" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getActualCapacity</name></member>
+      <member refid="interface_pos_buffer_resource_1a1bdf4c1bc44f3a37d0f0cd367f191c6e" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getCapacity</name></member>
+      <member refid="interface_pos_buffer_resource_1a99cbe40f00c822e5f6e92c1248cb4523" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getCategory</name></member>
+      <member refid="interface_pos_buffer_resource_1aecddb452e5bc127716017b56c4cbbcb8" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getDynamicMaterialLocations</name></member>
+      <member refid="interface_pos_buffer_resource_1ac9f37fe4d900646106eee45d1ac53a0a" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_buffer_resource_1aaea4290c974767d566b73376b2a6c208" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_buffer_resource_1ae9ea08b718662e06fb17eb42b9d0a744" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_buffer_resource_1a74413ec2e1803bfec38378a9ba5b41c0" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastMaintenancePerson</name></member>
+      <member refid="interface_pos_buffer_resource_1adf054795193256db5934f7dbff70b477" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastMaintenancePersonID</name></member>
+      <member refid="interface_pos_buffer_resource_1a5314fd2fb9e4e0d932d5ded113a97c03" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_buffer_resource_1afab8a8f4f0ae61645b487dbd2db47478" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastStatusChangePerson</name></member>
+      <member refid="interface_pos_buffer_resource_1af1be7792bb12937aa27d6b6ebee1abcb" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastStatusChangePersonID</name></member>
+      <member refid="interface_pos_buffer_resource_1a162a3cff9eb3e82b52550e57c538a839" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>getLastStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_buffer_resource_1a2649fc732c91089241ee7bebe58fb5e9" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>increaseCapacity</name></member>
+      <member refid="interface_pos_buffer_resource_1a1559f35cadd76f3e4e1a7ed1028c6523" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>PosBufferResource_init</name></member>
+      <member refid="interface_pos_buffer_resource_1a0812ff4884d7ae77b6f51145770549e6" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>removeMaterialLocationList</name></member>
+      <member refid="interface_pos_buffer_resource_1a3eb8797a18c43da8adc6670982a3f165" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setCapacity</name></member>
+      <member refid="interface_pos_buffer_resource_1a6c3e5572581bdb53d14eeda357b3d287" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setCategory</name></member>
+      <member refid="interface_pos_buffer_resource_1a4cb245ace2d2e1576e811dd6e9492820" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_buffer_resource_1ae0a5985a6ac1d1dc3784f402cef013cd" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_buffer_resource_1a47bb6e0647c11f519ff3858e60b20c90" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastMaintenancePerson</name></member>
+      <member refid="interface_pos_buffer_resource_1a08ccda643b5efe4de2e66aa4e977784e" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_buffer_resource_1ad6896b8f6df2147dffd2130349540675" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastStatusChangePerson</name></member>
+      <member refid="interface_pos_buffer_resource_1aace9c2298b9e49980548b2a7f81ad974" prot="public" virt="non-virtual"><scope>PosBufferResource</scope><name>setLastStatusChangeTimeStamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

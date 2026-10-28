@@ -1,0 +1,136 @@
+{
+  "scope": "仅审计已有静态材料能否交付；不是项目深入分析完成审计。",
+  "goalAchieved": false,
+  "projectSemanticsComplete": false,
+  "deepGoalStatus": "active",
+  "notClaimed": [
+    "逐函数完整语义证明",
+    "完整上层生产交易与运行系统还原",
+    "可独立编译运行 MES",
+    "全部动态调用与数据库外键解析"
+  ],
+  "passed": true,
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "现有全部源码有清单和可定位的源码文档",
+      "status": "proved",
+      "evidence": [
+        "inventory.json",
+        "doxygen/xml/index.xml",
+        "source-links.json"
+      ],
+      "limits": "文档完整存在不代表 Doxygen 语义完整，警告保留。"
+    },
+    {
+      "id": "R2",
+      "requirement": "主要模块都有职责和证据入口",
+      "status": "proved",
+      "evidence": [
+        "domain-catalog.md",
+        "business-map.json"
+      ],
+      "limits": "目录定位和样板规则有证据；未声称逐方法完成审查。"
+    },
+    {
+      "id": "R3",
+      "requirement": "主要业务领域和关键对象级业务链有源码依据",
+      "status": "proved",
+      "evidence": [
+        "lot-process.md",
+        "lot-hold.md",
+        "route-movement.md",
+        "rework.md",
+        "equipment-recipe.md",
+        "events-data-inhibit.md",
+        "supporting-domains.md",
+        "verified-facts.json"
+      ],
+      "limits": "上层完整交易与事务缺证据，详见 GAPS.md；不伪造链路。"
+    },
+    {
+      "id": "R4",
+      "requirement": "数据库操作可以反查源码与方法范围",
+      "status": "proved",
+      "evidence": [
+        "sql-index.json",
+        "table-access.json",
+        "method-index.json",
+        "explorer.html"
+      ],
+      "limits": "SQL 表名与 # 符号均为源码候选，未对照真实 schema。"
+    },
+    {
+      "id": "R5",
+      "requirement": "本体统一概念且事实与候选分离",
+      "status": "proved",
+      "evidence": [
+        "ontology.json",
+        "verified-facts.json",
+        "source-graph.json",
+        "evidence-lock.json"
+      ],
+      "limits": "不是 OWL 推理或生产实例本体，未运行 graphify。"
+    },
+    {
+      "id": "R6",
+      "requirement": "交互专题图已交付并有对应检查证据",
+      "status": "proved",
+      "evidence": [
+        {
+          "receipt": ".archify/architecture-mes-lot-hold-20261028-001/lot-hold.finalize-summary.json",
+          "pass": true
+        },
+        {
+          "receipt": ".archify/architecture-mes-lot-process-20261028-001/review-2/lot-process.finalize-summary.json",
+          "pass": true
+        },
+        {
+          "receipt": ".archify/architecture-mes-domains-20261028-001/recipe.finalize-summary.json",
+          "pass": true
+        },
+        {
+          "receipt": ".archify/architecture-mes-domains-20261028-001/review-2/dispatch.finalize-summary.json",
+          "pass": true
+        }
+      ],
+      "limits": "自动检查通过，未声明截图视觉审查或 Git 提交级来源验证。"
+    },
+    {
+      "id": "R7",
+      "requirement": "综合入口、可读报告和查询可以使用",
+      "status": "proved",
+      "evidence": [
+        "index.html",
+        "reports/SUMMARY.html",
+        "explorer-check.json",
+        "validation.json"
+      ],
+      "limits": "查询页功能检查为真实生成脚本的模拟 DOM；本地 file URL UI 控制被策略阻止。"
+    },
+    {
+      "id": "R8",
+      "requirement": "未知项、缺失材料和验证边界明确列出",
+      "status": "proved",
+      "evidence": [
+        "GAPS.md",
+        "dependency-audit.json",
+        "SUMMARY.md"
+      ]
+    },
+    {
+      "id": "R9",
+      "requirement": "提供可重复的重建与查询命令",
+      "status": "proved",
+      "evidence": [
+        "rebuild.mjs",
+        "REBUILD.md",
+        "rebuild-state.json",
+        "rebuild-run.log",
+        "cli-check.json",
+        "query.mjs"
+      ],
+      "limits": "当前重建已执行成功；--doxygen 使用此前已验证的安装，四张图单独保存检查回执。"
+    }
+  ]
+}

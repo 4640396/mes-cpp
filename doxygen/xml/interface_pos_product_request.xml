@@ -1,0 +1,948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_product_request" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProductRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProductRequest</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pprrq_8idl" local="no">pprrq.idl</includes>
+    <innerclass refid="exception_pos_product_request_1_1_lot_is_not_allocated_signal" prot="public">PosProductRequest::LotIsNotAllocatedSignal</innerclass>
+    <innerclass refid="exception_pos_product_request_1_1_product_is_not_allocated_signal" prot="public">PosProductRequest::ProductIsNotAllocatedSignal</innerclass>
+    <innerclass refid="exception_pos_product_request_1_1_product_is_already_allocated_signal" prot="public">PosProductRequest::ProductIsAlreadyAllocatedSignal</innerclass>
+    <innerclass refid="exception_pos_product_request_1_1_product_request_allocation_invalid_signal" prot="public">PosProductRequest::ProductRequestAllocationInvalidSignal</innerclass>
+    <innerclass refid="exception_pos_product_request_1_1_lot_not_found_signal" prot="public">PosProductRequest::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_request_1_1_product_not_found_signal" prot="public">PosProductRequest::ProductNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_product_request_1abab3ef829a9aec6e3f33f4928818eb09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::PosProductRequest_init</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>PosProductRequest_init</name>
+        <qualifiedname>PosProductRequest::PosProductRequest_init</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="210" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1af3bb9a7d093eeaab457e324dd8dfd989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setSourceLots</definition>
+        <argsstring>(in PosSourceLotSequence aSourceLots)</argsstring>
+        <name>setSourceLots</name>
+        <qualifiedname>PosProductRequest::setSourceLots</qualifiedname>
+        <param>
+          <type>in <ref refid="pplgl_8idl_1a81d160567a9f23a077450c7a3f3893be" kindref="member">PosSourceLotSequence</ref></type>
+          <declname>aSourceLots</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_product_request_1_1_lot_not_found_signal" kindref="compound">LotNotFoundSignal</ref>,<ref refid="exception_pos_product_request_1_1_product_not_found_signal" kindref="compound">ProductNotFoundSignal</ref>,<ref refid="exception_pos_product_request_1_1_product_is_already_allocated_signal" kindref="compound">ProductIsAlreadyAllocatedSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="217" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a3efadd8d2e18de2fa5a9520c4caf2530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pplgl_8idl_1a81d160567a9f23a077450c7a3f3893be" kindref="member">PosSourceLotSequence</ref></type>
+        <definition>PosSourceLotSequence PosProductRequest::allSourceLots</definition>
+        <argsstring>()</argsstring>
+        <name>allSourceLots</name>
+        <qualifiedname>PosProductRequest::allSourceLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="224" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ae02a1019049cac7480942f1a3be4d842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setOrderNumber</definition>
+        <argsstring>(in string orderNumber)</argsstring>
+        <name>setOrderNumber</name>
+        <qualifiedname>PosProductRequest::setOrderNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>orderNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="241" column="8"/>
+        <references refid="interface_pos_product_request_1ae02a1019049cac7480942f1a3be4d842">setOrderNumber</references>
+        <referencedby refid="interface_pos_product_request_1ae02a1019049cac7480942f1a3be4d842">setOrderNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a9846c1b0d1b123ac6237901d4727c423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getOrderNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getOrderNumber</name>
+        <qualifiedname>PosProductRequest::getOrderNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="248" column="10"/>
+        <references refid="interface_pos_product_request_1a9846c1b0d1b123ac6237901d4727c423">getOrderNumber</references>
+        <referencedby refid="interface_pos_product_request_1a9846c1b0d1b123ac6237901d4727c423">getOrderNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a57636527f7f5b0ca48f109ce2f1f2e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotType</definition>
+        <argsstring>(in string LotType)</argsstring>
+        <name>setLotType</name>
+        <qualifiedname>PosProductRequest::setLotType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>LotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="255" column="8"/>
+        <references refid="interface_pos_product_request_1a57636527f7f5b0ca48f109ce2f1f2e22">setLotType</references>
+        <referencedby refid="interface_pos_product_request_1a57636527f7f5b0ca48f109ce2f1f2e22">setLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a97715e25b1f344b6ea7059557df81393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getLotType</definition>
+        <argsstring>()</argsstring>
+        <name>getLotType</name>
+        <qualifiedname>PosProductRequest::getLotType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="261" column="10"/>
+        <references refid="interface_pos_product_request_1a97715e25b1f344b6ea7059557df81393">getLotType</references>
+        <referencedby refid="interface_pos_product_request_1a97715e25b1f344b6ea7059557df81393">getLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aceeec8b39f8d0addb83befdbb48516d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setSubLotType</definition>
+        <argsstring>(in string subLotType)</argsstring>
+        <name>setSubLotType</name>
+        <qualifiedname>PosProductRequest::setSubLotType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="268" column="8"/>
+        <references refid="interface_pos_product_request_1aceeec8b39f8d0addb83befdbb48516d6">setSubLotType</references>
+        <referencedby refid="interface_pos_product_request_1aceeec8b39f8d0addb83befdbb48516d6">setSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aa52efb5a67d76ad9dde14c640b487042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getSubLotType</definition>
+        <argsstring>()</argsstring>
+        <name>getSubLotType</name>
+        <qualifiedname>PosProductRequest::getSubLotType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="274" column="10"/>
+        <references refid="interface_pos_product_request_1aa52efb5a67d76ad9dde14c640b487042">getSubLotType</references>
+        <referencedby refid="interface_pos_product_request_1aa52efb5a67d76ad9dde14c640b487042">getSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aca1c3efb6bdf7bae8fa7b50c66f64bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setStartBank</definition>
+        <argsstring>(in PosBank aBank)</argsstring>
+        <name>setStartBank</name>
+        <qualifiedname>PosProductRequest::setStartBank</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+          <declname>aBank</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="280" column="8"/>
+        <references refid="interface_pos_product_request_1aca1c3efb6bdf7bae8fa7b50c66f64bc4">setStartBank</references>
+        <referencedby refid="interface_pos_product_request_1aca1c3efb6bdf7bae8fa7b50c66f64bc4">setStartBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ac39f40175eff3573af3e24cfa4f4d6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank PosProductRequest::getStartBank</definition>
+        <argsstring>()</argsstring>
+        <name>getStartBank</name>
+        <qualifiedname>PosProductRequest::getStartBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="286" column="11"/>
+        <references refid="interface_pos_product_request_1ac39f40175eff3573af3e24cfa4f4d6a1">getStartBank</references>
+        <referencedby refid="interface_pos_product_request_1ac39f40175eff3573af3e24cfa4f4d6a1">getStartBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1acac3f85c4ec7d3628ec0467f58e3493f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setEndBank</definition>
+        <argsstring>(in PosBank aBank)</argsstring>
+        <name>setEndBank</name>
+        <qualifiedname>PosProductRequest::setEndBank</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+          <declname>aBank</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="292" column="8"/>
+        <references refid="interface_pos_product_request_1acac3f85c4ec7d3628ec0467f58e3493f">setEndBank</references>
+        <referencedby refid="interface_pos_product_request_1acac3f85c4ec7d3628ec0467f58e3493f">setEndBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a3fe5f68fea5cc5df529681f4e83b8d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank PosProductRequest::getEndBank</definition>
+        <argsstring>()</argsstring>
+        <name>getEndBank</name>
+        <qualifiedname>PosProductRequest::getEndBank</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="298" column="11"/>
+        <references refid="interface_pos_product_request_1a3fe5f68fea5cc5df529681f4e83b8d12">getEndBank</references>
+        <referencedby refid="interface_pos_product_request_1a3fe5f68fea5cc5df529681f4e83b8d12">getEndBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a36a2926d2901c35a10b3a53aeb2abd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotOwner</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setLotOwner</name>
+        <qualifiedname>PosProductRequest::setLotOwner</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="305" column="8"/>
+        <references refid="interface_pos_product_request_1a36a2926d2901c35a10b3a53aeb2abd96">setLotOwner</references>
+        <referencedby refid="interface_pos_product_request_1a36a2926d2901c35a10b3a53aeb2abd96">setLotOwner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a4d053b99db2b018681c49af5cd931226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosProductRequest::getLotOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getLotOwner</name>
+        <qualifiedname>PosProductRequest::getLotOwner</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="312" column="13"/>
+        <references refid="interface_pos_product_request_1a4d053b99db2b018681c49af5cd931226">getLotOwner</references>
+        <referencedby refid="interface_pos_product_request_1a4d053b99db2b018681c49af5cd931226">getLotOwner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ad9c1020589097b0df848ff9109196c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setCustomer</definition>
+        <argsstring>(in PosCustomer customerCode)</argsstring>
+        <name>setCustomer</name>
+        <qualifiedname>PosProductRequest::setCustomer</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref></type>
+          <declname>customerCode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="318" column="8"/>
+        <references refid="interface_pos_product_request_1ad9c1020589097b0df848ff9109196c05">setCustomer</references>
+        <referencedby refid="interface_pos_product_request_1ad9c1020589097b0df848ff9109196c05">setCustomer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a3b963de35add848ba0013265c02dfd93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref></type>
+        <definition>PosCustomer PosProductRequest::getCustomer</definition>
+        <argsstring>()</argsstring>
+        <name>getCustomer</name>
+        <qualifiedname>PosProductRequest::getCustomer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="324" column="15"/>
+        <references refid="interface_pos_product_request_1a3b963de35add848ba0013265c02dfd93">getCustomer</references>
+        <referencedby refid="interface_pos_product_request_1a3b963de35add848ba0013265c02dfd93">getCustomer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a87cb2f541d472dc36d5878f269d0051e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setMainProcessDefinition</definition>
+        <argsstring>(in PosProcessDefinition aProcessDefinition)</argsstring>
+        <name>setMainProcessDefinition</name>
+        <qualifiedname>PosProductRequest::setMainProcessDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+          <declname>aProcessDefinition</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="330" column="8"/>
+        <references refid="interface_pos_product_request_1a87cb2f541d472dc36d5878f269d0051e">setMainProcessDefinition</references>
+        <referencedby refid="interface_pos_product_request_1a87cb2f541d472dc36d5878f269d0051e">setMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ae7c2180836c58e9084df97bb03eb8a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProductRequest::getMainProcessDefinition</definition>
+        <argsstring>()</argsstring>
+        <name>getMainProcessDefinition</name>
+        <qualifiedname>PosProductRequest::getMainProcessDefinition</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="336" column="24"/>
+        <references refid="interface_pos_product_request_1ae7c2180836c58e9084df97bb03eb8a56">getMainProcessDefinition</references>
+        <referencedby refid="interface_pos_product_request_1ae7c2180836c58e9084df97bb03eb8a56">getMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aa235b90e072b30a84386ba356a440d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotGenerationType</definition>
+        <argsstring>(in string type)</argsstring>
+        <name>setLotGenerationType</name>
+        <qualifiedname>PosProductRequest::setLotGenerationType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>type</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="342" column="8"/>
+        <references refid="interface_pos_product_request_1aa235b90e072b30a84386ba356a440d77">setLotGenerationType</references>
+        <referencedby refid="interface_pos_product_request_1aa235b90e072b30a84386ba356a440d77">setLotGenerationType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ac620d5ed887c29459984ee69def506ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getLotGenerationType</definition>
+        <argsstring>()</argsstring>
+        <name>getLotGenerationType</name>
+        <qualifiedname>PosProductRequest::getLotGenerationType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="348" column="10"/>
+        <references refid="interface_pos_product_request_1ac620d5ed887c29459984ee69def506ab">getLotGenerationType</references>
+        <referencedby refid="interface_pos_product_request_1ac620d5ed887c29459984ee69def506ab">getLotGenerationType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1adb848a16fa9f5cd5f982de359cee9a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setScheduleMode</definition>
+        <argsstring>(in string scheduleMode)</argsstring>
+        <name>setScheduleMode</name>
+        <qualifiedname>PosProductRequest::setScheduleMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>scheduleMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="354" column="8"/>
+        <references refid="interface_pos_product_request_1adb848a16fa9f5cd5f982de359cee9a52">setScheduleMode</references>
+        <referencedby refid="interface_pos_product_request_1adb848a16fa9f5cd5f982de359cee9a52">setScheduleMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a25b6c263b87bb67ea6ca5d53d2eb5f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getScheduleMode</definition>
+        <argsstring>()</argsstring>
+        <name>getScheduleMode</name>
+        <qualifiedname>PosProductRequest::getScheduleMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="360" column="10"/>
+        <references refid="interface_pos_product_request_1a25b6c263b87bb67ea6ca5d53d2eb5f37">getScheduleMode</references>
+        <referencedby refid="interface_pos_product_request_1a25b6c263b87bb67ea6ca5d53d2eb5f37">getScheduleMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a7b349dc91f7277025118b92db3144f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotIdGenerationMode</definition>
+        <argsstring>(in string mode)</argsstring>
+        <name>setLotIdGenerationMode</name>
+        <qualifiedname>PosProductRequest::setLotIdGenerationMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>mode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="366" column="8"/>
+        <references refid="interface_pos_product_request_1a7b349dc91f7277025118b92db3144f8a">setLotIdGenerationMode</references>
+        <referencedby refid="interface_pos_product_request_1a7b349dc91f7277025118b92db3144f8a">setLotIdGenerationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a0d070e2c32e9ac9fd28f4b5e4b6d5ea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getLotIdGenerationMode</definition>
+        <argsstring>()</argsstring>
+        <name>getLotIdGenerationMode</name>
+        <qualifiedname>PosProductRequest::getLotIdGenerationMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="372" column="10"/>
+        <references refid="interface_pos_product_request_1a0d070e2c32e9ac9fd28f4b5e4b6d5ea6">getLotIdGenerationMode</references>
+        <referencedby refid="interface_pos_product_request_1a0d070e2c32e9ac9fd28f4b5e4b6d5ea6">getLotIdGenerationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aec938343c6946654f44fba6cda3df0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setProductMode</definition>
+        <argsstring>(in string mode)</argsstring>
+        <name>setProductMode</name>
+        <qualifiedname>PosProductRequest::setProductMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>mode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="378" column="8"/>
+        <references refid="interface_pos_product_request_1aec938343c6946654f44fba6cda3df0ea">setProductMode</references>
+        <referencedby refid="interface_pos_product_request_1aec938343c6946654f44fba6cda3df0ea">setProductMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a171ee3acad182451b790113cb6ff2d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getProductMode</definition>
+        <argsstring>()</argsstring>
+        <name>getProductMode</name>
+        <qualifiedname>PosProductRequest::getProductMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="384" column="10"/>
+        <references refid="interface_pos_product_request_1a171ee3acad182451b790113cb6ff2d2d">getProductMode</references>
+        <referencedby refid="interface_pos_product_request_1a171ee3acad182451b790113cb6ff2d2d">getProductMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ae86ba625e83de0659a86aad7ad569e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setPriorityClass</definition>
+        <argsstring>(in long priorityClass)</argsstring>
+        <name>setPriorityClass</name>
+        <qualifiedname>PosProductRequest::setPriorityClass</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>priorityClass</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="390" column="8"/>
+        <references refid="interface_pos_product_request_1ae86ba625e83de0659a86aad7ad569e3c">setPriorityClass</references>
+        <referencedby refid="interface_pos_product_request_1ae86ba625e83de0659a86aad7ad569e3c">setPriorityClass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a8eae7e4c5ab7acbeb1768d6fe398223c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosProductRequest::getPriorityClass</definition>
+        <argsstring>()</argsstring>
+        <name>getPriorityClass</name>
+        <qualifiedname>PosProductRequest::getPriorityClass</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="396" column="8"/>
+        <references refid="interface_pos_product_request_1a8eae7e4c5ab7acbeb1768d6fe398223c">getPriorityClass</references>
+        <referencedby refid="interface_pos_product_request_1a8eae7e4c5ab7acbeb1768d6fe398223c">getPriorityClass</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a24fe95c9e636e19d19d970928a25cfb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setMFGLayer</definition>
+        <argsstring>(in string mfgLayer)</argsstring>
+        <name>setMFGLayer</name>
+        <qualifiedname>PosProductRequest::setMFGLayer</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>mfgLayer</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="402" column="8"/>
+        <references refid="interface_pos_product_request_1a24fe95c9e636e19d19d970928a25cfb5">setMFGLayer</references>
+        <referencedby refid="interface_pos_product_request_1a24fe95c9e636e19d19d970928a25cfb5">setMFGLayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a7ec3388f8dfd68c383d294be28493241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getMFGLayer</definition>
+        <argsstring>()</argsstring>
+        <name>getMFGLayer</name>
+        <qualifiedname>PosProductRequest::getMFGLayer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="408" column="10"/>
+        <references refid="interface_pos_product_request_1a7ec3388f8dfd68c383d294be28493241">getMFGLayer</references>
+        <referencedby refid="interface_pos_product_request_1a7ec3388f8dfd68c383d294be28493241">getMFGLayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a64950d421e4eb72c9986624a87289b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setProductSpecification</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>setProductSpecification</name>
+        <qualifiedname>PosProductRequest::setProductSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="415" column="8"/>
+        <references refid="interface_pos_product_request_1a64950d421e4eb72c9986624a87289b65">setProductSpecification</references>
+        <referencedby refid="interface_pos_product_request_1a64950d421e4eb72c9986624a87289b65">setProductSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ae060bcd59d1dc16cbb5192b3b93942b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotComment</definition>
+        <argsstring>(in string lotComment)</argsstring>
+        <name>setLotComment</name>
+        <qualifiedname>PosProductRequest::setLotComment</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotComment</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="421" column="8"/>
+        <references refid="interface_pos_product_request_1ae060bcd59d1dc16cbb5192b3b93942b1">setLotComment</references>
+        <referencedby refid="interface_pos_product_request_1ae060bcd59d1dc16cbb5192b3b93942b1">setLotComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a30efa1c70a8cbe4b344a0a8f8f445d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getLotComment</definition>
+        <argsstring>()</argsstring>
+        <name>getLotComment</name>
+        <qualifiedname>PosProductRequest::getLotComment</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="427" column="10"/>
+        <references refid="interface_pos_product_request_1a30efa1c70a8cbe4b344a0a8f8f445d8f">getLotComment</references>
+        <referencedby refid="interface_pos_product_request_1a30efa1c70a8cbe4b344a0a8f8f445d8f">getLotComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a4eaadc85fe28a3b736778eb02f395b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setAllStatesForVendorLot</definition>
+        <argsstring>()</argsstring>
+        <name>setAllStatesForVendorLot</name>
+        <qualifiedname>PosProductRequest::setAllStatesForVendorLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="433" column="8"/>
+        <references refid="interface_pos_product_request_1a4eaadc85fe28a3b736778eb02f395b72">setAllStatesForVendorLot</references>
+        <referencedby refid="interface_pos_product_request_1a4eaadc85fe28a3b736778eb02f395b72">setAllStatesForVendorLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aaf76bd7da8eda593a3a12f6ed341a4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getProductionState</definition>
+        <argsstring>()</argsstring>
+        <name>getProductionState</name>
+        <qualifiedname>PosProductRequest::getProductionState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="439" column="10"/>
+        <references refid="interface_pos_product_request_1aaf76bd7da8eda593a3a12f6ed341a4cf">getProductionState</references>
+        <referencedby refid="interface_pos_product_request_1aaf76bd7da8eda593a3a12f6ed341a4cf">getProductionState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1add755b457b7f750aea80a08f56d877d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosProductRequest::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="446" column="8"/>
+        <references refid="interface_pos_product_request_1add755b457b7f750aea80a08f56d877d3">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_product_request_1add755b457b7f750aea80a08f56d877d3">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a7cb5e4c00ac52ba4a1faebf4e469a388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosProductRequest::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosProductRequest::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="452" column="13"/>
+        <references refid="interface_pos_product_request_1a7cb5e4c00ac52ba4a1faebf4e469a388">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_product_request_1a7cb5e4c00ac52ba4a1faebf4e469a388">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a0fa08572fd78ed5b97828114833ac5bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosProductRequest::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="459" column="8"/>
+        <references refid="interface_pos_product_request_1a0fa08572fd78ed5b97828114833ac5bd">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_product_request_1a0fa08572fd78ed5b97828114833ac5bd">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a193eebbbed91d00ef5a99648239f2a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosProductRequest::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosProductRequest::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="465" column="13"/>
+        <references refid="interface_pos_product_request_1a193eebbbed91d00ef5a99648239f2a90">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_product_request_1a193eebbbed91d00ef5a99648239f2a90">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1aebfc5eb22e6e9df1df4802f561289992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setLotSchedule</definition>
+        <argsstring>(in PosLotSchedule aLotSchedule)</argsstring>
+        <name>setLotSchedule</name>
+        <qualifiedname>PosProductRequest::setLotSchedule</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref></type>
+          <declname>aLotSchedule</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="471" column="8"/>
+        <references refid="interface_pos_product_request_1aebfc5eb22e6e9df1df4802f561289992">setLotSchedule</references>
+        <referencedby refid="interface_pos_product_request_1aebfc5eb22e6e9df1df4802f561289992">setLotSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a949964d92a5421451bb54246c7f4f7fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref></type>
+        <definition>PosLotSchedule PosProductRequest::getLotSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>getLotSchedule</name>
+        <qualifiedname>PosProductRequest::getLotSchedule</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="477" column="18"/>
+        <references refid="interface_pos_product_request_1a949964d92a5421451bb54246c7f4f7fa">getLotSchedule</references>
+        <referencedby refid="interface_pos_product_request_1a949964d92a5421451bb54246c7f4f7fa">getLotSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1a54f98e14eddcd2744ca2f1972d1b9ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosProductRequest::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="483" column="10"/>
+        <references refid="interface_pos_product_request_1a54f98e14eddcd2744ca2f1972d1b9ba7">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_product_request_1a54f98e14eddcd2744ca2f1972d1b9ba7">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ab3ee9495b11eae2efd6627bfa2ba75a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductRequest::setOrderType</definition>
+        <argsstring>(in string orderType)</argsstring>
+        <name>setOrderType</name>
+        <qualifiedname>PosProductRequest::setOrderType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>orderType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="489" column="8"/>
+        <references refid="interface_pos_product_request_1ab3ee9495b11eae2efd6627bfa2ba75a7">setOrderType</references>
+        <referencedby refid="interface_pos_product_request_1ab3ee9495b11eae2efd6627bfa2ba75a7">setOrderType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_request_1ad5e5e521ee79019253b607d466cf0879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductRequest::getOrderType</definition>
+        <argsstring>()</argsstring>
+        <name>getOrderType</name>
+        <qualifiedname>PosProductRequest::getOrderType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprrq.idl" line="495" column="10"/>
+        <references refid="interface_pos_product_request_1ad5e5e521ee79019253b607d466cf0879">getOrderType</references>
+        <referencedby refid="interface_pos_product_request_1ad5e5e521ee79019253b607d466cf0879">getOrderType</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductRequest</label>
+        <link refid="interface_pos_product_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductRequest</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductRequest</label>
+        <link refid="interface_pos_product_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductRequest</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pprrq.idl" line="53" column="11" bodyfile="poscimfw/include/pprrq.idl" bodystart="53" bodyend="503"/>
+    <listofallmembers>
+      <member refid="interface_pos_product_request_1a3efadd8d2e18de2fa5a9520c4caf2530" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>allSourceLots</name></member>
+      <member refid="interface_pos_product_request_1a3b963de35add848ba0013265c02dfd93" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getCustomer</name></member>
+      <member refid="interface_pos_product_request_1a3fe5f68fea5cc5df529681f4e83b8d12" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getEndBank</name></member>
+      <member refid="interface_pos_product_request_1a193eebbbed91d00ef5a99648239f2a90" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_product_request_1a54f98e14eddcd2744ca2f1972d1b9ba7" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_product_request_1a7cb5e4c00ac52ba4a1faebf4e469a388" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_product_request_1a30efa1c70a8cbe4b344a0a8f8f445d8f" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotComment</name></member>
+      <member refid="interface_pos_product_request_1ac620d5ed887c29459984ee69def506ab" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotGenerationType</name></member>
+      <member refid="interface_pos_product_request_1a0d070e2c32e9ac9fd28f4b5e4b6d5ea6" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotIdGenerationMode</name></member>
+      <member refid="interface_pos_product_request_1a4d053b99db2b018681c49af5cd931226" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotOwner</name></member>
+      <member refid="interface_pos_product_request_1a949964d92a5421451bb54246c7f4f7fa" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotSchedule</name></member>
+      <member refid="interface_pos_product_request_1a97715e25b1f344b6ea7059557df81393" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getLotType</name></member>
+      <member refid="interface_pos_product_request_1ae7c2180836c58e9084df97bb03eb8a56" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getMainProcessDefinition</name></member>
+      <member refid="interface_pos_product_request_1a7ec3388f8dfd68c383d294be28493241" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getMFGLayer</name></member>
+      <member refid="interface_pos_product_request_1a9846c1b0d1b123ac6237901d4727c423" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getOrderNumber</name></member>
+      <member refid="interface_pos_product_request_1ad5e5e521ee79019253b607d466cf0879" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getOrderType</name></member>
+      <member refid="interface_pos_product_request_1a8eae7e4c5ab7acbeb1768d6fe398223c" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getPriorityClass</name></member>
+      <member refid="interface_pos_product_request_1aaf76bd7da8eda593a3a12f6ed341a4cf" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getProductionState</name></member>
+      <member refid="interface_pos_product_request_1a171ee3acad182451b790113cb6ff2d2d" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getProductMode</name></member>
+      <member refid="interface_pos_product_request_1a25b6c263b87bb67ea6ca5d53d2eb5f37" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getScheduleMode</name></member>
+      <member refid="interface_pos_product_request_1ac39f40175eff3573af3e24cfa4f4d6a1" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getStartBank</name></member>
+      <member refid="interface_pos_product_request_1aa52efb5a67d76ad9dde14c640b487042" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>getSubLotType</name></member>
+      <member refid="interface_pos_product_request_1abab3ef829a9aec6e3f33f4928818eb09" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>PosProductRequest_init</name></member>
+      <member refid="interface_pos_product_request_1a4eaadc85fe28a3b736778eb02f395b72" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setAllStatesForVendorLot</name></member>
+      <member refid="interface_pos_product_request_1ad9c1020589097b0df848ff9109196c05" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setCustomer</name></member>
+      <member refid="interface_pos_product_request_1acac3f85c4ec7d3628ec0467f58e3493f" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setEndBank</name></member>
+      <member refid="interface_pos_product_request_1a0fa08572fd78ed5b97828114833ac5bd" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_product_request_1add755b457b7f750aea80a08f56d877d3" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_product_request_1ae060bcd59d1dc16cbb5192b3b93942b1" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotComment</name></member>
+      <member refid="interface_pos_product_request_1aa235b90e072b30a84386ba356a440d77" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotGenerationType</name></member>
+      <member refid="interface_pos_product_request_1a7b349dc91f7277025118b92db3144f8a" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotIdGenerationMode</name></member>
+      <member refid="interface_pos_product_request_1a36a2926d2901c35a10b3a53aeb2abd96" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotOwner</name></member>
+      <member refid="interface_pos_product_request_1aebfc5eb22e6e9df1df4802f561289992" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotSchedule</name></member>
+      <member refid="interface_pos_product_request_1a57636527f7f5b0ca48f109ce2f1f2e22" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setLotType</name></member>
+      <member refid="interface_pos_product_request_1a87cb2f541d472dc36d5878f269d0051e" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setMainProcessDefinition</name></member>
+      <member refid="interface_pos_product_request_1a24fe95c9e636e19d19d970928a25cfb5" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setMFGLayer</name></member>
+      <member refid="interface_pos_product_request_1ae02a1019049cac7480942f1a3be4d842" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setOrderNumber</name></member>
+      <member refid="interface_pos_product_request_1ab3ee9495b11eae2efd6627bfa2ba75a7" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setOrderType</name></member>
+      <member refid="interface_pos_product_request_1ae86ba625e83de0659a86aad7ad569e3c" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setPriorityClass</name></member>
+      <member refid="interface_pos_product_request_1aec938343c6946654f44fba6cda3df0ea" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setProductMode</name></member>
+      <member refid="interface_pos_product_request_1a64950d421e4eb72c9986624a87289b65" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setProductSpecification</name></member>
+      <member refid="interface_pos_product_request_1adb848a16fa9f5cd5f982de359cee9a52" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setScheduleMode</name></member>
+      <member refid="interface_pos_product_request_1af3bb9a7d093eeaab457e324dd8dfd989" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setSourceLots</name></member>
+      <member refid="interface_pos_product_request_1aca1c3efb6bdf7bae8fa7b50c66f64bc4" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setStartBank</name></member>
+      <member refid="interface_pos_product_request_1aceeec8b39f8d0addb83befdbb48516d6" prot="public" virt="non-virtual"><scope>PosProductRequest</scope><name>setSubLotType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

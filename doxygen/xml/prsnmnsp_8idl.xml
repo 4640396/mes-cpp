@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="prsnmnsp_8idl" kind="file" language="IDL">
+    <compoundname>prsnmnsp.idl</compoundname>
+    <includes local="yes">prsnmnof.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/prsnmnsp.idl</label>
+        <link refid="prsnmnsp_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="2">
+        <label>prsnmnof.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_s_p_person_management_object_factory" prot="public">SPPersonManagementObjectFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>prsnmnof.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/30/96<sp/><sp/>25805<sp/><sp/><sp/>D.<sp/>Hidalgo<sp/><sp/><sp/><sp/><sp/>New<sp/>release.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>08/24/99<sp/>D9900183<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosPrivilegeGroup()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/09/99<sp/>D9900183<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delete<sp/>newPosBRMFunctionGroup()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosPPTFunctionGroup()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosSchedulerFunctionGroup()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/11/06<sp/>D8000035<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>IP<sp/>Protection<sp/>Support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosUserGroup()<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prsnmnof.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">PosBRMFunctionGroup;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">PosPPTFunctionGroup;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">PosSchedulerFunctionGroup;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="interface_s_p_person_management_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_s_p_person_management_object_factory" kindref="compound">SPPersonManagementObjectFactory</ref><sp/>:<sp/>CIMFWPersonManagementObjectFactory,<sp/>MOFW_TransManagedObjectFactory</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosAreaGroup<sp/>newPosAreaGroup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="interface_s_p_person_management_object_factory_1afec5697ae2d5ef7323c78ff27062591c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref><sp/><ref refid="interface_s_p_person_management_object_factory_1afec5697ae2d5ef7323c78ff27062591c" kindref="member">newPosAreaGroup</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosPrivilegeGroup<sp/>newPosPrivilegeGroup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="interface_s_p_person_management_object_factory_1aa8b4b24e9c7d31e7871a7cf5aaf28508" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref><sp/><ref refid="interface_s_p_person_management_object_factory_1aa8b4b24e9c7d31e7871a7cf5aaf28508" kindref="member">newPosPrivilegeGroup</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosUserGroup<sp/>newPosUserGroup();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="interface_s_p_person_management_object_factory_1a3e2c8b7144b6a28a05dcc13449ff1897" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref><sp/><ref refid="interface_s_p_person_management_object_factory_1a3e2c8b7144b6a28a05dcc13449ff1897" kindref="member">newPosUserGroup</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/prsnmnsp.idl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_plan_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPlanManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PlanManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pplmgr_8idl" local="no">pplmgr.idl</includes>
+    <innerclass refid="exception_pos_plan_manager_1_1_product_request_invalid_state_signal" prot="public">PosPlanManager::ProductRequestInvalidStateSignal</innerclass>
+    <innerclass refid="exception_pos_plan_manager_1_1_bank_retrieval_failed_signal" prot="public">PosPlanManager::BankRetrievalFailedSignal</innerclass>
+    <innerclass refid="exception_pos_plan_manager_1_1_product_request_not_found_signal" prot="public">PosPlanManager::ProductRequestNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_plan_manager_1_1_lot_schedule_not_found_signal" prot="public">PosPlanManager::LotScheduleNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_plan_manager_1ab6b0abc452831b6e1d1858d71df18667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlanManager::PosPlanManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPlanManager_init</name>
+        <qualifiedname>PosPlanManager::PosPlanManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="155" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1a6df8beee7b2f39b404f89c8c212c2c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_request" kindref="compound">PosProductRequest</ref></type>
+        <definition>PosProductRequest PosPlanManager::createProductRequestNamed</definition>
+        <argsstring>(in string identifier, in ProductSpecification aProductSpecification)</argsstring>
+        <name>createProductRequestNamed</name>
+        <qualifiedname>PosPlanManager::createProductRequestNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>in ProductSpecification</type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="168" column="21"/>
+        <references refid="interface_pos_plan_manager_1a6df8beee7b2f39b404f89c8c212c2c37">createProductRequestNamed</references>
+        <referencedby refid="interface_pos_plan_manager_1a6df8beee7b2f39b404f89c8c212c2c37">createProductRequestNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1a710484a37866c72a6c4203a1b9358243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlanManager::removeProductRequest</definition>
+        <argsstring>(in PosProductRequest aProductRequest)</argsstring>
+        <name>removeProductRequest</name>
+        <qualifiedname>PosPlanManager::removeProductRequest</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_request" kindref="compound">PosProductRequest</ref></type>
+          <declname>aProductRequest</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_plan_manager_1_1_product_request_not_found_signal" kindref="compound">ProductRequestNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="176" column="8"/>
+        <references refid="interface_pos_plan_manager_1a710484a37866c72a6c4203a1b9358243">removeProductRequest</references>
+        <referencedby refid="interface_pos_plan_manager_1a710484a37866c72a6c4203a1b9358243">removeProductRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1adbab7221d32b138f29bd2e3464ebfad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pplgl_8idl_1a803ca5c4e920fd6c403a4856360a11ea" kindref="member">PosProductRequestSequence</ref></type>
+        <definition>PosProductRequestSequence PosPlanManager::allProductRequests</definition>
+        <argsstring>()</argsstring>
+        <name>allProductRequests</name>
+        <qualifiedname>PosPlanManager::allProductRequests</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="183" column="29"/>
+        <references refid="interface_pos_plan_manager_1adbab7221d32b138f29bd2e3464ebfad6">allProductRequests</references>
+        <referencedby refid="interface_pos_plan_manager_1adbab7221d32b138f29bd2e3464ebfad6">allProductRequests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1aee1749c0adc2bcdc47b623521d215a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_request" kindref="compound">PosProductRequest</ref></type>
+        <definition>PosProductRequest PosPlanManager::findProductRequestNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findProductRequestNamed</name>
+        <qualifiedname>PosPlanManager::findProductRequestNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="189" column="21"/>
+        <references refid="interface_pos_plan_manager_1aee1749c0adc2bcdc47b623521d215a2e">findProductRequestNamed</references>
+        <referencedby refid="interface_pos_plan_manager_1aee1749c0adc2bcdc47b623521d215a2e">findProductRequestNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1acfe0068e7d0f972b62fdea9e3ff8d6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlanManager::removeAllProductRequests</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllProductRequests</name>
+        <qualifiedname>PosPlanManager::removeAllProductRequests</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="197" column="8"/>
+        <references refid="interface_pos_plan_manager_1acfe0068e7d0f972b62fdea9e3ff8d6f8">removeAllProductRequests</references>
+        <referencedby refid="interface_pos_plan_manager_1acfe0068e7d0f972b62fdea9e3ff8d6f8">removeAllProductRequests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1aee029d8b732fa178a336cf31fac43ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref></type>
+        <definition>PosLotSchedule PosPlanManager::createLotScheduleNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLotScheduleNamed</name>
+        <qualifiedname>PosPlanManager::createLotScheduleNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="203" column="18"/>
+        <references refid="interface_pos_plan_manager_1aee029d8b732fa178a336cf31fac43ee4">createLotScheduleNamed</references>
+        <referencedby refid="interface_pos_plan_manager_1aee029d8b732fa178a336cf31fac43ee4">createLotScheduleNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1a1e2b081fe7048f72884712d30874bfa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlanManager::removeLotSchedule</definition>
+        <argsstring>(in PosLotSchedule aLotSchedule)</argsstring>
+        <name>removeLotSchedule</name>
+        <qualifiedname>PosPlanManager::removeLotSchedule</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref></type>
+          <declname>aLotSchedule</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_plan_manager_1_1_lot_schedule_not_found_signal" kindref="compound">LotScheduleNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="209" column="8"/>
+        <references refid="interface_pos_plan_manager_1a1e2b081fe7048f72884712d30874bfa4">removeLotSchedule</references>
+        <referencedby refid="interface_pos_plan_manager_1a1e2b081fe7048f72884712d30874bfa4">removeLotSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1a18c493d89479bc83126bfe94eccccb97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_schedule" kindref="compound">PosLotSchedule</ref></type>
+        <definition>PosLotSchedule PosPlanManager::findLotScheduleNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLotScheduleNamed</name>
+        <qualifiedname>PosPlanManager::findLotScheduleNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="215" column="18"/>
+        <references refid="interface_pos_plan_manager_1a18c493d89479bc83126bfe94eccccb97">findLotScheduleNamed</references>
+        <referencedby refid="interface_pos_plan_manager_1a18c493d89479bc83126bfe94eccccb97">findLotScheduleNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_plan_manager_1a1d4f28f32bbeced7d8e6838c84719ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlanManager::removeAllLotSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLotSchedule</name>
+        <qualifiedname>PosPlanManager::removeAllLotSchedule</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplmgr.idl" line="221" column="8"/>
+        <references refid="interface_pos_plan_manager_1a1d4f28f32bbeced7d8e6838c84719ecd">removeAllLotSchedule</references>
+        <referencedby refid="interface_pos_plan_manager_1a1d4f28f32bbeced7d8e6838c84719ecd">removeAllLotSchedule</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PlanManager</label>
+      </node>
+      <node id="1">
+        <label>PosPlanManager</label>
+        <link refid="interface_pos_plan_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PlanManager</label>
+      </node>
+      <node id="1">
+        <label>PosPlanManager</label>
+        <link refid="interface_pos_plan_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pplmgr.idl" line="43" column="11" bodyfile="poscimfw/include/pplmgr.idl" bodystart="44" bodyend="228"/>
+    <listofallmembers>
+      <member refid="interface_pos_plan_manager_1adbab7221d32b138f29bd2e3464ebfad6" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>allProductRequests</name></member>
+      <member refid="interface_pos_plan_manager_1aee029d8b732fa178a336cf31fac43ee4" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>createLotScheduleNamed</name></member>
+      <member refid="interface_pos_plan_manager_1a6df8beee7b2f39b404f89c8c212c2c37" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>createProductRequestNamed</name></member>
+      <member refid="interface_pos_plan_manager_1a18c493d89479bc83126bfe94eccccb97" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>findLotScheduleNamed</name></member>
+      <member refid="interface_pos_plan_manager_1aee1749c0adc2bcdc47b623521d215a2e" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>findProductRequestNamed</name></member>
+      <member refid="interface_pos_plan_manager_1ab6b0abc452831b6e1d1858d71df18667" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>PosPlanManager_init</name></member>
+      <member refid="interface_pos_plan_manager_1a1d4f28f32bbeced7d8e6838c84719ecd" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>removeAllLotSchedule</name></member>
+      <member refid="interface_pos_plan_manager_1acfe0068e7d0f972b62fdea9e3ff8d6f8" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>removeAllProductRequests</name></member>
+      <member refid="interface_pos_plan_manager_1a1e2b081fe7048f72884712d30874bfa4" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>removeLotSchedule</name></member>
+      <member refid="interface_pos_plan_manager_1a710484a37866c72a6c4203a1b9358243" prot="public" virt="non-virtual"><scope>PosPlanManager</scope><name>removeProductRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

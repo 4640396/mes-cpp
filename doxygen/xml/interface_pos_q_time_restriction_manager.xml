@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_q_time_restriction_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosQTimeRestrictionManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pqtimmg_8idl" local="no">pqtimmg.idl</includes>
+    <innerclass refid="exception_pos_q_time_restriction_manager_1_1_q_time_restriction_not_found_signal" prot="public">PosQTimeRestrictionManager::QTimeRestrictionNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_q_time_restriction_manager_1a8e38779662cd35f0c193955444cb0bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosQTimeRestrictionManager::PosQTimeRestrictionManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosQTimeRestrictionManager_init</name>
+        <qualifiedname>PosQTimeRestrictionManager::PosQTimeRestrictionManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pqtimmg.idl" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_q_time_restriction_manager_1ad11f536fcf132594942f183fa311b219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_q_time_restriction" kindref="compound">PosQTimeRestriction</ref></type>
+        <definition>PosQTimeRestriction PosQTimeRestrictionManager::createQTimeRestriction</definition>
+        <argsstring>()</argsstring>
+        <name>createQTimeRestriction</name>
+        <qualifiedname>PosQTimeRestrictionManager::createQTimeRestriction</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pqtimmg.idl" line="87" column="23"/>
+        <references refid="interface_pos_q_time_restriction_manager_1ad11f536fcf132594942f183fa311b219">createQTimeRestriction</references>
+        <referencedby refid="interface_pos_q_time_restriction_manager_1ad11f536fcf132594942f183fa311b219">createQTimeRestriction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_q_time_restriction_manager_1aade7b435cc08175829b5962d73f1f5d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosQTimeRestrictionManager::removeQTimeRestriction</definition>
+        <argsstring>(in PosQTimeRestriction aQTimeRestriction)</argsstring>
+        <name>removeQTimeRestriction</name>
+        <qualifiedname>PosQTimeRestrictionManager::removeQTimeRestriction</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_q_time_restriction" kindref="compound">PosQTimeRestriction</ref></type>
+          <declname>aQTimeRestriction</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_q_time_restriction_manager_1_1_q_time_restriction_not_found_signal" kindref="compound">QTimeRestrictionNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pqtimmg.idl" line="94" column="8"/>
+        <references refid="interface_pos_q_time_restriction_manager_1aade7b435cc08175829b5962d73f1f5d4">removeQTimeRestriction</references>
+        <referencedby refid="interface_pos_q_time_restriction_manager_1aade7b435cc08175829b5962d73f1f5d4">removeQTimeRestriction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_q_time_restriction_manager_1ac2331e1fd33db906265569c719b855d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1a3ed8d1dca1b19f4a363c2a8806de2bd2" kindref="member">PosQTimeRestrictionSequence</ref></type>
+        <definition>PosQTimeRestrictionSequence PosQTimeRestrictionManager::allQTimeRestrictions</definition>
+        <argsstring>()</argsstring>
+        <name>allQTimeRestrictions</name>
+        <qualifiedname>PosQTimeRestrictionManager::allQTimeRestrictions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pqtimmg.idl" line="100" column="31"/>
+        <references refid="interface_pos_q_time_restriction_manager_1ac2331e1fd33db906265569c719b855d2">allQTimeRestrictions</references>
+        <referencedby refid="interface_pos_q_time_restriction_manager_1ac2331e1fd33db906265569c719b855d2">allQTimeRestrictions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_q_time_restriction_manager_1a3a4d4d53c05321d95f4ef56293d7d34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosQTimeRestrictionManager::removeAllQTimeRestrictions</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllQTimeRestrictions</name>
+        <qualifiedname>PosQTimeRestrictionManager::removeAllQTimeRestrictions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pqtimmg.idl" line="107" column="8"/>
+        <references refid="interface_pos_q_time_restriction_manager_1a3a4d4d53c05321d95f4ef56293d7d34d">removeAllQTimeRestrictions</references>
+        <referencedby refid="interface_pos_q_time_restriction_manager_1a3a4d4d53c05321d95f4ef56293d7d34d">removeAllQTimeRestrictions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosQTimeRestrictionManager</label>
+        <link refid="interface_pos_q_time_restriction_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosQTimeRestrictionManager</label>
+        <link refid="interface_pos_q_time_restriction_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pqtimmg.idl" line="38" column="11" bodyfile="poscimfw/include/pqtimmg.idl" bodystart="39" bodyend="115"/>
+    <listofallmembers>
+      <member refid="interface_pos_q_time_restriction_manager_1ac2331e1fd33db906265569c719b855d2" prot="public" virt="non-virtual"><scope>PosQTimeRestrictionManager</scope><name>allQTimeRestrictions</name></member>
+      <member refid="interface_pos_q_time_restriction_manager_1ad11f536fcf132594942f183fa311b219" prot="public" virt="non-virtual"><scope>PosQTimeRestrictionManager</scope><name>createQTimeRestriction</name></member>
+      <member refid="interface_pos_q_time_restriction_manager_1a8e38779662cd35f0c193955444cb0bbe" prot="public" virt="non-virtual"><scope>PosQTimeRestrictionManager</scope><name>PosQTimeRestrictionManager_init</name></member>
+      <member refid="interface_pos_q_time_restriction_manager_1a3a4d4d53c05321d95f4ef56293d7d34d" prot="public" virt="non-virtual"><scope>PosQTimeRestrictionManager</scope><name>removeAllQTimeRestrictions</name></member>
+      <member refid="interface_pos_q_time_restriction_manager_1aade7b435cc08175829b5962d73f1f5d4" prot="public" virt="non-virtual"><scope>PosQTimeRestrictionManager</scope><name>removeQTimeRestriction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

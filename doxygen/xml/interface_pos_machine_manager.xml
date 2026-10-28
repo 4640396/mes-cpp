@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_machine_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMachineManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MachineManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pmcmg_8idl" local="no">pmcmg.idl</includes>
+    <innerclass refid="exception_pos_machine_manager_1_1_eqp_monitor_not_found_signal" prot="public">PosMachineManager::EqpMonitorNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_machine_manager_1a9fcd45353586542bf263cae5312a873e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineManager::PosMachineManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineManager_init</name>
+        <qualifiedname>PosMachineManager::PosMachineManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1af0780af610218569cec24c7e58d7dd69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+        <definition>PosStorageMachine PosMachineManager::findStorageMachineNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findStorageMachineNamed</name>
+        <qualifiedname>PosMachineManager::findStorageMachineNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="86" column="21"/>
+        <references refid="interface_pos_machine_manager_1af0780af610218569cec24c7e58d7dd69">findStorageMachineNamed</references>
+        <referencedby refid="interface_pos_machine_manager_1af0780af610218569cec24c7e58d7dd69">findStorageMachineNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1a67e18895ab1e1565608ee721ab337285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref></type>
+        <definition>PosEqpMonitor PosMachineManager::createEqpMonitor</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createEqpMonitor</name>
+        <qualifiedname>PosMachineManager::createEqpMonitor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="93" column="17"/>
+        <references refid="interface_pos_machine_manager_1a67e18895ab1e1565608ee721ab337285">createEqpMonitor</references>
+        <referencedby refid="interface_pos_machine_manager_1a67e18895ab1e1565608ee721ab337285">createEqpMonitor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1a0b7386b82778df590db4ff59e4eb6169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref></type>
+        <definition>PosEqpMonitor PosMachineManager::findEqpMonitorNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findEqpMonitorNamed</name>
+        <qualifiedname>PosMachineManager::findEqpMonitorNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="100" column="17"/>
+        <references refid="interface_pos_machine_manager_1a0b7386b82778df590db4ff59e4eb6169">findEqpMonitorNamed</references>
+        <referencedby refid="interface_pos_machine_manager_1a0b7386b82778df590db4ff59e4eb6169">findEqpMonitorNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1a000058c5ea53633d82f1c6158866ea5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aac773716015174deccab9d54f8572266" kindref="member">PosEqpMonitorSequence</ref></type>
+        <definition>PosEqpMonitorSequence PosMachineManager::findEqpMonitorFor</definition>
+        <argsstring>(in string machineID, in string chamberID)</argsstring>
+        <name>findEqpMonitorFor</name>
+        <qualifiedname>PosMachineManager::findEqpMonitorFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>machineID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>chamberID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="107" column="25"/>
+        <references refid="interface_pos_machine_manager_1a000058c5ea53633d82f1c6158866ea5f">findEqpMonitorFor</references>
+        <referencedby refid="interface_pos_machine_manager_1a000058c5ea53633d82f1c6158866ea5f">findEqpMonitorFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1aed113dd09c0ed02579e6f5664dad5236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineManager::removeEqpMonitor</definition>
+        <argsstring>(in PosEqpMonitor aEqpMonitor)</argsstring>
+        <name>removeEqpMonitor</name>
+        <qualifiedname>PosMachineManager::removeEqpMonitor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref></type>
+          <declname>aEqpMonitor</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="114" column="8"/>
+        <references refid="interface_pos_machine_manager_1aed113dd09c0ed02579e6f5664dad5236">removeEqpMonitor</references>
+        <referencedby refid="interface_pos_machine_manager_1aed113dd09c0ed02579e6f5664dad5236">removeEqpMonitor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1adb92fced4c172474a751004b540626aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aac773716015174deccab9d54f8572266" kindref="member">PosEqpMonitorSequence</ref></type>
+        <definition>PosEqpMonitorSequence PosMachineManager::allEqpMonitors</definition>
+        <argsstring>()</argsstring>
+        <name>allEqpMonitors</name>
+        <qualifiedname>PosMachineManager::allEqpMonitors</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="121" column="25"/>
+        <references refid="interface_pos_machine_manager_1adb92fced4c172474a751004b540626aa">allEqpMonitors</references>
+        <referencedby refid="interface_pos_machine_manager_1adb92fced4c172474a751004b540626aa">allEqpMonitors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1aff1f601c6cb7c305fcc0149c208713a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineManager::removeAllEqpMonitors</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllEqpMonitors</name>
+        <qualifiedname>PosMachineManager::removeAllEqpMonitors</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="128" column="8"/>
+        <references refid="interface_pos_machine_manager_1aff1f601c6cb7c305fcc0149c208713a3">removeAllEqpMonitors</references>
+        <referencedby refid="interface_pos_machine_manager_1aff1f601c6cb7c305fcc0149c208713a3">removeAllEqpMonitors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_manager_1a03e16216066acb514528099844a7b7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineManager::removeEqpMonitorFor</definition>
+        <argsstring>(in string machineID, in string chamberID)</argsstring>
+        <name>removeEqpMonitorFor</name>
+        <qualifiedname>PosMachineManager::removeEqpMonitorFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>machineID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>chamberID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcmg.idl" line="135" column="8"/>
+        <references refid="interface_pos_machine_manager_1a03e16216066acb514528099844a7b7c5">removeEqpMonitorFor</references>
+        <referencedby refid="interface_pos_machine_manager_1a03e16216066acb514528099844a7b7c5">removeEqpMonitorFor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>MachineManager</label>
+      </node>
+      <node id="1">
+        <label>PosMachineManager</label>
+        <link refid="interface_pos_machine_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>MachineManager</label>
+      </node>
+      <node id="1">
+        <label>PosMachineManager</label>
+        <link refid="interface_pos_machine_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmcmg.idl" line="39" column="11" bodyfile="poscimfw/include/pmcmg.idl" bodystart="39" bodyend="143"/>
+    <listofallmembers>
+      <member refid="interface_pos_machine_manager_1adb92fced4c172474a751004b540626aa" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>allEqpMonitors</name></member>
+      <member refid="interface_pos_machine_manager_1a67e18895ab1e1565608ee721ab337285" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>createEqpMonitor</name></member>
+      <member refid="interface_pos_machine_manager_1a000058c5ea53633d82f1c6158866ea5f" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>findEqpMonitorFor</name></member>
+      <member refid="interface_pos_machine_manager_1a0b7386b82778df590db4ff59e4eb6169" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>findEqpMonitorNamed</name></member>
+      <member refid="interface_pos_machine_manager_1af0780af610218569cec24c7e58d7dd69" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>findStorageMachineNamed</name></member>
+      <member refid="interface_pos_machine_manager_1a9fcd45353586542bf263cae5312a873e" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>PosMachineManager_init</name></member>
+      <member refid="interface_pos_machine_manager_1aff1f601c6cb7c305fcc0149c208713a3" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>removeAllEqpMonitors</name></member>
+      <member refid="interface_pos_machine_manager_1aed113dd09c0ed02579e6f5664dad5236" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>removeEqpMonitor</name></member>
+      <member refid="interface_pos_machine_manager_1a03e16216066acb514528099844a7b7c5" prot="public" virt="non-virtual"><scope>PosMachineManager</scope><name>removeEqpMonitorFor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

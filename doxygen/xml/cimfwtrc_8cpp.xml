@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="cimfwtrc_8cpp" kind="file" language="C++">
+    <compoundname>cimfwtrc.cpp</compoundname>
+    <includes local="no">iostream.h</includes>
+    <includes local="yes">cimfwtrc.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/cimfwtrc.cpp</label>
+        <link refid="cimfwtrc_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cimfwtrc.hpp</label>
+      </node>
+      <node id="2">
+        <label>iostream.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="cimfwtrc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/cimfwtrc.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:33:16 [ 7/13/07 19:33:18 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwtrc.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/cimfwtrc.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cimfwtrc_8cpp_1acd2bbed27dc1c2be0b071c1c9823f137" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cimfw_bodebug_var_checked</definition>
+        <argsstring></argsstring>
+        <name>cimfw_bodebug_var_checked</name>
+        <initializer>= FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwtrc.cpp" line="27" column="5" bodyfile="smtchcmf/frmwrkgl/cimfwtrc.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="cimfwtrc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/cimfwtrc.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:33:16<sp/>[<sp/>7/13/07<sp/>19:33:18<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>cimfwtrc.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>CIMFWTRC_DECLARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;wtypes.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwtrc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="cimfwtrc_8cpp_1acd2bbed27dc1c2be0b071c1c9823f137" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cimfwtrc_8cpp_1acd2bbed27dc1c2be0b071c1c9823f137" kindref="member">cimfw_bodebug_var_checked</ref><sp/>=<sp/>FALSE;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/cimfwtrc.cpp"/>
+  </compounddef>
+</doxygen>

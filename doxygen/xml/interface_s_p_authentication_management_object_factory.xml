@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_authentication_management_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPAuthenticationManagementObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="athmnsp_8idl" local="no">athmnsp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_authentication_management_object_factory_1ac3bf37fdd61e9ba33ac53af2c06033d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_authentication_manager" kindref="compound">PosAuthenticationManager</ref></type>
+        <definition>PosAuthenticationManager SPAuthenticationManagementObjectFactory::newPosAuthenticationManager</definition>
+        <argsstring>()</argsstring>
+        <name>newPosAuthenticationManager</name>
+        <qualifiedname>SPAuthenticationManagementObjectFactory::newPosAuthenticationManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/athmnsp.idl" line="24" column="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPAuthenticationManagementObjectFactory</label>
+        <link refid="interface_s_p_authentication_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPAuthenticationManagementObjectFactory</label>
+        <link refid="interface_s_p_authentication_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/athmnsp.idl" line="22" column="11" bodyfile="poscimfw/include/athmnsp.idl" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+      <member refid="interface_s_p_authentication_management_object_factory_1ac3bf37fdd61e9ba33ac53af2c06033d9" prot="public" virt="non-virtual"><scope>SPAuthenticationManagementObjectFactory</scope><name>newPosAuthenticationManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

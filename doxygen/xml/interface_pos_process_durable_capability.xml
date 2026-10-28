@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_process_durable_capability" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProcessDurableCapability</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="ppcdrcp_8idl" local="no">ppcdrcp.idl</includes>
+    <innerclass refid="exception_pos_process_durable_capability_1_1_process_durable_retrieval_failed_signal" prot="public">PosProcessDurableCapability::ProcessDurableRetrievalFailedSignal</innerclass>
+    <innerclass refid="exception_pos_process_durable_capability_1_1_process_durable_duplicate_signal" prot="public">PosProcessDurableCapability::ProcessDurableDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_process_durable_capability_1_1_process_durable_not_found_signal" prot="public">PosProcessDurableCapability::ProcessDurableNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_process_durable_capability_1_1_set_fixture_group_info_failed_signal" prot="public">PosProcessDurableCapability::SetFixtureGroupInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_process_durable_capability_1_1_set_reticle_group_info_failed_signal" prot="public">PosProcessDurableCapability::SetReticleGroupInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1ab79032a1692a3a931d81e98abdfd0ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::PosProcessDurableCapability_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosProcessDurableCapability_init</name>
+        <qualifiedname>PosProcessDurableCapability::PosProcessDurableCapability_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="184" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1aec4036a75a950cca9e1c4d304cb84b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosProcessDurableCapability::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="196" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1aec4036a75a950cca9e1c4d304cb84b78">setIdentifier</references>
+        <referencedby refid="interface_pos_process_durable_capability_1aec4036a75a950cca9e1c4d304cb84b78">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a51744cf7071a4b4dcd56e3e8dc2acbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProcessDurableCapability::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosProcessDurableCapability::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="202" column="10"/>
+        <references refid="interface_pos_process_durable_capability_1a51744cf7071a4b4dcd56e3e8dc2acbc1">getIdentifier</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a51744cf7071a4b4dcd56e3e8dc2acbc1">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a4fb92589dd1026180153e0fd70f81ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1abae53ea3ed370e5862f497a9653e62ea" kindref="member">PosProcessDurableSequence</ref></type>
+        <definition>PosProcessDurableSequence PosProcessDurableCapability::allAssignedProcessDurables</definition>
+        <argsstring>()</argsstring>
+        <name>allAssignedProcessDurables</name>
+        <qualifiedname>PosProcessDurableCapability::allAssignedProcessDurables</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="208" column="29"/>
+        <references refid="interface_pos_process_durable_capability_1a4fb92589dd1026180153e0fd70f81ad4">allAssignedProcessDurables</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a4fb92589dd1026180153e0fd70f81ad4">allAssignedProcessDurables</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a2422fd832538b96c83b1adea3ef7fcb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::addAssignedProcessDurable</definition>
+        <argsstring>(in PosProcessDurable aProcessDurable)</argsstring>
+        <name>addAssignedProcessDurable</name>
+        <qualifiedname>PosProcessDurableCapability::addAssignedProcessDurable</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_durable" kindref="compound">PosProcessDurable</ref></type>
+          <declname>aProcessDurable</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_durable_capability_1_1_process_durable_duplicate_signal" kindref="compound">ProcessDurableDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="214" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1a2422fd832538b96c83b1adea3ef7fcb9">addAssignedProcessDurable</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a2422fd832538b96c83b1adea3ef7fcb9">addAssignedProcessDurable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1ac8471d0475e74a74514d2d11075f8d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::removeAssignedProcessDurable</definition>
+        <argsstring>(in PosProcessDurable aProcessDurable)</argsstring>
+        <name>removeAssignedProcessDurable</name>
+        <qualifiedname>PosProcessDurableCapability::removeAssignedProcessDurable</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_durable" kindref="compound">PosProcessDurable</ref></type>
+          <declname>aProcessDurable</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_durable_capability_1_1_process_durable_not_found_signal" kindref="compound">ProcessDurableNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="221" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1ac8471d0475e74a74514d2d11075f8d01">removeAssignedProcessDurable</references>
+        <referencedby refid="interface_pos_process_durable_capability_1ac8471d0475e74a74514d2d11075f8d01">removeAssignedProcessDurable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a98cfc117975677fc3223abc193f34562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::removeAllAssignedProcessDurables</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllAssignedProcessDurables</name>
+        <qualifiedname>PosProcessDurableCapability::removeAllAssignedProcessDurables</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_process_durable_capability_1_1_process_durable_not_found_signal" kindref="compound">ProcessDurableNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="228" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1a98cfc117975677fc3223abc193f34562">removeAllAssignedProcessDurables</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a98cfc117975677fc3223abc193f34562">removeAllAssignedProcessDurables</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1ad9119ba1eed2b8408d46fe0c1dd3148d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_durable" kindref="compound">PosProcessDurable</ref></type>
+        <definition>PosProcessDurable PosProcessDurableCapability::findAssignedProcessDurableNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findAssignedProcessDurableNamed</name>
+        <qualifiedname>PosProcessDurableCapability::findAssignedProcessDurableNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="234" column="21"/>
+        <references refid="interface_pos_process_durable_capability_1ad9119ba1eed2b8408d46fe0c1dd3148d">findAssignedProcessDurableNamed</references>
+        <referencedby refid="interface_pos_process_durable_capability_1ad9119ba1eed2b8408d46fe0c1dd3148d">findAssignedProcessDurableNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1aecf7db4bb68a640e62c5255f845b8861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setCategory</definition>
+        <argsstring>(in string category)</argsstring>
+        <name>setCategory</name>
+        <qualifiedname>PosProcessDurableCapability::setCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>category</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="241" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1aecf7db4bb68a640e62c5255f845b8861">setCategory</references>
+        <referencedby refid="interface_pos_process_durable_capability_1aecf7db4bb68a640e62c5255f845b8861">setCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a5a5933cb3de35eab68467b979d3df90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProcessDurableCapability::getCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getCategory</name>
+        <qualifiedname>PosProcessDurableCapability::getCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="248" column="10"/>
+        <references refid="interface_pos_process_durable_capability_1a5a5933cb3de35eab68467b979d3df90a">getCategory</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a5a5933cb3de35eab68467b979d3df90a">getCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a1f29e411607ecaaaedc0d2730891f3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setSubCategory</definition>
+        <argsstring>(in string subCategory)</argsstring>
+        <name>setSubCategory</name>
+        <qualifiedname>PosProcessDurableCapability::setSubCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="254" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1a1f29e411607ecaaaedc0d2730891f3dd">setSubCategory</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a1f29e411607ecaaaedc0d2730891f3dd">setSubCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a0d3a7f8f53e95bb1115ebd530b3f862b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProcessDurableCapability::getSubCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getSubCategory</name>
+        <qualifiedname>PosProcessDurableCapability::getSubCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="260" column="10"/>
+        <references refid="interface_pos_process_durable_capability_1a0d3a7f8f53e95bb1115ebd530b3f862b">getSubCategory</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a0d3a7f8f53e95bb1115ebd530b3f862b">getSubCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a016d06830dadfceb36bf0fa3546e7b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setProcessDurableCapabilityDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setProcessDurableCapabilityDescription</name>
+        <qualifiedname>PosProcessDurableCapability::setProcessDurableCapabilityDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="266" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1a016d06830dadfceb36bf0fa3546e7b6e">setProcessDurableCapabilityDescription</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a016d06830dadfceb36bf0fa3546e7b6e">setProcessDurableCapabilityDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a91cd06dad3e8e39f99dd196d9dc058a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProcessDurableCapability::getProcessDurableCapabilityDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessDurableCapabilityDescription</name>
+        <qualifiedname>PosProcessDurableCapability::getProcessDurableCapabilityDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="272" column="10"/>
+        <references refid="interface_pos_process_durable_capability_1a91cd06dad3e8e39f99dd196d9dc058a5">getProcessDurableCapabilityDescription</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a91cd06dad3e8e39f99dd196d9dc058a5">getProcessDurableCapabilityDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a089be4b02e7cf326592321aaf7ca2de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setFixtureGroupInfo</definition>
+        <argsstring>(in brFixtureGroupInfo fixtureGroupInfo)</argsstring>
+        <name>setFixtureGroupInfo</name>
+        <qualifiedname>PosProcessDurableCapability::setFixtureGroupInfo</qualifiedname>
+        <param>
+          <type>in brFixtureGroupInfo</type>
+          <declname>fixtureGroupInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_durable_capability_1_1_set_fixture_group_info_failed_signal" kindref="compound">SetFixtureGroupInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="279" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1a089be4b02e7cf326592321aaf7ca2de5">setFixtureGroupInfo</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a089be4b02e7cf326592321aaf7ca2de5">setFixtureGroupInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1afc52e5800964c4edb710ecdbb3bd417d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDurableCapability::setReticleGroupInfo</definition>
+        <argsstring>(in brReticleGroupInfo reticleGroupInfo)</argsstring>
+        <name>setReticleGroupInfo</name>
+        <qualifiedname>PosProcessDurableCapability::setReticleGroupInfo</qualifiedname>
+        <param>
+          <type>in brReticleGroupInfo</type>
+          <declname>reticleGroupInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_durable_capability_1_1_set_reticle_group_info_failed_signal" kindref="compound">SetReticleGroupInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="286" column="8"/>
+        <references refid="interface_pos_process_durable_capability_1afc52e5800964c4edb710ecdbb3bd417d">setReticleGroupInfo</references>
+        <referencedby refid="interface_pos_process_durable_capability_1afc52e5800964c4edb710ecdbb3bd417d">setReticleGroupInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_durable_capability_1a11e6d9bb69f2433822aa64faadafb47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_durable" kindref="compound">PosProcessDurable</ref></type>
+        <definition>PosProcessDurable PosProcessDurableCapability::findAvailableProcessDurableFor</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>findAvailableProcessDurableFor</name>
+        <qualifiedname>PosProcessDurableCapability::findAvailableProcessDurableFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdrcp.idl" line="292" column="21"/>
+        <references refid="interface_pos_process_durable_capability_1a11e6d9bb69f2433822aa64faadafb47b">findAvailableProcessDurableFor</references>
+        <referencedby refid="interface_pos_process_durable_capability_1a11e6d9bb69f2433822aa64faadafb47b">findAvailableProcessDurableFor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosProcessDurableCapability</label>
+        <link refid="interface_pos_process_durable_capability"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosProcessDurableCapability</label>
+        <link refid="interface_pos_process_durable_capability"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ppcdrcp.idl" line="48" column="11" bodyfile="poscimfw/include/ppcdrcp.idl" bodystart="49" bodyend="298"/>
+    <listofallmembers>
+      <member refid="interface_pos_process_durable_capability_1a2422fd832538b96c83b1adea3ef7fcb9" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>addAssignedProcessDurable</name></member>
+      <member refid="interface_pos_process_durable_capability_1a4fb92589dd1026180153e0fd70f81ad4" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>allAssignedProcessDurables</name></member>
+      <member refid="interface_pos_process_durable_capability_1ad9119ba1eed2b8408d46fe0c1dd3148d" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>findAssignedProcessDurableNamed</name></member>
+      <member refid="interface_pos_process_durable_capability_1a11e6d9bb69f2433822aa64faadafb47b" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>findAvailableProcessDurableFor</name></member>
+      <member refid="interface_pos_process_durable_capability_1a5a5933cb3de35eab68467b979d3df90a" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>getCategory</name></member>
+      <member refid="interface_pos_process_durable_capability_1a51744cf7071a4b4dcd56e3e8dc2acbc1" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_process_durable_capability_1a91cd06dad3e8e39f99dd196d9dc058a5" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>getProcessDurableCapabilityDescription</name></member>
+      <member refid="interface_pos_process_durable_capability_1a0d3a7f8f53e95bb1115ebd530b3f862b" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>getSubCategory</name></member>
+      <member refid="interface_pos_process_durable_capability_1ab79032a1692a3a931d81e98abdfd0ac8" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>PosProcessDurableCapability_init</name></member>
+      <member refid="interface_pos_process_durable_capability_1a98cfc117975677fc3223abc193f34562" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>removeAllAssignedProcessDurables</name></member>
+      <member refid="interface_pos_process_durable_capability_1ac8471d0475e74a74514d2d11075f8d01" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>removeAssignedProcessDurable</name></member>
+      <member refid="interface_pos_process_durable_capability_1aecf7db4bb68a640e62c5255f845b8861" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setCategory</name></member>
+      <member refid="interface_pos_process_durable_capability_1a089be4b02e7cf326592321aaf7ca2de5" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setFixtureGroupInfo</name></member>
+      <member refid="interface_pos_process_durable_capability_1aec4036a75a950cca9e1c4d304cb84b78" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_process_durable_capability_1a016d06830dadfceb36bf0fa3546e7b6e" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setProcessDurableCapabilityDescription</name></member>
+      <member refid="interface_pos_process_durable_capability_1afc52e5800964c4edb710ecdbb3bd417d" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setReticleGroupInfo</name></member>
+      <member refid="interface_pos_process_durable_capability_1a1f29e411607ecaaaedc0d2730891f3dd" prot="public" virt="non-virtual"><scope>PosProcessDurableCapability</scope><name>setSubCategory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

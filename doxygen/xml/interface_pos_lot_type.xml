@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_lot_type" kind="interface" language="IDL" prot="public">
+    <compoundname>PosLotType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="plottype_8idl" local="no">plottype.idl</includes>
+    <innerclass refid="exception_pos_lot_type_1_1_set_lot_type_info_failed_signal" prot="public">PosLotType::SetLotTypeInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_lot_type_1_1_product_specification_not_found_signal" prot="public">PosLotType::ProductSpecificationNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_lot_type_1a27deedb2ccebf3f24d49b735517d8e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotType::PosLotType_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosLotType_init</name>
+        <qualifiedname>PosLotType::PosLotType_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="103" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1a5eff8e1fe5f415b0137fdf46383848cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotType::setLotTypeInfo</definition>
+        <argsstring>(in brLotTypeInfo lotTypeInfo)</argsstring>
+        <name>setLotTypeInfo</name>
+        <qualifiedname>PosLotType::setLotTypeInfo</qualifiedname>
+        <param>
+          <type>in brLotTypeInfo</type>
+          <declname>lotTypeInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_lot_type_1_1_set_lot_type_info_failed_signal" kindref="compound">SetLotTypeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="109" column="8"/>
+        <references refid="interface_pos_lot_type_1a5eff8e1fe5f415b0137fdf46383848cd">setLotTypeInfo</references>
+        <referencedby refid="interface_pos_lot_type_1a5eff8e1fe5f415b0137fdf46383848cd">setLotTypeInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1ab466ab3be6717cf320c156cbf5b0fdd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotType::setLastUsedNumber</definition>
+        <argsstring>(in long number)</argsstring>
+        <name>setLastUsedNumber</name>
+        <qualifiedname>PosLotType::setLastUsedNumber</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>number</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="115" column="8"/>
+        <references refid="interface_pos_lot_type_1ab466ab3be6717cf320c156cbf5b0fdd4">setLastUsedNumber</references>
+        <referencedby refid="interface_pos_lot_type_1ab466ab3be6717cf320c156cbf5b0fdd4">setLastUsedNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1a91b0dddd75a39933f69119fbff373949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosLotType::getLastUsedNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getLastUsedNumber</name>
+        <qualifiedname>PosLotType::getLastUsedNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="121" column="8"/>
+        <references refid="interface_pos_lot_type_1a91b0dddd75a39933f69119fbff373949">getLastUsedNumber</references>
+        <referencedby refid="interface_pos_lot_type_1a91b0dddd75a39933f69119fbff373949">getLastUsedNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1a6720ee476da2499390a88fdbab83814a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLotType::nextIdentifier</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification, in string subLotType)</argsstring>
+        <name>nextIdentifier</name>
+        <qualifiedname>PosLotType::nextIdentifier</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_lot_type_1_1_product_specification_not_found_signal" kindref="compound">ProductSpecificationNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="127" column="10"/>
+        <references refid="interface_pos_lot_type_1a6720ee476da2499390a88fdbab83814a">nextIdentifier</references>
+        <referencedby refid="interface_pos_lot_type_1a6720ee476da2499390a88fdbab83814a">nextIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1a7e0acb04c5905637bc797a2daf007ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotType::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosLotType::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="133" column="8"/>
+        <references refid="interface_pos_lot_type_1a7e0acb04c5905637bc797a2daf007ca2">setIdentifier</references>
+        <referencedby refid="interface_pos_lot_type_1a7e0acb04c5905637bc797a2daf007ca2">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1aaf72260b34e59e20c1b39e927db65132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLotType::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosLotType::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="139" column="10"/>
+        <references refid="interface_pos_lot_type_1aaf72260b34e59e20c1b39e927db65132">getIdentifier</references>
+        <referencedby refid="interface_pos_lot_type_1aaf72260b34e59e20c1b39e927db65132">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_type_1a4054725a93fa4a14112cb1179e98c952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a09500f36d518fae3bccd2f3ff2ec837f" kindref="member">PosSubLotTypeSequence</ref></type>
+        <definition>PosSubLotTypeSequence PosLotType::allSubLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>allSubLotTypes</name>
+        <qualifiedname>PosLotType::allSubLotTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plottype.idl" line="146" column="25"/>
+        <references refid="interface_pos_lot_type_1a4054725a93fa4a14112cb1179e98c952">allSubLotTypes</references>
+        <referencedby refid="interface_pos_lot_type_1a4054725a93fa4a14112cb1179e98c952">allSubLotTypes</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLotType</label>
+        <link refid="interface_pos_lot_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLotType</label>
+        <link refid="interface_pos_lot_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/plottype.idl" line="40" column="11" bodyfile="poscimfw/include/plottype.idl" bodystart="40" bodyend="154"/>
+    <listofallmembers>
+      <member refid="interface_pos_lot_type_1a4054725a93fa4a14112cb1179e98c952" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>allSubLotTypes</name></member>
+      <member refid="interface_pos_lot_type_1aaf72260b34e59e20c1b39e927db65132" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_lot_type_1a91b0dddd75a39933f69119fbff373949" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>getLastUsedNumber</name></member>
+      <member refid="interface_pos_lot_type_1a6720ee476da2499390a88fdbab83814a" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>nextIdentifier</name></member>
+      <member refid="interface_pos_lot_type_1a27deedb2ccebf3f24d49b735517d8e41" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>PosLotType_init</name></member>
+      <member refid="interface_pos_lot_type_1a7e0acb04c5905637bc797a2daf007ca2" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_lot_type_1ab466ab3be6717cf320c156cbf5b0fdd4" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>setLastUsedNumber</name></member>
+      <member refid="interface_pos_lot_type_1a5eff8e1fe5f415b0137fdf46383848cd" prot="public" virt="non-virtual"><scope>PosLotType</scope><name>setLotTypeInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pptsmggl_8idl" kind="file" language="IDL">
+    <compoundname>pptsmggl.idl</compoundname>
+    <includes local="yes">fwcommon.idl</includes>
+    <includedby refid="pbom_8idl" local="yes">poscimfw/include/pbom.idl</includedby>
+    <includedby refid="pptsmg_8idl" local="yes">poscimfw/include/pptsmg.idl</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pptsmggl.idl</label>
+        <link refid="pptsmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fwcommon.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pbom.idl</label>
+        <link refid="pbom_8idl"/>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pptsmg.idl</label>
+        <link refid="pptsmg_8idl"/>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pptsmggl.idl</label>
+        <link refid="pptsmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_parts__struct" prot="public">posParts_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pptsmggl_8idl_1aba53000a6b53e889098a6f48ac9fd7d1" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosBOM&gt; PosBOMSequence</definition>
+        <argsstring></argsstring>
+        <name>PosBOMSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmggl.idl" line="36" column="18" bodyfile="poscimfw/include/pptsmggl.idl" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" prot="public" static="no">
+        <type><ref refid="structpos_parts__struct" kindref="compound">posParts_struct</ref></type>
+        <definition>typedef posParts_struct posParts</definition>
+        <argsstring></argsstring>
+        <name>posParts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmggl.idl" line="72" column="25" bodyfile="poscimfw/include/pptsmggl.idl" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pptsmggl_8idl_1af39a33d97a27e01ce2e6763f20963683" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" kindref="member">posParts</ref> &gt;</type>
+        <definition>typedef sequence&lt;posParts&gt; PosPartsSequence</definition>
+        <argsstring></argsstring>
+        <name>PosPartsSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmggl.idl" line="78" column="18" bodyfile="poscimfw/include/pptsmggl.idl" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosPartsGlobals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::SiView_Parts_Management_Functional_Group::SiView_Parts_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>E:\superpos\src\spclass\source\poscimfw\pptsmg\pptsmggl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw023.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_2_3_spcl,<sp/>mm_srv_2_3_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosPartsGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosPartsGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwcommon.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosBOMSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosBOM&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="pptsmggl_8idl_1aba53000a6b53e889098a6f48ac9fd7d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosBOM&gt;<sp/><ref refid="pptsmggl_8idl_1aba53000a6b53e889098a6f48ac9fd7d1" kindref="member">PosBOMSequence</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structpos_parts__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_parts__struct" kindref="compound">posParts_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posParts_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posParts_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structpos_parts__struct_1afbca040bd5ab110985f32bb0458bd81c" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_parts__struct_1afbca040bd5ab110985f32bb0458bd81c" kindref="member">parts</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structpos_parts__struct_1a5b6b07c72c8ecf2ee4b94816b1a8c6ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structpos_parts__struct_1a5b6b07c72c8ecf2ee4b94816b1a8c6ea" kindref="member">quantity</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structpos_parts__struct_1a70ac383798c0bcc6a6b9d6ee684e1dd1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structpos_parts__struct_1a70ac383798c0bcc6a6b9d6ee684e1dd1" kindref="member">serialControlFlag</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posParts_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posParts_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posParts<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>typedef<sp/>struct<sp/>posParts_struct{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/>objectIdentifier<sp/>parts;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/>long<sp/>quantity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/>}<sp/>posParts;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_parts__struct" kindref="compound">posParts_struct</ref><sp/><ref refid="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" kindref="member">posParts</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>SiView<sp/>Parts<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="pptsmggl_8idl_1af39a33d97a27e01ce2e6763f20963683" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posParts&gt;<sp/><ref refid="pptsmggl_8idl_1af39a33d97a27e01ce2e6763f20963683" kindref="member">PosPartsSequence</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pptsmggl.idl"/>
+  </compounddef>
+</doxygen>

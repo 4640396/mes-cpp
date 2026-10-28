@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pdp_8idl" kind="file" language="IDL">
+    <compoundname>pdp.idl</compoundname>
+    <includes local="yes">timstamp.idl</includes>
+    <includes local="yes">duration.idl</includes>
+    <includes local="yes">MOFW.idl</includes>
+    <includes local="yes">dsptcher.idl</includes>
+    <includes refid="pdpgl_8idl" local="yes">pdpgl.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pdp.idl</label>
+        <link refid="pdp_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pdpgl.idl</label>
+        <link refid="pdpgl_8idl"/>
+      </node>
+      <node id="4">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="5">
+        <label>dsptcher.idl</label>
+      </node>
+      <node id="3">
+        <label>duration.idl</label>
+      </node>
+      <node id="2">
+        <label>timstamp.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_dispatcher" prot="public">PosDispatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosDispatcher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Schedule_Management_Functional_Group::Siview_Dispatching_Management__Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\superpos\src\spclass\source\poscimfw\pdp\pdp.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosDispatcher_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosDispatcher_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;timstamp.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;duration.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFW.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dsptcher.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pdpgl_8idl" kindref="compound">pdpgl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_what_next_logic_base" kindref="compound">PosWhatNextLogicBase</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot" kindref="compound">PosLot</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosDispatcher<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>class<sp/>is<sp/>subclass<sp/>of<sp/>Dispatcher<sp/>for<sp/>SiView.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>One<sp/>Dispatcher<sp/>instance<sp/>exists<sp/>per<sp/>Machine<sp/>instance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>The<sp/>following<sp/>methods<sp/>should<sp/>be<sp/>overridden<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/>-<sp/>addDispatchableObject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/>-<sp/>removeDispatchableObject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/>-<sp/>whatNextForMachine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="interface_pos_dispatcher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_dispatcher" kindref="compound">PosDispatcher</ref><sp/>:<sp/>Dispatcher,<sp/>MOFW_CachedManagedObject<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosDispatcher.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosDispatcher.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>addToQueue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Adds<sp/>a<sp/>lot<sp/>into<sp/>waiting<sp/>queue<sp/>of<sp/>the<sp/>reciever.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="interface_pos_dispatcher_1ab356f3f6945bc166ea21f4f40648f658" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1ab356f3f6945bc166ea21f4f40648f658" kindref="member">addToQueue</ref>(in<sp/><ref refid="interface_pos_lot" kindref="compound">PosLot</ref><sp/>aLot)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeFromQueue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>the<sp/>lot<sp/>from<sp/>the<sp/>queue<sp/>of<sp/>waiting<sp/>lots<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>reciever.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="interface_pos_dispatcher_1a6ec011d07d677cd9d09ccbf9d517e95f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a6ec011d07d677cd9d09ccbf9d517e95f" kindref="member">removeFromQueue</ref>(in<sp/><ref refid="interface_pos_lot" kindref="compound">PosLot</ref><sp/>aLot)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>currentWhatNextForMachine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>current<sp/>time<sp/>is<sp/>over<sp/>the<sp/>next<sp/>whatNext<sp/>effective</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>time,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>searches<sp/>effective<sp/>one<sp/>from<sp/>the<sp/>effective</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>whatNextLogic<sp/>sequence,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>and<sp/>sets<sp/>it<sp/>to<sp/>the<sp/>current<sp/>whatNext<sp/>logic,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>and<sp/>sets<sp/>the<sp/>next<sp/>effectiveDateTime<sp/>to<sp/>the<sp/>next</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>whatNext<sp/>effective<sp/>time<sp/>if<sp/>the<sp/>next<sp/>member<sp/>exists.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>the<sp/>next<sp/>member<sp/>doesn&apos;t<sp/>exist,<sp/>sets<sp/>NULL<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>whatNext<sp/>effective<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>*Note:<sp/>If<sp/>the<sp/>next<sp/>whatNext<sp/>effective<sp/>time<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>set,<sp/>the<sp/>current<sp/>logic<sp/>doesn&apos;t<sp/>have<sp/>to<sp/>be<sp/>replaced.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="interface_pos_dispatcher_1a897c04dbdc3a9326728dfe7c73956bf9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" kindref="member">posEffectiveWhatNextLogic</ref><sp/><ref refid="interface_pos_dispatcher_1a897c04dbdc3a9326728dfe7c73956bf9" kindref="member">currentWhatNextForMachine</ref>()</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getEffectiveWhatNextLogic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>sequence<sp/>of<sp/>effective<sp/>WhatNextLogic<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>effective<sp/>date<sp/>&amp;<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" kindref="member">PosEffectiveWhatNextLogicSequence</ref><sp/><ref refid="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65" kindref="member">getEffectiveWhatNextLogic</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setEffectiveWhatNextLogic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>sequence<sp/>of<sp/>effective<sp/>WhatNextLogic<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>effective<sp/>date<sp/>and<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>theCurrentWhatNextLogic<sp/>by<sp/>using<sp/>effective<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Resets<sp/>theNextWhatNextEffectiveTime.<sp/>If<sp/>there<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>no<sp/>next<sp/>one,<sp/>sets<sp/>NULL.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732" kindref="member">setEffectiveWhatNextLogic</ref>(in<sp/><ref refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" kindref="member">PosEffectiveWhatNextLogicSequence</ref><sp/>effectiveWhatNextLogic)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosDispatcher_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Initializes<sp/>data<sp/>members.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea" kindref="member">PosDispatcher_init</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>whatNextHoldLotForMachine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Answers<sp/>the<sp/>set<sp/>of<sp/>DispatchDecisions<sp/>of<sp/>holding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>lots<sp/>for<sp/>the<sp/>requested<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04" refkind="member"><highlight class="normal"><sp/><sp/>DispatchDecisionSequence<sp/><ref refid="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04" kindref="member">whatNextHoldLotForMachine</ref>(in<sp/>Machine<sp/>aMachine)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DispatchableObjectNotInScopeSignal<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getNextControlJobIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>next<sp/>control<sp/>job<sp/>identifier.<sp/>This<sp/>method<sp/>locks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Dispatcher<sp/>Object<sp/>for<sp/>updating<sp/>&quot;theLastControlJobs&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3" kindref="member">getNextControlJobIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findLastControlJobFor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>specified<sp/>last<sp/>control<sp/>job.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref><sp/><ref refid="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da" kindref="member">findLastControlJobFor</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allLastControlJobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>members<sp/>of<sp/>the<sp/>last<sp/>control<sp/>jobs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" kindref="member">PosLastControlJobSequence</ref><sp/><ref refid="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847" kindref="member">allLastControlJobs</ref>()</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLastControlJob</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>last<sp/>control<sp/>job<sp/>of<sp/>specified<sp/>machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7" kindref="member">setLastControlJob</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID,<sp/>in<sp/><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref><sp/>aLastControlJob)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getNextDurableControlJobIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>next<sp/>durable<sp/>control<sp/>job<sp/>identifier.<sp/>This</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>method<sp/>locks<sp/>Dispatcher<sp/>Object<sp/>for<sp/>updating</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>&quot;theLastDurableControlJobs&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf" kindref="member">getNextDurableControlJobIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findLastDurableControlJobFor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>specified<sp/>last<sp/>durable<sp/>control<sp/>job.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref><sp/><ref refid="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb" kindref="member">findLastDurableControlJobFor</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allLastDurableControlJobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>members<sp/>of<sp/>the<sp/>last<sp/>durable<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>jobs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" kindref="member">PosLastControlJobSequence</ref><sp/><ref refid="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c" kindref="member">allLastDurableControlJobs</ref>()</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLastDurableControlJob</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>last<sp/>durable<sp/>control<sp/>job<sp/>of<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32" kindref="member">setLastDurableControlJob</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>equipmentID,<sp/>in<sp/><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref><sp/>aLastControlJob)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>whatNextDurableForMachine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Answers<sp/>the<sp/>set<sp/>of<sp/>DispatchDecisions<sp/>that<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>possible<sp/>DispatchDecisions<sp/>for<sp/>the<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b" refkind="member"><highlight class="normal"><sp/><sp/>DispatchDecisionSequence<sp/><ref refid="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b" kindref="member">whatNextDurableForMachine</ref>(in<sp/>Machine<sp/>aMachine,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>durableCategory)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DispatchableObjectNotInScopeSignal<sp/>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>whatNextHoldDurableForMachine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Answers<sp/>the<sp/>set<sp/>of<sp/>DispatchDecisions<sp/>of<sp/>holding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>durables<sp/>for<sp/>the<sp/>requested<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d" refkind="member"><highlight class="normal"><sp/><sp/>DispatchDecisionSequence<sp/><ref refid="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d" kindref="member">whatNextHoldDurableForMachine</ref>(in<sp/>Machine<sp/>aMachine,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>durableCategory)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DispatchableObjectNotInScopeSignal<sp/>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosDispatcher.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosDispatcher.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pdp.idl"/>
+  </compounddef>
+</doxygen>

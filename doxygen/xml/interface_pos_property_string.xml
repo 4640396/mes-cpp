@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_property_string" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPropertyString</compoundname>
+    <basecompoundref refid="interface_pos_property_base" prot="public" virt="non-virtual">PosPropertyBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pptystr_8idl" local="no">pptystr.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_property_string_1a7d4fe643ce152a6eee04ccfd746d9768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPropertyString::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <qualifiedname>PosPropertyString::getValue</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptystr.idl" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_string_1ada60ce0bcaf147a0119c0491ab5b4044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyString::setValue</definition>
+        <argsstring>(in string value)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>PosPropertyString::setValue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptystr.idl" line="62" column="8"/>
+        <references refid="interface_pos_property_string_1ada60ce0bcaf147a0119c0491ab5b4044">setValue</references>
+        <referencedby refid="interface_pos_property_string_1ada60ce0bcaf147a0119c0491ab5b4044">setValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_string_1ab2dafa4d107eeb585c6ad70e25a832bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyString::PosPropertyString_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPropertyString_init</name>
+        <qualifiedname>PosPropertyString::PosPropertyString_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptystr.idl" line="65" column="8"/>
+        <references refid="interface_pos_property_string_1ab2dafa4d107eeb585c6ad70e25a832bb">PosPropertyString_init</references>
+        <referencedby refid="interface_pos_property_string_1ab2dafa4d107eeb585c6ad70e25a832bb">PosPropertyString_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosPropertyString</label>
+        <link refid="interface_pos_property_string"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosPropertyString</label>
+        <link refid="interface_pos_property_string"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pptystr.idl" line="38" column="11" bodyfile="poscimfw/include/pptystr.idl" bodystart="38" bodyend="75"/>
+    <listofallmembers>
+      <member refid="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>getDataType</name></member>
+      <member refid="interface_pos_property_base_1aa80565da60664370f9253f0d5150dee6" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_property_string_1a7d4fe643ce152a6eee04ccfd746d9768" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>getValue</name></member>
+      <member refid="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>PosPropertyBase_init</name></member>
+      <member refid="interface_pos_property_string_1ab2dafa4d107eeb585c6ad70e25a832bb" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>PosPropertyString_init</name></member>
+      <member refid="interface_pos_property_base_1ac8268ca676328a9cbf6556de89d800f6" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_property_string_1ada60ce0bcaf147a0119c0491ab5b4044" prot="public" virt="non-virtual"><scope>PosPropertyString</scope><name>setValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

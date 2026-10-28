@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_machine_operation_procedure" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMachineOperationProcedure</compoundname>
+    <basecompoundref refid="interface_pos_note" prot="public" virt="non-virtual">PosNote</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmcoppr_8idl" local="no">pmcoppr.idl</includes>
+    <innerclass refid="exception_pos_machine_operation_procedure_1_1_machine_already_assigned_signal" prot="public">PosMachineOperationProcedure::MachineAlreadyAssignedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_machine_operation_procedure_1ab0d0549090f1099ee50a9c961dd4ad81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationProcedure::setMachine</definition>
+        <argsstring>(in Machine aMachine)</argsstring>
+        <name>setMachine</name>
+        <qualifiedname>PosMachineOperationProcedure::setMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_machine_operation_procedure_1_1_machine_already_assigned_signal" kindref="compound">MachineAlreadyAssignedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcoppr.idl" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_procedure_1ab30245ce3f939b4f2c44324a45c1204e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Machine</type>
+        <definition>Machine PosMachineOperationProcedure::getMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getMachine</name>
+        <qualifiedname>PosMachineOperationProcedure::getMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcoppr.idl" line="83" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_procedure_1a1a4d93405a220e63405cb0a17a66b669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationProcedure::PosMachineOperationProcedure_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineOperationProcedure_init</name>
+        <qualifiedname>PosMachineOperationProcedure::PosMachineOperationProcedure_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcoppr.idl" line="86" column="8"/>
+        <references refid="interface_pos_machine_operation_procedure_1a1a4d93405a220e63405cb0a17a66b669">PosMachineOperationProcedure_init</references>
+        <referencedby refid="interface_pos_machine_operation_procedure_1a1a4d93405a220e63405cb0a17a66b669">PosMachineOperationProcedure_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineOperationProcedure</label>
+        <link refid="interface_pos_machine_operation_procedure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineOperationProcedure</label>
+        <link refid="interface_pos_machine_operation_procedure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmcoppr.idl" line="36" column="11" bodyfile="poscimfw/include/pmcoppr.idl" bodystart="37" bodyend="97"/>
+    <listofallmembers>
+      <member refid="interface_pos_note_1a9e6f74018a3b101820bbd7ea1e24768b" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getContents</name></member>
+      <member refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_machine_operation_procedure_1ab30245ce3f939b4f2c44324a45c1204e" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getMachine</name></member>
+      <member refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getPerson</name></member>
+      <member refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getPersonID</name></member>
+      <member refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>getTitle</name></member>
+      <member refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>isTypeFile</name></member>
+      <member refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>isTypeString</name></member>
+      <member refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>makeTypeFile</name></member>
+      <member refid="interface_pos_note_1af061681010937053e955151f3a47cba0" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>makeTypeString</name></member>
+      <member refid="interface_pos_machine_operation_procedure_1a1a4d93405a220e63405cb0a17a66b669" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>PosMachineOperationProcedure_init</name></member>
+      <member refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>PosNote_init</name></member>
+      <member refid="interface_pos_note_1a9fef2f556ad6c69fe29fc34b77a8f910" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setContents</name></member>
+      <member refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_machine_operation_procedure_1ab0d0549090f1099ee50a9c961dd4ad81" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setMachine</name></member>
+      <member refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setPerson</name></member>
+      <member refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831" prot="public" virt="non-virtual"><scope>PosMachineOperationProcedure</scope><name>setTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

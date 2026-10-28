@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_durable_process_flow_context" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDurableProcessFlowContext</compoundname>
+    <basecompoundref refid="interface_pos_process_flow_context" prot="public" virt="non-virtual">PosProcessFlowContext</basecompoundref>
+    <includes refid="pdpflwx_8idl" local="no">pdpflwx.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_durable_process_flow_context_1a360dc4dd195912d4f36f8b60bb2fc372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableProcessFlowContext::PosDurableProcessFlowContext_init</definition>
+        <argsstring>(in PosProcessFlow aProcessFlow)</argsstring>
+        <name>PosDurableProcessFlowContext_init</name>
+        <qualifiedname>PosDurableProcessFlowContext::PosDurableProcessFlowContext_init</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpflwx.idl" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_flow_context_1a9d53df4b5fa5acc63127b2641abe08d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableProcessFlowContext::isOnRoute</definition>
+        <argsstring>()</argsstring>
+        <name>isOnRoute</name>
+        <qualifiedname>PosDurableProcessFlowContext::isOnRoute</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpflwx.idl" line="57" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_flow_context_1abec75bb4b39d1713ea57edb0769a0ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableProcessFlowContext::isOverDefaultMaxProcessCount</definition>
+        <argsstring>()</argsstring>
+        <name>isOverDefaultMaxProcessCount</name>
+        <qualifiedname>PosDurableProcessFlowContext::isOverDefaultMaxProcessCount</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_context_1_1_max_process_count_not_found_signal" kindref="compound">MaxProcessCountNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpflwx.idl" line="66" column="11"/>
+        <references refid="interface_pos_durable_process_flow_context_1abec75bb4b39d1713ea57edb0769a0ce3">isOverDefaultMaxProcessCount</references>
+        <referencedby refid="interface_pos_durable_process_flow_context_1abec75bb4b39d1713ea57edb0769a0ce3">isOverDefaultMaxProcessCount</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableProcessFlowContext</label>
+        <link refid="interface_pos_durable_process_flow_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosProcessFlowContext</label>
+        <link refid="interface_pos_process_flow_context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcessFlowContext</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableProcessFlowContext</label>
+        <link refid="interface_pos_durable_process_flow_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosProcessFlowContext</label>
+        <link refid="interface_pos_process_flow_context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcessFlowContext</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdpflwx.idl" line="33" column="11" bodyfile="poscimfw/include/pdpflwx.idl" bodystart="33" bodyend="74"/>
+    <listofallmembers>
+      <member refid="interface_pos_process_flow_context_1acc9912f4d2e2a1c6ca9cff65ddf7800c" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>addBackupOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1ac0d0aebde85c41b5649564860b2b5842" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>addProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a324f408f58801f84d82e9cbcd5412b37" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>addReturnOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1add845ff86394ecf213e93961075d711f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>allBackupOperations</name></member>
+      <member refid="interface_pos_process_flow_context_1a843edafc6cf3f0a19f5223d0029dd8d4" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>allBranchInfos</name></member>
+      <member refid="interface_pos_process_flow_context_1a05eaf5ab1e4c8dc0e10eefb66ee1fd96" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>allReturnInfos</name></member>
+      <member refid="interface_pos_process_flow_context_1af544a629d1f3df75e25bd20d6abdd18f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>allReturnOperations</name></member>
+      <member refid="interface_pos_process_flow_context_1a8b62a8f47120e51c47e02dc483508aad" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>branchTo</name></member>
+      <member refid="interface_pos_process_flow_context_1a5c4462ad5aaf129bacf333054413f668" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>cancelBranch</name></member>
+      <member refid="interface_pos_process_flow_context_1a1f1eb1d5e94d02c35fc44c196c056d98" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>changeFlowTo</name></member>
+      <member refid="interface_pos_process_flow_context_1a41346253447882ba0f9c7ba0560deea7" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>createProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a16d19f26a83e5d1507bdb29b86300b48" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>decreasePassCount</name></member>
+      <member refid="interface_pos_process_flow_context_1a22e37d64db111d93c60e6294b294c18c" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>findDeltaDCDefinitions</name></member>
+      <member refid="interface_pos_process_flow_context_1a71cb1cb8db800d1a66610e2358b162b8" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>findFlowBatchTargetOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_context_1aeccb76b364f092133265bc26013f19f1" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>findProcessOperationForOperationNumberBefore</name></member>
+      <member refid="interface_pos_process_flow_context_1a1784d2f4ccdfeb5fbd8879203fac1dd5" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>findProcessOperationForRouteOperationNumberBefore</name></member>
+      <member refid="interface_pos_process_flow_context_1ae8f967edc897d25c1dc89a1ad9317a4f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>findProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1aa6b40cbcc9d2c695df5574c0471a9a09" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>generateProcessOperationUsing</name></member>
+      <member refid="interface_pos_process_flow_context_1a0c1469d0df712f9c8e482de6003fb8b4" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getBackupOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1ad216506d02b680f65af0d31a6e5ea597" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getBackupOperationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a2fedd0b4666729296d07aed0b48f064e" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getBackupProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a98f0325da827f32218e7350f95579540" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getCorrespondingProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a56945b31dbf032558d7f89a32fd43348" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getCorrespondingProcessOperationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a1f8ec210826a07e7853517df4843bd39" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getCorrespondingProcessOperations</name></member>
+      <member refid="interface_pos_process_flow_context_1a2a84a4674c0d49c57ca9f3b535bbaf39" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getCorrespondingProcessOperationsFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a17ec4e08eb218bbccf0f0d42fbe3953d" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getEqpMonOperationKey</name></member>
+      <member refid="interface_pos_process_flow_context_1a12d2e7f4da369a08f50def085179d3c7" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getFirstProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a780100a995a3e0df7d59752d50999f6d" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getMainProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a6fceb9294c21053c4f8857c069345973" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getModuleNumber</name></member>
+      <member refid="interface_pos_process_flow_context_1ab13f5328cf0e733c822aae9a2be16c4a" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getModuleProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a97c023eb4777864f171679f4ea7b9ff6" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getNextProcessOperationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a79bdeb95dcc220b02fbdb09e7d90d83d" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getNextProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_context_1ab1b6362520462e370956d5c1091635ee" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getNextProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1ac2f0707cf2a3daf7804d61e26135d764" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getNextProcessOperationSpecificationOnCurrentRoute</name></member>
+      <member refid="interface_pos_process_flow_context_1ab613d94c3fdf4b8499a3e03c2973cc3a" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getNextProcessOperationSpecificationOnCurrentRouteFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a9a83977d5de18b10826dd18ad1e23052" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPassCount</name></member>
+      <member refid="interface_pos_process_flow_context_1a7e7dcd623b75443cd8145e4402939f9b" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPassCountFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a5718c46bbc2cddce35e3da006ee9d71a" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1af7292326346164b0a1bc5bdfde94a813" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a8f613b18b45fdcc16002bf30bb31ca42" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_context_1a22f90baa7c1018395c7844a9ee54ce16" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a81caa136bbf071c889bf0b75bf52feb3" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperationSpecificationOnCurrentRoute</name></member>
+      <member refid="interface_pos_process_flow_context_1ab9a43e2860f717d33f1dae79603eda7e" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getPreviousProcessOperationSpecificationOnCurrentRouteFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a1a291af6dbfd598de51d269dd3d0e1f6" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a72e241bfcd60cdb5710510c6f21cfc01" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getReturnOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a0bf2ab200d820d8529eb10ec96183bcc" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getReturnOperationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1aa80b0bcf62de95718f772854b784066f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getReturnProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_context_1a0c4ec7b1a839007d96e3fa7985b4e642" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>getReturnRemainingCycleTime</name></member>
+      <member refid="interface_pos_process_flow_context_1acacdd0d868d36f5587526a9ffb4f0e2c" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>increasePassCount</name></member>
+      <member refid="interface_pos_process_flow_context_1a30e412925c8c39dd04671ed3f66162ec" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isAfterOperationNumber</name></member>
+      <member refid="interface_pos_process_flow_context_1ab6a6e63554a2cada90195d0a7c3ffcdd" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isFirstOperationForProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a576377d20d2ab2b0cd7c7fd0b83318a5" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isFirstOperationForProcessFlowOnCurrentRoute</name></member>
+      <member refid="interface_pos_process_flow_context_1acf2ed085da98390f4717fe894c477928" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isInQTimeInterval</name></member>
+      <member refid="interface_pos_process_flow_context_1af59405429f9b4170182b44de1ff7bee9" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isInQTimeIntervalForPreviousOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a7dab002d1884f7e28ca93092f13c6a7c" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isLastOperationForProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a3f936eaccbd784bff53a7f800837ff2f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isLastOperationForProcessFlowOnCurrentRoute</name></member>
+      <member refid="interface_pos_durable_process_flow_context_1a9d53df4b5fa5acc63127b2641abe08d7" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isOnRoute</name></member>
+      <member refid="interface_pos_durable_process_flow_context_1abec75bb4b39d1713ea57edb0769a0ce3" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isOverDefaultMaxProcessCount</name></member>
+      <member refid="interface_pos_process_flow_context_1a1fa8d128baab6d25031e6fa9c588d10c" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isOverMaxProcessCount</name></member>
+      <member refid="interface_pos_process_flow_context_1a6d1210d777cd5df9f365d9bd4c914fa8" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>isResponsibleProcess</name></member>
+      <member refid="interface_pos_process_flow_context_1aeb4801b8192ae1348bd9522d255bf59d" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>locateTo</name></member>
+      <member refid="interface_pos_process_flow_context_1a489d7d40ca907e1b354d060d9860b80f" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>maintainBackupAndReturnOperation</name></member>
+      <member refid="interface_pos_durable_process_flow_context_1a360dc4dd195912d4f36f8b60bb2fc372" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>PosDurableProcessFlowContext_init</name></member>
+      <member refid="interface_pos_process_flow_context_1af0c6149fbe1482409aa5cc5a2f1c1cc2" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>PosProcessFlowContext_init</name></member>
+      <member refid="interface_pos_process_flow_context_1a6edadb5a50369d33e85e4615a6cda37a" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeAllBackupOperations</name></member>
+      <member refid="interface_pos_process_flow_context_1a024b6257432625b285f7b77d8c75cdb6" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeAllReturnOperations</name></member>
+      <member refid="interface_pos_process_flow_context_1a8004e6140377f4844d22ba38be97c3b7" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeBackupOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a06e5155444a7f1940c9ff77320b327fd" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1aee0ca90ad99849acb9bdec4457ce526e" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeProcessOperationFromList</name></member>
+      <member refid="interface_pos_process_flow_context_1aa5524cadb2f58acad272b3e298227643" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>removeReturnOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1acf43aafc37fa72dc4a649a1cd51bbb49" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>setCurrentProcessOperation</name></member>
+      <member refid="interface_pos_process_flow_context_1a6681ca6407c834a694544276787b6f10" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>setMainProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a4527e8891824a354586898826329b446" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>setModuleNumber</name></member>
+      <member refid="interface_pos_process_flow_context_1a7a7fb4fc902a9d8f90271bb254e1532b" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>setModuleProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_context_1a126c19732ae0b5b10966693a391554a4" prot="public" virt="non-virtual"><scope>PosDurableProcessFlowContext</scope><name>setProcessFlow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

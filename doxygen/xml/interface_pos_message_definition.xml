@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_message_definition" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMessageDefinition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmsgdfn_8idl" local="no">pmsgdfn.idl</includes>
+    <innerclass refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" prot="public">PosMessageDefinition::DestinationPersonDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" prot="public">PosMessageDefinition::DestinationPersonNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" prot="public">PosMessageDefinition::SetMessageDistributionInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_message_definition_1a56389ea762ce28fa4361d9658c65a2e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::PosMessageDefinition_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMessageDefinition_init</name>
+        <qualifiedname>PosMessageDefinition::PosMessageDefinition_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="123" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosMessageDefinition::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="132" column="8"/>
+        <references refid="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838">setIdentifier</references>
+        <referencedby refid="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosMessageDefinition::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="138" column="10"/>
+        <references refid="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1">getIdentifier</references>
+        <referencedby refid="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosMessageDefinition::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="144" column="8"/>
+        <references refid="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec">setDescription</references>
+        <referencedby refid="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosMessageDefinition::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="150" column="10"/>
+        <references refid="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8">getDescription</references>
+        <referencedby refid="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setMessageMediaID</definition>
+        <argsstring>(in string messageMediaId)</argsstring>
+        <name>setMessageMediaID</name>
+        <qualifiedname>PosMessageDefinition::setMessageMediaID</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>messageMediaId</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="156" column="8"/>
+        <references refid="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9">setMessageMediaID</references>
+        <referencedby refid="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9">setMessageMediaID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getMessageMediaID</definition>
+        <argsstring>()</argsstring>
+        <name>getMessageMediaID</name>
+        <qualifiedname>PosMessageDefinition::getMessageMediaID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="162" column="10"/>
+        <references refid="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1">getMessageMediaID</references>
+        <referencedby refid="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1">getMessageMediaID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setMessageType</definition>
+        <argsstring>(in string messageType)</argsstring>
+        <name>setMessageType</name>
+        <qualifiedname>PosMessageDefinition::setMessageType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>messageType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="168" column="8"/>
+        <references refid="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7">setMessageType</references>
+        <referencedby refid="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7">setMessageType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getMesssageType</definition>
+        <argsstring>()</argsstring>
+        <name>getMesssageType</name>
+        <qualifiedname>PosMessageDefinition::getMesssageType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="174" column="10"/>
+        <references refid="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb">getMesssageType</references>
+        <referencedby refid="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb">getMesssageType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setTemplateFileName</definition>
+        <argsstring>(in string templateFileName)</argsstring>
+        <name>setTemplateFileName</name>
+        <qualifiedname>PosMessageDefinition::setTemplateFileName</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>templateFileName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="180" column="8"/>
+        <references refid="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3">setTemplateFileName</references>
+        <referencedby refid="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3">setTemplateFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getTemplateFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getTemplateFileName</name>
+        <qualifiedname>PosMessageDefinition::getTemplateFileName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="186" column="10"/>
+        <references refid="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83">getTemplateFileName</references>
+        <referencedby refid="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83">getTemplateFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setMessageDistributionType</definition>
+        <argsstring>(in string messageDistributionType)</argsstring>
+        <name>setMessageDistributionType</name>
+        <qualifiedname>PosMessageDefinition::setMessageDistributionType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>messageDistributionType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="192" column="8"/>
+        <references refid="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f">setMessageDistributionType</references>
+        <referencedby refid="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f">setMessageDistributionType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getMessageDistributionType</definition>
+        <argsstring>()</argsstring>
+        <name>getMessageDistributionType</name>
+        <qualifiedname>PosMessageDefinition::getMessageDistributionType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="198" column="10"/>
+        <references refid="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90">getMessageDistributionType</references>
+        <referencedby refid="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90">getMessageDistributionType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setPrimaryMessage</definition>
+        <argsstring>(in string primaryMessage)</argsstring>
+        <name>setPrimaryMessage</name>
+        <qualifiedname>PosMessageDefinition::setPrimaryMessage</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>primaryMessage</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="204" column="8"/>
+        <references refid="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd">setPrimaryMessage</references>
+        <referencedby refid="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd">setPrimaryMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getPrimaryMessage</definition>
+        <argsstring>()</argsstring>
+        <name>getPrimaryMessage</name>
+        <qualifiedname>PosMessageDefinition::getPrimaryMessage</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="210" column="10"/>
+        <references refid="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb">getPrimaryMessage</references>
+        <referencedby refid="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb">getPrimaryMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setSecondaryMessage</definition>
+        <argsstring>(in string secondaryMessage)</argsstring>
+        <name>setSecondaryMessage</name>
+        <qualifiedname>PosMessageDefinition::setSecondaryMessage</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>secondaryMessage</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="216" column="8"/>
+        <references refid="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2">setSecondaryMessage</references>
+        <referencedby refid="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2">setSecondaryMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getSecondaryMessage</definition>
+        <argsstring>()</argsstring>
+        <name>getSecondaryMessage</name>
+        <qualifiedname>PosMessageDefinition::getSecondaryMessage</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="222" column="10"/>
+        <references refid="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5">getSecondaryMessage</references>
+        <referencedby refid="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5">getSecondaryMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setSubsystem</definition>
+        <argsstring>(in string subsystem)</argsstring>
+        <name>setSubsystem</name>
+        <qualifiedname>PosMessageDefinition::setSubsystem</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subsystem</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="228" column="8"/>
+        <references refid="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d">setSubsystem</references>
+        <referencedby refid="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d">setSubsystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMessageDefinition::getSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>getSubsystem</name>
+        <qualifiedname>PosMessageDefinition::getSubsystem</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="234" column="10"/>
+        <references refid="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1">getSubsystem</references>
+        <referencedby refid="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1">getSubsystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::addDestinationPerson</definition>
+        <argsstring>(in PosPerson aDestinationPerson)</argsstring>
+        <name>addDestinationPerson</name>
+        <qualifiedname>PosMessageDefinition::addDestinationPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aDestinationPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_definition_1_1_destination_person_duplicate_signal" kindref="compound">DestinationPersonDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="241" column="8"/>
+        <references refid="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371">addDestinationPerson</references>
+        <referencedby refid="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371">addDestinationPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::removeDestinationPerson</definition>
+        <argsstring>(in PosPerson aDestinationPerson)</argsstring>
+        <name>removeDestinationPerson</name>
+        <qualifiedname>PosMessageDefinition::removeDestinationPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aDestinationPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_definition_1_1_destination_person_not_found_signal" kindref="compound">DestinationPersonNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="248" column="8"/>
+        <references refid="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df">removeDestinationPerson</references>
+        <referencedby refid="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df">removeDestinationPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" kindref="member">PosPersonSequence</ref></type>
+        <definition>PosPersonSequence PosMessageDefinition::allDestinationPersons</definition>
+        <argsstring>()</argsstring>
+        <name>allDestinationPersons</name>
+        <qualifiedname>PosMessageDefinition::allDestinationPersons</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="255" column="21"/>
+        <references refid="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f">allDestinationPersons</references>
+        <referencedby refid="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f">allDestinationPersons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosMessageDefinition::findDestinationPersonNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findDestinationPersonNamed</name>
+        <qualifiedname>PosMessageDefinition::findDestinationPersonNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="262" column="13"/>
+        <references refid="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308">findDestinationPersonNamed</references>
+        <referencedby refid="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308">findDestinationPersonNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDefinition::setMessageDistributionInfo</definition>
+        <argsstring>(in brMessageDistributionInfo messageDistributionInfo)</argsstring>
+        <name>setMessageDistributionInfo</name>
+        <qualifiedname>PosMessageDefinition::setMessageDistributionInfo</qualifiedname>
+        <param>
+          <type>in brMessageDistributionInfo</type>
+          <declname>messageDistributionInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_definition_1_1_set_message_distribution_info_failed_signal" kindref="compound">SetMessageDistributionInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsgdfn.idl" line="269" column="8"/>
+        <references refid="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d">setMessageDistributionInfo</references>
+        <referencedby refid="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d">setMessageDistributionInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMessageDefinition</label>
+        <link refid="interface_pos_message_definition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMessageDefinition</label>
+        <link refid="interface_pos_message_definition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmsgdfn.idl" line="43" column="11" bodyfile="poscimfw/include/pmsgdfn.idl" bodystart="44" bodyend="277"/>
+    <listofallmembers>
+      <member refid="interface_pos_message_definition_1a80b840c7f608270e4b126de97ea9c371" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>addDestinationPerson</name></member>
+      <member refid="interface_pos_message_definition_1aa4f8194622be8650f80011607450839f" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>allDestinationPersons</name></member>
+      <member refid="interface_pos_message_definition_1af775d65493ffabee03ccf33cddc64308" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>findDestinationPersonNamed</name></member>
+      <member refid="interface_pos_message_definition_1aeb71506c48a9a5f5056ff237a62407e8" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getDescription</name></member>
+      <member refid="interface_pos_message_definition_1a4369b5a0738d974fa72d25e562049eb1" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_message_definition_1a7e855dae611b06ed7f17c0cb8761ff90" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getMessageDistributionType</name></member>
+      <member refid="interface_pos_message_definition_1a0a1929a348b8f876c6db84eddc2ccbf1" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getMessageMediaID</name></member>
+      <member refid="interface_pos_message_definition_1a868b0a60cb52868ec0b7f00a7f7079cb" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getMesssageType</name></member>
+      <member refid="interface_pos_message_definition_1a76fe998ed1bc322590533ed8ee30efdb" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getPrimaryMessage</name></member>
+      <member refid="interface_pos_message_definition_1a9d68551014f9af7355f482d567c11cd5" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getSecondaryMessage</name></member>
+      <member refid="interface_pos_message_definition_1aa8b1b933132a9419c9156d121d8aa5c1" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getSubsystem</name></member>
+      <member refid="interface_pos_message_definition_1adfe1d7a5a47eefc5890fb9d9b71fda83" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>getTemplateFileName</name></member>
+      <member refid="interface_pos_message_definition_1a56389ea762ce28fa4361d9658c65a2e0" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>PosMessageDefinition_init</name></member>
+      <member refid="interface_pos_message_definition_1adb77128a008ff1841b68bed1ef3243df" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>removeDestinationPerson</name></member>
+      <member refid="interface_pos_message_definition_1ad24a88524fd444d47004f252077fe5ec" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setDescription</name></member>
+      <member refid="interface_pos_message_definition_1aedd6580d5336261a32f39eae61754838" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_message_definition_1a15fb5a98bd23f2b74d1f90a1e6c9f07d" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setMessageDistributionInfo</name></member>
+      <member refid="interface_pos_message_definition_1a764d83ef474e27f0ba8f2ab11f74d13f" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setMessageDistributionType</name></member>
+      <member refid="interface_pos_message_definition_1a409d9f5b97eb39aef2ecd591b2b303d9" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setMessageMediaID</name></member>
+      <member refid="interface_pos_message_definition_1a12b01e1f581541892bc369b763c634b7" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setMessageType</name></member>
+      <member refid="interface_pos_message_definition_1ae9565e3db1d8e699c38c6a2255780ffd" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setPrimaryMessage</name></member>
+      <member refid="interface_pos_message_definition_1a81865ccd4473744971b97eb8462452c2" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setSecondaryMessage</name></member>
+      <member refid="interface_pos_message_definition_1a3510d84f427c0cbdf2ac76c335554d4d" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setSubsystem</name></member>
+      <member refid="interface_pos_message_definition_1afdbfc43083ebf1928f05015dd33b6ed3" prot="public" virt="non-virtual"><scope>PosMessageDefinition</scope><name>setTemplateFileName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

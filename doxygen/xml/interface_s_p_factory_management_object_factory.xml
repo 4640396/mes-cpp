@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_factory_management_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPFactoryManagementObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWFactoryManagementObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="fctrycsp_8idl" local="no">fctrycsp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_factory_management_object_factory_1ab2824816946d4e9e6875e66b5ffa5879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank SPFactoryManagementObjectFactory::newPosBank</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosBank</name>
+        <qualifiedname>SPFactoryManagementObjectFactory::newPosBank</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/fctrycsp.idl" line="29" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_factory_management_object_factory_1aa556b0bed0d6f9937445e9a981213499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_factory_note" kindref="compound">PosFactoryNote</ref></type>
+        <definition>PosFactoryNote SPFactoryManagementObjectFactory::newPosFactoryNote</definition>
+        <argsstring>()</argsstring>
+        <name>newPosFactoryNote</name>
+        <qualifiedname>SPFactoryManagementObjectFactory::newPosFactoryNote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/fctrycsp.idl" line="30" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_factory_management_object_factory_1aeb228fe1e9d04accb77be7d68a294557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+        <definition>PosStage SPFactoryManagementObjectFactory::newPosStage</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosStage</name>
+        <qualifiedname>SPFactoryManagementObjectFactory::newPosStage</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/fctrycsp.idl" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_factory_management_object_factory_1ac7c512be0694f28c1cafc53f2ccaf725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref></type>
+        <definition>PosStageGroup SPFactoryManagementObjectFactory::newPosStageGroup</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosStageGroup</name>
+        <qualifiedname>SPFactoryManagementObjectFactory::newPosStageGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/fctrycsp.idl" line="34" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWFactoryManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPFactoryManagementObjectFactory</label>
+        <link refid="interface_s_p_factory_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWFactoryManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPFactoryManagementObjectFactory</label>
+        <link refid="interface_s_p_factory_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/fctrycsp.idl" line="26" column="11" bodyfile="poscimfw/include/fctrycsp.idl" bodystart="27" bodyend="35"/>
+    <listofallmembers>
+      <member refid="interface_s_p_factory_management_object_factory_1ab2824816946d4e9e6875e66b5ffa5879" prot="public" virt="non-virtual"><scope>SPFactoryManagementObjectFactory</scope><name>newPosBank</name></member>
+      <member refid="interface_s_p_factory_management_object_factory_1aa556b0bed0d6f9937445e9a981213499" prot="public" virt="non-virtual"><scope>SPFactoryManagementObjectFactory</scope><name>newPosFactoryNote</name></member>
+      <member refid="interface_s_p_factory_management_object_factory_1aeb228fe1e9d04accb77be7d68a294557" prot="public" virt="non-virtual"><scope>SPFactoryManagementObjectFactory</scope><name>newPosStage</name></member>
+      <member refid="interface_s_p_factory_management_object_factory_1ac7c512be0694f28c1cafc53f2ccaf725" prot="public" virt="non-virtual"><scope>SPFactoryManagementObjectFactory</scope><name>newPosStageGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

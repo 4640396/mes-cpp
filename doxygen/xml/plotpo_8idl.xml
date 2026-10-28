@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="plotpo_8idl" kind="file" language="IDL">
+    <compoundname>plotpo.idl</compoundname>
+    <includes local="yes">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/plotpo.idl</label>
+        <link refid="plotpo_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOFW.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structpos_lot_process_operation_for_lot__struct" prot="public">posLotProcessOperationForLot_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="plotpo_8idl_1aeb76b918d3324844c2fe868b09884f3f" prot="public" static="no">
+        <type><ref refid="structpos_lot_process_operation_for_lot__struct" kindref="compound">posLotProcessOperationForLot_struct</ref></type>
+        <definition>typedef posLotProcessOperationForLot_struct posLotProcessOperationForLot</definition>
+        <argsstring></argsstring>
+        <name>posLotProcessOperationForLot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plotpo.idl" line="38" column="45" bodyfile="poscimfw/include/plotpo.idl" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pprmg/plotpo.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>8/11/08<sp/>15:11:18<sp/>[<sp/>8/11/08<sp/>15:11:19<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>plotpo.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>08/06/08<sp/>D9000246<sp/>M.Ishino<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Performance<sp/>improvement<sp/>for<sp/>checkForDeletion.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLotPo_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLotPo_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFW.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structpos_lot_process_operation_for_lot__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_lot_process_operation_for_lot__struct" kindref="compound">posLotProcessOperationForLot_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="structpos_lot_process_operation_for_lot__struct_1a72aea0baf81050227f635beb5d9e0fef" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a72aea0baf81050227f635beb5d9e0fef" kindref="member">lotID</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structpos_lot_process_operation_for_lot__struct_1a4fe0a9b2c0654afc0b158a1449c00cb3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a4fe0a9b2c0654afc0b158a1449c00cb3" kindref="member">poObj</ref>;</highlight></codeline>
+<codeline lineno="27" refid="structpos_lot_process_operation_for_lot__struct_1a86e31a348f177aa735124e3a135c1292" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a86e31a348f177aa735124e3a135c1292" kindref="member">PFObj</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structpos_lot_process_operation_for_lot__struct_1ae4ac8fcb38febc00d212c086e892d1f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1ae4ac8fcb38febc00d212c086e892d1f3" kindref="member">mainPFObj</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structpos_lot_process_operation_for_lot__struct_1aabc5060089df5f67998c73c3fe53f6b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1aabc5060089df5f67998c73c3fe53f6b4" kindref="member">modulePFObj</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structpos_lot_process_operation_for_lot__struct_1a62419797d9849c04b962f9b8b1c12236" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a62419797d9849c04b962f9b8b1c12236" kindref="member">lastTimeStamp</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structpos_lot_process_operation_for_lot__struct_1a6f6ae5e7672da2bb997047d3d829030d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a6f6ae5e7672da2bb997047d3d829030d" kindref="member">mainPDID</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structpos_lot_process_operation_for_lot__struct_1abdbe0ac8952fc2663f65f2c823ed7c37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1abdbe0ac8952fc2663f65f2c823ed7c37" kindref="member">operationNumber</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structpos_lot_process_operation_for_lot__struct_1a20d150c2ded088d231ed0e2cf13ba030" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a20d150c2ded088d231ed0e2cf13ba030" kindref="member">pdID</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structpos_lot_process_operation_for_lot__struct_1ae9057bfe8f6e930a6e0e1a28a203ee21" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1ae9057bfe8f6e930a6e0e1a28a203ee21" kindref="member">modulePDID</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structpos_lot_process_operation_for_lot__struct_1a7dc19e351b75efc678ea6a000b6f3a74" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a7dc19e351b75efc678ea6a000b6f3a74" kindref="member">moduleNumber</ref>;</highlight></codeline>
+<codeline lineno="36" refid="structpos_lot_process_operation_for_lot__struct_1a087ae6c20fef26ca19d573a4e9b864dd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos_lot_process_operation_for_lot__struct_1a087ae6c20fef26ca19d573a4e9b864dd" kindref="member">stageID</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38" refid="plotpo_8idl_1aeb76b918d3324844c2fe868b09884f3f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_lot_process_operation_for_lot__struct" kindref="compound">posLotProcessOperationForLot_struct</ref><sp/><ref refid="plotpo_8idl_1aeb76b918d3324844c2fe868b09884f3f" kindref="member">posLotProcessOperationForLot</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/plotpo.idl"/>
+  </compounddef>
+</doxygen>

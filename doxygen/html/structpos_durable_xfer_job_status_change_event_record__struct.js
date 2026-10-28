@@ -1,0 +1,25 @@
+var structpos_durable_xfer_job_status_change_event_record__struct =
+[
+    [ "carrierID", "structpos_durable_xfer_job_status_change_event_record__struct.html#ac0c8ce97ec514657f481f78cc85f4c7d", null ],
+    [ "carrierJobID", "structpos_durable_xfer_job_status_change_event_record__struct.html#ab1f0ae538f167e8fbdf0bb4a31858f34", null ],
+    [ "carrierJobStatus", "structpos_durable_xfer_job_status_change_event_record__struct.html#ab52861d0a9070a3b094367a45ef63576", null ],
+    [ "durableType", "structpos_durable_xfer_job_status_change_event_record__struct.html#a985a7be95af6c8b52840b63268925dc7", null ],
+    [ "estimateEndTime", "structpos_durable_xfer_job_status_change_event_record__struct.html#a50168d51269c966f1083cdb1b8026a2f", null ],
+    [ "estimateStrtTime", "structpos_durable_xfer_job_status_change_event_record__struct.html#acfb8cb0cd4774b1462d360b1d8770cc7", null ],
+    [ "eventCommon", "structpos_durable_xfer_job_status_change_event_record__struct.html#a269c1d5ae2ab1f9b9360756de78241a9", null ],
+    [ "expectedEndTime", "structpos_durable_xfer_job_status_change_event_record__struct.html#a31aaae6ae067a45f090ec04415f148fa", null ],
+    [ "expectedStrtTime", "structpos_durable_xfer_job_status_change_event_record__struct.html#a5881659a16361a744dadc5331fd8c809", null ],
+    [ "fromMachineID", "structpos_durable_xfer_job_status_change_event_record__struct.html#ad7f177562c0dafce1a25acf26203db44", null ],
+    [ "fromPortID", "structpos_durable_xfer_job_status_change_event_record__struct.html#ad47011538ad37225e078eb3dd99a8c48", null ],
+    [ "jobID", "structpos_durable_xfer_job_status_change_event_record__struct.html#ab38635dd204ead8393f377aec974b211", null ],
+    [ "jobStatus", "structpos_durable_xfer_job_status_change_event_record__struct.html#a42c66b63588e346c879d15b05f2c9000", null ],
+    [ "mandatoryFlag", "structpos_durable_xfer_job_status_change_event_record__struct.html#ae7525c4cbbff664518f00d3f81ea8979", null ],
+    [ "n2purgeFlag", "structpos_durable_xfer_job_status_change_event_record__struct.html#aeedc71b950242b0d6861827c5d955b56", null ],
+    [ "operationCategory", "structpos_durable_xfer_job_status_change_event_record__struct.html#a4d541cc84f5a735facbd175836dd90fe", null ],
+    [ "priority", "structpos_durable_xfer_job_status_change_event_record__struct.html#a60ec866807bbf0fb790fcb24db321fcf", null ],
+    [ "toMachineID", "structpos_durable_xfer_job_status_change_event_record__struct.html#a2fe167ae3c3bb9c2b9ed2f4ffd90a0f3", null ],
+    [ "toPortID", "structpos_durable_xfer_job_status_change_event_record__struct.html#a0ab17a81421802d88bb25e8413fcf422", null ],
+    [ "toStockerGroup", "structpos_durable_xfer_job_status_change_event_record__struct.html#aef102da64591f537daedc3d1c11b1f88", null ],
+    [ "transportType", "structpos_durable_xfer_job_status_change_event_record__struct.html#a9a074512420ae4fa300a509ddf540310", null ],
+    [ "zoneType", "structpos_durable_xfer_job_status_change_event_record__struct.html#a0c9b3aaec834892f5052f1907c519b91", null ]
+];

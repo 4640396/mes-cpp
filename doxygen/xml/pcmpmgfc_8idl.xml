@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pcmpmgfc_8idl" kind="file" language="IDL">
+    <compoundname>pcmpmgfc.idl</compoundname>
+    <includes local="yes">MOFWtx.idl</includes>
+    <includes local="yes">fwcommon.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pcmpmgfc.idl</label>
+        <link refid="pcmpmgfc_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOFWtx.idl</label>
+      </node>
+      <node id="3">
+        <label>fwcommon.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_component_manager_object_factory" prot="public">PosComponentManagerObjectFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosComponentManagerObjectFactory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::SiView_Component_Management_Functional_Group::SiView_Component_Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\superpos\src\spclass\source\poscimfw\pcmpmg\pcmpmgfc.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosComponentManagerObjectFactory_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosComponentManagerObjectFactory_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFWtx.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwcommon.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_recipe_manager" kindref="compound">PosRecipeManager</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_data_collection_specification_manager" kindref="compound">PosDataCollectionSpecificationManager</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_code_manager" kindref="compound">PosCodeManager</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_message_distribution_manager" kindref="compound">PosMessageDistributionManager</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_property_set_manager" kindref="compound">PosPropertySetManager</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_authentication_manager" kindref="compound">PosAuthenticationManager</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_event_manager" kindref="compound">PosEventManager</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_entity_inhibit_manager" kindref="compound">PosEntityInhibitManager</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_dispatching_manager" kindref="compound">PosDispatchingManager</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_person_manager" kindref="compound">PosPersonManager</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_process_definition_manager" kindref="compound">PosProcessDefinitionManager</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_q_time_restriction_manager" kindref="compound">PosQTimeRestrictionManager</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification_manager" kindref="compound">PosProductSpecificationManager</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_m_e_s_factory" kindref="compound">PosMESFactory</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_manager" kindref="compound">PosMachineManager</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_durable_manager" kindref="compound">PosDurableManager</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_manager" kindref="compound">PosProductManager</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_plan_manager" kindref="compound">PosPlanManager</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_parts_manager" kindref="compound">PosPartsManager</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Component<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>SiView<sp/>Component<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="interface_pos_component_manager_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_component_manager_object_factory" kindref="compound">PosComponentManagerObjectFactory</ref><sp/>:<sp/>MOFW_TransManagedObjectFactory<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosComponentManagerObjectFactory.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosComponentManagerObjectFactory.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newMESFactory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>MESFactory<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="interface_pos_component_manager_object_factory_1abf235baf3168fd512bf9506a12c40370" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_m_e_s_factory" kindref="compound">PosMESFactory</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1abf235baf3168fd512bf9506a12c40370" kindref="member">newMESFactory</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newAuthenticationManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>AuthenticationManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="interface_pos_component_manager_object_factory_1a0d228860fed2dc3f7e82177081f58650" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_authentication_manager" kindref="compound">PosAuthenticationManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a0d228860fed2dc3f7e82177081f58650" kindref="member">newAuthenticationManager</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newCodeManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>CodeManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="interface_pos_component_manager_object_factory_1ac38affb4224ec5ec236396d8a2b22d16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_code_manager" kindref="compound">PosCodeManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ac38affb4224ec5ec236396d8a2b22d16" kindref="member">newCodeManager</ref>()</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newDataCollectionSpecificationManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>DataCollectionSpecificationManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="interface_pos_component_manager_object_factory_1a04187f112464d2eff018b6f906b490b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_data_collection_specification_manager" kindref="compound">PosDataCollectionSpecificationManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a04187f112464d2eff018b6f906b490b3" kindref="member">newDataCollectionSpecificationManager</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newDispatchingManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>DispatchingManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="interface_pos_component_manager_object_factory_1a2da5020a008e8ddabfc55f57703fad90" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_dispatching_manager" kindref="compound">PosDispatchingManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a2da5020a008e8ddabfc55f57703fad90" kindref="member">newDispatchingManager</ref>()</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newDurableManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>DurableManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="interface_pos_component_manager_object_factory_1a119427a3d30b8930d1bbbffdf38ea474" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_durable_manager" kindref="compound">PosDurableManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a119427a3d30b8930d1bbbffdf38ea474" kindref="member">newDurableManager</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newEventManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>EventManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="interface_pos_component_manager_object_factory_1ae549498cd25b7401166dcc2603214ff4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_event_manager" kindref="compound">PosEventManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ae549498cd25b7401166dcc2603214ff4" kindref="member">newEventManager</ref>()</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newMachineManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>MachineManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="interface_pos_component_manager_object_factory_1ae354170faec29c6b100cc6242b517c08" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_machine_manager" kindref="compound">PosMachineManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ae354170faec29c6b100cc6242b517c08" kindref="member">newMachineManager</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newMessageDistributionManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>MessageDistributionManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="interface_pos_component_manager_object_factory_1afb7fbcbd3fd006ce73f02f88830487cc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_message_distribution_manager" kindref="compound">PosMessageDistributionManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1afb7fbcbd3fd006ce73f02f88830487cc" kindref="member">newMessageDistributionManager</ref>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newProcessDefinitionManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>ProcessDefinitionManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="interface_pos_component_manager_object_factory_1a972e533c93a3e3a08d5624737520fa5e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_process_definition_manager" kindref="compound">PosProcessDefinitionManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a972e533c93a3e3a08d5624737520fa5e" kindref="member">newProcessDefinitionManager</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newQTimeRestrictionManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>QTimeRestrictionManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="interface_pos_component_manager_object_factory_1a0824d2819df5cc2b0ffa8e1f8e3756da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_q_time_restriction_manager" kindref="compound">PosQTimeRestrictionManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a0824d2819df5cc2b0ffa8e1f8e3756da" kindref="member">newQTimeRestrictionManager</ref>()</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newPlanManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>PlanManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="interface_pos_component_manager_object_factory_1ab92aa4b0f89173c9f8a264efa27a3950" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_plan_manager" kindref="compound">PosPlanManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ab92aa4b0f89173c9f8a264efa27a3950" kindref="member">newPlanManager</ref>()</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newProductManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>ProductManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="interface_pos_component_manager_object_factory_1acea87b0bca9cde297a1ecc45f7f8d0c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_product_manager" kindref="compound">PosProductManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1acea87b0bca9cde297a1ecc45f7f8d0c5" kindref="member">newProductManager</ref>()</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newProductSpecificationManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>ProductSpecificationManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="interface_pos_component_manager_object_factory_1a8138671793c5b074e165ea17cd6395e8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_product_specification_manager" kindref="compound">PosProductSpecificationManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a8138671793c5b074e165ea17cd6395e8" kindref="member">newProductSpecificationManager</ref>()</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newPersonManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>PersonManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="interface_pos_component_manager_object_factory_1a6dd00d307437a25799f7f2ba168ffb06" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_person_manager" kindref="compound">PosPersonManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a6dd00d307437a25799f7f2ba168ffb06" kindref="member">newPersonManager</ref>()</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newRecipeManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>RecipeManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="interface_pos_component_manager_object_factory_1ae5244b64e116daebda249c28bea7bf17" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_recipe_manager" kindref="compound">PosRecipeManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ae5244b64e116daebda249c28bea7bf17" kindref="member">newRecipeManager</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newEntityInhibitManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>EntityInhibitManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="interface_pos_component_manager_object_factory_1ae3ed1f8ca01bc12f85bc6b59966052b1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_entity_inhibit_manager" kindref="compound">PosEntityInhibitManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1ae3ed1f8ca01bc12f85bc6b59966052b1" kindref="member">newEntityInhibitManager</ref>()</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newPartsManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>PartsManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="interface_pos_component_manager_object_factory_1a65ae566d3266450718088e292dd01e5a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_parts_manager" kindref="compound">PosPartsManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1a65ae566d3266450718088e292dd01e5a" kindref="member">newPartsManager</ref>()</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>newPropertySetManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Makes<sp/>a<sp/>PropertySetManager<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="interface_pos_component_manager_object_factory_1adde121de25cbd96d4c9d9f032e17a28b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_property_set_manager" kindref="compound">PosPropertySetManager</ref><sp/><ref refid="interface_pos_component_manager_object_factory_1adde121de25cbd96d4c9d9f032e17a28b" kindref="member">newPropertySetManager</ref>()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosComponentManagerObjectFactory.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosComponentManagerObjectFactory.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pcmpmgfc.idl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_durable_sub_state" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDurableSubState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pdstat_8idl" local="no">pdstat.idl</includes>
+    <innerclass refid="exception_pos_durable_sub_state_1_1_set_durable_sub_state_info_failed_signal" prot="public">PosDurableSubState::SetDurableSubStateInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_durable_sub_state_1_1_durable_sub_state_not_found_signal" prot="public">PosDurableSubState::DurableSubStateNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_durable_sub_state_1_1_sub_lot_type_not_found_signal" prot="public">PosDurableSubState::SubLotTypeNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a4cb41f6a83132e02e38aa6d3b84121e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::PosDurableSubState_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosDurableSubState_init</name>
+        <qualifiedname>PosDurableSubState::PosDurableSubState_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="117" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1af1edd7a580ad9d75dae406ce9c1aca38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::PosDurableSubState_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosDurableSubState_uninit</name>
+        <qualifiedname>PosDurableSubState::PosDurableSubState_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="123" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1af1edd7a580ad9d75dae406ce9c1aca38">PosDurableSubState_uninit</references>
+        <referencedby refid="interface_pos_durable_sub_state_1af1edd7a580ad9d75dae406ce9c1aca38">PosDurableSubState_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1ab2da1ee292ecd9cc16b97c215e23cd1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosDurableSubState::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="129" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1ab2da1ee292ecd9cc16b97c215e23cd1f">setIdentifier</references>
+        <referencedby refid="interface_pos_durable_sub_state_1ab2da1ee292ecd9cc16b97c215e23cd1f">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a07059ac86949fd64ccb09074991aa404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDurableSubState::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosDurableSubState::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="135" column="10"/>
+        <references refid="interface_pos_durable_sub_state_1a07059ac86949fd64ccb09074991aa404">getIdentifier</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a07059ac86949fd64ccb09074991aa404">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1ad1bd38d492c8e3e2b0f8373ec3cc1230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDurableSubState::getDurableSubStateName</definition>
+        <argsstring>()</argsstring>
+        <name>getDurableSubStateName</name>
+        <qualifiedname>PosDurableSubState::getDurableSubStateName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="141" column="10"/>
+        <references refid="interface_pos_durable_sub_state_1ad1bd38d492c8e3e2b0f8373ec3cc1230">getDurableSubStateName</references>
+        <referencedby refid="interface_pos_durable_sub_state_1ad1bd38d492c8e3e2b0f8373ec3cc1230">getDurableSubStateName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a15c541434fe3743b8230d37a1d40409d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDurableSubState::getDurableSubStateDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDurableSubStateDescription</name>
+        <qualifiedname>PosDurableSubState::getDurableSubStateDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="147" column="10"/>
+        <references refid="interface_pos_durable_sub_state_1a15c541434fe3743b8230d37a1d40409d">getDurableSubStateDescription</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a15c541434fe3743b8230d37a1d40409d">getDurableSubStateDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1ac3698a04ad03f25facd93e83bbaf7b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDurableSubState::getDurableState</definition>
+        <argsstring>()</argsstring>
+        <name>getDurableState</name>
+        <qualifiedname>PosDurableSubState::getDurableState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="153" column="10"/>
+        <references refid="interface_pos_durable_sub_state_1ac3698a04ad03f25facd93e83bbaf7b69">getDurableState</references>
+        <referencedby refid="interface_pos_durable_sub_state_1ac3698a04ad03f25facd93e83bbaf7b69">getDurableState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a0b4c2e461081269c9a3a274cfdfbd4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isLotProcessAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isLotProcessAvailable</name>
+        <qualifiedname>PosDurableSubState::isLotProcessAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="160" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1a0b4c2e461081269c9a3a274cfdfbd4fb">isLotProcessAvailable</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a0b4c2e461081269c9a3a274cfdfbd4fb">isLotProcessAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a2c08a1b16ebdd0302cb041390aac8387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isDurableProcessAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isDurableProcessAvailable</name>
+        <qualifiedname>PosDurableSubState::isDurableProcessAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="167" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1a2c08a1b16ebdd0302cb041390aac8387">isDurableProcessAvailable</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a2c08a1b16ebdd0302cb041390aac8387">isDurableProcessAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1aaee659839c6ec8f3ed75f95c95fcc413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isConditionalAvailableForLot</definition>
+        <argsstring>()</argsstring>
+        <name>isConditionalAvailableForLot</name>
+        <qualifiedname>PosDurableSubState::isConditionalAvailableForLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="174" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1aaee659839c6ec8f3ed75f95c95fcc413">isConditionalAvailableForLot</references>
+        <referencedby refid="interface_pos_durable_sub_state_1aaee659839c6ec8f3ed75f95c95fcc413">isConditionalAvailableForLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a28ef85c627564ac2127c5d8a829bdde6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::makeConditionalAvailableForLotFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeConditionalAvailableForLotFlagOn</name>
+        <qualifiedname>PosDurableSubState::makeConditionalAvailableForLotFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="180" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1a28ef85c627564ac2127c5d8a829bdde6">makeConditionalAvailableForLotFlagOn</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a28ef85c627564ac2127c5d8a829bdde6">makeConditionalAvailableForLotFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1aee7411615a3a36d17a6fce4411ff5e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::makeConditionalAvailableForLotFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeConditionalAvailableForLotFlagOff</name>
+        <qualifiedname>PosDurableSubState::makeConditionalAvailableForLotFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="187" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1aee7411615a3a36d17a6fce4411ff5e00">makeConditionalAvailableForLotFlagOff</references>
+        <referencedby refid="interface_pos_durable_sub_state_1aee7411615a3a36d17a6fce4411ff5e00">makeConditionalAvailableForLotFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a295f9657a361989e5971cdb8dd232ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::addAvailableSubLotType</definition>
+        <argsstring>(in string subLotType)</argsstring>
+        <name>addAvailableSubLotType</name>
+        <qualifiedname>PosDurableSubState::addAvailableSubLotType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="194" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1a295f9657a361989e5971cdb8dd232ffc">addAvailableSubLotType</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a295f9657a361989e5971cdb8dd232ffc">addAvailableSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1ae124a14f8f5572c92e62d2198c263fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::removeAvailableSubLotType</definition>
+        <argsstring>(in string subLotType)</argsstring>
+        <name>removeAvailableSubLotType</name>
+        <qualifiedname>PosDurableSubState::removeAvailableSubLotType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_sub_state_1_1_sub_lot_type_not_found_signal" kindref="compound">SubLotTypeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="201" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1ae124a14f8f5572c92e62d2198c263fa7">removeAvailableSubLotType</references>
+        <referencedby refid="interface_pos_durable_sub_state_1ae124a14f8f5572c92e62d2198c263fa7">removeAvailableSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1aec7becaa19511fca3337cd125075bc7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosDurableSubState::allAvailableSubLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>allAvailableSubLotTypes</name>
+        <qualifiedname>PosDurableSubState::allAvailableSubLotTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="208" column="18"/>
+        <references refid="interface_pos_durable_sub_state_1aec7becaa19511fca3337cd125075bc7e">allAvailableSubLotTypes</references>
+        <referencedby refid="interface_pos_durable_sub_state_1aec7becaa19511fca3337cd125075bc7e">allAvailableSubLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1aec6ec92aee02669c338cbf4178b589b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::removeAllAvailableSubLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllAvailableSubLotTypes</name>
+        <qualifiedname>PosDurableSubState::removeAllAvailableSubLotTypes</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_durable_sub_state_1_1_sub_lot_type_not_found_signal" kindref="compound">SubLotTypeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="215" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1aec6ec92aee02669c338cbf4178b589b8">removeAllAvailableSubLotTypes</references>
+        <referencedby refid="interface_pos_durable_sub_state_1aec6ec92aee02669c338cbf4178b589b8">removeAllAvailableSubLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a3fc1e49d25169c7f57ed6215058ab2cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isConditionalAvailableFor</definition>
+        <argsstring>(in string subLotType)</argsstring>
+        <name>isConditionalAvailableFor</name>
+        <qualifiedname>PosDurableSubState::isConditionalAvailableFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="222" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1a3fc1e49d25169c7f57ed6215058ab2cd">isConditionalAvailableFor</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a3fc1e49d25169c7f57ed6215058ab2cd">isConditionalAvailableFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a7c82e2ac7183f5d12e6bdacde7534de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isChangeFromOtherDurableState</definition>
+        <argsstring>()</argsstring>
+        <name>isChangeFromOtherDurableState</name>
+        <qualifiedname>PosDurableSubState::isChangeFromOtherDurableState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="229" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1a7c82e2ac7183f5d12e6bdacde7534de8">isChangeFromOtherDurableState</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a7c82e2ac7183f5d12e6bdacde7534de8">isChangeFromOtherDurableState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a5f5b202d17abee532c5b5582be1116c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableSubState::isChangeToOtherDurableState</definition>
+        <argsstring>()</argsstring>
+        <name>isChangeToOtherDurableState</name>
+        <qualifiedname>PosDurableSubState::isChangeToOtherDurableState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="236" column="11"/>
+        <references refid="interface_pos_durable_sub_state_1a5f5b202d17abee532c5b5582be1116c5">isChangeToOtherDurableState</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a5f5b202d17abee532c5b5582be1116c5">isChangeToOtherDurableState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a34cb0ea62dec8493dca9eaaccc457ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>objectIdentifierSequence</type>
+        <definition>objectIdentifierSequence PosDurableSubState::allDurableSubStateTransitions</definition>
+        <argsstring>()</argsstring>
+        <name>allDurableSubStateTransitions</name>
+        <qualifiedname>PosDurableSubState::allDurableSubStateTransitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="243" column="28"/>
+        <references refid="interface_pos_durable_sub_state_1a34cb0ea62dec8493dca9eaaccc457ced">allDurableSubStateTransitions</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a34cb0ea62dec8493dca9eaaccc457ced">allDurableSubStateTransitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a958fda43d8d05c0f010ab7928fec7a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::removeDurableSubState</definition>
+        <argsstring>(in PosDurableSubState aDurableSubState)</argsstring>
+        <name>removeDurableSubState</name>
+        <qualifiedname>PosDurableSubState::removeDurableSubState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref></type>
+          <declname>aDurableSubState</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_sub_state_1_1_durable_sub_state_not_found_signal" kindref="compound">DurableSubStateNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="249" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1a958fda43d8d05c0f010ab7928fec7a87">removeDurableSubState</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a958fda43d8d05c0f010ab7928fec7a87">removeDurableSubState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_sub_state_1a4d6898528252e2ef393a6fb2c395d344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableSubState::setDurableSubStateInfo</definition>
+        <argsstring>(in brDurableSubStateInfo anDurableSubStateInfo)</argsstring>
+        <name>setDurableSubStateInfo</name>
+        <qualifiedname>PosDurableSubState::setDurableSubStateInfo</qualifiedname>
+        <param>
+          <type>in brDurableSubStateInfo</type>
+          <declname>anDurableSubStateInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_durable_sub_state_1_1_set_durable_sub_state_info_failed_signal" kindref="compound">SetDurableSubStateInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdstat.idl" line="255" column="8"/>
+        <references refid="interface_pos_durable_sub_state_1a4d6898528252e2ef393a6fb2c395d344">setDurableSubStateInfo</references>
+        <referencedby refid="interface_pos_durable_sub_state_1a4d6898528252e2ef393a6fb2c395d344">setDurableSubStateInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosDurableSubState</label>
+        <link refid="interface_pos_durable_sub_state"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosDurableSubState</label>
+        <link refid="interface_pos_durable_sub_state"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdstat.idl" line="35" column="11" bodyfile="poscimfw/include/pdstat.idl" bodystart="35" bodyend="263"/>
+    <listofallmembers>
+      <member refid="interface_pos_durable_sub_state_1a295f9657a361989e5971cdb8dd232ffc" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>addAvailableSubLotType</name></member>
+      <member refid="interface_pos_durable_sub_state_1aec7becaa19511fca3337cd125075bc7e" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>allAvailableSubLotTypes</name></member>
+      <member refid="interface_pos_durable_sub_state_1a34cb0ea62dec8493dca9eaaccc457ced" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>allDurableSubStateTransitions</name></member>
+      <member refid="interface_pos_durable_sub_state_1ac3698a04ad03f25facd93e83bbaf7b69" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>getDurableState</name></member>
+      <member refid="interface_pos_durable_sub_state_1a15c541434fe3743b8230d37a1d40409d" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>getDurableSubStateDescription</name></member>
+      <member refid="interface_pos_durable_sub_state_1ad1bd38d492c8e3e2b0f8373ec3cc1230" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>getDurableSubStateName</name></member>
+      <member refid="interface_pos_durable_sub_state_1a07059ac86949fd64ccb09074991aa404" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_durable_sub_state_1a7c82e2ac7183f5d12e6bdacde7534de8" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isChangeFromOtherDurableState</name></member>
+      <member refid="interface_pos_durable_sub_state_1a5f5b202d17abee532c5b5582be1116c5" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isChangeToOtherDurableState</name></member>
+      <member refid="interface_pos_durable_sub_state_1a3fc1e49d25169c7f57ed6215058ab2cd" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isConditionalAvailableFor</name></member>
+      <member refid="interface_pos_durable_sub_state_1aaee659839c6ec8f3ed75f95c95fcc413" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isConditionalAvailableForLot</name></member>
+      <member refid="interface_pos_durable_sub_state_1a2c08a1b16ebdd0302cb041390aac8387" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isDurableProcessAvailable</name></member>
+      <member refid="interface_pos_durable_sub_state_1a0b4c2e461081269c9a3a274cfdfbd4fb" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>isLotProcessAvailable</name></member>
+      <member refid="interface_pos_durable_sub_state_1aee7411615a3a36d17a6fce4411ff5e00" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>makeConditionalAvailableForLotFlagOff</name></member>
+      <member refid="interface_pos_durable_sub_state_1a28ef85c627564ac2127c5d8a829bdde6" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>makeConditionalAvailableForLotFlagOn</name></member>
+      <member refid="interface_pos_durable_sub_state_1a4cb41f6a83132e02e38aa6d3b84121e9" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>PosDurableSubState_init</name></member>
+      <member refid="interface_pos_durable_sub_state_1af1edd7a580ad9d75dae406ce9c1aca38" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>PosDurableSubState_uninit</name></member>
+      <member refid="interface_pos_durable_sub_state_1aec6ec92aee02669c338cbf4178b589b8" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>removeAllAvailableSubLotTypes</name></member>
+      <member refid="interface_pos_durable_sub_state_1ae124a14f8f5572c92e62d2198c263fa7" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>removeAvailableSubLotType</name></member>
+      <member refid="interface_pos_durable_sub_state_1a958fda43d8d05c0f010ab7928fec7a87" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>removeDurableSubState</name></member>
+      <member refid="interface_pos_durable_sub_state_1a4d6898528252e2ef393a6fb2c395d344" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>setDurableSubStateInfo</name></member>
+      <member refid="interface_pos_durable_sub_state_1ab2da1ee292ecd9cc16b97c215e23cd1f" prot="public" virt="non-virtual"><scope>PosDurableSubState</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

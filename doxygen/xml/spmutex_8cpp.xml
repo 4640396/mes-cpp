@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="spmutex_8cpp" kind="file" language="C++">
+    <compoundname>spmutex.cpp</compoundname>
+    <includes local="yes">spmutex.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/spmutex.cpp</label>
+        <link refid="spmutex_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>spmutex.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="spmutex_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/spmutex.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:36:49 [ 7/13/07 19:36:50 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spmutex.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/spmutex.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="spmutex_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/spmutex.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:36:49<sp/>[<sp/>7/13/07<sp/>19:36:50<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:<sp/>spmutex.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//09/09/04<sp/><sp/><sp/>D6000025<sp/><sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>SOM<sp/>was<sp/>changed<sp/>into<sp/>SIV<sp/>in<sp/>order<sp/>to<sp/>make<sp/>it<sp/>TIE<sp/>to<sp/>BOA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//02/19/05<sp/><sp/><sp/>P6000208<sp/><sp/>C.Tsuchiya<sp/><sp/><sp/><sp/><sp/>Add<sp/>lock(),<sp/>unlock()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>------------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2012/01/24<sp/>DSN000030296<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Support<sp/>thread<sp/>ID<sp/>which<sp/>is<sp/>longer<sp/>than<sp/>8<sp/>digit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2012/12/19<sp/>DSN000062578<sp/>S.Kawabe<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Change<sp/>the<sp/>way<sp/>to<sp/>lock<sp/>DO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spmutex.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MO_BOA<sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//P6000208<sp/>SPMutex::SPMutex()<sp/>{<sp/>theMutex=<sp/>new<sp/>SIVMutex();<sp/>}<sp/><sp/><sp/><sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>SPMutex::SPMutex()<sp/>{<sp/>theMutex=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SIVMutex();<sp/><sp/>lock_owner=0;<sp/>locked_count=0;<sp/>}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P6000208</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//P6000208<sp/>SPMutex::SPMutex()<sp/>{<sp/>theMutex=<sp/>new<sp/>SOMMutex();<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>SPMutex::SPMutex()<sp/>{<sp/>theMutex=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SOMMutex();<sp/><sp/>lock_owner=0;<sp/>locked_count=0;<sp/>}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//P6000208</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">SPMutex::<sp/>~SPMutex(){<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>theMutex;<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//P6000208<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SPMutex::lock(){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>pthread_t<sp/>tid<sp/>=<sp/>pthread_self();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>theMutex<sp/>){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07d],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;,tid,theMutex,lock_owner,locked_count<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);<sp/><sp/></highlight><highlight class="comment">//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07d],theMutex:[NULL]\n&quot;,tid);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07u],theMutex:[NULL]\n&quot;</highlight><highlight class="normal">,tid);<sp/><sp/></highlight><highlight class="comment">//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>theMutex-&gt;lock();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>lock_owner<sp/>=<sp/>tid<sp/>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>locked_count++<sp/>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\n<sp/>SPLock()-2:Thread<sp/>ID[%07d],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;,tid,theMutex,lock_owner,locked_count<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-2:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);<sp/><sp/></highlight><highlight class="comment">//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//DSN000062578<sp/>add<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SPMutex::lock(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="cimfwdo_8cpp_1a0eb73e1ac837828209a5b842000fa3b0" kindref="member">timeout</ref>){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>pthread_t<sp/>tid<sp/>=<sp/>pthread_self();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>theMutex<sp/>){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-1:Thread<sp/>ID[%07u],theMutex:[NULL]\n&quot;</highlight><highlight class="normal">,tid);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>&amp;theMutex-&gt;lock(<ref refid="cimfwdo_8cpp_1a0eb73e1ac837828209a5b842000fa3b0" kindref="member">timeout</ref>)<sp/>==<sp/>NULL<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>lock_owner<sp/>=<sp/>tid<sp/>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>locked_count++<sp/>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>SPLock()-2:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//DSN000062578<sp/>add<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SPMutex::unlock(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/>pthread_t<sp/>tid<sp/>=<sp/>pthread_self();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\n~SPLock()-1:Thread<sp/>ID[%07d],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;,tid,theMutex,lock_owner,locked_count<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n~SPLock()-1:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);<sp/><sp/></highlight><highlight class="comment">//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//we<sp/>must<sp/>do<sp/>it<sp/>here<sp/>to<sp/>prevent<sp/>timing<sp/>problem<sp/>to<sp/>the<sp/>next<sp/>locker.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/>locked_count--<sp/>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>locked_count<sp/>&lt;<sp/>1<sp/>)<sp/>lock_owner<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/>theMutex-&gt;unlock();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>_DFC_DEBUG_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\n~SPLock()-2:Thread<sp/>ID[%07d],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;,tid,theMutex,lock_owner,locked_count<sp/>);<sp/>//may<sp/>not<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n~SPLock()-2:Thread<sp/>ID[%07u],theMutex:[0x%x],owner[%07d],count[%7d]\n&quot;</highlight><highlight class="normal">,tid,theMutex,lock_owner,locked_count<sp/>);<sp/></highlight><highlight class="comment">//may<sp/>not<sp/>correct<sp/><sp/>//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//P6000208<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/spmutex.cpp"/>
+  </compounddef>
+</doxygen>

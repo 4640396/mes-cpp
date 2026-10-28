@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="spfunc_8cpp" kind="file" language="C++">
+    <compoundname>spfunc.cpp</compoundname>
+    <includes local="yes">spfunc.hpp</includes>
+    <includes local="yes">cimfwstr.hpp</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">timeb.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/spfunc.cpp</label>
+        <link refid="spfunc_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cimfwstr.hpp</label>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="2">
+        <label>spfunc.hpp</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>time.h</label>
+      </node>
+      <node id="7">
+        <label>timeb.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="spfunc_8cpp_1a5616c5a39ff9b226346b133d638d4af0" prot="public" static="no">
+        <name>STR_INT_PLUS_MAX</name>
+        <initializer>&quot;2147483647&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="125" column="9" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="125" bodyend="-1"/>
+        <referencedby refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="spfunc_8cpp_1a314ce317603b48a356c8b6066c8dca9e" prot="public" static="no">
+        <name>STR_INT_MINUS_MAX</name>
+        <initializer>&quot;2147483648&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="126" column="9" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="126" bodyend="-1"/>
+        <referencedby refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="spfunc_8cpp_1aec54b888ffa56cd8f96c89b99b68f6bf" prot="public" static="no">
+        <name>ZERO_PAD</name>
+        <initializer>&quot;000000000&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="127" column="9" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="127" bodyend="-1"/>
+        <referencedby refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" compoundref="spfunc_8cpp" startline="140" endline="151">PadDigits</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" prot="public" static="no">
+        <name>PAD_LEN</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="128" column="9" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="128" bodyend="-1"/>
+        <referencedby refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" compoundref="spfunc_8cpp" startline="140" endline="151">PadDigits</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="spfunc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/spfunc.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:36:07 [ 7/13/07 19:36:08 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" prot="public" static="no" extern="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * _getTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>_getTimeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="37" column="13" bodyfile="smtchcmf/frmwrkgl/spfuncdb.sqx" bodystart="25" bodyend="52" declfile="smtchcmf/frmwrkgl/spfunc.cpp" declline="37" declcolumn="13"/>
+        <references refid="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" compoundref="spfuncdb_8sqx" startline="25" endline="52">_getTimeStamp</references>
+        <references refid="cimfwstr_8cpp_1a35aef4eb7b40a397712adaee1529e30a" compoundref="cimfwstr_8cpp" startline="199" endline="218">CIMFWStrDup</references>
+        <referencedby refid="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" compoundref="spfuncdb_8sqx" startline="25" endline="52">_getTimeStamp</referencedby>
+        <referencedby refid="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" compoundref="spfunc_8cpp" startline="224" endline="264">getTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>static CORBA::Boolean striptail</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>striptail</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="47" column="23" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="47" bodyend="64"/>
+        <references refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" compoundref="cimfwstr_8cpp" startline="187" endline="195">CIMFWStrLen</references>
+        <references refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" compoundref="spfunc_8cpp" startline="47" endline="64">striptail</references>
+        <referencedby refid="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" compoundref="spfunc_8cpp" startline="202" endline="215">IsValueDouble</referencedby>
+        <referencedby refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" compoundref="spfunc_8cpp" startline="96" endline="123">IsValueLong_digitCheck</referencedby>
+        <referencedby refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" compoundref="spfunc_8cpp" startline="47" endline="64">striptail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * striphead</definition>
+        <argsstring>(char *str, int &amp;isMinus)</argsstring>
+        <name>striphead</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>isMinus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="76" column="13" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="76" bodyend="87"/>
+        <references refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" compoundref="spfunc_8cpp" startline="76" endline="87">striphead</references>
+        <referencedby refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</referencedby>
+        <referencedby refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" compoundref="spfunc_8cpp" startline="76" endline="87">striphead</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>static CORBA::Boolean IsValueLong_digitCheck</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>IsValueLong_digitCheck</name>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="96" column="23" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="96" bodyend="123"/>
+        <references refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" compoundref="cimfwstr_8cpp" startline="187" endline="195">CIMFWStrLen</references>
+        <references refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" compoundref="spfunc_8cpp" startline="96" endline="123">IsValueLong_digitCheck</references>
+        <references refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" compoundref="spfunc_8cpp" startline="47" endline="64">striptail</references>
+        <referencedby refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" compoundref="spfunc_8cpp" startline="186" endline="192">IsValueLong</referencedby>
+        <referencedby refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" compoundref="spfunc_8cpp" startline="96" endline="123">IsValueLong_digitCheck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PadDigits</definition>
+        <argsstring>(char *result, const char *digit)</argsstring>
+        <name>PadDigits</name>
+        <param>
+          <type>char *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>digit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="140" column="13" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="140" bodyend="151"/>
+        <references refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" compoundref="cimfwstr_8cpp" startline="187" endline="195">CIMFWStrLen</references>
+        <references refid="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" compoundref="spfunc_8cpp" startline="128">PAD_LEN</references>
+        <references refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" compoundref="spfunc_8cpp" startline="140" endline="151">PadDigits</references>
+        <references refid="spfunc_8cpp_1aec54b888ffa56cd8f96c89b99b68f6bf" compoundref="spfunc_8cpp" startline="127">ZERO_PAD</references>
+        <referencedby refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</referencedby>
+        <referencedby refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" compoundref="spfunc_8cpp" startline="140" endline="151">PadDigits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>static CORBA::Boolean IsValueLong_rangeCheck</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>IsValueLong_rangeCheck</name>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="162" column="23" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="162" bodyend="176"/>
+        <references refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</references>
+        <references refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" compoundref="spfunc_8cpp" startline="140" endline="151">PadDigits</references>
+        <references refid="spfunc_8cpp_1a314ce317603b48a356c8b6066c8dca9e" compoundref="spfunc_8cpp" startline="126">STR_INT_MINUS_MAX</references>
+        <references refid="spfunc_8cpp_1a5616c5a39ff9b226346b133d638d4af0" compoundref="spfunc_8cpp" startline="125">STR_INT_PLUS_MAX</references>
+        <references refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" compoundref="spfunc_8cpp" startline="76" endline="87">striphead</references>
+        <referencedby refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" compoundref="spfunc_8cpp" startline="186" endline="192">IsValueLong</referencedby>
+        <referencedby refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>CORBA::Boolean IsValueLong</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>IsValueLong</name>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="186" column="16" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="186" bodyend="192"/>
+        <references refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" compoundref="spfunc_8cpp" startline="186" endline="192">IsValueLong</references>
+        <references refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" compoundref="spfunc_8cpp" startline="96" endline="123">IsValueLong_digitCheck</references>
+        <references refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" compoundref="spfunc_8cpp" startline="162" endline="176">IsValueLong_rangeCheck</references>
+        <referencedby refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" compoundref="spfunc_8cpp" startline="186" endline="192">IsValueLong</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>CORBA::Boolean IsValueDouble</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>IsValueDouble</name>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="202" column="16" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="202" bodyend="215"/>
+        <references refid="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" compoundref="spfunc_8cpp" startline="202" endline="215">IsValueDouble</references>
+        <references refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" compoundref="spfunc_8cpp" startline="47" endline="64">striptail</references>
+        <referencedby refid="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" compoundref="spfunc_8cpp" startline="202" endline="215">IsValueDouble</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * getTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spfunc.cpp" line="224" column="6" bodyfile="smtchcmf/frmwrkgl/spfunc.cpp" bodystart="224" bodyend="264"/>
+        <references refid="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" compoundref="spfuncdb_8sqx" startline="25" endline="52">_getTimeStamp</references>
+        <references refid="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" compoundref="spfunc_8cpp" startline="224" endline="264">getTimeStamp</references>
+        <referencedby refid="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" compoundref="spfunc_8cpp" startline="224" endline="264">getTimeStamp</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="spfunc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/spfunc.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:36:07<sp/>[<sp/>7/13/07<sp/>19:36:08<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>SCCS<sp/>&quot;@(#)<sp/>1.2<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/spfunc.cpp,<sp/>mm_srv_2_2_base,<sp/>mm_srv_2_2_base<sp/>1/12/00<sp/>19:21:32<sp/>1.2<sp/>[<sp/>1/12/00<sp/>19:21:33<sp/>]&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2009.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2009.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2009.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2009.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>08/31/99<sp/>D9900190<sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/><sp/>Move<sp/>CompareElements<sp/>to<sp/>spcomlib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/06/99<sp/>P9900221<sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/><sp/>Delete<sp/>CompareElements<sp/>from<sp/>spcomlib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/12/99<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/><sp/>Prepend<sp/>leading<sp/>&quot;0&quot;s<sp/>for<sp/>long<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>05/18/00<sp/>D2300017<sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/><sp/>Add<sp/>getTimeStamp<sp/>to<sp/>spcomlib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/23/02<sp/>D4100066<sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/><sp/>due<sp/>to<sp/>VAC5<sp/>strict<sp/>type<sp/>checking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/20/07<sp/>D9000001<sp/>D.Tamura<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64bit<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>------------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2009/08/05<sp/>DSIV00001249<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Improvement<sp/>of<sp/>Timestamp<sp/>for<sp/>Logging.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2009/11/04<sp/>DSIV00001481<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Timestamp<sp/>Improvement.<sp/>(R101)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spfunc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwstr.hpp&quot;</highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;timeb.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" kindref="member">_getTimeStamp</ref>();<sp/></highlight><highlight class="comment">//DSIV00001481</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>striptail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>static<sp/>CORBA::Boolean<sp/>striptail(string<sp/>str)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Set<sp/>space<sp/>character<sp/>to<sp/>null<sp/>character<sp/>for<sp/>string<sp/>tail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Returns<sp/>false<sp/>if<sp/>whole<sp/>blank<sp/>or<sp/>no<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CORBA::Boolean<sp/><ref refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" kindref="member">striptail</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>CORBA::Boolean<sp/>good_string_flag=<sp/>TRUE;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/>len=<sp/>strlen(str);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>len=<sp/><ref refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" kindref="member">CIMFWStrLen</ref>(str);</highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>len<sp/>==<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;<sp/></highlight><highlight class="comment">//<sp/>no<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>Null<sp/>padding<sp/>for<sp/>trailing<sp/>spaces.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>--len<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>str[len]==</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str[len]=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>len<sp/>==<sp/>0<sp/>)<sp/>good_string_flag=<sp/>FALSE;<sp/></highlight><highlight class="comment">//<sp/>whole<sp/>blank</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>good_string_flag;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>striptail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>striphead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>static<sp/>char*<sp/>striphead(string<sp/>str)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Assumes:<sp/>value<sp/>has<sp/>already<sp/>passed<sp/>IsValueLong_digitCheck</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Strips<sp/>leading<sp/>blank,<sp/>zero,<sp/>and<sp/>plus,<sp/>minus<sp/>sign.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>If<sp/>minus<sp/>sign<sp/>is<sp/>found,<sp/>set<sp/>1<sp/>to<sp/>isMinus.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" kindref="member">striphead</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>isMinus){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>isMinus=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>0:<sp/>plus<sp/>sign,<sp/>1:<sp/>minus<sp/>sign</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p=<sp/>str;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>*p<sp/>){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*p<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>)<sp/>isMinus=<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>minus<sp/>sign<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>isdigit(<sp/>*p<sp/>)<sp/>&amp;&amp;<sp/>*p<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;<sp/></highlight><highlight class="comment">//<sp/>start<sp/>of<sp/>digits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>p++;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/></highlight><highlight class="comment">//<sp/>NOT<sp/>REACHED<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>IsValueLong_digitCheck</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>static<sp/>CORBA::Boolean<sp/>IsValueLong_digitCheck(string<sp/>str)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Check<sp/>the<sp/>string<sp/>value<sp/>is<sp/>numeric<sp/>or<sp/>not.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CORBA::Boolean<sp/><ref refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" kindref="member">IsValueLong_digitCheck</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>Remove<sp/>trailing<sp/>space<sp/>chars.</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" kindref="member">striptail</ref>(value)<sp/>==<sp/>FALSE<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/>int<sp/>len=<sp/>strlen(<sp/>value);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len=<sp/><ref refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" kindref="member">CIMFWStrLen</ref>(<sp/>value<sp/>);</highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>skip<sp/>leading<sp/>blan<sp/>chars</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>value[idx]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>idx<sp/>&lt;<sp/>len<sp/><sp/>&amp;&amp;<sp/>value[idx]<sp/>!=<sp/>0<sp/>){<sp/>idx++;}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>Check<sp/>for<sp/>+/-<sp/>chars</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>value[idx]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal"><sp/>||<sp/>value[idx]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>)<sp/>idx++;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/>check<sp/>for<sp/>integer<sp/>chars</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>isdigit(value[idx])<sp/>&amp;&amp;<sp/>idx<sp/>&lt;<sp/>len<sp/><sp/>&amp;&amp;<sp/>value[idx]<sp/>!=<sp/>0<sp/>){<sp/>idx++;}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>idx<sp/>==<sp/>len<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="spfunc_8cpp_1a5616c5a39ff9b226346b133d638d4af0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR_INT_PLUS_MAX<sp/><sp/>&quot;2147483647&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="spfunc_8cpp_1a314ce317603b48a356c8b6066c8dca9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR_INT_MINUS_MAX<sp/>&quot;2147483648&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="spfunc_8cpp_1aec54b888ffa56cd8f96c89b99b68f6bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZERO_PAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;000000000&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAD_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>padDigits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>static<sp/>void<sp/>PadDigits(<sp/>char*<sp/>result,<sp/>const<sp/>char*<sp/>digit<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Assumes:<sp/>result<sp/>is<sp/>already<sp/>allocated<sp/>by<sp/>the<sp/>caller.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>its<sp/>minimum<sp/>length<sp/>is<sp/>to<sp/>be<sp/>LONG_MAX_LEN+1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Pad<sp/>leading<sp/>&apos;0&apos;<sp/>digits<sp/>for<sp/>long<sp/>variable<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" kindref="member">PadDigits</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>digit<sp/>){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>work[64];</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/>sprintf(<sp/>result,<sp/></highlight><highlight class="stringliteral">&quot;%s%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="spfunc_8cpp_1aec54b888ffa56cd8f96c89b99b68f6bf" kindref="member">ZERO_PAD</ref>,<sp/>digit<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/>int<sp/>len=<sp/>strlen(<sp/>result);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len=<sp/><ref refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" kindref="member">CIMFWStrLen</ref>(<sp/>result);</highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start_pos=<sp/>len-<ref refid="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" kindref="member">PAD_LEN</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/>strncpy(<sp/>work,<sp/>&amp;result[start_pos],<sp/><ref refid="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" kindref="member">PAD_LEN</ref><sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/>work[<ref refid="spfunc_8cpp_1a3fe2f3e22751b42d3f2ebd187093aab2" kindref="member">PAD_LEN</ref>]=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>null<sp/>terminate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/>strcpy(<sp/>result,<sp/>work);<sp/></highlight><highlight class="comment">//<sp/>copy<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>padDigits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>IsValueLong_rangeCheck</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>static<sp/>CORBA::Boolean<sp/>IsValueLong_rangeCheck(string<sp/>str)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Assumes:<sp/>value<sp/>has<sp/>already<sp/>passed<sp/>IsValueLong_digitCheck</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Check<sp/>the<sp/>range<sp/>of<sp/>the<sp/>string<sp/>value.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CORBA::Boolean<sp/><ref refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" kindref="member">IsValueLong_rangeCheck</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isMinus=<sp/>0;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>digit=<sp/><ref refid="spfunc_8cpp_1aab97e5747d8eed68245919efb30dc767" kindref="member">striphead</ref>(value,<sp/>isMinus);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>padedDigits[64];</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><ref refid="spfunc_8cpp_1a030faaf9b076331ade919df0e22c88d9" kindref="member">PadDigits</ref>(<sp/>padedDigits,<sp/>digit<sp/>);<sp/></highlight><highlight class="comment">//<sp/>prepend<sp/>nine<sp/>&quot;0&quot;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>isMinus<sp/>){</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>strcmp(<sp/><ref refid="spfunc_8cpp_1a314ce317603b48a356c8b6066c8dca9e" kindref="member">STR_INT_MINUS_MAX</ref>,<sp/>padedDigits)&lt;0<sp/><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>strcmp(<sp/><ref refid="spfunc_8cpp_1a5616c5a39ff9b226346b133d638d4af0" kindref="member">STR_INT_PLUS_MAX</ref><sp/>,<sp/>padedDigits)&lt;0<sp/><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>IsValueLong</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>boolean<sp/>IsValueLong(string<sp/>value)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Return<sp/>TRUE<sp/>if<sp/>the<sp/>data<sp/>type<sp/>of<sp/>an<sp/>argument<sp/>is<sp/>long.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//***<sp/><sp/>In<sp/>AIX,<sp/>if<sp/>value<sp/>is<sp/>long,<sp/>sin.good()<sp/>doesn&apos;t<sp/>work<sp/>correctly.<sp/>99/03/10<sp/>****</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="spfunc_8cpp_1ac52ecbbfae951351197b6088f8b018a9" kindref="member">IsValueLong</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="spfunc_8cpp_1ad67a48e18cf5027cb58f43b797db5ba2" kindref="member">IsValueLong_digitCheck</ref>(value)<sp/>==<sp/>FALSE<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="spfunc_8cpp_1acc94b0374576fc03f4c770e8d54b44f7" kindref="member">IsValueLong_rangeCheck</ref>(value)<sp/>==<sp/>FALSE<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>IsValueDouble</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>boolean<sp/>IsValueDouble(string<sp/>value)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Return<sp/>TRUE<sp/>if<sp/>the<sp/>data<sp/>type<sp/>of<sp/>an<sp/>argument<sp/>is<sp/>double.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="spfunc_8cpp_1a9f56684adc46cd119baa84ff97677a93" kindref="member">IsValueDouble</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>value)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Change<sp/>space<sp/>character<sp/>to<sp/>null<sp/>character<sp/>for<sp/>string<sp/>tail.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="spfunc_8cpp_1a22771e39fb7e518077ba3fea2291474b" kindref="member">striptail</ref>(value)<sp/>==<sp/>FALSE)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>istrstream<sp/><sp/>sin(value);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>sin<sp/>&gt;&gt;<sp/>d;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>sin.good()<sp/>+<sp/>sin.bad()<sp/>+<sp/>sin.fail()<sp/>)<sp/>!=<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>getTimeStamp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>char*<sp/>getTimeStamp()<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Return<sp/>string<sp/>of<sp/>current<sp/>timestamp<sp/>with<sp/>microseconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="spfunc_8cpp_1a19bce40d2cf74db19ce4843b3a3a4379" kindref="member">getTimeStamp</ref>()</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//DSIV00001481<sp/>add<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ts<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tmp<sp/>=<sp/>getenv(<sp/></highlight><highlight class="stringliteral">&quot;SP_USE_DB_TIMESTAMP&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>tmp<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>atoi(tmp)<sp/>!=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ts<sp/>=<sp/><ref refid="spfunc_8cpp_1ad017c8f8ee94a540d012fcfa53cce1eb" kindref="member">_getTimeStamp</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>ts<sp/>!=<sp/>NULL<sp/>)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ts;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//DSIV00001481<sp/>add<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001481<sp/>char*<sp/>ts<sp/>=<sp/>new<sp/>char[27];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>ts<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[27];<sp/></highlight><highlight class="comment">//DSIV00001481</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249<sp/>struct<sp/>timeb<sp/>tmb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>tv;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>tm;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249<sp/>ftime(<sp/>&amp;tmb<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249<sp/>localtime_r(<sp/>&amp;tmb.time,<sp/>&amp;tm<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>gettimeofday(<sp/>&amp;tv,<sp/>NULL<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>localtime_r(<sp/>&amp;tv.tv_sec,<sp/>&amp;tm<sp/>);<sp/></highlight><highlight class="comment">//DSIV00001249</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(<sp/>ts,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249<sp/>&quot;%04d-%02d-%02d-%02d.%02d.%02d.%03d000&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%04d-%02d-%02d-%02d.%02d.%02d.%06d&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="comment">//DSIV00001249</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_year+1900,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_mon<sp/><sp/>+1<sp/><sp/>,</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_mday<sp/><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_hour<sp/><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_min<sp/><sp/><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tm.tm_sec<sp/><sp/><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tv.tv_usec<sp/>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001249<sp/>tmb.millitm<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ts;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/spfunc.cpp"/>
+  </compounddef>
+</doxygen>

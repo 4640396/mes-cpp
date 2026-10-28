@@ -1,0 +1,1836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_storage_machine" kind="interface" language="IDL" prot="public">
+    <compoundname>PosStorageMachine</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">StorageMachine</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pstmc_8idl" local="no">pstmc.idl</includes>
+    <innerclass refid="exception_pos_storage_machine_1_1_machine_operation_procedure_duplicate_identifier_signal" prot="public">PosStorageMachine::MachineOperationProcedureDuplicateIdentifierSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_machine_note_duplicate_identifier_signal" prot="public">PosStorageMachine::MachineNoteDuplicateIdentifierSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_machine_note_remove_failed_signal" prot="public">PosStorageMachine::MachineNoteRemoveFailedSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_machine_operation_procedure_not_found_signal" prot="public">PosStorageMachine::MachineOperationProcedureNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_machine_note_not_found_signal" prot="public">PosStorageMachine::MachineNoteNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_set_stocker_info_failed_signal" prot="public">PosStorageMachine::SetStockerInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_storage_machine_resource_duplicate_signal" prot="public">PosStorageMachine::StorageMachineResourceDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_storage_machine_1_1_storage_machine_resource_not_found_signal" prot="public">PosStorageMachine::StorageMachineResourceNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_storage_machine_1a7847ee60c54c9a4d1355e97a8f9a1409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+        <definition>PosArea PosStorageMachine::getWorkArea</definition>
+        <argsstring>()</argsstring>
+        <name>getWorkArea</name>
+        <qualifiedname>PosStorageMachine::getWorkArea</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="235" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad48eefd8ac819b54955e0bc09346518e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getMachineType</definition>
+        <argsstring>()</argsstring>
+        <name>getMachineType</name>
+        <qualifiedname>PosStorageMachine::getMachineType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="241" column="10"/>
+        <references refid="interface_pos_storage_machine_1ad48eefd8ac819b54955e0bc09346518e">getMachineType</references>
+        <referencedby refid="interface_pos_storage_machine_1ad48eefd8ac819b54955e0bc09346518e">getMachineType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a6f34cda74189816b77547a26f33a2788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setMachineType</definition>
+        <argsstring>(in string aMachineType)</argsstring>
+        <name>setMachineType</name>
+        <qualifiedname>PosStorageMachine::setMachineType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aMachineType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="247" column="8"/>
+        <references refid="interface_pos_storage_machine_1a6f34cda74189816b77547a26f33a2788">setMachineType</references>
+        <referencedby refid="interface_pos_storage_machine_1a6f34cda74189816b77547a26f33a2788">setMachineType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a40d66e69a4585fb0705e10f90d365bd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_operation_procedure" kindref="compound">PosMachineOperationProcedure</ref></type>
+        <definition>PosMachineOperationProcedure PosStorageMachine::createMachineOperationProcedure</definition>
+        <argsstring>(in TimeStamp aCreatedTimeStamp, in PosPerson aPerson, in string title)</argsstring>
+        <name>createMachineOperationProcedure</name>
+        <qualifiedname>PosStorageMachine::createMachineOperationProcedure</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aCreatedTimeStamp</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>title</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_machine_operation_procedure_duplicate_identifier_signal" kindref="compound">MachineOperationProcedureDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="254" column="32"/>
+        <references refid="interface_pos_storage_machine_1a40d66e69a4585fb0705e10f90d365bd5">createMachineOperationProcedure</references>
+        <referencedby refid="interface_pos_storage_machine_1a40d66e69a4585fb0705e10f90d365bd5">createMachineOperationProcedure</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aa5f08335da3c76896acc9be7b39a61af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeMachineOperationProcedure</definition>
+        <argsstring>(in PosMachineOperationProcedure aNote)</argsstring>
+        <name>removeMachineOperationProcedure</name>
+        <qualifiedname>PosStorageMachine::removeMachineOperationProcedure</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_operation_procedure" kindref="compound">PosMachineOperationProcedure</ref></type>
+          <declname>aNote</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_machine_operation_procedure_not_found_signal" kindref="compound">MachineOperationProcedureNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="261" column="8"/>
+        <references refid="interface_pos_storage_machine_1aa5f08335da3c76896acc9be7b39a61af">removeMachineOperationProcedure</references>
+        <referencedby refid="interface_pos_storage_machine_1aa5f08335da3c76896acc9be7b39a61af">removeMachineOperationProcedure</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aa7dfd21f0cdf422bacaa90e04cb487fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a482f592c777c19fd9d710df8d458cda1" kindref="member">PosMachineOperationProcedureSequence</ref></type>
+        <definition>PosMachineOperationProcedureSequence PosStorageMachine::allMachineOperationProcedures</definition>
+        <argsstring>()</argsstring>
+        <name>allMachineOperationProcedures</name>
+        <qualifiedname>PosStorageMachine::allMachineOperationProcedures</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="269" column="40"/>
+        <references refid="interface_pos_storage_machine_1aa7dfd21f0cdf422bacaa90e04cb487fd">allMachineOperationProcedures</references>
+        <referencedby refid="interface_pos_storage_machine_1aa7dfd21f0cdf422bacaa90e04cb487fd">allMachineOperationProcedures</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ae68be9ef30ad6542ba0e794cdd0cb288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_note" kindref="compound">PosMachineNote</ref></type>
+        <definition>PosMachineNote PosStorageMachine::createMachineNote</definition>
+        <argsstring>(in TimeStamp aCreatedTimeStamp, in PosPerson aPerson, in string title)</argsstring>
+        <name>createMachineNote</name>
+        <qualifiedname>PosStorageMachine::createMachineNote</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aCreatedTimeStamp</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>title</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_machine_note_duplicate_identifier_signal" kindref="compound">MachineNoteDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="276" column="18"/>
+        <references refid="interface_pos_storage_machine_1ae68be9ef30ad6542ba0e794cdd0cb288">createMachineNote</references>
+        <referencedby refid="interface_pos_storage_machine_1ae68be9ef30ad6542ba0e794cdd0cb288">createMachineNote</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a296dd86143bb56c93ee73a8402bce7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeMachineNote</definition>
+        <argsstring>(in PosMachineNote aNote)</argsstring>
+        <name>removeMachineNote</name>
+        <qualifiedname>PosStorageMachine::removeMachineNote</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_note" kindref="compound">PosMachineNote</ref></type>
+          <declname>aNote</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_machine_note_not_found_signal" kindref="compound">MachineNoteNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="283" column="8"/>
+        <references refid="interface_pos_storage_machine_1a296dd86143bb56c93ee73a8402bce7fb">removeMachineNote</references>
+        <referencedby refid="interface_pos_storage_machine_1a296dd86143bb56c93ee73a8402bce7fb">removeMachineNote</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1acb95bcbed7ca39827f92e5d60249c915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a1ef6a829aa8e6936ad9a18e168c43d63" kindref="member">PosMachineNoteSequence</ref></type>
+        <definition>PosMachineNoteSequence PosStorageMachine::allMachineNotes</definition>
+        <argsstring>()</argsstring>
+        <name>allMachineNotes</name>
+        <qualifiedname>PosStorageMachine::allMachineNotes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="290" column="26"/>
+        <references refid="interface_pos_storage_machine_1acb95bcbed7ca39827f92e5d60249c915">allMachineNotes</references>
+        <referencedby refid="interface_pos_storage_machine_1acb95bcbed7ca39827f92e5d60249c915">allMachineNotes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ab7e8e967cc8a3622cb1028175c867a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setWorkArea</definition>
+        <argsstring>(in PosArea anArea)</argsstring>
+        <name>setWorkArea</name>
+        <qualifiedname>PosStorageMachine::setWorkArea</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+          <declname>anArea</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="296" column="8"/>
+        <references refid="interface_pos_storage_machine_1ab7e8e967cc8a3622cb1028175c867a53">setWorkArea</references>
+        <referencedby refid="interface_pos_storage_machine_1ab7e8e967cc8a3622cb1028175c867a53">setWorkArea</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ab37d3b7faa1179a19201d22dd8b0679a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosStorageMachine::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosStorageMachine::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="302" column="18"/>
+        <references refid="interface_pos_storage_machine_1ab37d3b7faa1179a19201d22dd8b0679a">getPropertySet</references>
+        <referencedby refid="interface_pos_storage_machine_1ab37d3b7faa1179a19201d22dd8b0679a">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a011f864ebf06f6b8396c9b3302d42561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setStockerInfo</definition>
+        <argsstring>(in brStockerInfo aStockerInfo)</argsstring>
+        <name>setStockerInfo</name>
+        <qualifiedname>PosStorageMachine::setStockerInfo</qualifiedname>
+        <param>
+          <type>in brStockerInfo</type>
+          <declname>aStockerInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_set_stocker_info_failed_signal" kindref="compound">SetStockerInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="308" column="8"/>
+        <references refid="interface_pos_storage_machine_1a011f864ebf06f6b8396c9b3302d42561">setStockerInfo</references>
+        <referencedby refid="interface_pos_storage_machine_1a011f864ebf06f6b8396c9b3302d42561">setStockerInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ac5ad99b15092a92dc09aeeab5b63b3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="314" column="8"/>
+        <references refid="interface_pos_storage_machine_1ac5ad99b15092a92dc09aeeab5b63b3b4">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1ac5ad99b15092a92dc09aeeab5b63b3b4">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a6389c9d5a37456b4d9b547d907328501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="320" column="13"/>
+        <references refid="interface_pos_storage_machine_1a6389c9d5a37456b4d9b547d907328501">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a6389c9d5a37456b4d9b547d907328501">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1acfc8eabe1393f587c25597f9daa7e6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aLastClaimedPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosStorageMachine::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastClaimedPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="326" column="8"/>
+        <references refid="interface_pos_storage_machine_1acfc8eabe1393f587c25597f9daa7e6f8">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_storage_machine_1acfc8eabe1393f587c25597f9daa7e6f8">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1af9197ad59e8fcbe8fd99f678a5e84a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosStorageMachine::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosStorageMachine::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="332" column="13"/>
+        <references refid="interface_pos_storage_machine_1af9197ad59e8fcbe8fd99f678a5e84a7b">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_storage_machine_1af9197ad59e8fcbe8fd99f678a5e84a7b">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a6757edcd538e97d34266d43c48272279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastMaintenanceTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastMaintenanceTimeStamp)</argsstring>
+        <name>setLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastMaintenanceTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastMaintenanceTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="338" column="8"/>
+        <references refid="interface_pos_storage_machine_1a6757edcd538e97d34266d43c48272279">setLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a6757edcd538e97d34266d43c48272279">setLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a9aededa07da97905cff213c814ca0fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastMaintenanceTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastMaintenanceTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="344" column="13"/>
+        <references refid="interface_pos_storage_machine_1a9aededa07da97905cff213c814ca0fca">getLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a9aededa07da97905cff213c814ca0fca">getLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ae220e43cb471beab16b7869ddd45cfbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastMaintenancePerson</definition>
+        <argsstring>(in PosPerson aLastMaintenancePerson)</argsstring>
+        <name>setLastMaintenancePerson</name>
+        <qualifiedname>PosStorageMachine::setLastMaintenancePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastMaintenancePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="350" column="8"/>
+        <references refid="interface_pos_storage_machine_1ae220e43cb471beab16b7869ddd45cfbc">setLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_storage_machine_1ae220e43cb471beab16b7869ddd45cfbc">setLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a7c43b92729e7b9e22a83236860a612db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosStorageMachine::getLastMaintenancePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePerson</name>
+        <qualifiedname>PosStorageMachine::getLastMaintenancePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="356" column="13"/>
+        <references refid="interface_pos_storage_machine_1a7c43b92729e7b9e22a83236860a612db">getLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_storage_machine_1a7c43b92729e7b9e22a83236860a612db">getLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad6a1b62f400a3057aa54893972cc4cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastStatusChangeTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastStatusChangeTimeStamp)</argsstring>
+        <name>setLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastStatusChangeTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastStatusChangeTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="363" column="8"/>
+        <references refid="interface_pos_storage_machine_1ad6a1b62f400a3057aa54893972cc4cf8">setLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1ad6a1b62f400a3057aa54893972cc4cf8">setLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2ae8ed1057d1620d01f657976dc4da53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastStatusChangeTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastStatusChangeTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="370" column="13"/>
+        <references refid="interface_pos_storage_machine_1a2ae8ed1057d1620d01f657976dc4da53">getLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a2ae8ed1057d1620d01f657976dc4da53">getLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aa78ebd7759880cdd7c35ac6b5abea709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastStatusChangePerson</definition>
+        <argsstring>(in PosPerson aLastStatusChangePerson)</argsstring>
+        <name>setLastStatusChangePerson</name>
+        <qualifiedname>PosStorageMachine::setLastStatusChangePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastStatusChangePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="376" column="8"/>
+        <references refid="interface_pos_storage_machine_1aa78ebd7759880cdd7c35ac6b5abea709">setLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_storage_machine_1aa78ebd7759880cdd7c35ac6b5abea709">setLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a1e62e917bfbafcc0295e56db3fec3acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosStorageMachine::getLastStatusChangePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePerson</name>
+        <qualifiedname>PosStorageMachine::getLastStatusChangePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="382" column="13"/>
+        <references refid="interface_pos_storage_machine_1a1e62e917bfbafcc0295e56db3fec3acf">getLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_storage_machine_1a1e62e917bfbafcc0295e56db3fec3acf">getLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a25b5fde5a7223c93e688d245ddd7743b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isIOModeInterInOn</definition>
+        <argsstring>()</argsstring>
+        <name>isIOModeInterInOn</name>
+        <qualifiedname>PosStorageMachine::isIOModeInterInOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="389" column="11"/>
+        <references refid="interface_pos_storage_machine_1a25b5fde5a7223c93e688d245ddd7743b">isIOModeInterInOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a25b5fde5a7223c93e688d245ddd7743b">isIOModeInterInOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a626f94092347f86c657abd5a8a178e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeInterInOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeInterInOn</name>
+        <qualifiedname>PosStorageMachine::makeIOModeInterInOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="395" column="8"/>
+        <references refid="interface_pos_storage_machine_1a626f94092347f86c657abd5a8a178e25">makeIOModeInterInOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a626f94092347f86c657abd5a8a178e25">makeIOModeInterInOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2db04904de2c4c6b38464825e370a38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeInterInOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeInterInOff</name>
+        <qualifiedname>PosStorageMachine::makeIOModeInterInOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="401" column="8"/>
+        <references refid="interface_pos_storage_machine_1a2db04904de2c4c6b38464825e370a38e">makeIOModeInterInOff</references>
+        <referencedby refid="interface_pos_storage_machine_1a2db04904de2c4c6b38464825e370a38e">makeIOModeInterInOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a4b41ef2f08207974a639fe2cf584c68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isIOModeInterOutOn</definition>
+        <argsstring>()</argsstring>
+        <name>isIOModeInterOutOn</name>
+        <qualifiedname>PosStorageMachine::isIOModeInterOutOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="408" column="11"/>
+        <references refid="interface_pos_storage_machine_1a4b41ef2f08207974a639fe2cf584c68b">isIOModeInterOutOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a4b41ef2f08207974a639fe2cf584c68b">isIOModeInterOutOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aaffc7167df974d13e70d38e280ae680b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeInterOutOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeInterOutOn</name>
+        <qualifiedname>PosStorageMachine::makeIOModeInterOutOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="414" column="8"/>
+        <references refid="interface_pos_storage_machine_1aaffc7167df974d13e70d38e280ae680b">makeIOModeInterOutOn</references>
+        <referencedby refid="interface_pos_storage_machine_1aaffc7167df974d13e70d38e280ae680b">makeIOModeInterOutOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a949459ddff3108569e73b690e991fe81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeInterOutOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeInterOutOff</name>
+        <qualifiedname>PosStorageMachine::makeIOModeInterOutOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="420" column="8"/>
+        <references refid="interface_pos_storage_machine_1a949459ddff3108569e73b690e991fe81">makeIOModeInterOutOff</references>
+        <referencedby refid="interface_pos_storage_machine_1a949459ddff3108569e73b690e991fe81">makeIOModeInterOutOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a7fe36dca73d0c47f35caccd24ffdce9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isIOModeIntraInOn</definition>
+        <argsstring>()</argsstring>
+        <name>isIOModeIntraInOn</name>
+        <qualifiedname>PosStorageMachine::isIOModeIntraInOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="427" column="11"/>
+        <references refid="interface_pos_storage_machine_1a7fe36dca73d0c47f35caccd24ffdce9d">isIOModeIntraInOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a7fe36dca73d0c47f35caccd24ffdce9d">isIOModeIntraInOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a5077b6d8b803ffff7b1d778ffa0714ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeIntraInOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeIntraInOn</name>
+        <qualifiedname>PosStorageMachine::makeIOModeIntraInOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="433" column="8"/>
+        <references refid="interface_pos_storage_machine_1a5077b6d8b803ffff7b1d778ffa0714ab">makeIOModeIntraInOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a5077b6d8b803ffff7b1d778ffa0714ab">makeIOModeIntraInOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a5017a66556d7cb2097042822b34c16b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeIntraInOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeIntraInOff</name>
+        <qualifiedname>PosStorageMachine::makeIOModeIntraInOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="439" column="8"/>
+        <references refid="interface_pos_storage_machine_1a5017a66556d7cb2097042822b34c16b8">makeIOModeIntraInOff</references>
+        <referencedby refid="interface_pos_storage_machine_1a5017a66556d7cb2097042822b34c16b8">makeIOModeIntraInOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a869415ba7b634ad8a0136e0def4fde80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isIOModeIntraOutOn</definition>
+        <argsstring>()</argsstring>
+        <name>isIOModeIntraOutOn</name>
+        <qualifiedname>PosStorageMachine::isIOModeIntraOutOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="446" column="11"/>
+        <references refid="interface_pos_storage_machine_1a869415ba7b634ad8a0136e0def4fde80">isIOModeIntraOutOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a869415ba7b634ad8a0136e0def4fde80">isIOModeIntraOutOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ab9b4e93fb0c70a2498720f6bb4821230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeIntraOutOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeIntraOutOn</name>
+        <qualifiedname>PosStorageMachine::makeIOModeIntraOutOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="452" column="8"/>
+        <references refid="interface_pos_storage_machine_1ab9b4e93fb0c70a2498720f6bb4821230">makeIOModeIntraOutOn</references>
+        <referencedby refid="interface_pos_storage_machine_1ab9b4e93fb0c70a2498720f6bb4821230">makeIOModeIntraOutOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad0a66aac8c39bcba96e7d8c724bffd5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeIOModeIntraOutOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeIOModeIntraOutOff</name>
+        <qualifiedname>PosStorageMachine::makeIOModeIntraOutOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="458" column="8"/>
+        <references refid="interface_pos_storage_machine_1ad0a66aac8c39bcba96e7d8c724bffd5f">makeIOModeIntraOutOff</references>
+        <referencedby refid="interface_pos_storage_machine_1ad0a66aac8c39bcba96e7d8c724bffd5f">makeIOModeIntraOutOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1acc287e04c4e50852e4bef329d6ea0ce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastInventoryReportTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setLastInventoryReportTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastInventoryReportTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="464" column="8"/>
+        <references refid="interface_pos_storage_machine_1acc287e04c4e50852e4bef329d6ea0ce0">setLastInventoryReportTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1acc287e04c4e50852e4bef329d6ea0ce0">setLastInventoryReportTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a86b3e952edec52d5f8d09370e694a102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastInventoryReportTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastInventoryReportTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastInventoryReportTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="470" column="13"/>
+        <references refid="interface_pos_storage_machine_1a86b3e952edec52d5f8d09370e694a102">getLastInventoryReportTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a86b3e952edec52d5f8d09370e694a102">getLastInventoryReportTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a07036c294a3aaab75c6ce527c00368da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isInventoryRequested</definition>
+        <argsstring>()</argsstring>
+        <name>isInventoryRequested</name>
+        <qualifiedname>PosStorageMachine::isInventoryRequested</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="476" column="11"/>
+        <references refid="interface_pos_storage_machine_1a07036c294a3aaab75c6ce527c00368da">isInventoryRequested</references>
+        <referencedby refid="interface_pos_storage_machine_1a07036c294a3aaab75c6ce527c00368da">isInventoryRequested</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2ce58d88b938146ec76e6fd7f60bf653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeInventoryRequestedOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeInventoryRequestedOn</name>
+        <qualifiedname>PosStorageMachine::makeInventoryRequestedOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="482" column="8"/>
+        <references refid="interface_pos_storage_machine_1a2ce58d88b938146ec76e6fd7f60bf653">makeInventoryRequestedOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a2ce58d88b938146ec76e6fd7f60bf653">makeInventoryRequestedOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad90c9fbcab6106be4cbbed07563abacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeInventoryRequestedOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeInventoryRequestedOff</name>
+        <qualifiedname>PosStorageMachine::makeInventoryRequestedOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="488" column="8"/>
+        <references refid="interface_pos_storage_machine_1ad90c9fbcab6106be4cbbed07563abacf">makeInventoryRequestedOff</references>
+        <referencedby refid="interface_pos_storage_machine_1ad90c9fbcab6106be4cbbed07563abacf">makeInventoryRequestedOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a0ab484932945909075854fca54739f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::PosStorageMachine_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosStorageMachine_init</name>
+        <qualifiedname>PosStorageMachine::PosStorageMachine_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="494" column="8"/>
+        <references refid="interface_pos_storage_machine_1a0ab484932945909075854fca54739f42">PosStorageMachine_init</references>
+        <referencedby refid="interface_pos_storage_machine_1a0ab484932945909075854fca54739f42">PosStorageMachine_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ae26c4d9517a60ce860031a622d27f766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getStockerType</definition>
+        <argsstring>()</argsstring>
+        <name>getStockerType</name>
+        <qualifiedname>PosStorageMachine::getStockerType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="500" column="10"/>
+        <references refid="interface_pos_storage_machine_1ae26c4d9517a60ce860031a622d27f766">getStockerType</references>
+        <referencedby refid="interface_pos_storage_machine_1ae26c4d9517a60ce860031a622d27f766">getStockerType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ae458ead80ce5cbd2bf89b42f5599abe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setStockerType</definition>
+        <argsstring>(in string aStockerType)</argsstring>
+        <name>setStockerType</name>
+        <qualifiedname>PosStorageMachine::setStockerType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aStockerType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="506" column="8"/>
+        <references refid="interface_pos_storage_machine_1ae458ead80ce5cbd2bf89b42f5599abe7">setStockerType</references>
+        <referencedby refid="interface_pos_storage_machine_1ae458ead80ce5cbd2bf89b42f5599abe7">setStockerType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a9ff0b18491626caf2844980259797441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeAllMachineNotes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachineNotes</name>
+        <qualifiedname>PosStorageMachine::removeAllMachineNotes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="513" column="8"/>
+        <references refid="interface_pos_storage_machine_1a9ff0b18491626caf2844980259797441">removeAllMachineNotes</references>
+        <referencedby refid="interface_pos_storage_machine_1a9ff0b18491626caf2844980259797441">removeAllMachineNotes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aaeb952613742ed671401d6d1181bb56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeAllMachineOperationProcedures</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachineOperationProcedures</name>
+        <qualifiedname>PosStorageMachine::removeAllMachineOperationProcedures</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="520" column="8"/>
+        <references refid="interface_pos_storage_machine_1aaeb952613742ed671401d6d1181bb56a">removeAllMachineOperationProcedures</references>
+        <referencedby refid="interface_pos_storage_machine_1aaeb952613742ed671401d6d1181bb56a">removeAllMachineOperationProcedures</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2853d8e6ff94ba80cc05ea2f1cc14eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosStorageMachine::getActualMachineState</definition>
+        <argsstring>()</argsstring>
+        <name>getActualMachineState</name>
+        <qualifiedname>PosStorageMachine::getActualMachineState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="527" column="19"/>
+        <references refid="interface_pos_storage_machine_1a2853d8e6ff94ba80cc05ea2f1cc14eb9">getActualMachineState</references>
+        <referencedby refid="interface_pos_storage_machine_1a2853d8e6ff94ba80cc05ea2f1cc14eb9">getActualMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2c2ba35e9831f61fe727fc5737e09015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosStorageMachine::getCurrentMachineState</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentMachineState</name>
+        <qualifiedname>PosStorageMachine::getCurrentMachineState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="534" column="19"/>
+        <references refid="interface_pos_storage_machine_1a2c2ba35e9831f61fe727fc5737e09015">getCurrentMachineState</references>
+        <referencedby refid="interface_pos_storage_machine_1a2c2ba35e9831f61fe727fc5737e09015">getCurrentMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aff7711cbd8919110eda23a6d7159481e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastActualStatusChangeTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastActualStatusChangeTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastActualStatusChangeTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="540" column="13"/>
+        <references refid="interface_pos_storage_machine_1aff7711cbd8919110eda23a6d7159481e">getLastActualStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1aff7711cbd8919110eda23a6d7159481e">getLastActualStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a66729b040cdf56df7944576558cf6b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosStorageMachine::getLastStatusHistoryTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusHistoryTimeStamp</name>
+        <qualifiedname>PosStorageMachine::getLastStatusHistoryTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="547" column="13"/>
+        <references refid="interface_pos_storage_machine_1a66729b040cdf56df7944576558cf6b9b">getLastStatusHistoryTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a66729b040cdf56df7944576558cf6b9b">getLastStatusHistoryTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a9f96fd7985185f10221bf0b32518b924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref></type>
+        <definition>PosRawMachineStateSet PosStorageMachine::getRawMachineStateSet</definition>
+        <argsstring>()</argsstring>
+        <name>getRawMachineStateSet</name>
+        <qualifiedname>PosStorageMachine::getRawMachineStateSet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="554" column="25"/>
+        <references refid="interface_pos_storage_machine_1a9f96fd7985185f10221bf0b32518b924">getRawMachineStateSet</references>
+        <referencedby refid="interface_pos_storage_machine_1a9f96fd7985185f10221bf0b32518b924">getRawMachineStateSet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ac6976f77495b536fd89180975b157427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isAvailableState</definition>
+        <argsstring>()</argsstring>
+        <name>isAvailableState</name>
+        <qualifiedname>PosStorageMachine::isAvailableState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="560" column="11"/>
+        <references refid="interface_pos_storage_machine_1ac6976f77495b536fd89180975b157427">isAvailableState</references>
+        <referencedby refid="interface_pos_storage_machine_1ac6976f77495b536fd89180975b157427">isAvailableState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a5cddb51e453350cbe43933f4b5d2659e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setActualMachineState</definition>
+        <argsstring>(in PosMachineState aMachineState)</argsstring>
+        <name>setActualMachineState</name>
+        <qualifiedname>PosStorageMachine::setActualMachineState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+          <declname>aMachineState</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="567" column="8"/>
+        <references refid="interface_pos_storage_machine_1a5cddb51e453350cbe43933f4b5d2659e">setActualMachineState</references>
+        <referencedby refid="interface_pos_storage_machine_1a5cddb51e453350cbe43933f4b5d2659e">setActualMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a019ed4eae52e11bd90549365c480456f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setAvailableFlag</definition>
+        <argsstring>(in boolean anAvailableStateFlag)</argsstring>
+        <name>setAvailableFlag</name>
+        <qualifiedname>PosStorageMachine::setAvailableFlag</qualifiedname>
+        <param>
+          <type>in boolean</type>
+          <declname>anAvailableStateFlag</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="574" column="8"/>
+        <references refid="interface_pos_storage_machine_1a019ed4eae52e11bd90549365c480456f">setAvailableFlag</references>
+        <referencedby refid="interface_pos_storage_machine_1a019ed4eae52e11bd90549365c480456f">setAvailableFlag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a113db2becaf6dded301f26b4d5ec43a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setCurrentMachineState</definition>
+        <argsstring>(in PosMachineState aMachineState)</argsstring>
+        <name>setCurrentMachineState</name>
+        <qualifiedname>PosStorageMachine::setCurrentMachineState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+          <declname>aMachineState</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="580" column="8"/>
+        <references refid="interface_pos_storage_machine_1a113db2becaf6dded301f26b4d5ec43a0">setCurrentMachineState</references>
+        <referencedby refid="interface_pos_storage_machine_1a113db2becaf6dded301f26b4d5ec43a0">setCurrentMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a4e02c6621d19944899ccc1437a2c3f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastActualStatusChangeTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastStatusChangeTimeStamp)</argsstring>
+        <name>setLastActualStatusChangeTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastActualStatusChangeTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastStatusChangeTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="586" column="8"/>
+        <references refid="interface_pos_storage_machine_1a4e02c6621d19944899ccc1437a2c3f80">setLastActualStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1a4e02c6621d19944899ccc1437a2c3f80">setLastActualStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aacc6e1aeaa76e50daffca29d2cc61b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setLastStatusHistoryTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastStatusHistoryTimeStamp)</argsstring>
+        <name>setLastStatusHistoryTimeStamp</name>
+        <qualifiedname>PosStorageMachine::setLastStatusHistoryTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastStatusHistoryTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="593" column="8"/>
+        <references refid="interface_pos_storage_machine_1aacc6e1aeaa76e50daffca29d2cc61b69">setLastStatusHistoryTimeStamp</references>
+        <referencedby refid="interface_pos_storage_machine_1aacc6e1aeaa76e50daffca29d2cc61b69">setLastStatusHistoryTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a2cf811b362046892b84db6905b82c455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosStorageMachine::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="599" column="10"/>
+        <references refid="interface_pos_storage_machine_1a2cf811b362046892b84db6905b82c455">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_storage_machine_1a2cf811b362046892b84db6905b82c455">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad9d07192e1616955c2d2db846954ccb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getLastMaintenancePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePersonID</name>
+        <qualifiedname>PosStorageMachine::getLastMaintenancePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="605" column="10"/>
+        <references refid="interface_pos_storage_machine_1ad9d07192e1616955c2d2db846954ccb0">getLastMaintenancePersonID</references>
+        <referencedby refid="interface_pos_storage_machine_1ad9d07192e1616955c2d2db846954ccb0">getLastMaintenancePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a784dbffa1eade183ada3c0a455a65700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getLastStatusChangePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePersonID</name>
+        <qualifiedname>PosStorageMachine::getLastStatusChangePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="611" column="10"/>
+        <references refid="interface_pos_storage_machine_1a784dbffa1eade183ada3c0a455a65700">getLastStatusChangePersonID</references>
+        <referencedby refid="interface_pos_storage_machine_1a784dbffa1eade183ada3c0a455a65700">getLastStatusChangePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ab1c7d4ae9f58b2914604751bcda330ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::addStorageMachineResource</definition>
+        <argsstring>(in posStorageMachineResource aStorageMachineResource)</argsstring>
+        <name>addStorageMachineResource</name>
+        <qualifiedname>PosStorageMachine::addStorageMachineResource</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1aef878f5269f4f9803e9faa2461c0326a" kindref="member">posStorageMachineResource</ref></type>
+          <declname>aStorageMachineResource</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_storage_machine_resource_duplicate_signal" kindref="compound">StorageMachineResourceDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="618" column="8"/>
+        <references refid="interface_pos_storage_machine_1ab1c7d4ae9f58b2914604751bcda330ba">addStorageMachineResource</references>
+        <referencedby refid="interface_pos_storage_machine_1ab1c7d4ae9f58b2914604751bcda330ba">addStorageMachineResource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ab13cd4360ec30232d2f7b797aae321bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aef878f5269f4f9803e9faa2461c0326a" kindref="member">posStorageMachineResource</ref></type>
+        <definition>posStorageMachineResource PosStorageMachine::findStorageMachineResourceFor</definition>
+        <argsstring>(in string aResourceID)</argsstring>
+        <name>findStorageMachineResourceFor</name>
+        <qualifiedname>PosStorageMachine::findStorageMachineResourceFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aResourceID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="625" column="29"/>
+        <references refid="interface_pos_storage_machine_1ab13cd4360ec30232d2f7b797aae321bf">findStorageMachineResourceFor</references>
+        <referencedby refid="interface_pos_storage_machine_1ab13cd4360ec30232d2f7b797aae321bf">findStorageMachineResourceFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a44f2a1b7a2549910d4046da011c076da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1afc269a3c5cbf4f601055b74b18d64255" kindref="member">PosStorageMachineResourceSequence</ref></type>
+        <definition>PosStorageMachineResourceSequence PosStorageMachine::allStorageMachineResources</definition>
+        <argsstring>()</argsstring>
+        <name>allStorageMachineResources</name>
+        <qualifiedname>PosStorageMachine::allStorageMachineResources</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="632" column="37"/>
+        <references refid="interface_pos_storage_machine_1a44f2a1b7a2549910d4046da011c076da">allStorageMachineResources</references>
+        <referencedby refid="interface_pos_storage_machine_1a44f2a1b7a2549910d4046da011c076da">allStorageMachineResources</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a8089ccd23d56645f5e943933ba34cf5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeStorageMachineResource</definition>
+        <argsstring>(in string aResourceID)</argsstring>
+        <name>removeStorageMachineResource</name>
+        <qualifiedname>PosStorageMachine::removeStorageMachineResource</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aResourceID</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_storage_machine_resource_not_found_signal" kindref="compound">StorageMachineResourceNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="639" column="8"/>
+        <references refid="interface_pos_storage_machine_1a8089ccd23d56645f5e943933ba34cf5b">removeStorageMachineResource</references>
+        <referencedby refid="interface_pos_storage_machine_1a8089ccd23d56645f5e943933ba34cf5b">removeStorageMachineResource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a3c57692fc8322be6ddfc17b13ad54f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeAllStorageMachineResources</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllStorageMachineResources</name>
+        <qualifiedname>PosStorageMachine::removeAllStorageMachineResources</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="646" column="8"/>
+        <references refid="interface_pos_storage_machine_1a3c57692fc8322be6ddfc17b13ad54f00">removeAllStorageMachineResources</references>
+        <referencedby refid="interface_pos_storage_machine_1a3c57692fc8322be6ddfc17b13ad54f00">removeAllStorageMachineResources</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a39381e7778951c4574956abd3d285dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setCellController</definition>
+        <argsstring>(in string aCellController)</argsstring>
+        <name>setCellController</name>
+        <qualifiedname>PosStorageMachine::setCellController</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aCellController</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="652" column="8"/>
+        <references refid="interface_pos_storage_machine_1a39381e7778951c4574956abd3d285dfc">setCellController</references>
+        <referencedby refid="interface_pos_storage_machine_1a39381e7778951c4574956abd3d285dfc">setCellController</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ac1b22ebb3c1f9d88bfe5da20b299706a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getCellController</definition>
+        <argsstring>()</argsstring>
+        <name>getCellController</name>
+        <qualifiedname>PosStorageMachine::getCellController</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="658" column="10"/>
+        <references refid="interface_pos_storage_machine_1ac1b22ebb3c1f9d88bfe5da20b299706a">getCellController</references>
+        <referencedby refid="interface_pos_storage_machine_1ac1b22ebb3c1f9d88bfe5da20b299706a">getCellController</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a9bafa30ee01c0414a3d0730f7b6995d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setMaxReticleCapacity</definition>
+        <argsstring>(in long maxReticleCapacity)</argsstring>
+        <name>setMaxReticleCapacity</name>
+        <qualifiedname>PosStorageMachine::setMaxReticleCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>maxReticleCapacity</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="664" column="8"/>
+        <references refid="interface_pos_storage_machine_1a9bafa30ee01c0414a3d0730f7b6995d6">setMaxReticleCapacity</references>
+        <referencedby refid="interface_pos_storage_machine_1a9bafa30ee01c0414a3d0730f7b6995d6">setMaxReticleCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a5f808d1ebcb6f9f870cfe0c6715a291b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosStorageMachine::getMaxReticleCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxReticleCapacity</name>
+        <qualifiedname>PosStorageMachine::getMaxReticleCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="670" column="8"/>
+        <references refid="interface_pos_storage_machine_1a5f808d1ebcb6f9f870cfe0c6715a291b">getMaxReticleCapacity</references>
+        <referencedby refid="interface_pos_storage_machine_1a5f808d1ebcb6f9f870cfe0c6715a291b">getMaxReticleCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a12700350ad0402666ab26b88cd959754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeUTSStockerOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeUTSStockerOn</name>
+        <qualifiedname>PosStorageMachine::makeUTSStockerOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="676" column="8"/>
+        <references refid="interface_pos_storage_machine_1a12700350ad0402666ab26b88cd959754">makeUTSStockerOn</references>
+        <referencedby refid="interface_pos_storage_machine_1a12700350ad0402666ab26b88cd959754">makeUTSStockerOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1abb984bad9b62688a9be035fec9e4e774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeUTSStockerOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeUTSStockerOff</name>
+        <qualifiedname>PosStorageMachine::makeUTSStockerOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="682" column="8"/>
+        <references refid="interface_pos_storage_machine_1abb984bad9b62688a9be035fec9e4e774">makeUTSStockerOff</references>
+        <referencedby refid="interface_pos_storage_machine_1abb984bad9b62688a9be035fec9e4e774">makeUTSStockerOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1accb1635c272e4167ecfe91a31ef048ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isUTSStocker</definition>
+        <argsstring>()</argsstring>
+        <name>isUTSStocker</name>
+        <qualifiedname>PosStorageMachine::isUTSStocker</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="688" column="11"/>
+        <references refid="interface_pos_storage_machine_1accb1635c272e4167ecfe91a31ef048ad">isUTSStocker</references>
+        <referencedby refid="interface_pos_storage_machine_1accb1635c272e4167ecfe91a31ef048ad">isUTSStocker</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a9b8a2eda6f1d7caf4543ff81729ad247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setMaxUTSCapacity</definition>
+        <argsstring>(in long maxUTSCapacity)</argsstring>
+        <name>setMaxUTSCapacity</name>
+        <qualifiedname>PosStorageMachine::setMaxUTSCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>maxUTSCapacity</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="694" column="8"/>
+        <references refid="interface_pos_storage_machine_1a9b8a2eda6f1d7caf4543ff81729ad247">setMaxUTSCapacity</references>
+        <referencedby refid="interface_pos_storage_machine_1a9b8a2eda6f1d7caf4543ff81729ad247">setMaxUTSCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ac3da36033ec85c2001b7d900cef974d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosStorageMachine::getMaxUTSCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxUTSCapacity</name>
+        <qualifiedname>PosStorageMachine::getMaxUTSCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="700" column="8"/>
+        <references refid="interface_pos_storage_machine_1ac3da36033ec85c2001b7d900cef974d0">getMaxUTSCapacity</references>
+        <referencedby refid="interface_pos_storage_machine_1ac3da36033ec85c2001b7d900cef974d0">getMaxUTSCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1af11abe339d97b8a5268001ea4d251e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setInstanceName</definition>
+        <argsstring>(in string instanceName)</argsstring>
+        <name>setInstanceName</name>
+        <qualifiedname>PosStorageMachine::setInstanceName</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>instanceName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="706" column="8"/>
+        <references refid="interface_pos_storage_machine_1af11abe339d97b8a5268001ea4d251e97">setInstanceName</references>
+        <referencedby refid="interface_pos_storage_machine_1af11abe339d97b8a5268001ea4d251e97">setInstanceName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a1ae3b85c2cccc05c2b9ba5aa0c2a42b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getInstanceName</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceName</name>
+        <qualifiedname>PosStorageMachine::getInstanceName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="712" column="10"/>
+        <references refid="interface_pos_storage_machine_1a1ae3b85c2cccc05c2b9ba5aa0c2a42b9">getInstanceName</references>
+        <referencedby refid="interface_pos_storage_machine_1a1ae3b85c2cccc05c2b9ba5aa0c2a42b9">getInstanceName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aca3ca8f6feae71aadc38f92d750fcce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_pod_port_resource" kindref="compound">PosReticlePodPortResource</ref></type>
+        <definition>PosReticlePodPortResource PosStorageMachine::createReticlePodPortResourceNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createReticlePodPortResourceNamed</name>
+        <qualifiedname>PosStorageMachine::createReticlePodPortResourceNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="719" column="29"/>
+        <references refid="interface_pos_storage_machine_1aca3ca8f6feae71aadc38f92d750fcce6">createReticlePodPortResourceNamed</references>
+        <referencedby refid="interface_pos_storage_machine_1aca3ca8f6feae71aadc38f92d750fcce6">createReticlePodPortResourceNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a03d8c91c0c1a61f307ceaa08d3fcf723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeReticlePodPortResource</definition>
+        <argsstring>(in PosReticlePodPortResource aReticlePodPortResource)</argsstring>
+        <name>removeReticlePodPortResource</name>
+        <qualifiedname>PosStorageMachine::removeReticlePodPortResource</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_reticle_pod_port_resource" kindref="compound">PosReticlePodPortResource</ref></type>
+          <declname>aReticlePodPortResource</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="726" column="8"/>
+        <references refid="interface_pos_storage_machine_1a03d8c91c0c1a61f307ceaa08d3fcf723">removeReticlePodPortResource</references>
+        <referencedby refid="interface_pos_storage_machine_1a03d8c91c0c1a61f307ceaa08d3fcf723">removeReticlePodPortResource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a79553d5f711ff3fe5f0f66fcf8a93ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::removeAllReticlePodPortResources</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllReticlePodPortResources</name>
+        <qualifiedname>PosStorageMachine::removeAllReticlePodPortResources</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="733" column="8"/>
+        <references refid="interface_pos_storage_machine_1a79553d5f711ff3fe5f0f66fcf8a93ab0">removeAllReticlePodPortResources</references>
+        <referencedby refid="interface_pos_storage_machine_1a79553d5f711ff3fe5f0f66fcf8a93ab0">removeAllReticlePodPortResources</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a561aa3c2d5f6e508b29f7c6525620ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_pod_port_resource" kindref="compound">PosReticlePodPortResource</ref></type>
+        <definition>PosReticlePodPortResource PosStorageMachine::findReticlePodPortResourceNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findReticlePodPortResourceNamed</name>
+        <qualifiedname>PosStorageMachine::findReticlePodPortResourceNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="740" column="29"/>
+        <references refid="interface_pos_storage_machine_1a561aa3c2d5f6e508b29f7c6525620ac4">findReticlePodPortResourceNamed</references>
+        <referencedby refid="interface_pos_storage_machine_1a561aa3c2d5f6e508b29f7c6525620ac4">findReticlePodPortResourceNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a73657e4192f85d616300a575483c46a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a084780a16d6885891fda1ed01d20eac4" kindref="member">PosReticlePodPortResourceSequence</ref></type>
+        <definition>PosReticlePodPortResourceSequence PosStorageMachine::allReticlePodPortResources</definition>
+        <argsstring>()</argsstring>
+        <name>allReticlePodPortResources</name>
+        <qualifiedname>PosStorageMachine::allReticlePodPortResources</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="747" column="37"/>
+        <references refid="interface_pos_storage_machine_1a73657e4192f85d616300a575483c46a6">allReticlePodPortResources</references>
+        <referencedby refid="interface_pos_storage_machine_1a73657e4192f85d616300a575483c46a6">allReticlePodPortResources</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a0f2eda7093ebfd4f5716d1a8baedc007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosStorageMachine::getOnlineMode</definition>
+        <argsstring>()</argsstring>
+        <name>getOnlineMode</name>
+        <qualifiedname>PosStorageMachine::getOnlineMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="753" column="10"/>
+        <references refid="interface_pos_storage_machine_1a0f2eda7093ebfd4f5716d1a8baedc007">getOnlineMode</references>
+        <referencedby refid="interface_pos_storage_machine_1a0f2eda7093ebfd4f5716d1a8baedc007">getOnlineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a65368d9f0e4f6503d775b6c41e5d4719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setOnlineMode</definition>
+        <argsstring>(in string onlineMode)</argsstring>
+        <name>setOnlineMode</name>
+        <qualifiedname>PosStorageMachine::setOnlineMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>onlineMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="759" column="8"/>
+        <references refid="interface_pos_storage_machine_1a65368d9f0e4f6503d775b6c41e5d4719">setOnlineMode</references>
+        <referencedby refid="interface_pos_storage_machine_1a65368d9f0e4f6503d775b6c41e5d4719">setOnlineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a3b325630625fa5a2337a3602065a5461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>checkMessageSequence</type>
+        <definition>checkMessageSequence PosStorageMachine::checkForStockerRelease</definition>
+        <argsstring>(in brStockerInfo sStockerInfo, in long messageCount)</argsstring>
+        <name>checkForStockerRelease</name>
+        <qualifiedname>PosStorageMachine::checkForStockerRelease</qualifiedname>
+        <param>
+          <type>in brStockerInfo</type>
+          <declname>sStockerInfo</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>messageCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="765" column="24"/>
+        <references refid="interface_pos_storage_machine_1a3b325630625fa5a2337a3602065a5461">checkForStockerRelease</references>
+        <referencedby refid="interface_pos_storage_machine_1a3b325630625fa5a2337a3602065a5461">checkForStockerRelease</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ac7353e2adf5a8591c798553a74d7124a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeSLMUTSFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeSLMUTSFlagOn</name>
+        <qualifiedname>PosStorageMachine::makeSLMUTSFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="771" column="8"/>
+        <references refid="interface_pos_storage_machine_1ac7353e2adf5a8591c798553a74d7124a">makeSLMUTSFlagOn</references>
+        <referencedby refid="interface_pos_storage_machine_1ac7353e2adf5a8591c798553a74d7124a">makeSLMUTSFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1ad5ba3ba974e858660d6335f4db7aad6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::makeSLMUTSFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeSLMUTSFlagOff</name>
+        <qualifiedname>PosStorageMachine::makeSLMUTSFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="777" column="8"/>
+        <references refid="interface_pos_storage_machine_1ad5ba3ba974e858660d6335f4db7aad6e">makeSLMUTSFlagOff</references>
+        <referencedby refid="interface_pos_storage_machine_1ad5ba3ba974e858660d6335f4db7aad6e">makeSLMUTSFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aaaba63f0ba1e8740c6cd3853ea44ffdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosStorageMachine::isSLMUTSFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>isSLMUTSFlagOn</name>
+        <qualifiedname>PosStorageMachine::isSLMUTSFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="783" column="11"/>
+        <references refid="interface_pos_storage_machine_1aaaba63f0ba1e8740c6cd3853ea44ffdb">isSLMUTSFlagOn</references>
+        <referencedby refid="interface_pos_storage_machine_1aaaba63f0ba1e8740c6cd3853ea44ffdb">isSLMUTSFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a464d72f76815ac26f56b04ba70a21f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosStorageMachine::setStockerInfo__100</definition>
+        <argsstring>(in brStockerInfo__100 aStockerInfo__100)</argsstring>
+        <name>setStockerInfo__100</name>
+        <qualifiedname>PosStorageMachine::setStockerInfo__100</qualifiedname>
+        <param>
+          <type>in brStockerInfo__100</type>
+          <declname>aStockerInfo__100</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_storage_machine_1_1_set_stocker_info_failed_signal" kindref="compound">SetStockerInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="789" column="8"/>
+        <references refid="interface_pos_storage_machine_1a464d72f76815ac26f56b04ba70a21f7f">setStockerInfo__100</references>
+        <referencedby refid="interface_pos_storage_machine_1a464d72f76815ac26f56b04ba70a21f7f">setStockerInfo__100</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1aa9c0d213788b4339543841fdb35f03d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>checkMessageSequence</type>
+        <definition>checkMessageSequence PosStorageMachine::checkForStockerRelease__100</definition>
+        <argsstring>(in brStockerInfo__100 aStockerInfo__100, in long messageCount)</argsstring>
+        <name>checkForStockerRelease__100</name>
+        <qualifiedname>PosStorageMachine::checkForStockerRelease__100</qualifiedname>
+        <param>
+          <type>in brStockerInfo__100</type>
+          <declname>aStockerInfo__100</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>messageCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="795" column="24"/>
+        <references refid="interface_pos_storage_machine_1aa9c0d213788b4339543841fdb35f03d1">checkForStockerRelease__100</references>
+        <referencedby refid="interface_pos_storage_machine_1aa9c0d213788b4339543841fdb35f03d1">checkForStockerRelease__100</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_storage_machine_1a83d4739f5ac6aff400e7eab84f5c25e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosStorageMachine::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosStorageMachine::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pstmc.idl" line="801" column="18"/>
+        <references refid="interface_pos_storage_machine_1a83d4739f5ac6aff400e7eab84f5c25e5">createPropertySet</references>
+        <referencedby refid="interface_pos_storage_machine_1a83d4739f5ac6aff400e7eab84f5c25e5">createPropertySet</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosStorageMachine</label>
+        <link refid="interface_pos_storage_machine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StorageMachine</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosStorageMachine</label>
+        <link refid="interface_pos_storage_machine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StorageMachine</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pstmc.idl" line="48" column="11" bodyfile="poscimfw/include/pstmc.idl" bodystart="48" bodyend="809"/>
+    <listofallmembers>
+      <member refid="interface_pos_storage_machine_1ab1c7d4ae9f58b2914604751bcda330ba" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>addStorageMachineResource</name></member>
+      <member refid="interface_pos_storage_machine_1acb95bcbed7ca39827f92e5d60249c915" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>allMachineNotes</name></member>
+      <member refid="interface_pos_storage_machine_1aa7dfd21f0cdf422bacaa90e04cb487fd" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>allMachineOperationProcedures</name></member>
+      <member refid="interface_pos_storage_machine_1a73657e4192f85d616300a575483c46a6" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>allReticlePodPortResources</name></member>
+      <member refid="interface_pos_storage_machine_1a44f2a1b7a2549910d4046da011c076da" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>allStorageMachineResources</name></member>
+      <member refid="interface_pos_storage_machine_1a3b325630625fa5a2337a3602065a5461" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>checkForStockerRelease</name></member>
+      <member refid="interface_pos_storage_machine_1aa9c0d213788b4339543841fdb35f03d1" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>checkForStockerRelease__100</name></member>
+      <member refid="interface_pos_storage_machine_1ae68be9ef30ad6542ba0e794cdd0cb288" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>createMachineNote</name></member>
+      <member refid="interface_pos_storage_machine_1a40d66e69a4585fb0705e10f90d365bd5" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>createMachineOperationProcedure</name></member>
+      <member refid="interface_pos_storage_machine_1a83d4739f5ac6aff400e7eab84f5c25e5" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_storage_machine_1aca3ca8f6feae71aadc38f92d750fcce6" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>createReticlePodPortResourceNamed</name></member>
+      <member refid="interface_pos_storage_machine_1a561aa3c2d5f6e508b29f7c6525620ac4" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>findReticlePodPortResourceNamed</name></member>
+      <member refid="interface_pos_storage_machine_1ab13cd4360ec30232d2f7b797aae321bf" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>findStorageMachineResourceFor</name></member>
+      <member refid="interface_pos_storage_machine_1a2853d8e6ff94ba80cc05ea2f1cc14eb9" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getActualMachineState</name></member>
+      <member refid="interface_pos_storage_machine_1ac1b22ebb3c1f9d88bfe5da20b299706a" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getCellController</name></member>
+      <member refid="interface_pos_storage_machine_1a2c2ba35e9831f61fe727fc5737e09015" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getCurrentMachineState</name></member>
+      <member refid="interface_pos_storage_machine_1a1ae3b85c2cccc05c2b9ba5aa0c2a42b9" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getInstanceName</name></member>
+      <member refid="interface_pos_storage_machine_1aff7711cbd8919110eda23a6d7159481e" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastActualStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1af9197ad59e8fcbe8fd99f678a5e84a7b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_storage_machine_1a2cf811b362046892b84db6905b82c455" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_storage_machine_1a6389c9d5a37456b4d9b547d907328501" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1a86b3e952edec52d5f8d09370e694a102" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastInventoryReportTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1a7c43b92729e7b9e22a83236860a612db" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastMaintenancePerson</name></member>
+      <member refid="interface_pos_storage_machine_1ad9d07192e1616955c2d2db846954ccb0" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastMaintenancePersonID</name></member>
+      <member refid="interface_pos_storage_machine_1a9aededa07da97905cff213c814ca0fca" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1a1e62e917bfbafcc0295e56db3fec3acf" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastStatusChangePerson</name></member>
+      <member refid="interface_pos_storage_machine_1a784dbffa1eade183ada3c0a455a65700" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastStatusChangePersonID</name></member>
+      <member refid="interface_pos_storage_machine_1a2ae8ed1057d1620d01f657976dc4da53" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1a66729b040cdf56df7944576558cf6b9b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getLastStatusHistoryTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1ad48eefd8ac819b54955e0bc09346518e" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getMachineType</name></member>
+      <member refid="interface_pos_storage_machine_1a5f808d1ebcb6f9f870cfe0c6715a291b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getMaxReticleCapacity</name></member>
+      <member refid="interface_pos_storage_machine_1ac3da36033ec85c2001b7d900cef974d0" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getMaxUTSCapacity</name></member>
+      <member refid="interface_pos_storage_machine_1a0f2eda7093ebfd4f5716d1a8baedc007" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getOnlineMode</name></member>
+      <member refid="interface_pos_storage_machine_1ab37d3b7faa1179a19201d22dd8b0679a" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_storage_machine_1a9f96fd7985185f10221bf0b32518b924" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getRawMachineStateSet</name></member>
+      <member refid="interface_pos_storage_machine_1ae26c4d9517a60ce860031a622d27f766" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getStockerType</name></member>
+      <member refid="interface_pos_storage_machine_1a7847ee60c54c9a4d1355e97a8f9a1409" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>getWorkArea</name></member>
+      <member refid="interface_pos_storage_machine_1ac6976f77495b536fd89180975b157427" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isAvailableState</name></member>
+      <member refid="interface_pos_storage_machine_1a07036c294a3aaab75c6ce527c00368da" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isInventoryRequested</name></member>
+      <member refid="interface_pos_storage_machine_1a25b5fde5a7223c93e688d245ddd7743b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isIOModeInterInOn</name></member>
+      <member refid="interface_pos_storage_machine_1a4b41ef2f08207974a639fe2cf584c68b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isIOModeInterOutOn</name></member>
+      <member refid="interface_pos_storage_machine_1a7fe36dca73d0c47f35caccd24ffdce9d" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isIOModeIntraInOn</name></member>
+      <member refid="interface_pos_storage_machine_1a869415ba7b634ad8a0136e0def4fde80" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isIOModeIntraOutOn</name></member>
+      <member refid="interface_pos_storage_machine_1aaaba63f0ba1e8740c6cd3853ea44ffdb" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isSLMUTSFlagOn</name></member>
+      <member refid="interface_pos_storage_machine_1accb1635c272e4167ecfe91a31ef048ad" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>isUTSStocker</name></member>
+      <member refid="interface_pos_storage_machine_1ad90c9fbcab6106be4cbbed07563abacf" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeInventoryRequestedOff</name></member>
+      <member refid="interface_pos_storage_machine_1a2ce58d88b938146ec76e6fd7f60bf653" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeInventoryRequestedOn</name></member>
+      <member refid="interface_pos_storage_machine_1a2db04904de2c4c6b38464825e370a38e" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeInterInOff</name></member>
+      <member refid="interface_pos_storage_machine_1a626f94092347f86c657abd5a8a178e25" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeInterInOn</name></member>
+      <member refid="interface_pos_storage_machine_1a949459ddff3108569e73b690e991fe81" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeInterOutOff</name></member>
+      <member refid="interface_pos_storage_machine_1aaffc7167df974d13e70d38e280ae680b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeInterOutOn</name></member>
+      <member refid="interface_pos_storage_machine_1a5017a66556d7cb2097042822b34c16b8" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeIntraInOff</name></member>
+      <member refid="interface_pos_storage_machine_1a5077b6d8b803ffff7b1d778ffa0714ab" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeIntraInOn</name></member>
+      <member refid="interface_pos_storage_machine_1ad0a66aac8c39bcba96e7d8c724bffd5f" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeIntraOutOff</name></member>
+      <member refid="interface_pos_storage_machine_1ab9b4e93fb0c70a2498720f6bb4821230" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeIOModeIntraOutOn</name></member>
+      <member refid="interface_pos_storage_machine_1ad5ba3ba974e858660d6335f4db7aad6e" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeSLMUTSFlagOff</name></member>
+      <member refid="interface_pos_storage_machine_1ac7353e2adf5a8591c798553a74d7124a" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeSLMUTSFlagOn</name></member>
+      <member refid="interface_pos_storage_machine_1abb984bad9b62688a9be035fec9e4e774" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeUTSStockerOff</name></member>
+      <member refid="interface_pos_storage_machine_1a12700350ad0402666ab26b88cd959754" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>makeUTSStockerOn</name></member>
+      <member refid="interface_pos_storage_machine_1a0ab484932945909075854fca54739f42" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>PosStorageMachine_init</name></member>
+      <member refid="interface_pos_storage_machine_1a9ff0b18491626caf2844980259797441" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeAllMachineNotes</name></member>
+      <member refid="interface_pos_storage_machine_1aaeb952613742ed671401d6d1181bb56a" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeAllMachineOperationProcedures</name></member>
+      <member refid="interface_pos_storage_machine_1a79553d5f711ff3fe5f0f66fcf8a93ab0" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeAllReticlePodPortResources</name></member>
+      <member refid="interface_pos_storage_machine_1a3c57692fc8322be6ddfc17b13ad54f00" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeAllStorageMachineResources</name></member>
+      <member refid="interface_pos_storage_machine_1a296dd86143bb56c93ee73a8402bce7fb" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeMachineNote</name></member>
+      <member refid="interface_pos_storage_machine_1aa5f08335da3c76896acc9be7b39a61af" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeMachineOperationProcedure</name></member>
+      <member refid="interface_pos_storage_machine_1a03d8c91c0c1a61f307ceaa08d3fcf723" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeReticlePodPortResource</name></member>
+      <member refid="interface_pos_storage_machine_1a8089ccd23d56645f5e943933ba34cf5b" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>removeStorageMachineResource</name></member>
+      <member refid="interface_pos_storage_machine_1a5cddb51e453350cbe43933f4b5d2659e" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setActualMachineState</name></member>
+      <member refid="interface_pos_storage_machine_1a019ed4eae52e11bd90549365c480456f" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setAvailableFlag</name></member>
+      <member refid="interface_pos_storage_machine_1a39381e7778951c4574956abd3d285dfc" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setCellController</name></member>
+      <member refid="interface_pos_storage_machine_1a113db2becaf6dded301f26b4d5ec43a0" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setCurrentMachineState</name></member>
+      <member refid="interface_pos_storage_machine_1af11abe339d97b8a5268001ea4d251e97" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setInstanceName</name></member>
+      <member refid="interface_pos_storage_machine_1a4e02c6621d19944899ccc1437a2c3f80" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastActualStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1acfc8eabe1393f587c25597f9daa7e6f8" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_storage_machine_1ac5ad99b15092a92dc09aeeab5b63b3b4" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1acc287e04c4e50852e4bef329d6ea0ce0" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastInventoryReportTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1ae220e43cb471beab16b7869ddd45cfbc" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastMaintenancePerson</name></member>
+      <member refid="interface_pos_storage_machine_1a6757edcd538e97d34266d43c48272279" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1aa78ebd7759880cdd7c35ac6b5abea709" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastStatusChangePerson</name></member>
+      <member refid="interface_pos_storage_machine_1ad6a1b62f400a3057aa54893972cc4cf8" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1aacc6e1aeaa76e50daffca29d2cc61b69" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setLastStatusHistoryTimeStamp</name></member>
+      <member refid="interface_pos_storage_machine_1a6f34cda74189816b77547a26f33a2788" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setMachineType</name></member>
+      <member refid="interface_pos_storage_machine_1a9bafa30ee01c0414a3d0730f7b6995d6" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setMaxReticleCapacity</name></member>
+      <member refid="interface_pos_storage_machine_1a9b8a2eda6f1d7caf4543ff81729ad247" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setMaxUTSCapacity</name></member>
+      <member refid="interface_pos_storage_machine_1a65368d9f0e4f6503d775b6c41e5d4719" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setOnlineMode</name></member>
+      <member refid="interface_pos_storage_machine_1a011f864ebf06f6b8396c9b3302d42561" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setStockerInfo</name></member>
+      <member refid="interface_pos_storage_machine_1a464d72f76815ac26f56b04ba70a21f7f" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setStockerInfo__100</name></member>
+      <member refid="interface_pos_storage_machine_1ae458ead80ce5cbd2bf89b42f5599abe7" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setStockerType</name></member>
+      <member refid="interface_pos_storage_machine_1ab7e8e967cc8a3622cb1028175c867a53" prot="public" virt="non-virtual"><scope>PosStorageMachine</scope><name>setWorkArea</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

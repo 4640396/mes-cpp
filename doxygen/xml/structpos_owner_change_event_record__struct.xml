@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_owner_change_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posOwnerChangeEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_owner_change_event_record__struct_1af798e7417070e1944435502f12438dda" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posOwnerChangeEventRecord_struct::fromOwnerID</definition>
+        <argsstring></argsstring>
+        <name>fromOwnerID</name>
+        <qualifiedname>posOwnerChangeEventRecord_struct::fromOwnerID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3532" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_owner_change_event_record__struct_1a52fbe144eee1668da070995abd13420a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posOwnerChangeEventRecord_struct::toOwnerID</definition>
+        <argsstring></argsstring>
+        <name>toOwnerID</name>
+        <qualifiedname>posOwnerChangeEventRecord_struct::toOwnerID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3533" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_owner_change_event_record__struct_1a7cff40a110a5a4595fb0e2cfe22bb910" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1af4e5df2004117d3b5b08134e97218a2b" kindref="member">PosOwnerChangeObjectEventDataSequence</ref></type>
+        <definition>PosOwnerChangeObjectEventDataSequence posOwnerChangeEventRecord_struct::changeObjects</definition>
+        <argsstring></argsstring>
+        <name>changeObjects</name>
+        <qualifiedname>posOwnerChangeEventRecord_struct::changeObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3534" column="41" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_owner_change_event_record__struct_1adef50ff9a3bfd5501e3e239968489a4f" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posOwnerChangeEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posOwnerChangeEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3535" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3535" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+      <node id="1">
+        <label>posOwnerChangeEventRecord_struct</label>
+        <link refid="structpos_owner_change_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="3526" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3526" bodyend="3547"/>
+    <listofallmembers>
+      <member refid="structpos_owner_change_event_record__struct_1a7cff40a110a5a4595fb0e2cfe22bb910" prot="public" virt="non-virtual"><scope>posOwnerChangeEventRecord_struct</scope><name>changeObjects</name></member>
+      <member refid="structpos_owner_change_event_record__struct_1adef50ff9a3bfd5501e3e239968489a4f" prot="public" virt="non-virtual"><scope>posOwnerChangeEventRecord_struct</scope><name>eventCommon</name></member>
+      <member refid="structpos_owner_change_event_record__struct_1af798e7417070e1944435502f12438dda" prot="public" virt="non-virtual"><scope>posOwnerChangeEventRecord_struct</scope><name>fromOwnerID</name></member>
+      <member refid="structpos_owner_change_event_record__struct_1a52fbe144eee1668da070995abd13420a" prot="public" virt="non-virtual"><scope>posOwnerChangeEventRecord_struct</scope><name>toOwnerID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

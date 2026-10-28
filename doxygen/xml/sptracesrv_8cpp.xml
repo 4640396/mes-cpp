@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="sptracesrv_8cpp" kind="file" language="C++">
+    <compoundname>sptracesrv.cpp</compoundname>
+    <includes local="no">iostream.h</includes>
+    <includes local="yes">ptrlgctl_i.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>ras/tracelog/sptracesrv.cpp</label>
+        <link refid="sptracesrv_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream.h</label>
+      </node>
+      <node id="3">
+        <label>ptrlgctl_i.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="sptracesrv_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/ras/tracelog/source/sptracesrv.cpp, mm_srv_90e_ras, mm_srv_90e_ras 7/13/07 20:02:56 [ 7/13/07 20:02:57 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ras/tracelog/sptracesrv.cpp" line="2" column="13" bodyfile="ras/tracelog/sptracesrv.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="sptracesrv_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ras/tracelog/sptracesrv.cpp" line="17" column="6" bodyfile="ras/tracelog/sptracesrv.cpp" bodystart="17" bodyend="34"/>
+        <references refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" compoundref="standardoutlogger_8cpp" startline="242" endline="246">endl</references>
+        <references refid="gen_i_o_r_8cpp_1a9e9f77dfa9b9c3b07409834ca131be9d" compoundref="gen_i_o_r_8cpp" startline="31" endline="68">main</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="sptracesrv_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/ras/tracelog/source/sptracesrv.cpp,<sp/>mm_srv_90e_ras,<sp/>mm_srv_90e_ras<sp/>7/13/07<sp/>20:02:56<sp/>[<sp/>7/13/07<sp/>20:02:57<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------<sp/>--------<sp/>--------------<sp/>--------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/27/04<sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>TIE<sp/>was<sp/>deleted<sp/>in<sp/>order<sp/>to<sp/>make<sp/>it<sp/>TIE<sp/>to<sp/>BOA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ptrlgctl_i.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ptrlgctl_i.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="sptracesrv_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gen_i_o_r_8cpp_1a9e9f77dfa9b9c3b07409834ca131be9d" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>a<sp/>New<sp/>SPTraceLogControlObject<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MO_BOA<sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>SPTraceLogControlObject_var<sp/>myEvtLogConObj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SPTraceLogControlObject_i();<sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>SPTraceLogControlObject_var<sp/>myEvtLogConObj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TIE_SPTraceLogControlObject(SPTraceLogControlObject_i)(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SPTraceLogControlObject_i);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>incoming<sp/>requests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORBA::Orbix.impl_is_ready(</highlight><highlight class="stringliteral">&quot;SPTrace&quot;</highlight><highlight class="normal">,<sp/>3600*1000)<sp/>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(<sp/>CORBA::SystemException&amp;<sp/>se<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unexpected<sp/>exception:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref><sp/>&lt;&lt;<sp/>&amp;se<sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;SPTraceLogControlObject<sp/>shutting<sp/>down...&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//end<sp/>of<sp/>main</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="ras/tracelog/sptracesrv.cpp"/>
+  </compounddef>
+</doxygen>

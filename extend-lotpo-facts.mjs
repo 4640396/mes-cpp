@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const out='analysis/mes-cpp',read=f=>JSON.parse(fs.readFileSync(out+'/'+f)),write=(f,d)=>fs.writeFileSync(out+'/'+f,JSON.stringify(d,null,2));
+const r=read('deep-reviews.json'),d=read('deep-facts.json'),path='poscimfw/pprmg/plotpodb.sqx';
+for(const [qualified,line,end_line] of [['setLotPOBaseInfo',66,235],['setLotPO',266,596],['deleteLotPO',621,680]])if(!r.records.some(x=>x.file===path&&x.qualified===qualified))r.records.push({kind:'global_function',file:path,qualified,line,end_line,status:'body_reviewed_with_external_unknowns',report:'dc-snapshot-deep.md',unknowns:['宿主变量和 SQL 常量宏','DDL 与并发唯一性','外层事务及调用顺序']});
+r.currentFocus='已追工序快照到 FRLOTPO 维护：只有 ID 投影、未找到行返回0、基础刷新清空关系。下一步核实上层生命周期与快照组装，推进生成模板族及其他领域。';
+const n=(id,type,label)=>{if(!d.nodes.some(x=>x.id===id))d.nodes.push({id,type,label});};
+const e=(from,type,to,file,line,end_line,condition)=>{const v={from,type,to,sources:[{path:file,line,end_line}],...(condition?{condition}:{})};if(!d.edges.some(x=>JSON.stringify([x.from,x.type,x.to,x.sources])===JSON.stringify([v.from,v.type,v.to,v.sources])))d.edges.push(v);};
+for(const [id,label] of [['lotpoBase','setLotPOBaseInfo'],['lotpoSet','setLotPO'],['lotpoDelete','deleteLotPO']])n(id,'Method',label);
+for(const table of ['FRLOTPO','FRLOTPO_DC','FRLOTPO_DRBL'])n(table,'Table',table);
+n('lotpoProjectionRule','Rule','维护表只投影采集定义/规格 ID；相同定义保留输入首项，不保存完整限值或测量值');
+n('lotpoMissingRule','Rule','setLotPO 按 PO_OBJ 查不到主记录直接 rc=0，不执行插入');
+n('lotpoBaseRule','Rule','基础信息刷新清空设备/配方 ID 及 DC/耐用品关系，不在本函数自动重建');
+e('lotpoSet','HAS_RULE','lotpoProjectionRule',path,348,409);e('lotpoSet','HAS_RULE','lotpoMissingRule',path,277,308);e('lotpoBase','HAS_RULE','lotpoBaseRule',path,81,235);
+e('lotpoSet','READS','FRLOTPO',path,290,292,'按 PO_OBJ 查 Lot，未找到返回0');e('lotpoBase','READS','FRLOTPO',path,114,116,'按 LOT_ID 计数');
+for(const [id,table,a,b] of [['lotpoSet','FRLOTPO',329,334],['lotpoSet','FRLOTPO_DC',356,399],['lotpoSet','FRLOTPO_DRBL',425,505],['lotpoBase','FRLOTPO',132,193],['lotpoBase','FRLOTPO_DC',207,207],['lotpoBase','FRLOTPO_DRBL',222,222],['lotpoDelete','FRLOTPO_DC',637,637],['lotpoDelete','FRLOTPO_DRBL',652,652],['lotpoDelete','FRLOTPO',667,667]])e(id,'WRITES',table,path,a,b,'按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK');
+e('operationSetStartInfo','CALLS','lotpoSet','poscimfw/ppcdf/ppcope.cpp',6679,6692,'维护配置解析为1，ACTUALSTART 模式');e('operationSetDCInfo','CALLS','lotpoSet','poscimfw/ppcdf/ppcope.cpp',6852,6872,'维护配置解析为1，DATACOLLECTION 模式');
+write('deep-reviews.json',r);write('deep-facts.json',d);console.log(JSON.stringify({reviews:r.records.length,deepEdges:d.edges.length}));

@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pevbase_8idl" kind="file" language="IDL">
+    <compoundname>pevbase.idl</compoundname>
+    <includes local="yes">cimfwbo.idl</includes>
+    <includes refid="pevmggl_8idl" local="yes">pevmggl.idl</includes>
+    <includedby refid="pevadc_8idl" local="yes">poscimfw/include/pevadc.idl</includedby>
+    <includedby refid="pevalrm_8idl" local="yes">poscimfw/include/pevalrm.idl</includedby>
+    <includedby refid="pevapcif_8idl" local="yes">poscimfw/include/pevapcif.idl</includedby>
+    <includedby refid="pevapd_8idl" local="yes">poscimfw/include/pevapd.idl</includedby>
+    <includedby refid="pevbdgrp_8idl" local="yes">poscimfw/include/pevbdgrp.idl</includedby>
+    <includedby refid="pevbkmv_8idl" local="yes">poscimfw/include/pevbkmv.idl</includedby>
+    <includedby refid="pevbucn_8idl" local="yes">poscimfw/include/pevbucn.idl</includedby>
+    <includedby refid="pevbuop_8idl" local="yes">poscimfw/include/pevbuop.idl</includedby>
+    <includedby refid="pevcdc_8idl" local="yes">poscimfw/include/pevcdc.idl</includedby>
+    <includedby refid="pevcjsc_8idl" local="yes">poscimfw/include/pevcjsc.idl</includedby>
+    <includedby refid="pevclctd_8idl" local="yes">poscimfw/include/pevclctd.idl</includedby>
+    <includedby refid="pevcmbs_8idl" local="yes">poscimfw/include/pevcmbs.idl</includedby>
+    <includedby refid="pevdbkm_8idl" local="yes">poscimfw/include/pevdbkm.idl</includedby>
+    <includedby refid="pevdbrc_8idl" local="yes">poscimfw/include/pevdbrc.idl</includedby>
+    <includedby refid="pevdcjs_8idl" local="yes">poscimfw/include/pevdcjs.idl</includedby>
+    <includedby refid="pevdhld_8idl" local="yes">poscimfw/include/pevdhld.idl</includedby>
+    <includedby refid="pevdopc_8idl" local="yes">poscimfw/include/pevdopc.idl</includedby>
+    <includedby refid="pevdopm_8idl" local="yes">poscimfw/include/pevdopm.idl</includedby>
+    <includedby refid="pevdops_8idl" local="yes">poscimfw/include/pevdops.idl</includedby>
+    <includedby refid="pevdpfx_8idl" local="yes">poscimfw/include/pevdpfx.idl</includedby>
+    <includedby refid="pevdrbl_8idl" local="yes">poscimfw/include/pevdrbl.idl</includedby>
+    <includedby refid="pevdrch_8idl" local="yes">poscimfw/include/pevdrch.idl</includedby>
+    <includedby refid="pevdrwk_8idl" local="yes">poscimfw/include/pevdrwk.idl</includedby>
+    <includedby refid="pevdxsc_8idl" local="yes">poscimfw/include/pevdxsc.idl</includedby>
+    <includedby refid="pevem_8idl" local="yes">poscimfw/include/pevem.idl</includedby>
+    <includedby refid="pevemcg_8idl" local="yes">poscimfw/include/pevemcg.idl</includedby>
+    <includedby refid="pevemj_8idl" local="yes">poscimfw/include/pevemj.idl</includedby>
+    <includedby refid="pevemt_8idl" local="yes">poscimfw/include/pevemt.idl</includedby>
+    <includedby refid="pevenin_8idl" local="yes">poscimfw/include/pevenin.idl</includedby>
+    <includedby refid="pevepsc_8idl" local="yes">poscimfw/include/pevepsc.idl</includedby>
+    <includedby refid="peveqps_8idl" local="yes">poscimfw/include/peveqps.idl</includedby>
+    <includedby refid="pevfbch_8idl" local="yes">poscimfw/include/pevfbch.idl</includedby>
+    <includedby refid="pevfbm_8idl" local="yes">poscimfw/include/pevfbm.idl</includedby>
+    <includedby refid="pevfhld_8idl" local="yes">poscimfw/include/pevfhld.idl</includedby>
+    <includedby refid="pevfpc_8idl" local="yes">poscimfw/include/pevfpc.idl</includedby>
+    <includedby refid="pevfrwk_8idl" local="yes">poscimfw/include/pevfrwk.idl</includedby>
+    <includedby refid="pevifx_8idl" local="yes">poscimfw/include/pevifx.idl</includedby>
+    <includedby refid="pevlhld_8idl" local="yes">poscimfw/include/pevlhld.idl</includedby>
+    <includedby refid="pevlrwk_8idl" local="yes">poscimfw/include/pevlrwk.idl</includedby>
+    <includedby refid="pevltch_8idl" local="yes">poscimfw/include/pevltch.idl</includedby>
+    <includedby refid="pevnote_8idl" local="yes">poscimfw/include/pevnote.idl</includedby>
+    <includedby refid="pevopcp_8idl" local="yes">poscimfw/include/pevopcp.idl</includedby>
+    <includedby refid="pevopmv_8idl" local="yes">poscimfw/include/pevopmv.idl</includedby>
+    <includedby refid="pevopst_8idl" local="yes">poscimfw/include/pevopst.idl</includedby>
+    <includedby refid="pevowch_8idl" local="yes">poscimfw/include/pevowch.idl</includedby>
+    <includedby refid="pevpcst_8idl" local="yes">poscimfw/include/pevpcst.idl</includedby>
+    <includedby refid="pevphld_8idl" local="yes">poscimfw/include/pevphld.idl</includedby>
+    <includedby refid="pevpjc_8idl" local="yes">poscimfw/include/pevpjc.idl</includedby>
+    <includedby refid="pevplsp_8idl" local="yes">poscimfw/include/pevplsp.idl</includedby>
+    <includedby refid="pevprrq_8idl" local="yes">poscimfw/include/pevprrq.idl</includedby>
+    <includedby refid="pevprts_8idl" local="yes">poscimfw/include/pevprts.idl</includedby>
+    <includedby refid="pevqtm_8idl" local="yes">poscimfw/include/pevqtm.idl</includedby>
+    <includedby refid="pevrcbd_8idl" local="yes">poscimfw/include/pevrcbd.idl</includedby>
+    <includedby refid="pevrset_8idl" local="yes">poscimfw/include/pevrset.idl</includedby>
+    <includedby refid="pevrwp_8idl" local="yes">poscimfw/include/pevrwp.idl</includedby>
+    <includedby refid="pevscprcg_8idl" local="yes">poscimfw/include/pevscprcg.idl</includedby>
+    <includedby refid="pevsmr_8idl" local="yes">poscimfw/include/pevsmr.idl</includedby>
+    <includedby refid="pevss_8idl" local="yes">poscimfw/include/pevss.idl</includedby>
+    <includedby refid="pevsysm_8idl" local="yes">poscimfw/include/pevsysm.idl</includedby>
+    <includedby refid="pevudc_8idl" local="yes">poscimfw/include/pevudc.idl</includedby>
+    <includedby refid="pevvend_8idl" local="yes">poscimfw/include/pevvend.idl</includedby>
+    <includedby refid="pevwfcp_8idl" local="yes">poscimfw/include/pevwfcp.idl</includedby>
+    <includedby refid="pevwfmv_8idl" local="yes">poscimfw/include/pevwfmv.idl</includedby>
+    <includedby refid="pevwfst_8idl" local="yes">poscimfw/include/pevwfst.idl</includedby>
+    <includedby refid="pevwscr_8idl" local="yes">poscimfw/include/pevwscr.idl</includedby>
+    <includedby refid="pevwsj_8idl" local="yes">poscimfw/include/pevwsj.idl</includedby>
+    <includedby refid="pevwsrt_8idl" local="yes">poscimfw/include/pevwsrt.idl</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>peningl.idl</label>
+        <link refid="peningl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pevbase.idl</label>
+        <link refid="pevbase_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pevmggl.idl</label>
+        <link refid="pevmggl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cimfwbo.idl</label>
+      </node>
+      <node id="4">
+        <label>fwcommon.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pevadc.idl</label>
+        <link refid="pevadc_8idl"/>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pevalrm.idl</label>
+        <link refid="pevalrm_8idl"/>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pevapcif.idl</label>
+        <link refid="pevapcif_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/pevapd.idl</label>
+        <link refid="pevapd_8idl"/>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pevbase.idl</label>
+        <link refid="pevbase_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pevbdgrp.idl</label>
+        <link refid="pevbdgrp_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/pevbkmv.idl</label>
+        <link refid="pevbkmv_8idl"/>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pevbucn.idl</label>
+        <link refid="pevbucn_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pevbuop.idl</label>
+        <link refid="pevbuop_8idl"/>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/pevcdc.idl</label>
+        <link refid="pevcdc_8idl"/>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/pevcjsc.idl</label>
+        <link refid="pevcjsc_8idl"/>
+      </node>
+      <node id="12">
+        <label>poscimfw/include/pevclctd.idl</label>
+        <link refid="pevclctd_8idl"/>
+      </node>
+      <node id="13">
+        <label>poscimfw/include/pevcmbs.idl</label>
+        <link refid="pevcmbs_8idl"/>
+      </node>
+      <node id="14">
+        <label>poscimfw/include/pevdbkm.idl</label>
+        <link refid="pevdbkm_8idl"/>
+      </node>
+      <node id="15">
+        <label>poscimfw/include/pevdbrc.idl</label>
+        <link refid="pevdbrc_8idl"/>
+      </node>
+      <node id="16">
+        <label>poscimfw/include/pevdcjs.idl</label>
+        <link refid="pevdcjs_8idl"/>
+      </node>
+      <node id="17">
+        <label>poscimfw/include/pevdhld.idl</label>
+        <link refid="pevdhld_8idl"/>
+      </node>
+      <node id="18">
+        <label>poscimfw/include/pevdopc.idl</label>
+        <link refid="pevdopc_8idl"/>
+      </node>
+      <node id="19">
+        <label>poscimfw/include/pevdopm.idl</label>
+        <link refid="pevdopm_8idl"/>
+      </node>
+      <node id="20">
+        <label>poscimfw/include/pevdops.idl</label>
+        <link refid="pevdops_8idl"/>
+      </node>
+      <node id="21">
+        <label>poscimfw/include/pevdpfx.idl</label>
+        <link refid="pevdpfx_8idl"/>
+      </node>
+      <node id="22">
+        <label>poscimfw/include/pevdrbl.idl</label>
+        <link refid="pevdrbl_8idl"/>
+      </node>
+      <node id="23">
+        <label>poscimfw/include/pevdrch.idl</label>
+        <link refid="pevdrch_8idl"/>
+      </node>
+      <node id="24">
+        <label>poscimfw/include/pevdrwk.idl</label>
+        <link refid="pevdrwk_8idl"/>
+      </node>
+      <node id="25">
+        <label>poscimfw/include/pevdxsc.idl</label>
+        <link refid="pevdxsc_8idl"/>
+      </node>
+      <node id="26">
+        <label>poscimfw/include/pevem.idl</label>
+        <link refid="pevem_8idl"/>
+      </node>
+      <node id="27">
+        <label>poscimfw/include/pevemcg.idl</label>
+        <link refid="pevemcg_8idl"/>
+      </node>
+      <node id="28">
+        <label>poscimfw/include/pevemj.idl</label>
+        <link refid="pevemj_8idl"/>
+      </node>
+      <node id="29">
+        <label>poscimfw/include/pevemt.idl</label>
+        <link refid="pevemt_8idl"/>
+      </node>
+      <node id="30">
+        <label>poscimfw/include/pevenin.idl</label>
+        <link refid="pevenin_8idl"/>
+      </node>
+      <node id="31">
+        <label>poscimfw/include/pevepsc.idl</label>
+        <link refid="pevepsc_8idl"/>
+      </node>
+      <node id="32">
+        <label>poscimfw/include/peveqps.idl</label>
+        <link refid="peveqps_8idl"/>
+      </node>
+      <node id="33">
+        <label>poscimfw/include/pevfbch.idl</label>
+        <link refid="pevfbch_8idl"/>
+      </node>
+      <node id="34">
+        <label>poscimfw/include/pevfbm.idl</label>
+        <link refid="pevfbm_8idl"/>
+      </node>
+      <node id="35">
+        <label>poscimfw/include/pevfhld.idl</label>
+        <link refid="pevfhld_8idl"/>
+      </node>
+      <node id="36">
+        <label>poscimfw/include/pevfpc.idl</label>
+        <link refid="pevfpc_8idl"/>
+      </node>
+      <node id="37">
+        <label>poscimfw/include/pevfrwk.idl</label>
+        <link refid="pevfrwk_8idl"/>
+      </node>
+      <node id="38">
+        <label>poscimfw/include/pevifx.idl</label>
+        <link refid="pevifx_8idl"/>
+      </node>
+      <node id="39">
+        <label>poscimfw/include/pevlhld.idl</label>
+        <link refid="pevlhld_8idl"/>
+      </node>
+      <node id="40">
+        <label>poscimfw/include/pevlrwk.idl</label>
+        <link refid="pevlrwk_8idl"/>
+      </node>
+      <node id="41">
+        <label>poscimfw/include/pevltch.idl</label>
+        <link refid="pevltch_8idl"/>
+      </node>
+      <node id="42">
+        <label>poscimfw/include/pevnote.idl</label>
+        <link refid="pevnote_8idl"/>
+      </node>
+      <node id="43">
+        <label>poscimfw/include/pevopcp.idl</label>
+        <link refid="pevopcp_8idl"/>
+      </node>
+      <node id="44">
+        <label>poscimfw/include/pevopmv.idl</label>
+        <link refid="pevopmv_8idl"/>
+      </node>
+      <node id="45">
+        <label>poscimfw/include/pevopst.idl</label>
+        <link refid="pevopst_8idl"/>
+      </node>
+      <node id="46">
+        <label>poscimfw/include/pevowch.idl</label>
+        <link refid="pevowch_8idl"/>
+      </node>
+      <node id="47">
+        <label>poscimfw/include/pevpcst.idl</label>
+        <link refid="pevpcst_8idl"/>
+      </node>
+      <node id="48">
+        <label>poscimfw/include/pevphld.idl</label>
+        <link refid="pevphld_8idl"/>
+      </node>
+      <node id="49">
+        <label>poscimfw/include/pevpjc.idl</label>
+        <link refid="pevpjc_8idl"/>
+      </node>
+      <node id="50">
+        <label>poscimfw/include/pevplsp.idl</label>
+        <link refid="pevplsp_8idl"/>
+      </node>
+      <node id="51">
+        <label>poscimfw/include/pevprrq.idl</label>
+        <link refid="pevprrq_8idl"/>
+      </node>
+      <node id="52">
+        <label>poscimfw/include/pevprts.idl</label>
+        <link refid="pevprts_8idl"/>
+      </node>
+      <node id="53">
+        <label>poscimfw/include/pevqtm.idl</label>
+        <link refid="pevqtm_8idl"/>
+      </node>
+      <node id="54">
+        <label>poscimfw/include/pevrcbd.idl</label>
+        <link refid="pevrcbd_8idl"/>
+      </node>
+      <node id="55">
+        <label>poscimfw/include/pevrset.idl</label>
+        <link refid="pevrset_8idl"/>
+      </node>
+      <node id="56">
+        <label>poscimfw/include/pevrwp.idl</label>
+        <link refid="pevrwp_8idl"/>
+      </node>
+      <node id="57">
+        <label>poscimfw/include/pevscprcg.idl</label>
+        <link refid="pevscprcg_8idl"/>
+      </node>
+      <node id="58">
+        <label>poscimfw/include/pevsmr.idl</label>
+        <link refid="pevsmr_8idl"/>
+      </node>
+      <node id="59">
+        <label>poscimfw/include/pevss.idl</label>
+        <link refid="pevss_8idl"/>
+      </node>
+      <node id="60">
+        <label>poscimfw/include/pevsysm.idl</label>
+        <link refid="pevsysm_8idl"/>
+      </node>
+      <node id="61">
+        <label>poscimfw/include/pevudc.idl</label>
+        <link refid="pevudc_8idl"/>
+      </node>
+      <node id="62">
+        <label>poscimfw/include/pevvend.idl</label>
+        <link refid="pevvend_8idl"/>
+      </node>
+      <node id="63">
+        <label>poscimfw/include/pevwfcp.idl</label>
+        <link refid="pevwfcp_8idl"/>
+      </node>
+      <node id="64">
+        <label>poscimfw/include/pevwfmv.idl</label>
+        <link refid="pevwfmv_8idl"/>
+      </node>
+      <node id="65">
+        <label>poscimfw/include/pevwfst.idl</label>
+        <link refid="pevwfst_8idl"/>
+      </node>
+      <node id="66">
+        <label>poscimfw/include/pevwscr.idl</label>
+        <link refid="pevwscr_8idl"/>
+      </node>
+      <node id="67">
+        <label>poscimfw/include/pevwsj.idl</label>
+        <link refid="pevwsj_8idl"/>
+      </node>
+      <node id="68">
+        <label>poscimfw/include/pevwsrt.idl</label>
+        <link refid="pevwsrt_8idl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_pos_event_base" prot="public">PosEventBase</innerclass>
+    <innerclass refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" prot="public">PosEventBase::InvalidEventRecordTypeSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pevmg/pevbase.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>22:20:18<sp/>[<sp/>7/13/07<sp/>22:20:19<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Module:<sp/>PosEventBase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Utility_Class_Group::Poseidon_EventManagement_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>\\Spdsvr1\D_DRIVE\POSFW\poscimfw\pevmg\pevbase.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/pevmg/pevbase.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosEventBase_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosEventBase_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwbo.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pevmggl_8idl" kindref="compound">pevmggl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_event_manager" kindref="compound">PosEventManager</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosEventBase<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>class<sp/>is<sp/>abstract<sp/>class<sp/>of<sp/>all<sp/>kinds<sp/>of<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>classes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Event<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>EventManagement<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="interface_pos_event_base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_event_base" kindref="compound">PosEventBase</ref><sp/>:<sp/>CIMFWBO<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosEventBase.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosEventBase.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>InvalidEventRecordTypeSignal<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Raised<sp/>when<sp/>undefined<sp/>type<sp/>of<sp/>event<sp/>record<sp/>was</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>passed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" kindref="compound">InvalidEventRecordTypeSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>InvalidEventRecordTypeSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>InvalidEventRecordTypeSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>InvalidEventRecordTypeSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>InvalidEventRecordTypeSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setEventData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>all<sp/>of<sp/>event<sp/>data<sp/>corresponding<sp/>to<sp/>the<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Therefore<sp/>implementation<sp/>will<sp/>be<sp/>done<sp/>in<sp/>sub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>classes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="interface_pos_event_base_1a3f61a88dbdbef6f8fc0d97e3e8a5d958" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a3f61a88dbdbef6f8fc0d97e3e8a5d958" kindref="member">setEventData</ref>(in<sp/>any<sp/>eventData)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" kindref="compound">InvalidEventRecordTypeSignal</ref>,<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getEventData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>all<sp/>of<sp/>event<sp/>data<sp/>corresponding<sp/>to<sp/>the<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Therefore<sp/>implementation<sp/>will<sp/>be<sp/>done<sp/>in<sp/>sub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>classes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="interface_pos_event_base_1a7accd192654cc0a51491794e3e1ef09b" refkind="member"><highlight class="normal"><sp/><sp/>any<sp/><ref refid="interface_pos_event_base_1a7accd192654cc0a51491794e3e1ef09b" kindref="member">getEventData</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>isHistoryApplied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>True<sp/>if<sp/>History<sp/>WatchDog<sp/>program<sp/>has<sp/>been</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>already<sp/>stored<sp/>this<sp/>event<sp/>into<sp/>History<sp/>tables.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7" kindref="member">isHistoryApplied</ref>()</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeHistoryApplied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>True<sp/>to<sp/>the<sp/>HistoryAppliedFlag.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84" kindref="member">makeHistoryApplied</ref>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>isCFMApplied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>True<sp/>if<sp/>CFM<sp/>WatchDog<sp/>program<sp/>has<sp/>been</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>already<sp/>sent<sp/>this<sp/>event<sp/>to<sp/>CFM<sp/>Manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617" kindref="member">isCFMApplied</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeCFMApplied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>True<sp/>to<sp/>the<sp/>CFMAppliedFlag.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c" kindref="member">makeCFMApplied</ref>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55" kindref="member">PosEventBase_init</ref>()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//void<sp/>PosEventBase_uninit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>addFIFOData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Adds<sp/>this<sp/>event<sp/>into<sp/>FIFO<sp/>queue<sp/>for<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>watchdog.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0" kindref="member">addFIFOData</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/>in<sp/>TimeStamp<sp/>eventtime)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeFIFOData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>this<sp/>event<sp/>from<sp/>FIFO<sp/>queue<sp/>for<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>watchdog.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4" kindref="member">removeFIFOData</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allFIFOData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>event<sp/>FIFO<sp/>data<sp/>for<sp/>this<sp/>event.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pevmggl_8idl_1a3ac49e1312b9b29a3f696cdb55c10460" kindref="member">PosEventFIFODataSequence</ref><sp/><ref refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94" kindref="member">allFIFOData</ref>()</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosEventBase.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosEventBase.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pevbase.idl"/>
+  </compounddef>
+</doxygen>

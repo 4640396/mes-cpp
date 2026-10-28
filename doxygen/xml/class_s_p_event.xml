@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_s_p_event" kind="class" language="C++" prot="public">
+    <compoundname>SPEvent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_p_event_1a4d774e56e839901d240823194990ec2c" prot="private" static="no" mutable="no">
+        <type>pthread_cond_t</type>
+        <definition>pthread_cond_t SPEvent::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <qualifiedname>SPEvent::event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="86" column="25" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="class_s_p_event_1a16cbace6a07b45090b6a64642e429020" compoundref="spdtable_8cpp" startline="141" endline="146">broadcast</referencedby>
+        <referencedby refid="class_s_p_event_1a92412cf874ba8e98d0c572aa736c398a" compoundref="spdtable_8cpp" startline="134" endline="139">signal</referencedby>
+        <referencedby refid="class_s_p_event_1ad65ed4935edafa1150fca92549c3863c" compoundref="spdtable_8cpp" startline="101" endline="105">SPEvent</referencedby>
+        <referencedby refid="class_s_p_event_1aa7dec9f28b539aaf24f8487981ac28bf" compoundref="spdtable_8cpp" startline="113" endline="120">wait</referencedby>
+        <referencedby refid="class_s_p_event_1ae7edd1bae95b48cde04f99fb2d901020" compoundref="spdtable_8cpp" startline="122" endline="132">wait</referencedby>
+        <referencedby refid="class_s_p_event_1ac2172be32f063e00df8d6c91613cb0db" compoundref="spdtable_8cpp" startline="107" endline="111">~SPEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_p_event_1adebb5eb209ee80472017675d33b1f9b4" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t SPEvent::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <qualifiedname>SPEvent::object</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="87" column="25" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_p_event_1ae0e7cca301b56d8b39c8e7a9c69513b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SPEvent::SPEvent</definition>
+        <argsstring>(const SPEvent &amp;)</argsstring>
+        <name>SPEvent</name>
+        <qualifiedname>SPEvent::SPEvent</qualifiedname>
+        <param>
+          <type>const <ref refid="class_s_p_event" kindref="compound">SPEvent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="89" column="5"/>
+        <references refid="class_s_p_event_1ae0e7cca301b56d8b39c8e7a9c69513b7">SPEvent</references>
+        <referencedby refid="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1">operator=</referencedby>
+        <referencedby refid="class_s_p_event_1ae0e7cca301b56d8b39c8e7a9c69513b7">SPEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_p_event" kindref="compound">SPEvent</ref> &amp;</type>
+        <definition>SPEvent &amp; SPEvent::operator=</definition>
+        <argsstring>(const SPEvent &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>SPEvent::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_s_p_event" kindref="compound">SPEvent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="90" column="13"/>
+        <references refid="class_s_p_event_1a16cbace6a07b45090b6a64642e429020" compoundref="spdtable_8cpp" startline="141" endline="146">broadcast</references>
+        <references refid="class_s_p_event_1a92412cf874ba8e98d0c572aa736c398a" compoundref="spdtable_8cpp" startline="134" endline="139">signal</references>
+        <references refid="class_s_p_event_1ae0e7cca301b56d8b39c8e7a9c69513b7">SPEvent</references>
+        <references refid="class_s_p_event_1ae7edd1bae95b48cde04f99fb2d901020" compoundref="spdtable_8cpp" startline="122" endline="132">wait</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_p_event_1ad65ed4935edafa1150fca92549c3863c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SPEvent::SPEvent</definition>
+        <argsstring>()</argsstring>
+        <name>SPEvent</name>
+        <qualifiedname>SPEvent::SPEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="92" column="5" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="101" bodyend="105"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1ac2172be32f063e00df8d6c91613cb0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SPEvent::~SPEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~SPEvent</name>
+        <qualifiedname>SPEvent::~SPEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="93" column="5" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="107" bodyend="111"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1ae7edd1bae95b48cde04f99fb2d901020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SPEvent::wait</definition>
+        <argsstring>(SPMutex *mutex, const timeval *endtime)</argsstring>
+        <name>wait</name>
+        <qualifiedname>SPEvent::wait</qualifiedname>
+        <param>
+          <type>SPMutex *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>const timeval *</type>
+          <declname>endtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="95" column="10" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="122" bodyend="132"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+        <referencedby refid="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1aa7dec9f28b539aaf24f8487981ac28bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPEvent::wait</definition>
+        <argsstring>(SPMutex *mutex)</argsstring>
+        <name>wait</name>
+        <qualifiedname>SPEvent::wait</qualifiedname>
+        <param>
+          <type>SPMutex *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="96" column="10" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="113" bodyend="120"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1a92412cf874ba8e98d0c572aa736c398a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPEvent::signal</definition>
+        <argsstring>()</argsstring>
+        <name>signal</name>
+        <qualifiedname>SPEvent::signal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="97" column="10" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="134" bodyend="139"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+        <referencedby refid="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_p_event_1a16cbace6a07b45090b6a64642e429020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPEvent::broadcast</definition>
+        <argsstring>()</argsstring>
+        <name>broadcast</name>
+        <qualifiedname>SPEvent::broadcast</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="98" column="10" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="141" bodyend="146"/>
+        <references refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" compoundref="spdtable_8cpp" startline="86">event</references>
+        <referencedby refid="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1">operator=</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="smtchcmf/frmwrkgl/spdtable.cpp" line="84" column="1" bodyfile="smtchcmf/frmwrkgl/spdtable.cpp" bodystart="85" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_s_p_event_1a16cbace6a07b45090b6a64642e429020" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>broadcast</name></member>
+      <member refid="class_s_p_event_1a4d774e56e839901d240823194990ec2c" prot="private" virt="non-virtual"><scope>SPEvent</scope><name>event</name></member>
+      <member refid="class_s_p_event_1adebb5eb209ee80472017675d33b1f9b4" prot="private" virt="non-virtual"><scope>SPEvent</scope><name>object</name></member>
+      <member refid="class_s_p_event_1af3a0112e28475e1c1654b4ddf920f2d1" prot="private" virt="non-virtual"><scope>SPEvent</scope><name>operator=</name></member>
+      <member refid="class_s_p_event_1a92412cf874ba8e98d0c572aa736c398a" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>signal</name></member>
+      <member refid="class_s_p_event_1ae0e7cca301b56d8b39c8e7a9c69513b7" prot="private" virt="non-virtual"><scope>SPEvent</scope><name>SPEvent</name></member>
+      <member refid="class_s_p_event_1ad65ed4935edafa1150fca92549c3863c" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>SPEvent</name></member>
+      <member refid="class_s_p_event_1ae7edd1bae95b48cde04f99fb2d901020" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>wait</name></member>
+      <member refid="class_s_p_event_1aa7dec9f28b539aaf24f8487981ac28bf" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>wait</name></member>
+      <member refid="class_s_p_event_1ac2172be32f063e00df8d6c91613cb0db" prot="public" virt="non-virtual"><scope>SPEvent</scope><name>~SPEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

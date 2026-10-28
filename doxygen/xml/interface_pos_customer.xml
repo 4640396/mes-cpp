@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_customer" kind="interface" language="IDL" prot="public">
+    <compoundname>PosCustomer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pcustmr_8idl" local="no">pcustmr.idl</includes>
+    <innerclass refid="exception_pos_customer_1_1_customer_product_not_found_signal" prot="public">PosCustomer::CustomerProductNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_customer_1_1_set_customer_info_failed_signal" prot="public">PosCustomer::SetCustomerInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_customer_1a17a18bd826723c0ec45f6dcd85bc7730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::PosCustomer_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosCustomer_init</name>
+        <qualifiedname>PosCustomer::PosCustomer_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosCustomer::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="110" column="8"/>
+        <references refid="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0">setIdentifier</references>
+        <referencedby refid="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosCustomer::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosCustomer::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="116" column="10"/>
+        <references refid="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732">getIdentifier</references>
+        <referencedby refid="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosCustomer::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="122" column="8"/>
+        <references refid="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0">setDescription</references>
+        <referencedby refid="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosCustomer::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosCustomer::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="128" column="10"/>
+        <references refid="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62">getDescription</references>
+        <referencedby refid="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref></type>
+        <definition>PosCustomerProduct PosCustomer::createCustomerProductNamed</definition>
+        <argsstring>(in string identifier, in PosProductSpecification aProductSpecification)</argsstring>
+        <name>createCustomerProductNamed</name>
+        <qualifiedname>PosCustomer::createCustomerProductNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="136" column="22"/>
+        <references refid="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85">createCustomerProductNamed</references>
+        <referencedby refid="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85">createCustomerProductNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref></type>
+        <definition>PosCustomerProduct PosCustomer::findCustomerProductNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findCustomerProductNamed</name>
+        <qualifiedname>PosCustomer::findCustomerProductNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="143" column="22"/>
+        <references refid="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98">findCustomerProductNamed</references>
+        <referencedby refid="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98">findCustomerProductNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1acc6dba5d6861249785d3c6dad65c8984" kindref="member">PosCustomerProductSequence</ref></type>
+        <definition>PosCustomerProductSequence PosCustomer::allCustomerProducts</definition>
+        <argsstring>()</argsstring>
+        <name>allCustomerProducts</name>
+        <qualifiedname>PosCustomer::allCustomerProducts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="150" column="30"/>
+        <references refid="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7">allCustomerProducts</references>
+        <referencedby refid="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7">allCustomerProducts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::removeCustomerProduct</definition>
+        <argsstring>(in PosCustomerProduct aCustomerProduct)</argsstring>
+        <name>removeCustomerProduct</name>
+        <qualifiedname>PosCustomer::removeCustomerProduct</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref></type>
+          <declname>aCustomerProduct</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_customer_1_1_customer_product_not_found_signal" kindref="compound">CustomerProductNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="157" column="8"/>
+        <references refid="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a">removeCustomerProduct</references>
+        <referencedby refid="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a">removeCustomerProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1ae676acc827993e4a0529f95922f261be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::removeAllCustomerProducts</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllCustomerProducts</name>
+        <qualifiedname>PosCustomer::removeAllCustomerProducts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="165" column="8"/>
+        <references refid="interface_pos_customer_1ae676acc827993e4a0529f95922f261be">removeAllCustomerProducts</references>
+        <referencedby refid="interface_pos_customer_1ae676acc827993e4a0529f95922f261be">removeAllCustomerProducts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCustomer::setCustomerInfo</definition>
+        <argsstring>(in brCustomerInfo customerInfo)</argsstring>
+        <name>setCustomerInfo</name>
+        <qualifiedname>PosCustomer::setCustomerInfo</qualifiedname>
+        <param>
+          <type>in brCustomerInfo</type>
+          <declname>customerInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_customer_1_1_set_customer_info_failed_signal" kindref="compound">SetCustomerInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcustmr.idl" line="171" column="8"/>
+        <references refid="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec">setCustomerInfo</references>
+        <referencedby refid="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec">setCustomerInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosCustomer</label>
+        <link refid="interface_pos_customer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosCustomer</label>
+        <link refid="interface_pos_customer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pcustmr.idl" line="42" column="11" bodyfile="poscimfw/include/pcustmr.idl" bodystart="43" bodyend="179"/>
+    <listofallmembers>
+      <member refid="interface_pos_customer_1ad42a54e2c851fd0223bd3daf8582f8a7" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>allCustomerProducts</name></member>
+      <member refid="interface_pos_customer_1a050bead836128c7a8cd0660cf2c87c85" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>createCustomerProductNamed</name></member>
+      <member refid="interface_pos_customer_1aecfa4156c152aa67787290e2ff349f98" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>findCustomerProductNamed</name></member>
+      <member refid="interface_pos_customer_1ac7a5d72681c4df9bee8d47cde2b04b62" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>getDescription</name></member>
+      <member refid="interface_pos_customer_1a87a2e538d9a8672ad15a2f581b1ce732" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_customer_1a17a18bd826723c0ec45f6dcd85bc7730" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>PosCustomer_init</name></member>
+      <member refid="interface_pos_customer_1ae676acc827993e4a0529f95922f261be" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>removeAllCustomerProducts</name></member>
+      <member refid="interface_pos_customer_1abd98ce5017bc926d9820f2a5fa49f60a" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>removeCustomerProduct</name></member>
+      <member refid="interface_pos_customer_1a8c2cb390cc78ec7930b92ebf95aaafec" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>setCustomerInfo</name></member>
+      <member refid="interface_pos_customer_1a8ee01b198ac0a5dc7429c4d669870ab0" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>setDescription</name></member>
+      <member refid="interface_pos_customer_1a28deec43745f0ec1df023bf3545263f0" prot="public" virt="non-virtual"><scope>PosCustomer</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

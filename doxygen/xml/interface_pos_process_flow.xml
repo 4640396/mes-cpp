@@ -1,0 +1,1438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_process_flow" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProcessFlow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProcessFlow</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="ppcflw_8idl" local="no">ppcflw.idl</includes>
+    <innerclass refid="exception_pos_process_flow_1_1_calculate_remaining_cycle_time_failed_signal" prot="public">PosProcessFlow::CalculateRemainingCycleTimeFailedSignal</innerclass>
+    <innerclass refid="exception_pos_process_flow_1_1_process_operation_specification_not_found_signal" prot="public">PosProcessFlow::ProcessOperationSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_process_flow_1_1_set_main_process_flow_info_failed_signal" prot="public">PosProcessFlow::SetMainProcessFlowInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_process_flow_1_1_set_module_process_flow_info_failed_signal" prot="public">PosProcessFlow::SetModuleProcessFlowInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_process_flow_1a2c6ccebd47b9b84cf9a9c8e8e5b224cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::PosProcessFlow_init</definition>
+        <argsstring>(in PosProcessDefinition aProcessDefinition)</argsstring>
+        <name>PosProcessFlow_init</name>
+        <qualifiedname>PosProcessFlow::PosProcessFlow_init</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+          <declname>aProcessDefinition</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="143" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1abccb305e7de6c525a7f0eae8506d4bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::setModuleProcessFlowInfo</definition>
+        <argsstring>(in spModuleProcessDefinitionInfo moduleProcessDefinitionInfo, in spFlowReleaseInfo flowReleaseInfo, in long relNo)</argsstring>
+        <name>setModuleProcessFlowInfo</name>
+        <qualifiedname>PosProcessFlow::setModuleProcessFlowInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a68b40257bad78e4860f6cc0b4627da50" kindref="member">spModuleProcessDefinitionInfo</ref></type>
+          <declname>moduleProcessDefinitionInfo</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a635f5305f4dcb381f0c752034ffd3504" kindref="member">spFlowReleaseInfo</ref></type>
+          <declname>flowReleaseInfo</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>relNo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_set_module_process_flow_info_failed_signal" kindref="compound">SetModuleProcessFlowInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="149" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1abffa128c9ab7178ec362d57ae038e5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::calculateRemainingCycleTime</definition>
+        <argsstring>()</argsstring>
+        <name>calculateRemainingCycleTime</name>
+        <qualifiedname>PosProcessFlow::calculateRemainingCycleTime</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_calculate_remaining_cycle_time_failed_signal" kindref="compound">CalculateRemainingCycleTimeFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="159" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a8fe9281d16b700de369e95f0f9fa4088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::findProcessOperationSpecificationFor</definition>
+        <argsstring>(in string operationNumber, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>findProcessOperationSpecificationFor</name>
+        <qualifiedname>PosProcessFlow::findProcessOperationSpecificationFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="166" column="36"/>
+        <references refid="interface_pos_process_flow_1a8fe9281d16b700de369e95f0f9fa4088">findProcessOperationSpecificationFor</references>
+        <referencedby refid="interface_pos_process_flow_1a8fe9281d16b700de369e95f0f9fa4088">findProcessOperationSpecificationFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a2b88eca0d1bde3bc07abbabde0c8b0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::getPreviousProcessOperationSpecificationFor</definition>
+        <argsstring>(in string inModuleNumber, in PosProcessFlow inModuleProcessFlow, in PosProcessOperationSpecification inModuleProcessOperationSpecification, out PosProcessFlow outMainProcessFlow, out string outModuleNumber, out PosProcessFlow outModuleProcessFlow)</argsstring>
+        <name>getPreviousProcessOperationSpecificationFor</name>
+        <qualifiedname>PosProcessFlow::getPreviousProcessOperationSpecificationFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inModuleNumber</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>inModuleProcessFlow</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>inModuleProcessOperationSpecification</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outMainProcessFlow</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outModuleNumber</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outModuleProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="173" column="36"/>
+        <references refid="interface_pos_process_flow_1a2b88eca0d1bde3bc07abbabde0c8b0ba">getPreviousProcessOperationSpecificationFor</references>
+        <referencedby refid="interface_pos_process_flow_1a2b88eca0d1bde3bc07abbabde0c8b0ba">getPreviousProcessOperationSpecificationFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a5bdf34a7a518405a8c2763c39239e68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::makeActive</definition>
+        <argsstring>()</argsstring>
+        <name>makeActive</name>
+        <qualifiedname>PosProcessFlow::makeActive</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="179" column="8"/>
+        <references refid="interface_pos_process_flow_1a5bdf34a7a518405a8c2763c39239e68e">makeActive</references>
+        <referencedby refid="interface_pos_process_flow_1a5bdf34a7a518405a8c2763c39239e68e">makeActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a231132358342c9ce469df0a25e1ccaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::makeInActive</definition>
+        <argsstring>()</argsstring>
+        <name>makeInActive</name>
+        <qualifiedname>PosProcessFlow::makeInActive</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="185" column="8"/>
+        <references refid="interface_pos_process_flow_1a231132358342c9ce469df0a25e1ccaf1">makeInActive</references>
+        <referencedby refid="interface_pos_process_flow_1a231132358342c9ce469df0a25e1ccaf1">makeInActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aef924f3c68cab7156df6abc547b974d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <qualifiedname>PosProcessFlow::isActive</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="191" column="11"/>
+        <references refid="interface_pos_process_flow_1aef924f3c68cab7156df6abc547b974d0">isActive</references>
+        <referencedby refid="interface_pos_process_flow_1aef924f3c68cab7156df6abc547b974d0">isActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a0b2df74fcca0e849ebe6af0af636d307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isSameFlowFor</definition>
+        <argsstring>(in stringSequence strPOSDataInfo)</argsstring>
+        <name>isSameFlowFor</name>
+        <qualifiedname>PosProcessFlow::isSameFlowFor</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>strPOSDataInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="201" column="11"/>
+        <references refid="interface_pos_process_flow_1a0b2df74fcca0e849ebe6af0af636d307">isSameFlowFor</references>
+        <referencedby refid="interface_pos_process_flow_1a0b2df74fcca0e849ebe6af0af636d307">isSameFlowFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ae6aded2977f761f8257e93f32cf8acd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::createProcessOperationSpecification</definition>
+        <argsstring>(in string operationNumber)</argsstring>
+        <name>createProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::createProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="209" column="36"/>
+        <references refid="interface_pos_process_flow_1ae6aded2977f761f8257e93f32cf8acd8">createProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1ae6aded2977f761f8257e93f32cf8acd8">createProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ac684f6efe924ff3c397b7b04b556c409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::createProcessOperationSpecificationForMainDI</definition>
+        <argsstring>(in string operationNumber)</argsstring>
+        <name>createProcessOperationSpecificationForMainDI</name>
+        <qualifiedname>PosProcessFlow::createProcessOperationSpecificationForMainDI</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_set_main_process_flow_info_failed_signal" kindref="compound">SetMainProcessFlowInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="215" column="36"/>
+        <references refid="interface_pos_process_flow_1ac684f6efe924ff3c397b7b04b556c409">createProcessOperationSpecificationForMainDI</references>
+        <referencedby refid="interface_pos_process_flow_1ac684f6efe924ff3c397b7b04b556c409">createProcessOperationSpecificationForMainDI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a12e5e5e10fdc5dd1d3af48c5de3e2dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::removeProcessOperationSpecification</definition>
+        <argsstring>(in string operationNumber)</argsstring>
+        <name>removeProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::removeProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_process_operation_specification_not_found_signal" kindref="compound">ProcessOperationSpecificationNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="221" column="8"/>
+        <references refid="interface_pos_process_flow_1a12e5e5e10fdc5dd1d3af48c5de3e2dcb">removeProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a12e5e5e10fdc5dd1d3af48c5de3e2dcb">removeProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aaf73ca9c2dd3cfca78da05afe0eca1ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::removeProcessOperationSpecificationForMainDI</definition>
+        <argsstring>(in string operationNumber, in PosProcessOperationSpecification aProcessOperationSpecification)</argsstring>
+        <name>removeProcessOperationSpecificationForMainDI</name>
+        <qualifiedname>PosProcessFlow::removeProcessOperationSpecificationForMainDI</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_process_operation_specification_not_found_signal" kindref="compound">ProcessOperationSpecificationNotFoundSignal</ref>,<ref refid="exception_pos_process_flow_1_1_set_main_process_flow_info_failed_signal" kindref="compound">SetMainProcessFlowInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="227" column="8"/>
+        <references refid="interface_pos_process_flow_1aaf73ca9c2dd3cfca78da05afe0eca1ad">removeProcessOperationSpecificationForMainDI</references>
+        <referencedby refid="interface_pos_process_flow_1aaf73ca9c2dd3cfca78da05afe0eca1ad">removeProcessOperationSpecificationForMainDI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a5589b041ef36c93a221b5c0e845d91d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::addProcessOperationSpecification</definition>
+        <argsstring>(in PosProcessOperationSpecification aProcessOperationSpecification)</argsstring>
+        <name>addProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::addProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="234" column="8"/>
+        <references refid="interface_pos_process_flow_1a5589b041ef36c93a221b5c0e845d91d2">addProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a5589b041ef36c93a221b5c0e845d91d2">addProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a9f916bfc8aaaa9477cb01c74deba29da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::firstProcessOperationSpecification</definition>
+        <argsstring>(out PosProcessFlow aProcessFlow)</argsstring>
+        <name>firstProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::firstProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="240" column="36"/>
+        <references refid="interface_pos_process_flow_1a9f916bfc8aaaa9477cb01c74deba29da">firstProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a9f916bfc8aaaa9477cb01c74deba29da">firstProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a8df9d9de9804dff62d85a7cb6b8042c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::nextProcessOperationSpecification</definition>
+        <argsstring>(in PosProcessOperationSpecification aProcessOperationSpecification, out PosProcessFlow aProcessFlow)</argsstring>
+        <name>nextProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::nextProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="250" column="36"/>
+        <references refid="interface_pos_process_flow_1a8df9d9de9804dff62d85a7cb6b8042c2">nextProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a8df9d9de9804dff62d85a7cb6b8042c2">nextProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aa479fcb6c38d602d1c4ecab92b0a66b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::setProcessDefinitionLevel</definition>
+        <argsstring>(in string processDefinitionLevel)</argsstring>
+        <name>setProcessDefinitionLevel</name>
+        <qualifiedname>PosProcessFlow::setProcessDefinitionLevel</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>processDefinitionLevel</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="256" column="8"/>
+        <references refid="interface_pos_process_flow_1aa479fcb6c38d602d1c4ecab92b0a66b7">setProcessDefinitionLevel</references>
+        <referencedby refid="interface_pos_process_flow_1aa479fcb6c38d602d1c4ecab92b0a66b7">setProcessDefinitionLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1acd7dec462fe9644c464e87ecc8791691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProcessFlow::getProcessDefinitionLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessDefinitionLevel</name>
+        <qualifiedname>PosProcessFlow::getProcessDefinitionLevel</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="262" column="10"/>
+        <references refid="interface_pos_process_flow_1acd7dec462fe9644c464e87ecc8791691">getProcessDefinitionLevel</references>
+        <referencedby refid="interface_pos_process_flow_1acd7dec462fe9644c464e87ecc8791691">getProcessDefinitionLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a5e5e0d2120ad7e52137ab0412918a430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::setCreationTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setCreationTimeStamp</name>
+        <qualifiedname>PosProcessFlow::setCreationTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="268" column="8"/>
+        <references refid="interface_pos_process_flow_1a5e5e0d2120ad7e52137ab0412918a430">setCreationTimeStamp</references>
+        <referencedby refid="interface_pos_process_flow_1a5e5e0d2120ad7e52137ab0412918a430">setCreationTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a1eaf40d34e24c8da8c2f1cf6c72c51fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosProcessFlow::getCreationTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getCreationTimeStamp</name>
+        <qualifiedname>PosProcessFlow::getCreationTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="274" column="13"/>
+        <references refid="interface_pos_process_flow_1a1eaf40d34e24c8da8c2f1cf6c72c51fd">getCreationTimeStamp</references>
+        <referencedby refid="interface_pos_process_flow_1a1eaf40d34e24c8da8c2f1cf6c72c51fd">getCreationTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a87d5b5c348fc29410db5b256dc365610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::setProcessDefinitions</definition>
+        <argsstring>(in PosProcessDefinitionInfoSequence aProcessDefinitionInfoSequence)</argsstring>
+        <name>setProcessDefinitions</name>
+        <qualifiedname>PosProcessFlow::setProcessDefinitions</qualifiedname>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1ab5e2b213dce8b12bfab1dd426b0056d2" kindref="member">PosProcessDefinitionInfoSequence</ref></type>
+          <declname>aProcessDefinitionInfoSequence</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="280" column="8"/>
+        <references refid="interface_pos_process_flow_1a87d5b5c348fc29410db5b256dc365610">setProcessDefinitions</references>
+        <referencedby refid="interface_pos_process_flow_1a87d5b5c348fc29410db5b256dc365610">setProcessDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ad50df9442e8324e013614d1765db1216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::firstProcessDefinitionOnDefault</definition>
+        <argsstring>(out string outkey)</argsstring>
+        <name>firstProcessDefinitionOnDefault</name>
+        <qualifiedname>PosProcessFlow::firstProcessDefinitionOnDefault</qualifiedname>
+        <param>
+          <type>out string</type>
+          <declname>outkey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="286" column="24"/>
+        <references refid="interface_pos_process_flow_1ad50df9442e8324e013614d1765db1216">firstProcessDefinitionOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1ad50df9442e8324e013614d1765db1216">firstProcessDefinitionOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a4115baf35ab53766ac9c86d5c184887d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1ab5e2b213dce8b12bfab1dd426b0056d2" kindref="member">PosProcessDefinitionInfoSequence</ref></type>
+        <definition>PosProcessDefinitionInfoSequence PosProcessFlow::getProcessDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessDefinitions</name>
+        <qualifiedname>PosProcessFlow::getProcessDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="292" column="36"/>
+        <references refid="interface_pos_process_flow_1a4115baf35ab53766ac9c86d5c184887d">getProcessDefinitions</references>
+        <referencedby refid="interface_pos_process_flow_1a4115baf35ab53766ac9c86d5c184887d">getProcessDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aab89e493fd5f41eda40a249bd78dff6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findProcessDefinitionFor</definition>
+        <argsstring>(in string key, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>findProcessDefinitionFor</name>
+        <qualifiedname>PosProcessFlow::findProcessDefinitionFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="298" column="24"/>
+        <references refid="interface_pos_process_flow_1aab89e493fd5f41eda40a249bd78dff6f">findProcessDefinitionFor</references>
+        <referencedby refid="interface_pos_process_flow_1aab89e493fd5f41eda40a249bd78dff6f">findProcessDefinitionFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aebf87c0043bef9abd299e9d9f1eb810b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findNextProcessDefinitionFor</definition>
+        <argsstring>(in string key, out string outKey, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>findNextProcessDefinitionFor</name>
+        <qualifiedname>PosProcessFlow::findNextProcessDefinitionFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outKey</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="304" column="24"/>
+        <references refid="interface_pos_process_flow_1aebf87c0043bef9abd299e9d9f1eb810b">findNextProcessDefinitionFor</references>
+        <referencedby refid="interface_pos_process_flow_1aebf87c0043bef9abd299e9d9f1eb810b">findNextProcessDefinitionFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a485c0666addfb3efb2a51e754674a862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::firstProcessDefinition</definition>
+        <argsstring>(out string outKey, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>firstProcessDefinition</name>
+        <qualifiedname>PosProcessFlow::firstProcessDefinition</qualifiedname>
+        <param>
+          <type>out string</type>
+          <declname>outKey</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="310" column="24"/>
+        <references refid="interface_pos_process_flow_1a485c0666addfb3efb2a51e754674a862">firstProcessDefinition</references>
+        <referencedby refid="interface_pos_process_flow_1a485c0666addfb3efb2a51e754674a862">firstProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a6a4679d09cde4395670223d4f418c242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::nextProcessDefinitionFor</definition>
+        <argsstring>(in string seqNo, out string outKey)</argsstring>
+        <name>nextProcessDefinitionFor</name>
+        <qualifiedname>PosProcessFlow::nextProcessDefinitionFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>seqNo</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outKey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="316" column="24"/>
+        <references refid="interface_pos_process_flow_1a6a4679d09cde4395670223d4f418c242">nextProcessDefinitionFor</references>
+        <referencedby refid="interface_pos_process_flow_1a6a4679d09cde4395670223d4f418c242">nextProcessDefinitionFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ada697bc6759b7fcf8d0c692c6185fcf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::setMainProcessFlowInfo</definition>
+        <argsstring>(in spMainProcessDefinitionInfo mainProcessDefinitionInfo, in spFlowReleaseInfo flowReleaseInfo, in long relNo)</argsstring>
+        <name>setMainProcessFlowInfo</name>
+        <qualifiedname>PosProcessFlow::setMainProcessFlowInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a760a1548d360993d7304d987db20e5eb" kindref="member">spMainProcessDefinitionInfo</ref></type>
+          <declname>mainProcessDefinitionInfo</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a635f5305f4dcb381f0c752034ffd3504" kindref="member">spFlowReleaseInfo</ref></type>
+          <declname>flowReleaseInfo</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>relNo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_flow_1_1_set_main_process_flow_info_failed_signal" kindref="compound">SetMainProcessFlowInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="322" column="8"/>
+        <references refid="interface_pos_process_flow_1ada697bc6759b7fcf8d0c692c6185fcf1">setMainProcessFlowInfo</references>
+        <referencedby refid="interface_pos_process_flow_1ada697bc6759b7fcf8d0c692c6185fcf1">setMainProcessFlowInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a25d92f85abf64cf9881d5b43f94b2493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::calculateRemainingCycleTimeFor</definition>
+        <argsstring>(in stringSequence moduleProcessDefinitionInfo, in spFlowReleaseInfo flowReleaseInfo)</argsstring>
+        <name>calculateRemainingCycleTimeFor</name>
+        <qualifiedname>PosProcessFlow::calculateRemainingCycleTimeFor</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>moduleProcessDefinitionInfo</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a635f5305f4dcb381f0c752034ffd3504" kindref="member">spFlowReleaseInfo</ref></type>
+          <declname>flowReleaseInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="328" column="8"/>
+        <references refid="interface_pos_process_flow_1a25d92f85abf64cf9881d5b43f94b2493">calculateRemainingCycleTimeFor</references>
+        <referencedby refid="interface_pos_process_flow_1a25d92f85abf64cf9881d5b43f94b2493">calculateRemainingCycleTimeFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1adb398b949aa4bb3a57afd9b9f7f13ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findProcessDefinitionOnDefault</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>findProcessDefinitionOnDefault</name>
+        <qualifiedname>PosProcessFlow::findProcessDefinitionOnDefault</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="334" column="24"/>
+        <references refid="interface_pos_process_flow_1adb398b949aa4bb3a57afd9b9f7f13ef9">findProcessDefinitionOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1adb398b949aa4bb3a57afd9b9f7f13ef9">findProcessDefinitionOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ae250c2570c29b98da9531de258c1279f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findNextProcessDefinitionOnDefault</definition>
+        <argsstring>(in string inkey, out string outKey)</argsstring>
+        <name>findNextProcessDefinitionOnDefault</name>
+        <qualifiedname>PosProcessFlow::findNextProcessDefinitionOnDefault</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inkey</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outKey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="340" column="24"/>
+        <references refid="interface_pos_process_flow_1ae250c2570c29b98da9531de258c1279f">findNextProcessDefinitionOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1ae250c2570c29b98da9531de258c1279f">findNextProcessDefinitionOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ae6b3821c2cbd54a0ed4563d445bfc684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::getFirstProcessOperationSpecification</definition>
+        <argsstring>(out PosProcessFlow outMainProcessFlow, out string outModuleNumber, out PosProcessFlow outModuleProcessFlow)</argsstring>
+        <name>getFirstProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::getFirstProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outMainProcessFlow</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outModuleNumber</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outModuleProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="346" column="36"/>
+        <references refid="interface_pos_process_flow_1ae6b3821c2cbd54a0ed4563d445bfc684">getFirstProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1ae6b3821c2cbd54a0ed4563d445bfc684">getFirstProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a6d8bc421f1c1b8a0cf60a19fdcaec81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::getNextProcessOperationSpecificationFor</definition>
+        <argsstring>(in string inModuleNumber, in PosProcessFlow inModuleProcessFlow, in PosProcessOperationSpecification inModuleProcessOperationSpecification, out PosProcessFlow outMainProcessFlow, out string outModuleNumber, out PosProcessFlow outModuleProcessFlow)</argsstring>
+        <name>getNextProcessOperationSpecificationFor</name>
+        <qualifiedname>PosProcessFlow::getNextProcessOperationSpecificationFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inModuleNumber</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>inModuleProcessFlow</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>inModuleProcessOperationSpecification</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outMainProcessFlow</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outModuleNumber</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outModuleProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="352" column="36"/>
+        <references refid="interface_pos_process_flow_1a6d8bc421f1c1b8a0cf60a19fdcaec81a">getNextProcessOperationSpecificationFor</references>
+        <referencedby refid="interface_pos_process_flow_1a6d8bc421f1c1b8a0cf60a19fdcaec81a">getNextProcessOperationSpecificationFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a003c9a05ecbd5969ddb3c78f5902b377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::getProcessOperationSpecificationFor</definition>
+        <argsstring>(in string inOperationNubmer, out PosProcessFlow outMainProcessFlow, out PosProcessFlow outModuleProcessFlow)</argsstring>
+        <name>getProcessOperationSpecificationFor</name>
+        <qualifiedname>PosProcessFlow::getProcessOperationSpecificationFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inOperationNubmer</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outMainProcessFlow</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outModuleProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="358" column="36"/>
+        <references refid="interface_pos_process_flow_1a003c9a05ecbd5969ddb3c78f5902b377">getProcessOperationSpecificationFor</references>
+        <referencedby refid="interface_pos_process_flow_1a003c9a05ecbd5969ddb3c78f5902b377">getProcessOperationSpecificationFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a72787026d1cf1f75c260641345f6987f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::findProcessOperationSpecificationOnDefault</definition>
+        <argsstring>(in string operationNumber)</argsstring>
+        <name>findProcessOperationSpecificationOnDefault</name>
+        <qualifiedname>PosProcessFlow::findProcessOperationSpecificationOnDefault</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="365" column="36"/>
+        <references refid="interface_pos_process_flow_1a72787026d1cf1f75c260641345f6987f">findProcessOperationSpecificationOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1a72787026d1cf1f75c260641345f6987f">findProcessOperationSpecificationOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1af20233771fc2e254823bfaa52185d8a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::lastProcessDefinitionOnDefault</definition>
+        <argsstring>(out string outKey)</argsstring>
+        <name>lastProcessDefinitionOnDefault</name>
+        <qualifiedname>PosProcessFlow::lastProcessDefinitionOnDefault</qualifiedname>
+        <param>
+          <type>out string</type>
+          <declname>outKey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="372" column="24"/>
+        <references refid="interface_pos_process_flow_1af20233771fc2e254823bfaa52185d8a9">lastProcessDefinitionOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1af20233771fc2e254823bfaa52185d8a9">lastProcessDefinitionOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a6be3de448a322643aa894029989d7f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findPreviousProcessDefinitionOnDefault</definition>
+        <argsstring>(in string inkey, out string outkey)</argsstring>
+        <name>findPreviousProcessDefinitionOnDefault</name>
+        <qualifiedname>PosProcessFlow::findPreviousProcessDefinitionOnDefault</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inkey</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outkey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="378" column="24"/>
+        <references refid="interface_pos_process_flow_1a6be3de448a322643aa894029989d7f5a">findPreviousProcessDefinitionOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1a6be3de448a322643aa894029989d7f5a">findPreviousProcessDefinitionOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ab10f046aea895af82331da86e6d48416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::lastProcessDefinition</definition>
+        <argsstring>(out string outkey, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>lastProcessDefinition</name>
+        <qualifiedname>PosProcessFlow::lastProcessDefinition</qualifiedname>
+        <param>
+          <type>out string</type>
+          <declname>outkey</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="384" column="24"/>
+        <references refid="interface_pos_process_flow_1ab10f046aea895af82331da86e6d48416">lastProcessDefinition</references>
+        <referencedby refid="interface_pos_process_flow_1ab10f046aea895af82331da86e6d48416">lastProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a1cc02b941697bb894d9b24007927cb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosProcessFlow::findPreviousProcessDefinitionFor</definition>
+        <argsstring>(in string inkey, out string outkey, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>findPreviousProcessDefinitionFor</name>
+        <qualifiedname>PosProcessFlow::findPreviousProcessDefinitionFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>inkey</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outkey</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="390" column="24"/>
+        <references refid="interface_pos_process_flow_1a1cc02b941697bb894d9b24007927cb43">findPreviousProcessDefinitionFor</references>
+        <referencedby refid="interface_pos_process_flow_1a1cc02b941697bb894d9b24007927cb43">findPreviousProcessDefinitionFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a1f1b1aa0135a8fd01cec3df82fdf19d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::getLastProcessOperationSpecification</definition>
+        <argsstring>(out PosProcessFlow outMainProcessFlow, out string outModuleNumber, out PosProcessFlow outModuleProcessFlow)</argsstring>
+        <name>getLastProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::getLastProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outMainProcessFlow</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>outModuleNumber</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outModuleProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="396" column="36"/>
+        <references refid="interface_pos_process_flow_1a1f1b1aa0135a8fd01cec3df82fdf19d5">getLastProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a1f1b1aa0135a8fd01cec3df82fdf19d5">getLastProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a30d79c632dc10f6d9b497d779a215e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::lastProcessOperationSpecificationOnDefaultPath</definition>
+        <argsstring>()</argsstring>
+        <name>lastProcessOperationSpecificationOnDefaultPath</name>
+        <qualifiedname>PosProcessFlow::lastProcessOperationSpecificationOnDefaultPath</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="402" column="36"/>
+        <references refid="interface_pos_process_flow_1a30d79c632dc10f6d9b497d779a215e82">lastProcessOperationSpecificationOnDefaultPath</references>
+        <referencedby refid="interface_pos_process_flow_1a30d79c632dc10f6d9b497d779a215e82">lastProcessOperationSpecificationOnDefaultPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a3afa8b15022103533c6cb926d5b16284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::lastProcessOperationSpecification</definition>
+        <argsstring>(out PosProcessFlow aProcessFlow)</argsstring>
+        <name>lastProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::lastProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="408" column="36"/>
+        <references refid="interface_pos_process_flow_1a3afa8b15022103533c6cb926d5b16284">lastProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1a3afa8b15022103533c6cb926d5b16284">lastProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1af6dac4132f8768aaf9ad51f980baac76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::previousProcessOperationSpecificationOnDefaultPathFrom</definition>
+        <argsstring>(in PosProcessOperationSpecification aProcessOperationSpecification)</argsstring>
+        <name>previousProcessOperationSpecificationOnDefaultPathFrom</name>
+        <qualifiedname>PosProcessFlow::previousProcessOperationSpecificationOnDefaultPathFrom</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="414" column="36"/>
+        <references refid="interface_pos_process_flow_1af6dac4132f8768aaf9ad51f980baac76">previousProcessOperationSpecificationOnDefaultPathFrom</references>
+        <referencedby refid="interface_pos_process_flow_1af6dac4132f8768aaf9ad51f980baac76">previousProcessOperationSpecificationOnDefaultPathFrom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1abde924813754146d95a1aa904019f3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+        <definition>PosProcessOperationSpecification PosProcessFlow::previousProcessOperationSpecification</definition>
+        <argsstring>(in PosProcessOperationSpecification aProcessOperationSpecification, out PosProcessFlow aProcessFlow)</argsstring>
+        <name>previousProcessOperationSpecification</name>
+        <qualifiedname>PosProcessFlow::previousProcessOperationSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="421" column="36"/>
+        <references refid="interface_pos_process_flow_1abde924813754146d95a1aa904019f3dc">previousProcessOperationSpecification</references>
+        <referencedby refid="interface_pos_process_flow_1abde924813754146d95a1aa904019f3dc">previousProcessOperationSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a89a85e3e69d563f71074eb1bf4e638ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isAfterModuleNumber</definition>
+        <argsstring>(in string moduleNumber, in string anotherModuleNumber)</argsstring>
+        <name>isAfterModuleNumber</name>
+        <qualifiedname>PosProcessFlow::isAfterModuleNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>moduleNumber</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>anotherModuleNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="430" column="11"/>
+        <references refid="interface_pos_process_flow_1a89a85e3e69d563f71074eb1bf4e638ad">isAfterModuleNumber</references>
+        <referencedby refid="interface_pos_process_flow_1a89a85e3e69d563f71074eb1bf4e638ad">isAfterModuleNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a9435751d7745cb47ab6fbb883a3ceaea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+        <definition>PosStage PosProcessFlow::findStageOnDefault</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>findStageOnDefault</name>
+        <qualifiedname>PosProcessFlow::findStageOnDefault</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="439" column="12"/>
+        <references refid="interface_pos_process_flow_1a9435751d7745cb47ab6fbb883a3ceaea">findStageOnDefault</references>
+        <referencedby refid="interface_pos_process_flow_1a9435751d7745cb47ab6fbb883a3ceaea">findStageOnDefault</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1aaddf79ec7a06b93ec8229ad220ed1521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+        <definition>PosStage PosProcessFlow::findStageFor</definition>
+        <argsstring>(in string key, out PosProcessFlow outProcessFlow)</argsstring>
+        <name>findStageFor</name>
+        <qualifiedname>PosProcessFlow::findStageFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>out <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>outProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="447" column="12"/>
+        <references refid="interface_pos_process_flow_1aaddf79ec7a06b93ec8229ad220ed1521">findStageFor</references>
+        <referencedby refid="interface_pos_process_flow_1aaddf79ec7a06b93ec8229ad220ed1521">findStageFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a1adedfb602ab345e767ea4495ce0c715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isAfterOperationNumberForMain</definition>
+        <argsstring>(in PosProcessFlow aModuleProcessFlow, in string operationNumber, in string anotherOperationNumber)</argsstring>
+        <name>isAfterOperationNumberForMain</name>
+        <qualifiedname>PosProcessFlow::isAfterOperationNumberForMain</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aModuleProcessFlow</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>anotherOperationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="456" column="11"/>
+        <references refid="interface_pos_process_flow_1a1adedfb602ab345e767ea4495ce0c715">isAfterOperationNumberForMain</references>
+        <referencedby refid="interface_pos_process_flow_1a1adedfb602ab345e767ea4495ce0c715">isAfterOperationNumberForMain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a02192ec0e34d3f5cf3578cab14d4ad14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isAfterOperationNumberForModule</definition>
+        <argsstring>(in string operationNumber, in string anotherOperationNumber)</argsstring>
+        <name>isAfterOperationNumberForModule</name>
+        <qualifiedname>PosProcessFlow::isAfterOperationNumberForModule</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>anotherOperationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="465" column="11"/>
+        <references refid="interface_pos_process_flow_1a02192ec0e34d3f5cf3578cab14d4ad14">isAfterOperationNumberForModule</references>
+        <referencedby refid="interface_pos_process_flow_1a02192ec0e34d3f5cf3578cab14d4ad14">isAfterOperationNumberForModule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a60da03bb9351b92a9023574685fcd01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PosProcessFlow::findRemainingCycleTimeForMain</definition>
+        <argsstring>(in PosProcessFlow aModulePF, in string operationNumber)</argsstring>
+        <name>findRemainingCycleTimeForMain</name>
+        <qualifiedname>PosProcessFlow::findRemainingCycleTimeForMain</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>aModulePF</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="472" column="10"/>
+        <references refid="interface_pos_process_flow_1a60da03bb9351b92a9023574685fcd01b">findRemainingCycleTimeForMain</references>
+        <referencedby refid="interface_pos_process_flow_1a60da03bb9351b92a9023574685fcd01b">findRemainingCycleTimeForMain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a3edc270c36f2981029866a6b60209ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PosProcessFlow::findRemainingCycleTimeForModule</definition>
+        <argsstring>(in string operatinNumber)</argsstring>
+        <name>findRemainingCycleTimeForModule</name>
+        <qualifiedname>PosProcessFlow::findRemainingCycleTimeForModule</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operatinNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="479" column="10"/>
+        <references refid="interface_pos_process_flow_1a3edc270c36f2981029866a6b60209ca3">findRemainingCycleTimeForModule</references>
+        <referencedby refid="interface_pos_process_flow_1a3edc270c36f2981029866a6b60209ca3">findRemainingCycleTimeForModule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a4d207da6b2fe745d41f37fccd83cd7ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessFlow::maintainMainProcessFlow</definition>
+        <argsstring>(in spModuleProcessDefinitionInfo moduleProcessDefinitionInfo, in spFlowReleaseInfo flowReleaseInfo, in long relNo)</argsstring>
+        <name>maintainMainProcessFlow</name>
+        <qualifiedname>PosProcessFlow::maintainMainProcessFlow</qualifiedname>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a68b40257bad78e4860f6cc0b4627da50" kindref="member">spModuleProcessDefinitionInfo</ref></type>
+          <declname>moduleProcessDefinitionInfo</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1a635f5305f4dcb381f0c752034ffd3504" kindref="member">spFlowReleaseInfo</ref></type>
+          <declname>flowReleaseInfo</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>relNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="494" column="8"/>
+        <references refid="interface_pos_process_flow_1a4d207da6b2fe745d41f37fccd83cd7ba">maintainMainProcessFlow</references>
+        <referencedby refid="interface_pos_process_flow_1a4d207da6b2fe745d41f37fccd83cd7ba">maintainMainProcessFlow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a73a6d9bd3f12049b3971e8fa290a4154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isRevivalModuleOperationNumber</definition>
+        <argsstring>(in string moduleOpeNo)</argsstring>
+        <name>isRevivalModuleOperationNumber</name>
+        <qualifiedname>PosProcessFlow::isRevivalModuleOperationNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>moduleOpeNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="502" column="11"/>
+        <references refid="interface_pos_process_flow_1a73a6d9bd3f12049b3971e8fa290a4154">isRevivalModuleOperationNumber</references>
+        <referencedby refid="interface_pos_process_flow_1a73a6d9bd3f12049b3971e8fa290a4154">isRevivalModuleOperationNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a6bd9989647431969cb84d8b2eb7993cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isRevivalModuleNumber</definition>
+        <argsstring>(in string moduleNo)</argsstring>
+        <name>isRevivalModuleNumber</name>
+        <qualifiedname>PosProcessFlow::isRevivalModuleNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>moduleNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="510" column="11"/>
+        <references refid="interface_pos_process_flow_1a6bd9989647431969cb84d8b2eb7993cc">isRevivalModuleNumber</references>
+        <referencedby refid="interface_pos_process_flow_1a6bd9989647431969cb84d8b2eb7993cc">isRevivalModuleNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a1ea05efacf558da89850d60235d52194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1aec75629cba3c6ecb624d968fba076800" kindref="member">PosEqpMonitorLabelInfoSequence</ref></type>
+        <definition>PosEqpMonitorLabelInfoSequence PosProcessFlow::getEqpMonitorLabels</definition>
+        <argsstring>(in string moduleOpeNo)</argsstring>
+        <name>getEqpMonitorLabels</name>
+        <qualifiedname>PosProcessFlow::getEqpMonitorLabels</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>moduleOpeNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="516" column="34"/>
+        <references refid="interface_pos_process_flow_1a1ea05efacf558da89850d60235d52194">getEqpMonitorLabels</references>
+        <referencedby refid="interface_pos_process_flow_1a1ea05efacf558da89850d60235d52194">getEqpMonitorLabels</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1a7d64b3945859d707903d1215070ff0a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProcessFlow::isInEqpMonitorJobSection</definition>
+        <argsstring>(in string moduleOpeNo)</argsstring>
+        <name>isInEqpMonitorJobSection</name>
+        <qualifiedname>PosProcessFlow::isInEqpMonitorJobSection</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>moduleOpeNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="525" column="11"/>
+        <references refid="interface_pos_process_flow_1a7d64b3945859d707903d1215070ff0a1">isInEqpMonitorJobSection</references>
+        <referencedby refid="interface_pos_process_flow_1a7d64b3945859d707903d1215070ff0a1">isInEqpMonitorJobSection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_flow_1ac2d7ba7fde7043efd98589dcb61d9c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1a2bd3fe3a2c69cea894577c324aaeb5f3" kindref="member">PosProcessOperationSpecificationSequence</ref></type>
+        <definition>PosProcessOperationSpecificationSequence PosProcessFlow::allEqpMonitorSections</definition>
+        <argsstring>()</argsstring>
+        <name>allEqpMonitorSections</name>
+        <qualifiedname>PosProcessFlow::allEqpMonitorSections</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcflw.idl" line="531" column="44"/>
+        <references refid="interface_pos_process_flow_1ac2d7ba7fde7043efd98589dcb61d9c7d">allEqpMonitorSections</references>
+        <referencedby refid="interface_pos_process_flow_1ac2d7ba7fde7043efd98589dcb61d9c7d">allEqpMonitorSections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProcessFlow</label>
+        <link refid="interface_pos_process_flow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcessFlow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProcessFlow</label>
+        <link refid="interface_pos_process_flow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcessFlow</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ppcflw.idl" line="40" column="11" bodyfile="poscimfw/include/ppcflw.idl" bodystart="40" bodyend="539"/>
+    <listofallmembers>
+      <member refid="interface_pos_process_flow_1a5589b041ef36c93a221b5c0e845d91d2" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>addProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1ac2d7ba7fde7043efd98589dcb61d9c7d" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>allEqpMonitorSections</name></member>
+      <member refid="interface_pos_process_flow_1abffa128c9ab7178ec362d57ae038e5d5" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>calculateRemainingCycleTime</name></member>
+      <member refid="interface_pos_process_flow_1a25d92f85abf64cf9881d5b43f94b2493" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>calculateRemainingCycleTimeFor</name></member>
+      <member refid="interface_pos_process_flow_1ae6aded2977f761f8257e93f32cf8acd8" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>createProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1ac684f6efe924ff3c397b7b04b556c409" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>createProcessOperationSpecificationForMainDI</name></member>
+      <member refid="interface_pos_process_flow_1aebf87c0043bef9abd299e9d9f1eb810b" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findNextProcessDefinitionFor</name></member>
+      <member refid="interface_pos_process_flow_1ae250c2570c29b98da9531de258c1279f" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findNextProcessDefinitionOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a1cc02b941697bb894d9b24007927cb43" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findPreviousProcessDefinitionFor</name></member>
+      <member refid="interface_pos_process_flow_1a6be3de448a322643aa894029989d7f5a" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findPreviousProcessDefinitionOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1aab89e493fd5f41eda40a249bd78dff6f" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findProcessDefinitionFor</name></member>
+      <member refid="interface_pos_process_flow_1adb398b949aa4bb3a57afd9b9f7f13ef9" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findProcessDefinitionOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a8fe9281d16b700de369e95f0f9fa4088" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_1a72787026d1cf1f75c260641345f6987f" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findProcessOperationSpecificationOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a60da03bb9351b92a9023574685fcd01b" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findRemainingCycleTimeForMain</name></member>
+      <member refid="interface_pos_process_flow_1a3edc270c36f2981029866a6b60209ca3" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findRemainingCycleTimeForModule</name></member>
+      <member refid="interface_pos_process_flow_1aaddf79ec7a06b93ec8229ad220ed1521" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findStageFor</name></member>
+      <member refid="interface_pos_process_flow_1a9435751d7745cb47ab6fbb883a3ceaea" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>findStageOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a485c0666addfb3efb2a51e754674a862" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>firstProcessDefinition</name></member>
+      <member refid="interface_pos_process_flow_1ad50df9442e8324e013614d1765db1216" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>firstProcessDefinitionOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a9f916bfc8aaaa9477cb01c74deba29da" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>firstProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1a1eaf40d34e24c8da8c2f1cf6c72c51fd" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getCreationTimeStamp</name></member>
+      <member refid="interface_pos_process_flow_1a1ea05efacf558da89850d60235d52194" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getEqpMonitorLabels</name></member>
+      <member refid="interface_pos_process_flow_1ae6b3821c2cbd54a0ed4563d445bfc684" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getFirstProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1a1f1b1aa0135a8fd01cec3df82fdf19d5" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getLastProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1a6d8bc421f1c1b8a0cf60a19fdcaec81a" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getNextProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_1a2b88eca0d1bde3bc07abbabde0c8b0ba" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getPreviousProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_1acd7dec462fe9644c464e87ecc8791691" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getProcessDefinitionLevel</name></member>
+      <member refid="interface_pos_process_flow_1a4115baf35ab53766ac9c86d5c184887d" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getProcessDefinitions</name></member>
+      <member refid="interface_pos_process_flow_1a003c9a05ecbd5969ddb3c78f5902b377" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>getProcessOperationSpecificationFor</name></member>
+      <member refid="interface_pos_process_flow_1aef924f3c68cab7156df6abc547b974d0" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isActive</name></member>
+      <member refid="interface_pos_process_flow_1a89a85e3e69d563f71074eb1bf4e638ad" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isAfterModuleNumber</name></member>
+      <member refid="interface_pos_process_flow_1a1adedfb602ab345e767ea4495ce0c715" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isAfterOperationNumberForMain</name></member>
+      <member refid="interface_pos_process_flow_1a02192ec0e34d3f5cf3578cab14d4ad14" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isAfterOperationNumberForModule</name></member>
+      <member refid="interface_pos_process_flow_1a7d64b3945859d707903d1215070ff0a1" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isInEqpMonitorJobSection</name></member>
+      <member refid="interface_pos_process_flow_1a6bd9989647431969cb84d8b2eb7993cc" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isRevivalModuleNumber</name></member>
+      <member refid="interface_pos_process_flow_1a73a6d9bd3f12049b3971e8fa290a4154" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isRevivalModuleOperationNumber</name></member>
+      <member refid="interface_pos_process_flow_1a0b2df74fcca0e849ebe6af0af636d307" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>isSameFlowFor</name></member>
+      <member refid="interface_pos_process_flow_1ab10f046aea895af82331da86e6d48416" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>lastProcessDefinition</name></member>
+      <member refid="interface_pos_process_flow_1af20233771fc2e254823bfaa52185d8a9" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>lastProcessDefinitionOnDefault</name></member>
+      <member refid="interface_pos_process_flow_1a3afa8b15022103533c6cb926d5b16284" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>lastProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1a30d79c632dc10f6d9b497d779a215e82" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>lastProcessOperationSpecificationOnDefaultPath</name></member>
+      <member refid="interface_pos_process_flow_1a4d207da6b2fe745d41f37fccd83cd7ba" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>maintainMainProcessFlow</name></member>
+      <member refid="interface_pos_process_flow_1a5bdf34a7a518405a8c2763c39239e68e" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>makeActive</name></member>
+      <member refid="interface_pos_process_flow_1a231132358342c9ce469df0a25e1ccaf1" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>makeInActive</name></member>
+      <member refid="interface_pos_process_flow_1a6a4679d09cde4395670223d4f418c242" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>nextProcessDefinitionFor</name></member>
+      <member refid="interface_pos_process_flow_1a8df9d9de9804dff62d85a7cb6b8042c2" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>nextProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1a2c6ccebd47b9b84cf9a9c8e8e5b224cc" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>PosProcessFlow_init</name></member>
+      <member refid="interface_pos_process_flow_1abde924813754146d95a1aa904019f3dc" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>previousProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1af6dac4132f8768aaf9ad51f980baac76" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>previousProcessOperationSpecificationOnDefaultPathFrom</name></member>
+      <member refid="interface_pos_process_flow_1a12e5e5e10fdc5dd1d3af48c5de3e2dcb" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>removeProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_flow_1aaf73ca9c2dd3cfca78da05afe0eca1ad" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>removeProcessOperationSpecificationForMainDI</name></member>
+      <member refid="interface_pos_process_flow_1a5e5e0d2120ad7e52137ab0412918a430" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>setCreationTimeStamp</name></member>
+      <member refid="interface_pos_process_flow_1ada697bc6759b7fcf8d0c692c6185fcf1" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>setMainProcessFlowInfo</name></member>
+      <member refid="interface_pos_process_flow_1abccb305e7de6c525a7f0eae8506d4bdc" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>setModuleProcessFlowInfo</name></member>
+      <member refid="interface_pos_process_flow_1aa479fcb6c38d602d1c4ecab92b0a66b7" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>setProcessDefinitionLevel</name></member>
+      <member refid="interface_pos_process_flow_1a87d5b5c348fc29410db5b256dc365610" prot="public" virt="non-virtual"><scope>PosProcessFlow</scope><name>setProcessDefinitions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

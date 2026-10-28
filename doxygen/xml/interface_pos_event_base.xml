@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_event_base" kind="interface" language="IDL" prot="public">
+    <compoundname>PosEventBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWBO</basecompoundref>
+    <derivedcompoundref refid="interface_pos_a_p_c_interface_event" prot="public" virt="non-virtual">PosAPCInterfaceEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_a_p_c_process_disposition_event" prot="public" virt="non-virtual">PosAPCProcessDispositionEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_auto_dispatch_control_event" prot="public" virt="non-virtual">PosAutoDispatchControlEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_backup_channel_event" prot="public" virt="non-virtual">PosBackupChannelEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_backup_operation_event" prot="public" virt="non-virtual">PosBackupOperationEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_bonding_group_event" prot="public" virt="non-virtual">PosBondingGroupEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_chamber_status_change_event" prot="public" virt="non-virtual">PosChamberStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_collected_data_change_event" prot="public" virt="non-virtual">PosCollectedDataChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_collected_data_event" prot="public" virt="non-virtual">PosCollectedDataEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_control_job_status_change_event" prot="public" virt="non-virtual">PosControlJobStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_bank_move_event" prot="public" virt="non-virtual">PosDurableBankMoveEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_change_event" prot="public" virt="non-virtual">PosDurableChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_control_job_status_change_event" prot="public" virt="non-virtual">PosDurableControlJobStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_event" prot="public" virt="non-virtual">PosDurableEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_hold_event" prot="public" virt="non-virtual">PosDurableHoldEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_operation_complete_event" prot="public" virt="non-virtual">PosDurableOperationCompleteEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_operation_move_event" prot="public" virt="non-virtual">PosDurableOperationMoveEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_operation_start_event" prot="public" virt="non-virtual">PosDurableOperationStartEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_p_f_x_event" prot="public" virt="non-virtual">PosDurablePFXEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_rework_event" prot="public" virt="non-virtual">PosDurableReworkEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_durable_xfer_job_status_change_event" prot="public" virt="non-virtual">PosDurableXferJobStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_dynamic_buffer_resource_change_event" prot="public" virt="non-virtual">PosDynamicBufferResourceChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_entity_inhibit_event" prot="public" virt="non-virtual">PosEntityInhibitEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_eqp_monitor_count_event" prot="public" virt="non-virtual">PosEqpMonitorCountEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_eqp_monitor_event" prot="public" virt="non-virtual">PosEqpMonitorEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_eqp_monitor_job_event" prot="public" virt="non-virtual">PosEqpMonitorJobEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_eqp_port_status_change_event" prot="public" virt="non-virtual">PosEqpPortStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_equipment_alarm_event" prot="public" virt="non-virtual">PosEquipmentAlarmEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_equipment_flow_batch_max_count_change_event" prot="public" virt="non-virtual">PosEquipmentFlowBatchMaxCountChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_equipment_mode_change_event" prot="public" virt="non-virtual">PosEquipmentModeChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_equipment_status_change_event" prot="public" virt="non-virtual">PosEquipmentStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_f_p_c_event" prot="public" virt="non-virtual">PosFPCEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_future_rework_event" prot="public" virt="non-virtual">PosFutureReworkEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_inter_fab_xfer_event" prot="public" virt="non-virtual">PosInterFabXferEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_bank_move_event" prot="public" virt="non-virtual">PosLotBankMoveEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_change_event" prot="public" virt="non-virtual">PosLotChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_flow_batch_event" prot="public" virt="non-virtual">PosLotFlowBatchEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_future_hold_event" prot="public" virt="non-virtual">PosLotFutureHoldEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_hold_event" prot="public" virt="non-virtual">PosLotHoldEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_operation_complete_event" prot="public" virt="non-virtual">PosLotOperationCompleteEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_operation_move_event" prot="public" virt="non-virtual">PosLotOperationMoveEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_operation_start_event" prot="public" virt="non-virtual">PosLotOperationStartEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_reticle_set_change_event" prot="public" virt="non-virtual">PosLotReticleSetChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_rework_event" prot="public" virt="non-virtual">PosLotReworkEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_wafer_move_event" prot="public" virt="non-virtual">PosLotWaferMoveEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_wafer_scrap_event" prot="public" virt="non-virtual">PosLotWaferScrapEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_wafer_sort_event" prot="public" virt="non-virtual">PosLotWaferSortEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_wafer_stack_event" prot="public" virt="non-virtual">PosLotWaferStackEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_note_change_event" prot="public" virt="non-virtual">PosNoteChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_owner_change_event" prot="public" virt="non-virtual">PosOwnerChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_planned_split_event" prot="public" virt="non-virtual">PosPlannedSplitEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_port_status_change_event" prot="public" virt="non-virtual">PosPortStatusChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_process_hold_event" prot="public" virt="non-virtual">PosProcessHoldEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_process_job_change_event" prot="public" virt="non-virtual">PosProcessJobChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_process_resource_wafer_position_event" prot="public" virt="non-virtual">PosProcessResourceWaferPositionEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_process_status_event" prot="public" virt="non-virtual">PosProcessStatusEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_product_request_event" prot="public" virt="non-virtual">PosProductRequestEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_q_time_event" prot="public" virt="non-virtual">PosQTimeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_recipe_body_manage_event" prot="public" virt="non-virtual">PosRecipeBodyManageEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_s_l_m_max_reserve_count_event" prot="public" virt="non-virtual">PosSLMMaxReserveCountEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_s_l_m_switch_event" prot="public" virt="non-virtual">PosSLMSwitchEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_script_parameter_change_event" prot="public" virt="non-virtual">PosScriptParameterChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_system_message_event" prot="public" virt="non-virtual">PosSystemMessageEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_user_data_change_event" prot="public" virt="non-virtual">PosUserDataChangeEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_vendor_lot_event" prot="public" virt="non-virtual">PosVendorLotEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_wafer_chamber_process_event" prot="public" virt="non-virtual">PosWaferChamberProcessEvent</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_wafer_sort_job_event" prot="public" virt="non-virtual">PosWaferSortJobEvent</derivedcompoundref>
+    <includes refid="pevbase_8idl" local="no">pevbase.idl</includes>
+    <innerclass refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" prot="public">PosEventBase::InvalidEventRecordTypeSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_event_base_1a3f61a88dbdbef6f8fc0d97e3e8a5d958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::setEventData</definition>
+        <argsstring>(in any eventData)</argsstring>
+        <name>setEventData</name>
+        <qualifiedname>PosEventBase::setEventData</qualifiedname>
+        <param>
+          <type>in any</type>
+          <declname>eventData</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_event_base_1_1_invalid_event_record_type_signal" kindref="compound">InvalidEventRecordTypeSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a7accd192654cc0a51491794e3e1ef09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>any</type>
+        <definition>any PosEventBase::getEventData</definition>
+        <argsstring>()</argsstring>
+        <name>getEventData</name>
+        <qualifiedname>PosEventBase::getEventData</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="93" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosEventBase::isHistoryApplied</definition>
+        <argsstring>()</argsstring>
+        <name>isHistoryApplied</name>
+        <qualifiedname>PosEventBase::isHistoryApplied</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="100" column="11"/>
+        <references refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7">isHistoryApplied</references>
+        <referencedby refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7">isHistoryApplied</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::makeHistoryApplied</definition>
+        <argsstring>()</argsstring>
+        <name>makeHistoryApplied</name>
+        <qualifiedname>PosEventBase::makeHistoryApplied</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="106" column="8"/>
+        <references refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84">makeHistoryApplied</references>
+        <referencedby refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84">makeHistoryApplied</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosEventBase::isCFMApplied</definition>
+        <argsstring>()</argsstring>
+        <name>isCFMApplied</name>
+        <qualifiedname>PosEventBase::isCFMApplied</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="113" column="11"/>
+        <references refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617">isCFMApplied</references>
+        <referencedby refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617">isCFMApplied</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::makeCFMApplied</definition>
+        <argsstring>()</argsstring>
+        <name>makeCFMApplied</name>
+        <qualifiedname>PosEventBase::makeCFMApplied</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="119" column="8"/>
+        <references refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c">makeCFMApplied</references>
+        <referencedby refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c">makeCFMApplied</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::PosEventBase_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosEventBase_init</name>
+        <qualifiedname>PosEventBase::PosEventBase_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="122" column="8"/>
+        <references refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55">PosEventBase_init</references>
+        <referencedby refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55">PosEventBase_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::addFIFOData</definition>
+        <argsstring>(in string name, in TimeStamp eventtime)</argsstring>
+        <name>addFIFOData</name>
+        <qualifiedname>PosEventBase::addFIFOData</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>eventtime</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="132" column="8"/>
+        <references refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0">addFIFOData</references>
+        <referencedby refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0">addFIFOData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventBase::removeFIFOData</definition>
+        <argsstring>(in string name)</argsstring>
+        <name>removeFIFOData</name>
+        <qualifiedname>PosEventBase::removeFIFOData</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>name</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="139" column="8"/>
+        <references refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4">removeFIFOData</references>
+        <referencedby refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4">removeFIFOData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pevmggl_8idl_1a3ac49e1312b9b29a3f696cdb55c10460" kindref="member">PosEventFIFODataSequence</ref></type>
+        <definition>PosEventFIFODataSequence PosEventBase::allFIFOData</definition>
+        <argsstring>()</argsstring>
+        <name>allFIFOData</name>
+        <qualifiedname>PosEventBase::allFIFOData</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbase.idl" line="145" column="28"/>
+        <references refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94">allFIFOData</references>
+        <referencedby refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94">allFIFOData</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="3">
+        <label>PosAPCInterfaceEvent</label>
+        <link refid="interface_pos_a_p_c_interface_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PosAPCProcessDispositionEvent</label>
+        <link refid="interface_pos_a_p_c_process_disposition_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PosAutoDispatchControlEvent</label>
+        <link refid="interface_pos_auto_dispatch_control_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PosBackupChannelEvent</label>
+        <link refid="interface_pos_backup_channel_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PosBackupOperationEvent</label>
+        <link refid="interface_pos_backup_operation_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PosBondingGroupEvent</label>
+        <link refid="interface_pos_bonding_group_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PosChamberStatusChangeEvent</label>
+        <link refid="interface_pos_chamber_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PosCollectedDataChangeEvent</label>
+        <link refid="interface_pos_collected_data_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>PosCollectedDataEvent</label>
+        <link refid="interface_pos_collected_data_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PosControlJobStatusChangeEvent</label>
+        <link refid="interface_pos_control_job_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>PosDurableBankMoveEvent</label>
+        <link refid="interface_pos_durable_bank_move_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>PosDurableChangeEvent</label>
+        <link refid="interface_pos_durable_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>PosDurableControlJobStatusChangeEvent</label>
+        <link refid="interface_pos_durable_control_job_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>PosDurableEvent</label>
+        <link refid="interface_pos_durable_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>PosDurableHoldEvent</label>
+        <link refid="interface_pos_durable_hold_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>PosDurableOperationCompleteEvent</label>
+        <link refid="interface_pos_durable_operation_complete_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>PosDurableOperationMoveEvent</label>
+        <link refid="interface_pos_durable_operation_move_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>PosDurableOperationStartEvent</label>
+        <link refid="interface_pos_durable_operation_start_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>PosDurablePFXEvent</label>
+        <link refid="interface_pos_durable_p_f_x_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>PosDurableReworkEvent</label>
+        <link refid="interface_pos_durable_rework_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>PosDurableXferJobStatusChangeEvent</label>
+        <link refid="interface_pos_durable_xfer_job_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>PosDynamicBufferResourceChangeEvent</label>
+        <link refid="interface_pos_dynamic_buffer_resource_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>PosEntityInhibitEvent</label>
+        <link refid="interface_pos_entity_inhibit_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>PosEqpMonitorCountEvent</label>
+        <link refid="interface_pos_eqp_monitor_count_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>PosEqpMonitorEvent</label>
+        <link refid="interface_pos_eqp_monitor_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>PosEqpMonitorJobEvent</label>
+        <link refid="interface_pos_eqp_monitor_job_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>PosEqpPortStatusChangeEvent</label>
+        <link refid="interface_pos_eqp_port_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>PosEquipmentAlarmEvent</label>
+        <link refid="interface_pos_equipment_alarm_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>PosEquipmentFlowBatchMaxCountChangeEvent</label>
+        <link refid="interface_pos_equipment_flow_batch_max_count_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>PosEquipmentModeChangeEvent</label>
+        <link refid="interface_pos_equipment_mode_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>PosEquipmentStatusChangeEvent</label>
+        <link refid="interface_pos_equipment_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosEventBase</label>
+        <link refid="interface_pos_event_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>PosFPCEvent</label>
+        <link refid="interface_pos_f_p_c_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>PosFutureReworkEvent</label>
+        <link refid="interface_pos_future_rework_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>PosInterFabXferEvent</label>
+        <link refid="interface_pos_inter_fab_xfer_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>PosLotBankMoveEvent</label>
+        <link refid="interface_pos_lot_bank_move_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>PosLotChangeEvent</label>
+        <link refid="interface_pos_lot_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>PosLotFlowBatchEvent</label>
+        <link refid="interface_pos_lot_flow_batch_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>PosLotFutureHoldEvent</label>
+        <link refid="interface_pos_lot_future_hold_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>PosLotHoldEvent</label>
+        <link refid="interface_pos_lot_hold_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>PosLotOperationCompleteEvent</label>
+        <link refid="interface_pos_lot_operation_complete_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>PosLotOperationMoveEvent</label>
+        <link refid="interface_pos_lot_operation_move_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>PosLotOperationStartEvent</label>
+        <link refid="interface_pos_lot_operation_start_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>PosLotReticleSetChangeEvent</label>
+        <link refid="interface_pos_lot_reticle_set_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>PosLotReworkEvent</label>
+        <link refid="interface_pos_lot_rework_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>PosLotWaferMoveEvent</label>
+        <link refid="interface_pos_lot_wafer_move_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>PosLotWaferScrapEvent</label>
+        <link refid="interface_pos_lot_wafer_scrap_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>PosLotWaferSortEvent</label>
+        <link refid="interface_pos_lot_wafer_sort_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>PosLotWaferStackEvent</label>
+        <link refid="interface_pos_lot_wafer_stack_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>PosNoteChangeEvent</label>
+        <link refid="interface_pos_note_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>PosOwnerChangeEvent</label>
+        <link refid="interface_pos_owner_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>PosPlannedSplitEvent</label>
+        <link refid="interface_pos_planned_split_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>PosPortStatusChangeEvent</label>
+        <link refid="interface_pos_port_status_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>PosProcessHoldEvent</label>
+        <link refid="interface_pos_process_hold_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>PosProcessJobChangeEvent</label>
+        <link refid="interface_pos_process_job_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>PosProcessResourceWaferPositionEvent</label>
+        <link refid="interface_pos_process_resource_wafer_position_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>PosProcessStatusEvent</label>
+        <link refid="interface_pos_process_status_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>PosProductRequestEvent</label>
+        <link refid="interface_pos_product_request_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>PosQTimeEvent</label>
+        <link refid="interface_pos_q_time_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>PosRecipeBodyManageEvent</label>
+        <link refid="interface_pos_recipe_body_manage_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>PosSLMMaxReserveCountEvent</label>
+        <link refid="interface_pos_s_l_m_max_reserve_count_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>PosSLMSwitchEvent</label>
+        <link refid="interface_pos_s_l_m_switch_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>PosScriptParameterChangeEvent</label>
+        <link refid="interface_pos_script_parameter_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>PosSystemMessageEvent</label>
+        <link refid="interface_pos_system_message_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>PosUserDataChangeEvent</label>
+        <link refid="interface_pos_user_data_change_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>PosVendorLotEvent</label>
+        <link refid="interface_pos_vendor_lot_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>PosWaferChamberProcessEvent</label>
+        <link refid="interface_pos_wafer_chamber_process_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>PosWaferSortJobEvent</label>
+        <link refid="interface_pos_wafer_sort_job_event"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="1">
+        <label>PosEventBase</label>
+        <link refid="interface_pos_event_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevbase.idl" line="39" column="11" bodyfile="poscimfw/include/pevbase.idl" bodystart="39" bodyend="151"/>
+    <listofallmembers>
+      <member refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>addFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>allFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a7accd192654cc0a51491794e3e1ef09b" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>getEventData</name></member>
+      <member refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>isCFMApplied</name></member>
+      <member refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>isHistoryApplied</name></member>
+      <member refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>makeCFMApplied</name></member>
+      <member refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>makeHistoryApplied</name></member>
+      <member refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>PosEventBase_init</name></member>
+      <member refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>removeFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a3f61a88dbdbef6f8fc0d97e3e8a5d958" prot="public" virt="non-virtual"><scope>PosEventBase</scope><name>setEventData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

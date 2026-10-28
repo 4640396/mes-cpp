@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="drblmnsp_8idl" kind="file" language="IDL">
+    <compoundname>drblmnsp.idl</compoundname>
+    <includes local="yes">drblmnof.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/drblmnsp.idl</label>
+        <link refid="drblmnsp_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="2">
+        <label>drblmnof.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_s_p_durable_management_object_factory" prot="public">SPDurableManagementObjectFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2016.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2016.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>drblmnsp.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Interface<sp/>:<sp/>SPDurableManagementObjectFactory<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/31/01<sp/>D3100011<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosReticlePod()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/16/01<sp/>D4000048<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosReticleSet()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/20/15<sp/>DSN000085770<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosDurableControlJob()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/05/16<sp/>DSN000101569<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosDurableSubState()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drblmnof.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="interface_pos_process_durable_capability" kindref="compound">PosProcessDurableCapability</ref><sp/>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="interface_pos_reticle_pod" kindref="compound">PosReticlePod</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D3100011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D4000048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000085770</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000101569</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="interface_s_p_durable_management_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_s_p_durable_management_object_factory" kindref="compound">SPDurableManagementObjectFactory</ref><sp/>:<sp/>CIMFWDurableManagementObjectFactory,<sp/>MOFW_TransManagedObjectFactory</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosProcessDurableCapability<sp/>newPosProcessDurableCapability<sp/>();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="interface_s_p_durable_management_object_factory_1a570adb318b231c20f791565150513e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_process_durable_capability" kindref="compound">PosProcessDurableCapability</ref><sp/><ref refid="interface_s_p_durable_management_object_factory_1a570adb318b231c20f791565150513e47" kindref="member">newPosProcessDurableCapability</ref><sp/>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosReticlePod<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosReticlePod<sp/>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//D3100011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="interface_s_p_durable_management_object_factory_1a95e084b9e45af31efc1e0d3f65165d96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_reticle_pod" kindref="compound">PosReticlePod</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_durable_management_object_factory_1a95e084b9e45af31efc1e0d3f65165d96" kindref="member">newPosReticlePod</ref><sp/>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosReticleSet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosReticleSet<sp/>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//D4000048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="interface_s_p_durable_management_object_factory_1ab3d547fde5f7e9001573a54f27b43bac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_durable_management_object_factory_1ab3d547fde5f7e9001573a54f27b43bac" kindref="member">newPosReticleSet</ref><sp/>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="interface_s_p_durable_management_object_factory_1ad4c3e3a8b4c19644729478dbde20bd75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_durable_management_object_factory_1ad4c3e3a8b4c19644729478dbde20bd75" kindref="member">newPosDurableControlJob</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000085770</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="interface_s_p_durable_management_object_factory_1a076adfe363ddf448bad3e0e4fc02f290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_durable_sub_state" kindref="compound">PosDurableSubState</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_durable_management_object_factory_1a076adfe363ddf448bad3e0e4fc02f290" kindref="member">newPosDurableSubState</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000101569</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/drblmnsp.idl"/>
+  </compounddef>
+</doxygen>

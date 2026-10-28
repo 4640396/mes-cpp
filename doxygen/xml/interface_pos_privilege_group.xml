@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_privilege_group" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPrivilegeGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pprivgr_8idl" local="no">pprivgr.idl</includes>
+    <innerclass refid="exception_pos_privilege_group_1_1_person_duplicate_signal" prot="public">PosPrivilegeGroup::PersonDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_privilege_group_1_1_person_not_found_signal" prot="public">PosPrivilegeGroup::PersonNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_privilege_group_1_1_privilege_duplicate_signal" prot="public">PosPrivilegeGroup::PrivilegeDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_privilege_group_1_1_privilege_not_found_signal" prot="public">PosPrivilegeGroup::PrivilegeNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_privilege_group_1_1_set_privilege_group_info_failed_signal" prot="public">PosPrivilegeGroup::SetPrivilegeGroupInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_privilege_group_1a8ad8073ac4bce78ebe2e3627295be289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::PosPrivilegeGroup_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPrivilegeGroup_init</name>
+        <qualifiedname>PosPrivilegeGroup::PosPrivilegeGroup_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="161" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1ac1649ae511e788438d1e8e073fc5ee40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosPrivilegeGroup::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="167" column="8"/>
+        <references refid="interface_pos_privilege_group_1ac1649ae511e788438d1e8e073fc5ee40">setIdentifier</references>
+        <referencedby refid="interface_pos_privilege_group_1ac1649ae511e788438d1e8e073fc5ee40">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a741ccff2d22a71212b5fe162c61c7ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPrivilegeGroup::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosPrivilegeGroup::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="173" column="10"/>
+        <references refid="interface_pos_privilege_group_1a741ccff2d22a71212b5fe162c61c7ef4">getIdentifier</references>
+        <referencedby refid="interface_pos_privilege_group_1a741ccff2d22a71212b5fe162c61c7ef4">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1afa9e99eb6f3f38e88458370836ca9de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosPrivilegeGroup::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="179" column="8"/>
+        <references refid="interface_pos_privilege_group_1afa9e99eb6f3f38e88458370836ca9de7">setDescription</references>
+        <referencedby refid="interface_pos_privilege_group_1afa9e99eb6f3f38e88458370836ca9de7">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1acb287bdfbc9872c5125009338eab79ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPrivilegeGroup::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosPrivilegeGroup::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="185" column="10"/>
+        <references refid="interface_pos_privilege_group_1acb287bdfbc9872c5125009338eab79ad">getDescription</references>
+        <referencedby refid="interface_pos_privilege_group_1acb287bdfbc9872c5125009338eab79ad">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a0cdff990d335aa30d36dd40ca4ae6c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setSubSystem</definition>
+        <argsstring>(in string subsystem)</argsstring>
+        <name>setSubSystem</name>
+        <qualifiedname>PosPrivilegeGroup::setSubSystem</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subsystem</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="191" column="8"/>
+        <references refid="interface_pos_privilege_group_1a0cdff990d335aa30d36dd40ca4ae6c55">setSubSystem</references>
+        <referencedby refid="interface_pos_privilege_group_1a0cdff990d335aa30d36dd40ca4ae6c55">setSubSystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a315cdda21924fbf830e2037e04c18df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPrivilegeGroup::getSubSystem</definition>
+        <argsstring>()</argsstring>
+        <name>getSubSystem</name>
+        <qualifiedname>PosPrivilegeGroup::getSubSystem</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="197" column="10"/>
+        <references refid="interface_pos_privilege_group_1a315cdda21924fbf830e2037e04c18df6">getSubSystem</references>
+        <referencedby refid="interface_pos_privilege_group_1a315cdda21924fbf830e2037e04c18df6">getSubSystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a068ebab3e87738bca659be3f67961d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setCategory</definition>
+        <argsstring>(in string category)</argsstring>
+        <name>setCategory</name>
+        <qualifiedname>PosPrivilegeGroup::setCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>category</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="203" column="8"/>
+        <references refid="interface_pos_privilege_group_1a068ebab3e87738bca659be3f67961d1d">setCategory</references>
+        <referencedby refid="interface_pos_privilege_group_1a068ebab3e87738bca659be3f67961d1d">setCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a1551f5d63e1dea3efb410329db7c3fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPrivilegeGroup::getCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getCategory</name>
+        <qualifiedname>PosPrivilegeGroup::getCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="209" column="10"/>
+        <references refid="interface_pos_privilege_group_1a1551f5d63e1dea3efb410329db7c3fbe">getCategory</references>
+        <referencedby refid="interface_pos_privilege_group_1a1551f5d63e1dea3efb410329db7c3fbe">getCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1aac853a8f356bb6d907fe51e21128eefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setPrivilegeGroupID</definition>
+        <argsstring>(in string privilegeGroupID)</argsstring>
+        <name>setPrivilegeGroupID</name>
+        <qualifiedname>PosPrivilegeGroup::setPrivilegeGroupID</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>privilegeGroupID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="215" column="8"/>
+        <references refid="interface_pos_privilege_group_1aac853a8f356bb6d907fe51e21128eefd">setPrivilegeGroupID</references>
+        <referencedby refid="interface_pos_privilege_group_1aac853a8f356bb6d907fe51e21128eefd">setPrivilegeGroupID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1add185bd27921140b6780a58e4717b5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPrivilegeGroup::getPrivilegeGroupID</definition>
+        <argsstring>()</argsstring>
+        <name>getPrivilegeGroupID</name>
+        <qualifiedname>PosPrivilegeGroup::getPrivilegeGroupID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="221" column="10"/>
+        <references refid="interface_pos_privilege_group_1add185bd27921140b6780a58e4717b5e1">getPrivilegeGroupID</references>
+        <referencedby refid="interface_pos_privilege_group_1add185bd27921140b6780a58e4717b5e1">getPrivilegeGroupID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a199321695cc2f53bbaa70067f46f8652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::addPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>addPerson</name>
+        <qualifiedname>PosPrivilegeGroup::addPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_privilege_group_1_1_person_duplicate_signal" kindref="compound">PersonDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="227" column="8"/>
+        <references refid="interface_pos_privilege_group_1a199321695cc2f53bbaa70067f46f8652">addPerson</references>
+        <referencedby refid="interface_pos_privilege_group_1a199321695cc2f53bbaa70067f46f8652">addPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1ab43ba92268692f758f511d2046026392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::removePerson</definition>
+        <argsstring>(in PosPerson aPosPerson)</argsstring>
+        <name>removePerson</name>
+        <qualifiedname>PosPrivilegeGroup::removePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPosPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_privilege_group_1_1_person_not_found_signal" kindref="compound">PersonNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="233" column="8"/>
+        <references refid="interface_pos_privilege_group_1ab43ba92268692f758f511d2046026392">removePerson</references>
+        <referencedby refid="interface_pos_privilege_group_1ab43ba92268692f758f511d2046026392">removePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1af24e48a836bcdf942eac17bbac744fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" kindref="member">PosPersonSequence</ref></type>
+        <definition>PosPersonSequence PosPrivilegeGroup::allPersons</definition>
+        <argsstring>()</argsstring>
+        <name>allPersons</name>
+        <qualifiedname>PosPrivilegeGroup::allPersons</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="239" column="21"/>
+        <references refid="interface_pos_privilege_group_1af24e48a836bcdf942eac17bbac744fa2">allPersons</references>
+        <referencedby refid="interface_pos_privilege_group_1af24e48a836bcdf942eac17bbac744fa2">allPersons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a5ab8d52daff1afc8c500613d93bd6f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosPrivilegeGroup::findPersonNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPersonNamed</name>
+        <qualifiedname>PosPrivilegeGroup::findPersonNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="246" column="13"/>
+        <references refid="interface_pos_privilege_group_1a5ab8d52daff1afc8c500613d93bd6f57">findPersonNamed</references>
+        <referencedby refid="interface_pos_privilege_group_1a5ab8d52daff1afc8c500613d93bd6f57">findPersonNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a8a1cf4ff1ad20142894f4787acaec2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::removeAllPersons</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPersons</name>
+        <qualifiedname>PosPrivilegeGroup::removeAllPersons</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="252" column="8"/>
+        <references refid="interface_pos_privilege_group_1a8a1cf4ff1ad20142894f4787acaec2ec">removeAllPersons</references>
+        <referencedby refid="interface_pos_privilege_group_1a8a1cf4ff1ad20142894f4787acaec2ec">removeAllPersons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a23171c814a9c4cb19c0796e135b2a238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::addPrivilege</definition>
+        <argsstring>(in posPrivilege aPrivilege)</argsstring>
+        <name>addPrivilege</name>
+        <qualifiedname>PosPrivilegeGroup::addPrivilege</qualifiedname>
+        <param>
+          <type>in <ref refid="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" kindref="member">posPrivilege</ref></type>
+          <declname>aPrivilege</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_privilege_group_1_1_privilege_duplicate_signal" kindref="compound">PrivilegeDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="258" column="8"/>
+        <references refid="interface_pos_privilege_group_1a23171c814a9c4cb19c0796e135b2a238">addPrivilege</references>
+        <referencedby refid="interface_pos_privilege_group_1a23171c814a9c4cb19c0796e135b2a238">addPrivilege</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1a64801005623f4f3cffe5d2b2e980c095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::removePrivilege</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>removePrivilege</name>
+        <qualifiedname>PosPrivilegeGroup::removePrivilege</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_privilege_group_1_1_privilege_not_found_signal" kindref="compound">PrivilegeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="265" column="8"/>
+        <references refid="interface_pos_privilege_group_1a64801005623f4f3cffe5d2b2e980c095">removePrivilege</references>
+        <referencedby refid="interface_pos_privilege_group_1a64801005623f4f3cffe5d2b2e980c095">removePrivilege</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1ae583dc28467660493288d05b21b39872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a96e25b68f8eedbd1ba91eb5275c803a8" kindref="member">PosPrivilegeSequence</ref></type>
+        <definition>PosPrivilegeSequence PosPrivilegeGroup::allPrivileges</definition>
+        <argsstring>()</argsstring>
+        <name>allPrivileges</name>
+        <qualifiedname>PosPrivilegeGroup::allPrivileges</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="271" column="24"/>
+        <references refid="interface_pos_privilege_group_1ae583dc28467660493288d05b21b39872">allPrivileges</references>
+        <referencedby refid="interface_pos_privilege_group_1ae583dc28467660493288d05b21b39872">allPrivileges</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1aebdfa5a5af4c07f01eb71611e0105f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" kindref="member">posPrivilege</ref></type>
+        <definition>posPrivilege PosPrivilegeGroup::findPrivilegeNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPrivilegeNamed</name>
+        <qualifiedname>PosPrivilegeGroup::findPrivilegeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="278" column="16"/>
+        <references refid="interface_pos_privilege_group_1aebdfa5a5af4c07f01eb71611e0105f52">findPrivilegeNamed</references>
+        <referencedby refid="interface_pos_privilege_group_1aebdfa5a5af4c07f01eb71611e0105f52">findPrivilegeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_privilege_group_1ae0490dbcf4d713d77caccb4dc69981bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPrivilegeGroup::setPrivilegeGroupInfo</definition>
+        <argsstring>(in brPrivilegeGroupInfo aPrivilegeGroupInfo)</argsstring>
+        <name>setPrivilegeGroupInfo</name>
+        <qualifiedname>PosPrivilegeGroup::setPrivilegeGroupInfo</qualifiedname>
+        <param>
+          <type>in brPrivilegeGroupInfo</type>
+          <declname>aPrivilegeGroupInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_privilege_group_1_1_set_privilege_group_info_failed_signal" kindref="compound">SetPrivilegeGroupInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprivgr.idl" line="284" column="8"/>
+        <references refid="interface_pos_privilege_group_1ae0490dbcf4d713d77caccb4dc69981bd">setPrivilegeGroupInfo</references>
+        <referencedby refid="interface_pos_privilege_group_1ae0490dbcf4d713d77caccb4dc69981bd">setPrivilegeGroupInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosPrivilegeGroup</label>
+        <link refid="interface_pos_privilege_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosPrivilegeGroup</label>
+        <link refid="interface_pos_privilege_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pprivgr.idl" line="37" column="11" bodyfile="poscimfw/include/pprivgr.idl" bodystart="37" bodyend="292"/>
+    <listofallmembers>
+      <member refid="interface_pos_privilege_group_1a199321695cc2f53bbaa70067f46f8652" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>addPerson</name></member>
+      <member refid="interface_pos_privilege_group_1a23171c814a9c4cb19c0796e135b2a238" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>addPrivilege</name></member>
+      <member refid="interface_pos_privilege_group_1af24e48a836bcdf942eac17bbac744fa2" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>allPersons</name></member>
+      <member refid="interface_pos_privilege_group_1ae583dc28467660493288d05b21b39872" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>allPrivileges</name></member>
+      <member refid="interface_pos_privilege_group_1a5ab8d52daff1afc8c500613d93bd6f57" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>findPersonNamed</name></member>
+      <member refid="interface_pos_privilege_group_1aebdfa5a5af4c07f01eb71611e0105f52" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>findPrivilegeNamed</name></member>
+      <member refid="interface_pos_privilege_group_1a1551f5d63e1dea3efb410329db7c3fbe" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>getCategory</name></member>
+      <member refid="interface_pos_privilege_group_1acb287bdfbc9872c5125009338eab79ad" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>getDescription</name></member>
+      <member refid="interface_pos_privilege_group_1a741ccff2d22a71212b5fe162c61c7ef4" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_privilege_group_1add185bd27921140b6780a58e4717b5e1" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>getPrivilegeGroupID</name></member>
+      <member refid="interface_pos_privilege_group_1a315cdda21924fbf830e2037e04c18df6" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>getSubSystem</name></member>
+      <member refid="interface_pos_privilege_group_1a8ad8073ac4bce78ebe2e3627295be289" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>PosPrivilegeGroup_init</name></member>
+      <member refid="interface_pos_privilege_group_1a8a1cf4ff1ad20142894f4787acaec2ec" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>removeAllPersons</name></member>
+      <member refid="interface_pos_privilege_group_1ab43ba92268692f758f511d2046026392" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>removePerson</name></member>
+      <member refid="interface_pos_privilege_group_1a64801005623f4f3cffe5d2b2e980c095" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>removePrivilege</name></member>
+      <member refid="interface_pos_privilege_group_1a068ebab3e87738bca659be3f67961d1d" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setCategory</name></member>
+      <member refid="interface_pos_privilege_group_1afa9e99eb6f3f38e88458370836ca9de7" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setDescription</name></member>
+      <member refid="interface_pos_privilege_group_1ac1649ae511e788438d1e8e073fc5ee40" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_privilege_group_1aac853a8f356bb6d907fe51e21128eefd" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setPrivilegeGroupID</name></member>
+      <member refid="interface_pos_privilege_group_1ae0490dbcf4d713d77caccb4dc69981bd" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setPrivilegeGroupInfo</name></member>
+      <member refid="interface_pos_privilege_group_1a0cdff990d335aa30d36dd40ca4ae6c55" prot="public" virt="non-virtual"><scope>PosPrivilegeGroup</scope><name>setSubSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

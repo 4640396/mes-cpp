@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="spencrypt_8cpp" kind="file" language="C++">
+    <compoundname>spencrypt.cpp</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="yes">spencrypt.hpp</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/pfwgls/spencrypt.cpp</label>
+        <link refid="spencrypt_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>spencrypt.hpp</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+      <node id="4">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_s_p_hash_password_illegal_salt_exception" prot="public">SPHashPasswordIllegalSaltException</innerclass>
+    <innerclass refid="struct_s_p_hash_password_illegal_password_exception" prot="public">SPHashPasswordIllegalPasswordException</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="spencrypt_8cpp_1a556b030a77dc7de603610a959ebc1b60" prot="public" static="no">
+        <name>SPENCRYPT_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="28" column="9" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spencrypt_8cpp_1a68817b175352038bfb3fcd8c6a5f0c31" prot="public" static="no">
+        <name>SP_ENCRYPT_PASSWORD_SALT</name>
+        <initializer>&quot;SP_ENCRYPT_PASSWORD_SALT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="43" column="9" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" compoundref="spencrypt_8cpp" startline="71" endline="148">SPHashPassword</referencedby>
+        <referencedby refid="struct_s_p_hash_password_illegal_salt_exception_1a5639b835654662282cbd3f691393e2f7" compoundref="spencrypt_8cpp" startline="52" endline="55">SPHashPasswordIllegalSaltException::what</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="spencrypt_8cpp_1ae9f3148be7128e577db934aad023ab52" prot="public" static="no">
+        <name>CRYPT_CHARS</name>
+        <initializer>&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="44" column="9" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" compoundref="spencrypt_8cpp" startline="71" endline="148">SPHashPassword</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="spencrypt_8cpp_1a05865c62286d687a8726d9bd65b58e3f" prot="public" static="no">
+        <name>RANDOM_DEVICE</name>
+        <initializer>&quot;/dev/urandom&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="45" column="9" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" compoundref="spencrypt_8cpp" startline="71" endline="148">SPHashPassword</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="spencrypt_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.3 superpos/src/spclass/source/poscimfw/pfwgls/spencrypt.cpp, mm_srv_90e_spcl, mm_srv_90e_spcl 12/13/07 14:12:18 [ 12/13/07 14:12:20 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="2" column="13" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * SPHashPassword</definition>
+        <argsstring>(const char *plaintextPassword)</argsstring>
+        <name>SPHashPassword</name>
+        <param>
+          <type>const char *</type>
+          <declname>plaintextPassword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="71" column="6" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="71" bodyend="148"/>
+        <references refid="spencrypt_8cpp_1ae9f3148be7128e577db934aad023ab52" compoundref="spencrypt_8cpp" startline="44">CRYPT_CHARS</references>
+        <references refid="spencrypt_8cpp_1a05865c62286d687a8726d9bd65b58e3f" compoundref="spencrypt_8cpp" startline="45">RANDOM_DEVICE</references>
+        <references refid="spencrypt_8cpp_1a68817b175352038bfb3fcd8c6a5f0c31" compoundref="spencrypt_8cpp" startline="43">SP_ENCRYPT_PASSWORD_SALT</references>
+        <references refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" compoundref="spencrypt_8cpp" startline="71" endline="148">SPHashPassword</references>
+        <references refid="struct_s_p_hash_password_illegal_password_exception_1aff52f14a244ed10f28d05cfe247e9caa" compoundref="spencrypt_8cpp" startline="63" endline="64">SPHashPasswordIllegalPasswordException::SPHashPasswordIllegalPasswordException</references>
+        <references refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" compoundref="spencrypt_8cpp" startline="49" endline="50">SPHashPasswordIllegalSaltException::SPHashPasswordIllegalSaltException</references>
+        <referencedby refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" compoundref="spencrypt_8cpp" startline="71" endline="148">SPHashPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spencrypt_8cpp_1a483e15b5b330a8d5f46bcec6bbf9140b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SPVerifyPassword</definition>
+        <argsstring>(const char *plaintextPassword, const char *encryptedPassword)</argsstring>
+        <name>SPVerifyPassword</name>
+        <param>
+          <type>const char *</type>
+          <declname>plaintextPassword</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>encryptedPassword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="150" column="6" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="150" bodyend="164"/>
+        <references refid="spencrypt_8cpp_1a483e15b5b330a8d5f46bcec6bbf9140b" compoundref="spencrypt_8cpp" startline="150" endline="164">SPVerifyPassword</references>
+        <referencedby refid="spencrypt_8cpp_1a483e15b5b330a8d5f46bcec6bbf9140b" compoundref="spencrypt_8cpp" startline="150" endline="164">SPVerifyPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spencrypt_8cpp_1aeecc9e411088210812e14bb40af0068b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * EncryptPW</definition>
+        <argsstring>(const char *origpwd)</argsstring>
+        <name>EncryptPW</name>
+        <param>
+          <type>const char *</type>
+          <declname>origpwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="181" column="7" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="181" bodyend="196"/>
+        <references refid="spencrypt_8cpp_1aeecc9e411088210812e14bb40af0068b" compoundref="spencrypt_8cpp" startline="181" endline="196">EncryptPW</references>
+        <referencedby refid="spencrypt_8cpp_1aeecc9e411088210812e14bb40af0068b" compoundref="spencrypt_8cpp" startline="181" endline="196">EncryptPW</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="spencrypt_8cpp_1a5f7421b05b40d0064b33841c8455adfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DecryptPW</definition>
+        <argsstring>(const char *origpwd)</argsstring>
+        <name>DecryptPW</name>
+        <param>
+          <type>const char *</type>
+          <declname>origpwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfwgls/spencrypt.cpp" line="213" column="7" bodyfile="poscimfw/pfwgls/spencrypt.cpp" bodystart="213" bodyend="224"/>
+        <references refid="spencrypt_8cpp_1a5f7421b05b40d0064b33841c8455adfe" compoundref="spencrypt_8cpp" startline="213" endline="224">DecryptPW</references>
+        <referencedby refid="spencrypt_8cpp_1a5f7421b05b40d0064b33841c8455adfe" compoundref="spencrypt_8cpp" startline="213" endline="224">DecryptPW</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="spencrypt_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.3<sp/>superpos/src/spclass/source/poscimfw/pfwgls/spencrypt.cpp,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>12/13/07<sp/>14:12:18<sp/>[<sp/>12/13/07<sp/>14:12:20<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2016.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2016.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SiView</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>spencrypt.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>The<sp/>client<sp/>program<sp/>needs<sp/>to<sp/>encrypt<sp/>password<sp/>and<sp/>set<sp/>encrypted<sp/>password<sp/>into</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>transactions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------<sp/>--------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>03/31/99<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/>Created<sp/>EncryptPW<sp/>for<sp/>AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/20/07<sp/>D9000001<sp/>D.Tamura<sp/><sp/><sp/><sp/><sp/><sp/><sp/>64bit<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>------------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2009/06/19<sp/>DSIV00001049<sp/>R.Okano<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/>method<sp/>for<sp/>Security<sp/>Control<sp/>Enhancement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DecryptPW()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2016/09/05<sp/>DSN000101643<sp/>R.Iriguchi<sp/><sp/><sp/><sp/><sp/>Password<sp/>in<sp/>SMDB/MMDB<sp/>encryption</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SPENCRYPT_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="spencrypt_8cpp_1a556b030a77dc7de603610a959ebc1b60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPENCRYPT_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//DSN000101643<sp/>Add<sp/>Start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spencrypt.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>pthread_mutex_t<sp/>crypt_mutex<sp/>=<sp/>PTHREAD_MUTEX_INITIALIZER;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="spencrypt_8cpp_1a68817b175352038bfb3fcd8c6a5f0c31" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SP_ENCRYPT_PASSWORD_SALT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;SP_ENCRYPT_PASSWORD_SALT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="spencrypt_8cpp_1ae9f3148be7128e577db934aad023ab52" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRYPT_CHARS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="spencrypt_8cpp_1a05865c62286d687a8726d9bd65b58e3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RANDOM_DEVICE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;/dev/urandom&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_s_p_hash_password_illegal_salt_exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" kindref="member">SPHashPasswordIllegalSaltException</ref><sp/>:<sp/>SPHashPasswordException</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" kindref="member">SPHashPasswordIllegalSaltException</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" kindref="member">message</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" kindref="member">data</ref><sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" kindref="member">message</ref>(<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" kindref="member">message</ref><sp/>),<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" kindref="member">data</ref>(<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" kindref="member">data</ref><sp/>)<sp/>{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="struct_s_p_hash_password_illegal_salt_exception_1a5639b835654662282cbd3f691393e2f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a5639b835654662282cbd3f691393e2f7" kindref="member">what</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>&quot;</highlight><highlight class="normal"><sp/><ref refid="spencrypt_8cpp_1a68817b175352038bfb3fcd8c6a5f0c31" kindref="member">SP_ENCRYPT_PASSWORD_SALT</ref><sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" kindref="member">message</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" kindref="member">data</ref>).c_str();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1a32b4bcc9b45f4adb0befe1451299c20e" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="58" refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1ad3b95a5b54f6f95ccd815c7ac22add05" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct_s_p_hash_password_illegal_password_exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_p_hash_password_illegal_password_exception_1aff52f14a244ed10f28d05cfe247e9caa" kindref="member">SPHashPasswordIllegalPasswordException</ref><sp/>:<sp/>SPHashPasswordException</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="struct_s_p_hash_password_illegal_password_exception_1aff52f14a244ed10f28d05cfe247e9caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aff52f14a244ed10f28d05cfe247e9caa" kindref="member">SPHashPasswordIllegalPasswordException</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" kindref="member">message</ref><sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" kindref="member">message</ref>(<sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" kindref="member">message</ref><sp/>)<sp/>{}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="struct_s_p_hash_password_illegal_password_exception_1a24205535c52fbaaf1bb18dac99213efe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1a24205535c52fbaaf1bb18dac99213efe" kindref="member">what</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" kindref="member">message</ref>.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aea3c31b564447a227af3400dbdb840d6" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="spencrypt_8cpp_1a0c4bc93eba900779136549ed191a46f0" kindref="member">SPHashPassword</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>plaintextPassword<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>plaintextPassword<sp/>==<sp/>NULL<sp/>||<sp/>plaintextPassword[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_password_exception_1aff52f14a244ed10f28d05cfe247e9caa" kindref="member">SPHashPasswordIllegalPasswordException</ref>(<sp/></highlight><highlight class="stringliteral">&quot;Password<sp/>should<sp/>not<sp/>be<sp/>blank.&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>encryptedPassword;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>salt<sp/>=<sp/>getenv(<sp/><ref refid="spencrypt_8cpp_1a68817b175352038bfb3fcd8c6a5f0c31" kindref="member">SP_ENCRYPT_PASSWORD_SALT</ref><sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!salt<sp/>||<sp/>salt[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>salt<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%2u&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>salt;<sp/>*p;<sp/>p++<sp/>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*p<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encryptedPassword<sp/>+=<sp/>*p;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++p;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*p<sp/>==<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encryptedPassword<sp/>+=<sp/>*p;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!isdigit(<sp/>*p<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" kindref="member">SPHashPasswordIllegalSaltException</ref>(<sp/></highlight><highlight class="stringliteral">&quot;Length<sp/>expected:<sp/>&quot;</highlight><highlight class="normal">,<sp/>p<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>strtol(<sp/>p,<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;p),<sp/>10<sp/>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<sp/>*p<sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timeval<sp/>tv;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gettimeofday(<sp/>&amp;tv,<sp/>NULL<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>val<sp/>=<sp/>tv.tv_sec;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*p<sp/>==<sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/>val<sp/>*<sp/>1000000<sp/>+<sp/>tv.tv_usec;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encryptedPassword<sp/>+=<sp/><ref refid="spencrypt_8cpp_1ae9f3148be7128e577db934aad023ab52" kindref="member">CRYPT_CHARS</ref>[val<sp/>%<sp/>64];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>/=<sp/>64;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>ifs(<sp/><ref refid="spencrypt_8cpp_1a05865c62286d687a8726d9bd65b58e3f" kindref="member">RANDOM_DEVICE</ref><sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encryptedPassword<sp/>+=<sp/><ref refid="spencrypt_8cpp_1ae9f3148be7128e577db934aad023ab52" kindref="member">CRYPT_CHARS</ref>[ifs.get()<sp/>%<sp/>64];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="struct_s_p_hash_password_illegal_salt_exception_1aa85f7ab4cba2bb0d7518f82f269ce282" kindref="member">SPHashPasswordIllegalSaltException</ref>(<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>specifier:<sp/>&quot;</highlight><highlight class="normal">,<sp/>p<sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(<sp/>&amp;crypt_mutex<sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>password<sp/>=<sp/>crypt(<sp/>plaintextPassword,<sp/>encryptedPassword.c_str()<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>crypt_data<sp/>data;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>password<sp/>=<sp/>crypt_r(<sp/>plaintextPassword,<sp/>encryptedPassword.c_str(),<sp/>&amp;data<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>retVal<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[strlen(<sp/>password<sp/>)<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<sp/>retVal,<sp/>password<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(<sp/>&amp;crypt_mutex<sp/>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="spencrypt_8cpp_1a483e15b5b330a8d5f46bcec6bbf9140b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="spencrypt_8cpp_1a483e15b5b330a8d5f46bcec6bbf9140b" kindref="member">SPVerifyPassword</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>plaintextPassword,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>encryptedPassword<sp/>)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(<sp/>&amp;crypt_mutex<sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>password<sp/>=<sp/>crypt(<sp/>plaintextPassword,<sp/>encryptedPassword<sp/>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>crypt_data<sp/>data;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>password<sp/>=<sp/>crypt_r(<sp/>plaintextPassword,<sp/>encryptedPassword,<sp/>&amp;data<sp/>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>retVal<sp/>=<sp/>strcmp(<sp/>password,<sp/>encryptedPassword<sp/>)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(<sp/>&amp;crypt_mutex<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//DSN000101643<sp/>Add<sp/>End</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>EncryptPW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------<sp/>--------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>This<sp/>function<sp/>returns<sp/>encryped<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>pointer<sp/>of<sp/>encrypted<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>a<sp/>pointer<sp/>of<sp/>not<sp/>encrypted<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="spencrypt_8cpp_1aeecc9e411088210812e14bb40af0068b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><ref refid="spencrypt_8cpp_1aeecc9e411088210812e14bb40af0068b" kindref="member">EncryptPW</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*origpwd)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/>int<sp/>len<sp/>=<sp/>strlen(origpwd)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>strlen(origpwd)<sp/>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>newpwd<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/>len<sp/><sp/>+<sp/>1<sp/>]<sp/><sp/>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/>for(<sp/>int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len<sp/>;<sp/>i++)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//DSIV00001049<sp/><sp/><sp/><sp/>for(<sp/>unsigned<sp/>long<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len<sp/>;<sp/>i++)<sp/><sp/><sp/><sp/>//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len<sp/>;<sp/>i++)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00001049</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newpwd[i]<sp/>=<sp/>origpwd[<sp/>strlen(origpwd)<sp/>-i<sp/>-1<sp/>]<sp/>+<sp/>1<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newpwd[i]<sp/>=<sp/>origpwd[<sp/>strlen(origpwd)<sp/>-i<sp/>-1<sp/>]<sp/>+<sp/>1<sp/>;<sp/></highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>newpwd[<sp/>i<sp/>]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newpwd<sp/>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//DSIV00001049<sp/>add<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function:<sp/>DecryptPW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>------------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2009/06/19<sp/>DSIV00001049<sp/>R.Okano<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initial<sp/>Release<sp/>for<sp/>Security<sp/>Control<sp/>Enhancement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>This<sp/>function<sp/>returns<sp/>decrypted<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>a<sp/>pointer<sp/>of<sp/>decrypted<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>a<sp/>pointer<sp/>of<sp/>not<sp/>decrypted<sp/>password.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="spencrypt_8cpp_1a5f7421b05b40d0064b33841c8455adfe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><ref refid="spencrypt_8cpp_1a5f7421b05b40d0064b33841c8455adfe" kindref="member">DecryptPW</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*origpwd)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>strlen(origpwd)<sp/>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>newpwd<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/>len<sp/><sp/>+<sp/>1<sp/>]<sp/><sp/>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len<sp/>;<sp/>i++)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newpwd[i]<sp/>=<sp/>origpwd[<sp/>strlen(origpwd)<sp/>-i<sp/>-1<sp/>]<sp/>-<sp/>1<sp/>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>newpwd[<sp/>i<sp/>]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newpwd<sp/>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//DSIV00001049<sp/>add<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/pfwgls/spencrypt.cpp"/>
+  </compounddef>
+</doxygen>

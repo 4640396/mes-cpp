@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_parts_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPartsManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pptsmg_8idl" local="no">pptsmg.idl</includes>
+    <innerclass refid="exception_pos_parts_manager_1_1_b_o_m_not_found_signal" prot="public">PosPartsManager::BOMNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_parts_manager_1aeb039131252370a5995e7a233fd7037b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPartsManager::PosPartsManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPartsManager_init</name>
+        <qualifiedname>PosPartsManager::PosPartsManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_parts_manager_1a65fbc33d1d902ff4c2bab9a749bfc571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+        <definition>PosBOM PosPartsManager::createBOMNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createBOMNamed</name>
+        <qualifiedname>PosPartsManager::createBOMNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="87" column="10"/>
+        <references refid="interface_pos_parts_manager_1a65fbc33d1d902ff4c2bab9a749bfc571">createBOMNamed</references>
+        <referencedby refid="interface_pos_parts_manager_1a65fbc33d1d902ff4c2bab9a749bfc571">createBOMNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_parts_manager_1a190622c08d19cc49b656101c07ae1dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPartsManager::removeBOMNamed</definition>
+        <argsstring>(in PosBOM aBOM)</argsstring>
+        <name>removeBOMNamed</name>
+        <qualifiedname>PosPartsManager::removeBOMNamed</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+          <declname>aBOM</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_parts_manager_1_1_b_o_m_not_found_signal" kindref="compound">BOMNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="93" column="8"/>
+        <references refid="interface_pos_parts_manager_1a190622c08d19cc49b656101c07ae1dbe">removeBOMNamed</references>
+        <referencedby refid="interface_pos_parts_manager_1a190622c08d19cc49b656101c07ae1dbe">removeBOMNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_parts_manager_1a7f969455a574919e76243ea06af16c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pptsmggl_8idl_1aba53000a6b53e889098a6f48ac9fd7d1" kindref="member">PosBOMSequence</ref></type>
+        <definition>PosBOMSequence PosPartsManager::allBOMs</definition>
+        <argsstring>()</argsstring>
+        <name>allBOMs</name>
+        <qualifiedname>PosPartsManager::allBOMs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="99" column="18"/>
+        <references refid="interface_pos_parts_manager_1a7f969455a574919e76243ea06af16c5d">allBOMs</references>
+        <referencedby refid="interface_pos_parts_manager_1a7f969455a574919e76243ea06af16c5d">allBOMs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_parts_manager_1a668863e7eb6c618ebbff98d0316e357e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+        <definition>PosBOM PosPartsManager::findBOMNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findBOMNamed</name>
+        <qualifiedname>PosPartsManager::findBOMNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="105" column="10"/>
+        <references refid="interface_pos_parts_manager_1a668863e7eb6c618ebbff98d0316e357e">findBOMNamed</references>
+        <referencedby refid="interface_pos_parts_manager_1a668863e7eb6c618ebbff98d0316e357e">findBOMNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_parts_manager_1a3c1a9bc3adacfd208d18f002cd2c7984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPartsManager::removeAllBOMs</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllBOMs</name>
+        <qualifiedname>PosPartsManager::removeAllBOMs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptsmg.idl" line="111" column="8"/>
+        <references refid="interface_pos_parts_manager_1a3c1a9bc3adacfd208d18f002cd2c7984">removeAllBOMs</references>
+        <referencedby refid="interface_pos_parts_manager_1a3c1a9bc3adacfd208d18f002cd2c7984">removeAllBOMs</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPartsManager</label>
+        <link refid="interface_pos_parts_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPartsManager</label>
+        <link refid="interface_pos_parts_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pptsmg.idl" line="41" column="11" bodyfile="poscimfw/include/pptsmg.idl" bodystart="41" bodyend="119"/>
+    <listofallmembers>
+      <member refid="interface_pos_parts_manager_1a7f969455a574919e76243ea06af16c5d" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>allBOMs</name></member>
+      <member refid="interface_pos_parts_manager_1a65fbc33d1d902ff4c2bab9a749bfc571" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>createBOMNamed</name></member>
+      <member refid="interface_pos_parts_manager_1a668863e7eb6c618ebbff98d0316e357e" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>findBOMNamed</name></member>
+      <member refid="interface_pos_parts_manager_1aeb039131252370a5995e7a233fd7037b" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>PosPartsManager_init</name></member>
+      <member refid="interface_pos_parts_manager_1a3c1a9bc3adacfd208d18f002cd2c7984" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>removeAllBOMs</name></member>
+      <member refid="interface_pos_parts_manager_1a190622c08d19cc49b656101c07ae1dbe" prot="public" virt="non-virtual"><scope>PosPartsManager</scope><name>removeBOMNamed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

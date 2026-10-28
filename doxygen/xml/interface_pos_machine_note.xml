@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_machine_note" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMachineNote</compoundname>
+    <basecompoundref refid="interface_pos_note" prot="public" virt="non-virtual">PosNote</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmcnote_8idl" local="no">pmcnote.idl</includes>
+    <innerclass refid="exception_pos_machine_note_1_1_machine_already_assigned_signal" prot="public">PosMachineNote::MachineAlreadyAssignedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_machine_note_1acd1ee4c0c8d24849c7da45b4eb43da3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineNote::setMachine</definition>
+        <argsstring>(in Machine aMachine)</argsstring>
+        <name>setMachine</name>
+        <qualifiedname>PosMachineNote::setMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_machine_note_1_1_machine_already_assigned_signal" kindref="compound">MachineAlreadyAssignedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcnote.idl" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_note_1a18a49e9ba238b3d726feb71058a97cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Machine</type>
+        <definition>Machine PosMachineNote::getMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getMachine</name>
+        <qualifiedname>PosMachineNote::getMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcnote.idl" line="82" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_note_1a0cc8c41f02e9727763950f0f52768804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineNote::PosMachineNote_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineNote_init</name>
+        <qualifiedname>PosMachineNote::PosMachineNote_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcnote.idl" line="85" column="8"/>
+        <references refid="interface_pos_machine_note_1a0cc8c41f02e9727763950f0f52768804">PosMachineNote_init</references>
+        <referencedby refid="interface_pos_machine_note_1a0cc8c41f02e9727763950f0f52768804">PosMachineNote_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineNote</label>
+        <link refid="interface_pos_machine_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineNote</label>
+        <link refid="interface_pos_machine_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmcnote.idl" line="35" column="11" bodyfile="poscimfw/include/pmcnote.idl" bodystart="36" bodyend="96"/>
+    <listofallmembers>
+      <member refid="interface_pos_note_1a9e6f74018a3b101820bbd7ea1e24768b" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getContents</name></member>
+      <member refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_machine_note_1a18a49e9ba238b3d726feb71058a97cea" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getMachine</name></member>
+      <member refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getPerson</name></member>
+      <member refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getPersonID</name></member>
+      <member refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>getTitle</name></member>
+      <member refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>isTypeFile</name></member>
+      <member refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>isTypeString</name></member>
+      <member refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>makeTypeFile</name></member>
+      <member refid="interface_pos_note_1af061681010937053e955151f3a47cba0" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>makeTypeString</name></member>
+      <member refid="interface_pos_machine_note_1a0cc8c41f02e9727763950f0f52768804" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>PosMachineNote_init</name></member>
+      <member refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>PosNote_init</name></member>
+      <member refid="interface_pos_note_1a9fef2f556ad6c69fe29fc34b77a8f910" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setContents</name></member>
+      <member refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_machine_note_1acd1ee4c0c8d24849c7da45b4eb43da3e" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setMachine</name></member>
+      <member refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setPerson</name></member>
+      <member refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831" prot="public" virt="non-virtual"><scope>PosMachineNote</scope><name>setTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

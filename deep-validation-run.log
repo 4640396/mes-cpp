@@ -1,0 +1,161 @@
+{
+  "generatedAt": "2026-10-27T18:20:57.262Z",
+  "passed": true,
+  "checks": [
+    {
+      "label": "全量清单与当前源码哈希一致",
+      "passed": true,
+      "details": {
+        "files": 1298
+      }
+    },
+    {
+      "label": "结构图无重复节点 ID 或悬空端点",
+      "passed": true,
+      "details": {
+        "nodes": 39537,
+        "edges": 85111
+      }
+    },
+    {
+      "label": "结构图全部关系类型和来源行范围有效",
+      "passed": true,
+      "details": {
+        "typeBad": 0,
+        "rangeBad": 0
+      }
+    },
+    {
+      "label": "方法定义文本索引起点与 ID 校验",
+      "passed": true,
+      "details": {
+        "definitions": 26832,
+        "limits": "文本定位检查，不证明完整 C++ 解析"
+      }
+    },
+    {
+      "label": "业务事实类型、源码文件及片段哈希验证",
+      "passed": true,
+      "details": {
+        "nodes": 168,
+        "edges": 132,
+        "factBad": 0
+      }
+    },
+    {
+      "label": "SQL 真实语句回归：排除 MERGE UPDATE SET 和 FOR UPDATE WITH 误判",
+      "passed": true
+    },
+    {
+      "label": "MERGE 目标和源表提取回归",
+      "passed": true
+    },
+    {
+      "label": "预编译表符号保留与行锁语法回归",
+      "passed": true
+    },
+    {
+      "label": "已读 FIFO 源码与 SQL 索引对照",
+      "passed": true
+    },
+    {
+      "label": "实际派工游标 SQL：注释分号不截断，逗号联表不遗漏",
+      "passed": true
+    },
+    {
+      "label": "暂停派工双候选 SQL 保持各自实际条件，不按方法名补暂停谓词",
+      "passed": true
+    },
+    {
+      "label": "FlowBatch 队列 SQL 按 Lot key 的实际谓词范围保留",
+      "passed": true
+    },
+    {
+      "label": "SQL 引号/注释分号与联表解析回归",
+      "passed": true
+    },
+    {
+      "label": "旧注释 SQL 排除回归：ppcflwdb.sqx:1363",
+      "passed": true
+    },
+    {
+      "label": "本批全部 SQL 索引起点均为有效 EXEC SQL 源码行",
+      "passed": true,
+      "details": {
+        "badExec": []
+      }
+    },
+    {
+      "label": "含英文撇号注释的词法处理及行号保留回归",
+      "passed": true
+    },
+    {
+      "label": "总览、查询页和所有专题页面本地链接有效",
+      "passed": true,
+      "details": {
+        "links": 67,
+        "missing": []
+      }
+    },
+    {
+      "label": "Doxygen 源码链接依据 XML 映射且目标存在",
+      "passed": true,
+      "details": {
+        "files": 1291
+      }
+    },
+    {
+      "label": "四张专题图自动检查回执通过",
+      "passed": true,
+      "details": {
+        "receipts": [
+          ".archify/architecture-mes-lot-hold-20261028-001/lot-hold.finalize-summary.json",
+          ".archify/architecture-mes-lot-process-20261028-001/review-2/lot-process.finalize-summary.json",
+          ".archify/architecture-mes-domains-20261028-001/recipe.finalize-summary.json",
+          ".archify/architecture-mes-domains-20261028-001/review-2/dispatch.finalize-summary.json"
+        ],
+        "limits": "未作截图视觉审查；无 Git 提交级来源验证"
+      }
+    },
+    {
+      "label": "查询页实际生成脚本的搜索、表反查、事实邻域交互校验",
+      "passed": true,
+      "details": {
+        "mode": "generated-script-with-minimal-DOM-harness",
+        "limits": "执行生成页面的真实脚本与交互回调；使用模拟 DOM，不是实际浏览器视觉或兼容性验证。浏览器控制工具的 file URL 策略阻止了现场 UI 检查。"
+      }
+    },
+    {
+      "label": "实际 CLI 方法、表访问和业务事实三类查询通过",
+      "passed": true,
+      "details": "cli-check.json"
+    },
+    {
+      "label": "深入语义覆盖与结构索引分层且未误标项目完成",
+      "passed": true,
+      "details": {
+        "registeredBodyReviews": 54,
+        "statuses": {
+          "indexed_only": 26747,
+          "evidence_sampled_only": 33,
+          "body_reviewed_with_external_unknowns": 50,
+          "body_reviewed_no_explicit_business_mutation": 2
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "coverage": {
+    "sourceFiles": 1298,
+    "methods": 26832,
+    "sql": 7853,
+    "namedTableCandidates": 689,
+    "symbolicTables": 159,
+    "curatedFacts": 132
+  },
+  "limits": [
+    "未运行 MES 或连接数据库",
+    "未编译 C++、执行宏展开或全量动态调用解析",
+    "验证通过不代表所有业务语义已经审查或完整交易已还原"
+  ]
+}

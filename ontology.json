@@ -1,0 +1,501 @@
+{
+  "version": "0.2.0",
+  "scope": "fw_cpp_sqx 静态源码理解",
+  "description": "轻量应用本体；不是已完成的 OWL 推理系统，也不代表生产数据库模型。",
+  "entityTypes": {
+    "BusinessObject": "业务对象类型，如批次与工序，不是实际生产实例",
+    "Interface": "IDL 接口",
+    "Method": "源码方法",
+    "StateDimension": "对象状态维度",
+    "Table": "SQL 中出现的表名",
+    "Column": "SQL 列",
+    "SourceFile": "源码文件",
+    "Rule": "方法级业务规则；描述条件和结果，不是执行引擎",
+    "Collection": "业务实现或 DO 侧的集合成员；不同对象侧不自动等同"
+  },
+  "relationTypes": {
+    "HAS_STATE": [
+      "BusinessObject",
+      "StateDimension"
+    ],
+    "DECLARES": [
+      "Interface",
+      "Method"
+    ],
+    "CALLS": [
+      "Method",
+      "Method"
+    ],
+    "RETURNS_REFERENCE": [
+      "Method",
+      "BusinessObject"
+    ],
+    "READS": [
+      "Method",
+      "Table"
+    ],
+    "WRITES": [
+      "Method",
+      "Table"
+    ],
+    "STORES": [
+      "Table",
+      "Column"
+    ],
+    "SETS_CURRENT": [
+      "Method",
+      "BusinessObject"
+    ],
+    "HAS_CONTRACT": [
+      "BusinessObject",
+      "Interface"
+    ],
+    "CHECKS_APPLICABILITY": [
+      "Method",
+      "BusinessObject"
+    ],
+    "INVOKES_VIRTUAL_CONTRACT": [
+      "Method",
+      "Method"
+    ],
+    "HAS_RULE": [
+      "Method",
+      "Rule"
+    ],
+    "REPLACES_COLLECTION": [
+      "Method",
+      "Collection"
+    ],
+    "READS_COLLECTION": [
+      "Method",
+      "Collection"
+    ],
+    "SAVES_COLLECTION": [
+      "Method",
+      "Collection"
+    ]
+  },
+  "evidenceLevels": [
+    "EXTRACTED",
+    "INFERRED",
+    "AMBIGUOUS"
+  ],
+  "requiredEvidenceFields": [
+    "path",
+    "line",
+    "end_line"
+  ],
+  "rules": [
+    "关系必须引用已存在实体，并满足关系类型的两端约束。",
+    "EXTRACTED 仅表示所引源码中直接可见；不证明运行时发生。",
+    "条件调用必须保留条件；不得把 IDL 契约或同名匹配当作确定调用。",
+    "正则提取候选不自动进入本事实集；需逐条核实。",
+    "本体中的 READS/WRITES 允许后续扩展，本轮没有证据的边不创建。"
+  ],
+  "sourceGraphModel": {
+    "file": "source-graph.json",
+    "entityTypes": [
+      "Module",
+      "SourceFile",
+      "Implementation",
+      "Interface",
+      "Method",
+      "SQLStatement",
+      "Table"
+    ],
+    "relations": {
+      "CONTAINS": [
+        "Module",
+        "SourceFile"
+      ],
+      "DEFINES": [
+        "SourceFile",
+        "Method"
+      ],
+      "DECLARES_IMPLEMENTATION": [
+        "Implementation",
+        "Method"
+      ],
+      "DECLARES": [
+        "SourceFile",
+        "Interface"
+      ],
+      "INHERITS": [
+        "Interface",
+        "Interface"
+      ],
+      "NAME_MATCH": [
+        "Interface",
+        "Implementation"
+      ],
+      "CONTAINS_SQL": [
+        [
+          "SourceFile",
+          "Method"
+        ],
+        "SQLStatement"
+      ],
+      "REFERENCES_TABLE": [
+        "SQLStatement",
+        "Table"
+      ],
+      "WRITES_TABLE": [
+        "SQLStatement",
+        "Table"
+      ]
+    },
+    "limits": "结构图包含直接文本提取和名称/SQL 候选；不得把所有边当作业务事实或真实调用。"
+  },
+  "businessConcepts": [
+    {
+      "id": "Lot",
+      "label": "批次",
+      "codeType": "PosLot",
+      "sources": [
+        {
+          "path": "poscimfw/include/plot.idl",
+          "line": 87,
+          "end_line": 87,
+          "fileSha256": "56bd57477585d815a3a54f80210e224f5751d8434422a8ec8d5131e688248705",
+          "rangeSha256": "79e1a5c4258bafad23da80f5928029c0fcfe76af40915bef5c039be9e0cfa963"
+        }
+      ]
+    },
+    {
+      "id": "Wafer",
+      "label": "晶圆",
+      "codeType": "PosWafer",
+      "sources": [
+        {
+          "path": "poscimfw/include/pwafer.idl",
+          "line": 48,
+          "end_line": 48,
+          "fileSha256": "89b5e46ee7af5af3eb83500d69831f3be7230986666c2687342d7bfa50304e70",
+          "rangeSha256": "2412894bdfaa33f59daabd21c97604b11201d1542dbfd260b4b57a611996dc1f"
+        }
+      ]
+    },
+    {
+      "id": "Operation",
+      "label": "工序实例",
+      "codeType": "PosProcessOperation",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcope.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "c9f4d5eaa0d4ee64a4dd5c729e91172c472c7ac0e552ef3406804f60531ffe7e",
+          "rangeSha256": "c5292d32c5d59d5775d7681090235bc827a1869cad21ca653a8ea2e38bd9dc97"
+        }
+      ]
+    },
+    {
+      "id": "Context",
+      "label": "流程上下文",
+      "codeType": "PosProcessFlowContext",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcflwx.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "fb23179c5a6674af9b2a9e19ca93db727b1e3941834e0b31715b155cd9f28df8",
+          "rangeSha256": "89212fcb922c81b86a553b3c13be8531afb7430790e2f27dda1c74d3cdff3eea"
+        }
+      ]
+    },
+    {
+      "id": "Flow",
+      "label": "工艺流程",
+      "codeType": "PosProcessFlow",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcflw.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "cd279732831612a2a7f4ea619ff953e908f5015c554c832c8d12f682175ff11b",
+          "rangeSha256": "aa0d2177300249c7c3ed97013b55cfa78570c1969a6152b5b774a4e8109ec6ac"
+        }
+      ]
+    },
+    {
+      "id": "Definition",
+      "label": "工艺定义",
+      "codeType": "PosProcessDefinition",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcdf.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "804c1bcb095d6d11b55461987fd5631d415ee09be6a560c7b16da77a0abca4ac",
+          "rangeSha256": "0e76d0566cabf631d95db365531931119f9aed4d0bc84891258c9ac5ff33804e"
+        }
+      ]
+    },
+    {
+      "id": "OperationSpecification",
+      "label": "工序规格",
+      "codeType": "PosProcessOperationSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcopsp.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "2ee370567ab22ff6d85e2af69c6ddb6e5154b76f247c343b453b4d2fbae644f2",
+          "rangeSha256": "42427f7e90fcff11fd6163381f400947a6cdff707cbe75efaa71fc8b92695949"
+        }
+      ]
+    },
+    {
+      "id": "Machine",
+      "label": "设备",
+      "codeType": "PosMachine",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmc.idl",
+          "line": 58,
+          "end_line": 58,
+          "fileSha256": "5bbe0fd828997b7df12f93048c9aba6b91e2ba4df948b916d57d0e913aed0e9d",
+          "rangeSha256": "7e6dc27cddb3f35cb0d82aafc275930a10a32fc1b7ef17e2a7c149876b065e70"
+        }
+      ]
+    },
+    {
+      "id": "MachineState",
+      "label": "设备状态",
+      "codeType": "PosMachineState",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmstat.idl",
+          "line": 80,
+          "end_line": 80,
+          "fileSha256": "187b685a13c8882bef599bb91ac7145b5b8ba72279ec3b95aafb1ca73a3d7540",
+          "rangeSha256": "e1526c80cddb3689cf73ae9fa341f8c9be193ee37263e80ae7293ba17f84a3ec"
+        }
+      ]
+    },
+    {
+      "id": "LogicalRecipe",
+      "label": "逻辑配方",
+      "codeType": "PosLogicalRecipe",
+      "sources": [
+        {
+          "path": "poscimfw/include/plcrc.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "bdc1f7408a31def7972cea2b5d56b0aa22916c3389e74e062ad99d4e35c7b611",
+          "rangeSha256": "53a0400ecf559c54cedfe0185a5134bbc8d98647a43beee34044bce468a0c901"
+        }
+      ]
+    },
+    {
+      "id": "MachineRecipe",
+      "label": "设备配方",
+      "codeType": "PosMachineRecipe",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmcrc.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "48b34f50bc3185bd6a5aa20c96245cbf8df98d6151da5b37270e0c70991e74f2",
+          "rangeSha256": "bc25478d894e30353bb9f8ee3c8dc81e58caa58e95491fa995f272c3ab6af1fe"
+        }
+      ]
+    },
+    {
+      "id": "Cassette",
+      "label": "载具",
+      "codeType": "PosCassette",
+      "sources": [
+        {
+          "path": "poscimfw/include/pcas.idl",
+          "line": 55,
+          "end_line": 55,
+          "fileSha256": "1c19db8907e8bf22f42a1f65ff6e6c46b08b491627ec2939a57af3147baf2532",
+          "rangeSha256": "ffadde47679f307e1bcaa503855c4f315d784c2408bb7232b0c7900bb28004a3"
+        }
+      ]
+    },
+    {
+      "id": "DispatchManager",
+      "label": "派工管理",
+      "codeType": "PosDispatchingManager",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdpmg.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "efe33ef640ad5fe12091b2c43f1247566f44dd5b5b67694e74f823b444ab2a1a",
+          "rangeSha256": "75967a5dc18925750f096c0ae8c35b9a011044584bdca3ab4c3e9971b708732c"
+        }
+      ]
+    },
+    {
+      "id": "EventManager",
+      "label": "事件管理",
+      "codeType": "PosEventManager",
+      "sources": [
+        {
+          "path": "poscimfw/include/pevmg.idl",
+          "line": 57,
+          "end_line": 57,
+          "fileSha256": "98347775a8a0ced2cb8c956ec5eb82347c197326f62162b499bdbb667c3b17a2",
+          "rangeSha256": "f08168dcb0856a4f55f88ce11732bfdee87084a01c76e7b8a33db417b2227595"
+        }
+      ]
+    },
+    {
+      "id": "DCDefinition",
+      "label": "数据采集定义",
+      "codeType": "PosDataCollectionDefinition",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdcdf.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "e137f1264a31129489e1bac3feea40f6228a311d9197d6ccf0f8d03d738f764a",
+          "rangeSha256": "e975c5d3aac672c521b2473fc187a590a1bf911885c27efbf341be8c4fa0c94f"
+        }
+      ]
+    },
+    {
+      "id": "DCSpecification",
+      "label": "数据采集规格",
+      "codeType": "PosDataCollectionSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdcsp.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "97829cdc11fb39ce95a39a9ab82b620bbfe4967a30fc52a481beb865fc393751",
+          "rangeSha256": "17d5c91f4051ff091c254d6845918940e36ffb01c20e3cf7587d3637d45e5b30"
+        }
+      ]
+    },
+    {
+      "id": "EntityInhibit",
+      "label": "实体限制",
+      "codeType": "PosEntityInhibit",
+      "sources": [
+        {
+          "path": "poscimfw/include/penin.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "837b5ecfd56ac94d9e3861487c03d2cce526fcca6808d170c291515bc5b49a07",
+          "rangeSha256": "465cf51828c8602b2471aa4a8b3973fa052a8022b227669efc0d1603c0eadd18"
+        }
+      ]
+    },
+    {
+      "id": "ProductSpecification",
+      "label": "产品规格",
+      "codeType": "PosProductSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprsp.idl",
+          "line": 50,
+          "end_line": 50,
+          "fileSha256": "cb4a51363861d5b99b4f8cc593b55246f53985c88e44b3245e04c0c183201240",
+          "rangeSha256": "cb8e56b8d0cac115d1fcb6dffca0d3cdcdb59c28dcf5ba55f8d5a3e7df496b82"
+        }
+      ]
+    },
+    {
+      "id": "LotSchedule",
+      "label": "批次计划",
+      "codeType": "PosLotSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/include/pltsch.idl",
+          "line": 45,
+          "end_line": 45,
+          "fileSha256": "ad0790eb506e5bf77cbc6549489a45daa8223fe53c5d72d0022d35cfb8653170",
+          "rangeSha256": "8d05ce4dbb850a984ccd15c97d4bc83d95be4d94fbcbdf6098f7355cb4c7d010"
+        }
+      ]
+    },
+    {
+      "id": "Person",
+      "label": "人员",
+      "codeType": "PosPerson",
+      "sources": [
+        {
+          "path": "poscimfw/include/pperson.idl",
+          "line": 62,
+          "end_line": 62,
+          "fileSha256": "16bca8a87e36c6d384f7dfde6e1826dfd60e871f8307cf222a39ed56cb74f845",
+          "rangeSha256": "a6a652bd69007072009e8350f154035026b74877330869d7178b3d24c3a6ffcc"
+        }
+      ]
+    },
+    {
+      "id": "PrivilegeGroup",
+      "label": "权限组",
+      "codeType": "PosPrivilegeGroup",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprivgr.idl",
+          "line": 37,
+          "end_line": 37,
+          "fileSha256": "da18ce2d5aca348182b727afa6df804a971aae6ed59ff56d93099e24c5e2b235",
+          "rangeSha256": "f4123fe3433ceaebf8502d677e9ae1d0cb24627f7e271f9ae4996d64995228f4"
+        }
+      ]
+    },
+    {
+      "id": "BOM",
+      "label": "物料清单",
+      "codeType": "PosBOM",
+      "sources": [
+        {
+          "path": "poscimfw/include/pbom.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "1ab61b43ffe07aa01f4027f596ad921c1fd26d4d8a2b11b225f1ad8669ca2796",
+          "rangeSha256": "214f970b8d790601052dd244703fd76ce9cd6052259c59df3e591fae55244702"
+        }
+      ]
+    },
+    {
+      "id": "FlowBatch",
+      "label": "流程批",
+      "codeType": "PosFlowBatch",
+      "sources": [
+        {
+          "path": "poscimfw/include/pflwbch.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "1807e7f73e6d231af0134ea2df700f7f568c92460227e8fac5020577fad8889a",
+          "rangeSha256": "febfb643cef62c932bf8fb82e4c48d8b589061023fc182f0479b6eecc04bbe78"
+        }
+      ]
+    },
+    {
+      "id": "FlowBatchDispatcher",
+      "label": "流程批分发器",
+      "codeType": "PosFlowBatchDispatcher",
+      "sources": [
+        {
+          "path": "poscimfw/include/pflwdp.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "a206b3370ca9af68ac8c57157b2721567cab55a6f09b3b0e28db14dc8f41f13b",
+          "rangeSha256": "751ef730eb22451c4043fefabc50a1c593b13ab0931c34ccf6f666b8ff51944f"
+        }
+      ]
+    },
+    {
+      "id": "ProductRequest",
+      "label": "生产请求",
+      "codeType": "PosProductRequest",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprrq.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "1a9bc86c0733c85aaa22d148cd99327503e1fb784ddc677e87d0f83e504095d0",
+          "rangeSha256": "b571af47ead82f43ffd80b08889a651191446aa5b2cf093602aca5d7bbf628e8"
+        }
+      ]
+    }
+  ]
+}

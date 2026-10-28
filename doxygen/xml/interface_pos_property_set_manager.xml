@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_property_set_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPropertySetManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <includes refid="pptysetmg_8idl" local="no">pptysetmg.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_property_set_manager_1aed9dd3764266d9c6dcd7c82ff0862afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>checkMessageSequence</type>
+        <definition>checkMessageSequence PosPropertySetManager::checkForDeletionScriptParameter</definition>
+        <argsstring>(in long messageCount, in string parameterName, in string dataType)</argsstring>
+        <name>checkForDeletionScriptParameter</name>
+        <qualifiedname>PosPropertySetManager::checkForDeletionScriptParameter</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>messageCount</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>parameterName</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>dataType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptysetmg.idl" line="51" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_manager_1abb950f39909cc0c3ce3183b87e9e2867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertySetManager::PosPropertySetManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPropertySetManager_init</name>
+        <qualifiedname>PosPropertySetManager::PosPropertySetManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptysetmg.idl" line="57" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ComponentManager</label>
+      </node>
+      <node id="2">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPropertySetManager</label>
+        <link refid="interface_pos_property_set_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ComponentManager</label>
+      </node>
+      <node id="2">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPropertySetManager</label>
+        <link refid="interface_pos_property_set_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pptysetmg.idl" line="36" column="11" bodyfile="poscimfw/include/pptysetmg.idl" bodystart="36" bodyend="65"/>
+    <listofallmembers>
+      <member refid="interface_pos_property_set_manager_1aed9dd3764266d9c6dcd7c82ff0862afe" prot="public" virt="non-virtual"><scope>PosPropertySetManager</scope><name>checkForDeletionScriptParameter</name></member>
+      <member refid="interface_pos_property_set_manager_1abb950f39909cc0c3ce3183b87e9e2867" prot="public" virt="non-virtual"><scope>PosPropertySetManager</scope><name>PosPropertySetManager_init</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_factory_note" kind="interface" language="IDL" prot="public">
+    <compoundname>PosFactoryNote</compoundname>
+    <basecompoundref refid="interface_pos_note" prot="public" virt="non-virtual">PosNote</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pfctrnt_8idl" local="no">pfctrnt.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_factory_note_1a4624471967ae40149c4c96da686b967b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFactoryNote::PosFactoryNote_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosFactoryNote_init</name>
+        <qualifiedname>PosFactoryNote::PosFactoryNote_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfctrnt.idl" line="52" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFactoryNote</label>
+        <link refid="interface_pos_factory_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFactoryNote</label>
+        <link refid="interface_pos_factory_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pfctrnt.idl" line="36" column="11" bodyfile="poscimfw/include/pfctrnt.idl" bodystart="37" bodyend="63"/>
+    <listofallmembers>
+      <member refid="interface_pos_note_1a9e6f74018a3b101820bbd7ea1e24768b" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getContents</name></member>
+      <member refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getPerson</name></member>
+      <member refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getPersonID</name></member>
+      <member refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>getTitle</name></member>
+      <member refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>isTypeFile</name></member>
+      <member refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>isTypeString</name></member>
+      <member refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>makeTypeFile</name></member>
+      <member refid="interface_pos_note_1af061681010937053e955151f3a47cba0" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>makeTypeString</name></member>
+      <member refid="interface_pos_factory_note_1a4624471967ae40149c4c96da686b967b" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>PosFactoryNote_init</name></member>
+      <member refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>PosNote_init</name></member>
+      <member refid="interface_pos_note_1a9fef2f556ad6c69fe29fc34b77a8f910" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setContents</name></member>
+      <member refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setPerson</name></member>
+      <member refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831" prot="public" virt="non-virtual"><scope>PosFactoryNote</scope><name>setTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="ppsmggl_8idl" kind="file" language="IDL">
+    <compoundname>ppsmggl.idl</compoundname>
+    <includes local="yes">fwcommon.idl</includes>
+    <includedby refid="pareagr_8idl" local="yes">poscimfw/include/pareagr.idl</includedby>
+    <includedby refid="pmcrc_8idl" local="yes">poscimfw/include/pmcrc.idl</includedby>
+    <includedby refid="pmsgdfn_8idl" local="yes">poscimfw/include/pmsgdfn.idl</includedby>
+    <includedby refid="pperson_8idl" local="yes">poscimfw/include/pperson.idl</includedby>
+    <includedby refid="pprivgr_8idl" local="yes">poscimfw/include/pprivgr.idl</includedby>
+    <includedby refid="pprspg_8idl" local="yes">poscimfw/include/pprspg.idl</includedby>
+    <includedby refid="ppsmgr_8idl" local="yes">poscimfw/include/ppsmgr.idl</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/ppsmggl.idl</label>
+        <link refid="ppsmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fwcommon.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pareagr.idl</label>
+        <link refid="pareagr_8idl"/>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pmcrc.idl</label>
+        <link refid="pmcrc_8idl"/>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pmsgdfn.idl</label>
+        <link refid="pmsgdfn_8idl"/>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/ppcdf.idl</label>
+        <link refid="ppcdf_8idl"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/ppcopsp.idl</label>
+        <link refid="ppcopsp_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/pperson.idl</label>
+        <link refid="pperson_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pplspj.idl</label>
+        <link refid="pplspj_8idl"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pprivgr.idl</label>
+        <link refid="pprivgr_8idl"/>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/pprmgr.idl</label>
+        <link refid="pprmgr_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/pprspg.idl</label>
+        <link refid="pprspg_8idl"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/ppsmggl.idl</label>
+        <link refid="ppsmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>poscimfw/include/ppsmgr.idl</label>
+        <link refid="ppsmgr_8idl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_privilege__struct" prot="public">posPrivilege_struct</innerclass>
+    <innerclass refid="structpos_privilege_info__struct" prot="public">posPrivilegeInfo_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_person" kindref="compound">PosPerson</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosPerson&gt; PosPersonSequence</definition>
+        <argsstring></argsstring>
+        <name>PosPersonSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="39" column="18" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosAreaGroup&gt; PosAreaGroupSequence</definition>
+        <argsstring></argsstring>
+        <name>PosAreaGroupSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="48" column="19" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a85923ba0537d0a67ced4f22752e2a986" prot="public" static="no">
+        <type>stringSequence</type>
+        <definition>typedef stringSequence PosUserGroupSequence</definition>
+        <argsstring></argsstring>
+        <name>PosUserGroupSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="56" column="24" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" prot="public" static="no">
+        <type><ref refid="structpos_privilege__struct" kindref="compound">posPrivilege_struct</ref></type>
+        <definition>typedef posPrivilege_struct posPrivilege</definition>
+        <argsstring></argsstring>
+        <name>posPrivilege</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="88" column="29" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a96e25b68f8eedbd1ba91eb5275c803a8" prot="public" static="no">
+        <type>sequence&lt; <ref refid="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" kindref="member">posPrivilege</ref> &gt;</type>
+        <definition>typedef sequence&lt;posPrivilege&gt; PosPrivilegeSequence</definition>
+        <argsstring></argsstring>
+        <name>PosPrivilegeSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="97" column="19" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosPrivilegeGroup&gt; PosPrivilegeGroupSequence</definition>
+        <argsstring></argsstring>
+        <name>PosPrivilegeGroupSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="106" column="19" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a596c5cafecb17f337d22561aedfa33d1" prot="public" static="no">
+        <type><ref refid="structpos_privilege_info__struct" kindref="compound">posPrivilegeInfo_struct</ref></type>
+        <definition>typedef posPrivilegeInfo_struct posPrivilegeInfo</definition>
+        <argsstring></argsstring>
+        <name>posPrivilegeInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="140" column="33" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1a45f6950e85d8ea795a9593517bc8bdad" prot="public" static="no">
+        <type>sequence&lt; <ref refid="ppsmggl_8idl_1a596c5cafecb17f337d22561aedfa33d1" kindref="member">posPrivilegeInfo</ref> &gt;</type>
+        <definition>typedef sequence&lt;posPrivilegeInfo&gt; PosPrivilegeInfoSequence</definition>
+        <argsstring></argsstring>
+        <name>PosPrivilegeInfoSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="149" column="19" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ppsmggl_8idl_1aeab1cdc216112749031a0cb42f5624db" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosUserGroup&gt; PosUserGrpSequence</definition>
+        <argsstring></argsstring>
+        <name>PosUserGrpSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmggl.idl" line="158" column="19" bodyfile="poscimfw/include/ppsmggl.idl" bodystart="158" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PpsMgGl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Labor_Management_Functional_Group::Siview_Person_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\superpos\src\spclass\source\poscimfw\ppsmg\ppsmggl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PpsMgGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PpsMgGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwcommon.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_person" kindref="compound">PosPerson</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosPersonSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosPerson&gt;<sp/>PosPersonSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosPerson&gt;<sp/><ref refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" kindref="member">PosPersonSequence</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosAreaGroupSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence<sp/>&lt;PosAreaGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosAreaGroupSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;PosAreaGroup&gt;<sp/><ref refid="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" kindref="member">PosAreaGroupSequence</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosUserGroupSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="ppsmggl_8idl_1a85923ba0537d0a67ced4f22752e2a986" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>stringSequence<sp/><ref refid="ppsmggl_8idl_1a85923ba0537d0a67ced4f22752e2a986" kindref="member">PosUserGroupSequence</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structpos_privilege__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_privilege__struct" kindref="compound">posPrivilege_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posPrivilege_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posPrivilege_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structpos_privilege__struct_1a8a58a9366f270c6f3b610c3a6392dd92" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege__struct_1a8a58a9366f270c6f3b610c3a6392dd92" kindref="member">privilegeID</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structpos_privilege__struct_1a55c15dcb8317f968302e6da057541511" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege__struct_1a55c15dcb8317f968302e6da057541511" kindref="member">permission</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posPrivilege_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posPrivilege_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posPrivilege<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posPrivilege_struct<sp/>posPrivilege;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege__struct" kindref="compound">posPrivilege_struct</ref><sp/><ref refid="ppsmggl_8idl_1abf1fd8252ea2d2ec75bd0189ee384d03" kindref="member">posPrivilege</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosPrivilegeSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence<sp/>&lt;posPrivilege&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosPrivilegeSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="ppsmggl_8idl_1a96e25b68f8eedbd1ba91eb5275c803a8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;posPrivilege&gt;<sp/><ref refid="ppsmggl_8idl_1a96e25b68f8eedbd1ba91eb5275c803a8" kindref="member">PosPrivilegeSequence</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosPrivilegeGroupSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence<sp/>&lt;PosPrivilegeGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosPrivilegeGroupSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;PosPrivilegeGroup&gt;<sp/><ref refid="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" kindref="member">PosPrivilegeGroupSequence</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structpos_privilege_info__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_privilege_info__struct" kindref="compound">posPrivilegeInfo_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posPrivilegeInfo_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posPrivilegeInfo_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structpos_privilege_info__struct_1a163c95b79fc021db703810e611988c56" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege_info__struct_1a163c95b79fc021db703810e611988c56" kindref="member">subSystem</ref>;</highlight></codeline>
+<codeline lineno="119" refid="structpos_privilege_info__struct_1a7f0cfe7edbca2f5a83c95f6bfb83746c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege_info__struct_1a7f0cfe7edbca2f5a83c95f6bfb83746c" kindref="member">category</ref>;</highlight></codeline>
+<codeline lineno="120" refid="structpos_privilege_info__struct_1adecdf195234ff3db17bc7be0ca104cc4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege_info__struct_1adecdf195234ff3db17bc7be0ca104cc4" kindref="member">privilegeID</ref>;</highlight></codeline>
+<codeline lineno="121" refid="structpos_privilege_info__struct_1ae96490a642cb2dae820cde88a26dc7a0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege_info__struct_1ae96490a642cb2dae820cde88a26dc7a0" kindref="member">permission</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posPrivilegeInfo_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posPrivilegeInfo_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posPrivilegeInfo<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posPrivilegeInfo_struct<sp/>posPrivilegeInfo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="ppsmggl_8idl_1a596c5cafecb17f337d22561aedfa33d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_privilege_info__struct" kindref="compound">posPrivilegeInfo_struct</ref><sp/><ref refid="ppsmggl_8idl_1a596c5cafecb17f337d22561aedfa33d1" kindref="member">posPrivilegeInfo</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosPrivilegeInfoSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence<sp/>&lt;posPrivilegeInfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosPrivilegeInfoSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="ppsmggl_8idl_1a45f6950e85d8ea795a9593517bc8bdad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;posPrivilegeInfo&gt;<sp/><ref refid="ppsmggl_8idl_1a45f6950e85d8ea795a9593517bc8bdad" kindref="member">PosPrivilegeInfoSequence</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosUserGrpSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence<sp/>&lt;PosUserGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosUserGroupSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Person<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="ppsmggl_8idl_1aeab1cdc216112749031a0cb42f5624db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;PosUserGroup&gt;<sp/><ref refid="ppsmggl_8idl_1aeab1cdc216112749031a0cb42f5624db" kindref="member">PosUserGrpSequence</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/ppsmggl.idl"/>
+  </compounddef>
+</doxygen>

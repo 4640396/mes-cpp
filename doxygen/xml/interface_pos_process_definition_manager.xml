@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_process_definition_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProcessDefinitionManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProcessDefinitionManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="ppcdfmg_8idl" local="no">ppcdfmg.idl</includes>
+    <innerclass refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" prot="public">PosProcessDefinitionManager::DurableProcessFlowContextNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a4993a21e6d3c2f3207c12ddfee3fe856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::PosProcessDefinitionManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosProcessDefinitionManager_init</name>
+        <qualifiedname>PosProcessDefinitionManager::PosProcessDefinitionManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessDefinition</type>
+        <definition>ProcessDefinition PosProcessDefinitionManager::findMainProcessDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMainProcessDefinitionNamed</name>
+        <qualifiedname>PosProcessDefinitionManager::findMainProcessDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="82" column="21"/>
+        <references refid="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2">findMainProcessDefinitionNamed</references>
+        <referencedby refid="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2">findMainProcessDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessDefinition</type>
+        <definition>ProcessDefinition PosProcessDefinitionManager::findModuleProcessDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findModuleProcessDefinitionNamed</name>
+        <qualifiedname>PosProcessDefinitionManager::findModuleProcessDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="88" column="21"/>
+        <references refid="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b">findModuleProcessDefinitionNamed</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b">findModuleProcessDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessDefinition</type>
+        <definition>ProcessDefinition PosProcessDefinitionManager::createProcessDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createProcessDefinitionNamed</name>
+        <qualifiedname>PosProcessDefinitionManager::createProcessDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="94" column="21"/>
+        <references refid="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f">createProcessDefinitionNamed</references>
+        <referencedby refid="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f">createProcessDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessDefinition</type>
+        <definition>ProcessDefinition PosProcessDefinitionManager::createModuleProcessDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createModuleProcessDefinitionNamed</name>
+        <qualifiedname>PosProcessDefinitionManager::createModuleProcessDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="100" column="21"/>
+        <references refid="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a">createModuleProcessDefinitionNamed</references>
+        <referencedby refid="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a">createModuleProcessDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessDefinition</type>
+        <definition>ProcessDefinition PosProcessDefinitionManager::createMainProcessDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMainProcessDefinitionNamed</name>
+        <qualifiedname>PosProcessDefinitionManager::createMainProcessDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="106" column="21"/>
+        <references refid="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c">createMainProcessDefinitionNamed</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c">createMainProcessDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosProcessDefinitionManager::findMaxReworkCountForProduct</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification, in PosProcessOperationSpecification mainPOS, in PosProcessOperationSpecification modulePOS)</argsstring>
+        <name>findMaxReworkCountForProduct</name>
+        <qualifiedname>PosProcessDefinitionManager::findMaxReworkCountForProduct</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>mainPOS</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>modulePOS</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="114" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55">findMaxReworkCountForProduct</references>
+        <referencedby refid="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55">findMaxReworkCountForProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1a0abf7833fd9227f7b9273cf48a6bc97f" kindref="member">PosMaxProcessCountSequence</ref></type>
+        <definition>PosMaxProcessCountSequence PosProcessDefinitionManager::findMaxProcessCountForProduct</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification, in PosProcessFlow mainPF, in string operationNumber, in PosProcessOperationSpecification mainPOS, in PosProcessOperationSpecification modulePOS)</argsstring>
+        <name>findMaxProcessCountForProduct</name>
+        <qualifiedname>PosProcessDefinitionManager::findMaxProcessCountForProduct</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref></type>
+          <declname>mainPF</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>mainPOS</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>modulePOS</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="123" column="30"/>
+        <references refid="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7">findMaxProcessCountForProduct</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7">findMaxProcessCountForProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setReworkRoutes</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefinitionIds, in brSubFlowDataSequence reworkProcessFlowConnections)</argsstring>
+        <name>setReworkRoutes</name>
+        <qualifiedname>PosProcessDefinitionManager::setReworkRoutes</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefinitionIds</declname>
+        </param>
+        <param>
+          <type>in brSubFlowDataSequence</type>
+          <declname>reworkProcessFlowConnections</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="129" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b">setReworkRoutes</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b">setReworkRoutes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setDefaultTimeRestrictions</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in brDefaultTimeRestrictionDataSequence defaultTimeRestrictions)</argsstring>
+        <name>setDefaultTimeRestrictions</name>
+        <qualifiedname>PosProcessDefinitionManager::setDefaultTimeRestrictions</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in brDefaultTimeRestrictionDataSequence</type>
+          <declname>defaultTimeRestrictions</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="135" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a">setDefaultTimeRestrictions</references>
+        <referencedby refid="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a">setDefaultTimeRestrictions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setSubRoutes</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in brSubFlowDataSequence subProcessFlowConnections)</argsstring>
+        <name>setSubRoutes</name>
+        <qualifiedname>PosProcessDefinitionManager::setSubRoutes</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in brSubFlowDataSequence</type>
+          <declname>subProcessFlowConnections</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="141" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630">setSubRoutes</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630">setSubRoutes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setDeltaDCDefinitions</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in brDeltaDCDefinitionDataSequence deltaDCDefinitions)</argsstring>
+        <name>setDeltaDCDefinitions</name>
+        <qualifiedname>PosProcessDefinitionManager::setDeltaDCDefinitions</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in brDeltaDCDefinitionDataSequence</type>
+          <declname>deltaDCDefinitions</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="147" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7">setDeltaDCDefinitions</references>
+        <referencedby refid="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7">setDeltaDCDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setDefaultDeltaDCSpecifications</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in brDefaultDeltaDCSpecDataSequence defaultDeltaDCSpecs)</argsstring>
+        <name>setDefaultDeltaDCSpecifications</name>
+        <qualifiedname>PosProcessDefinitionManager::setDefaultDeltaDCSpecifications</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in brDefaultDeltaDCSpecDataSequence</type>
+          <declname>defaultDeltaDCSpecs</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="153" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381">setDefaultDeltaDCSpecifications</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381">setDefaultDeltaDCSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setCorrespondingOperations</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in string correspondingOperation, in brCorrespondingOperationSequence__101 correspondingOperations)</argsstring>
+        <name>setCorrespondingOperations</name>
+        <qualifiedname>PosProcessDefinitionManager::setCorrespondingOperations</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>correspondingOperation</declname>
+        </param>
+        <param>
+          <type>in brCorrespondingOperationSequence__101</type>
+          <declname>correspondingOperations</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="159" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f">setCorrespondingOperations</references>
+        <referencedby refid="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f">setCorrespondingOperations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setReworkSettings</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in long defaultReworkLimit, in long defaultProcessLimit, in stringSequence responsibleOperationNumbers)</argsstring>
+        <name>setReworkSettings</name>
+        <qualifiedname>PosProcessDefinitionManager::setReworkSettings</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>defaultReworkLimit</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>defaultProcessLimit</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>responsibleOperationNumbers</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="165" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed">setReworkSettings</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed">setReworkSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setProcessLagTimes</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in long defaultProcessLagTime)</argsstring>
+        <name>setProcessLagTimes</name>
+        <qualifiedname>PosProcessDefinitionManager::setProcessLagTimes</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>defaultProcessLagTime</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="171" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673">setProcessLagTimes</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673">setProcessLagTimes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setScripts</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in objectIdentifier pre1Script, in objectIdentifier pre2Script, in objectIdentifier postScript)</argsstring>
+        <name>setScripts</name>
+        <qualifiedname>PosProcessDefinitionManager::setScripts</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>pre1Script</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>pre2Script</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>postScript</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="177" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77">setScripts</references>
+        <referencedby refid="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77">setScripts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::setDefaultTimeRestrictions__150</definition>
+        <argsstring>(in string operationNumber, in stringSequence mainProcessDefintionIds, in brDefaultTimeRestrictionDataSequence defaultTimeRestrictions, in spDefaultReplaceTimeRestrictionDataSequence defaultReplaceTimeRestrictionsForSubRoute, in spDefaultReplaceTimeRestrictionDataSequence defaultReplaceTimeRestrictionsForReworkRoute)</argsstring>
+        <name>setDefaultTimeRestrictions__150</name>
+        <qualifiedname>PosProcessDefinitionManager::setDefaultTimeRestrictions__150</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>mainProcessDefintionIds</declname>
+        </param>
+        <param>
+          <type>in brDefaultTimeRestrictionDataSequence</type>
+          <declname>defaultTimeRestrictions</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1abe10fb22192be99cd12e33d6ac63370e" kindref="member">spDefaultReplaceTimeRestrictionDataSequence</ref></type>
+          <declname>defaultReplaceTimeRestrictionsForSubRoute</declname>
+        </param>
+        <param>
+          <type>in <ref refid="ppcdfgl_8idl_1abe10fb22192be99cd12e33d6ac63370e" kindref="member">spDefaultReplaceTimeRestrictionDataSequence</ref></type>
+          <declname>defaultReplaceTimeRestrictionsForReworkRoute</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="183" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309">setDefaultTimeRestrictions__150</references>
+        <referencedby refid="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309">setDefaultTimeRestrictions__150</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessFlowContext</type>
+        <definition>ProcessFlowContext PosProcessDefinitionManager::createDurableProcessFlowContextFor</definition>
+        <argsstring>(in ProcessFlow aProcessFlow)</argsstring>
+        <name>createDurableProcessFlowContextFor</name>
+        <qualifiedname>PosProcessDefinitionManager::createDurableProcessFlowContextFor</qualifiedname>
+        <param>
+          <type>in ProcessFlow</type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="189" column="22"/>
+        <references refid="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e">createDurableProcessFlowContextFor</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e">createDurableProcessFlowContextFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProcessDefinitionManager::removeDurableProcessFlowContext</definition>
+        <argsstring>(in ProcessFlowContext aProcessFlowContext)</argsstring>
+        <name>removeDurableProcessFlowContext</name>
+        <qualifiedname>PosProcessDefinitionManager::removeDurableProcessFlowContext</qualifiedname>
+        <param>
+          <type>in ProcessFlowContext</type>
+          <declname>aProcessFlowContext</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" kindref="compound">DurableProcessFlowContextNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppcdfmg.idl" line="197" column="8"/>
+        <references refid="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48">removeDurableProcessFlowContext</references>
+        <referencedby refid="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48">removeDurableProcessFlowContext</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProcessDefinitionManager</label>
+        <link refid="interface_pos_process_definition_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcessDefinitionManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProcessDefinitionManager</label>
+        <link refid="interface_pos_process_definition_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProcessDefinitionManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ppcdfmg.idl" line="38" column="11" bodyfile="poscimfw/include/ppcdfmg.idl" bodystart="38" bodyend="205"/>
+    <listofallmembers>
+      <member refid="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>createDurableProcessFlowContextFor</name></member>
+      <member refid="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>createMainProcessDefinitionNamed</name></member>
+      <member refid="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>createModuleProcessDefinitionNamed</name></member>
+      <member refid="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>createProcessDefinitionNamed</name></member>
+      <member refid="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>findMainProcessDefinitionNamed</name></member>
+      <member refid="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>findMaxProcessCountForProduct</name></member>
+      <member refid="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>findMaxReworkCountForProduct</name></member>
+      <member refid="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>findModuleProcessDefinitionNamed</name></member>
+      <member refid="interface_pos_process_definition_manager_1a4993a21e6d3c2f3207c12ddfee3fe856" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>PosProcessDefinitionManager_init</name></member>
+      <member refid="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>removeDurableProcessFlowContext</name></member>
+      <member refid="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setCorrespondingOperations</name></member>
+      <member refid="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setDefaultDeltaDCSpecifications</name></member>
+      <member refid="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setDefaultTimeRestrictions</name></member>
+      <member refid="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setDefaultTimeRestrictions__150</name></member>
+      <member refid="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setDeltaDCDefinitions</name></member>
+      <member refid="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setProcessLagTimes</name></member>
+      <member refid="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setReworkRoutes</name></member>
+      <member refid="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setReworkSettings</name></member>
+      <member refid="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setScripts</name></member>
+      <member refid="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630" prot="public" virt="non-virtual"><scope>PosProcessDefinitionManager</scope><name>setSubRoutes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

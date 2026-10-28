@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_c_i_m_f_w___d_o___edit_graph" kind="class" language="C++" prot="public">
+    <compoundname>CIMFW_DO_EditGraph</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename EditNode_</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" prot="private" static="no">
+        <type>EditNode_</type>
+        <definition>typedef EditNode_ CIMFW_DO_EditGraph&lt; EditNode_ &gt;::EditNode</definition>
+        <argsstring></argsstring>
+        <name>EditNode</name>
+        <qualifiedname>CIMFW_DO_EditGraph::EditNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1025" column="49" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" prot="private" static="no">
+        <type>EditNode::CostType</type>
+        <definition>typedef EditNode::CostType CIMFW_DO_EditGraph&lt; EditNode_ &gt;::CostType</definition>
+        <argsstring></argsstring>
+        <name>CostType</name>
+        <qualifiedname>CIMFW_DO_EditGraph::CostType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1026" column="49" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1026" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" prot="private" static="no">
+        <type>EditNode::SQLCost</type>
+        <definition>typedef EditNode::SQLCost CIMFW_DO_EditGraph&lt; EditNode_ &gt;::SQLCost</definition>
+        <argsstring></argsstring>
+        <name>SQLCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::SQLCost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1027" column="49" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1027" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_i_m_f_w___d_o___edit_graph_1a5dd53d3cb2cec46cd5a042d948ffeaeb" prot="private" static="no">
+        <type>EditNode::EditOperation</type>
+        <definition>typedef EditNode::EditOperation CIMFW_DO_EditGraph&lt; EditNode_ &gt;::EditOperation</definition>
+        <argsstring></argsstring>
+        <name>EditOperation</name>
+        <qualifiedname>CIMFW_DO_EditGraph::EditOperation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1028" column="49" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" prot="private" static="no" mutable="no">
+        <type>CIMFW_DO_ArrayPtr&lt; CORBA::ULong &gt;</type>
+        <definition>CIMFW_DO_ArrayPtr&lt; CORBA::ULong &gt; CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</definition>
+        <argsstring></argsstring>
+        <name>diagonalIndices</name>
+        <qualifiedname>CIMFW_DO_EditGraph::diagonalIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1031" column="25" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1031" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a86e06fb7d3b569b40d42122fdf576fe3" prot="private" static="no" mutable="no">
+        <type>CIMFW_DO_ArrayPtr&lt; <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" kindref="member">EditNode</ref> &gt;</type>
+        <definition>CIMFW_DO_ArrayPtr&lt; EditNode &gt; CIMFW_DO_EditGraph&lt; EditNode_ &gt;::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <qualifiedname>CIMFW_DO_EditGraph::nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1032" column="29" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1032" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" prot="private" static="no" mutable="no">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</definition>
+        <argsstring></argsstring>
+        <name>iLength</name>
+        <qualifiedname>CIMFW_DO_EditGraph::iLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1033" column="41" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1033" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" compoundref="cimfwdo_8cpp" startline="1325" endline="1353">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::maximalCost</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a9bf2da1043cc14ef43c3e3ca83adce78" prot="private" static="no" mutable="no">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::jLength</definition>
+        <argsstring></argsstring>
+        <name>jLength</name>
+        <qualifiedname>CIMFW_DO_EditGraph::jLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1034" column="41" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1034" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" prot="private" static="no" mutable="no">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</definition>
+        <argsstring></argsstring>
+        <name>headIndex</name>
+        <qualifiedname>CIMFW_DO_EditGraph::headIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1035" column="41" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1035" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" compoundref="cimfwdo_8cpp" startline="1325" endline="1353">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::maximalCost</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" prot="private" static="no" mutable="no">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</definition>
+        <argsstring></argsstring>
+        <name>tailIndex</name>
+        <qualifiedname>CIMFW_DO_EditGraph::tailIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1036" column="41" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1036" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acede6584a801790f3d26006f2f769433" compoundref="cimfwdo_8cpp" startline="1111" endline="1152">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___edit_graph_1a7a0f9ff9e0821ceca0e637f7aed182f1" prot="private" static="no" mutable="no">
+        <type>EditNode::EditOperation</type>
+        <definition>EditNode::EditOperation CIMFW_DO_EditGraph&lt; EditNode_ &gt;::lastOp</definition>
+        <argsstring></argsstring>
+        <name>lastOp</name>
+        <qualifiedname>CIMFW_DO_EditGraph::lastOp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1037" column="41" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1037" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" compoundref="cimfwdo_8cpp" startline="1205" endline="1318">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_c_i_m_f_w___d_o___edit_graph_1a2faf7e1efd2fd59b95301e77aa25e78c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OStream</type>
+          </param>
+          <param>
+            <type>typename SQLCost_</type>
+          </param>
+        </templateparamlist>
+        <type>OStream &amp;</type>
+        <definition>OStream &amp; operator&lt;&lt;</definition>
+        <argsstring>(OStream &amp;os, const CIMFW_DO_EditGraph&lt; SQLCost_ &gt; &amp;graph)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>CIMFW_DO_EditGraph::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>OStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph" kindref="compound">CIMFW_DO_EditGraph</ref>&lt; SQLCost_ &gt; &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1040" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1ace4fcfa92d5edd97ebc4faecc2cf3beb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" kindref="member">EditNode</ref> *</type>
+        <definition>EditNode * CIMFW_DO_EditGraph&lt; EditNode_ &gt;::operator[]</definition>
+        <argsstring>(CORBA::ULong i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>CIMFW_DO_EditGraph::operator[]</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1043" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1043" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1ae1163c99ff51127d245064a8352bbb4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" kindref="member">EditNode</ref> *</type>
+        <definition>const EditNode * CIMFW_DO_EditGraph&lt; EditNode_ &gt;::operator[]</definition>
+        <argsstring>(CORBA::ULong i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>CIMFW_DO_EditGraph::operator[]</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1048" column="20" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1048" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDSeqNo</definition>
+        <argsstring>(CORBA::ULong i, CORBA::ULong j) const</argsstring>
+        <name>getDSeqNo</name>
+        <qualifiedname>CIMFW_DO_EditGraph::getDSeqNo</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1053" column="18" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1053" bodyend="1059"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CORBA::ULong</type>
+        <definition>CORBA::ULong CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getASeqNo</definition>
+        <argsstring>(CORBA::ULong i, CORBA::ULong j) const</argsstring>
+        <name>getASeqNo</name>
+        <qualifiedname>CIMFW_DO_EditGraph::getASeqNo</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1060" column="18" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1060" bodyend="1066"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" compoundref="cimfwdo_8cpp" startline="2459" endline="2634">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" compoundref="cimfwdo_8cpp" startline="1360" endline="1608">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a9263d0ebfbf33a465e4006cbbc2122ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_EditGraph&lt; EditNode_ &gt;::actualCost</definition>
+        <argsstring>() const</argsstring>
+        <name>actualCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::actualCost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1067" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1067" bodyend="1074"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1aab4bf19daa83acfed38fd7dee4eb853a" compoundref="cimfwdo_8cpp" startline="2935" endline="2954">CIMFW_DO_SequenceOfSequenceCost::maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1ac61abbab693fc95b60b52c30b847119a" compoundref="cimfwdo_8cpp" startline="3130" endline="3149">CIMFW_DO_SequenceOfSequenceCostForMerge::maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1a96a5aebf8cfa6b715d7fe36c9d754148" compoundref="cimfwdo_8cpp" startline="2914" endline="2934">CIMFW_DO_SequenceOfSequenceCost::updateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1a6170039ea1a4fa4a5270ba113b025402" compoundref="cimfwdo_8cpp" startline="3109" endline="3129">CIMFW_DO_SequenceOfSequenceCostForMerge::updateCost</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1ad6a14ec58028764af4ae41db1d126800" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_EditGraph&lt; EditNode_ &gt;::minimalCost</definition>
+        <argsstring>() const</argsstring>
+        <name>minimalCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::minimalCost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1075" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1075" bodyend="1078"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1a089d40f038396139631eb034796347f9" compoundref="cimfwdo_8cpp" startline="2894" endline="2910">CIMFW_DO_SequenceOfSequenceCost::minimalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1a7ef08696a868044d79812fe8493f9193" compoundref="cimfwdo_8cpp" startline="3092" endline="3108">CIMFW_DO_SequenceOfSequenceCostForMerge::minimalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a835183ea753eae656e2b608cb1f80475" compoundref="cimfwdo_8cpp" startline="1858" endline="1865">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" compoundref="cimfwdo_8cpp" startline="1845" endline="1855">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+        <definition>CIMFW_DO_EditGraph&lt; EditNode_ &gt;::CostType CIMFW_DO_EditGraph&lt; EditNode_ &gt;::maximalCost</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const SQLCost &amp;setting) const</argsstring>
+        <name>maximalCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::maximalCost</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1079" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1325" bodyend="1353"/>
+        <references refid="cimfwdo_8cpp_1a78d49a8468498c1390f0e48826ec762f" compoundref="cimfwdo_8cpp" startline="434">CIMFW_DO_MAX_SEQUENCE_LENGTH</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1aab4bf19daa83acfed38fd7dee4eb853a" compoundref="cimfwdo_8cpp" startline="2935" endline="2954">CIMFW_DO_SequenceOfSequenceCost::maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1ac61abbab693fc95b60b52c30b847119a" compoundref="cimfwdo_8cpp" startline="3130" endline="3149">CIMFW_DO_SequenceOfSequenceCostForMerge::maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a835183ea753eae656e2b608cb1f80475" compoundref="cimfwdo_8cpp" startline="1858" endline="1865">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" compoundref="cimfwdo_8cpp" startline="1845" endline="1855">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong dLength2, CORBA::ULong aLength, const CIMFW_DO_SequenceHelperBase::UpdateModeSetting &amp;setting)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>CIMFW_DO_EditGraph::initialize</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength2</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const CIMFW_DO_SequenceHelperBase::UpdateModeSetting &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1084" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1205" bodyend="1318"/>
+        <references refid="cimfwdo_8cpp_1a78d49a8468498c1390f0e48826ec762f" compoundref="cimfwdo_8cpp" startline="434">CIMFW_DO_MAX_SEQUENCE_LENGTH</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" compoundref="cimfwdo_8cpp" startline="1031">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a9bf2da1043cc14ef43c3e3ca83adce78" compoundref="cimfwdo_8cpp" startline="1034">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::jLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a7a0f9ff9e0821ceca0e637f7aed182f1" compoundref="cimfwdo_8cpp" startline="1037">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::lastOp</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a86e06fb7d3b569b40d42122fdf576fe3" compoundref="cimfwdo_8cpp" startline="1032">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::nodes</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" compoundref="cimfwdo_8cpp" startline="1036">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</references>
+        <referencedby refid="cimfwdo_8cpp_1a8044bd37b75c40f5ebd71efeb5abe11a" compoundref="cimfwdo_8cpp" startline="2721" endline="2735">doSearchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1a089d40f038396139631eb034796347f9" compoundref="cimfwdo_8cpp" startline="2894" endline="2910">CIMFW_DO_SequenceOfSequenceCost::minimalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1a7ef08696a868044d79812fe8493f9193" compoundref="cimfwdo_8cpp" startline="3092" endline="3108">CIMFW_DO_SequenceOfSequenceCostForMerge::minimalUpdateCost</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a53af9249c3d31e2e15a7cb708bae02bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::initialize</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const CIMFW_DO_SequenceHelperBase::UpdateModeSetting &amp;setting)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>CIMFW_DO_EditGraph::initialize</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const CIMFW_DO_SequenceHelperBase::UpdateModeSetting &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1086" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1086" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMinimalResidueCost</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const SQLCost &amp;sqlCost)</argsstring>
+        <name>fillMinimalResidueCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::fillMinimalResidueCost</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>sqlCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1092" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1360" bodyend="1608"/>
+        <references refid="cimfwdo_8cpp_1a78d49a8468498c1390f0e48826ec762f" compoundref="cimfwdo_8cpp" startline="434">CIMFW_DO_MAX_SEQUENCE_LENGTH</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" compoundref="cimfwdo_8cpp" startline="1031">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" compoundref="cimfwdo_8cpp" startline="1060" endline="1066">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getASeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" compoundref="cimfwdo_8cpp" startline="1053" endline="1059">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDSeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a9bf2da1043cc14ef43c3e3ca83adce78" compoundref="cimfwdo_8cpp" startline="1034">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::jLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" compoundref="cimfwdo_8cpp" startline="1036">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</references>
+        <referencedby refid="cimfwdo_8cpp_1a8044bd37b75c40f5ebd71efeb5abe11a" compoundref="cimfwdo_8cpp" startline="2721" endline="2735">doSearchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1a089d40f038396139631eb034796347f9" compoundref="cimfwdo_8cpp" startline="2894" endline="2910">CIMFW_DO_SequenceOfSequenceCost::minimalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1a7ef08696a868044d79812fe8493f9193" compoundref="cimfwdo_8cpp" startline="3092" endline="3108">CIMFW_DO_SequenceOfSequenceCostForMerge::minimalUpdateCost</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</definition>
+        <argsstring>(CORBA::ULong first, CORBA::ULong last, const SQLCost &amp;sqlCost)</argsstring>
+        <name>fillMaximalResidueCost</name>
+        <qualifiedname>CIMFW_DO_EditGraph::fillMaximalResidueCost</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>sqlCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1093" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1613" bodyend="1739"/>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" compoundref="cimfwdo_8cpp" startline="1031">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" compoundref="cimfwdo_8cpp" startline="1060" endline="1066">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getASeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" compoundref="cimfwdo_8cpp" startline="1053" endline="1059">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDSeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a9bf2da1043cc14ef43c3e3ca83adce78" compoundref="cimfwdo_8cpp" startline="1034">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::jLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" compoundref="cimfwdo_8cpp" startline="1036">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</references>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" compoundref="cimfwdo_8cpp" startline="1868" endline="2070">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const SQLCost &amp;setting, double threshold)</argsstring>
+        <name>searchOptimalSQL</name>
+        <qualifiedname>CIMFW_DO_EditGraph::searchOptimalSQL</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1094" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1845" bodyend="1855"/>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" compoundref="cimfwdo_8cpp" startline="1325" endline="1353">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::maximalCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1ad6a14ec58028764af4ae41db1d126800" compoundref="cimfwdo_8cpp" startline="1075" endline="1078">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::minimalCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" compoundref="cimfwdo_8cpp" startline="1845" endline="1855">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</references>
+        <referencedby refid="cimfwdo_8cpp_1a8044bd37b75c40f5ebd71efeb5abe11a" compoundref="cimfwdo_8cpp" startline="2721" endline="2735">doSearchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a835183ea753eae656e2b608cb1f80475" compoundref="cimfwdo_8cpp" startline="1858" endline="1865">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" compoundref="cimfwdo_8cpp" startline="1845" endline="1855">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_1a96a5aebf8cfa6b715d7fe36c9d754148" compoundref="cimfwdo_8cpp" startline="2914" endline="2934">CIMFW_DO_SequenceOfSequenceCost::updateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_of_sequence_cost_for_merge_1a6170039ea1a4fa4a5270ba113b025402" compoundref="cimfwdo_8cpp" startline="3109" endline="3129">CIMFW_DO_SequenceOfSequenceCostForMerge::updateCost</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a835183ea753eae656e2b608cb1f80475" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const SQLCost &amp;setting, CostType remainCost)</argsstring>
+        <name>searchOptimalSQL</name>
+        <qualifiedname>CIMFW_DO_EditGraph::searchOptimalSQL</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+          <declname>remainCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1098" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1858" bodyend="1865"/>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" compoundref="cimfwdo_8cpp" startline="1325" endline="1353">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::maximalCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1ad6a14ec58028764af4ae41db1d126800" compoundref="cimfwdo_8cpp" startline="1075" endline="1078">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::minimalCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" compoundref="cimfwdo_8cpp" startline="1845" endline="1855">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CIMFW_DO_EditGraph&lt; EditNode_ &gt;::searchOptimalSQL</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, const SQLCost &amp;setting, CostType maxCost, CostType minCost, CostType costThreshold)</argsstring>
+        <name>searchOptimalSQL</name>
+        <qualifiedname>CIMFW_DO_EditGraph::searchOptimalSQL</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" kindref="member">SQLCost</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+          <declname>maxCost</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+          <declname>minCost</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" kindref="member">CostType</ref></type>
+          <declname>costThreshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1099" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1868" bodyend="2070"/>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a9263d0ebfbf33a465e4006cbbc2122ee" compoundref="cimfwdo_8cpp" startline="1067" endline="1074">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::actualCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" compoundref="cimfwdo_8cpp" startline="1031">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</references>
+        <references refid="classpriority__queue_1a0639185d8ac982198bee702295299fbb" compoundref="cimfwdo_8cpp" startline="1811" endline="1814">priority_queue&lt; _Ty &gt;::empty</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" compoundref="cimfwdo_8cpp" startline="1613" endline="1739">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::fillMaximalResidueCost</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" compoundref="cimfwdo_8cpp" startline="1060" endline="1066">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getASeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" compoundref="cimfwdo_8cpp" startline="1053" endline="1059">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDSeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a7a0f9ff9e0821ceca0e637f7aed182f1" compoundref="cimfwdo_8cpp" startline="1037">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::lastOp</references>
+        <references refid="classpriority__queue_1ab4b3567e91d04360eb07865f35b7afc8" compoundref="cimfwdo_8cpp" startline="1828" endline="1832">priority_queue&lt; _Ty &gt;::pop</references>
+        <references refid="classpriority__queue_1a255fa40ddd7be498296b36ea473ba3a2" compoundref="cimfwdo_8cpp" startline="1823" endline="1827">priority_queue&lt; _Ty &gt;::push</references>
+        <references refid="classpriority__queue_1ae90b778c4ec1a3acce0002dd07dbbe43" compoundref="cimfwdo_8cpp" startline="1815" endline="1818">priority_queue&lt; _Ty &gt;::size</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" compoundref="cimfwdo_8cpp" startline="1036">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</references>
+        <references refid="classpriority__queue_1a934e2b3b12b40573fbd05d59d3e050af" compoundref="cimfwdo_8cpp" startline="1819" endline="1822">priority_queue&lt; _Ty &gt;::top</references>
+        <references refid="classpriority__queue_1a852fdf6ccaa40599d629deac11671d00" compoundref="cimfwdo_8cpp" startline="1833" endline="1836">priority_queue&lt; _Ty &gt;::update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename EditCallback</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool CIMFW_DO_EditGraph&lt; EditNode_ &gt;::assembleSQL</definition>
+        <argsstring>(CORBA::ULong dLength, CORBA::ULong aLength, EditCallback editCallback) const</argsstring>
+        <name>assembleSQL</name>
+        <qualifiedname>CIMFW_DO_EditGraph::assembleSQL</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dLength</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aLength</declname>
+        </param>
+        <param>
+          <type>EditCallback</type>
+          <declname>editCallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1102" column="10" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2459" bodyend="2634"/>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" compoundref="cimfwdo_8cpp" startline="1031">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::diagonalIndices</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" compoundref="cimfwdo_8cpp" startline="1060" endline="1066">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getASeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" compoundref="cimfwdo_8cpp" startline="1053" endline="1059">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDSeqNo</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" compoundref="cimfwdo_8cpp" startline="1035">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::headIndex</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" compoundref="cimfwdo_8cpp" startline="1033">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::iLength</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1a7a0f9ff9e0821ceca0e637f7aed182f1" compoundref="cimfwdo_8cpp" startline="1037">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::lastOp</references>
+        <references refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" compoundref="cimfwdo_8cpp" startline="1036">CIMFW_DO_EditGraph&lt; EditNode_ &gt;::tailIndex</references>
+        <referencedby refid="cimfwdo_8cpp_1a8044bd37b75c40f5ebd71efeb5abe11a" compoundref="cimfwdo_8cpp" startline="2721" endline="2735">doSearchOptimalSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___edit_graph_1acd2361e839b1cdd45a4beaf1a3d6c8e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" kindref="member">EditNode</ref> &amp;</type>
+        <definition>const EditNode &amp; CIMFW_DO_EditGraph&lt; EditNode_ &gt;::getDiagonal</definition>
+        <argsstring>(CORBA::ULong dSeqNo) const</argsstring>
+        <name>getDiagonal</name>
+        <qualifiedname>CIMFW_DO_EditGraph::getDiagonal</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1103" column="20" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1103" bodyend="1106"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___edit_callback_for_merge_1a0173a3d535b074d843dc88091f3ef2ab" compoundref="cimfwdo_8cpp" startline="2307" endline="2318">CIMFW_DO_EditCallbackForMerge&lt; SQLCallback_, EditNode_ &gt;::addInsert</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="1020" column="1" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="1021" bodyend="1108"/>
+    <listofallmembers>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a9263d0ebfbf33a465e4006cbbc2122ee" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>actualCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a11b0d819db3f09898962b35cbdd705ba" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>assembleSQL</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a339668d78f2a3c782f8d22f2a4c4f5aa" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>CostType</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a993898179b5a4f4b528c0800d0c55dc3" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>diagonalIndices</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a1fc36288843921fec1bb8586ea7ee214" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>EditNode</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a5dd53d3cb2cec46cd5a042d948ffeaeb" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>EditOperation</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a0e3dacbc33597abad589811b383d3fdd" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>fillMaximalResidueCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a4ab5195324cce7ef6797404ab8a401c6" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>fillMinimalResidueCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a5fb52db467aa40b9798d8041866304b7" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>getASeqNo</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1acd2361e839b1cdd45a4beaf1a3d6c8e4" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>getDiagonal</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a03aaf7ad3d7a4c9393899d653fe8ca02" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>getDSeqNo</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a3c5b9de2400cd4a90c72b5f827aa6d1a" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>headIndex</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a849e33d0aad52e7008f5286f9bbb3158" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>iLength</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1af3a2134c82d7cad6a512374b43dc4bdc" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>initialize</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a53af9249c3d31e2e15a7cb708bae02bf" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>initialize</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a9bf2da1043cc14ef43c3e3ca83adce78" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>jLength</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a7a0f9ff9e0821ceca0e637f7aed182f1" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>lastOp</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1acc92d231e83313f6fd0d83759a7aa67f" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>maximalCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1ad6a14ec58028764af4ae41db1d126800" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>minimalCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a86e06fb7d3b569b40d42122fdf576fe3" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>nodes</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a2faf7e1efd2fd59b95301e77aa25e78c" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1ace4fcfa92d5edd97ebc4faecc2cf3beb" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>operator[]</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1ae1163c99ff51127d245064a8352bbb4b" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>operator[]</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a498054effdcaa481ed62ad18110d998d" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>searchOptimalSQL</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a835183ea753eae656e2b608cb1f80475" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>searchOptimalSQL</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a93de8537041b16174104808c0683e8b9" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>searchOptimalSQL</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1a0fbe53a13026622e1250942fe4789c3d" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>SQLCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___edit_graph_1af2e830a3481e6d4ef51e71171f5ab9dc" prot="private" virt="non-virtual"><scope>CIMFW_DO_EditGraph</scope><name>tailIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

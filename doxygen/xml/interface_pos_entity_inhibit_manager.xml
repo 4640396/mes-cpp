@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_entity_inhibit_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosEntityInhibitManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <includes refid="peninmg_8idl" local="no">peninmg.idl</includes>
+    <innerclass refid="exception_pos_entity_inhibit_manager_1_1_entity_inhibit_not_found_signal" prot="public">PosEntityInhibitManager::EntityInhibitNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ab3255ffd47013fb2cbc450ffa7aad01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_entity_inhibit" kindref="compound">PosEntityInhibit</ref></type>
+        <definition>PosEntityInhibit PosEntityInhibitManager::createEntityInhibit</definition>
+        <argsstring>(in posEntityInhibitRecord entityInhibitRecord)</argsstring>
+        <name>createEntityInhibit</name>
+        <qualifiedname>PosEntityInhibitManager::createEntityInhibit</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a841193ee39339f0b6afa712a9c748d7b" kindref="member">posEntityInhibitRecord</ref></type>
+          <declname>entityInhibitRecord</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="79" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ab984fb410d1655296b0e29b8919ab1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibitManager::removeEntityInhibit</definition>
+        <argsstring>(in PosEntityInhibit entityInhibit)</argsstring>
+        <name>removeEntityInhibit</name>
+        <qualifiedname>PosEntityInhibitManager::removeEntityInhibit</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_entity_inhibit" kindref="compound">PosEntityInhibit</ref></type>
+          <declname>entityInhibit</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_entity_inhibit_manager_1_1_entity_inhibit_not_found_signal" kindref="compound">EntityInhibitNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="85" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a020b4932771d825141a277f22c0dd78f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_entity_inhibit" kindref="compound">PosEntityInhibit</ref></type>
+        <definition>PosEntityInhibit PosEntityInhibitManager::findEntityInhibitNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findEntityInhibitNamed</name>
+        <qualifiedname>PosEntityInhibitManager::findEntityInhibitNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="93" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ac248535865ba8060c975a8b047993c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allEntityInhibits</definition>
+        <argsstring>()</argsstring>
+        <name>allEntityInhibits</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibits</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="99" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ae6d2ed398d9dfaa574db138c1717baea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allEntityInhibitsFor</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities)</argsstring>
+        <name>allEntityInhibitsFor</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitsFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="106" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1ae6d2ed398d9dfaa574db138c1717baea">allEntityInhibitsFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1ae6d2ed398d9dfaa574db138c1717baea">allEntityInhibitsFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a52403808080cfc574017b8c705b0cc85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosEntityInhibitManager::isInhibitFor</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities, in stringSequence sublottypes)</argsstring>
+        <name>isInhibitFor</name>
+        <qualifiedname>PosEntityInhibitManager::isInhibitFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="113" column="11"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a52403808080cfc574017b8c705b0cc85">isInhibitFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a52403808080cfc574017b8c705b0cc85">isInhibitFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a19bb3a97accfac5a7f4565f4557f281f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allEntityInhibitsForLot</definition>
+        <argsstring>(in PosLot lot, in PosMachine machine)</argsstring>
+        <name>allEntityInhibitsForLot</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitsForLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>lot</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>machine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="130" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a19bb3a97accfac5a7f4565f4557f281f">allEntityInhibitsForLot</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a19bb3a97accfac5a7f4565f4557f281f">allEntityInhibitsForLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1aa109119f929a240096311f5e8ddcfc02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibitManager::PosEntityInhibitManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosEntityInhibitManager_init</name>
+        <qualifiedname>PosEntityInhibitManager::PosEntityInhibitManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="136" column="8"/>
+        <references refid="interface_pos_entity_inhibit_manager_1aa109119f929a240096311f5e8ddcfc02">PosEntityInhibitManager_init</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1aa109119f929a240096311f5e8ddcfc02">PosEntityInhibitManager_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ae784abe43ae83e43bc2781eef70bc241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allRelatedEntityInhibits</definition>
+        <argsstring>(in objectIdentifier targetid)</argsstring>
+        <name>allRelatedEntityInhibits</name>
+        <qualifiedname>PosEntityInhibitManager::allRelatedEntityInhibits</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>targetid</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="142" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1ae784abe43ae83e43bc2781eef70bc241">allRelatedEntityInhibits</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1ae784abe43ae83e43bc2781eef70bc241">allRelatedEntityInhibits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a11231f009f59e69247c88e93157923be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibitManager::removeAllRelatedEntityInhibits</definition>
+        <argsstring>(in objectIdentifier targetid)</argsstring>
+        <name>removeAllRelatedEntityInhibits</name>
+        <qualifiedname>PosEntityInhibitManager::removeAllRelatedEntityInhibits</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>targetid</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="148" column="8"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a11231f009f59e69247c88e93157923be">removeAllRelatedEntityInhibits</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a11231f009f59e69247c88e93157923be">removeAllRelatedEntityInhibits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1aecf52a24c760e759d92791d5e4c91e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::allEntityInhibitRecords</definition>
+        <argsstring>()</argsstring>
+        <name>allEntityInhibitRecords</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitRecords</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="155" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1aecf52a24c760e759d92791d5e4c91e5c">allEntityInhibitRecords</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1aecf52a24c760e759d92791d5e4c91e5c">allEntityInhibitRecords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a32862b8601149bdb0f79f2c4d8eff811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::allEntityInhibitRecordsFor</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities)</argsstring>
+        <name>allEntityInhibitRecordsFor</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitRecordsFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="162" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a32862b8601149bdb0f79f2c4d8eff811">allEntityInhibitRecordsFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a32862b8601149bdb0f79f2c4d8eff811">allEntityInhibitRecordsFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a34fa1555ae270fe39e352cb8b12766f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::allEntityInhibitRecordsForLot</definition>
+        <argsstring>(in PosLot lot, in PosMachine machine)</argsstring>
+        <name>allEntityInhibitRecordsForLot</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitRecordsForLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>lot</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>machine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="179" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a34fa1555ae270fe39e352cb8b12766f1">allEntityInhibitRecordsForLot</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a34fa1555ae270fe39e352cb8b12766f1">allEntityInhibitRecordsForLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a99786283fe69793757908945d4cda42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::allEntityInhibitRecordsForLotEntities</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities, in stringSequence sublottypes)</argsstring>
+        <name>allEntityInhibitRecordsForLotEntities</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitRecordsForLotEntities</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="196" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a99786283fe69793757908945d4cda42f">allEntityInhibitRecordsForLotEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a99786283fe69793757908945d4cda42f">allEntityInhibitRecordsForLotEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a63380c53431fad97cce5f511944aa085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allEntityInhibitsForLotUsingSpecifiedEntities</definition>
+        <argsstring>(in PosLot lot, in PosMachine machine, in PosEntityIdentifierSequence entities)</argsstring>
+        <name>allEntityInhibitsForLotUsingSpecifiedEntities</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitsForLotUsingSpecifiedEntities</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>lot</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>machine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="203" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a63380c53431fad97cce5f511944aa085">allEntityInhibitsForLotUsingSpecifiedEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a63380c53431fad97cce5f511944aa085">allEntityInhibitsForLotUsingSpecifiedEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ac896291c643e9385ab0ff9ade9802dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::getEntityInhibitRecordsFor</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities, in stringSequence sublottypes)</argsstring>
+        <name>getEntityInhibitRecordsFor</name>
+        <qualifiedname>PosEntityInhibitManager::getEntityInhibitRecordsFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="210" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1ac896291c643e9385ab0ff9ade9802dd5">getEntityInhibitRecordsFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1ac896291c643e9385ab0ff9ade9802dd5">getEntityInhibitRecordsFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a540695cf1445073c07e4a18782839bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosEntityInhibitManager::isInhibitRecordFor</definition>
+        <argsstring>(in posEntityInhibitRecord record, in PosEntityIdentifierSequence entities, in stringSequence sublottypes)</argsstring>
+        <name>isInhibitRecordFor</name>
+        <qualifiedname>PosEntityInhibitManager::isInhibitRecordFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a841193ee39339f0b6afa712a9c748d7b" kindref="member">posEntityInhibitRecord</ref></type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="217" column="11"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a540695cf1445073c07e4a18782839bf2">isInhibitRecordFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a540695cf1445073c07e4a18782839bf2">isInhibitRecordFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a2fd4be339dd87a0dacd12984eeefc071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibitManager::removeAllRelatedEntityInhibitsWithAttribute</definition>
+        <argsstring>(in objectIdentifier targetID, in string attr)</argsstring>
+        <name>removeAllRelatedEntityInhibitsWithAttribute</name>
+        <qualifiedname>PosEntityInhibitManager::removeAllRelatedEntityInhibitsWithAttribute</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>targetID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>attr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="226" column="8"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a2fd4be339dd87a0dacd12984eeefc071">removeAllRelatedEntityInhibitsWithAttribute</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a2fd4be339dd87a0dacd12984eeefc071">removeAllRelatedEntityInhibitsWithAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a9df742f95bb9e3454d9110c1b004cdad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allRelatedEntityInhibitsWithAttribute</definition>
+        <argsstring>(in objectIdentifier targetID, in string attr)</argsstring>
+        <name>allRelatedEntityInhibitsWithAttribute</name>
+        <qualifiedname>PosEntityInhibitManager::allRelatedEntityInhibitsWithAttribute</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>targetID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>attr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="233" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a9df742f95bb9e3454d9110c1b004cdad">allRelatedEntityInhibitsWithAttribute</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a9df742f95bb9e3454d9110c1b004cdad">allRelatedEntityInhibitsWithAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a5146b0f803a3a5877a44766042697c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::getAllEntityInhibitRecordsByKey</definition>
+        <argsstring>(in stringSequence systemkeys)</argsstring>
+        <name>getAllEntityInhibitRecordsByKey</name>
+        <qualifiedname>PosEntityInhibitManager::getAllEntityInhibitRecordsByKey</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>systemkeys</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="239" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a5146b0f803a3a5877a44766042697c4e">getAllEntityInhibitRecordsByKey</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a5146b0f803a3a5877a44766042697c4e">getAllEntityInhibitRecordsByKey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ac7108f09a50823e4fc909cb919023da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a841193ee39339f0b6afa712a9c748d7b" kindref="member">posEntityInhibitRecord</ref></type>
+        <definition>posEntityInhibitRecord PosEntityInhibitManager::findEntityInhibitRecordByKey</definition>
+        <argsstring>(in string systemkey)</argsstring>
+        <name>findEntityInhibitRecordByKey</name>
+        <qualifiedname>PosEntityInhibitManager::findEntityInhibitRecordByKey</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemkey</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_entity_inhibit_manager_1_1_entity_inhibit_not_found_signal" kindref="compound">EntityInhibitNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="248" column="26"/>
+        <references refid="interface_pos_entity_inhibit_manager_1ac7108f09a50823e4fc909cb919023da0">findEntityInhibitRecordByKey</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1ac7108f09a50823e4fc909cb919023da0">findEntityInhibitRecordByKey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1ae5dab4120d1c5f2714187c65b5739a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a6602e4f1d8f6fd3eb9bd25a7ac8dfd2e" kindref="member">PosEntityInhibitReasonDetailInfoSequence</ref></type>
+        <definition>PosEntityInhibitReasonDetailInfoSequence PosEntityInhibitManager::allEntityInhibitReasonDetailInfoFor</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>allEntityInhibitReasonDetailInfoFor</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitReasonDetailInfoFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="256" column="44"/>
+        <references refid="interface_pos_entity_inhibit_manager_1ae5dab4120d1c5f2714187c65b5739a23">allEntityInhibitReasonDetailInfoFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1ae5dab4120d1c5f2714187c65b5739a23">allEntityInhibitReasonDetailInfoFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1a7099626f18982887fb1029dccbd42da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibitManager::removeAllExceptionLotsByLot</definition>
+        <argsstring>(in objectIdentifier lotID)</argsstring>
+        <name>removeAllExceptionLotsByLot</name>
+        <qualifiedname>PosEntityInhibitManager::removeAllExceptionLotsByLot</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="263" column="8"/>
+        <references refid="interface_pos_entity_inhibit_manager_1a7099626f18982887fb1029dccbd42da3">removeAllExceptionLotsByLot</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1a7099626f18982887fb1029dccbd42da3">removeAllExceptionLotsByLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1aab1e0484e274ea2c6a5feeb462836f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::getEntityInhibitsWithExceptionLotByLot</definition>
+        <argsstring>(in objectIdentifier lotID)</argsstring>
+        <name>getEntityInhibitsWithExceptionLotByLot</name>
+        <qualifiedname>PosEntityInhibitManager::getEntityInhibitsWithExceptionLotByLot</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="269" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1aab1e0484e274ea2c6a5feeb462836f0d">getEntityInhibitsWithExceptionLotByLot</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1aab1e0484e274ea2c6a5feeb462836f0d">getEntityInhibitsWithExceptionLotByLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1adbbef1445d9122f7860de9a88d47c7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a92df36f75b851ac17df412b85751066a" kindref="member">PosEntityInhibitSequence</ref></type>
+        <definition>PosEntityInhibitSequence PosEntityInhibitManager::allEntityInhibitsForDurableUsingSpecifiedEntities</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID, in PosMachine machine, in PosEntityIdentifierSequence entities)</argsstring>
+        <name>allEntityInhibitsForDurableUsingSpecifiedEntities</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitsForDurableUsingSpecifiedEntities</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>machine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="276" column="28"/>
+        <references refid="interface_pos_entity_inhibit_manager_1adbbef1445d9122f7860de9a88d47c7c0">allEntityInhibitsForDurableUsingSpecifiedEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1adbbef1445d9122f7860de9a88d47c7c0">allEntityInhibitsForDurableUsingSpecifiedEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_manager_1afb6c4aba96ef663d1f7ee978b3d773cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a8dd07fcad9f61f5e846ae17ebd06e168" kindref="member">PosEntityInhibitRecordSequence</ref></type>
+        <definition>PosEntityInhibitRecordSequence PosEntityInhibitManager::allEntityInhibitRecordsForDurableEntities</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities)</argsstring>
+        <name>allEntityInhibitRecordsForDurableEntities</name>
+        <qualifiedname>PosEntityInhibitManager::allEntityInhibitRecordsForDurableEntities</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/peninmg.idl" line="289" column="34"/>
+        <references refid="interface_pos_entity_inhibit_manager_1afb6c4aba96ef663d1f7ee978b3d773cd">allEntityInhibitRecordsForDurableEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_manager_1afb6c4aba96ef663d1f7ee978b3d773cd">allEntityInhibitRecordsForDurableEntities</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="1">
+        <label>PosEntityInhibitManager</label>
+        <link refid="interface_pos_entity_inhibit_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="1">
+        <label>PosEntityInhibitManager</label>
+        <link refid="interface_pos_entity_inhibit_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/peninmg.idl" line="40" column="11" bodyfile="poscimfw/include/peninmg.idl" bodystart="40" bodyend="297"/>
+    <listofallmembers>
+      <member refid="interface_pos_entity_inhibit_manager_1ae5dab4120d1c5f2714187c65b5739a23" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitReasonDetailInfoFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1aecf52a24c760e759d92791d5e4c91e5c" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitRecords</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a32862b8601149bdb0f79f2c4d8eff811" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitRecordsFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1afb6c4aba96ef663d1f7ee978b3d773cd" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitRecordsForDurableEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a34fa1555ae270fe39e352cb8b12766f1" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitRecordsForLot</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a99786283fe69793757908945d4cda42f" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitRecordsForLotEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ac248535865ba8060c975a8b047993c8f" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibits</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ae6d2ed398d9dfaa574db138c1717baea" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitsFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1adbbef1445d9122f7860de9a88d47c7c0" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitsForDurableUsingSpecifiedEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a19bb3a97accfac5a7f4565f4557f281f" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitsForLot</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a63380c53431fad97cce5f511944aa085" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allEntityInhibitsForLotUsingSpecifiedEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ae784abe43ae83e43bc2781eef70bc241" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allRelatedEntityInhibits</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a9df742f95bb9e3454d9110c1b004cdad" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>allRelatedEntityInhibitsWithAttribute</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ab3255ffd47013fb2cbc450ffa7aad01e" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>createEntityInhibit</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a020b4932771d825141a277f22c0dd78f" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>findEntityInhibitNamed</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ac7108f09a50823e4fc909cb919023da0" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>findEntityInhibitRecordByKey</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a5146b0f803a3a5877a44766042697c4e" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>getAllEntityInhibitRecordsByKey</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ac896291c643e9385ab0ff9ade9802dd5" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>getEntityInhibitRecordsFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1aab1e0484e274ea2c6a5feeb462836f0d" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>getEntityInhibitsWithExceptionLotByLot</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a52403808080cfc574017b8c705b0cc85" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>isInhibitFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a540695cf1445073c07e4a18782839bf2" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>isInhibitRecordFor</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1aa109119f929a240096311f5e8ddcfc02" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>PosEntityInhibitManager_init</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a7099626f18982887fb1029dccbd42da3" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>removeAllExceptionLotsByLot</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a11231f009f59e69247c88e93157923be" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>removeAllRelatedEntityInhibits</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1a2fd4be339dd87a0dacd12984eeefc071" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>removeAllRelatedEntityInhibitsWithAttribute</name></member>
+      <member refid="interface_pos_entity_inhibit_manager_1ab984fb410d1655296b0e29b8919ab1a3" prot="public" virt="non-virtual"><scope>PosEntityInhibitManager</scope><name>removeEntityInhibit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

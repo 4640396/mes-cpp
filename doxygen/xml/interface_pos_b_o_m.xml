@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_b_o_m" kind="interface" language="IDL" prot="public">
+    <compoundname>PosBOM</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pbom_8idl" local="no">pbom.idl</includes>
+    <innerclass refid="exception_pos_b_o_m_1_1_parts_duplicate_signal" prot="public">PosBOM::PartsDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_b_o_m_1_1_parts_not_found_signal" prot="public">PosBOM::PartsNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_b_o_m_1_1_set_b_o_m_info_failed_signal" prot="public">PosBOM::SetBOMInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_b_o_m_1a9c1d1b8826fa49d3c4b106357ccf5500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::PosBOM_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosBOM_init</name>
+        <qualifiedname>PosBOM::PosBOM_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="122" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a25851c51bec98ba38414b7b191ed3545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBOM::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosBOM::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="128" column="10"/>
+        <references refid="interface_pos_b_o_m_1a25851c51bec98ba38414b7b191ed3545">getIdentifier</references>
+        <referencedby refid="interface_pos_b_o_m_1a25851c51bec98ba38414b7b191ed3545">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1acf2e2d47ffa64ad506f559f1c281c420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosBOM::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="134" column="8"/>
+        <references refid="interface_pos_b_o_m_1acf2e2d47ffa64ad506f559f1c281c420">setIdentifier</references>
+        <referencedby refid="interface_pos_b_o_m_1acf2e2d47ffa64ad506f559f1c281c420">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a508f07953998db4390f256625eb4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosBOM::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="140" column="8"/>
+        <references refid="interface_pos_b_o_m_1a508f07953998db4390f256625eb4e3d4">setDescription</references>
+        <referencedby refid="interface_pos_b_o_m_1a508f07953998db4390f256625eb4e3d4">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a61e8adc500b08eb2419c77a1fa769081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosBOM::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosBOM::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="146" column="10"/>
+        <references refid="interface_pos_b_o_m_1a61e8adc500b08eb2419c77a1fa769081">getDescription</references>
+        <referencedby refid="interface_pos_b_o_m_1a61e8adc500b08eb2419c77a1fa769081">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a41003c8fb89cc256f93d7914ac06f1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::addParts</definition>
+        <argsstring>(in posParts aParts)</argsstring>
+        <name>addParts</name>
+        <qualifiedname>PosBOM::addParts</qualifiedname>
+        <param>
+          <type>in <ref refid="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" kindref="member">posParts</ref></type>
+          <declname>aParts</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_b_o_m_1_1_parts_duplicate_signal" kindref="compound">PartsDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="152" column="8"/>
+        <references refid="interface_pos_b_o_m_1a41003c8fb89cc256f93d7914ac06f1fb">addParts</references>
+        <referencedby refid="interface_pos_b_o_m_1a41003c8fb89cc256f93d7914ac06f1fb">addParts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1af1ff4f826f1f38dcafc69298ef970c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pptsmggl_8idl_1a23c0ab22c73fa0006fa6d42289019093" kindref="member">posParts</ref></type>
+        <definition>posParts PosBOM::findPartsFor</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPartsFor</name>
+        <qualifiedname>PosBOM::findPartsFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="158" column="12"/>
+        <references refid="interface_pos_b_o_m_1af1ff4f826f1f38dcafc69298ef970c7d">findPartsFor</references>
+        <referencedby refid="interface_pos_b_o_m_1af1ff4f826f1f38dcafc69298ef970c7d">findPartsFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1ae1b46e6443729fbdc27dafd7a9400fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pptsmggl_8idl_1af39a33d97a27e01ce2e6763f20963683" kindref="member">PosPartsSequence</ref></type>
+        <definition>PosPartsSequence PosBOM::allParts</definition>
+        <argsstring>()</argsstring>
+        <name>allParts</name>
+        <qualifiedname>PosBOM::allParts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="164" column="20"/>
+        <references refid="interface_pos_b_o_m_1ae1b46e6443729fbdc27dafd7a9400fd9">allParts</references>
+        <referencedby refid="interface_pos_b_o_m_1ae1b46e6443729fbdc27dafd7a9400fd9">allParts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a3e4bc02d546ec03a459cfe346616bc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::removeParts</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>removeParts</name>
+        <qualifiedname>PosBOM::removeParts</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_b_o_m_1_1_parts_not_found_signal" kindref="compound">PartsNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="170" column="8"/>
+        <references refid="interface_pos_b_o_m_1a3e4bc02d546ec03a459cfe346616bc48">removeParts</references>
+        <referencedby refid="interface_pos_b_o_m_1a3e4bc02d546ec03a459cfe346616bc48">removeParts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a657bc0719512dfa7a4cc7850b2151084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::removeAllParts</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllParts</name>
+        <qualifiedname>PosBOM::removeAllParts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="176" column="8"/>
+        <references refid="interface_pos_b_o_m_1a657bc0719512dfa7a4cc7850b2151084">removeAllParts</references>
+        <referencedby refid="interface_pos_b_o_m_1a657bc0719512dfa7a4cc7850b2151084">removeAllParts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_b_o_m_1a70e5ea342a25f02133c069f88ad3921f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosBOM::setBOMInfo</definition>
+        <argsstring>(in brBOMInfo BOMInfo)</argsstring>
+        <name>setBOMInfo</name>
+        <qualifiedname>PosBOM::setBOMInfo</qualifiedname>
+        <param>
+          <type>in brBOMInfo</type>
+          <declname>BOMInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_b_o_m_1_1_set_b_o_m_info_failed_signal" kindref="compound">SetBOMInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pbom.idl" line="182" column="7"/>
+        <references refid="interface_pos_b_o_m_1a70e5ea342a25f02133c069f88ad3921f">setBOMInfo</references>
+        <referencedby refid="interface_pos_b_o_m_1a70e5ea342a25f02133c069f88ad3921f">setBOMInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosBOM</label>
+        <link refid="interface_pos_b_o_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosBOM</label>
+        <link refid="interface_pos_b_o_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pbom.idl" line="40" column="11" bodyfile="poscimfw/include/pbom.idl" bodystart="40" bodyend="190"/>
+    <listofallmembers>
+      <member refid="interface_pos_b_o_m_1a41003c8fb89cc256f93d7914ac06f1fb" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>addParts</name></member>
+      <member refid="interface_pos_b_o_m_1ae1b46e6443729fbdc27dafd7a9400fd9" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>allParts</name></member>
+      <member refid="interface_pos_b_o_m_1af1ff4f826f1f38dcafc69298ef970c7d" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>findPartsFor</name></member>
+      <member refid="interface_pos_b_o_m_1a61e8adc500b08eb2419c77a1fa769081" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>getDescription</name></member>
+      <member refid="interface_pos_b_o_m_1a25851c51bec98ba38414b7b191ed3545" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_b_o_m_1a9c1d1b8826fa49d3c4b106357ccf5500" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>PosBOM_init</name></member>
+      <member refid="interface_pos_b_o_m_1a657bc0719512dfa7a4cc7850b2151084" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>removeAllParts</name></member>
+      <member refid="interface_pos_b_o_m_1a3e4bc02d546ec03a459cfe346616bc48" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>removeParts</name></member>
+      <member refid="interface_pos_b_o_m_1a70e5ea342a25f02133c069f88ad3921f" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>setBOMInfo</name></member>
+      <member refid="interface_pos_b_o_m_1a508f07953998db4390f256625eb4e3d4" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>setDescription</name></member>
+      <member refid="interface_pos_b_o_m_1acf2e2d47ffa64ad506f559f1c281c420" prot="public" virt="non-virtual"><scope>PosBOM</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

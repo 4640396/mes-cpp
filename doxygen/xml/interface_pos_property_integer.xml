@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_property_integer" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPropertyInteger</compoundname>
+    <basecompoundref refid="interface_pos_property_base" prot="public" virt="non-virtual">PosPropertyBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pptyint_8idl" local="no">pptyint.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_property_integer_1a6a652e8497b3ad686e55f6b3a635d0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosPropertyInteger::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <qualifiedname>PosPropertyInteger::getValue</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptyint.idl" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_integer_1a33ed27376939e241feec087cc825992d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyInteger::setValue</definition>
+        <argsstring>(in long value)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>PosPropertyInteger::setValue</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptyint.idl" line="62" column="8"/>
+        <references refid="interface_pos_property_integer_1a33ed27376939e241feec087cc825992d">setValue</references>
+        <referencedby refid="interface_pos_property_integer_1a33ed27376939e241feec087cc825992d">setValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_integer_1a8d2e62be6a2bd781b7bd070d5d4020f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyInteger::PosPropertyInteger_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPropertyInteger_init</name>
+        <qualifiedname>PosPropertyInteger::PosPropertyInteger_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptyint.idl" line="65" column="8"/>
+        <references refid="interface_pos_property_integer_1a8d2e62be6a2bd781b7bd070d5d4020f1">PosPropertyInteger_init</references>
+        <referencedby refid="interface_pos_property_integer_1a8d2e62be6a2bd781b7bd070d5d4020f1">PosPropertyInteger_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosPropertyInteger</label>
+        <link refid="interface_pos_property_integer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosPropertyInteger</label>
+        <link refid="interface_pos_property_integer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pptyint.idl" line="38" column="11" bodyfile="poscimfw/include/pptyint.idl" bodystart="38" bodyend="75"/>
+    <listofallmembers>
+      <member refid="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>getDataType</name></member>
+      <member refid="interface_pos_property_base_1aa80565da60664370f9253f0d5150dee6" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_property_integer_1a6a652e8497b3ad686e55f6b3a635d0a5" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>getValue</name></member>
+      <member refid="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>PosPropertyBase_init</name></member>
+      <member refid="interface_pos_property_integer_1a8d2e62be6a2bd781b7bd070d5d4020f1" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>PosPropertyInteger_init</name></member>
+      <member refid="interface_pos_property_base_1ac8268ca676328a9cbf6556de89d800f6" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_property_integer_1a33ed27376939e241feec087cc825992d" prot="public" virt="non-virtual"><scope>PosPropertyInteger</scope><name>setValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

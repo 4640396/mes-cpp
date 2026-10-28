@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const out='analysis/mes-cpp',read=f=>JSON.parse(fs.readFileSync(out+'/'+f)),write=(f,d)=>fs.writeFileSync(out+'/'+f,JSON.stringify(d,null,2));
+const r=read('deep-reviews.json'),d=read('deep-facts.json'),ms=read('method-index.json').methods,file='smtchcmf/frmwrkgl/cimfwdo.cpp';
+const extra=[{kind:'template_definition',file,qualified:'CIMFW_DO_EditGraph< EditNode_ >::initialize',line:1205,end_line:1318},{kind:'template_definition',file,qualified:'CIMFW_DO_EditGraph< EditNode_ >::maximalCost',line:1325,end_line:1353}];
+for(const [f,q] of [['poscimfw/pcdmg/C_pcodedo.cpp','CollectionHelper_FRCODE_UDATA::compareCollectionItemToHostVars'],['poscimfw/pcdmg/R_pcodedo.sqx','Reader_FRCODE_UDATA::Reader_FRCODE_UDATA']]){const a=ms.filter(m=>m.file===f&&m.qualified===q);if(a.length!==1)throw Error('方法不唯一 '+q);const {file,qualified,line,end_line}=a[0];extra.push({file,qualified,line,end_line});}
+for(const v of extra)if(!r.records.some(x=>x.file===v.file&&x.qualified===v.qualified&&x.line===v.line))r.records.push({...v,status:'body_reviewed_with_external_unknowns',report:'persistence-planner-deep.md',unknowns:['断言和列长宏','排序/连续序号/成本下界不变式','数据库运行验证']});
+r.currentFocus='已核实受配置限制的编辑图、完整更新成本上界、Reader 降序与四列比较，以及预算耗尽按 Modified 计费。继续收敛成本下界与排序前提，再拓展其他业务领域。';
+const n=(id,type,label)=>{if(!d.nodes.some(x=>x.id===id))d.nodes.push({id,type,label});};
+const e=(from,type,to,path,line,end_line,condition)=>{const v={from,type,to,sources:[{path,line,end_line}],...(condition?{condition}:{})};if(!d.edges.some(x=>JSON.stringify([x.from,x.type,x.to,x.sources])===JSON.stringify([v.from,v.type,v.to,v.sources])))d.edges.push(v);};
+for(const [id,label] of [['plannerInitialize','CIMFW_DO_EditGraph::initialize'],['plannerMaxCost','CIMFW_DO_EditGraph::maximalCost'],['codeUDReader','Reader_FRCODE_UDATA::Reader_FRCODE_UDATA'],['codeUDCompare','CollectionHelper_FRCODE_UDATA::compareCollectionItemToHostVars']])n(id,'Method',label);
+n('plannerGraphRule','Rule','搜索范围由头尾对角线和长度配置限制，不无条件枚举完整矩阵');
+n('codeUDCompareRule','Rule','只比较 NAME/TYPE/VALUE/ORIG 的列长范围，nullptr 按空串，返回 true 表示存在差异');
+e('plannerInitialize','HAS_RULE','plannerGraphRule',file,1205,1318);d.edges=d.edges.filter(x=>!(x.from==='plannerSearch'&&x.to==='plannerInitialize'));n('plannerInitializeWrapper','Method','CIMFW_DO_EditGraph::initialize(3 arguments)');e('plannerSearch','CALLS','plannerInitializeWrapper',file,2721,2737);e('plannerInitializeWrapper','CALLS','plannerInitialize',file,1086,1090,'转发时将 dLength 同时作为 dLength2');e('plannerThreshold','CALLS','plannerMaxCost',file,1845,1855);e('codeUDCompare','HAS_RULE','codeUDCompareRule','poscimfw/pcdmg/C_pcodedo.cpp',373,425);e('codeUDReader','READS','FRCODE_UDATA','poscimfw/pcdmg/R_pcodedo.sqx',101,101,'ORDER BY d_SeqNo DESC，缓存比较依赖顺序及序号约束');
+write('deep-reviews.json',r);write('deep-facts.json',d);console.log(JSON.stringify({reviews:r.records.length,added:extra.length}));

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_c_i_m_f_w___d_o___edit_node_base" kind="struct" language="C++" prot="public">
+    <compoundname>CIMFW_DO_EditNodeBase</compoundname>
+    <derivedcompoundref refid="struct_c_i_m_f_w___d_o___edit_node" prot="public" virt="non-virtual">CIMFW_DO_EditNode&lt; CIMFW_DO_SequenceCostForMerge &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_c_i_m_f_w___d_o___edit_node" prot="public" virt="non-virtual">CIMFW_DO_EditNode&lt; SubSQLCost &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_c_i_m_f_w___d_o___edit_node" prot="public" virt="non-virtual">CIMFW_DO_EditNode&lt; SQLCost_ &gt;</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EditOperation</name>
+        <qualifiedname>CIMFW_DO_EditNodeBase::EditOperation</qualifiedname>
+        <enumvalue id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7ca4bfcddbc5a3f61386659e3b769afa534" prot="public">
+          <name>Update</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad9288f73cab593781131be985855aedc" prot="public">
+          <name>Replace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7caae27e2ad9c3dcbedeb0e93f4a5764043" prot="public">
+          <name>Delete</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad76eff9ec607b6541a2ecbecda4be4ce" prot="public">
+          <name>Insert</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad79b2614c751173b2e5a2d71f5024cab" prot="public">
+          <name>NumOperations</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="788" column="5" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="788" bodyend="796"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_c_i_m_f_w___d_o___edit_node_base_1a8943f9699bce18b1892e3fe494d355fb" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char CIMFW_DO_EditNodeBase::EditOperationChar</definition>
+        <argsstring>[NumOperations+1]</argsstring>
+        <name>EditOperationChar</name>
+        <qualifiedname>CIMFW_DO_EditNodeBase::EditOperationChar</qualifiedname>
+        <initializer>= { &apos;U&apos;, &apos;R&apos;, &apos;D&apos;, &apos;I&apos;, &apos; &apos; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="797" column="23" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="932" bodyend="932"/>
+        <referencedby refid="cimfwdo_8cpp_1a326b81a8c8b245abbc94357317eeb41c" compoundref="cimfwdo_8cpp" startline="943" endline="992">operator&lt;&lt;</referencedby>
+        <referencedby refid="cimfwdo_8cpp_1acf068fd98be6a90ad1239fadeae8fd66" compoundref="cimfwdo_8cpp" startline="935" endline="938">operator&lt;&lt;</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>CIMFW_DO_EditNode&lt; SQLCost_ &gt;</label>
+        <link refid="struct_c_i_m_f_w___d_o___edit_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CIMFW_DO_EditNode&lt; CIMFW_DO_SequenceCostForMerge &gt;</label>
+        <link refid="struct_c_i_m_f_w___d_o___edit_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CIMFW_DO_EditNode&lt; SubSQLCost &gt;</label>
+        <link refid="struct_c_i_m_f_w___d_o___edit_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CIMFW_DO_EditNodeBase</label>
+        <link refid="struct_c_i_m_f_w___d_o___edit_node_base"/>
+      </node>
+    </inheritancegraph>
+    <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="787" column="1" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="787" bodyend="799"/>
+    <listofallmembers>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7caae27e2ad9c3dcbedeb0e93f4a5764043" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>Delete</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7c" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>EditOperation</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a8943f9699bce18b1892e3fe494d355fb" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>EditOperationChar</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad76eff9ec607b6541a2ecbecda4be4ce" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>Insert</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad79b2614c751173b2e5a2d71f5024cab" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>NumOperations</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7cad9288f73cab593781131be985855aedc" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>Replace</name></member>
+      <member refid="struct_c_i_m_f_w___d_o___edit_node_base_1a397cced68f1f3542c64072351e6bad7ca4bfcddbc5a3f61386659e3b769afa534" prot="public" virt="non-virtual"><scope>CIMFW_DO_EditNodeBase</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

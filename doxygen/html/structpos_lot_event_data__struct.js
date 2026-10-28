@@ -1,0 +1,26 @@
+var structpos_lot_event_data__struct =
+[
+    [ "bankID", "structpos_lot_event_data__struct.html#aa1f795aa18b9da3a705537bba2d8df00", null ],
+    [ "cassetteID", "structpos_lot_event_data__struct.html#af979bd9f9a4a40a40739c0bf1bd49f9d", null ],
+    [ "controlWaferQuantity", "structpos_lot_event_data__struct.html#ac3d95eb45f6b36c8cd309ce785ff3cba", null ],
+    [ "currentWaferQuantity", "structpos_lot_event_data__struct.html#a870e4c6b00b0ee67c61a36a9c9813ab5", null ],
+    [ "customerID", "structpos_lot_event_data__struct.html#a2579ab1f0071875a350535fd254ae288", null ],
+    [ "holdState", "structpos_lot_event_data__struct.html#afc4bc951846476bea189c2831dd34826", null ],
+    [ "lotID", "structpos_lot_event_data__struct.html#a4ed59f90ca7b97ebff47b7e7679d910d", null ],
+    [ "lotStatus", "structpos_lot_event_data__struct.html#a2945738a636bd16f092bf6b5213d5a97", null ],
+    [ "lotType", "structpos_lot_event_data__struct.html#a8c9f9dea6b72e637752da5671314ef69", null ],
+    [ "objrefMainPF", "structpos_lot_event_data__struct.html#a774213b56e5a0e5051d172af6b2e143e", null ],
+    [ "objrefModulePOS", "structpos_lot_event_data__struct.html#a8d5324e45436b9aeb098e829a85405a0", null ],
+    [ "objrefPO", "structpos_lot_event_data__struct.html#af05ff3ca9d3b10e0723def5238d8c13d", null ],
+    [ "objrefPOS", "structpos_lot_event_data__struct.html#adfd758deb7437689a5edf452109844df", null ],
+    [ "operationID", "structpos_lot_event_data__struct.html#a48d81504f963ce8c9361cfd53e23a5fe", null ],
+    [ "operationNumber", "structpos_lot_event_data__struct.html#ab2103e2e795e54e1241c2a4b3d869e9a", null ],
+    [ "operationPassCount", "structpos_lot_event_data__struct.html#a8d906bba5ac76eec0e30edc721cf1daf", null ],
+    [ "originalWaferQuantity", "structpos_lot_event_data__struct.html#a592440b39d939261d8de8849218562bc", null ],
+    [ "priorityClass", "structpos_lot_event_data__struct.html#aac1bc66dcfa0b9a76e224d98f254782b", null ],
+    [ "productID", "structpos_lot_event_data__struct.html#abb5b073d2d9957ee3f30c0c300172883", null ],
+    [ "productWaferQuantity", "structpos_lot_event_data__struct.html#ae4e078743d54a8cd108745b6edc28534", null ],
+    [ "routeID", "structpos_lot_event_data__struct.html#a71c9bac651775f6aa04f0d33dd16208d", null ],
+    [ "samplingWafers", "structpos_lot_event_data__struct.html#a134b7cbd912f426e7f24c793ede22ca8", null ],
+    [ "waferHistoryTimeStamp", "structpos_lot_event_data__struct.html#a0dd12e655c2617c1b2a27dbc376c3fa3", null ]
+];

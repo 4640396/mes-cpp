@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="mchnmnsp_8idl" kind="file" language="IDL">
+    <compoundname>mchnmnsp.idl</compoundname>
+    <includes local="yes">mchnmnof.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/mchnmnsp.idl</label>
+        <link refid="mchnmnsp_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="2">
+        <label>mchnmnof.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_s_p_machine_management_object_factory" prot="public">SPMachineManagementObjectFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>mchnmnsp.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//---------<sp/>--------<sp/>--------------<sp/>-----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/13/97<sp/><sp/>25805<sp/><sp/><sp/>D.<sp/>Hidalgo<sp/><sp/><sp/><sp/><sp/>New<sp/>release.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>02/10/02<sp/>D4100096<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>Reticle<sp/>Pod<sp/>Transfer<sp/>function<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//-----------<sp/>------------<sp/>--------------<sp/>-----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2008/06/22<sp/>DSIV00000099<sp/>M.Ogawa<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SLM<sp/>support.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2012/06/18<sp/>DSN000041621<sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Support<sp/>equipment<sp/>user<sp/>defined<sp/>data<sp/>with<sp/>dynamic<sp/>key<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2013/10/09<sp/>DSN000073003<sp/>T.Itou<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Equipment<sp/>Monitor<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mchnmnof.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_note" kindref="compound">PosMachineNote</ref><sp/>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_operation_procedure" kindref="compound">PosMachineOperationProcedure</ref><sp/>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_reticle_pod_port_resource" kindref="compound">PosReticlePodPortResource</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D4100096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_container" kindref="compound">PosMachineContainer</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00000099</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSIV00000099</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000073003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_eqp_monitor_job" kindref="compound">PosEqpMonitorJob</ref><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000073003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="interface_s_p_machine_management_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_s_p_machine_management_object_factory" kindref="compound">SPMachineManagementObjectFactory</ref><sp/>:<sp/>CIMFWMachineManagementObjectFactory,<sp/>MOFW_TransManagedObjectFactory</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="interface_s_p_machine_management_object_factory_1a0e7b7e1c0c624d23ddc50d0f1c2409b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_machine_note" kindref="compound">PosMachineNote</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1a0e7b7e1c0c624d23ddc50d0f1c2409b0" kindref="member">newPosMachineNote</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosMachineOperationProcedure<sp/>newPosMachineOperationProcedure();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="interface_s_p_machine_management_object_factory_1aaf946240d72a7a3d766399e1fe5a0d76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_machine_operation_procedure" kindref="compound">PosMachineOperationProcedure</ref><sp/><ref refid="interface_s_p_machine_management_object_factory_1aaf946240d72a7a3d766399e1fe5a0d76" kindref="member">newPosMachineOperationProcedure</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosReticlePodPortResource<sp/><sp/><sp/><sp/>newPosReticlePodPortResource()<sp/>;<sp/><sp/><sp/>//D4100096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="interface_s_p_machine_management_object_factory_1a6f753000a277a609bbbf3230752b8666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_reticle_pod_port_resource" kindref="compound">PosReticlePodPortResource</ref><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1a6f753000a277a609bbbf3230752b8666" kindref="member">newPosReticlePodPortResource</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey)<sp/>;<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="interface_s_p_machine_management_object_factory_1ae84f9baec715a7b5319c3d0f8b8b59b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_machine_container" kindref="compound">PosMachineContainer</ref><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1ae84f9baec715a7b5319c3d0f8b8b59b3" kindref="member">newPosMachineContainer</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey)<sp/>;<sp/></highlight><highlight class="comment">//DSIV00000099</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="interface_s_p_machine_management_object_factory_1a00abcbd36bc62328b3fcb77cfc60e6f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1a00abcbd36bc62328b3fcb77cfc60e6f4" kindref="member">newPosMachineContainerPosition</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey)<sp/>;<sp/></highlight><highlight class="comment">//DSIV00000099</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="interface_s_p_machine_management_object_factory_1ab7581c233eb678aea90739c6cef65499" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>userDataSetSequence<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1ab7581c233eb678aea90739c6cef65499" kindref="member">getMachineUserDataSets</ref><sp/>()<sp/>;<sp/><sp/></highlight><highlight class="comment">//DSN000041621</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="interface_s_p_machine_management_object_factory_1a0aee58a671c82d77801f08cacb5ea041" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1a0aee58a671c82d77801f08cacb5ea041" kindref="member">newPosEqpMonitor</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey)<sp/>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DSN000073003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="interface_s_p_machine_management_object_factory_1a259620a62eab39ef05790fe39df73d4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_eqp_monitor_job" kindref="compound">PosEqpMonitorJob</ref><sp/><sp/><sp/><sp/><ref refid="interface_s_p_machine_management_object_factory_1a259620a62eab39ef05790fe39df73d4a" kindref="member">newPosEqpMonitorJob</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey)<sp/>;<sp/></highlight><highlight class="comment">//DSN000073003</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/mchnmnsp.idl"/>
+  </compounddef>
+</doxygen>

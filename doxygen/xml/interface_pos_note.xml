@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_note" kind="interface" language="IDL" prot="public">
+    <compoundname>PosNote</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <derivedcompoundref refid="interface_pos_factory_note" prot="public" virt="non-virtual">PosFactoryNote</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_comment" prot="public" virt="non-virtual">PosLotComment</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_note" prot="public" virt="non-virtual">PosLotNote</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_lot_operation_note" prot="public" virt="non-virtual">PosLotOperationNote</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_machine_note" prot="public" virt="non-virtual">PosMachineNote</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_machine_operation_procedure" prot="public" virt="non-virtual">PosMachineOperationProcedure</derivedcompoundref>
+    <includes refid="pnote_8idl" local="no">pnote.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_note_1a9fef2f556ad6c69fe29fc34b77a8f910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setContents</definition>
+        <argsstring>(in string aContent)</argsstring>
+        <name>setContents</name>
+        <qualifiedname>PosNote::setContents</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aContent</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a9e6f74018a3b101820bbd7ea1e24768b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosNote::getContents</definition>
+        <argsstring>()</argsstring>
+        <name>getContents</name>
+        <qualifiedname>PosNote::getContents</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setPerson</name>
+        <qualifiedname>PosNote::setPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="73" column="8"/>
+        <references refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1">setPerson</references>
+        <referencedby refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1">setPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a970b5e109234e2ebb680d914f958a403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosNote::getPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getPerson</name>
+        <qualifiedname>PosNote::getPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="79" column="13"/>
+        <references refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403">getPerson</references>
+        <referencedby refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403">getPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setLastUpdateTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setLastUpdateTimeStamp</name>
+        <qualifiedname>PosNote::setLastUpdateTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="85" column="8"/>
+        <references refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847">setLastUpdateTimeStamp</references>
+        <referencedby refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847">setLastUpdateTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosNote::getLastUpdateTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastUpdateTimeStamp</name>
+        <qualifiedname>PosNote::getLastUpdateTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="91" column="13"/>
+        <references refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978">getLastUpdateTimeStamp</references>
+        <referencedby refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978">getLastUpdateTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setExpiredTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setExpiredTimeStamp</name>
+        <qualifiedname>PosNote::setExpiredTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="98" column="8"/>
+        <references refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b">setExpiredTimeStamp</references>
+        <referencedby refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b">setExpiredTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosNote::getExpiredTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getExpiredTimeStamp</name>
+        <qualifiedname>PosNote::getExpiredTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="104" column="13"/>
+        <references refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1">getExpiredTimeStamp</references>
+        <referencedby refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1">getExpiredTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setTitle</definition>
+        <argsstring>(in string title)</argsstring>
+        <name>setTitle</name>
+        <qualifiedname>PosNote::setTitle</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>title</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="110" column="8"/>
+        <references refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831">setTitle</references>
+        <referencedby refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831">setTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a8193fbe5508727b23580600a273b42ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosNote::getTitle</definition>
+        <argsstring>()</argsstring>
+        <name>getTitle</name>
+        <qualifiedname>PosNote::getTitle</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="116" column="10"/>
+        <references refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea">getTitle</references>
+        <referencedby refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea">getTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosNote::isTypeString</definition>
+        <argsstring>()</argsstring>
+        <name>isTypeString</name>
+        <qualifiedname>PosNote::isTypeString</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="123" column="11"/>
+        <references refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651">isTypeString</references>
+        <referencedby refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651">isTypeString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1af061681010937053e955151f3a47cba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::makeTypeString</definition>
+        <argsstring>()</argsstring>
+        <name>makeTypeString</name>
+        <qualifiedname>PosNote::makeTypeString</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="129" column="8"/>
+        <references refid="interface_pos_note_1af061681010937053e955151f3a47cba0">makeTypeString</references>
+        <referencedby refid="interface_pos_note_1af061681010937053e955151f3a47cba0">makeTypeString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a57bd850a71eda057009f84a4938beabd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosNote::isTypeFile</definition>
+        <argsstring>()</argsstring>
+        <name>isTypeFile</name>
+        <qualifiedname>PosNote::isTypeFile</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="136" column="11"/>
+        <references refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd">isTypeFile</references>
+        <referencedby refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd">isTypeFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1ae796802aede60a3f18b200bae842b887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::makeTypeFile</definition>
+        <argsstring>()</argsstring>
+        <name>makeTypeFile</name>
+        <qualifiedname>PosNote::makeTypeFile</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="142" column="8"/>
+        <references refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887">makeTypeFile</references>
+        <referencedby refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887">makeTypeFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::setCreatedTimeStamp</definition>
+        <argsstring>(in TimeStamp aCreatedTimeStamp)</argsstring>
+        <name>setCreatedTimeStamp</name>
+        <qualifiedname>PosNote::setCreatedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aCreatedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="148" column="8"/>
+        <references refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da">setCreatedTimeStamp</references>
+        <referencedby refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da">setCreatedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosNote::getCreatedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getCreatedTimeStamp</name>
+        <qualifiedname>PosNote::getCreatedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="154" column="13"/>
+        <references refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47">getCreatedTimeStamp</references>
+        <referencedby refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47">getCreatedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1ab51452a838acf129b944c31f192212b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosNote::PosNote_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosNote_init</name>
+        <qualifiedname>PosNote::PosNote_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="157" column="8"/>
+        <references refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6">PosNote_init</references>
+        <referencedby refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6">PosNote_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosNote::getPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getPersonID</name>
+        <qualifiedname>PosNote::getPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pnote.idl" line="166" column="10"/>
+        <references refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de">getPersonID</references>
+        <referencedby refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de">getPersonID</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="3">
+        <label>PosFactoryNote</label>
+        <link refid="interface_pos_factory_note"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PosLotComment</label>
+        <link refid="interface_pos_lot_comment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PosLotNote</label>
+        <link refid="interface_pos_lot_note"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PosLotOperationNote</label>
+        <link refid="interface_pos_lot_operation_note"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PosMachineNote</label>
+        <link refid="interface_pos_machine_note"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PosMachineOperationProcedure</label>
+        <link refid="interface_pos_machine_operation_procedure"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosNote</label>
+        <link refid="interface_pos_note"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pnote.idl" line="40" column="11" bodyfile="poscimfw/include/pnote.idl" bodystart="40" bodyend="173"/>
+    <listofallmembers>
+      <member refid="interface_pos_note_1a9e6f74018a3b101820bbd7ea1e24768b" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getContents</name></member>
+      <member refid="interface_pos_note_1a57aeec5f70b57821f1bdc3b84e83fd47" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1ad5fff24a7fac852cb54ef59cb1a22eb1" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1adf8ed58492c592ae9118ffe779a0b978" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_note_1a970b5e109234e2ebb680d914f958a403" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getPerson</name></member>
+      <member refid="interface_pos_note_1a503233beb7ba1c8833c1ea334d7697de" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getPersonID</name></member>
+      <member refid="interface_pos_note_1a8193fbe5508727b23580600a273b42ea" prot="public" virt="non-virtual"><scope>PosNote</scope><name>getTitle</name></member>
+      <member refid="interface_pos_note_1a57bd850a71eda057009f84a4938beabd" prot="public" virt="non-virtual"><scope>PosNote</scope><name>isTypeFile</name></member>
+      <member refid="interface_pos_note_1a0fa6701fcaee2e82a4536bfb10918651" prot="public" virt="non-virtual"><scope>PosNote</scope><name>isTypeString</name></member>
+      <member refid="interface_pos_note_1ae796802aede60a3f18b200bae842b887" prot="public" virt="non-virtual"><scope>PosNote</scope><name>makeTypeFile</name></member>
+      <member refid="interface_pos_note_1af061681010937053e955151f3a47cba0" prot="public" virt="non-virtual"><scope>PosNote</scope><name>makeTypeString</name></member>
+      <member refid="interface_pos_note_1ab51452a838acf129b944c31f192212b6" prot="public" virt="non-virtual"><scope>PosNote</scope><name>PosNote_init</name></member>
+      <member refid="interface_pos_note_1a9fef2f556ad6c69fe29fc34b77a8f910" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setContents</name></member>
+      <member refid="interface_pos_note_1a1110b612d3dde8dccb7209941f1797da" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setCreatedTimeStamp</name></member>
+      <member refid="interface_pos_note_1aebe4670b12cc88fe5f64db3b438d292b" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setExpiredTimeStamp</name></member>
+      <member refid="interface_pos_note_1ab70bf865df0f3e3f998b2dea6ea0a847" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setLastUpdateTimeStamp</name></member>
+      <member refid="interface_pos_note_1a11f5f86c6703e1b1dd6a56df3d3520e1" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setPerson</name></member>
+      <member refid="interface_pos_note_1ab349b52362dd7d7857bc6bdf7c8c3831" prot="public" virt="non-virtual"><scope>PosNote</scope><name>setTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

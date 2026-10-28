@@ -1,0 +1,27 @@
+var interface_pos_area =
+[
+    [ "SetLocationInfoFailedSignal", "exception_pos_area_1_1_set_location_info_failed_signal.html", "exception_pos_area_1_1_set_location_info_failed_signal" ],
+    [ "SetWorkAreaInfoFailedSignal", "exception_pos_area_1_1_set_work_area_info_failed_signal.html", "exception_pos_area_1_1_set_work_area_info_failed_signal" ],
+    [ "addSLMUnderTrackStorages", "interface_pos_area.html#a12da1a1f886ae70a31df39ae64b163be", null ],
+    [ "addUnderTrackStorages", "interface_pos_area.html#a23c8ec217c496d6dc04937c90ab87235", null ],
+    [ "allSLMUnderTrackStorages", "interface_pos_area.html#ac13410f1e4943d6affd432223effed2c", null ],
+    [ "allUnderTrackStorages", "interface_pos_area.html#a9a1d81a01e183934f2437376bf89daed", null ],
+    [ "findProcessMachineNamed", "interface_pos_area.html#aed3f73d417ddc76d52565a4603d9e3e0", null ],
+    [ "findSLMUnderTrackStoragesNamed", "interface_pos_area.html#aab0e18b02802f93c1f5d9fbd2809b65e", null ],
+    [ "findStorageMachineNamed", "interface_pos_area.html#ae2bffe531a6583103079d72bc2af9360", null ],
+    [ "findUnderTrackStoragesNamed", "interface_pos_area.html#a6f23af4959bcb2f6612ae0d8102e6a23", null ],
+    [ "getCategory", "interface_pos_area.html#a51f43b44af0b863753aefe3d656bcf6e", null ],
+    [ "getDescription", "interface_pos_area.html#a1dbc351561bcdb892a1e7957237cc224", null ],
+    [ "PosArea_init", "interface_pos_area.html#a89d113be64e5d01f9b5f50df3508bc12", null ],
+    [ "removeAllMachines", "interface_pos_area.html#afd5f88b3cdb40a69b1fec26f3a901db4", null ],
+    [ "removeAllSLMUnderTrackStorages", "interface_pos_area.html#ac9d7fe374956bdd86574378b52e47692", null ],
+    [ "removeAllStorageMachines", "interface_pos_area.html#a4949f82ba3c8006949d270e81d5d85ae", null ],
+    [ "removeAllUnderTrackStorages", "interface_pos_area.html#ae2c1e18db9d807d4392c94a379538b86", null ],
+    [ "removeSLMUnderTrackStorages", "interface_pos_area.html#a35753ebe502b7fe3b52c7824e551d17b", null ],
+    [ "removeUnderTrackStorages", "interface_pos_area.html#a07b8b0fc68741963ffe15c8c437e4d96", null ],
+    [ "setCategory", "interface_pos_area.html#a767708ebe955d38b3f138897e6077e86", null ],
+    [ "setDescription", "interface_pos_area.html#a68ce80eafe70152048e78f6500777ad7", null ],
+    [ "setLocationInfo", "interface_pos_area.html#a7e2124ae2b250542b3f214ea0491311e", null ],
+    [ "setWorkAreaInfo", "interface_pos_area.html#a0220ac3aff62b5b0ad08871d8b61a1a4", null ],
+    [ "setWorkAreaInfo__100", "interface_pos_area.html#af48f578ad7f0226e527f288c97d0479f", null ]
+];

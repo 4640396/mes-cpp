@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pabclgl_8idl" kind="file" language="IDL">
+    <compoundname>pabclgl.idl</compoundname>
+    <includedby refid="ppptset_8idl" local="yes">poscimfw/include/ppptset.idl</includedby>
+    <includedby refid="pptybas_8idl" local="yes">poscimfw/include/pptybas.idl</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pabclgl.idl</label>
+        <link refid="pabclgl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>poscimfw/include/ppptset.idl</label>
+        <link refid="ppptset_8idl"/>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pptybas.idl</label>
+        <link refid="pptybas_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pptyint.idl</label>
+        <link refid="pptyint_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/pptyrea.idl</label>
+        <link refid="pptyrea_8idl"/>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pptystr.idl</label>
+        <link refid="pptystr_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/pptytsi.idl</label>
+        <link refid="pptytsi_8idl"/>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pptytsr.idl</label>
+        <link refid="pptytsr_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pptytss.idl</label>
+        <link refid="pptytss_8idl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_table_s_s_data__struct" prot="public">posTableSSData_struct</innerclass>
+    <innerclass refid="structpos_table_s_i_data__struct" prot="public">posTableSIData_struct</innerclass>
+    <innerclass refid="structpos_table_s_r_data__struct" prot="public">posTableSRData_struct</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216" prot="public" static="no" strong="no">
+        <type></type>
+        <name>posPropertyType</name>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a83ccab8dfcfc3a9e8656224313fb61f3" prot="public">
+          <name>StringType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a90453dde1506c63dbaaa7a1a363a06a9" prot="public">
+          <name>IntegerType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a759f01f2bd7745a2ff248c9d9fa7ca39" prot="public">
+          <name>RealType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a02a0b626ac0734d9a851cc369339300e" prot="public">
+          <name>TableSSType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a5502fe8eddaed646df8e91fcc8fe650a" prot="public">
+          <name>TableSIType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a58ebec38efde129a6e15db4c1f29cb30" prot="public">
+          <name>TableSRType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="45" column="1" bodyfile="poscimfw/include/pabclgl.idl" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pabclgl_8idl_1a326b51ee2048abb8190a76dab59a718d" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_property_base" kindref="compound">PosPropertyBase</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosPropertyBase&gt; PosPropertySequence</definition>
+        <argsstring></argsstring>
+        <name>PosPropertySequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="37" column="18" bodyfile="poscimfw/include/pabclgl.idl" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a26614eb05c6dd8848b9f9a98fbafa5e0" prot="public" static="no">
+        <type>struct <ref refid="structpos_table_s_s_data__struct" kindref="compound">posTableSSData_struct</ref></type>
+        <definition>typedef struct posTableSSData_struct posTableSSData</definition>
+        <argsstring></argsstring>
+        <name>posTableSSData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="56" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a164903aee88cdd1acb6a2ab612b4f1f4" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pabclgl_8idl_1a26614eb05c6dd8848b9f9a98fbafa5e0" kindref="member">posTableSSData</ref> &gt;</type>
+        <definition>typedef sequence&lt;posTableSSData&gt; PosTableSSDataSequence</definition>
+        <argsstring></argsstring>
+        <name>PosTableSSDataSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="64" column="18" bodyfile="poscimfw/include/pabclgl.idl" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a2272757db02762a6fc72a0b757ab0c58" prot="public" static="no">
+        <type>struct <ref refid="structpos_table_s_i_data__struct" kindref="compound">posTableSIData_struct</ref></type>
+        <definition>typedef struct posTableSIData_struct posTableSIData</definition>
+        <argsstring></argsstring>
+        <name>posTableSIData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="75" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a40d84f789c7ac165d258e61c88f2bfa6" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pabclgl_8idl_1a2272757db02762a6fc72a0b757ab0c58" kindref="member">posTableSIData</ref> &gt;</type>
+        <definition>typedef sequence&lt;posTableSIData&gt; PosTableSIDataSequence</definition>
+        <argsstring></argsstring>
+        <name>PosTableSIDataSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="83" column="18" bodyfile="poscimfw/include/pabclgl.idl" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a3c2168785eae174dd403b8510b0085ec" prot="public" static="no">
+        <type>struct <ref refid="structpos_table_s_r_data__struct" kindref="compound">posTableSRData_struct</ref></type>
+        <definition>typedef struct posTableSRData_struct posTableSRData</definition>
+        <argsstring></argsstring>
+        <name>posTableSRData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="94" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pabclgl_8idl_1a1feb9e2315d7da44aa5979e237449409" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pabclgl_8idl_1a3c2168785eae174dd403b8510b0085ec" kindref="member">posTableSRData</ref> &gt;</type>
+        <definition>typedef sequence&lt;posTableSRData&gt; PosTableSRDataSequence</definition>
+        <argsstring></argsstring>
+        <name>PosTableSRDataSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pabclgl.idl" line="102" column="18" bodyfile="poscimfw/include/pabclgl.idl" bodystart="102" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pabcl/pabclgl.idl,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/13/07<sp/>19:12:43<sp/>[<sp/>7/13/07<sp/>19:16:51<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Module:<sp/>PAbClGl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem:<sp/><sp/>POSEIDON_CIM_FW::Poseidon_Utility_Class_Group::Poseidon_Abstract_Class_Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Source<sp/>file:<sp/><sp/>\\Spdsvr1\D_DRIVE\POSFW\poscimfw\pabcl\pabclgl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/poscimfw/pabcl/pabclgl.idl,<sp/>fw_sp_1_1_idl,<sp/>fw_sp_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PAbClGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAbClGl_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_property_base" kindref="compound">PosPropertyBase</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PosPropertySequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>type<sp/>represents<sp/>a<sp/>set<sp/>of<sp/>posProperties.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosPropertyBase&gt;<sp/>PosPropertySequenc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="pabclgl_8idl_1a326b51ee2048abb8190a76dab59a718d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosPropertyBase&gt;<sp/><ref refid="pabclgl_8idl_1a326b51ee2048abb8190a76dab59a718d" kindref="member">PosPropertySequence</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>posPropertyType<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Enumeration<sp/>of<sp/>Propert<sp/>Type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216" kindref="member">posPropertyType</ref></highlight></codeline>
+<codeline lineno="46" refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a90453dde1506c63dbaaa7a1a363a06a9" refkind="member"><highlight class="normal"><sp/><sp/>{<ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a83ccab8dfcfc3a9e8656224313fb61f3" kindref="member">StringType</ref>,<sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a90453dde1506c63dbaaa7a1a363a06a9" kindref="member">IntegerType</ref>,<sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a759f01f2bd7745a2ff248c9d9fa7ca39" kindref="member">RealType</ref>,<sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a02a0b626ac0734d9a851cc369339300e" kindref="member">TableSSType</ref>,<sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a5502fe8eddaed646df8e91fcc8fe650a" kindref="member">TableSIType</ref>,<sp/><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216a58ebec38efde129a6e15db4c1f29cb30" kindref="member">TableSRType</ref>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posTableSSData<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>posTableSSData_struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>keyValue;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>value;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structpos_table_s_s_data__struct_1a7746059f5b74291b8e670d025d18ded3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_table_s_s_data__struct" kindref="compound">posTableSSData_struct</ref><sp/>{</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_s_data__struct_1a7746059f5b74291b8e670d025d18ded3" kindref="member">keyValue</ref>;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_s_data__struct_1ae212c450148ec521a386b818791f1123" kindref="member">value</ref>;}<sp/><ref refid="pabclgl_8idl_1a26614eb05c6dd8848b9f9a98fbafa5e0" kindref="member">posTableSSData</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTableSSDataSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posTableSSData&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="pabclgl_8idl_1a164903aee88cdd1acb6a2ab612b4f1f4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posTableSSData&gt;<sp/><ref refid="pabclgl_8idl_1a164903aee88cdd1acb6a2ab612b4f1f4" kindref="member">PosTableSSDataSequence</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posTableSIData<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>posTableSSData_struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>keyValue;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>value;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structpos_table_s_i_data__struct_1a54c68b8aad9218234120fb616b47a2a7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_table_s_i_data__struct" kindref="compound">posTableSIData_struct</ref><sp/>{</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_i_data__struct_1a54c68b8aad9218234120fb616b47a2a7" kindref="member">keyValue</ref>;<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_i_data__struct_1a5d0399afdee0fd61f2cebd0c949a2b51" kindref="member">value</ref>;}<sp/><ref refid="pabclgl_8idl_1a2272757db02762a6fc72a0b757ab0c58" kindref="member">posTableSIData</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTableSIDataSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posTableSIData&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="pabclgl_8idl_1a40d84f789c7ac165d258e61c88f2bfa6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posTableSIData&gt;<sp/><ref refid="pabclgl_8idl_1a40d84f789c7ac165d258e61c88f2bfa6" kindref="member">PosTableSIDataSequence</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posTableSRData<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>posTableSRData_struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>keyValue;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>value;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structpos_table_s_r_data__struct_1aae0284a0e03a2bab4ff0a00fc8828a22" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_table_s_r_data__struct" kindref="compound">posTableSRData_struct</ref><sp/>{</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_r_data__struct_1aae0284a0e03a2bab4ff0a00fc8828a22" kindref="member">keyValue</ref>;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_table_s_r_data__struct_1a6143ad57221809b27c5e20af6ad72e9a" kindref="member">value</ref>;}<sp/><ref refid="pabclgl_8idl_1a3c2168785eae174dd403b8510b0085ec" kindref="member">posTableSRData</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTableSRDataSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posTableSRData&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Poseidon<sp/>Abstract<sp/>Class<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="pabclgl_8idl_1a1feb9e2315d7da44aa5979e237449409" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posTableSRData&gt;<sp/><ref refid="pabclgl_8idl_1a1feb9e2315d7da44aa5979e237449409" kindref="member">PosTableSRDataSequence</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pabclgl.idl"/>
+  </compounddef>
+</doxygen>

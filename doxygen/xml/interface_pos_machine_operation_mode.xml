@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_machine_operation_mode" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMachineOperationMode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pmom_8idl" local="no">pmom.idl</includes>
+    <innerclass refid="exception_pos_machine_operation_mode_1_1_set_machine_operation_mode_info_failed_signal" prot="public">PosMachineOperationMode::SetMachineOperationModeInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a2c2736a3c04bff1c09d8adeb08fa195a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::PosMachineOperationMode_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineOperationMode_init</name>
+        <qualifiedname>PosMachineOperationMode::PosMachineOperationMode_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1ae8cdc7073c933e955c5a179b7669b9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::PosMachineOperationMode_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineOperationMode_uninit</name>
+        <qualifiedname>PosMachineOperationMode::PosMachineOperationMode_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="83" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1ae8cdc7073c933e955c5a179b7669b9af">PosMachineOperationMode_uninit</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1ae8cdc7073c933e955c5a179b7669b9af">PosMachineOperationMode_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1ab5faf83350332f69314cae5383cb91ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setMachineOperationModeInfo</definition>
+        <argsstring>(in brOperationModeInfo MachineOperationModeInfo)</argsstring>
+        <name>setMachineOperationModeInfo</name>
+        <qualifiedname>PosMachineOperationMode::setMachineOperationModeInfo</qualifiedname>
+        <param>
+          <type>in brOperationModeInfo</type>
+          <declname>MachineOperationModeInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_machine_operation_mode_1_1_set_machine_operation_mode_info_failed_signal" kindref="compound">SetMachineOperationModeInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="89" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1ab5faf83350332f69314cae5383cb91ba">setMachineOperationModeInfo</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1ab5faf83350332f69314cae5383cb91ba">setMachineOperationModeInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a22cf091905c53ae0ff28c5f522c7f0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosMachineOperationMode::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="95" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1a22cf091905c53ae0ff28c5f522c7f0f0">setIdentifier</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a22cf091905c53ae0ff28c5f522c7f0f0">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a495b03b85b6359ed23b5ab3c68031bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosMachineOperationMode::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="101" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1a495b03b85b6359ed23b5ab3c68031bdf">getIdentifier</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a495b03b85b6359ed23b5ab3c68031bdf">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1afecfd31e18124b3c2d39b766a62062d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosMachineOperationMode::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="107" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1afecfd31e18124b3c2d39b766a62062d0">setDescription</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1afecfd31e18124b3c2d39b766a62062d0">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a0d93ba3e94b0a1915b3c7ce1ac5988bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosMachineOperationMode::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="113" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1a0d93ba3e94b0a1915b3c7ce1ac5988bb">getDescription</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a0d93ba3e94b0a1915b3c7ce1ac5988bb">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1aa04f5e7a452d8964630cff4b013a3751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setOperationModeID</definition>
+        <argsstring>(in string anOperationModeID)</argsstring>
+        <name>setOperationModeID</name>
+        <qualifiedname>PosMachineOperationMode::setOperationModeID</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anOperationModeID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="119" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1aa04f5e7a452d8964630cff4b013a3751">setOperationModeID</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1aa04f5e7a452d8964630cff4b013a3751">setOperationModeID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a4d9c4f7c30d0fa2d6741054ee206492f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getOperationModeID</definition>
+        <argsstring>()</argsstring>
+        <name>getOperationModeID</name>
+        <qualifiedname>PosMachineOperationMode::getOperationModeID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="125" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1a4d9c4f7c30d0fa2d6741054ee206492f">getOperationModeID</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a4d9c4f7c30d0fa2d6741054ee206492f">getOperationModeID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1ad1a376a5ed4856a847f2eeb5c4f1ce16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setOnlineMode</definition>
+        <argsstring>(in string anOnlineMode)</argsstring>
+        <name>setOnlineMode</name>
+        <qualifiedname>PosMachineOperationMode::setOnlineMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anOnlineMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="131" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1ad1a376a5ed4856a847f2eeb5c4f1ce16">setOnlineMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1ad1a376a5ed4856a847f2eeb5c4f1ce16">setOnlineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1abd1f150f5f96af4d915ee43b50b7df65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getOnlineMode</definition>
+        <argsstring>()</argsstring>
+        <name>getOnlineMode</name>
+        <qualifiedname>PosMachineOperationMode::getOnlineMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="137" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1abd1f150f5f96af4d915ee43b50b7df65">getOnlineMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1abd1f150f5f96af4d915ee43b50b7df65">getOnlineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a7f9940265a5acacf026f62ab24e93084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setDispatchMode</definition>
+        <argsstring>(in string aDispatchMode)</argsstring>
+        <name>setDispatchMode</name>
+        <qualifiedname>PosMachineOperationMode::setDispatchMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDispatchMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="143" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1a7f9940265a5acacf026f62ab24e93084">setDispatchMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a7f9940265a5acacf026f62ab24e93084">setDispatchMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1aade7168bc57d7263165393196d39138f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getDispatchMode</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchMode</name>
+        <qualifiedname>PosMachineOperationMode::getDispatchMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="149" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1aade7168bc57d7263165393196d39138f">getDispatchMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1aade7168bc57d7263165393196d39138f">getDispatchMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a93aad12df40d60fa6d5c6bc8c4bf0ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setAccessMode</definition>
+        <argsstring>(in string anAccessMode)</argsstring>
+        <name>setAccessMode</name>
+        <qualifiedname>PosMachineOperationMode::setAccessMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anAccessMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="155" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1a93aad12df40d60fa6d5c6bc8c4bf0ca2">setAccessMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a93aad12df40d60fa6d5c6bc8c4bf0ca2">setAccessMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1aba9d36764e87b5bc3806980d2768a673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getAccessMode</definition>
+        <argsstring>()</argsstring>
+        <name>getAccessMode</name>
+        <qualifiedname>PosMachineOperationMode::getAccessMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="161" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1aba9d36764e87b5bc3806980d2768a673">getAccessMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1aba9d36764e87b5bc3806980d2768a673">getAccessMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a03052c164506da13056866bc1fe7552a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setStartMode</definition>
+        <argsstring>(in string aStartMode)</argsstring>
+        <name>setStartMode</name>
+        <qualifiedname>PosMachineOperationMode::setStartMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aStartMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="167" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1a03052c164506da13056866bc1fe7552a">setStartMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a03052c164506da13056866bc1fe7552a">setStartMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a04db4fcb21ac964ca8106c102c3b7e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getStartMode</definition>
+        <argsstring>()</argsstring>
+        <name>getStartMode</name>
+        <qualifiedname>PosMachineOperationMode::getStartMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="173" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1a04db4fcb21ac964ca8106c102c3b7e4c">getStartMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a04db4fcb21ac964ca8106c102c3b7e4c">getStartMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1ab474987a3d1d4888b195b253a52af999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineOperationMode::setCompMode</definition>
+        <argsstring>(in string aCompMode)</argsstring>
+        <name>setCompMode</name>
+        <qualifiedname>PosMachineOperationMode::setCompMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aCompMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="179" column="8"/>
+        <references refid="interface_pos_machine_operation_mode_1ab474987a3d1d4888b195b253a52af999">setCompMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1ab474987a3d1d4888b195b253a52af999">setCompMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1a464fae997f22285d685e322e28dcaaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineOperationMode::getCompMode</definition>
+        <argsstring>()</argsstring>
+        <name>getCompMode</name>
+        <qualifiedname>PosMachineOperationMode::getCompMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="185" column="10"/>
+        <references refid="interface_pos_machine_operation_mode_1a464fae997f22285d685e322e28dcaaad">getCompMode</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1a464fae997f22285d685e322e28dcaaad">getCompMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_operation_mode_1ab798d1a21c52b4e0ed4f8dbfba88a33a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a262b60626ea3555ec05ba2b6c80ca548" kindref="member">posOperationModeInfo</ref></type>
+        <definition>posOperationModeInfo PosMachineOperationMode::getOperationModeInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getOperationModeInfo</name>
+        <qualifiedname>PosMachineOperationMode::getOperationModeInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmom.idl" line="191" column="24"/>
+        <references refid="interface_pos_machine_operation_mode_1ab798d1a21c52b4e0ed4f8dbfba88a33a">getOperationModeInfo</references>
+        <referencedby refid="interface_pos_machine_operation_mode_1ab798d1a21c52b4e0ed4f8dbfba88a33a">getOperationModeInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineOperationMode</label>
+        <link refid="interface_pos_machine_operation_mode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineOperationMode</label>
+        <link refid="interface_pos_machine_operation_mode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmom.idl" line="38" column="11" bodyfile="poscimfw/include/pmom.idl" bodystart="38" bodyend="199"/>
+    <listofallmembers>
+      <member refid="interface_pos_machine_operation_mode_1aba9d36764e87b5bc3806980d2768a673" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getAccessMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a464fae997f22285d685e322e28dcaaad" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getCompMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a0d93ba3e94b0a1915b3c7ce1ac5988bb" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getDescription</name></member>
+      <member refid="interface_pos_machine_operation_mode_1aade7168bc57d7263165393196d39138f" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getDispatchMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a495b03b85b6359ed23b5ab3c68031bdf" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_machine_operation_mode_1abd1f150f5f96af4d915ee43b50b7df65" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getOnlineMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a4d9c4f7c30d0fa2d6741054ee206492f" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getOperationModeID</name></member>
+      <member refid="interface_pos_machine_operation_mode_1ab798d1a21c52b4e0ed4f8dbfba88a33a" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getOperationModeInfo</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a04db4fcb21ac964ca8106c102c3b7e4c" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>getStartMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a2c2736a3c04bff1c09d8adeb08fa195a" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>PosMachineOperationMode_init</name></member>
+      <member refid="interface_pos_machine_operation_mode_1ae8cdc7073c933e955c5a179b7669b9af" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>PosMachineOperationMode_uninit</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a93aad12df40d60fa6d5c6bc8c4bf0ca2" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setAccessMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1ab474987a3d1d4888b195b253a52af999" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setCompMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1afecfd31e18124b3c2d39b766a62062d0" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setDescription</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a7f9940265a5acacf026f62ab24e93084" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setDispatchMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a22cf091905c53ae0ff28c5f522c7f0f0" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_machine_operation_mode_1ab5faf83350332f69314cae5383cb91ba" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setMachineOperationModeInfo</name></member>
+      <member refid="interface_pos_machine_operation_mode_1ad1a376a5ed4856a847f2eeb5c4f1ce16" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setOnlineMode</name></member>
+      <member refid="interface_pos_machine_operation_mode_1aa04f5e7a452d8964630cff4b013a3751" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setOperationModeID</name></member>
+      <member refid="interface_pos_machine_operation_mode_1a03052c164506da13056866bc1fe7552a" prot="public" virt="non-virtual"><scope>PosMachineOperationMode</scope><name>setStartMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

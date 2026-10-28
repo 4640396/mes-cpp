@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="plcrc_8idl" kind="file" language="IDL">
+    <compoundname>plcrc.idl</compoundname>
+    <includes local="yes">nmdntity.idl</includes>
+    <includes local="yes">MOFW.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includes refid="pdrmggl_8idl" local="yes">pdrmggl.idl</includes>
+    <includes refid="prcmggl_8idl" local="yes">prcmggl.idl</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>pdcmggl.idl</label>
+        <link refid="pdcmggl_8idl"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pdcsp.idl</label>
+        <link refid="pdcsp_8idl"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pdrmggl.idl</label>
+        <link refid="pdrmggl_8idl"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/plcrc.idl</label>
+        <link refid="plcrc_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pmcmggl.idl</label>
+        <link refid="pmcmggl_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>pmcnote.idl</label>
+        <link refid="pmcnote_8idl"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>pmstat.idl</label>
+        <link refid="pmstat_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>pnote.idl</label>
+        <link refid="pnote_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ppcrs.idl</label>
+        <link refid="ppcrs_8idl"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>prcmggl.idl</label>
+        <link refid="prcmggl_8idl"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>prmsts.idl</label>
+        <link refid="prmsts_8idl"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="4">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="11">
+        <label>dtcolspc.idl</label>
+      </node>
+      <node id="6">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="9">
+        <label>fwglobls.idl</label>
+      </node>
+      <node id="2">
+        <label>nmdntity.idl</label>
+      </node>
+      <node id="19">
+        <label>prcssrsr.idl</label>
+      </node>
+      <node id="8">
+        <label>timstamp.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_logical_recipe" prot="public">PosLogicalRecipe</innerclass>
+    <innerclass refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" prot="public">PosLogicalRecipe::SetLogicalRecipeInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" prot="public">PosLogicalRecipe::MeasurementDCDefNotFoundSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosLogicalRecipe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Recipe_Management_Functional_Group::Siview_Recipe_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>Z:\R140-Rose\poscimfw\prcmg\plcrc.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosLogicalRecipe_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosLogicalRecipe_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nmdntity.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFW.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pdrmggl_8idl" kindref="compound">pdrmggl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="prcmggl_8idl" kindref="compound">prcmggl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">MachineRecipe;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_data_collection_specification" kindref="compound">PosDataCollectionSpecification</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot" kindref="compound">PosLot</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Recipe<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Recipe<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="interface_pos_logical_recipe" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref><sp/>:<sp/>MOFW_CachedManagedObject,<sp/>NamedEntity<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosLogicalRecipe.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosLogicalRecipe.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Nested<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetLogicalRecipeInfoFailedSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetLogicalRecipeInfoFailedSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal_1aa82185eadc2cc9417e894f0a8de503d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal_1aa82185eadc2cc9417e894f0a8de503d3" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>SetLogicalRecipeInfoFailedSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>SetLogicalRecipeInfoFailedSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" kindref="compound">MeasurementDCDefNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>MeasurementDCDefNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>MeasurementDCDefNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal_1af3bee77fd25c9dec5bb62afd21aa0c7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal_1af3bee77fd25c9dec5bb62afd21aa0c7e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>MeasurementDCDefNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>MeasurementDCDefNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosLogicalRecipe_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Initializes<sp/>data<sp/>member<sp/>of<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="interface_pos_logical_recipe_1a66225457bb176c481ba7e09f5e8a1ec2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a66225457bb176c481ba7e09f5e8a1ec2" kindref="member">PosLogicalRecipe_init</ref>()</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>unique<sp/>MachineRecipe<sp/>identifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51" kindref="member">setIdentifier</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DuplicateIdentifierSignal<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getIdentifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>the<sp/>MachineRecipe<sp/>unique<sp/>identifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a" kindref="member">getIdentifier</ref>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>description.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347" kindref="member">setDescription</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>description)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getDescription</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>description.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c" kindref="member">getDescription</ref>()</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setRecipeType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>recipe<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d" kindref="member">setRecipeType</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>recipeType)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getRecipeType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>recipe<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231" kindref="member">getRecipeType</ref>()</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMonitorProduct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>MonitorProduct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a" kindref="member">setMonitorProduct</ref>(in<sp/><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref><sp/>aProductSpecification)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getMonitorProduct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>MonitorProduct.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref><sp/><ref refid="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f" kindref="member">getMonitorProduct</ref>()</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeMonitorHoldRequired</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>TRUE<sp/>to<sp/>theMonitorHoldRequired.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd" kindref="member">makeMonitorHoldRequired</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeMonitorHoldNotRequired</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>FALSE<sp/>to<sp/>theMonitorHoldRequired.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252" kindref="member">makeMonitorHoldNotRequired</ref>()</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>isMonitorHoldRequired</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>TRUE<sp/>if<sp/>theMonitorHoldRequired<sp/>flag<sp/>is<sp/>TRUE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e" kindref="member">isMonitorHoldRequired</ref>()</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDefaultRecipeSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>default<sp/>recipe<sp/>settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c" kindref="member">setDefaultRecipeSettings</ref>(in<sp/><ref refid="prcmggl_8idl_1a802e2daf105c432a4a0a3c0ba511da1c" kindref="member">PosDefaultRecipeSettingSequence</ref><sp/>settings)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getDefaultRecipeSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>default<sp/>recipe<sp/>settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1a802e2daf105c432a4a0a3c0ba511da1c" kindref="member">PosDefaultRecipeSettingSequence</ref><sp/><ref refid="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69" kindref="member">getDefaultRecipeSettings</ref>()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMachineSpecificRecipeSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>machine<sp/>specific<sp/>recipe<sp/>settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469" kindref="member">setMachineSpecificRecipeSettings</ref>(in<sp/><ref refid="prcmggl_8idl_1a96eb28aaa9f1dcc8a3598f3c01e20623" kindref="member">PosMachineSpecificRecipeSettingSequence</ref><sp/>settings)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getMachineSpecificRecipeSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>machine<sp/>specific<sp/>recipe<sp/>settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1a96eb28aaa9f1dcc8a3598f3c01e20623" kindref="member">PosMachineSpecificRecipeSettingSequence</ref><sp/><ref refid="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41" kindref="member">getMachineSpecificRecipeSettings</ref>()</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLogicalRecipeInfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>all<sp/>data<sp/>member<sp/>of<sp/>this<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792" kindref="member">setLogicalRecipeInfo</ref>(in<sp/>brLogicalRecipeInfo<sp/>logicalRecipeInfo)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>allFixtureGroups</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>fixture<sp/>groups<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdrmggl_8idl_1ac07db8b80b4660be85e150c1a7403b79" kindref="member">PosProcessDurableCapabilitySequence</ref><sp/><ref refid="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0" kindref="member">allFixtureGroups</ref>()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getPropertySet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>the<sp/>property<sp/>set<sp/>of<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref><sp/><ref refid="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410" kindref="member">getPropertySet</ref>()</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setTestType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>test<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642" kindref="member">setTestType</ref>(in<sp/><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref><sp/>aTestType)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getTestType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>test<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref><sp/><ref refid="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5" kindref="member">getTestType</ref>()</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMachineRecipeForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>MachineRecipe<sp/>that<sp/>has<sp/>the<sp/>following</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>conditions<sp/>from<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>It<sp/>has<sp/>the<sp/>specified<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>The<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>as<sp/>ones<sp/>of<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/><ref refid="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3" kindref="member">findMachineRecipeForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMachineRecipeFor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>MachineRecipe<sp/>that<sp/>has<sp/>the<sp/>following</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>conditions<sp/>from<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>It<sp/>has<sp/>the<sp/>specified<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>The<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>as<sp/>ones<sp/>of<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/><ref refid="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f" kindref="member">findMachineRecipeFor</ref>(in<sp/><ref refid="interface_pos_lot" kindref="compound">PosLot</ref><sp/>aLot,<sp/>in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>retrieveMachines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>all<sp/>Machines<sp/>from<sp/>Recipes<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pmcmggl_8idl_1a49aeda4946030a8b0d30694f9e91da17" kindref="member">PosMachineSequence</ref><sp/><ref refid="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5" kindref="member">retrieveMachines</ref>()</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>sub<sp/>lot<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf" kindref="member">setSubLotType</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>aSubLotType)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>a<sp/>sub<sp/>lot<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565" kindref="member">getSubLotType</ref>()</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getActiveObject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>the<sp/>active<sp/>object<sp/>assigned<sp/>to<sp/>the<sp/>receiver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref><sp/><ref refid="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9" kindref="member">getActiveObject</ref>()</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>isMultipleChamberSupported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>this<sp/>Logical<sp/>Recipe<sp/>supports<sp/>Multiple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Chamber<sp/>or<sp/>not.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2" kindref="member">isMultipleChamberSupported</ref>()</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeMultipleChamberSupported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>Multiple<sp/>Chamber<sp/>Required<sp/>Flag<sp/>ON.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094" kindref="member">makeMultipleChamberSupported</ref>()</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeMultipleChamberNotSupported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>Multiple<sp/>Chamber<sp/>Required<sp/>Flag<sp/>OFF.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc" kindref="member">makeMultipleChamberNotSupported</ref>()</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findDefaultSettingForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>default<sp/>recipe<sp/>setting<sp/>that<sp/>has<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>following<sp/>conditions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>It<sp/>has<sp/>the<sp/>specified<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>The<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>as<sp/>ones<sp/>of<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref><sp/><ref refid="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408" kindref="member">findDefaultSettingForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findDefaultSettingFor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>default<sp/>recipe<sp/>setting<sp/>that<sp/>has<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>following<sp/>conditions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>It<sp/>has<sp/>the<sp/>specified<sp/>Machine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>The<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>as<sp/>ones<sp/>of<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref><sp/><ref refid="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64" kindref="member">findDefaultSettingFor</ref>(in<sp/><ref refid="interface_pos_lot" kindref="compound">PosLot</ref><sp/>aLot,<sp/>in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setActiveObjectID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>the<sp/>active<sp/>object<sp/>identifier.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325" kindref="member">setActiveObjectID</ref>(in<sp/>objectIdentifier<sp/>activeObjectID)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findProcessDCSpecificationForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>process<sp/>dataCollectionSpecification<sp/>that<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>corresponding<sp/>to<sp/>specified<sp/>machine<sp/>and<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>recipe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>At<sp/>first,<sp/>finds<sp/>them<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>machineSpecificRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>Secondaty,<sp/>finds<sp/>them<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.<sp/>(SubLotType<sp/>is<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber<sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_data_collection_specification" kindref="compound">PosDataCollectionSpecification</ref><sp/><ref refid="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe" kindref="member">findProcessDCSpecificationForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findDataCollectionDefinitionForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>dataCollectionDefinition<sp/>that<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>corresponding<sp/>to<sp/>specified<sp/>machine<sp/>and<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>recipe<sp/>from<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.<sp/>(SubLotType<sp/>is<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber<sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref><sp/><ref refid="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1" kindref="member">findDataCollectionDefinitionForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" kindref="compound">MeasurementDCDefNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findFixtureGroupsForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>fixtureGroups<sp/>that<sp/>are<sp/>corresponding<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>specified<sp/>machine<sp/>and<sp/>machine<sp/>recipe<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.<sp/>(SubLotType<sp/>is<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber<sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="pdrmggl_8idl_1ac07db8b80b4660be85e150c1a7403b79" kindref="member">PosProcessDurableCapabilitySequence</ref><sp/><ref refid="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c" kindref="member">findFixtureGroupsForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findBinDefinitionForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>bin<sp/>definition<sp/>that<sp/>is<sp/>corresponding<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>specified<sp/>machine<sp/>and<sp/>machine<sp/>recipe<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as<sp/>ones</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>the<sp/>recipeSettings.<sp/>(SubLotType<sp/>is<sp/>taken<sp/>into</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>account<sp/>for<sp/>the<sp/>Chamber<sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref><sp/><ref refid="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5" kindref="member">findBinDefinitionForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findRecipeParametersForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>recipeParameters<sp/>that<sp/>are<sp/>corresponding<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>specified<sp/>machine<sp/>and<sp/>machine<sp/>recipe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[1]<sp/>Finds<sp/>them<sp/>from<sp/>aMachine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[2]<sp/>Finds<sp/>them<sp/>from<sp/>the<sp/>defaultRecipeSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>this<sp/>LogicalRecipe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[3]<sp/>Finds<sp/>them<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>machineSpecificRecipeSettings<sp/>in<sp/>this<sp/>LogicalRecipe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecipeParameters<sp/>are<sp/>overridden<sp/>by<sp/>[1],<sp/>[2]<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[3].</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.(SubLotType<sp/>is<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber<sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1acf2a8d3f6809cb480620e09deb1212b3" kindref="member">PosRecipeParameterSequence</ref><sp/><ref refid="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0" kindref="member">findRecipeParametersForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findDefaultSettingItemsForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>default<sp/>recipe<sp/>setting<sp/>items<sp/>that<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>corresponding<sp/>to<sp/>specified<sp/>machine<sp/>and<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>recipe<sp/>from<sp/>the<sp/>defaultRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SubLotType<sp/>is<sp/>taken<sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404" refid="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref><sp/><ref refid="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1" kindref="member">findDefaultSettingItemsForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMachineSpecificItemsForSubLotType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>machine<sp/>specific<sp/>recipe<sp/>setting<sp/>items<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>are<sp/>corresponding<sp/>to<sp/>specified<sp/>machine<sp/>and<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>recipe<sp/>from<sp/>the<sp/>machineSpecificRecipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>multiple<sp/>chambers,<sp/>checks<sp/>if</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>state<sp/>of<sp/>all<sp/>ProcessResources<sp/>are<sp/>the<sp/>same<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>ones<sp/>of<sp/>the<sp/>recipeSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SubLotType<sp/>is<sp/>taken<sp/>into<sp/>account<sp/>for<sp/>the<sp/>Chamber</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Status)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417" refid="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="prcmggl_8idl_1a3148b6f60bee31d898e5c97362613352" kindref="member">posMachineSpecificRecipeSetting</ref><sp/><ref refid="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e" kindref="member">findMachineSpecificItemsForSubLotType</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref><sp/>aMachineRecipe,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>subLotType)</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setFPCCategory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>FPC<sp/>category.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423" refid="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62" kindref="member">setFPCCategory</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>aFPCCategory)</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getFPCCategory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Get<sp/>FPC<sp/>category.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429" refid="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679" kindref="member">getFPCCategory</ref>()</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeWhiteFlagOn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>theWhiteDefinitionFlag<sp/>to<sp/>TRUE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435" refid="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa" kindref="member">makeWhiteFlagOn</ref>()</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>makeWhiteFlagOff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>theWhiteDefinitionFlag<sp/>to<sp/>FALSE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="441" refid="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd" kindref="member">makeWhiteFlagOff</ref>()</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>isWhiteFlagOn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>TRUE<sp/>if<sp/>theWhiteDefinition<sp/>flag<sp/>is<sp/>TRUE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5" kindref="member">isWhiteFlagOn</ref>()</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSamplingPolicyName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>sampling<sp/>policy<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746" kindref="member">setSamplingPolicyName</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>samplingPolicyName)</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getSamplingPolicyName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>sampling<sp/>policy<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459" refid="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085" kindref="member">getSamplingPolicyName</ref>()</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSamplingWaferAttribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>sampling<sp/>wafer<sp/>attribute.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9" kindref="member">setSamplingWaferAttribute</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>samplingWaferAttribute)</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>getSamplingWaferAttribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>a<sp/>sampling<sp/>wafer<sp/>attribute.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471" refid="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e" kindref="member">getSamplingWaferAttribute</ref>()</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLogicalRecipeInfo__090</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>all<sp/>data<sp/>member<sp/>of<sp/>this<sp/>object<sp/>for<sp/>release<sp/>R90.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477" refid="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4" kindref="member">setLogicalRecipeInfo__090</ref>(in<sp/>brLogicalRecipeInfo__090<sp/>logicalRecipeInfo__090)</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLogicalRecipeInfo__100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>all<sp/>data<sp/>member<sp/>of<sp/>this<sp/>object<sp/>for<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>10.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6" kindref="member">setLogicalRecipeInfo__100</ref>(in<sp/>brLogicalRecipeInfo__100<sp/>logicalRecipeInfo__100)</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createPropertySet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>and<sp/>returns<sp/>the<sp/>property<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490" refid="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref><sp/><ref refid="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468" kindref="member">createPropertySet</ref>()</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMachineSpecificRecipeSetting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>a<sp/>machine<sp/>specific<sp/>recipe<sp/>setting.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2013/09/13<sp/>DSN000076417<sp/>K.Yamaoku<sp/>Initail<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498" refid="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662" kindref="member">setMachineSpecificRecipeSetting</ref>(in<sp/><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref><sp/>aMachine,<sp/>in<sp/>brEquipmentDISpecificRecipeSettingDataSequence<sp/>settings)</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setLogicalRecipeInfo__140</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>all<sp/>data<sp/>member<sp/>of<sp/>this<sp/>object<sp/>for<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>14.0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2013/09/13<sp/>DSN000076417<sp/>K.Yamaoku<sp/>Initail<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507" refid="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c" kindref="member">setLogicalRecipeInfo__140</ref>(in<sp/>brLogicalRecipeInfo__140<sp/>logicalRecipeInfo__140)</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setMachineSpecificRecipeSettingsForEqpDI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Sets<sp/>machine<sp/>specific<sp/>recipe<sp/>settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2014/01/07<sp/>PSN000083969<sp/>S.Kawabe<sp/>Initail<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515" refid="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7" kindref="member">setMachineSpecificRecipeSettingsForEqpDI</ref>(in<sp/>brEquipmentSpecificRecipeSettingDataSequence<sp/>equipmentSpecificRecipeSettings)</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosLogicalRecipe.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosLogicalRecipe.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/plcrc.idl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,726 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_planned_split_job" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPlannedSplitJob</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pplspj_8idl" local="no">pplspj.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a87148a72e86f7f48b7ff926a9dc541a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::PosPlannedSplitJob_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPlannedSplitJob_init</name>
+        <qualifiedname>PosPlannedSplitJob::PosPlannedSplitJob_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a4cba19c552a67b0b47fceb0a3c8b3b20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::PosPlannedSplitJob_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosPlannedSplitJob_uninit</name>
+        <qualifiedname>PosPlannedSplitJob::PosPlannedSplitJob_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="62" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a4cba19c552a67b0b47fceb0a3c8b3b20">PosPlannedSplitJob_uninit</references>
+        <referencedby refid="interface_pos_planned_split_job_1a4cba19c552a67b0b47fceb0a3c8b3b20">PosPlannedSplitJob_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a2cd95f64d00e0fabdbbe8fb1c08df629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosPlannedSplitJob::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="68" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a2cd95f64d00e0fabdbbe8fb1c08df629">setIdentifier</references>
+        <referencedby refid="interface_pos_planned_split_job_1a2cd95f64d00e0fabdbbe8fb1c08df629">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ad3536eb645927755de35d96fef63a59a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPlannedSplitJob::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosPlannedSplitJob::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="74" column="10"/>
+        <references refid="interface_pos_planned_split_job_1ad3536eb645927755de35d96fef63a59a">getIdentifier</references>
+        <referencedby refid="interface_pos_planned_split_job_1ad3536eb645927755de35d96fef63a59a">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ab1d25a5e5ff215ca3857df69deb86497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setPlannedSplitJobInfo</definition>
+        <argsstring>(in posPlannedSplitJobInfo plannedSplitJob)</argsstring>
+        <name>setPlannedSplitJobInfo</name>
+        <qualifiedname>PosPlannedSplitJob::setPlannedSplitJobInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1a9f339d0af3281ddb7df680a558fcbef8" kindref="member">posPlannedSplitJobInfo</ref></type>
+          <declname>plannedSplitJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="80" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ab1d25a5e5ff215ca3857df69deb86497">setPlannedSplitJobInfo</references>
+        <referencedby refid="interface_pos_planned_split_job_1ab1d25a5e5ff215ca3857df69deb86497">setPlannedSplitJobInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ac5eb9dd6dbfaa3a8781948932f709de0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a9f339d0af3281ddb7df680a558fcbef8" kindref="member">posPlannedSplitJobInfo</ref></type>
+        <definition>posPlannedSplitJobInfo PosPlannedSplitJob::getPlannedSplitJobInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getPlannedSplitJobInfo</name>
+        <qualifiedname>PosPlannedSplitJob::getPlannedSplitJobInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="86" column="26"/>
+        <references refid="interface_pos_planned_split_job_1ac5eb9dd6dbfaa3a8781948932f709de0">getPlannedSplitJobInfo</references>
+        <referencedby refid="interface_pos_planned_split_job_1ac5eb9dd6dbfaa3a8781948932f709de0">getPlannedSplitJobInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a1d72e09c59e03eff11db9e1c2d388bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setLotFamily</definition>
+        <argsstring>(in PosLotFamily aLotFamily)</argsstring>
+        <name>setLotFamily</name>
+        <qualifiedname>PosPlannedSplitJob::setLotFamily</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_family" kindref="compound">PosLotFamily</ref></type>
+          <declname>aLotFamily</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="92" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a1d72e09c59e03eff11db9e1c2d388bdc">setLotFamily</references>
+        <referencedby refid="interface_pos_planned_split_job_1a1d72e09c59e03eff11db9e1c2d388bdc">setLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a3fc9a57cb6d289e9ef6230328f37a44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_family" kindref="compound">PosLotFamily</ref></type>
+        <definition>PosLotFamily PosPlannedSplitJob::getLotFamily</definition>
+        <argsstring>()</argsstring>
+        <name>getLotFamily</name>
+        <qualifiedname>PosPlannedSplitJob::getLotFamily</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="98" column="16"/>
+        <references refid="interface_pos_planned_split_job_1a3fc9a57cb6d289e9ef6230328f37a44d">getLotFamily</references>
+        <referencedby refid="interface_pos_planned_split_job_1a3fc9a57cb6d289e9ef6230328f37a44d">getLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a51921845b72b54383d4924af58168528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setSplitMainProcessDefinition</definition>
+        <argsstring>(in PosProcessDefinition splitMainProcessDefinition)</argsstring>
+        <name>setSplitMainProcessDefinition</name>
+        <qualifiedname>PosPlannedSplitJob::setSplitMainProcessDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+          <declname>splitMainProcessDefinition</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="104" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a51921845b72b54383d4924af58168528">setSplitMainProcessDefinition</references>
+        <referencedby refid="interface_pos_planned_split_job_1a51921845b72b54383d4924af58168528">setSplitMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a43c6cdb32fbb62b6245f83e5d4a462bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosPlannedSplitJob::getSplitMainProcessDefinition</definition>
+        <argsstring>()</argsstring>
+        <name>getSplitMainProcessDefinition</name>
+        <qualifiedname>PosPlannedSplitJob::getSplitMainProcessDefinition</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="110" column="24"/>
+        <references refid="interface_pos_planned_split_job_1a43c6cdb32fbb62b6245f83e5d4a462bf">getSplitMainProcessDefinition</references>
+        <referencedby refid="interface_pos_planned_split_job_1a43c6cdb32fbb62b6245f83e5d4a462bf">getSplitMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a81d596e5c24a4ee9054a773637f23b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setSplitOperationNumber</definition>
+        <argsstring>(in string splitOperationNumber)</argsstring>
+        <name>setSplitOperationNumber</name>
+        <qualifiedname>PosPlannedSplitJob::setSplitOperationNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>splitOperationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="116" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a81d596e5c24a4ee9054a773637f23b51">setSplitOperationNumber</references>
+        <referencedby refid="interface_pos_planned_split_job_1a81d596e5c24a4ee9054a773637f23b51">setSplitOperationNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a589e3137d2907645e4e9d02127c03606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPlannedSplitJob::getSplitOperationNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getSplitOperationNumber</name>
+        <qualifiedname>PosPlannedSplitJob::getSplitOperationNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="122" column="10"/>
+        <references refid="interface_pos_planned_split_job_1a589e3137d2907645e4e9d02127c03606">getSplitOperationNumber</references>
+        <referencedby refid="interface_pos_planned_split_job_1a589e3137d2907645e4e9d02127c03606">getSplitOperationNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a03229354fa7be6bdb35a00c9f6fced7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeActionEMailOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeActionEMailOn</name>
+        <qualifiedname>PosPlannedSplitJob::makeActionEMailOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="128" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a03229354fa7be6bdb35a00c9f6fced7a">makeActionEMailOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1a03229354fa7be6bdb35a00c9f6fced7a">makeActionEMailOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ac7275ac14d888cd337c02f9865d51a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeActionEMailOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeActionEMailOff</name>
+        <qualifiedname>PosPlannedSplitJob::makeActionEMailOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="134" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ac7275ac14d888cd337c02f9865d51a7f">makeActionEMailOff</references>
+        <referencedby refid="interface_pos_planned_split_job_1ac7275ac14d888cd337c02f9865d51a7f">makeActionEMailOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a8baf9bb6641d6f3c06f50b9a6549bf45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPlannedSplitJob::isActionEMailOn</definition>
+        <argsstring>()</argsstring>
+        <name>isActionEMailOn</name>
+        <qualifiedname>PosPlannedSplitJob::isActionEMailOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="140" column="11"/>
+        <references refid="interface_pos_planned_split_job_1a8baf9bb6641d6f3c06f50b9a6549bf45">isActionEMailOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1a8baf9bb6641d6f3c06f50b9a6549bf45">isActionEMailOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ac12d58cd4fe9dea71bbc8a3b99050ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeActionHoldOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeActionHoldOn</name>
+        <qualifiedname>PosPlannedSplitJob::makeActionHoldOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="146" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ac12d58cd4fe9dea71bbc8a3b99050ed2">makeActionHoldOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1ac12d58cd4fe9dea71bbc8a3b99050ed2">makeActionHoldOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ab9049300d0bb1d453825e125c69c6b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeActionHoldOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeActionHoldOff</name>
+        <qualifiedname>PosPlannedSplitJob::makeActionHoldOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="152" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ab9049300d0bb1d453825e125c69c6b7f">makeActionHoldOff</references>
+        <referencedby refid="interface_pos_planned_split_job_1ab9049300d0bb1d453825e125c69c6b7f">makeActionHoldOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a78c6a8fc6cf235c5e649efdf33b8ed97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPlannedSplitJob::isActionHoldOn</definition>
+        <argsstring>()</argsstring>
+        <name>isActionHoldOn</name>
+        <qualifiedname>PosPlannedSplitJob::isActionHoldOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="158" column="11"/>
+        <references refid="interface_pos_planned_split_job_1a78c6a8fc6cf235c5e649efdf33b8ed97">isActionHoldOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1a78c6a8fc6cf235c5e649efdf33b8ed97">isActionHoldOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a88ff449635638a7b59ed168f83164642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setTestMemo</definition>
+        <argsstring>(in string testMemo)</argsstring>
+        <name>setTestMemo</name>
+        <qualifiedname>PosPlannedSplitJob::setTestMemo</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>testMemo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="164" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a88ff449635638a7b59ed168f83164642">setTestMemo</references>
+        <referencedby refid="interface_pos_planned_split_job_1a88ff449635638a7b59ed168f83164642">setTestMemo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a74476bf202378f42ec9564f5a1c15a8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPlannedSplitJob::getTestMemo</definition>
+        <argsstring>()</argsstring>
+        <name>getTestMemo</name>
+        <qualifiedname>PosPlannedSplitJob::getTestMemo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="170" column="10"/>
+        <references refid="interface_pos_planned_split_job_1a74476bf202378f42ec9564f5a1c15a8f">getTestMemo</references>
+        <referencedby refid="interface_pos_planned_split_job_1a74476bf202378f42ec9564f5a1c15a8f">getTestMemo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a544336b41dd5d3a45b949150e9767b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeExecutedFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeExecutedFlagOn</name>
+        <qualifiedname>PosPlannedSplitJob::makeExecutedFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="176" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a544336b41dd5d3a45b949150e9767b79">makeExecutedFlagOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1a544336b41dd5d3a45b949150e9767b79">makeExecutedFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ada4cacf9ac63977463a83ba639d649e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::makeExecutedFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeExecutedFlagOff</name>
+        <qualifiedname>PosPlannedSplitJob::makeExecutedFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="182" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ada4cacf9ac63977463a83ba639d649e2">makeExecutedFlagOff</references>
+        <referencedby refid="interface_pos_planned_split_job_1ada4cacf9ac63977463a83ba639d649e2">makeExecutedFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a6ef499136813e57ab21c832c22b697ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPlannedSplitJob::isExecutedFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>isExecutedFlagOn</name>
+        <qualifiedname>PosPlannedSplitJob::isExecutedFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="188" column="11"/>
+        <references refid="interface_pos_planned_split_job_1a6ef499136813e57ab21c832c22b697ba">isExecutedFlagOn</references>
+        <referencedby refid="interface_pos_planned_split_job_1a6ef499136813e57ab21c832c22b697ba">isExecutedFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a9b54257e0fbe3d09a604ef61e44e4b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setExecutedTimeStamp</definition>
+        <argsstring>(in TimeStamp executedTimeStamp)</argsstring>
+        <name>setExecutedTimeStamp</name>
+        <qualifiedname>PosPlannedSplitJob::setExecutedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>executedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="194" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a9b54257e0fbe3d09a604ef61e44e4b08">setExecutedTimeStamp</references>
+        <referencedby refid="interface_pos_planned_split_job_1a9b54257e0fbe3d09a604ef61e44e4b08">setExecutedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ab7e5e520f756bb39a49e1594016d05cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPlannedSplitJob::getExecutedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getExecutedTimeStamp</name>
+        <qualifiedname>PosPlannedSplitJob::getExecutedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="200" column="13"/>
+        <references refid="interface_pos_planned_split_job_1ab7e5e520f756bb39a49e1594016d05cf">getExecutedTimeStamp</references>
+        <referencedby refid="interface_pos_planned_split_job_1ab7e5e520f756bb39a49e1594016d05cf">getExecutedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a8ace25b97726550edabf107afd4bd465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp lastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosPlannedSplitJob::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>lastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="206" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a8ace25b97726550edabf107afd4bd465">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_planned_split_job_1a8ace25b97726550edabf107afd4bd465">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a3fb024f29452fc8a9de7250549705573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPlannedSplitJob::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosPlannedSplitJob::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="212" column="13"/>
+        <references refid="interface_pos_planned_split_job_1a3fb024f29452fc8a9de7250549705573">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_planned_split_job_1a3fb024f29452fc8a9de7250549705573">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ae229ee29b0fb6b6d883cf07d5f9106c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setModifier</definition>
+        <argsstring>(in PosPerson aModifier)</argsstring>
+        <name>setModifier</name>
+        <qualifiedname>PosPlannedSplitJob::setModifier</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aModifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="218" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ae229ee29b0fb6b6d883cf07d5f9106c5">setModifier</references>
+        <referencedby refid="interface_pos_planned_split_job_1ae229ee29b0fb6b6d883cf07d5f9106c5">setModifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a49e0a5bdc9a5e08f583a4497c678ab74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosPlannedSplitJob::getModifier</definition>
+        <argsstring>()</argsstring>
+        <name>getModifier</name>
+        <qualifiedname>PosPlannedSplitJob::getModifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="224" column="13"/>
+        <references refid="interface_pos_planned_split_job_1a49e0a5bdc9a5e08f583a4497c678ab74">getModifier</references>
+        <referencedby refid="interface_pos_planned_split_job_1a49e0a5bdc9a5e08f583a4497c678ab74">getModifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a39e47c24d073cadbb6d5cf962a0627db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setPlannedSplitJobInfoDetails</definition>
+        <argsstring>(in PosPlannedSplitJobInfoDetailSequence plannedSplitJobInfoDetailSeq)</argsstring>
+        <name>setPlannedSplitJobInfoDetails</name>
+        <qualifiedname>PosPlannedSplitJob::setPlannedSplitJobInfoDetails</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1aa7ab9a0aeb2340ccb79483d85ee60c16" kindref="member">PosPlannedSplitJobInfoDetailSequence</ref></type>
+          <declname>plannedSplitJobInfoDetailSeq</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="230" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a39e47c24d073cadbb6d5cf962a0627db">setPlannedSplitJobInfoDetails</references>
+        <referencedby refid="interface_pos_planned_split_job_1a39e47c24d073cadbb6d5cf962a0627db">setPlannedSplitJobInfoDetails</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a4d56d67bc0363cb386c22a8da59a3a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1aa7ab9a0aeb2340ccb79483d85ee60c16" kindref="member">PosPlannedSplitJobInfoDetailSequence</ref></type>
+        <definition>PosPlannedSplitJobInfoDetailSequence PosPlannedSplitJob::getPlannedSplitJobInfoDetails</definition>
+        <argsstring>()</argsstring>
+        <name>getPlannedSplitJobInfoDetails</name>
+        <qualifiedname>PosPlannedSplitJob::getPlannedSplitJobInfoDetails</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="236" column="40"/>
+        <references refid="interface_pos_planned_split_job_1a4d56d67bc0363cb386c22a8da59a3a22">getPlannedSplitJobInfoDetails</references>
+        <referencedby refid="interface_pos_planned_split_job_1a4d56d67bc0363cb386c22a8da59a3a22">getPlannedSplitJobInfoDetails</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ab3aa539c3a5dcf4549a3e23eb0ded719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setOriginalMainProcessDefinition</definition>
+        <argsstring>(in PosProcessDefinition originalMainProcessDefinition)</argsstring>
+        <name>setOriginalMainProcessDefinition</name>
+        <qualifiedname>PosPlannedSplitJob::setOriginalMainProcessDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+          <declname>originalMainProcessDefinition</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="242" column="8"/>
+        <references refid="interface_pos_planned_split_job_1ab3aa539c3a5dcf4549a3e23eb0ded719">setOriginalMainProcessDefinition</references>
+        <referencedby refid="interface_pos_planned_split_job_1ab3aa539c3a5dcf4549a3e23eb0ded719">setOriginalMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a5b2dc097a81def80992d4a23c49ef4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPlannedSplitJob::setOriginalOperationNumber</definition>
+        <argsstring>(in string originalOperationNumber)</argsstring>
+        <name>setOriginalOperationNumber</name>
+        <qualifiedname>PosPlannedSplitJob::setOriginalOperationNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>originalOperationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="248" column="8"/>
+        <references refid="interface_pos_planned_split_job_1a5b2dc097a81def80992d4a23c49ef4e5">setOriginalOperationNumber</references>
+        <referencedby refid="interface_pos_planned_split_job_1a5b2dc097a81def80992d4a23c49ef4e5">setOriginalOperationNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1a4567fda3723c7b3a592c9bfd127a4059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_definition" kindref="compound">PosProcessDefinition</ref></type>
+        <definition>PosProcessDefinition PosPlannedSplitJob::getOriginalMainProcessDefinition</definition>
+        <argsstring>()</argsstring>
+        <name>getOriginalMainProcessDefinition</name>
+        <qualifiedname>PosPlannedSplitJob::getOriginalMainProcessDefinition</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="254" column="24"/>
+        <references refid="interface_pos_planned_split_job_1a4567fda3723c7b3a592c9bfd127a4059">getOriginalMainProcessDefinition</references>
+        <referencedby refid="interface_pos_planned_split_job_1a4567fda3723c7b3a592c9bfd127a4059">getOriginalMainProcessDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_planned_split_job_1ab6a78c28de5611d35bbafd7c06355092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPlannedSplitJob::getOriginalOperationNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getOriginalOperationNumber</name>
+        <qualifiedname>PosPlannedSplitJob::getOriginalOperationNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pplspj.idl" line="260" column="10"/>
+        <references refid="interface_pos_planned_split_job_1ab6a78c28de5611d35bbafd7c06355092">getOriginalOperationNumber</references>
+        <referencedby refid="interface_pos_planned_split_job_1ab6a78c28de5611d35bbafd7c06355092">getOriginalOperationNumber</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosPlannedSplitJob</label>
+        <link refid="interface_pos_planned_split_job"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosPlannedSplitJob</label>
+        <link refid="interface_pos_planned_split_job"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pplspj.idl" line="38" column="11" bodyfile="poscimfw/include/pplspj.idl" bodystart="38" bodyend="268"/>
+    <listofallmembers>
+      <member refid="interface_pos_planned_split_job_1ab7e5e520f756bb39a49e1594016d05cf" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getExecutedTimeStamp</name></member>
+      <member refid="interface_pos_planned_split_job_1ad3536eb645927755de35d96fef63a59a" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_planned_split_job_1a3fb024f29452fc8a9de7250549705573" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_planned_split_job_1a3fc9a57cb6d289e9ef6230328f37a44d" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getLotFamily</name></member>
+      <member refid="interface_pos_planned_split_job_1a49e0a5bdc9a5e08f583a4497c678ab74" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getModifier</name></member>
+      <member refid="interface_pos_planned_split_job_1a4567fda3723c7b3a592c9bfd127a4059" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getOriginalMainProcessDefinition</name></member>
+      <member refid="interface_pos_planned_split_job_1ab6a78c28de5611d35bbafd7c06355092" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getOriginalOperationNumber</name></member>
+      <member refid="interface_pos_planned_split_job_1ac5eb9dd6dbfaa3a8781948932f709de0" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getPlannedSplitJobInfo</name></member>
+      <member refid="interface_pos_planned_split_job_1a4d56d67bc0363cb386c22a8da59a3a22" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getPlannedSplitJobInfoDetails</name></member>
+      <member refid="interface_pos_planned_split_job_1a43c6cdb32fbb62b6245f83e5d4a462bf" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getSplitMainProcessDefinition</name></member>
+      <member refid="interface_pos_planned_split_job_1a589e3137d2907645e4e9d02127c03606" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getSplitOperationNumber</name></member>
+      <member refid="interface_pos_planned_split_job_1a74476bf202378f42ec9564f5a1c15a8f" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>getTestMemo</name></member>
+      <member refid="interface_pos_planned_split_job_1a8baf9bb6641d6f3c06f50b9a6549bf45" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>isActionEMailOn</name></member>
+      <member refid="interface_pos_planned_split_job_1a78c6a8fc6cf235c5e649efdf33b8ed97" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>isActionHoldOn</name></member>
+      <member refid="interface_pos_planned_split_job_1a6ef499136813e57ab21c832c22b697ba" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>isExecutedFlagOn</name></member>
+      <member refid="interface_pos_planned_split_job_1ac7275ac14d888cd337c02f9865d51a7f" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeActionEMailOff</name></member>
+      <member refid="interface_pos_planned_split_job_1a03229354fa7be6bdb35a00c9f6fced7a" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeActionEMailOn</name></member>
+      <member refid="interface_pos_planned_split_job_1ab9049300d0bb1d453825e125c69c6b7f" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeActionHoldOff</name></member>
+      <member refid="interface_pos_planned_split_job_1ac12d58cd4fe9dea71bbc8a3b99050ed2" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeActionHoldOn</name></member>
+      <member refid="interface_pos_planned_split_job_1ada4cacf9ac63977463a83ba639d649e2" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeExecutedFlagOff</name></member>
+      <member refid="interface_pos_planned_split_job_1a544336b41dd5d3a45b949150e9767b79" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>makeExecutedFlagOn</name></member>
+      <member refid="interface_pos_planned_split_job_1a87148a72e86f7f48b7ff926a9dc541a1" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>PosPlannedSplitJob_init</name></member>
+      <member refid="interface_pos_planned_split_job_1a4cba19c552a67b0b47fceb0a3c8b3b20" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>PosPlannedSplitJob_uninit</name></member>
+      <member refid="interface_pos_planned_split_job_1a9b54257e0fbe3d09a604ef61e44e4b08" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setExecutedTimeStamp</name></member>
+      <member refid="interface_pos_planned_split_job_1a2cd95f64d00e0fabdbbe8fb1c08df629" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_planned_split_job_1a8ace25b97726550edabf107afd4bd465" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_planned_split_job_1a1d72e09c59e03eff11db9e1c2d388bdc" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setLotFamily</name></member>
+      <member refid="interface_pos_planned_split_job_1ae229ee29b0fb6b6d883cf07d5f9106c5" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setModifier</name></member>
+      <member refid="interface_pos_planned_split_job_1ab3aa539c3a5dcf4549a3e23eb0ded719" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setOriginalMainProcessDefinition</name></member>
+      <member refid="interface_pos_planned_split_job_1a5b2dc097a81def80992d4a23c49ef4e5" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setOriginalOperationNumber</name></member>
+      <member refid="interface_pos_planned_split_job_1ab1d25a5e5ff215ca3857df69deb86497" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setPlannedSplitJobInfo</name></member>
+      <member refid="interface_pos_planned_split_job_1a39e47c24d073cadbb6d5cf962a0627db" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setPlannedSplitJobInfoDetails</name></member>
+      <member refid="interface_pos_planned_split_job_1a51921845b72b54383d4924af58168528" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setSplitMainProcessDefinition</name></member>
+      <member refid="interface_pos_planned_split_job_1a81d596e5c24a4ee9054a773637f23b51" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setSplitOperationNumber</name></member>
+      <member refid="interface_pos_planned_split_job_1a88ff449635638a7b59ed168f83164642" prot="public" virt="non-virtual"><scope>PosPlannedSplitJob</scope><name>setTestMemo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

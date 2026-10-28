@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_user_data_change_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posUserDataChangeEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_user_data_change_event_record__struct_1a58cb43a9190fe57ce79fcba2bf6ee5a0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posUserDataChangeEventRecord_struct::className</definition>
+        <argsstring></argsstring>
+        <name>className</name>
+        <qualifiedname>posUserDataChangeEventRecord_struct::className</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3210" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_user_data_change_event_record__struct_1aa43734d9e76dee16907eadfd90706337" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posUserDataChangeEventRecord_struct::hashedInfo</definition>
+        <argsstring></argsstring>
+        <name>hashedInfo</name>
+        <qualifiedname>posUserDataChangeEventRecord_struct::hashedInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3211" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_user_data_change_event_record__struct_1afd6dc39522d6c0025ce94d871d4ec822" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1aa857553de02a01335ca84d38aaa043e4" kindref="member">PosUserDataChangeActionEventDataSequence</ref></type>
+        <definition>PosUserDataChangeActionEventDataSequence posUserDataChangeEventRecord_struct::actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <qualifiedname>posUserDataChangeEventRecord_struct::actions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3212" column="44" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_user_data_change_event_record__struct_1a6b7d82daa959c8982f4b29443f54e7a5" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posUserDataChangeEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posUserDataChangeEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="3213" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3213" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+      <node id="1">
+        <label>posUserDataChangeEventRecord_struct</label>
+        <link refid="structpos_user_data_change_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="3204" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="3204" bodyend="3225"/>
+    <listofallmembers>
+      <member refid="structpos_user_data_change_event_record__struct_1afd6dc39522d6c0025ce94d871d4ec822" prot="public" virt="non-virtual"><scope>posUserDataChangeEventRecord_struct</scope><name>actions</name></member>
+      <member refid="structpos_user_data_change_event_record__struct_1a58cb43a9190fe57ce79fcba2bf6ee5a0" prot="public" virt="non-virtual"><scope>posUserDataChangeEventRecord_struct</scope><name>className</name></member>
+      <member refid="structpos_user_data_change_event_record__struct_1a6b7d82daa959c8982f4b29443f54e7a5" prot="public" virt="non-virtual"><scope>posUserDataChangeEventRecord_struct</scope><name>eventCommon</name></member>
+      <member refid="structpos_user_data_change_event_record__struct_1aa43734d9e76dee16907eadfd90706337" prot="public" virt="non-virtual"><scope>posUserDataChangeEventRecord_struct</scope><name>hashedInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

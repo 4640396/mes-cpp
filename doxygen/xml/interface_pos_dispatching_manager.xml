@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_dispatching_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDispatchingManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DispatchingManager</basecompoundref>
+    <includes refid="pdpmg_8idl" local="no">pdpmg.idl</includes>
+    <innerclass refid="exception_pos_dispatching_manager_1_1_flow_batch_not_found_signal" prot="public">PosDispatchingManager::FlowBatchNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_dispatching_manager_1_1_duplicate_logic_object_signal" prot="public">PosDispatchingManager::DuplicateLogicObjectSignal</innerclass>
+    <innerclass refid="exception_pos_dispatching_manager_1_1_logic_object_not_found_signal" prot="public">PosDispatchingManager::LogicObjectNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_dispatching_manager_1_1_lot_not_found_signal" prot="public">PosDispatchingManager::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_dispatching_manager_1_1_lot_duplicate_signal" prot="public">PosDispatchingManager::LotDuplicateSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a07e1c8443728958577d22f0ce239811a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::addToQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>addToQueue</name>
+        <qualifiedname>PosDispatchingManager::addToQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="176" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1af5b77a76e768bed5cd06aac3fb8cebc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::removeFromQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeFromQueue</name>
+        <qualifiedname>PosDispatchingManager::removeFromQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="184" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a052da24bbb1a82a484415c5d44e0d29b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_flow_batch" kindref="compound">PosFlowBatch</ref></type>
+        <definition>PosFlowBatch PosDispatchingManager::createFlowBatch</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createFlowBatch</name>
+        <qualifiedname>PosDispatchingManager::createFlowBatch</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="190" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a7b92089e329b5483c2c873647dfce187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::removeFlowBatch</definition>
+        <argsstring>(in PosFlowBatch flowBatch)</argsstring>
+        <name>removeFlowBatch</name>
+        <qualifiedname>PosDispatchingManager::removeFlowBatch</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_flow_batch" kindref="compound">PosFlowBatch</ref></type>
+          <declname>flowBatch</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_dispatching_manager_1_1_flow_batch_not_found_signal" kindref="compound">FlowBatchNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="196" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1acf432833435c594c0f22603e7f6802b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_flow_batch" kindref="compound">PosFlowBatch</ref></type>
+        <definition>PosFlowBatch PosDispatchingManager::findFlowBatchNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findFlowBatchNamed</name>
+        <qualifiedname>PosDispatchingManager::findFlowBatchNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_dispatching_manager_1_1_flow_batch_not_found_signal" kindref="compound">FlowBatchNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="203" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1aefe12ba3c3d74b49a7466c8a75b8d2d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::PosDispatchingManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosDispatchingManager_init</name>
+        <qualifiedname>PosDispatchingManager::PosDispatchingManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="209" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a1f6be257ea95b61e25e5d5974ea1fda3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_flow_batch_dispatcher" kindref="compound">PosFlowBatchDispatcher</ref></type>
+        <definition>PosFlowBatchDispatcher PosDispatchingManager::getFlowBatchDispatcher</definition>
+        <argsstring>()</argsstring>
+        <name>getFlowBatchDispatcher</name>
+        <qualifiedname>PosDispatchingManager::getFlowBatchDispatcher</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="216" column="26"/>
+        <references refid="interface_pos_dispatching_manager_1a1f6be257ea95b61e25e5d5974ea1fda3">getFlowBatchDispatcher</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a1f6be257ea95b61e25e5d5974ea1fda3">getFlowBatchDispatcher</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1ae9f4ed1b88b4108216cd40a9179b7f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::deleteFlowBatchDisptcher</definition>
+        <argsstring>()</argsstring>
+        <name>deleteFlowBatchDisptcher</name>
+        <qualifiedname>PosDispatchingManager::deleteFlowBatchDisptcher</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="223" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1ae9f4ed1b88b4108216cd40a9179b7f49">deleteFlowBatchDisptcher</references>
+        <referencedby refid="interface_pos_dispatching_manager_1ae9f4ed1b88b4108216cd40a9179b7f49">deleteFlowBatchDisptcher</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1ae8ce23d83e8fbdc489637cab84149db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1afd0ffca3cf4b8f12a1e7e5cac84e3407" kindref="member">PosFlowBatchSequence</ref></type>
+        <definition>PosFlowBatchSequence PosDispatchingManager::allFloatingFlowBatches</definition>
+        <argsstring>()</argsstring>
+        <name>allFloatingFlowBatches</name>
+        <qualifiedname>PosDispatchingManager::allFloatingFlowBatches</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="230" column="24"/>
+        <references refid="interface_pos_dispatching_manager_1ae8ce23d83e8fbdc489637cab84149db5">allFloatingFlowBatches</references>
+        <referencedby refid="interface_pos_dispatching_manager_1ae8ce23d83e8fbdc489637cab84149db5">allFloatingFlowBatches</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1ae2a447380d43cc5bd5a30ad71860dc4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a59539c6cdf49769ba5913daa19066403" kindref="member">PosWhatNextLogicSequence</ref></type>
+        <definition>PosWhatNextLogicSequence PosDispatchingManager::allWhatNextLogicObjects</definition>
+        <argsstring>()</argsstring>
+        <name>allWhatNextLogicObjects</name>
+        <qualifiedname>PosDispatchingManager::allWhatNextLogicObjects</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="236" column="28"/>
+        <references refid="interface_pos_dispatching_manager_1ae2a447380d43cc5bd5a30ad71860dc4d">allWhatNextLogicObjects</references>
+        <referencedby refid="interface_pos_dispatching_manager_1ae2a447380d43cc5bd5a30ad71860dc4d">allWhatNextLogicObjects</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1af74b44d4f035428eab4eea41a320e417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::registerWhatNextLogicObject</definition>
+        <argsstring>(in PosWhatNextLogicBase aWhatNextLogicObject)</argsstring>
+        <name>registerWhatNextLogicObject</name>
+        <qualifiedname>PosDispatchingManager::registerWhatNextLogicObject</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_what_next_logic_base" kindref="compound">PosWhatNextLogicBase</ref></type>
+          <declname>aWhatNextLogicObject</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_dispatching_manager_1_1_duplicate_logic_object_signal" kindref="compound">DuplicateLogicObjectSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="246" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1af74b44d4f035428eab4eea41a320e417">registerWhatNextLogicObject</references>
+        <referencedby refid="interface_pos_dispatching_manager_1af74b44d4f035428eab4eea41a320e417">registerWhatNextLogicObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1aa0144616dbd2a95a25ad5b893030664f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::unregisterWhatNextLogicObject</definition>
+        <argsstring>(in string logicName)</argsstring>
+        <name>unregisterWhatNextLogicObject</name>
+        <qualifiedname>PosDispatchingManager::unregisterWhatNextLogicObject</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>logicName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="256" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1aa0144616dbd2a95a25ad5b893030664f">unregisterWhatNextLogicObject</references>
+        <referencedby refid="interface_pos_dispatching_manager_1aa0144616dbd2a95a25ad5b893030664f">unregisterWhatNextLogicObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a541a71f887745e2d185c98235c5651ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_what_next_logic_base" kindref="compound">PosWhatNextLogicBase</ref></type>
+        <definition>PosWhatNextLogicBase PosDispatchingManager::findWhatNextLogicObjectNamed</definition>
+        <argsstring>(in string logicName)</argsstring>
+        <name>findWhatNextLogicObjectNamed</name>
+        <qualifiedname>PosDispatchingManager::findWhatNextLogicObjectNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>logicName</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_dispatching_manager_1_1_logic_object_not_found_signal" kindref="compound">LogicObjectNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="264" column="24"/>
+        <references refid="interface_pos_dispatching_manager_1a541a71f887745e2d185c98235c5651ee">findWhatNextLogicObjectNamed</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a541a71f887745e2d185c98235c5651ee">findWhatNextLogicObjectNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1ada25f9a872530d64a36d2ac0fe75ca98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::addToHoldQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>addToHoldQueue</name>
+        <qualifiedname>PosDispatchingManager::addToHoldQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="271" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1ada25f9a872530d64a36d2ac0fe75ca98">addToHoldQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1ada25f9a872530d64a36d2ac0fe75ca98">addToHoldQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a96ccba1df50a48ec2dad2a949f1540c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::removeFromHoldQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeFromHoldQueue</name>
+        <qualifiedname>PosDispatchingManager::removeFromHoldQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="278" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1a96ccba1df50a48ec2dad2a949f1540c4">removeFromHoldQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a96ccba1df50a48ec2dad2a949f1540c4">removeFromHoldQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a9caadf1d4e58f46b485c7f42b177a854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::moveToWIPQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>moveToWIPQueue</name>
+        <qualifiedname>PosDispatchingManager::moveToWIPQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="284" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1a9caadf1d4e58f46b485c7f42b177a854">moveToWIPQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a9caadf1d4e58f46b485c7f42b177a854">moveToWIPQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1af2d38b58e56b18d0ba027a0513f39fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::addToDurableQueue</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID)</argsstring>
+        <name>addToDurableQueue</name>
+        <qualifiedname>PosDispatchingManager::addToDurableQueue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="293" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1af2d38b58e56b18d0ba027a0513f39fb1">addToDurableQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1af2d38b58e56b18d0ba027a0513f39fb1">addToDurableQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a1a2cdda97519219c37ba8a7c324b3223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::removeFromDurableQueue</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID)</argsstring>
+        <name>removeFromDurableQueue</name>
+        <qualifiedname>PosDispatchingManager::removeFromDurableQueue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="301" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1a1a2cdda97519219c37ba8a7c324b3223">removeFromDurableQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a1a2cdda97519219c37ba8a7c324b3223">removeFromDurableQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1addf646c613715e78f231358d2f1ed982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::addToDurableHoldQueue</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID)</argsstring>
+        <name>addToDurableHoldQueue</name>
+        <qualifiedname>PosDispatchingManager::addToDurableHoldQueue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="308" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1addf646c613715e78f231358d2f1ed982">addToDurableHoldQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1addf646c613715e78f231358d2f1ed982">addToDurableHoldQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1a2910414d352480658dcd2b88c2eb53f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::removeFromDurableHoldQueue</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID)</argsstring>
+        <name>removeFromDurableHoldQueue</name>
+        <qualifiedname>PosDispatchingManager::removeFromDurableHoldQueue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="315" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1a2910414d352480658dcd2b88c2eb53f8">removeFromDurableHoldQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1a2910414d352480658dcd2b88c2eb53f8">removeFromDurableHoldQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatching_manager_1abc6ed243fc6c1cf00002c99f98acd42c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatchingManager::moveToDurableWIPQueue</definition>
+        <argsstring>(in string durableCategory, in objectIdentifier durableID)</argsstring>
+        <name>moveToDurableWIPQueue</name>
+        <qualifiedname>PosDispatchingManager::moveToDurableWIPQueue</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>durableID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpmg.idl" line="321" column="8"/>
+        <references refid="interface_pos_dispatching_manager_1abc6ed243fc6c1cf00002c99f98acd42c">moveToDurableWIPQueue</references>
+        <referencedby refid="interface_pos_dispatching_manager_1abc6ed243fc6c1cf00002c99f98acd42c">moveToDurableWIPQueue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DispatchingManager</label>
+      </node>
+      <node id="1">
+        <label>PosDispatchingManager</label>
+        <link refid="interface_pos_dispatching_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DispatchingManager</label>
+      </node>
+      <node id="1">
+        <label>PosDispatchingManager</label>
+        <link refid="interface_pos_dispatching_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdpmg.idl" line="43" column="11" bodyfile="poscimfw/include/pdpmg.idl" bodystart="43" bodyend="329"/>
+    <listofallmembers>
+      <member refid="interface_pos_dispatching_manager_1addf646c613715e78f231358d2f1ed982" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>addToDurableHoldQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1af2d38b58e56b18d0ba027a0513f39fb1" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>addToDurableQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1ada25f9a872530d64a36d2ac0fe75ca98" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>addToHoldQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1a07e1c8443728958577d22f0ce239811a" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>addToQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1ae8ce23d83e8fbdc489637cab84149db5" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>allFloatingFlowBatches</name></member>
+      <member refid="interface_pos_dispatching_manager_1ae2a447380d43cc5bd5a30ad71860dc4d" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>allWhatNextLogicObjects</name></member>
+      <member refid="interface_pos_dispatching_manager_1a052da24bbb1a82a484415c5d44e0d29b" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>createFlowBatch</name></member>
+      <member refid="interface_pos_dispatching_manager_1ae9f4ed1b88b4108216cd40a9179b7f49" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>deleteFlowBatchDisptcher</name></member>
+      <member refid="interface_pos_dispatching_manager_1acf432833435c594c0f22603e7f6802b2" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>findFlowBatchNamed</name></member>
+      <member refid="interface_pos_dispatching_manager_1a541a71f887745e2d185c98235c5651ee" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>findWhatNextLogicObjectNamed</name></member>
+      <member refid="interface_pos_dispatching_manager_1a1f6be257ea95b61e25e5d5974ea1fda3" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>getFlowBatchDispatcher</name></member>
+      <member refid="interface_pos_dispatching_manager_1abc6ed243fc6c1cf00002c99f98acd42c" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>moveToDurableWIPQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1a9caadf1d4e58f46b485c7f42b177a854" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>moveToWIPQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1aefe12ba3c3d74b49a7466c8a75b8d2d6" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>PosDispatchingManager_init</name></member>
+      <member refid="interface_pos_dispatching_manager_1af74b44d4f035428eab4eea41a320e417" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>registerWhatNextLogicObject</name></member>
+      <member refid="interface_pos_dispatching_manager_1a7b92089e329b5483c2c873647dfce187" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>removeFlowBatch</name></member>
+      <member refid="interface_pos_dispatching_manager_1a2910414d352480658dcd2b88c2eb53f8" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>removeFromDurableHoldQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1a1a2cdda97519219c37ba8a7c324b3223" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>removeFromDurableQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1a96ccba1df50a48ec2dad2a949f1540c4" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>removeFromHoldQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1af5b77a76e768bed5cd06aac3fb8cebc0" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>removeFromQueue</name></member>
+      <member refid="interface_pos_dispatching_manager_1aa0144616dbd2a95a25ad5b893030664f" prot="public" virt="non-virtual"><scope>PosDispatchingManager</scope><name>unregisterWhatNextLogicObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

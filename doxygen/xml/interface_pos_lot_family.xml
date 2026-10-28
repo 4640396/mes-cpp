@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_lot_family" kind="interface" language="IDL" prot="public">
+    <compoundname>PosLotFamily</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">LotFamily</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="plotfm_8idl" local="no">plotfm.idl</includes>
+    <innerclass refid="exception_pos_lot_family_1_1_lot_not_found_signal" prot="public">PosLotFamily::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_lot_family_1_1_product_not_found_signal" prot="public">PosLotFamily::ProductNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_lot_family_1ac5a205873e6df85e74a241be2f6ad446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotFamily::PosLotFamily_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosLotFamily_init</name>
+        <qualifiedname>PosLotFamily::PosLotFamily_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plotfm.idl" line="99" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_family_1a972771ed2550f158abfe686b4906696e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotFamily::setLastSplitNumber</definition>
+        <argsstring>(in long splitNo)</argsstring>
+        <name>setLastSplitNumber</name>
+        <qualifiedname>PosLotFamily::setLastSplitNumber</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>splitNo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plotfm.idl" line="105" column="8"/>
+        <references refid="interface_pos_lot_family_1a972771ed2550f158abfe686b4906696e">setLastSplitNumber</references>
+        <referencedby refid="interface_pos_lot_family_1a972771ed2550f158abfe686b4906696e">setLastSplitNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_family_1a60b3fcdc80a63cc9f9952d8a2ac82639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosLotFamily::getLastSplitNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getLastSplitNumber</name>
+        <qualifiedname>PosLotFamily::getLastSplitNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plotfm.idl" line="111" column="8"/>
+        <references refid="interface_pos_lot_family_1a60b3fcdc80a63cc9f9952d8a2ac82639">getLastSplitNumber</references>
+        <referencedby refid="interface_pos_lot_family_1a60b3fcdc80a63cc9f9952d8a2ac82639">getLastSplitNumber</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>LotFamily</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosLotFamily</label>
+        <link refid="interface_pos_lot_family"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>LotFamily</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosLotFamily</label>
+        <link refid="interface_pos_lot_family"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/plotfm.idl" line="38" column="11" bodyfile="poscimfw/include/plotfm.idl" bodystart="38" bodyend="119"/>
+    <listofallmembers>
+      <member refid="interface_pos_lot_family_1a60b3fcdc80a63cc9f9952d8a2ac82639" prot="public" virt="non-virtual"><scope>PosLotFamily</scope><name>getLastSplitNumber</name></member>
+      <member refid="interface_pos_lot_family_1ac5a205873e6df85e74a241be2f6ad446" prot="public" virt="non-virtual"><scope>PosLotFamily</scope><name>PosLotFamily_init</name></member>
+      <member refid="interface_pos_lot_family_1a972771ed2550f158abfe686b4906696e" prot="public" virt="non-virtual"><scope>PosLotFamily</scope><name>setLastSplitNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

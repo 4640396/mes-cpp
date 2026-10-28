@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const out='analysis/mes-cpp',read=f=>JSON.parse(fs.readFileSync(out+'/'+f)),write=(f,d)=>fs.writeFileSync(out+'/'+f,JSON.stringify(d,null,2));
+const r=read('deep-reviews.json'),d=read('deep-facts.json'),file='smtchcmf/frmwrkgl/cimfwdo.cpp';
+const definitions=[['global_function','doSearchOptimalSQL',2721,2737],['template_definition','CIMFW_DO_EditGraph< EditNode_ >::searchOptimalSQL',1845,1855],['template_definition','CIMFW_DO_EditGraph< EditNode_ >::searchOptimalSQL',1858,1865],['template_definition','CIMFW_DO_EditGraph< EditNode_ >::searchOptimalSQL',1868,2070],['template_definition','CIMFW_DO_EditGraph< EditNode_ >::assembleSQL',2459,2634]];
+for(const [kind,qualified,line,end_line] of definitions)if(!r.records.some(x=>x.file===file&&x.qualified===qualified&&x.line===line))r.records.push({kind,file,qualified,line,end_line,status:'body_reviewed_with_external_unknowns',report:'persistence-planner-deep.md',unknowns:['编辑图初始化和成本界限','Comparator、Merge callback 与排序','实际数据库耗时和事务']});
+r.currentFocus='已追编辑图 SQL 搜索/回溯及环境配置成本，模板定义单列登记，不能以 Optimal 名称宣称实测全局最优。下一步核实图初始化、比较器和 Merge 回调，并继续其他业务领域。';
+const n=(id,type,label)=>{if(!d.nodes.some(x=>x.id===id))d.nodes.push({id,type,label});};
+const e=(from,type,to,line,end_line,condition)=>{const v={from,type,to,sources:[{path:file,line,end_line}],...(condition?{condition}:{})};if(!d.edges.some(x=>JSON.stringify([x.from,x.type,x.to,x.sources])===JSON.stringify([v.from,v.type,v.to,v.sources])))d.edges.push(v);};
+for(const [id,label] of [['plannerSearch','doSearchOptimalSQL'],['plannerThreshold','CIMFW_DO_EditGraph::searchOptimalSQL(threshold)'],['plannerCore','CIMFW_DO_EditGraph::searchOptimalSQL(core)'],['plannerAssemble','CIMFW_DO_EditGraph::assembleSQL']])n(id,'Method',label);
+n('plannerCostRule','Rule','阈值=minCost+(maxCost-minCost)*配置比例，受编辑图和成本模型限制，不是数据库实测耗时');
+n('plannerOutputRule','Rule','编辑图回溯生成 callback 计划，返回 deleteAll 标志，不等于 SQL 已执行');
+e('plannerSearch','CALLS','plannerThreshold',2721,2737);e('plannerSearch','CALLS','plannerAssemble',2721,2737);e('plannerThreshold','CALLS','plannerCore',1845,1855);e('plannerThreshold','HAS_RULE','plannerCostRule',1845,1855);e('plannerAssemble','HAS_RULE','plannerOutputRule',2459,2634);
+write('deep-reviews.json',r);write('deep-facts.json',d);console.log(JSON.stringify({reviews:r.records.length,addedDefinitionKinds:definitions.map(x=>x[0])}));

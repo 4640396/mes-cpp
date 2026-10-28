@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_lot_bank_move_event" kind="interface" language="IDL" prot="public">
+    <compoundname>PosLotBankMoveEvent</compoundname>
+    <basecompoundref refid="interface_pos_event_base" prot="public" virt="non-virtual">PosEventBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pevbkmv_8idl" local="no">pevbkmv.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_lot_bank_move_event_1a2b625e5bfec138101781d7be6a8b01c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotBankMoveEvent::PosLotBankMoveEvent_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosLotBankMoveEvent_init</name>
+        <qualifiedname>PosLotBankMoveEvent::PosLotBankMoveEvent_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevbkmv.idl" line="55" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosEventBase</label>
+        <link refid="interface_pos_event_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosLotBankMoveEvent</label>
+        <link refid="interface_pos_lot_bank_move_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PosEventBase</label>
+        <link refid="interface_pos_event_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosLotBankMoveEvent</label>
+        <link refid="interface_pos_lot_bank_move_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevbkmv.idl" line="40" column="11" bodyfile="poscimfw/include/pevbkmv.idl" bodystart="40" bodyend="65"/>
+    <listofallmembers>
+      <member refid="interface_pos_event_base_1af66a03fc4f10087dd4429f9d9198f7e0" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>addFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a2c948c4ac5bb70fa0fdfd14d59171d94" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>allFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a7accd192654cc0a51491794e3e1ef09b" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>getEventData</name></member>
+      <member refid="interface_pos_event_base_1af7abf289bf3ef52e9ac57b87a3ba6617" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>isCFMApplied</name></member>
+      <member refid="interface_pos_event_base_1a4ae1ee40aa11394dae4986730be2a6a7" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>isHistoryApplied</name></member>
+      <member refid="interface_pos_event_base_1a69f6b7d6e6f1334aa691e59dd5a3480c" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>makeCFMApplied</name></member>
+      <member refid="interface_pos_event_base_1a9553ada1d3564bd5b66db037341c8b84" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>makeHistoryApplied</name></member>
+      <member refid="interface_pos_event_base_1a9bbf6a223715f986351fddd27a98aa55" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>PosEventBase_init</name></member>
+      <member refid="interface_pos_lot_bank_move_event_1a2b625e5bfec138101781d7be6a8b01c0" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>PosLotBankMoveEvent_init</name></member>
+      <member refid="interface_pos_event_base_1a499b98ea86ad204208b3f383d128d1e4" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>removeFIFOData</name></member>
+      <member refid="interface_pos_event_base_1a3f61a88dbdbef6f8fc0d97e3e8a5d958" prot="public" virt="non-virtual"><scope>PosLotBankMoveEvent</scope><name>setEventData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

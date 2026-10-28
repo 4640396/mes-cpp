@@ -1,0 +1,1232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_logical_recipe" kind="interface" language="IDL" prot="public">
+    <compoundname>PosLogicalRecipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="plcrc_8idl" local="no">plcrc.idl</includes>
+    <innerclass refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" prot="public">PosLogicalRecipe::SetLogicalRecipeInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" prot="public">PosLogicalRecipe::MeasurementDCDefNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a66225457bb176c481ba7e09f5e8a1ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::PosLogicalRecipe_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosLogicalRecipe_init</name>
+        <qualifiedname>PosLogicalRecipe::PosLogicalRecipe_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosLogicalRecipe::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="113" column="8"/>
+        <references refid="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51">setIdentifier</references>
+        <referencedby refid="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosLogicalRecipe::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="119" column="10"/>
+        <references refid="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a">getIdentifier</references>
+        <referencedby refid="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosLogicalRecipe::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="125" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347">setDescription</references>
+        <referencedby refid="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosLogicalRecipe::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="131" column="10"/>
+        <references refid="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c">getDescription</references>
+        <referencedby refid="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setRecipeType</definition>
+        <argsstring>(in string recipeType)</argsstring>
+        <name>setRecipeType</name>
+        <qualifiedname>PosLogicalRecipe::setRecipeType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>recipeType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="137" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d">setRecipeType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d">setRecipeType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getRecipeType</definition>
+        <argsstring>()</argsstring>
+        <name>getRecipeType</name>
+        <qualifiedname>PosLogicalRecipe::getRecipeType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="143" column="10"/>
+        <references refid="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231">getRecipeType</references>
+        <referencedby refid="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231">getRecipeType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setMonitorProduct</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>setMonitorProduct</name>
+        <qualifiedname>PosLogicalRecipe::setMonitorProduct</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="149" column="8"/>
+        <references refid="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a">setMonitorProduct</references>
+        <referencedby refid="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a">setMonitorProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+        <definition>PosProductSpecification PosLogicalRecipe::getMonitorProduct</definition>
+        <argsstring>()</argsstring>
+        <name>getMonitorProduct</name>
+        <qualifiedname>PosLogicalRecipe::getMonitorProduct</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="155" column="27"/>
+        <references refid="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f">getMonitorProduct</references>
+        <referencedby refid="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f">getMonitorProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeMonitorHoldRequired</definition>
+        <argsstring>()</argsstring>
+        <name>makeMonitorHoldRequired</name>
+        <qualifiedname>PosLogicalRecipe::makeMonitorHoldRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="161" column="8"/>
+        <references refid="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd">makeMonitorHoldRequired</references>
+        <referencedby refid="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd">makeMonitorHoldRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeMonitorHoldNotRequired</definition>
+        <argsstring>()</argsstring>
+        <name>makeMonitorHoldNotRequired</name>
+        <qualifiedname>PosLogicalRecipe::makeMonitorHoldNotRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="167" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252">makeMonitorHoldNotRequired</references>
+        <referencedby refid="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252">makeMonitorHoldNotRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosLogicalRecipe::isMonitorHoldRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isMonitorHoldRequired</name>
+        <qualifiedname>PosLogicalRecipe::isMonitorHoldRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="173" column="11"/>
+        <references refid="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e">isMonitorHoldRequired</references>
+        <referencedby refid="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e">isMonitorHoldRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setDefaultRecipeSettings</definition>
+        <argsstring>(in PosDefaultRecipeSettingSequence settings)</argsstring>
+        <name>setDefaultRecipeSettings</name>
+        <qualifiedname>PosLogicalRecipe::setDefaultRecipeSettings</qualifiedname>
+        <param>
+          <type>in <ref refid="prcmggl_8idl_1a802e2daf105c432a4a0a3c0ba511da1c" kindref="member">PosDefaultRecipeSettingSequence</ref></type>
+          <declname>settings</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="179" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c">setDefaultRecipeSettings</references>
+        <referencedby refid="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c">setDefaultRecipeSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1a802e2daf105c432a4a0a3c0ba511da1c" kindref="member">PosDefaultRecipeSettingSequence</ref></type>
+        <definition>PosDefaultRecipeSettingSequence PosLogicalRecipe::getDefaultRecipeSettings</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultRecipeSettings</name>
+        <qualifiedname>PosLogicalRecipe::getDefaultRecipeSettings</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="185" column="35"/>
+        <references refid="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69">getDefaultRecipeSettings</references>
+        <referencedby refid="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69">getDefaultRecipeSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setMachineSpecificRecipeSettings</definition>
+        <argsstring>(in PosMachineSpecificRecipeSettingSequence settings)</argsstring>
+        <name>setMachineSpecificRecipeSettings</name>
+        <qualifiedname>PosLogicalRecipe::setMachineSpecificRecipeSettings</qualifiedname>
+        <param>
+          <type>in <ref refid="prcmggl_8idl_1a96eb28aaa9f1dcc8a3598f3c01e20623" kindref="member">PosMachineSpecificRecipeSettingSequence</ref></type>
+          <declname>settings</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="191" column="8"/>
+        <references refid="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469">setMachineSpecificRecipeSettings</references>
+        <referencedby refid="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469">setMachineSpecificRecipeSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1a96eb28aaa9f1dcc8a3598f3c01e20623" kindref="member">PosMachineSpecificRecipeSettingSequence</ref></type>
+        <definition>PosMachineSpecificRecipeSettingSequence PosLogicalRecipe::getMachineSpecificRecipeSettings</definition>
+        <argsstring>()</argsstring>
+        <name>getMachineSpecificRecipeSettings</name>
+        <qualifiedname>PosLogicalRecipe::getMachineSpecificRecipeSettings</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="197" column="43"/>
+        <references refid="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41">getMachineSpecificRecipeSettings</references>
+        <referencedby refid="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41">getMachineSpecificRecipeSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setLogicalRecipeInfo</definition>
+        <argsstring>(in brLogicalRecipeInfo logicalRecipeInfo)</argsstring>
+        <name>setLogicalRecipeInfo</name>
+        <qualifiedname>PosLogicalRecipe::setLogicalRecipeInfo</qualifiedname>
+        <param>
+          <type>in brLogicalRecipeInfo</type>
+          <declname>logicalRecipeInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="203" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792">setLogicalRecipeInfo</references>
+        <referencedby refid="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792">setLogicalRecipeInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1ac07db8b80b4660be85e150c1a7403b79" kindref="member">PosProcessDurableCapabilitySequence</ref></type>
+        <definition>PosProcessDurableCapabilitySequence PosLogicalRecipe::allFixtureGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allFixtureGroups</name>
+        <qualifiedname>PosLogicalRecipe::allFixtureGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="210" column="39"/>
+        <references refid="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0">allFixtureGroups</references>
+        <referencedby refid="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0">allFixtureGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosLogicalRecipe::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosLogicalRecipe::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="216" column="18"/>
+        <references refid="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410">getPropertySet</references>
+        <referencedby refid="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setTestType</definition>
+        <argsstring>(in PosTestType aTestType)</argsstring>
+        <name>setTestType</name>
+        <qualifiedname>PosLogicalRecipe::setTestType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+          <declname>aTestType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="222" column="8"/>
+        <references refid="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642">setTestType</references>
+        <referencedby refid="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642">setTestType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+        <definition>PosTestType PosLogicalRecipe::getTestType</definition>
+        <argsstring>()</argsstring>
+        <name>getTestType</name>
+        <qualifiedname>PosLogicalRecipe::getTestType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="228" column="15"/>
+        <references refid="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5">getTestType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5">getTestType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+        <definition>PosMachineRecipe PosLogicalRecipe::findMachineRecipeForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in string subLotType)</argsstring>
+        <name>findMachineRecipeForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findMachineRecipeForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="238" column="20"/>
+        <references refid="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3">findMachineRecipeForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3">findMachineRecipeForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+        <definition>PosMachineRecipe PosLogicalRecipe::findMachineRecipeFor</definition>
+        <argsstring>(in PosLot aLot, in PosMachine aMachine)</argsstring>
+        <name>findMachineRecipeFor</name>
+        <qualifiedname>PosLogicalRecipe::findMachineRecipeFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="248" column="20"/>
+        <references refid="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f">findMachineRecipeFor</references>
+        <referencedby refid="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f">findMachineRecipeFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a49aeda4946030a8b0d30694f9e91da17" kindref="member">PosMachineSequence</ref></type>
+        <definition>PosMachineSequence PosLogicalRecipe::retrieveMachines</definition>
+        <argsstring>()</argsstring>
+        <name>retrieveMachines</name>
+        <qualifiedname>PosLogicalRecipe::retrieveMachines</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="255" column="22"/>
+        <references refid="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5">retrieveMachines</references>
+        <referencedby refid="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5">retrieveMachines</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setSubLotType</definition>
+        <argsstring>(in string aSubLotType)</argsstring>
+        <name>setSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::setSubLotType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aSubLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="261" column="8"/>
+        <references refid="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf">setSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf">setSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getSubLotType</definition>
+        <argsstring>()</argsstring>
+        <name>getSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::getSubLotType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="267" column="10"/>
+        <references refid="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565">getSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565">getSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref></type>
+        <definition>PosLogicalRecipe PosLogicalRecipe::getActiveObject</definition>
+        <argsstring>()</argsstring>
+        <name>getActiveObject</name>
+        <qualifiedname>PosLogicalRecipe::getActiveObject</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="273" column="20"/>
+        <references refid="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9">getActiveObject</references>
+        <referencedby refid="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9">getActiveObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosLogicalRecipe::isMultipleChamberSupported</definition>
+        <argsstring>()</argsstring>
+        <name>isMultipleChamberSupported</name>
+        <qualifiedname>PosLogicalRecipe::isMultipleChamberSupported</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="280" column="11"/>
+        <references refid="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2">isMultipleChamberSupported</references>
+        <referencedby refid="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2">isMultipleChamberSupported</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeMultipleChamberSupported</definition>
+        <argsstring>()</argsstring>
+        <name>makeMultipleChamberSupported</name>
+        <qualifiedname>PosLogicalRecipe::makeMultipleChamberSupported</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="286" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094">makeMultipleChamberSupported</references>
+        <referencedby refid="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094">makeMultipleChamberSupported</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeMultipleChamberNotSupported</definition>
+        <argsstring>()</argsstring>
+        <name>makeMultipleChamberNotSupported</name>
+        <qualifiedname>PosLogicalRecipe::makeMultipleChamberNotSupported</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="292" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc">makeMultipleChamberNotSupported</references>
+        <referencedby refid="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc">makeMultipleChamberNotSupported</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref></type>
+        <definition>posDefaultRecipeSetting PosLogicalRecipe::findDefaultSettingForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in string subLotType)</argsstring>
+        <name>findDefaultSettingForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findDefaultSettingForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="302" column="27"/>
+        <references refid="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408">findDefaultSettingForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408">findDefaultSettingForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref></type>
+        <definition>posDefaultRecipeSetting PosLogicalRecipe::findDefaultSettingFor</definition>
+        <argsstring>(in PosLot aLot, in PosMachine aMachine)</argsstring>
+        <name>findDefaultSettingFor</name>
+        <qualifiedname>PosLogicalRecipe::findDefaultSettingFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="312" column="27"/>
+        <references refid="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64">findDefaultSettingFor</references>
+        <referencedby refid="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64">findDefaultSettingFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setActiveObjectID</definition>
+        <argsstring>(in objectIdentifier activeObjectID)</argsstring>
+        <name>setActiveObjectID</name>
+        <qualifiedname>PosLogicalRecipe::setActiveObjectID</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>activeObjectID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="318" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325">setActiveObjectID</references>
+        <referencedby refid="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325">setActiveObjectID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_data_collection_specification" kindref="compound">PosDataCollectionSpecification</ref></type>
+        <definition>PosDataCollectionSpecification PosLogicalRecipe::findProcessDCSpecificationForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findProcessDCSpecificationForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findProcessDCSpecificationForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="336" column="34"/>
+        <references refid="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe">findProcessDCSpecificationForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe">findProcessDCSpecificationForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref></type>
+        <definition>PosDataCollectionDefinition PosLogicalRecipe::findDataCollectionDefinitionForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findDataCollectionDefinitionForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findDataCollectionDefinitionForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_measurement_d_c_def_not_found_signal" kindref="compound">MeasurementDCDefNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="348" column="31"/>
+        <references refid="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1">findDataCollectionDefinitionForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1">findDataCollectionDefinitionForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdrmggl_8idl_1ac07db8b80b4660be85e150c1a7403b79" kindref="member">PosProcessDurableCapabilitySequence</ref></type>
+        <definition>PosProcessDurableCapabilitySequence PosLogicalRecipe::findFixtureGroupsForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findFixtureGroupsForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findFixtureGroupsForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="360" column="39"/>
+        <references refid="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c">findFixtureGroupsForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c">findFixtureGroupsForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref></type>
+        <definition>PosBinDefinition PosLogicalRecipe::findBinDefinitionForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findBinDefinitionForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findBinDefinitionForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="372" column="20"/>
+        <references refid="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5">findBinDefinitionForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5">findBinDefinitionForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1acf2a8d3f6809cb480620e09deb1212b3" kindref="member">PosRecipeParameterSequence</ref></type>
+        <definition>PosRecipeParameterSequence PosLogicalRecipe::findRecipeParametersForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findRecipeParametersForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findRecipeParametersForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="391" column="30"/>
+        <references refid="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0">findRecipeParametersForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0">findRecipeParametersForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1aa6b3f20941b4d7b2c45c5b0d55fd192f" kindref="member">posDefaultRecipeSetting</ref></type>
+        <definition>posDefaultRecipeSetting PosLogicalRecipe::findDefaultSettingItemsForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findDefaultSettingItemsForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findDefaultSettingItemsForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="404" column="27"/>
+        <references refid="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1">findDefaultSettingItemsForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1">findDefaultSettingItemsForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1a3148b6f60bee31d898e5c97362613352" kindref="member">posMachineSpecificRecipeSetting</ref></type>
+        <definition>posMachineSpecificRecipeSetting PosLogicalRecipe::findMachineSpecificItemsForSubLotType</definition>
+        <argsstring>(in PosMachine aMachine, in PosMachineRecipe aMachineRecipe, in string subLotType)</argsstring>
+        <name>findMachineSpecificItemsForSubLotType</name>
+        <qualifiedname>PosLogicalRecipe::findMachineSpecificItemsForSubLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine_recipe" kindref="compound">PosMachineRecipe</ref></type>
+          <declname>aMachineRecipe</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>subLotType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="417" column="35"/>
+        <references refid="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e">findMachineSpecificItemsForSubLotType</references>
+        <referencedby refid="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e">findMachineSpecificItemsForSubLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setFPCCategory</definition>
+        <argsstring>(in string aFPCCategory)</argsstring>
+        <name>setFPCCategory</name>
+        <qualifiedname>PosLogicalRecipe::setFPCCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aFPCCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="423" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62">setFPCCategory</references>
+        <referencedby refid="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62">setFPCCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getFPCCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getFPCCategory</name>
+        <qualifiedname>PosLogicalRecipe::getFPCCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="429" column="10"/>
+        <references refid="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679">getFPCCategory</references>
+        <referencedby refid="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679">getFPCCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeWhiteFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeWhiteFlagOn</name>
+        <qualifiedname>PosLogicalRecipe::makeWhiteFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="435" column="8"/>
+        <references refid="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa">makeWhiteFlagOn</references>
+        <referencedby refid="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa">makeWhiteFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::makeWhiteFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeWhiteFlagOff</name>
+        <qualifiedname>PosLogicalRecipe::makeWhiteFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="441" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd">makeWhiteFlagOff</references>
+        <referencedby refid="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd">makeWhiteFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosLogicalRecipe::isWhiteFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>isWhiteFlagOn</name>
+        <qualifiedname>PosLogicalRecipe::isWhiteFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="447" column="11"/>
+        <references refid="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5">isWhiteFlagOn</references>
+        <referencedby refid="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5">isWhiteFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setSamplingPolicyName</definition>
+        <argsstring>(in string samplingPolicyName)</argsstring>
+        <name>setSamplingPolicyName</name>
+        <qualifiedname>PosLogicalRecipe::setSamplingPolicyName</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>samplingPolicyName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="453" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746">setSamplingPolicyName</references>
+        <referencedby refid="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746">setSamplingPolicyName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getSamplingPolicyName</definition>
+        <argsstring>()</argsstring>
+        <name>getSamplingPolicyName</name>
+        <qualifiedname>PosLogicalRecipe::getSamplingPolicyName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="459" column="10"/>
+        <references refid="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085">getSamplingPolicyName</references>
+        <referencedby refid="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085">getSamplingPolicyName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setSamplingWaferAttribute</definition>
+        <argsstring>(in string samplingWaferAttribute)</argsstring>
+        <name>setSamplingWaferAttribute</name>
+        <qualifiedname>PosLogicalRecipe::setSamplingWaferAttribute</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>samplingWaferAttribute</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="465" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9">setSamplingWaferAttribute</references>
+        <referencedby refid="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9">setSamplingWaferAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLogicalRecipe::getSamplingWaferAttribute</definition>
+        <argsstring>()</argsstring>
+        <name>getSamplingWaferAttribute</name>
+        <qualifiedname>PosLogicalRecipe::getSamplingWaferAttribute</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="471" column="10"/>
+        <references refid="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e">getSamplingWaferAttribute</references>
+        <referencedby refid="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e">getSamplingWaferAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setLogicalRecipeInfo__090</definition>
+        <argsstring>(in brLogicalRecipeInfo__090 logicalRecipeInfo__090)</argsstring>
+        <name>setLogicalRecipeInfo__090</name>
+        <qualifiedname>PosLogicalRecipe::setLogicalRecipeInfo__090</qualifiedname>
+        <param>
+          <type>in brLogicalRecipeInfo__090</type>
+          <declname>logicalRecipeInfo__090</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="477" column="8"/>
+        <references refid="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4">setLogicalRecipeInfo__090</references>
+        <referencedby refid="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4">setLogicalRecipeInfo__090</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setLogicalRecipeInfo__100</definition>
+        <argsstring>(in brLogicalRecipeInfo__100 logicalRecipeInfo__100)</argsstring>
+        <name>setLogicalRecipeInfo__100</name>
+        <qualifiedname>PosLogicalRecipe::setLogicalRecipeInfo__100</qualifiedname>
+        <param>
+          <type>in brLogicalRecipeInfo__100</type>
+          <declname>logicalRecipeInfo__100</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="484" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6">setLogicalRecipeInfo__100</references>
+        <referencedby refid="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6">setLogicalRecipeInfo__100</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosLogicalRecipe::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosLogicalRecipe::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="490" column="18"/>
+        <references refid="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468">createPropertySet</references>
+        <referencedby refid="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468">createPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setMachineSpecificRecipeSetting</definition>
+        <argsstring>(in PosMachine aMachine, in brEquipmentDISpecificRecipeSettingDataSequence settings)</argsstring>
+        <name>setMachineSpecificRecipeSetting</name>
+        <qualifiedname>PosLogicalRecipe::setMachineSpecificRecipeSetting</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in brEquipmentDISpecificRecipeSettingDataSequence</type>
+          <declname>settings</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="498" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662">setMachineSpecificRecipeSetting</references>
+        <referencedby refid="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662">setMachineSpecificRecipeSetting</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setLogicalRecipeInfo__140</definition>
+        <argsstring>(in brLogicalRecipeInfo__140 logicalRecipeInfo__140)</argsstring>
+        <name>setLogicalRecipeInfo__140</name>
+        <qualifiedname>PosLogicalRecipe::setLogicalRecipeInfo__140</qualifiedname>
+        <param>
+          <type>in brLogicalRecipeInfo__140</type>
+          <declname>logicalRecipeInfo__140</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="507" column="8"/>
+        <references refid="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c">setLogicalRecipeInfo__140</references>
+        <referencedby refid="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c">setLogicalRecipeInfo__140</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLogicalRecipe::setMachineSpecificRecipeSettingsForEqpDI</definition>
+        <argsstring>(in brEquipmentSpecificRecipeSettingDataSequence equipmentSpecificRecipeSettings)</argsstring>
+        <name>setMachineSpecificRecipeSettingsForEqpDI</name>
+        <qualifiedname>PosLogicalRecipe::setMachineSpecificRecipeSettingsForEqpDI</qualifiedname>
+        <param>
+          <type>in brEquipmentSpecificRecipeSettingDataSequence</type>
+          <declname>equipmentSpecificRecipeSettings</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_logical_recipe_1_1_set_logical_recipe_info_failed_signal" kindref="compound">SetLogicalRecipeInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/plcrc.idl" line="515" column="8"/>
+        <references refid="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7">setMachineSpecificRecipeSettingsForEqpDI</references>
+        <referencedby refid="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7">setMachineSpecificRecipeSettingsForEqpDI</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLogicalRecipe</label>
+        <link refid="interface_pos_logical_recipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLogicalRecipe</label>
+        <link refid="interface_pos_logical_recipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/plcrc.idl" line="46" column="11" bodyfile="poscimfw/include/plcrc.idl" bodystart="46" bodyend="523"/>
+    <listofallmembers>
+      <member refid="interface_pos_logical_recipe_1a0247a1b2cf9603599c0e2d0e7ad448d0" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>allFixtureGroups</name></member>
+      <member refid="interface_pos_logical_recipe_1ad33ad1ab6c11e97ff0fb0d3fc6f27468" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_logical_recipe_1ad8625965a3f81650249b5bed5c9774b5" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findBinDefinitionForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a31bac12b8d4111810256a98357d8f9f1" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findDataCollectionDefinitionForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1ac9b6f7baedb95b20577d13d3c9593f64" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findDefaultSettingFor</name></member>
+      <member refid="interface_pos_logical_recipe_1a187a2007b182bcc90ccd5da7c33e1408" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findDefaultSettingForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a308c65997b24ae59c457467880ff44c1" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findDefaultSettingItemsForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a492e306f752e617d021ff9237199bf1c" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findFixtureGroupsForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a9d6797c3e559c8b2076b2ce3accbc15f" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findMachineRecipeFor</name></member>
+      <member refid="interface_pos_logical_recipe_1ad4f7b7174970bc135ef16d40b3ffa3e3" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findMachineRecipeForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a7826a3bff7f352ab669ef383fcc52a6e" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findMachineSpecificItemsForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a9d66cc7a0e4ac836e7dc5ce9e2f1efbe" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findProcessDCSpecificationForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a87a42a86535274caebe85d402e67c0b0" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>findRecipeParametersForSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a12fe68a686271bd27b38a3854f808ff9" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getActiveObject</name></member>
+      <member refid="interface_pos_logical_recipe_1a81a5c87e5130265b1a4e3bf0a7c78e69" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getDefaultRecipeSettings</name></member>
+      <member refid="interface_pos_logical_recipe_1aa65982bf73f961099f80e77d15decf3c" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getDescription</name></member>
+      <member refid="interface_pos_logical_recipe_1a82c66e1694958bb914f348f83d6c5679" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getFPCCategory</name></member>
+      <member refid="interface_pos_logical_recipe_1acbd96e98fa91f2d6b58310cb2093ea7a" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_logical_recipe_1ad5cc004cacbe9b630192c3b6d71b9b41" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getMachineSpecificRecipeSettings</name></member>
+      <member refid="interface_pos_logical_recipe_1a821f241ed449462413b1266974d85c6f" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getMonitorProduct</name></member>
+      <member refid="interface_pos_logical_recipe_1a892642fbcd88d162d41fcbe0746f4410" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_logical_recipe_1af9ef9b0fca8b5dc6c058c9f2c4a59231" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getRecipeType</name></member>
+      <member refid="interface_pos_logical_recipe_1a721da69b6233aba209a86e65ca515085" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getSamplingPolicyName</name></member>
+      <member refid="interface_pos_logical_recipe_1a833731bca1ce7726e648f426cc91af9e" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getSamplingWaferAttribute</name></member>
+      <member refid="interface_pos_logical_recipe_1a396b2bb71977939f46a73c06b409c565" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1a53faf3fefbcdc8f208526b5fdb3cd8c5" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>getTestType</name></member>
+      <member refid="interface_pos_logical_recipe_1a217ee93bffa6517042537cf8b8e18f8e" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>isMonitorHoldRequired</name></member>
+      <member refid="interface_pos_logical_recipe_1a13a5f50718509f1134a3994c162e07d2" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>isMultipleChamberSupported</name></member>
+      <member refid="interface_pos_logical_recipe_1a4e57765bc9b8fa20e19656d26ed21fc5" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>isWhiteFlagOn</name></member>
+      <member refid="interface_pos_logical_recipe_1a99a350cdc51f473d0640276b9d005252" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeMonitorHoldNotRequired</name></member>
+      <member refid="interface_pos_logical_recipe_1ac75df731ab197d25aa3a082175e5f9bd" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeMonitorHoldRequired</name></member>
+      <member refid="interface_pos_logical_recipe_1a65a936eea1fa8c71fcbca67613e8e7bc" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeMultipleChamberNotSupported</name></member>
+      <member refid="interface_pos_logical_recipe_1a885051548f81ecb470693eca8a31e094" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeMultipleChamberSupported</name></member>
+      <member refid="interface_pos_logical_recipe_1a5b2e1bb78663146ba3e7779b4815dedd" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeWhiteFlagOff</name></member>
+      <member refid="interface_pos_logical_recipe_1aee3e62e48be06a29a7c196d3bf654cfa" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>makeWhiteFlagOn</name></member>
+      <member refid="interface_pos_logical_recipe_1a66225457bb176c481ba7e09f5e8a1ec2" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>PosLogicalRecipe_init</name></member>
+      <member refid="interface_pos_logical_recipe_1a15835833436a488a0bde00d33ce361e5" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>retrieveMachines</name></member>
+      <member refid="interface_pos_logical_recipe_1a00246bbd8c8266a725f46e6f324d1325" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setActiveObjectID</name></member>
+      <member refid="interface_pos_logical_recipe_1a202978050d294800853d0e3ec469c50c" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setDefaultRecipeSettings</name></member>
+      <member refid="interface_pos_logical_recipe_1a9ad3fb9fd06e7a6754a7a26092c91347" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setDescription</name></member>
+      <member refid="interface_pos_logical_recipe_1a1f8e0f0496fb1940d2f5021a47100d62" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setFPCCategory</name></member>
+      <member refid="interface_pos_logical_recipe_1af817dd680d48246d5f9ddb64fdd6bd51" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_logical_recipe_1a58864b2602c9562809afd429bcab6792" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setLogicalRecipeInfo</name></member>
+      <member refid="interface_pos_logical_recipe_1abcda648ea804d7c1a7eea7df911674a4" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setLogicalRecipeInfo__090</name></member>
+      <member refid="interface_pos_logical_recipe_1a5b31d67946a5bcbf5d8c5a98f8833ee6" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setLogicalRecipeInfo__100</name></member>
+      <member refid="interface_pos_logical_recipe_1ae07cc5782731854a5a7d4539bf46085c" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setLogicalRecipeInfo__140</name></member>
+      <member refid="interface_pos_logical_recipe_1a99ba8026aca82474c9d54296d00e2662" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setMachineSpecificRecipeSetting</name></member>
+      <member refid="interface_pos_logical_recipe_1aef411401867c629b97e76fdc0d4ca469" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setMachineSpecificRecipeSettings</name></member>
+      <member refid="interface_pos_logical_recipe_1a966ce8aba68b97b40e47fd6fd41292b7" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setMachineSpecificRecipeSettingsForEqpDI</name></member>
+      <member refid="interface_pos_logical_recipe_1afd4d091f51c33f7ef8efa0c0c0c8c63a" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setMonitorProduct</name></member>
+      <member refid="interface_pos_logical_recipe_1a301c9eea0058bc3e5c8203388bbeb89d" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setRecipeType</name></member>
+      <member refid="interface_pos_logical_recipe_1a1cc020827314ab6f60c45b11fa79c746" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setSamplingPolicyName</name></member>
+      <member refid="interface_pos_logical_recipe_1a3528874c1b0814f1292d291670e324f9" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setSamplingWaferAttribute</name></member>
+      <member refid="interface_pos_logical_recipe_1ab29903667c7e9f7a56d95f521d4303cf" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setSubLotType</name></member>
+      <member refid="interface_pos_logical_recipe_1acad22df2de9a3883835650485d6f9642" prot="public" virt="non-virtual"><scope>PosLogicalRecipe</scope><name>setTestType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

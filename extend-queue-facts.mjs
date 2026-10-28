@@ -1,0 +1,42 @@
+import fs from 'node:fs';
+const out='analysis/mes-cpp',p=out+'/deep-facts.json',d=JSON.parse(fs.readFileSync(p));
+function n(id,type,label){if(!d.nodes.some(n=>n.id===id))d.nodes.push({id,type,label});}
+function e(from,type,to,file,line,end_line,condition){const edge={from,type,to,sources:[{path:file,line,end_line}],...(condition?{condition}:{})};const key=x=>JSON.stringify([x.from,x.type,x.to,x.sources]);if(!d.edges.some(x=>key(x)===key(edge)))d.edges.push(edge);}
+const lot='poscimfw/pprmg/plot.cpp',manager='poscimfw/pdp/pdpmg.cpp',dispatcher='poscimfw/pdp/pdp.sqx',write='poscimfw/pprmg/U_plotdo.sqx',read='poscimfw/pprmg/R_plotdo.sqx';
+for(const [id,label] of [['lotSetQueued','PosLot_i::setQueuedMachines'],['lotGetQueued','PosLot_i::getQueuedMachines'],['lotSetHoldQueued','PosLot_i::setHoldQueuedMachines'],['lotGetHoldQueued','PosLot_i::getHoldQueuedMachines'],['managerAddHold','PosDispatchingManager_i::addToHoldQueue'],['managerRemoveHold','PosDispatchingManager_i::removeFromHoldQueue'],['managerMoveWIP','PosDispatchingManager_i::moveToWIPQueue'],['holdWhatNext','PosDispatcher_i::whatNextHoldLotForMachine'],['durableWhatNext','PosDispatcher_i::whatNextDurableForMachine'],['holdDurableWhatNext','PosDispatcher_i::whatNextHoldDurableForMachine'],['queueHelperSave','CollectionHelper_FRLOT_EQP::save'],['queueWriterInsert','Writer_FRLOT_EQP::insertInto'],['queueWriterSingle','Writer_FRLOT_EQP::singleInsert'],['queueWriterUpdate','Writer_FRLOT_EQP::update'],['queueReader','Reader_FRLOT_EQP::Reader_FRLOT_EQP']])n(id,'Method',label);
+for(const [id,label] of [['lotQueueCollection','BO:PosLot::theQueuedMachines'],['lotHoldQueueCollection','BO:PosLot::theHoldQueuedMachines'],['doQueueCollection','DO:PosLot::theDB_QueuedMachines']])n(id,'Collection',label);
+for(const table of ['FRLOT_HOLDEQP','FRCAST','FRCAST_EQP','FRDRBL','FRDRBL_EQP','FRRTCLPOD','FRRTCLPOD_EQP'])n(table,'Table',table);
+for(const [id,label] of [['queuedViewRule','暂停批次的普通队列 getter 返回空视图'],['holdViewFallbackRule','暂停视图为空且 OnHold 时回退普通集合'],['holdSelectionRule','暂停候选来自两个关联表，第一查询不强制 OnHold，方法内无显式去重'],['durableSelectionRule','三类耐用品只使用耐用品前缀规则，默认常量值待核实'],['queueSaveRule','按更新/部分更新配置选择差异操作或整体删除重插']])n(id,'Rule',label);
+e('lotSetQueued','REPLACES_COLLECTION','lotQueueCollection',lot,10479,10506,'先清空和标脏，再逐项添加；异常前的变更是否回滚未知');
+e('lotSetHoldQueued','REPLACES_COLLECTION','lotHoldQueueCollection',lot,16140,16151);
+e('lotGetQueued','READS_COLLECTION','lotQueueCollection',lot,10591,10601,'仅非 OnHold 分支读取；OnHold 返回空序列');
+e('lotGetQueued','HAS_RULE','queuedViewRule',lot,10591,10601);
+e('lotGetHoldQueued','READS_COLLECTION','lotHoldQueueCollection',lot,16194,16199);
+e('lotGetHoldQueued','READS_COLLECTION','lotQueueCollection',lot,16202,16211,'暂停集合为空且批次 OnHold');
+e('lotGetHoldQueued','HAS_RULE','holdViewFallbackRule',lot,16202,16211);
+e('managerAddHold','INVOKES_VIRTUAL_CONTRACT','lotGetQueued',manager,2893,2900,'批次 isNotOnHold()');
+e('managerAddHold','INVOKES_VIRTUAL_CONTRACT','lotGetHoldQueued',manager,2902,2909,'其他状态分支');
+e('managerAddHold','INVOKES_VIRTUAL_CONTRACT','lotSetHoldQueued',manager,2916,2919,'取得的设备集合非空');
+e('managerRemoveHold','INVOKES_VIRTUAL_CONTRACT','lotSetHoldQueued',manager,2977,2979,'总是清空暂停集合');
+e('managerRemoveHold','INVOKES_VIRTUAL_CONTRACT','lotSetQueued',manager,2982,2985,'批次仍 OnHold 时一并清空普通集合');
+e('managerMoveWIP','INVOKES_VIRTUAL_CONTRACT','lotSetQueued',manager,3045,3056,'暂停视图非空');
+e('managerMoveWIP','INVOKES_VIRTUAL_CONTRACT','lotSetHoldQueued',manager,3062,3067,'恢复普通集合后清空暂停集合');
+e('queueHelperSave','SAVES_COLLECTION','doQueueCollection',write,5712,5786,'DO 侧集合；BO 与 DO 数组桥接尚缺宏证据，不创建二者等价边');
+e('queueHelperSave','HAS_RULE','queueSaveRule',write,5716,5783);
+e('queueHelperSave','CALLS','queueWriterInsert',write,5775,5779,'操作为 Insert');
+e('queueHelperSave','CALLS','queueWriterUpdate',write,5781,5783,'其他非 None 操作');
+e('queueWriterInsert','CALLS','queueWriterSingle',write,2542,2548,'未启用批量插入');
+e('queueWriterSingle','WRITES','FRLOT_EQP',write,2563,2564);
+e('queueWriterUpdate','WRITES','FRLOT_EQP',write,2622,2622);
+e('queueReader','READS','FRLOT_EQP',read,1170,1173,'按 system key 查询 EQP_ID/EQP_OBJ');
+e('holdWhatNext','READS','FRLOT_HOLDEQP',dispatcher,3010,3019,'第一查询未显式限制 OnHold');
+e('holdWhatNext','READS','FRLOT_EQP',dispatcher,3064,3074,'第二查询要求 OnHold');
+e('holdWhatNext','HAS_RULE','holdSelectionRule',dispatcher,3010,3115);
+e('durableWhatNext','HAS_RULE','durableSelectionRule',dispatcher,4037,4086);
+e('holdDurableWhatNext','HAS_RULE','durableSelectionRule',dispatcher,4635,4684);
+for(const [table,line,end] of [['FRCAST',3842,3849],['FRCAST_EQP',3842,3849],['FRDRBL',3906,3913],['FRDRBL_EQP',3906,3913],['FRRTCLPOD',3970,3977],['FRRTCLPOD_EQP',3970,3977]])e('durableWhatNext','READS',table,dispatcher,line,end,'类别对应分支，NotOnHold 且 Waiting');
+fs.writeFileSync(p,JSON.stringify(d,null,2));
+const reviews=JSON.parse(fs.readFileSync(out+'/deep-reviews.json')),methods=JSON.parse(fs.readFileSync(out+'/method-index.json')).methods;
+const groups=[['poscimfw/pprmg/plot.cpp',/^PosLot_i::(setQueuedMachines|getQueuedMachines|setHoldQueuedMachines|getHoldQueuedMachines)$/, 'queue-storage-deep.md'],['poscimfw/pdp/pdpmg.cpp',/^PosDispatchingManager_i::(addToHoldQueue|removeFromHoldQueue|moveToWIPQueue)$/,'queue-storage-deep.md'],['poscimfw/pdp/pdp.sqx',/^PosDispatcher_i::(whatNextHoldLotForMachine|whatNextDurableForMachine|whatNextHoldDurableForMachine)$/,'dispatch-variants-deep.md'],['poscimfw/pprmg/U_plotdo.sqx',/^Writer_FRLOT_EQP::(deleteAll|deleteFrom|insertInto|singleInsert|burstInsert|update)$/,'queue-storage-deep.md'],['poscimfw/pprmg/U_plotdo.sqx',/^CollectionHelper_FRLOT_EQP::save$/,'queue-storage-deep.md'],['poscimfw/pprmg/R_plotdo.sqx',/^Reader_FRLOT_EQP::/,'queue-storage-deep.md'],['poscimfw/pprmg/C_plotdo.cpp',/^CollectionHelper_FRLOT_EQP::(load|checkDirty|compareCollectionItemToHostVars|getHostVarsFromCollectionItem|setCollectionItemFromHostVars)$/,'queue-storage-deep.md']];
+for(const [file,pattern,report] of groups)for(const m of methods.filter(m=>m.file===file&&pattern.test(m.qualified))){if(!reviews.records.some(r=>r.file===file&&r.line===m.line))reviews.records.push({file,qualified:m.qualified,line:m.line,end_line:m.end_line,status:'body_reviewed_with_external_unknowns',report,unknowns:['框架宏与真实配置','跨对象事务/保存触发未完整核实']});}
+fs.writeFileSync(out+'/deep-reviews.json',JSON.stringify(reviews,null,2));console.log(JSON.stringify({extensionNodes:d.nodes.length,extensionEdges:d.edges.length,totalDeepReviews:reviews.records.length}));

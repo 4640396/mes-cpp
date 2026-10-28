@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_durable_process_operation" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDurableProcessOperation</compoundname>
+    <basecompoundref refid="interface_pos_process_operation" prot="public" virt="non-virtual">PosProcessOperation</basecompoundref>
+    <includes refid="pdpope_8idl" local="no">pdpope.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1a5c640b069b5a289a69ba3acd019254a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableProcessOperation::PosDurableProcessOperation_init</definition>
+        <argsstring>(in PosProcessOperationSpecification aProcessOperationSpecification)</argsstring>
+        <name>PosDurableProcessOperation_init</name>
+        <qualifiedname>PosDurableProcessOperation::PosDurableProcessOperation_init</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref></type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1a2de720d0ae3ce2787755908ae829abeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDurableProcessOperation::isOnRoute</definition>
+        <argsstring>()</argsstring>
+        <name>isOnRoute</name>
+        <qualifiedname>PosDurableProcessOperation::isOnRoute</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="57" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1ab1f152cfc6ef8d226e42fbf95daca6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref></type>
+        <definition>PosDurableControlJob PosDurableProcessOperation::getAssignedDurableControlJob</definition>
+        <argsstring>()</argsstring>
+        <name>getAssignedDurableControlJob</name>
+        <qualifiedname>PosDurableProcessOperation::getAssignedDurableControlJob</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="64" column="24"/>
+        <references refid="interface_pos_durable_process_operation_1ab1f152cfc6ef8d226e42fbf95daca6fa">getAssignedDurableControlJob</references>
+        <referencedby refid="interface_pos_durable_process_operation_1ab1f152cfc6ef8d226e42fbf95daca6fa">getAssignedDurableControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1a0d532d0e6b4e4e7f84a0af75450f4159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDurableProcessOperation::setAssignedDurableControlJob</definition>
+        <argsstring>(in PosDurableControlJob aDurableControlJob)</argsstring>
+        <name>setAssignedDurableControlJob</name>
+        <qualifiedname>PosDurableProcessOperation::setAssignedDurableControlJob</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_durable_control_job" kindref="compound">PosDurableControlJob</ref></type>
+          <declname>aDurableControlJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="70" column="8"/>
+        <references refid="interface_pos_durable_process_operation_1a0d532d0e6b4e4e7f84a0af75450f4159">setAssignedDurableControlJob</references>
+        <referencedby refid="interface_pos_durable_process_operation_1a0d532d0e6b4e4e7f84a0af75450f4159">setAssignedDurableControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1a564a234a88b5c9f18927cc47c397ca88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a49aeda4946030a8b0d30694f9e91da17" kindref="member">PosMachineSequence</ref></type>
+        <definition>PosMachineSequence PosDurableProcessOperation::findMachinesForDefaultRecipe</definition>
+        <argsstring>()</argsstring>
+        <name>findMachinesForDefaultRecipe</name>
+        <qualifiedname>PosDurableProcessOperation::findMachinesForDefaultRecipe</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="77" column="22"/>
+        <references refid="interface_pos_durable_process_operation_1a564a234a88b5c9f18927cc47c397ca88">findMachinesForDefaultRecipe</references>
+        <referencedby refid="interface_pos_durable_process_operation_1a564a234a88b5c9f18927cc47c397ca88">findMachinesForDefaultRecipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1ae6ef85ae84fe353b174df08b0103bacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosDurableProcessOperation::findDefaultMaxReworkCount</definition>
+        <argsstring>()</argsstring>
+        <name>findDefaultMaxReworkCount</name>
+        <qualifiedname>PosDurableProcessOperation::findDefaultMaxReworkCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="84" column="8"/>
+        <references refid="interface_pos_durable_process_operation_1ae6ef85ae84fe353b174df08b0103bacf">findDefaultMaxReworkCount</references>
+        <referencedby refid="interface_pos_durable_process_operation_1ae6ef85ae84fe353b174df08b0103bacf">findDefaultMaxReworkCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1a5de4cab2934f725c6d40b4d31cccbf67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1a0abf7833fd9227f7b9273cf48a6bc97f" kindref="member">PosMaxProcessCountSequence</ref></type>
+        <definition>PosMaxProcessCountSequence PosDurableProcessOperation::findDefaultMaxProcessCount</definition>
+        <argsstring>()</argsstring>
+        <name>findDefaultMaxProcessCount</name>
+        <qualifiedname>PosDurableProcessOperation::findDefaultMaxProcessCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="91" column="30"/>
+        <references refid="interface_pos_durable_process_operation_1a5de4cab2934f725c6d40b4d31cccbf67">findDefaultMaxProcessCount</references>
+        <referencedby refid="interface_pos_durable_process_operation_1a5de4cab2934f725c6d40b4d31cccbf67">findDefaultMaxProcessCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_durable_process_operation_1aa159bfde61ac1ba53513c00176128539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppcdfgl_8idl_1aaa90d31840f8d6a97b3ae7676e83f9ca" kindref="member">posProcessLagTimeData</ref></type>
+        <definition>posProcessLagTimeData PosDurableProcessOperation::findDefaultProcessLagTimeData</definition>
+        <argsstring>()</argsstring>
+        <name>findDefaultProcessLagTimeData</name>
+        <qualifiedname>PosDurableProcessOperation::findDefaultProcessLagTimeData</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpope.idl" line="97" column="25"/>
+        <references refid="interface_pos_durable_process_operation_1aa159bfde61ac1ba53513c00176128539">findDefaultProcessLagTimeData</references>
+        <referencedby refid="interface_pos_durable_process_operation_1aa159bfde61ac1ba53513c00176128539">findDefaultProcessLagTimeData</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableProcessOperation</label>
+        <link refid="interface_pos_durable_process_operation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosProcessOperation</label>
+        <link refid="interface_pos_process_operation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcessOperation</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDurableProcessOperation</label>
+        <link refid="interface_pos_durable_process_operation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PosProcessOperation</label>
+        <link refid="interface_pos_process_operation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ProcessOperation</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdpope.idl" line="33" column="11" bodyfile="poscimfw/include/pdpope.idl" bodystart="33" bodyend="105"/>
+    <listofallmembers>
+      <member refid="interface_pos_process_operation_1a6f7084995eba673117e91a9ffebe24ca" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>addAssignedProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a5a7730c849beb105fab1bd6ddd66dfa3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>addAssignedWaferPositionInProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a78bb25914643902b6e55eee9474a12fa" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>addProcessBackupData</name></member>
+      <member refid="interface_pos_process_operation_1a83a0f393976bb92259e823c4b9657485" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allAssignedProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a1b760e85a14a1d361e0eed3266b9ba0a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allAssignedProcessResourceInfoGroupByProcessResource</name></member>
+      <member refid="interface_pos_process_operation_1a4c51137755c003d772278d619c941247" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allAssignedWaferPositionInProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1af69e9ed4983f553625a8393c53af3e3b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allDeltaDCDefinitions</name></member>
+      <member refid="interface_pos_process_operation_1ae34a2b72d08a609f47d4ec639e98d826" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allDeltaDCSpecifications</name></member>
+      <member refid="interface_pos_process_operation_1ae607a6f57e3ddc18927945051777c8f7" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allProcessBackupData</name></member>
+      <member refid="interface_pos_process_operation_1ab86b5047c2fafe1b7d5dbf1a4320341e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allProcessFlowConnections</name></member>
+      <member refid="interface_pos_process_operation_1a45af96f46cc9cefa9d85ed3e03655c0f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>allReworkProcessFlowConnections</name></member>
+      <member refid="interface_pos_process_operation_1a823d09044df1bd3f598f2039c6cec557" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>copyDataFrom</name></member>
+      <member refid="interface_pos_process_operation_1ad7ef8a6fc0d17ef34695454f7ca9bb22" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>decreaseReferenceCount</name></member>
+      <member refid="interface_pos_process_operation_1a92446558e6de6c9e1db08e69b41e668d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>doSpecCheck</name></member>
+      <member refid="interface_pos_process_operation_1aef91fb8f2375b24c45d206b6033c5339" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findAssignedProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a53aea23db32cde8768677f9b0978a863" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findAssignedWaferPositionInProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a7099407cee55786a9af8ff9c060789ad" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findCollectedData</name></member>
+      <member refid="interface_pos_process_operation_1a798f2d1d225019ab0c71d26cc053aba6" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findCollectedDataByWafer</name></member>
+      <member refid="interface_pos_process_operation_1ac91081f1291c1bfc78879433406b5fd1" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDCSpecFor</name></member>
+      <member refid="interface_pos_process_operation_1afbbff772130c4a92da2b9ed5d0f8046f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDCSpecGroup</name></member>
+      <member refid="interface_pos_durable_process_operation_1a5de4cab2934f725c6d40b4d31cccbf67" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDefaultMaxProcessCount</name></member>
+      <member refid="interface_pos_durable_process_operation_1ae6ef85ae84fe353b174df08b0103bacf" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDefaultMaxReworkCount</name></member>
+      <member refid="interface_pos_durable_process_operation_1aa159bfde61ac1ba53513c00176128539" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDefaultProcessLagTimeData</name></member>
+      <member refid="interface_pos_process_operation_1a536f3b3f6b8fbedca92d2cfe0c00eb49" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDeltaDCDefinition</name></member>
+      <member refid="interface_pos_process_operation_1a9c03f2241760775cbbbee831de727f9e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findDeltaDCSpecification</name></member>
+      <member refid="interface_pos_process_operation_1a81ccf5bdf23acd79964f3c0d4a601d54" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findLogicalRecipeFor</name></member>
+      <member refid="interface_pos_process_operation_1a566f36a2348e87e9ff63600e1500af1e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findMachinesFor</name></member>
+      <member refid="interface_pos_durable_process_operation_1a564a234a88b5c9f18927cc47c397ca88" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findMachinesForDefaultRecipe</name></member>
+      <member refid="interface_pos_process_operation_1aa63a678d2695010e302287f2c3895c0f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findMaxProcessCountForProduct</name></member>
+      <member refid="interface_pos_process_operation_1ab02e2bbd4e02dbc9ddde2377dd74e8d3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findMaxReworkCountForProduct</name></member>
+      <member refid="interface_pos_process_operation_1a66dcf67424dfcf231c1894716a1697bf" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findMeasurementDCSpecification</name></member>
+      <member refid="interface_pos_process_operation_1ad0384c25a95377afca54ce1b1f0e786d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findProcessFlowConnection</name></member>
+      <member refid="interface_pos_process_operation_1a71c7278d926bccc5c48992dd2ec42fed" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findProcessLagTimeDataFor</name></member>
+      <member refid="interface_pos_process_operation_1ae229f0626756b9d6d8e129e41ff819b8" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findProcessOperationForOperationNumberAndWafer</name></member>
+      <member refid="interface_pos_process_operation_1a6a5434a2dad7e4c2dac9a8ac5190e50b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findReplaceTimeRestriction</name></member>
+      <member refid="interface_pos_process_operation_1a8bd84f78184ce441afbd7b96a77a012e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findReplaceTimeRestrictionsForReplaceTrigger</name></member>
+      <member refid="interface_pos_process_operation_1a5ee2b160aa9e3e804768e3cd5c595abe" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findReworkProcessFlowConnection</name></member>
+      <member refid="interface_pos_process_operation_1a2cd7566b55ea1fedf617c1fc3d986f22" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findTestSpecification</name></member>
+      <member refid="interface_pos_process_operation_1aa791ccfaea2c4f18facaac588a3983f7" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findTimeRestrictionForProduct</name></member>
+      <member refid="interface_pos_process_operation_1a3ed187e0a4ae8972973b2dde7788b6fb" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>findTimeRestrictionsForProduct</name></member>
+      <member refid="interface_pos_process_operation_1aa893fbbf3d785af7cfbb66ae0244ddb5" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getActionResultInfo</name></member>
+      <member refid="interface_pos_process_operation_1a95d96122f1556a3484219813f915d135" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getActiveModuleProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_operation_1a11665b26f0be1c286a99914c8214a68b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getActualCompTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1af1506a0d76b7c4f94e86e9d61716fd71" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getActualStartInfo</name></member>
+      <member refid="interface_pos_process_operation_1a8619b174b7b697e346a1cacaa05987cf" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getActualStartTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1a9c9a3cd3ce2e22ed5430ad64555ec516" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedControlJob</name></member>
+      <member refid="interface_pos_process_operation_1a3a5a0d12d9b8e7587ebfcadc0b5d749d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedControlJobID</name></member>
+      <member refid="interface_pos_process_operation_1a9b798ac1c298dc85044f73fc2a59e62d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDataCollectionFlag</name></member>
+      <member refid="interface_pos_process_operation_1afa993989721cef7d37effd5be8d8ef01" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDataCollectionItemInfo</name></member>
+      <member refid="interface_pos_process_operation_1a2614e5b0254004b011dd3f9aa734914a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDCDef</name></member>
+      <member refid="interface_pos_process_operation_1ae41a84708f0453fa0682273d3054f9b3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDCSpec</name></member>
+      <member refid="interface_pos_process_operation_1af3238a196e114d6612335a4119e49174" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDeltaDCDefs</name></member>
+      <member refid="interface_pos_durable_process_operation_1ab1f152cfc6ef8d226e42fbf95daca6fa" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedDurableControlJob</name></member>
+      <member refid="interface_pos_process_operation_1a245a961e566361709d468fb8e42a26f6" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedFixtures</name></member>
+      <member refid="interface_pos_process_operation_1aedff5321a17128aa6e8b5c293d0930d0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedLogicalRecipe</name></member>
+      <member refid="interface_pos_process_operation_1ac61161767ad556573d4b3923028c1566" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedMachine</name></member>
+      <member refid="interface_pos_process_operation_1a302e21ae5adcec92ee756349a2c4e35e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedMachineRecipe</name></member>
+      <member refid="interface_pos_process_operation_1a89036bccaef3b050a54af519e811c377" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedPhysicalRecipe</name></member>
+      <member refid="interface_pos_process_operation_1a4d59fc9335dda955483fb60183121459" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedRecipeParameterChangeType</name></member>
+      <member refid="interface_pos_process_operation_1adb6cfc710f2a0ca4fc6dfaaab8fd1286" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedRecipeParameterSets</name></member>
+      <member refid="interface_pos_process_operation_1ab22de6d8c7e0cec14ad0ffc3e291c64a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedReticles</name></member>
+      <member refid="interface_pos_process_operation_1a1f513b30433cbeccdd6d0716ec02a126" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getAssignedSamplingWafers</name></member>
+      <member refid="interface_pos_process_operation_1aea25e0686b2163f71c43544627e9c0ff" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getBondingFlowSectionControl</name></member>
+      <member refid="interface_pos_process_operation_1ac10cf1a85345eeb8382e4ef8618ae0bd" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getCorrespondingProcessOperationInfo</name></member>
+      <member refid="interface_pos_process_operation_1ae1b1349c4eb3a61fb888887ec9fb14a5" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getCorrespondingProcessOperationNumber</name></member>
+      <member refid="interface_pos_process_operation_1ad0f014a652c04112f00df1b5f5d3c99b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getEventData</name></member>
+      <member refid="interface_pos_process_operation_1afa32bf7d2dee5e2b2a78a894c92d3f6a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getFabID</name></member>
+      <member refid="interface_pos_process_operation_1a798be7e4a770588295309da397bcf707" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getFlowBatchControl</name></member>
+      <member refid="interface_pos_process_operation_1a446cdc138baeb64322083859a8998987" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getFlowBatchOperationCount</name></member>
+      <member refid="interface_pos_process_operation_1a4ef479979f8c8acf6f4296f656bb8aa9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getLotTestData</name></member>
+      <member refid="interface_pos_process_operation_1adc5590c26bf9e71b3c5ebe01ca0a9ff7" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getLotYieldCheckResult</name></member>
+      <member refid="interface_pos_process_operation_1a201c6e0f93f075f2a2dd00cee2425773" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getMachines</name></member>
+      <member refid="interface_pos_process_operation_1a8cccb1265449eaa3c948e2893542a08a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getMainProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1abc9e20b72540df5de182a878a8c7fbb3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getMainProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1aafc45565c94f80c086872a779e7249e5" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getModuleNumber</name></member>
+      <member refid="interface_pos_process_operation_1a4c86ec8adbe8037454d6898e7eea4f56" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getModuleOperationNumber</name></member>
+      <member refid="interface_pos_process_operation_1aabf0cb0aa1429cf0e2ee3f7776075b24" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getModuleProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1afbda71588bc65627994079372221c6a5" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getModuleProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1af61651da695607f97af12b8b6b7e95fc" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getModuleProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_operation_1ad37090a4d7d0907b394d9b7962af09aa" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getOperationNumber</name></member>
+      <member refid="interface_pos_process_operation_1a18c15b53cee41e77082734599d24d259" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPassCount</name></member>
+      <member refid="interface_pos_process_operation_1a3ce5e300c87ef568326f37b07ce29d19" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPhotoLayer</name></member>
+      <member refid="interface_pos_process_operation_1a0c676d97c2e898e709b91c9d9f01ee0a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPilotProcessControl</name></member>
+      <member refid="interface_pos_process_operation_1a86710b9d9d392e30859d641a3020c1da" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPlannedCompTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1a5739cadf8ed9eb71fe252adb243a44b9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPlannedMachine</name></member>
+      <member refid="interface_pos_process_operation_1ae2b460039733c1576ed64ca0c6996d81" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPlannedStartTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1ad7dc20b63a4d5466387b12b595d264e9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPostScript</name></member>
+      <member refid="interface_pos_process_operation_1a7e006d6d1998465da631a04c0804a8e7" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPre1Script</name></member>
+      <member refid="interface_pos_process_operation_1a2c33769f8da042c9f88ea520d596ea1f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getPre2Script</name></member>
+      <member refid="interface_pos_process_operation_1ad264fbc8191d767ba17f011fcf3e5bd3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1a0a2e2a612d86c36a92ae931bd7c39d28" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getProcessDefinitionName</name></member>
+      <member refid="interface_pos_process_operation_1a8fb7cf849c27f8fa325c9ad0bbb41fd6" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1a0c3d1c1bcd09ac59da2fb0b673d8bf4e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getProcessInfo</name></member>
+      <member refid="interface_pos_process_operation_1a942141e2d44df0f72253a7a6a77be179" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getProcessWafers</name></member>
+      <member refid="interface_pos_process_operation_1a9472682faa195d7c55aa9d46f0ebe26a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getReferenceCount</name></member>
+      <member refid="interface_pos_process_operation_1affbc4c525de3eb7ff748d2addc72a1de" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getRemainingCycleTime</name></member>
+      <member refid="interface_pos_process_operation_1a30dc758052d7a662b9bef4126e0f042a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getRequiredCassetteCategory</name></member>
+      <member refid="interface_pos_process_operation_1a3cf10148b74916939cec2cdfae49a4f1" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getResponsibleProcessOperationNumbers</name></member>
+      <member refid="interface_pos_process_operation_1a2b78cc94d87e6881af8ec611010d53cb" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getSamplingRecycleOpeNo</name></member>
+      <member refid="interface_pos_process_operation_1a92e7c8dd2a32049b766c7720a14181ea" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>getStage</name></member>
+      <member refid="interface_pos_process_operation_1aca8bb2861c6aadb28680666cf2b173b0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>increaseReferenceCount</name></member>
+      <member refid="interface_pos_process_operation_1a1e2d25c7a1dec09b3fbb6f95fb21ad3e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>initializeProcessOperation</name></member>
+      <member refid="interface_pos_process_operation_1a8e7007bd76c8b568e87409655c25e8c0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isAssignedDataCollectionFlagOn</name></member>
+      <member refid="interface_pos_process_operation_1acdbe17fd399d8bcea0ec17a5f8dc0650" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isAutoBankInRequired</name></member>
+      <member refid="interface_pos_process_operation_1a1d31cf3a4fd67b98a3f3a66549dd9e99" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isBondingFlowSectionEntryOperation</name></member>
+      <member refid="interface_pos_process_operation_1aace243635edae6796c48b58a991bb24b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isBondingFlowSectionTargetOperation</name></member>
+      <member refid="interface_pos_process_operation_1a99eb059bd7afd6c4b443fc8150025121" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isEndOfMonitorRelationFlagOn</name></member>
+      <member refid="interface_pos_process_operation_1a216d3709acd8f2962e4696587e9a9ea0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isEquivalentTo</name></member>
+      <member refid="interface_pos_process_operation_1a333d5cbeae1ff664839f79ff5e3d0987" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isFlowBatchEntryOperation</name></member>
+      <member refid="interface_pos_process_operation_1a4b5adc1c360b7495de4262156620ff75" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isFlowBatchTargetOperation</name></member>
+      <member refid="interface_pos_process_operation_1a9e0abf38b7f8c759d1c73feadba30475" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isMandatoryOperation</name></member>
+      <member refid="interface_pos_process_operation_1a55869514122a18c90d654f1343a76dce" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isMonitorGroupReleaseRequired</name></member>
+      <member refid="interface_pos_durable_process_operation_1a2de720d0ae3ce2787755908ae829abeb" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>isOnRoute</name></member>
+      <member refid="interface_pos_process_operation_1a2844528c31907da5e762efd7e1b7d607" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>makeAssignedDataCollectionFlagOff</name></member>
+      <member refid="interface_pos_process_operation_1a7164cecefce3645f851c24e955e331f5" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>makeAssignedDataCollectionFlagOn</name></member>
+      <member refid="interface_pos_durable_process_operation_1a5c640b069b5a289a69ba3acd019254a4" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>PosDurableProcessOperation_init</name></member>
+      <member refid="interface_pos_process_operation_1a0773b4bd9791e87ff39146e713d88c17" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>PosProcessOperation_init</name></member>
+      <member refid="interface_pos_process_operation_1a7a3238741fbf66657c7bbe1aa2631b91" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeAllAssignedProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a2eaa97f2d6a1e749896adb4492318380" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeAllAssignedWaferPositionInProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1abfc5923a1f027bf4ef5a50dea2a1a7d8" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeAllProcessBackupData</name></member>
+      <member refid="interface_pos_process_operation_1afe9f69f5cd0644f23047e6c93b76b995" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeAssignedProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1a25b040e12a05bd201040374bef4e31d4" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeAssignedWaferPositionInProcessResourceInfo</name></member>
+      <member refid="interface_pos_process_operation_1ab7f0cc4f9422e6ff8b29739e73253377" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>removeProcessBackupData</name></member>
+      <member refid="interface_pos_process_operation_1a3380ec32f02a6ac8ce74bbd839ad8e53" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setActionResultInfo</name></member>
+      <member refid="interface_pos_process_operation_1a43aff645e42695863371f45b0bcb4595" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setActualCompTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1a09d01057cb60f93bab9cdb57ec9ef84f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setActualStartInfo</name></member>
+      <member refid="interface_pos_process_operation_1a22ec28056589dd97377254c33331f76c" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setActualStartTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1aa1180e14b0073d188f6ec2e6af9e4f27" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAllProcessBackupData</name></member>
+      <member refid="interface_pos_process_operation_1a787d059cdb2c7925474c6ef6eaabb3ce" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedControlJob</name></member>
+      <member refid="interface_pos_process_operation_1a4e1fa411faf077032921219697368c62" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedDataCollectionItemInfo</name></member>
+      <member refid="interface_pos_process_operation_1ae358622f6382f4d3877b6a0a819ca567" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedDCDef</name></member>
+      <member refid="interface_pos_process_operation_1a76e91e8a1f553ee188d682d0395f75e0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedDCSpec</name></member>
+      <member refid="interface_pos_durable_process_operation_1a0d532d0e6b4e4e7f84a0af75450f4159" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedDurableControlJob</name></member>
+      <member refid="interface_pos_process_operation_1a2c7d774cc93dc8d180da2628e595e33e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedFixtures</name></member>
+      <member refid="interface_pos_process_operation_1a9bdefbe3d56a3b82e66a66fc981294c0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedLogicalRecipe</name></member>
+      <member refid="interface_pos_process_operation_1acb0fcf22839f27b23ae900765d4c27a0" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedMachine</name></member>
+      <member refid="interface_pos_process_operation_1a00b833bfcdb3458aec0da1522b62936f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedMachineRecipe</name></member>
+      <member refid="interface_pos_process_operation_1a70b0d43d152591aa3d021396e54fbfb3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedPhysicalRecipe</name></member>
+      <member refid="interface_pos_process_operation_1a7cb31786efe187694f4bcb2a5f9f091b" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedRecipeParameterChangeType</name></member>
+      <member refid="interface_pos_process_operation_1a9874b538d3bfa71615bb217c0505502d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedRecipeParameterSets</name></member>
+      <member refid="interface_pos_process_operation_1ab7f4deac3044267756b38a70ccf27fa8" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedReticles</name></member>
+      <member refid="interface_pos_process_operation_1a9c128c594d8fe846a45ea32b0e745da9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setAssignedSamplingWafers</name></member>
+      <member refid="interface_pos_process_operation_1ada03ee66fa3f6aaf6c00e36bd45d8851" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setDataCollectionInfo</name></member>
+      <member refid="interface_pos_process_operation_1a3d54daa2028ec974851240aca880f42f" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setFabID</name></member>
+      <member refid="interface_pos_process_operation_1aff738fed1742dea051fd85831a36535d" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setLotTestData</name></member>
+      <member refid="interface_pos_process_operation_1ade6cca693097b8c345eebbda1a5d3fc3" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setLotYieldCheckResult</name></member>
+      <member refid="interface_pos_process_operation_1acaa37c7196ed47ecf66280f173a8040e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setMainProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1a42995a6e2e7a70a1a1f160ee73228700" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setMainProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1a6460927d8e24a4b31fc32208c723eeb9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setModuleNumber</name></member>
+      <member refid="interface_pos_process_operation_1a65eb0c7d654ae5007734f4f7c7bf14c9" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setModuleOperationNumber</name></member>
+      <member refid="interface_pos_process_operation_1a88211667bab6289f62bf7406bd23ff56" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setModuleProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1ad3d072ab2a87942246295dc33f334c4c" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setModuleProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1abf0d686c2e5ebbaa7ae39e9f54aec857" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setModuleProcessOperationSpecification</name></member>
+      <member refid="interface_pos_process_operation_1aee4d7e239ad8f96aa63699a126f511b6" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setOperationNumber</name></member>
+      <member refid="interface_pos_process_operation_1af74308db81204a2d3c7f8cb1e3bb2693" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setPassCount</name></member>
+      <member refid="interface_pos_process_operation_1adf340f8f714c73993b498e72a06e78ea" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setPlannedCompTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1add88d5a1c9e47e8491b63af374bb4301" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setPlannedMachine</name></member>
+      <member refid="interface_pos_process_operation_1a9f1f5fe81dc470f7c6fba061762d41cb" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setPlannedStartTimeStamp</name></member>
+      <member refid="interface_pos_process_operation_1a3b180d50a47d9f74c392c835d6b78f6a" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setProcessDefinition</name></member>
+      <member refid="interface_pos_process_operation_1a97124e66122713634469cf1bcfdf2c87" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setProcessDefinitionName</name></member>
+      <member refid="interface_pos_process_operation_1aa0d1a700acd99916d0288e6ecc682868" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setProcessFlow</name></member>
+      <member refid="interface_pos_process_operation_1a3af0d05a15c9aae348f3d7fd8e748066" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setProcessWafers</name></member>
+      <member refid="interface_pos_process_operation_1a919c188e5e1bc23b340536d147088f0e" prot="public" virt="non-virtual"><scope>PosDurableProcessOperation</scope><name>setRemainingCycleTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

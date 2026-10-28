@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_person_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPersonManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PersonManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="ppsmgr_8idl" local="no">ppsmgr.idl</includes>
+    <innerclass refid="exception_pos_person_manager_1_1_area_group_not_found_signal" prot="public">PosPersonManager::AreaGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" prot="public">PosPersonManager::PrivilegeGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_manager_1_1_user_group_not_found_signal" prot="public">PosPersonManager::UserGroupNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_person_manager_1a025b8ee5538adcb62a14369b26f64190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::PosPersonManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPersonManager_init</name>
+        <qualifiedname>PosPersonManager::PosPersonManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="120" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+        <definition>PosAreaGroup PosPersonManager::createAreaGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createAreaGroupNamed</name>
+        <qualifiedname>PosPersonManager::createAreaGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="126" column="16"/>
+        <references refid="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982">createAreaGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982">createAreaGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removeAreaGroup</definition>
+        <argsstring>(in PosAreaGroup anAreaGroup)</argsstring>
+        <name>removeAreaGroup</name>
+        <qualifiedname>PosPersonManager::removeAreaGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+          <declname>anAreaGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_manager_1_1_area_group_not_found_signal" kindref="compound">AreaGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="133" column="8"/>
+        <references refid="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a">removeAreaGroup</references>
+        <referencedby refid="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a">removeAreaGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" kindref="member">PosAreaGroupSequence</ref></type>
+        <definition>PosAreaGroupSequence PosPersonManager::allAreaGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allAreaGroups</name>
+        <qualifiedname>PosPersonManager::allAreaGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="139" column="24"/>
+        <references refid="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f">allAreaGroups</references>
+        <referencedby refid="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f">allAreaGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+        <definition>PosAreaGroup PosPersonManager::findAreaGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findAreaGroupNamed</name>
+        <qualifiedname>PosPersonManager::findAreaGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="145" column="16"/>
+        <references refid="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7">findAreaGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7">findAreaGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removeAllAreaGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllAreaGroups</name>
+        <qualifiedname>PosPersonManager::removeAllAreaGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="152" column="8"/>
+        <references refid="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9">removeAllAreaGroups</references>
+        <referencedby refid="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9">removeAllAreaGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+        <definition>PosPrivilegeGroup PosPersonManager::createPrivilegeGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createPrivilegeGroupNamed</name>
+        <qualifiedname>PosPersonManager::createPrivilegeGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="158" column="21"/>
+        <references refid="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa">createPrivilegeGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa">createPrivilegeGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removePrivilegeGroup</definition>
+        <argsstring>(in PosPrivilegeGroup aPrivilegeGroup)</argsstring>
+        <name>removePrivilegeGroup</name>
+        <qualifiedname>PosPersonManager::removePrivilegeGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+          <declname>aPrivilegeGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_manager_1_1_privilege_group_not_found_signal" kindref="compound">PrivilegeGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="165" column="8"/>
+        <references refid="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05">removePrivilegeGroup</references>
+        <referencedby refid="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05">removePrivilegeGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" kindref="member">PosPrivilegeGroupSequence</ref></type>
+        <definition>PosPrivilegeGroupSequence PosPersonManager::allPrivilegeGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allPrivilegeGroups</name>
+        <qualifiedname>PosPersonManager::allPrivilegeGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="171" column="29"/>
+        <references refid="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990">allPrivilegeGroups</references>
+        <referencedby refid="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990">allPrivilegeGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+        <definition>PosPrivilegeGroup PosPersonManager::findPrivilegeGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPrivilegeGroupNamed</name>
+        <qualifiedname>PosPersonManager::findPrivilegeGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="177" column="21"/>
+        <references refid="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b">findPrivilegeGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b">findPrivilegeGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removeAllPrivilegeGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPrivilegeGroups</name>
+        <qualifiedname>PosPersonManager::removeAllPrivilegeGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="184" column="8"/>
+        <references refid="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2">removeAllPrivilegeGroups</references>
+        <referencedby refid="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2">removeAllPrivilegeGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref></type>
+        <definition>PosUserGroup PosPersonManager::createUserGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createUserGroupNamed</name>
+        <qualifiedname>PosPersonManager::createUserGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="190" column="16"/>
+        <references refid="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f">createUserGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f">createUserGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removeUserGroup</definition>
+        <argsstring>(in PosUserGroup aUserGroup)</argsstring>
+        <name>removeUserGroup</name>
+        <qualifiedname>PosPersonManager::removeUserGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref></type>
+          <declname>aUserGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_manager_1_1_user_group_not_found_signal" kindref="compound">UserGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="197" column="8"/>
+        <references refid="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5">removeUserGroup</references>
+        <referencedby refid="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5">removeUserGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1aeab1cdc216112749031a0cb42f5624db" kindref="member">PosUserGrpSequence</ref></type>
+        <definition>PosUserGrpSequence PosPersonManager::allUserGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allUserGroups</name>
+        <qualifiedname>PosPersonManager::allUserGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="203" column="22"/>
+        <references refid="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9">allUserGroups</references>
+        <referencedby refid="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9">allUserGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref></type>
+        <definition>PosUserGroup PosPersonManager::findUserGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findUserGroupNamed</name>
+        <qualifiedname>PosPersonManager::findUserGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="209" column="16"/>
+        <references refid="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226">findUserGroupNamed</references>
+        <referencedby refid="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226">findUserGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPersonManager::removeAllUserGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllUserGroups</name>
+        <qualifiedname>PosPersonManager::removeAllUserGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppsmgr.idl" line="216" column="8"/>
+        <references refid="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288">removeAllUserGroups</references>
+        <referencedby refid="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288">removeAllUserGroups</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PersonManager</label>
+      </node>
+      <node id="1">
+        <label>PosPersonManager</label>
+        <link refid="interface_pos_person_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PersonManager</label>
+      </node>
+      <node id="1">
+        <label>PosPersonManager</label>
+        <link refid="interface_pos_person_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ppsmgr.idl" line="38" column="11" bodyfile="poscimfw/include/ppsmgr.idl" bodystart="38" bodyend="224"/>
+    <listofallmembers>
+      <member refid="interface_pos_person_manager_1a1521b208006de07f5dfc572109e4767f" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>allAreaGroups</name></member>
+      <member refid="interface_pos_person_manager_1a04622bc9cf83f8ac0a08fe04b6ba6990" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>allPrivilegeGroups</name></member>
+      <member refid="interface_pos_person_manager_1ac3431cedec54a93acae2021c8e5e39e9" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>allUserGroups</name></member>
+      <member refid="interface_pos_person_manager_1a8097d93cb855dd1bc062381878c7b982" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>createAreaGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1ab66b2eed986ffdc5cd81b5bfd057edfa" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>createPrivilegeGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1aead392127111892b38d7177cb4f2ff3f" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>createUserGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1a653a24b8b5c8dc6bbc32a6939b9f9ff7" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>findAreaGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1a29c97902a63217145f7d60ac36d2b80b" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>findPrivilegeGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1a4d035a83640c4bbb2e2debafeb659226" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>findUserGroupNamed</name></member>
+      <member refid="interface_pos_person_manager_1a025b8ee5538adcb62a14369b26f64190" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>PosPersonManager_init</name></member>
+      <member refid="interface_pos_person_manager_1a95f48b08c3ea4f0aa3a6286e43c838a9" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removeAllAreaGroups</name></member>
+      <member refid="interface_pos_person_manager_1a128631c57f287088458710ef8c70c0e2" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removeAllPrivilegeGroups</name></member>
+      <member refid="interface_pos_person_manager_1a81929f0e1a7ab3694bcfb9cdc623f288" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removeAllUserGroups</name></member>
+      <member refid="interface_pos_person_manager_1ae2bcebc48b0ac630123248060407f35a" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removeAreaGroup</name></member>
+      <member refid="interface_pos_person_manager_1aa4c1a3f3c16ff68d63cf2e1a19164d05" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removePrivilegeGroup</name></member>
+      <member refid="interface_pos_person_manager_1aa4f2bcec6f96665972d2d3a17f20c1c5" prot="public" virt="non-virtual"><scope>PosPersonManager</scope><name>removeUserGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

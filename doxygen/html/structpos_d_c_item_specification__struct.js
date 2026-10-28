@@ -1,0 +1,25 @@
+var structpos_d_c_item_specification__struct =
+[
+    [ "actionCodes_lcl", "structpos_d_c_item_specification__struct.html#afc000e470bbb1ac411e4cd05d041697a", null ],
+    [ "actionCodes_lscrn", "structpos_d_c_item_specification__struct.html#a2087f2f4519101ac677ac808b07ae492", null ],
+    [ "actionCodes_lsl", "structpos_d_c_item_specification__struct.html#a34a23c5af971b3c07fc2f7246e0633d1", null ],
+    [ "actionCodes_ucl", "structpos_d_c_item_specification__struct.html#ad48c5a1451ef41b24740d480d161a051", null ],
+    [ "actionCodes_uscrn", "structpos_d_c_item_specification__struct.html#a2a6975885207e23cc12d71483c5708b1", null ],
+    [ "actionCodes_usl", "structpos_d_c_item_specification__struct.html#aa7e8f5d004cdbec5900828e1efbdfddf", null ],
+    [ "controlLimitLower", "structpos_d_c_item_specification__struct.html#a573052c00a6d96210c4eed5f490dd756", null ],
+    [ "controlLimitLowerRequired", "structpos_d_c_item_specification__struct.html#ad344b651bd99da278ec6dbf70b6afc2c", null ],
+    [ "controlLimitUpper", "structpos_d_c_item_specification__struct.html#a68fe3225ef596f3504785a2b9ee5e004", null ],
+    [ "controlLimitUpperRequired", "structpos_d_c_item_specification__struct.html#a65264bcd96d5d943ca71b1ba97a2d6c1", null ],
+    [ "dataItemName", "structpos_d_c_item_specification__struct.html#a882e1fdd7fc8223cf2ba93bace741623", null ],
+    [ "dcSpecGroup", "structpos_d_c_item_specification__struct.html#a4b11abce4a55d0ba4e9a4dd3375134bd", null ],
+    [ "screenLimitLower", "structpos_d_c_item_specification__struct.html#a591e0fd36c0568254ffec7f4075c6146", null ],
+    [ "screenLimitLowerRequired", "structpos_d_c_item_specification__struct.html#a442dc68edfac76168cee7be2300e4182", null ],
+    [ "screenLimitUpper", "structpos_d_c_item_specification__struct.html#a1c27f3297efaa7aab29a81e8cc4a5826", null ],
+    [ "screenLimitUpperRequired", "structpos_d_c_item_specification__struct.html#aeaf04a6607fbb6a939323207a4403e02", null ],
+    [ "specLimitLower", "structpos_d_c_item_specification__struct.html#a825dfce3635f6f829f30b368c96cd134", null ],
+    [ "specLimitLowerRequired", "structpos_d_c_item_specification__struct.html#a74f4dd1c59fcaa6027a73e64b4edd382", null ],
+    [ "specLimitUpper", "structpos_d_c_item_specification__struct.html#a80db29a648de028d604cf2f7d299d504", null ],
+    [ "specLimitUpperRequired", "structpos_d_c_item_specification__struct.html#ad7e83806ee4adfefb8c07f4a3acd195c", null ],
+    [ "tag", "structpos_d_c_item_specification__struct.html#a34ed816034bfb3240e4d84c822415742", null ],
+    [ "target", "structpos_d_c_item_specification__struct.html#a49cecb1fc9253927b4ff50f4abb54c5b", null ]
+];

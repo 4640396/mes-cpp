@@ -1,0 +1,975 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_product_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProductManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProductManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pprmgr_8idl" local="no">pprmgr.idl</includes>
+    <innerclass refid="exception_pos_product_manager_1_1_lot_state_invalid_signal" prot="public">PosProductManager::LotStateInvalidSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_product_state_invalid_signal" prot="public">PosProductManager::ProductStateInvalidSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_monitor_retrieval_failed_signal" prot="public">PosProductManager::MonitorRetrievalFailedSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_product_request_state_invalid_signal" prot="public">PosProductManager::ProductRequestStateInvalidSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_wafer_not_found_signal" prot="public">PosProductManager::WaferNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_lot_not_found_signal" prot="public">PosProductManager::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_die_not_found_signal" prot="public">PosProductManager::DieNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_package_not_found_signal" prot="public">PosProductManager::PackageNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_lot_type_not_found_signal" prot="public">PosProductManager::LotTypeNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_monitor_group_not_found_signal" prot="public">PosProductManager::MonitorGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_control_job_not_found_signal" prot="public">PosProductManager::ControlJobNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_planned_split_job_not_found_signal" prot="public">PosProductManager::PlannedSplitJobNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_manager_1_1_future_rework_request_not_found_signal" prot="public">PosProductManager::FutureReworkRequestNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_product_manager_1a72804f1f9549014c55e94d1874d1ef89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::PosProductManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosProductManager_init</name>
+        <qualifiedname>PosProductManager::PosProductManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="404" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1abc5be75ae6586ba4e6e391c904c27c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_wafer" kindref="compound">PosWafer</ref></type>
+        <definition>PosWafer PosProductManager::findWaferNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findWaferNamed</name>
+        <qualifiedname>PosProductManager::findWaferNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_wafer_not_found_signal" kindref="compound">WaferNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="410" column="12"/>
+        <references refid="interface_pos_product_manager_1abc5be75ae6586ba4e6e391c904c27c92">findWaferNamed</references>
+        <referencedby refid="interface_pos_product_manager_1abc5be75ae6586ba4e6e391c904c27c92">findWaferNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a5fdc8e2b81498965c5c8cb1acef788c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_type" kindref="compound">PosLotType</ref></type>
+        <definition>PosLotType PosProductManager::createLotTypeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLotTypeNamed</name>
+        <qualifiedname>PosProductManager::createLotTypeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="416" column="14"/>
+        <references refid="interface_pos_product_manager_1a5fdc8e2b81498965c5c8cb1acef788c8">createLotTypeNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a5fdc8e2b81498965c5c8cb1acef788c8">createLotTypeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a989d08fedc05905eb1e28d42dd0879ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeLotType</definition>
+        <argsstring>(in PosLotType aPosLotType)</argsstring>
+        <name>removeLotType</name>
+        <qualifiedname>PosProductManager::removeLotType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_type" kindref="compound">PosLotType</ref></type>
+          <declname>aPosLotType</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_lot_type_not_found_signal" kindref="compound">LotTypeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="422" column="8"/>
+        <references refid="interface_pos_product_manager_1a989d08fedc05905eb1e28d42dd0879ed">removeLotType</references>
+        <referencedby refid="interface_pos_product_manager_1a989d08fedc05905eb1e28d42dd0879ed">removeLotType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a7c8999c1890bebecd25aa592c22608ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_type" kindref="compound">PosLotType</ref></type>
+        <definition>PosLotType PosProductManager::findLotTypeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLotTypeNamed</name>
+        <qualifiedname>PosProductManager::findLotTypeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_lot_type_not_found_signal" kindref="compound">LotTypeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="428" column="14"/>
+        <references refid="interface_pos_product_manager_1a7c8999c1890bebecd25aa592c22608ae">findLotTypeNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a7c8999c1890bebecd25aa592c22608ae">findLotTypeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a6c896d6cf7ba59cdbab7df8040cc9d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_monitor_group" kindref="compound">PosMonitorGroup</ref></type>
+        <definition>PosMonitorGroup PosProductManager::createMonitorGroupNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMonitorGroupNamed</name>
+        <qualifiedname>PosProductManager::createMonitorGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="434" column="19"/>
+        <references refid="interface_pos_product_manager_1a6c896d6cf7ba59cdbab7df8040cc9d58">createMonitorGroupNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a6c896d6cf7ba59cdbab7df8040cc9d58">createMonitorGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a0df6d7173c846efcc17f00540f282098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeMonitorGroup</definition>
+        <argsstring>(in PosMonitorGroup aPosMonitorGroup)</argsstring>
+        <name>removeMonitorGroup</name>
+        <qualifiedname>PosProductManager::removeMonitorGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_monitor_group" kindref="compound">PosMonitorGroup</ref></type>
+          <declname>aPosMonitorGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_monitor_group_not_found_signal" kindref="compound">MonitorGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="440" column="8"/>
+        <references refid="interface_pos_product_manager_1a0df6d7173c846efcc17f00540f282098">removeMonitorGroup</references>
+        <referencedby refid="interface_pos_product_manager_1a0df6d7173c846efcc17f00540f282098">removeMonitorGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a3eb9da5c0cce0cffda3c45ed5ee0fcdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_monitor_group" kindref="compound">PosMonitorGroup</ref></type>
+        <definition>PosMonitorGroup PosProductManager::findMonitorGroupNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMonitorGroupNamed</name>
+        <qualifiedname>PosProductManager::findMonitorGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_monitor_group_not_found_signal" kindref="compound">MonitorGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="446" column="19"/>
+        <references refid="interface_pos_product_manager_1a3eb9da5c0cce0cffda3c45ed5ee0fcdd">findMonitorGroupNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a3eb9da5c0cce0cffda3c45ed5ee0fcdd">findMonitorGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a3c7fb81f42b02142f60f3d65b55af955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::resetWaferIdentifier</definition>
+        <argsstring>(in PosWafer aWafer, in string newIdentifier)</argsstring>
+        <name>resetWaferIdentifier</name>
+        <qualifiedname>PosProductManager::resetWaferIdentifier</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_wafer" kindref="compound">PosWafer</ref></type>
+          <declname>aWafer</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>newIdentifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="452" column="8"/>
+        <references refid="interface_pos_product_manager_1a3c7fb81f42b02142f60f3d65b55af955">resetWaferIdentifier</references>
+        <referencedby refid="interface_pos_product_manager_1a3c7fb81f42b02142f60f3d65b55af955">resetWaferIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a18b2ba9787f6bb233257bbad14329bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeWafer</definition>
+        <argsstring>(in PosWafer aWafer)</argsstring>
+        <name>removeWafer</name>
+        <qualifiedname>PosProductManager::removeWafer</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_wafer" kindref="compound">PosWafer</ref></type>
+          <declname>aWafer</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="458" column="8"/>
+        <references refid="interface_pos_product_manager_1a18b2ba9787f6bb233257bbad14329bde">removeWafer</references>
+        <referencedby refid="interface_pos_product_manager_1a18b2ba9787f6bb233257bbad14329bde">removeWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a0d2bf13243897e1c9b5546372ae848dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeAllLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLotTypes</name>
+        <qualifiedname>PosProductManager::removeAllLotTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="464" column="8"/>
+        <references refid="interface_pos_product_manager_1a0d2bf13243897e1c9b5546372ae848dc">removeAllLotTypes</references>
+        <referencedby refid="interface_pos_product_manager_1a0d2bf13243897e1c9b5546372ae848dc">removeAllLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a4f63de27276ca96e624bee0b12c51275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeAllMonitorGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMonitorGroups</name>
+        <qualifiedname>PosProductManager::removeAllMonitorGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="470" column="8"/>
+        <references refid="interface_pos_product_manager_1a4f63de27276ca96e624bee0b12c51275">removeAllMonitorGroups</references>
+        <referencedby refid="interface_pos_product_manager_1a4f63de27276ca96e624bee0b12c51275">removeAllMonitorGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a72c8ca3405ef8d930e3cf55d2e5d515b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeLotFamily</definition>
+        <argsstring>(in PosLotFamily aLotFamily)</argsstring>
+        <name>removeLotFamily</name>
+        <qualifiedname>PosProductManager::removeLotFamily</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_family" kindref="compound">PosLotFamily</ref></type>
+          <declname>aLotFamily</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="476" column="8"/>
+        <references refid="interface_pos_product_manager_1a72c8ca3405ef8d930e3cf55d2e5d515b">removeLotFamily</references>
+        <referencedby refid="interface_pos_product_manager_1a72c8ca3405ef8d930e3cf55d2e5d515b">removeLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a102a585a8f86bc6db5f909a873706477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeLot</name>
+        <qualifiedname>PosProductManager::removeLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="482" column="8"/>
+        <references refid="interface_pos_product_manager_1a102a585a8f86bc6db5f909a873706477">removeLot</references>
+        <referencedby refid="interface_pos_product_manager_1a102a585a8f86bc6db5f909a873706477">removeLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1af061f8a74b791fa64b750590b370a642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_family" kindref="compound">PosLotFamily</ref></type>
+        <definition>PosLotFamily PosProductManager::findLotFamilyNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLotFamilyNamed</name>
+        <qualifiedname>PosProductManager::findLotFamilyNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="488" column="16"/>
+        <references refid="interface_pos_product_manager_1af061f8a74b791fa64b750590b370a642">findLotFamilyNamed</references>
+        <referencedby refid="interface_pos_product_manager_1af061f8a74b791fa64b750590b370a642">findLotFamilyNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a7d9854c43d7b1ad3f8b2377cd67e0fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1aad3dd279e09a810139e7bd4b8ac626d4" kindref="member">PosLotTypeSequence</ref></type>
+        <definition>PosLotTypeSequence PosProductManager::allLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>allLotTypes</name>
+        <qualifiedname>PosProductManager::allLotTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="495" column="22"/>
+        <references refid="interface_pos_product_manager_1a7d9854c43d7b1ad3f8b2377cd67e0fad">allLotTypes</references>
+        <referencedby refid="interface_pos_product_manager_1a7d9854c43d7b1ad3f8b2377cd67e0fad">allLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1ab048285f01bd6038885ae32ade75ca3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref></type>
+        <definition>PosControlJob PosProductManager::createControlJob</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createControlJob</name>
+        <qualifiedname>PosProductManager::createControlJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="503" column="17"/>
+        <references refid="interface_pos_product_manager_1ab048285f01bd6038885ae32ade75ca3c">createControlJob</references>
+        <referencedby refid="interface_pos_product_manager_1ab048285f01bd6038885ae32ade75ca3c">createControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1af0555ea02cf77100cc4399d483f1f056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeControlJob</definition>
+        <argsstring>(in PosControlJob aControlJob)</argsstring>
+        <name>removeControlJob</name>
+        <qualifiedname>PosProductManager::removeControlJob</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref></type>
+          <declname>aControlJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="509" column="8"/>
+        <references refid="interface_pos_product_manager_1af0555ea02cf77100cc4399d483f1f056">removeControlJob</references>
+        <referencedby refid="interface_pos_product_manager_1af0555ea02cf77100cc4399d483f1f056">removeControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a4463bfe7ac6945c0ad9a01452a2757b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref></type>
+        <definition>PosControlJob PosProductManager::findControlJobNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findControlJobNamed</name>
+        <qualifiedname>PosProductManager::findControlJobNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_control_job_not_found_signal" kindref="compound">ControlJobNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="515" column="17"/>
+        <references refid="interface_pos_product_manager_1a4463bfe7ac6945c0ad9a01452a2757b7">findControlJobNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a4463bfe7ac6945c0ad9a01452a2757b7">findControlJobNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a6518a638175c9eb9d409503d0001fc95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeAllControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllControlJobs</name>
+        <qualifiedname>PosProductManager::removeAllControlJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="522" column="8"/>
+        <references refid="interface_pos_product_manager_1a6518a638175c9eb9d409503d0001fc95">removeAllControlJobs</references>
+        <referencedby refid="interface_pos_product_manager_1a6518a638175c9eb9d409503d0001fc95">removeAllControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1ae4265be0d94a628b40d52bc084a6fd65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a9aec59442d5480dbaa7459af3ae6b2e2" kindref="member">PosControlJobSequence</ref></type>
+        <definition>PosControlJobSequence PosProductManager::allControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>allControlJobs</name>
+        <qualifiedname>PosProductManager::allControlJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="529" column="25"/>
+        <references refid="interface_pos_product_manager_1ae4265be0d94a628b40d52bc084a6fd65">allControlJobs</references>
+        <referencedby refid="interface_pos_product_manager_1ae4265be0d94a628b40d52bc084a6fd65">allControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a608623f6531ab36949f97da9f81c3e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref></type>
+        <definition>PosPlannedSplitJob PosProductManager::createPlannedSplitJob</definition>
+        <argsstring>(in posPlannedSplitJobInfo plannedSplitJobInfo)</argsstring>
+        <name>createPlannedSplitJob</name>
+        <qualifiedname>PosProductManager::createPlannedSplitJob</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1a9f339d0af3281ddb7df680a558fcbef8" kindref="member">posPlannedSplitJobInfo</ref></type>
+          <declname>plannedSplitJobInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="537" column="22"/>
+        <references refid="interface_pos_product_manager_1a608623f6531ab36949f97da9f81c3e10">createPlannedSplitJob</references>
+        <referencedby refid="interface_pos_product_manager_1a608623f6531ab36949f97da9f81c3e10">createPlannedSplitJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a47e16f6c41496e109646d6b6b1e745a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removePlannedSplitJobFor</definition>
+        <argsstring>(in string lotFamilyID, in string splitRouteID, in string splitOperationNumber, in string originalRouteID, in string originalOperationNumber)</argsstring>
+        <name>removePlannedSplitJobFor</name>
+        <qualifiedname>PosProductManager::removePlannedSplitJobFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotFamilyID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>splitRouteID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>splitOperationNumber</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>originalRouteID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>originalOperationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="543" column="8"/>
+        <references refid="interface_pos_product_manager_1a47e16f6c41496e109646d6b6b1e745a4">removePlannedSplitJobFor</references>
+        <referencedby refid="interface_pos_product_manager_1a47e16f6c41496e109646d6b6b1e745a4">removePlannedSplitJobFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a6ab0bf50d5a18c67896c6f43b7c1c62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removePlannedSplitJobByLotFamily</definition>
+        <argsstring>(in string lotFamilyID)</argsstring>
+        <name>removePlannedSplitJobByLotFamily</name>
+        <qualifiedname>PosProductManager::removePlannedSplitJobByLotFamily</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotFamilyID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="549" column="8"/>
+        <references refid="interface_pos_product_manager_1a6ab0bf50d5a18c67896c6f43b7c1c62c">removePlannedSplitJobByLotFamily</references>
+        <referencedby refid="interface_pos_product_manager_1a6ab0bf50d5a18c67896c6f43b7c1c62c">removePlannedSplitJobByLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a46ae352db19cb140441f1b4bf61d3731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeAllPlannedSplitJobs</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPlannedSplitJobs</name>
+        <qualifiedname>PosProductManager::removeAllPlannedSplitJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="555" column="8"/>
+        <references refid="interface_pos_product_manager_1a46ae352db19cb140441f1b4bf61d3731">removeAllPlannedSplitJobs</references>
+        <referencedby refid="interface_pos_product_manager_1a46ae352db19cb140441f1b4bf61d3731">removeAllPlannedSplitJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1aa836a9f598127d57997aabebffb373f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a25c7ebb658a2864da185bf96fea8883a" kindref="member">PosPlannedSplitJobSequence</ref></type>
+        <definition>PosPlannedSplitJobSequence PosProductManager::allPlannedSplitJobs</definition>
+        <argsstring>()</argsstring>
+        <name>allPlannedSplitJobs</name>
+        <qualifiedname>PosProductManager::allPlannedSplitJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="562" column="30"/>
+        <references refid="interface_pos_product_manager_1aa836a9f598127d57997aabebffb373f5">allPlannedSplitJobs</references>
+        <referencedby refid="interface_pos_product_manager_1aa836a9f598127d57997aabebffb373f5">allPlannedSplitJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1abea060480c0409f1b622a56d4eb28f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a25c7ebb658a2864da185bf96fea8883a" kindref="member">PosPlannedSplitJobSequence</ref></type>
+        <definition>PosPlannedSplitJobSequence PosProductManager::findPlannedSplitJobByLotFamily</definition>
+        <argsstring>(in string lotFamilyID)</argsstring>
+        <name>findPlannedSplitJobByLotFamily</name>
+        <qualifiedname>PosProductManager::findPlannedSplitJobByLotFamily</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotFamilyID</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_planned_split_job_not_found_signal" kindref="compound">PlannedSplitJobNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="569" column="30"/>
+        <references refid="interface_pos_product_manager_1abea060480c0409f1b622a56d4eb28f8c">findPlannedSplitJobByLotFamily</references>
+        <referencedby refid="interface_pos_product_manager_1abea060480c0409f1b622a56d4eb28f8c">findPlannedSplitJobByLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1af315b6d3182dcc75a05270d3232a0f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref></type>
+        <definition>PosPlannedSplitJob PosProductManager::findPlannedSplitJobFor</definition>
+        <argsstring>(in string lotFamilyID, in string splitRouteID, in string splitOperationNumber, in string originalRouteID, in string originalOperationNumber)</argsstring>
+        <name>findPlannedSplitJobFor</name>
+        <qualifiedname>PosProductManager::findPlannedSplitJobFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotFamilyID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>splitRouteID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>splitOperationNumber</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>originalRouteID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>originalOperationNumber</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_planned_split_job_not_found_signal" kindref="compound">PlannedSplitJobNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="578" column="22"/>
+        <references refid="interface_pos_product_manager_1af315b6d3182dcc75a05270d3232a0f22">findPlannedSplitJobFor</references>
+        <referencedby refid="interface_pos_product_manager_1af315b6d3182dcc75a05270d3232a0f22">findPlannedSplitJobFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a82883b1b611bf89ec31bb4e863c11aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref></type>
+        <definition>PosPlannedSplitJob PosProductManager::findPlannedSplitJobNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findPlannedSplitJobNamed</name>
+        <qualifiedname>PosProductManager::findPlannedSplitJobNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_planned_split_job_not_found_signal" kindref="compound">PlannedSplitJobNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="584" column="22"/>
+        <references refid="interface_pos_product_manager_1a82883b1b611bf89ec31bb4e863c11aef">findPlannedSplitJobNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a82883b1b611bf89ec31bb4e863c11aef">findPlannedSplitJobNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a1fadb6fbab25673bde32b3d6fc890751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removePlannedSplitJob</definition>
+        <argsstring>(in PosPlannedSplitJob aPlannedSplitJob)</argsstring>
+        <name>removePlannedSplitJob</name>
+        <qualifiedname>PosProductManager::removePlannedSplitJob</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref></type>
+          <declname>aPlannedSplitJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="590" column="8"/>
+        <references refid="interface_pos_product_manager_1a1fadb6fbab25673bde32b3d6fc890751">removePlannedSplitJob</references>
+        <referencedby refid="interface_pos_product_manager_1a1fadb6fbab25673bde32b3d6fc890751">removePlannedSplitJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a11d21e46ed0a3d06156181c6e550add0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_family" kindref="compound">PosLotFamily</ref></type>
+        <definition>PosLotFamily PosProductManager::createLotFamily</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLotFamily</name>
+        <qualifiedname>PosProductManager::createLotFamily</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="596" column="16"/>
+        <references refid="interface_pos_product_manager_1a11d21e46ed0a3d06156181c6e550add0">createLotFamily</references>
+        <referencedby refid="interface_pos_product_manager_1a11d21e46ed0a3d06156181c6e550add0">createLotFamily</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a0bacf2cbdab46773ad88f3ba8de393b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosProductManager::createLot</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLot</name>
+        <qualifiedname>PosProductManager::createLot</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="602" column="10"/>
+        <references refid="interface_pos_product_manager_1a0bacf2cbdab46773ad88f3ba8de393b5">createLot</references>
+        <referencedby refid="interface_pos_product_manager_1a0bacf2cbdab46773ad88f3ba8de393b5">createLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a400cb5bbd6d186d342f79bb21b58f8cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref></type>
+        <definition>PosFutureReworkRequest PosProductManager::createFutureReworkRequest</definition>
+        <argsstring>(in posFutureReworkRequestInfo futureReworkRequestInfo)</argsstring>
+        <name>createFutureReworkRequest</name>
+        <qualifiedname>PosProductManager::createFutureReworkRequest</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1ac45da864d850e592caf3930c5f02f2b0" kindref="member">posFutureReworkRequestInfo</ref></type>
+          <declname>futureReworkRequestInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="611" column="26"/>
+        <references refid="interface_pos_product_manager_1a400cb5bbd6d186d342f79bb21b58f8cd">createFutureReworkRequest</references>
+        <referencedby refid="interface_pos_product_manager_1a400cb5bbd6d186d342f79bb21b58f8cd">createFutureReworkRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1ae1eeac79f8d01ee6b1a7a5029271f2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeFutureReworkRequestFor</definition>
+        <argsstring>(in string lotID, in string routeID, in string operationNumber)</argsstring>
+        <name>removeFutureReworkRequestFor</name>
+        <qualifiedname>PosProductManager::removeFutureReworkRequestFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>routeID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="617" column="8"/>
+        <references refid="interface_pos_product_manager_1ae1eeac79f8d01ee6b1a7a5029271f2b4">removeFutureReworkRequestFor</references>
+        <referencedby refid="interface_pos_product_manager_1ae1eeac79f8d01ee6b1a7a5029271f2b4">removeFutureReworkRequestFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a5a73c2ce3b196dd5376156fa7e3f3e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeAllFutureReworkRequests</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllFutureReworkRequests</name>
+        <qualifiedname>PosProductManager::removeAllFutureReworkRequests</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="623" column="8"/>
+        <references refid="interface_pos_product_manager_1a5a73c2ce3b196dd5376156fa7e3f3e2a">removeAllFutureReworkRequests</references>
+        <referencedby refid="interface_pos_product_manager_1a5a73c2ce3b196dd5376156fa7e3f3e2a">removeAllFutureReworkRequests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a142a15280764b80e9d1c08fae5f3a270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1af856745336232ece470f03923ace0607" kindref="member">PosFutureReworkRequestSequence</ref></type>
+        <definition>PosFutureReworkRequestSequence PosProductManager::allFutureReworkRequests</definition>
+        <argsstring>()</argsstring>
+        <name>allFutureReworkRequests</name>
+        <qualifiedname>PosProductManager::allFutureReworkRequests</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="630" column="34"/>
+        <references refid="interface_pos_product_manager_1a142a15280764b80e9d1c08fae5f3a270">allFutureReworkRequests</references>
+        <referencedby refid="interface_pos_product_manager_1a142a15280764b80e9d1c08fae5f3a270">allFutureReworkRequests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1abc4142dc67e34ff1702636ba8f42f281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref></type>
+        <definition>PosFutureReworkRequest PosProductManager::findFutureReworkRequestFor</definition>
+        <argsstring>(in string lotID, in string routeID, in string operationNumber)</argsstring>
+        <name>findFutureReworkRequestFor</name>
+        <qualifiedname>PosProductManager::findFutureReworkRequestFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>routeID</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>operationNumber</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_future_rework_request_not_found_signal" kindref="compound">FutureReworkRequestNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="637" column="26"/>
+        <references refid="interface_pos_product_manager_1abc4142dc67e34ff1702636ba8f42f281">findFutureReworkRequestFor</references>
+        <referencedby refid="interface_pos_product_manager_1abc4142dc67e34ff1702636ba8f42f281">findFutureReworkRequestFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a306ca46bb5ef9686a43d1905dcb491eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref></type>
+        <definition>PosFutureReworkRequest PosProductManager::findFutureReworkRequestNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findFutureReworkRequestNamed</name>
+        <qualifiedname>PosProductManager::findFutureReworkRequestNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_future_rework_request_not_found_signal" kindref="compound">FutureReworkRequestNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="644" column="26"/>
+        <references refid="interface_pos_product_manager_1a306ca46bb5ef9686a43d1905dcb491eb">findFutureReworkRequestNamed</references>
+        <referencedby refid="interface_pos_product_manager_1a306ca46bb5ef9686a43d1905dcb491eb">findFutureReworkRequestNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1af2a15ec82a1668fd0470e38c6be1d250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeFutureReworkRequest</definition>
+        <argsstring>(in PosFutureReworkRequest aFutureReworkRequest)</argsstring>
+        <name>removeFutureReworkRequest</name>
+        <qualifiedname>PosProductManager::removeFutureReworkRequest</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref></type>
+          <declname>aFutureReworkRequest</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="650" column="8"/>
+        <references refid="interface_pos_product_manager_1af2a15ec82a1668fd0470e38c6be1d250">removeFutureReworkRequest</references>
+        <referencedby refid="interface_pos_product_manager_1af2a15ec82a1668fd0470e38c6be1d250">removeFutureReworkRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1accf2aa9fc79b5b93de97eee61f088029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductManager::removeFutureReworkRequestByLot</definition>
+        <argsstring>(in string lotID)</argsstring>
+        <name>removeFutureReworkRequestByLot</name>
+        <qualifiedname>PosProductManager::removeFutureReworkRequestByLot</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="656" column="8"/>
+        <references refid="interface_pos_product_manager_1accf2aa9fc79b5b93de97eee61f088029">removeFutureReworkRequestByLot</references>
+        <referencedby refid="interface_pos_product_manager_1accf2aa9fc79b5b93de97eee61f088029">removeFutureReworkRequestByLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_manager_1a139357527d7cc6cae1e15c9850271583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1af856745336232ece470f03923ace0607" kindref="member">PosFutureReworkRequestSequence</ref></type>
+        <definition>PosFutureReworkRequestSequence PosProductManager::findFutureReworkRequestByLot</definition>
+        <argsstring>(in string lotID)</argsstring>
+        <name>findFutureReworkRequestByLot</name>
+        <qualifiedname>PosProductManager::findFutureReworkRequestByLot</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_manager_1_1_future_rework_request_not_found_signal" kindref="compound">FutureReworkRequestNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprmgr.idl" line="663" column="34"/>
+        <references refid="interface_pos_product_manager_1a139357527d7cc6cae1e15c9850271583">findFutureReworkRequestByLot</references>
+        <referencedby refid="interface_pos_product_manager_1a139357527d7cc6cae1e15c9850271583">findFutureReworkRequestByLot</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductManager</label>
+        <link refid="interface_pos_product_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductManager</label>
+        <link refid="interface_pos_product_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pprmgr.idl" line="100" column="11" bodyfile="poscimfw/include/pprmgr.idl" bodystart="100" bodyend="671"/>
+    <listofallmembers>
+      <member refid="interface_pos_product_manager_1ae4265be0d94a628b40d52bc084a6fd65" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>allControlJobs</name></member>
+      <member refid="interface_pos_product_manager_1a142a15280764b80e9d1c08fae5f3a270" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>allFutureReworkRequests</name></member>
+      <member refid="interface_pos_product_manager_1a7d9854c43d7b1ad3f8b2377cd67e0fad" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>allLotTypes</name></member>
+      <member refid="interface_pos_product_manager_1aa836a9f598127d57997aabebffb373f5" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>allPlannedSplitJobs</name></member>
+      <member refid="interface_pos_product_manager_1ab048285f01bd6038885ae32ade75ca3c" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createControlJob</name></member>
+      <member refid="interface_pos_product_manager_1a400cb5bbd6d186d342f79bb21b58f8cd" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createFutureReworkRequest</name></member>
+      <member refid="interface_pos_product_manager_1a0bacf2cbdab46773ad88f3ba8de393b5" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createLot</name></member>
+      <member refid="interface_pos_product_manager_1a11d21e46ed0a3d06156181c6e550add0" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createLotFamily</name></member>
+      <member refid="interface_pos_product_manager_1a5fdc8e2b81498965c5c8cb1acef788c8" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createLotTypeNamed</name></member>
+      <member refid="interface_pos_product_manager_1a6c896d6cf7ba59cdbab7df8040cc9d58" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createMonitorGroupNamed</name></member>
+      <member refid="interface_pos_product_manager_1a608623f6531ab36949f97da9f81c3e10" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>createPlannedSplitJob</name></member>
+      <member refid="interface_pos_product_manager_1a4463bfe7ac6945c0ad9a01452a2757b7" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findControlJobNamed</name></member>
+      <member refid="interface_pos_product_manager_1a139357527d7cc6cae1e15c9850271583" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findFutureReworkRequestByLot</name></member>
+      <member refid="interface_pos_product_manager_1abc4142dc67e34ff1702636ba8f42f281" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findFutureReworkRequestFor</name></member>
+      <member refid="interface_pos_product_manager_1a306ca46bb5ef9686a43d1905dcb491eb" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findFutureReworkRequestNamed</name></member>
+      <member refid="interface_pos_product_manager_1af061f8a74b791fa64b750590b370a642" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findLotFamilyNamed</name></member>
+      <member refid="interface_pos_product_manager_1a7c8999c1890bebecd25aa592c22608ae" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findLotTypeNamed</name></member>
+      <member refid="interface_pos_product_manager_1a3eb9da5c0cce0cffda3c45ed5ee0fcdd" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findMonitorGroupNamed</name></member>
+      <member refid="interface_pos_product_manager_1abea060480c0409f1b622a56d4eb28f8c" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findPlannedSplitJobByLotFamily</name></member>
+      <member refid="interface_pos_product_manager_1af315b6d3182dcc75a05270d3232a0f22" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findPlannedSplitJobFor</name></member>
+      <member refid="interface_pos_product_manager_1a82883b1b611bf89ec31bb4e863c11aef" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findPlannedSplitJobNamed</name></member>
+      <member refid="interface_pos_product_manager_1abc5be75ae6586ba4e6e391c904c27c92" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>findWaferNamed</name></member>
+      <member refid="interface_pos_product_manager_1a72804f1f9549014c55e94d1874d1ef89" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>PosProductManager_init</name></member>
+      <member refid="interface_pos_product_manager_1a6518a638175c9eb9d409503d0001fc95" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeAllControlJobs</name></member>
+      <member refid="interface_pos_product_manager_1a5a73c2ce3b196dd5376156fa7e3f3e2a" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeAllFutureReworkRequests</name></member>
+      <member refid="interface_pos_product_manager_1a0d2bf13243897e1c9b5546372ae848dc" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeAllLotTypes</name></member>
+      <member refid="interface_pos_product_manager_1a4f63de27276ca96e624bee0b12c51275" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeAllMonitorGroups</name></member>
+      <member refid="interface_pos_product_manager_1a46ae352db19cb140441f1b4bf61d3731" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeAllPlannedSplitJobs</name></member>
+      <member refid="interface_pos_product_manager_1af0555ea02cf77100cc4399d483f1f056" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeControlJob</name></member>
+      <member refid="interface_pos_product_manager_1af2a15ec82a1668fd0470e38c6be1d250" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeFutureReworkRequest</name></member>
+      <member refid="interface_pos_product_manager_1accf2aa9fc79b5b93de97eee61f088029" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeFutureReworkRequestByLot</name></member>
+      <member refid="interface_pos_product_manager_1ae1eeac79f8d01ee6b1a7a5029271f2b4" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeFutureReworkRequestFor</name></member>
+      <member refid="interface_pos_product_manager_1a102a585a8f86bc6db5f909a873706477" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeLot</name></member>
+      <member refid="interface_pos_product_manager_1a72c8ca3405ef8d930e3cf55d2e5d515b" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeLotFamily</name></member>
+      <member refid="interface_pos_product_manager_1a989d08fedc05905eb1e28d42dd0879ed" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeLotType</name></member>
+      <member refid="interface_pos_product_manager_1a0df6d7173c846efcc17f00540f282098" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeMonitorGroup</name></member>
+      <member refid="interface_pos_product_manager_1a1fadb6fbab25673bde32b3d6fc890751" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removePlannedSplitJob</name></member>
+      <member refid="interface_pos_product_manager_1a6ab0bf50d5a18c67896c6f43b7c1c62c" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removePlannedSplitJobByLotFamily</name></member>
+      <member refid="interface_pos_product_manager_1a47e16f6c41496e109646d6b6b1e745a4" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removePlannedSplitJobFor</name></member>
+      <member refid="interface_pos_product_manager_1a18b2ba9787f6bb233257bbad14329bde" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>removeWafer</name></member>
+      <member refid="interface_pos_product_manager_1a3c7fb81f42b02142f60f3d65b55af955" prot="public" virt="non-virtual"><scope>PosProductManager</scope><name>resetWaferIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+var structpos_lot_operation_complete_event_record__struct =
+[
+    [ "batchID", "structpos_lot_operation_complete_event_record__struct.html#a59f25a5bba14bb7c571b3432b6c55df9", null ],
+    [ "controlJobID", "structpos_lot_operation_complete_event_record__struct.html#a50a05ca847bca9b228f559638e38c32d", null ],
+    [ "equipmentID", "structpos_lot_operation_complete_event_record__struct.html#a625e2d284bb2fed06b426739cb162a7d", null ],
+    [ "eventCommon", "structpos_lot_operation_complete_event_record__struct.html#a93601256ff451b82a7e9bf8e022d392d", null ],
+    [ "fixtureIDs", "structpos_lot_operation_complete_event_record__struct.html#ac1879413e80dd1221caf75ad7e1cfe31", null ],
+    [ "locateBackFlag", "structpos_lot_operation_complete_event_record__struct.html#a5a951819f3482b7924e4968fdd77ef78", null ],
+    [ "logicalRecipeID", "structpos_lot_operation_complete_event_record__struct.html#ab53d3e90a3655f8b605801b9baec9504", null ],
+    [ "lotData", "structpos_lot_operation_complete_event_record__struct.html#a5e7dafea90a3520a6582e6b4ce365670", null ],
+    [ "machineRecipeID", "structpos_lot_operation_complete_event_record__struct.html#ab449cec3a516be8edd331d0ca9cc1216", null ],
+    [ "operationMode", "structpos_lot_operation_complete_event_record__struct.html#aca1b2f64000be78908fe75630a042cbe", null ],
+    [ "physicalRecipeID", "structpos_lot_operation_complete_event_record__struct.html#a8c68fce42e6b4d1e0be1f18a3dc274ed", null ],
+    [ "previousObjrefMainPF", "structpos_lot_operation_complete_event_record__struct.html#a269fba114cec96a06bd97bc226a964a8", null ],
+    [ "previousObjrefModulePOS", "structpos_lot_operation_complete_event_record__struct.html#a0157e7aab54e9e7aca9c32ba50fef258", null ],
+    [ "previousObjrefPOS", "structpos_lot_operation_complete_event_record__struct.html#a53a1fe86154afb7052a04673c0a46b3e", null ],
+    [ "previousOperationID", "structpos_lot_operation_complete_event_record__struct.html#a8f93dcea68def33a98799354f17ca39c", null ],
+    [ "previousOperationNumber", "structpos_lot_operation_complete_event_record__struct.html#ad22ebf9e102ee7f42a298457cad6dbc2", null ],
+    [ "previousOperationPassCount", "structpos_lot_operation_complete_event_record__struct.html#abc0b2bc8d9fa0a8609752550790bd79a", null ],
+    [ "previousRouteID", "structpos_lot_operation_complete_event_record__struct.html#a4b06c77bf5fd9904ca62b446a5778d0e", null ],
+    [ "processWafers", "structpos_lot_operation_complete_event_record__struct.html#ac13432fe13951aca72718286561a60eb", null ],
+    [ "recipeParameters", "structpos_lot_operation_complete_event_record__struct.html#a8360bb7d77495943aa3147dc1959cd8a", null ],
+    [ "reticleIDs", "structpos_lot_operation_complete_event_record__struct.html#a89c808747bda0e022736ea6af20a24d4", null ],
+    [ "testCriteriaResult", "structpos_lot_operation_complete_event_record__struct.html#a33156384a9ce2d182a81180781a5f5c8", null ],
+    [ "waferLevelRecipe", "structpos_lot_operation_complete_event_record__struct.html#ad47b42e5ab183ec90c965a84abe7060b", null ]
+];

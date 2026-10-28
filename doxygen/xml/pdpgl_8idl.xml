@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pdpgl_8idl" kind="file" language="IDL">
+    <compoundname>pdpgl.idl</compoundname>
+    <includedby refid="pdp_8idl" local="yes">poscimfw/include/pdp.idl</includedby>
+    <includedby refid="pdpmg_8idl" local="yes">poscimfw/include/pdpmg.idl</includedby>
+    <includedby refid="pmc_8idl" local="yes">poscimfw/include/pmc.idl</includedby>
+    <includedby refid="pwtbase_8idl" local="yes">poscimfw/include/pwtbase.idl</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pdp.idl</label>
+        <link refid="pdp_8idl"/>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pdpgl.idl</label>
+        <link refid="pdpgl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pdpmg.idl</label>
+        <link refid="pdpmg_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/peninmg.idl</label>
+        <link refid="peninmg_8idl"/>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pmc.idl</label>
+        <link refid="pmc_8idl"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pwtbase.idl</label>
+        <link refid="pwtbase_8idl"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/pwtdesd.idl</label>
+        <link refid="pwtdesd_8idl"/>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pwtdfifo.idl</label>
+        <link refid="pwtdfifo_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pwtdlrt.idl</label>
+        <link refid="pwtdlrt_8idl"/>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/pwtdmaxq.idl</label>
+        <link refid="pwtdmaxq_8idl"/>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/pwtdpcmp.idl</label>
+        <link refid="pwtdpcmp_8idl"/>
+      </node>
+      <node id="12">
+        <label>poscimfw/include/pwtdsrt.idl</label>
+        <link refid="pwtdsrt_8idl"/>
+      </node>
+      <node id="13">
+        <label>poscimfw/include/pwtedd.idl</label>
+        <link refid="pwtedd_8idl"/>
+      </node>
+      <node id="14">
+        <label>poscimfw/include/pwtemon.idl</label>
+        <link refid="pwtemon_8idl"/>
+      </node>
+      <node id="15">
+        <label>poscimfw/include/pwtesd.idl</label>
+        <link refid="pwtesd_8idl"/>
+      </node>
+      <node id="16">
+        <label>poscimfw/include/pwtextp.idl</label>
+        <link refid="pwtextp_8idl"/>
+      </node>
+      <node id="17">
+        <label>poscimfw/include/pwtfifo.idl</label>
+        <link refid="pwtfifo_8idl"/>
+      </node>
+      <node id="18">
+        <label>poscimfw/include/pwtflwb.idl</label>
+        <link refid="pwtflwb_8idl"/>
+      </node>
+      <node id="19">
+        <label>poscimfw/include/pwtintp.idl</label>
+        <link refid="pwtintp_8idl"/>
+      </node>
+      <node id="20">
+        <label>poscimfw/include/pwtlrt.idl</label>
+        <link refid="pwtlrt_8idl"/>
+      </node>
+      <node id="21">
+        <label>poscimfw/include/pwtmaxq.idl</label>
+        <link refid="pwtmaxq_8idl"/>
+      </node>
+      <node id="22">
+        <label>poscimfw/include/pwtpcls.idl</label>
+        <link refid="pwtpcls_8idl"/>
+      </node>
+      <node id="23">
+        <label>poscimfw/include/pwtpcmp.idl</label>
+        <link refid="pwtpcmp_8idl"/>
+      </node>
+      <node id="24">
+        <label>poscimfw/include/pwtpeqp.idl</label>
+        <link refid="pwtpeqp_8idl"/>
+      </node>
+      <node id="25">
+        <label>poscimfw/include/pwtplns.idl</label>
+        <link refid="pwtplns_8idl"/>
+      </node>
+      <node id="26">
+        <label>poscimfw/include/pwtqttt.idl</label>
+        <link refid="pwtqttt_8idl"/>
+      </node>
+      <node id="27">
+        <label>poscimfw/include/pwtsrt.idl</label>
+        <link refid="pwtsrt_8idl"/>
+      </node>
+      <node id="28">
+        <label>poscimfw/include/pwtsst.idl</label>
+        <link refid="pwtsst_8idl"/>
+      </node>
+      <node id="29">
+        <label>poscimfw/include/pwtuts.idl</label>
+        <link refid="pwtuts_8idl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_effective_what_next_logic__struct" prot="public">posEffectiveWhatNextLogic_struct</innerclass>
+    <innerclass refid="structpos_effective_where_next_logic__struct" prot="public">posEffectiveWhereNextLogic_struct</innerclass>
+    <innerclass refid="structpos_last_control_job__struct" prot="public">posLastControlJob_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pdpgl_8idl_1a59539c6cdf49769ba5913daa19066403" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_what_next_logic_base" kindref="compound">PosWhatNextLogicBase</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosWhatNextLogicBase&gt; PosWhatNextLogicSequence</definition>
+        <argsstring></argsstring>
+        <name>PosWhatNextLogicSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="37" column="19" bodyfile="poscimfw/include/pdpgl.idl" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1a8d1ff5a5c4acf58abc22ab04a167912f" prot="public" static="no">
+        <type><ref refid="structpos_effective_where_next_logic__struct" kindref="compound">posEffectiveWhereNextLogic_struct</ref></type>
+        <definition>typedef posEffectiveWhereNextLogic_struct posEffectiveWhereNextLogic</definition>
+        <argsstring></argsstring>
+        <name>posEffectiveWhereNextLogic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="95" column="43" bodyfile="poscimfw/include/pdpgl.idl" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1aa2687c4ad500bc04c678513ddd56baaa" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdpgl_8idl_1a8d1ff5a5c4acf58abc22ab04a167912f" kindref="member">posEffectiveWhereNextLogic</ref> &gt;</type>
+        <definition>typedef sequence&lt;posEffectiveWhereNextLogic&gt; PosEffectiveWhereNextLogicSequence</definition>
+        <argsstring></argsstring>
+        <name>PosEffectiveWhereNextLogicSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="103" column="18" bodyfile="poscimfw/include/pdpgl.idl" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" prot="public" static="no">
+        <type><ref refid="structpos_effective_what_next_logic__struct" kindref="compound">posEffectiveWhatNextLogic_struct</ref></type>
+        <definition>typedef posEffectiveWhatNextLogic_struct posEffectiveWhatNextLogic</definition>
+        <argsstring></argsstring>
+        <name>posEffectiveWhatNextLogic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="111" column="42" bodyfile="poscimfw/include/pdpgl.idl" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" kindref="member">posEffectiveWhatNextLogic</ref> &gt;</type>
+        <definition>typedef sequence&lt;posEffectiveWhatNextLogic&gt; PosEffectiveWhatNextLogicSequence</definition>
+        <argsstring></argsstring>
+        <name>PosEffectiveWhatNextLogicSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="120" column="18" bodyfile="poscimfw/include/pdpgl.idl" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1afd0ffca3cf4b8f12a1e7e5cac84e3407" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_flow_batch" kindref="compound">PosFlowBatch</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosFlowBatch&gt; PosFlowBatchSequence</definition>
+        <argsstring></argsstring>
+        <name>PosFlowBatchSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="128" column="18" bodyfile="poscimfw/include/pdpgl.idl" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" prot="public" static="no">
+        <type><ref refid="structpos_last_control_job__struct" kindref="compound">posLastControlJob_struct</ref></type>
+        <definition>typedef posLastControlJob_struct posLastControlJob</definition>
+        <argsstring></argsstring>
+        <name>posLastControlJob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="163" column="34" bodyfile="poscimfw/include/pdpgl.idl" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref> &gt;</type>
+        <definition>typedef sequence&lt;posLastControlJob&gt; PosLastControlJobSequence</definition>
+        <argsstring></argsstring>
+        <name>PosLastControlJobSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdpgl.idl" line="171" column="19" bodyfile="poscimfw/include/pdpgl.idl" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosDispatchingManagementGlobals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Schedule_Management_Functional_Group::Siview_Dispatching_Management__Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>E:\superpos\src\spclass\source\poscimfw\pdp\pdpgl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosDispatchingManagementGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosDispatchingManagementGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_what_next_logic_base" kindref="compound">PosWhatNextLogicBase</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_flow_batch" kindref="compound">PosFlowBatch</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosWhatNextLogicSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosWhatNextLogicBase&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosWhatNextLogicSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="pdpgl_8idl_1a59539c6cdf49769ba5913daa19066403" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosWhatNextLogicBase&gt;<sp/><sp/><ref refid="pdpgl_8idl_1a59539c6cdf49769ba5913daa19066403" kindref="member">PosWhatNextLogicSequence</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structpos_effective_what_next_logic__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_effective_what_next_logic__struct" kindref="compound">posEffectiveWhatNextLogic_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posEffectiveWhatNextLogic_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posEffectiveWhatNextLogic_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structpos_effective_what_next_logic__struct_1a03434f2696494fc5733a56a046e4920d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_what_next_logic__struct_1a03434f2696494fc5733a56a046e4920d" kindref="member">effectiveDateTime</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structpos_effective_what_next_logic__struct_1ac896a59a9568e686da3ce724a174aa1d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_what_next_logic__struct_1ac896a59a9568e686da3ce724a174aa1d" kindref="member">logicName</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structpos_effective_what_next_logic__struct_1a8d7f8032d2f0142b95c8471e04be5e36" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_what_next_logic__struct_1a8d7f8032d2f0142b95c8471e04be5e36" kindref="member">parameters</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posEffectiveWhatNextLogic_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posEffectiveWhatNextLogic_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structpos_effective_where_next_logic__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_effective_where_next_logic__struct" kindref="compound">posEffectiveWhereNextLogic_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posEffectiveWhereNextLogic_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posEffectiveWhereNextLogic_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structpos_effective_where_next_logic__struct_1a904d81da0e3f599344d0a3fdc3f28e50" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_where_next_logic__struct_1a904d81da0e3f599344d0a3fdc3f28e50" kindref="member">effectiveDateTime</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structpos_effective_where_next_logic__struct_1a8650c3131e1683790fe057829abc1d0f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_where_next_logic__struct_1a8650c3131e1683790fe057829abc1d0f" kindref="member">logicName</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structpos_effective_where_next_logic__struct_1a1236b927bf3cec848bb9ff6c8f9285d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_where_next_logic__struct_1a1236b927bf3cec848bb9ff6c8f9285d5" kindref="member">parameters</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posEffectiveWhereNextLogic_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posEffectiveWhereNextLogic_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posEffectiveWhereNextLogic<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>posEffectiveWhereNextLogic_struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>effectiveDateTime;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="pdpgl_8idl_1a8d1ff5a5c4acf58abc22ab04a167912f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_where_next_logic__struct" kindref="compound">posEffectiveWhereNextLogic_struct</ref><sp/><ref refid="pdpgl_8idl_1a8d1ff5a5c4acf58abc22ab04a167912f" kindref="member">posEffectiveWhereNextLogic</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosEffectiveWhereNextLogicSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posEffectiveWhereNextLogic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="pdpgl_8idl_1aa2687c4ad500bc04c678513ddd56baaa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posEffectiveWhereNextLogic&gt;<sp/><ref refid="pdpgl_8idl_1aa2687c4ad500bc04c678513ddd56baaa" kindref="member">PosEffectiveWhereNextLogicSequence</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posEffectiveWhatNextLogic<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posEffectiveWhatNextLogic_struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>posEffectiveWhatNextLogic;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_effective_what_next_logic__struct" kindref="compound">posEffectiveWhatNextLogic_struct</ref><sp/><ref refid="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" kindref="member">posEffectiveWhatNextLogic</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosEffectiveWhatNextLogicSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posEffectiveWhatNextLogic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosEffectiveWhatNextLogicSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posEffectiveWhatNextLogic&gt;<sp/><ref refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" kindref="member">PosEffectiveWhatNextLogicSequence</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosFlowBatchSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosFlowBatch&gt;<sp/>PosFlowBatchSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="pdpgl_8idl_1afd0ffca3cf4b8f12a1e7e5cac84e3407" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosFlowBatch&gt;<sp/><ref refid="pdpgl_8idl_1afd0ffca3cf4b8f12a1e7e5cac84e3407" kindref="member">PosFlowBatchSequence</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="structpos_last_control_job__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_last_control_job__struct" kindref="compound">posLastControlJob_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posLastControlJob_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posLastControlJob_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="structpos_last_control_job__struct_1a6fb76f8062c6a6ca19a8dfccd515a799" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_last_control_job__struct_1a6fb76f8062c6a6ca19a8dfccd515a799" kindref="member">theLastControlJobDate</ref>;</highlight></codeline>
+<codeline lineno="141" refid="structpos_last_control_job__struct_1a6cd1aa4bf919df27f5b55d17de8fbfcb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structpos_last_control_job__struct_1a6cd1aa4bf919df27f5b55d17de8fbfcb" kindref="member">theLastControlJobNumber</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posLastControlJob_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posLastControlJob_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posLastControlJob<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>posLastControlJob_struct<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>theLastControlJobDate;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>theLastControlJobNumber;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_last_control_job__struct" kindref="compound">posLastControlJob_struct</ref><sp/><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosLastControlJobSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posLastControlJob&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Dispatching<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Dispatching<sp/>Management<sp/><sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;posLastControlJob&gt;<sp/><ref refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" kindref="member">PosLastControlJobSequence</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pdpgl.idl"/>
+  </compounddef>
+</doxygen>

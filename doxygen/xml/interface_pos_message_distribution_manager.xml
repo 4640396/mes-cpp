@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_message_distribution_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMessageDistributionManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pmsdnmg_8idl" local="no">pmsdnmg.idl</includes>
+    <innerclass refid="exception_pos_message_distribution_manager_1_1_message_definition_not_found_signal" prot="public">PosMessageDistributionManager::MessageDefinitionNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_message_distribution_manager_1_1_message_request_duplicate_signal" prot="public">PosMessageDistributionManager::MessageRequestDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_message_distribution_manager_1_1_message_request_not_found_signal" prot="public">PosMessageDistributionManager::MessageRequestNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1adf0c23fb99dfc9867e03e45e7571e33a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDistributionManager::PosMessageDistributionManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMessageDistributionManager_init</name>
+        <qualifiedname>PosMessageDistributionManager::PosMessageDistributionManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="127" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1a69e782bacba7f750bd3242265538a1a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_message_definition" kindref="compound">PosMessageDefinition</ref></type>
+        <definition>PosMessageDefinition PosMessageDistributionManager::createMessageDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMessageDefinitionNamed</name>
+        <qualifiedname>PosMessageDistributionManager::createMessageDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="136" column="24"/>
+        <references refid="interface_pos_message_distribution_manager_1a69e782bacba7f750bd3242265538a1a0">createMessageDefinitionNamed</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1a69e782bacba7f750bd3242265538a1a0">createMessageDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1af426689e74c61d4d8dccbc8e0ee1a1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDistributionManager::removeMessageDefinition</definition>
+        <argsstring>(in PosMessageDefinition aMessageDefinition)</argsstring>
+        <name>removeMessageDefinition</name>
+        <qualifiedname>PosMessageDistributionManager::removeMessageDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_message_definition" kindref="compound">PosMessageDefinition</ref></type>
+          <declname>aMessageDefinition</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_distribution_manager_1_1_message_definition_not_found_signal" kindref="compound">MessageDefinitionNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="143" column="8"/>
+        <references refid="interface_pos_message_distribution_manager_1af426689e74c61d4d8dccbc8e0ee1a1d2">removeMessageDefinition</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1af426689e74c61d4d8dccbc8e0ee1a1d2">removeMessageDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1a175b5854c67b7c7fa9d46a9eaf2f10f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmsdsgl_8idl_1a6b900fb630da0f08497bbde060b7694e" kindref="member">PosMessageDefinitionSequence</ref></type>
+        <definition>PosMessageDefinitionSequence PosMessageDistributionManager::allMessageDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>allMessageDefinitions</name>
+        <qualifiedname>PosMessageDistributionManager::allMessageDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="149" column="32"/>
+        <references refid="interface_pos_message_distribution_manager_1a175b5854c67b7c7fa9d46a9eaf2f10f5">allMessageDefinitions</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1a175b5854c67b7c7fa9d46a9eaf2f10f5">allMessageDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1aedd926046972760b80301bedf4d00049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_message_definition" kindref="compound">PosMessageDefinition</ref></type>
+        <definition>PosMessageDefinition PosMessageDistributionManager::findMessageDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMessageDefinitionNamed</name>
+        <qualifiedname>PosMessageDistributionManager::findMessageDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="156" column="24"/>
+        <references refid="interface_pos_message_distribution_manager_1aedd926046972760b80301bedf4d00049">findMessageDefinitionNamed</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1aedd926046972760b80301bedf4d00049">findMessageDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1a0c21679aeabbe3f9d1469a032978932c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDistributionManager::addMessageRequest</definition>
+        <argsstring>(in posMessageRequest messageRequest)</argsstring>
+        <name>addMessageRequest</name>
+        <qualifiedname>PosMessageDistributionManager::addMessageRequest</qualifiedname>
+        <param>
+          <type>in <ref refid="pmsdsgl_8idl_1af9e8dc25404b59bd0c67c5ae0a1c6157" kindref="member">posMessageRequest</ref></type>
+          <declname>messageRequest</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_distribution_manager_1_1_message_request_duplicate_signal" kindref="compound">MessageRequestDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="162" column="8"/>
+        <references refid="interface_pos_message_distribution_manager_1a0c21679aeabbe3f9d1469a032978932c">addMessageRequest</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1a0c21679aeabbe3f9d1469a032978932c">addMessageRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1a071e3f933e660ccd0399eca6aa7c14e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDistributionManager::removeMessageRequest</definition>
+        <argsstring>(in posMessageRequest messageRequest)</argsstring>
+        <name>removeMessageRequest</name>
+        <qualifiedname>PosMessageDistributionManager::removeMessageRequest</qualifiedname>
+        <param>
+          <type>in <ref refid="pmsdsgl_8idl_1af9e8dc25404b59bd0c67c5ae0a1c6157" kindref="member">posMessageRequest</ref></type>
+          <declname>messageRequest</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_message_distribution_manager_1_1_message_request_not_found_signal" kindref="compound">MessageRequestNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="169" column="8"/>
+        <references refid="interface_pos_message_distribution_manager_1a071e3f933e660ccd0399eca6aa7c14e3">removeMessageRequest</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1a071e3f933e660ccd0399eca6aa7c14e3">removeMessageRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1abe438b41aef6ded0970155353f11d6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmsdsgl_8idl_1a1243488c6ff299a81f167676796c6bbb" kindref="member">PosMessageRequestSequence</ref></type>
+        <definition>PosMessageRequestSequence PosMessageDistributionManager::allMessageRequests</definition>
+        <argsstring>()</argsstring>
+        <name>allMessageRequests</name>
+        <qualifiedname>PosMessageDistributionManager::allMessageRequests</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="175" column="29"/>
+        <references refid="interface_pos_message_distribution_manager_1abe438b41aef6ded0970155353f11d6a6">allMessageRequests</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1abe438b41aef6ded0970155353f11d6a6">allMessageRequests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1a0e9b8248b5d422f7b7a8a680daa39608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmsdsgl_8idl_1af9e8dc25404b59bd0c67c5ae0a1c6157" kindref="member">posMessageRequest</ref></type>
+        <definition>posMessageRequest PosMessageDistributionManager::firstMessageRequest</definition>
+        <argsstring>()</argsstring>
+        <name>firstMessageRequest</name>
+        <qualifiedname>PosMessageDistributionManager::firstMessageRequest</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="181" column="21"/>
+        <references refid="interface_pos_message_distribution_manager_1a0e9b8248b5d422f7b7a8a680daa39608">firstMessageRequest</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1a0e9b8248b5d422f7b7a8a680daa39608">firstMessageRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_message_distribution_manager_1afa4e3ab9efbd9443f84246b86349351b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMessageDistributionManager::removeAllMessageDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMessageDefinitions</name>
+        <qualifiedname>PosMessageDistributionManager::removeAllMessageDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmsdnmg.idl" line="187" column="8"/>
+        <references refid="interface_pos_message_distribution_manager_1afa4e3ab9efbd9443f84246b86349351b">removeAllMessageDefinitions</references>
+        <referencedby refid="interface_pos_message_distribution_manager_1afa4e3ab9efbd9443f84246b86349351b">removeAllMessageDefinitions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosMessageDistributionManager</label>
+        <link refid="interface_pos_message_distribution_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosMessageDistributionManager</label>
+        <link refid="interface_pos_message_distribution_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmsdnmg.idl" line="47" column="11" bodyfile="poscimfw/include/pmsdnmg.idl" bodystart="48" bodyend="194"/>
+    <listofallmembers>
+      <member refid="interface_pos_message_distribution_manager_1a0c21679aeabbe3f9d1469a032978932c" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>addMessageRequest</name></member>
+      <member refid="interface_pos_message_distribution_manager_1a175b5854c67b7c7fa9d46a9eaf2f10f5" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>allMessageDefinitions</name></member>
+      <member refid="interface_pos_message_distribution_manager_1abe438b41aef6ded0970155353f11d6a6" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>allMessageRequests</name></member>
+      <member refid="interface_pos_message_distribution_manager_1a69e782bacba7f750bd3242265538a1a0" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>createMessageDefinitionNamed</name></member>
+      <member refid="interface_pos_message_distribution_manager_1aedd926046972760b80301bedf4d00049" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>findMessageDefinitionNamed</name></member>
+      <member refid="interface_pos_message_distribution_manager_1a0e9b8248b5d422f7b7a8a680daa39608" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>firstMessageRequest</name></member>
+      <member refid="interface_pos_message_distribution_manager_1adf0c23fb99dfc9867e03e45e7571e33a" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>PosMessageDistributionManager_init</name></member>
+      <member refid="interface_pos_message_distribution_manager_1afa4e3ab9efbd9443f84246b86349351b" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>removeAllMessageDefinitions</name></member>
+      <member refid="interface_pos_message_distribution_manager_1af426689e74c61d4d8dccbc8e0ee1a1d2" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>removeMessageDefinition</name></member>
+      <member refid="interface_pos_message_distribution_manager_1a071e3f933e660ccd0399eca6aa7c14e3" prot="public" virt="non-virtual"><scope>PosMessageDistributionManager</scope><name>removeMessageRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

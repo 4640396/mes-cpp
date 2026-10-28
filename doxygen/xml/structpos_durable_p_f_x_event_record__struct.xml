@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_durable_p_f_x_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posDurablePFXEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_durable_p_f_x_event_record__struct_1ae5c1bced50b186fa0a98772e689f0b60" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a3e022e68af218a9ef546e2a96da0f769" kindref="member">posDurableEventData</ref></type>
+        <definition>posDurableEventData posDurablePFXEventRecord_struct::durableData</definition>
+        <argsstring></argsstring>
+        <name>durableData</name>
+        <qualifiedname>posDurablePFXEventRecord_struct::durableData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4342" column="23" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_durable_p_f_x_event_record__struct_1aaf35badc0a1b05ea514b41c1f4a2d8a4" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posDurablePFXEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posDurablePFXEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4343" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4343" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>posDurableEventData_struct</label>
+        <link refid="structpos_durable_event_data__struct"/>
+      </node>
+      <node id="1">
+        <label>posDurablePFXEventRecord_struct</label>
+        <link refid="structpos_durable_p_f_x_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>durableData</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="4336" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4336" bodyend="4355"/>
+    <listofallmembers>
+      <member refid="structpos_durable_p_f_x_event_record__struct_1ae5c1bced50b186fa0a98772e689f0b60" prot="public" virt="non-virtual"><scope>posDurablePFXEventRecord_struct</scope><name>durableData</name></member>
+      <member refid="structpos_durable_p_f_x_event_record__struct_1aaf35badc0a1b05ea514b41c1f4a2d8a4" prot="public" virt="non-virtual"><scope>posDurablePFXEventRecord_struct</scope><name>eventCommon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

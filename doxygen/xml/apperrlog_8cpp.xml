@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="apperrlog_8cpp" kind="file" language="C++">
+    <compoundname>apperrlog.cpp</compoundname>
+    <includes local="yes">apperrlog.hpp</includes>
+    <includes local="yes">apperrlogwriter.hpp</includes>
+    <includes local="yes">cimfwstr.hpp</includes>
+    <includes local="no">pthread.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">sys/timeb.h</includes>
+    <includes local="no">iomanip.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/apperrlog.cpp</label>
+        <link refid="apperrlog_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>apperrlog.hpp</label>
+      </node>
+      <node id="3">
+        <label>apperrlogwriter.hpp</label>
+      </node>
+      <node id="4">
+        <label>cimfwstr.hpp</label>
+      </node>
+      <node id="8">
+        <label>iomanip.h</label>
+      </node>
+      <node id="5">
+        <label>pthread.h</label>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>sys/timeb.h</label>
+      </node>
+      <node id="6">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="apperrlog_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/apperrlog.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:31:59 [ 7/13/07 19:32:00 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/apperrlog.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/apperrlog.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int AppErrLogSize</definition>
+        <argsstring></argsstring>
+        <name>AppErrLogSize</name>
+        <initializer>= 4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/apperrlog.cpp" line="49" column="11" bodyfile="smtchcmf/frmwrkgl/apperrlog.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" compoundref="apperrlog_8cpp" startline="240" endline="252">safeStrCat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="apperrlog_8cpp_1a7cdc7faf9d390af24eab89d769a94cd2" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* appMonth[]</definition>
+        <argsstring>[]</argsstring>
+        <name>appMonth</name>
+        <initializer>                    ={
+  &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,
+  &quot;May&quot;, &quot;Jun&quot;, &quot;Jly&quot;, &quot;Aug&quot;,
+  &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/apperrlog.cpp" line="51" column="13" bodyfile="smtchcmf/frmwrkgl/apperrlog.cpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void safeStrCat</definition>
+        <argsstring>(char *theBuf, const char *ptr)</argsstring>
+        <name>safeStrCat</name>
+        <param>
+          <type>char *</type>
+          <declname>theBuf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/apperrlog.cpp" line="240" column="13" bodyfile="smtchcmf/frmwrkgl/apperrlog.cpp" bodystart="240" bodyend="252" declfile="smtchcmf/frmwrkgl/apperrlog.cpp" declline="57" declcolumn="13"/>
+        <references refid="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" compoundref="apperrlog_8cpp" startline="49">AppErrLogSize</references>
+        <references refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" compoundref="cimfwstr_8cpp" startline="187" endline="195">CIMFWStrLen</references>
+        <references refid="cimfwstr_8cpp_1ab1edb0ae6dfe3f49f5ee04e719623d85" compoundref="cimfwstr_8cpp" startline="90" endline="97">CIMFWStrnCat</references>
+        <references refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" compoundref="apperrlog_8cpp" startline="240" endline="252">safeStrCat</references>
+        <referencedby refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" compoundref="apperrlog_8cpp" startline="240" endline="252">safeStrCat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="apperrlog_8cpp_1ac101c53836b511cfa184cb86bb4a77aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AppErrLog &amp;</type>
+        <definition>AppErrLog &amp; endl</definition>
+        <argsstring>(AppErrLog &amp;o)</argsstring>
+        <name>endl</name>
+        <param>
+          <type>AppErrLog &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/apperrlog.cpp" line="234" column="11" bodyfile="smtchcmf/frmwrkgl/apperrlog.cpp" bodystart="234" bodyend="237"/>
+        <references refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" compoundref="standardoutlogger_8cpp" startline="242" endline="246">endl</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="apperrlog_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/apperrlog.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:31:59<sp/>[<sp/>7/13/07<sp/>19:32:00<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2012.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SiView</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>apperrlog.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/>DCR/PTR<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/27/1999<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>Initial<sp/>CMVC<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/09/1999<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>DCR<sp/>9900201<sp/>Use<sp/>pthread_self<sp/>instead<sp/>of<sp/>thread_self</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>08/03/2000<sp/>D3000026<sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>Dynamic<sp/>allocated<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>02/07/2002<sp/>P4100118<sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/>Add<sp/>kernel<sp/>thread<sp/>ID<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/11/2006<sp/>P7000023<sp/>S.Yamamoto<sp/><sp/><sp/><sp/><sp/>Fix<sp/>:<sp/>Application<sp/>error<sp/>log<sp/>buffer<sp/>over<sp/>flow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/20/2007<sp/>D9000001<sp/>H.Adachi<sp/><sp/><sp/><sp/><sp/><sp/><sp/>64bit<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCR/PTR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/><sp/>------------<sp/><sp/>-------------<sp/><sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2011/10/13<sp/><sp/>PSN000022176<sp/><sp/>S.Kawabe<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Fix<sp/>:<sp/>Application<sp/>error<sp/>log<sp/>buffer<sp/>over<sp/>flow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2012/01/24<sp/><sp/>DSN000030296<sp/><sp/>K.Yamaoku<sp/><sp/><sp/><sp/><sp/><sp/>Support<sp/>thread<sp/>ID<sp/>which<sp/>is<sp/>longer<sp/>than<sp/>8<sp/>digit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;apperrlog.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;apperrlogwriter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwstr.hpp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;winbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/timeb.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Following<sp/>definition<sp/>determins<sp/>size<sp/>of<sp/>application<sp/>error<sp/>log<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" kindref="member">AppErrLogSize</ref>=<sp/>4096;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="apperrlog_8cpp_1a7cdc7faf9d390af24eab89d769a94cd2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="apperrlog_8cpp_1a7cdc7faf9d390af24eab89d769a94cd2" kindref="member">appMonth</ref>[]={</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;Jan&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Feb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Apr&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;May&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jun&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jly&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Aug&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;Sep&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Oct&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Nov&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dec&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*theBuf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ptr<sp/>);<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">AppErrLog::AppErrLog(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lineno)<sp/>:<sp/>theBuf(0)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>current<sp/>thread<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>DWORD<sp/>tid=<sp/>GetCurrentThreadId();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//PSN000022176<sp/><sp/>int<sp/>tid=<sp/>(int)pthread_self();<sp/>//<sp/>DCR<sp/>9900201<sp/>:<sp/>User<sp/>Thread<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//PSN000022176<sp/><sp/>int<sp/>ktid=<sp/>(int)thread_self();<sp/>//<sp/>Kernel<sp/>Thread<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/>tid_t<sp/><sp/><sp/><sp/><sp/>tid<sp/><sp/>=<sp/>pthread_self();<sp/>//<sp/>User<sp/>Thread<sp/>ID<sp/><sp/><sp/><sp/>//PSN000022176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/>pthread_t<sp/>ktid<sp/>=<sp/>thread_self();<sp/><sp/>//<sp/>Kernel<sp/>Thread<sp/>ID<sp/><sp/>//PSN000022176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>pthread_t<sp/><sp/><sp/><sp/><sp/>tid<sp/><sp/>=<sp/>pthread_self();<sp/></highlight><highlight class="comment">//<sp/>User<sp/>Thread<sp/>ID<sp/><sp/><sp/><sp/>//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>tid_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ktid<sp/>=<sp/>thread_self();<sp/><sp/></highlight><highlight class="comment">//<sp/>Kernel<sp/>Thread<sp/>ID<sp/><sp/>//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Current<sp/>timestamp<sp/>in<sp/>mili-seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeb<sp/>Tp<sp/>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ftime(<sp/>&amp;Tp)<sp/>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm*<sp/>ptm=<sp/>localtime(<sp/>&amp;Tp.time<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm&amp;<sp/>tm=<sp/>*<sp/>ptm;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>tm;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>localtime_r(<sp/>&amp;Tp.time,<sp/>&amp;tm<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>year<sp/>[8];<sp/>sprintf(<sp/>year<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%04d&quot;</highlight><highlight class="normal">,<sp/>tm.tm_year+1900<sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>day<sp/><sp/>[8];<sp/>sprintf(<sp/>day<sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%02d&quot;</highlight><highlight class="normal">,<sp/>tm.tm_mday<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>hour<sp/>[8];<sp/>sprintf(<sp/>hour<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%02d&quot;</highlight><highlight class="normal">,<sp/>tm.tm_hour<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="cimfwdo_8cpp_1a57a353c1dfe6b4f7338558d6d6701439" kindref="member">min</ref><sp/><sp/>[8];<sp/>sprintf(<sp/><ref refid="cimfwdo_8cpp_1a57a353c1dfe6b4f7338558d6d6701439" kindref="member">min</ref><sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%02d&quot;</highlight><highlight class="normal">,<sp/>tm.tm_min<sp/><sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sec<sp/><sp/>[8];<sp/>sprintf(<sp/>sec<sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%02d&quot;</highlight><highlight class="normal">,<sp/>tm.tm_sec<sp/><sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mili<sp/>[8];<sp/>sprintf(<sp/>mili<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%03d&quot;</highlight><highlight class="normal">,<sp/>Tp.millitm<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//PSN000022176<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>stid<sp/>[8];<sp/>sprintf(<sp/>stid<sp/>,<sp/>&quot;%d&quot;<sp/><sp/>,<sp/>tid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>stid<sp/>[64];<sp/>sprintf(<sp/>stid<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal"><sp/><sp/>,<sp/>tid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/></highlight><highlight class="comment">//PSN000022176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//PSN000022176<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>sktid[8];<sp/>sprintf(<sp/>sktid,<sp/>&quot;%d&quot;<sp/><sp/>,<sp/>ktid<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/>//P4100118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//DSN000030296<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>sktid[64];<sp/>sprintf(<sp/>sktid,<sp/>&quot;%u&quot;<sp/><sp/>,<sp/>ktid<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/>//PSN000022176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sktid[64];<sp/>sprintf(<sp/>sktid,<sp/></highlight><highlight class="stringliteral">&quot;%ld&quot;</highlight><highlight class="normal"><sp/><sp/>,<sp/>ktid<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/></highlight><highlight class="comment">//DSN000030296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sno<sp/><sp/>[8];<sp/>sprintf(<sp/>sno<sp/><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal"><sp/><sp/>,<sp/>lineno<sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>the<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>theBuf=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" kindref="member">AppErrLogSize</ref>];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>strcpy(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;TID[U&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>strcpy(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;TID[&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>stid<sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;:K&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>sktid<sp/><sp/><sp/>);<sp/></highlight><highlight class="comment">//P4100118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>TIME[&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>year<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/><ref refid="apperrlog_8cpp_1a7cdc7faf9d390af24eab89d769a94cd2" kindref="member">appMonth</ref>[tm.tm_mon]<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>day<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>hour<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/><ref refid="cimfwdo_8cpp_1a57a353c1dfe6b4f7338558d6d6701439" kindref="member">min</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>sec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>mili<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>FILE[&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>file<sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>LINE[&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/>sno<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>strcat(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>application<sp/>error<sp/>log<sp/>writer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>theWriter=<sp/>AppErrLogWriter::GetAppErrLogWriter();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>ctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">AppErrLog::~AppErrLog(){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>theWriter-&gt;write(<sp/>theBuf<sp/>);<sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>theBuf)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>theBuf;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>theBuf=<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>dtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>AppErrLog::str(){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>theBuf;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>str</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>){</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>c);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>char<sp/>c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>){</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>c);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>unsigned<sp/>char<sp/>c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>v<sp/>){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>v);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>int<sp/>v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>v<sp/>){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>v);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>unsigned<sp/>int<sp/>v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/>v<sp/>){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>v);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>long<sp/>v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/>v<sp/>){</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/></highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>v);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>unsigned<sp/>long<sp/>v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/>d<sp/>){</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[64];</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>snprintf(<sp/>buf,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buf),<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>d);<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>sprintf(<sp/>buf,<sp/>&quot;%f&quot;,<sp/>d);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>buf<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>buf<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>doubld<sp/>d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">AppErrLog&amp;<sp/>AppErrLog::operator&lt;&lt;(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s<sp/>){</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/>s<sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>s<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>for<sp/>doubld<sp/>d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AppErrLog::_endl(){</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/>theBuf,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>)<sp/>;<sp/></highlight><highlight class="comment">//P7000023</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/><sp/><sp/><sp/><sp/>strcat(<sp/>theBuf,<sp/>&quot;\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>_endl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="apperrlog_8cpp_1ac101c53836b511cfa184cb86bb4a77aa" refkind="member"><highlight class="normal">AppErrLog&amp;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>(AppErrLog&amp;<sp/>o){</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>o._endl();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>o;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>endl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/>add<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="apperrlog_8cpp_1a7d7bd00692b7c7d14e9912faa4d25f11" kindref="member">safeStrCat</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*theBuf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ptr<sp/>)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>ptr<sp/>!=<sp/>NULL<sp/>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/><sp/>int<sp/>len<sp/>=<sp/>(AppErrLogSize<sp/>-<sp/>1)<sp/>-<sp/>strlen(theBuf);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>CORBA::Long<sp/>len<sp/>=<sp/>(<ref refid="apperrlog_8cpp_1a0f49a4cf3ea31719f5658483f1b4addb" kindref="member">AppErrLogSize</ref><sp/>-<sp/>1)<sp/>-<sp/><ref refid="cimfwstr_8cpp_1a9868e9d743fa9b53498104f120113515" kindref="member">CIMFWStrLen</ref>(theBuf);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>len<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cimfwstr_8cpp_1ab1edb0ae6dfe3f49f5ee04e719623d85" kindref="member">CIMFWStrnCat</ref>(<sp/>theBuf,<sp/>ptr,<sp/>len<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//D9000001<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strncat(<sp/>theBuf,<sp/>ptr,<sp/>len<sp/>);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">//P7000023<sp/>add<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/apperrlog.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_lot_schedule" kind="interface" language="IDL" prot="public">
+    <compoundname>PosLotSchedule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pltsch_8idl" local="no">pltsch.idl</includes>
+    <innerclass refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" prot="public">PosLotSchedule::LotOperationScheduleNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" prot="public">PosLotSchedule::DuplicateIdentifierSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_lot_schedule_1ab0c18ff36c64e179798d28193dcadf1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotSchedule::PosLotSchedule_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosLotSchedule_init</name>
+        <qualifiedname>PosLotSchedule::PosLotSchedule_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="104" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref></type>
+        <definition>PosLotOperationSchedule PosLotSchedule::createLotOperationScheduleNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLotOperationScheduleNamed</name>
+        <qualifiedname>PosLotSchedule::createLotOperationScheduleNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_lot_schedule_1_1_duplicate_identifier_signal" kindref="compound">DuplicateIdentifierSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="117" column="27"/>
+        <references refid="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371">createLotOperationScheduleNamed</references>
+        <referencedby refid="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371">createLotOperationScheduleNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotSchedule::removeLotOperationSchedule</definition>
+        <argsstring>(in PosLotOperationSchedule aLotOperationSchedule)</argsstring>
+        <name>removeLotOperationSchedule</name>
+        <qualifiedname>PosLotSchedule::removeLotOperationSchedule</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref></type>
+          <declname>aLotOperationSchedule</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" kindref="compound">LotOperationScheduleNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="123" column="8"/>
+        <references refid="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57">removeLotOperationSchedule</references>
+        <referencedby refid="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57">removeLotOperationSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotSchedule::removeAllLotOperationSchedules</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLotOperationSchedules</name>
+        <qualifiedname>PosLotSchedule::removeAllLotOperationSchedules</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_lot_schedule_1_1_lot_operation_schedule_not_found_signal" kindref="compound">LotOperationScheduleNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="129" column="8"/>
+        <references refid="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332">removeAllLotOperationSchedules</references>
+        <referencedby refid="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332">removeAllLotOperationSchedules</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot_operation_schedule" kindref="compound">PosLotOperationSchedule</ref></type>
+        <definition>PosLotOperationSchedule PosLotSchedule::findLotOperationScheduleNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLotOperationScheduleNamed</name>
+        <qualifiedname>PosLotSchedule::findLotOperationScheduleNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="136" column="27"/>
+        <references refid="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0">findLotOperationScheduleNamed</references>
+        <referencedby refid="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0">findLotOperationScheduleNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pplgl_8idl_1a1ed17d1df8c03fcd770aa01c3a26f0ad" kindref="member">PosLotOperationScheduleSequence</ref></type>
+        <definition>PosLotOperationScheduleSequence PosLotSchedule::allLotOperationSchedules</definition>
+        <argsstring>()</argsstring>
+        <name>allLotOperationSchedules</name>
+        <qualifiedname>PosLotSchedule::allLotOperationSchedules</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="142" column="35"/>
+        <references refid="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d">allLotOperationSchedules</references>
+        <referencedby refid="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d">allLotOperationSchedules</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosLotSchedule::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosLotSchedule::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="148" column="8"/>
+        <references refid="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4">setIdentifier</references>
+        <referencedby refid="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosLotSchedule::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosLotSchedule::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pltsch.idl" line="154" column="10"/>
+        <references refid="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f">getIdentifier</references>
+        <referencedby refid="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f">getIdentifier</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLotSchedule</label>
+        <link refid="interface_pos_lot_schedule"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosLotSchedule</label>
+        <link refid="interface_pos_lot_schedule"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pltsch.idl" line="45" column="11" bodyfile="poscimfw/include/pltsch.idl" bodystart="45" bodyend="161"/>
+    <listofallmembers>
+      <member refid="interface_pos_lot_schedule_1a8d8e0d60999f165e0941192b12dac09d" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>allLotOperationSchedules</name></member>
+      <member refid="interface_pos_lot_schedule_1a34a706501fb5d1a17d2a9c0736421371" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>createLotOperationScheduleNamed</name></member>
+      <member refid="interface_pos_lot_schedule_1a21e312c249dd6bc7229d5ea2275770d0" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>findLotOperationScheduleNamed</name></member>
+      <member refid="interface_pos_lot_schedule_1a45e2af94ac27a7b5dc2186f634b2762f" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_lot_schedule_1ab0c18ff36c64e179798d28193dcadf1e" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>PosLotSchedule_init</name></member>
+      <member refid="interface_pos_lot_schedule_1a7fcef6773bb5825c62737a9de28ac332" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>removeAllLotOperationSchedules</name></member>
+      <member refid="interface_pos_lot_schedule_1a18178a4fbad7373a88dbe2c2c344da57" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>removeLotOperationSchedule</name></member>
+      <member refid="interface_pos_lot_schedule_1ad183f003a07cbb366f5917d79c63b8a4" prot="public" virt="non-virtual"><scope>PosLotSchedule</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

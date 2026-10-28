@@ -1,0 +1,936 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_person" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPerson</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Person</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pperson_8idl" local="no">pperson.idl</includes>
+    <innerclass refid="exception_pos_person_1_1_machine_not_found_signal" prot="public">PosPerson::MachineNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_product_not_found_signal" prot="public">PosPerson::ProductNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_area_group_duplicate_signal" prot="public">PosPerson::AreaGroupDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_area_group_not_found_signal" prot="public">PosPerson::AreaGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_set_user_info_failed_signal" prot="public">PosPerson::SetUserInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_privilege_group_duplicate_signal" prot="public">PosPerson::PrivilegeGroupDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_privilege_group_not_found_signal" prot="public">PosPerson::PrivilegeGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_person_1_1_illegal_password_signal" prot="public">PosPerson::IllegalPasswordSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_person_1a5eab604b20c186d0c87ea8c807bcd07c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::PosPerson_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPerson_init</name>
+        <qualifiedname>PosPerson::PosPerson_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="258" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a5a4253938cd5dbbe1a4941a634b45ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::isOperableMachine</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>isOperableMachine</name>
+        <qualifiedname>PosPerson::isOperableMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="265" column="11"/>
+        <references refid="interface_pos_person_1a5a4253938cd5dbbe1a4941a634b45ac1">isOperableMachine</references>
+        <referencedby refid="interface_pos_person_1a5a4253938cd5dbbe1a4941a634b45ac1">isOperableMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1aaac6c016900478988920eb0be5bc03cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::isOperableStorageMachine</definition>
+        <argsstring>(in PosStorageMachine aStorageMachine)</argsstring>
+        <name>isOperableStorageMachine</name>
+        <qualifiedname>PosPerson::isOperableStorageMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aStorageMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="272" column="11"/>
+        <references refid="interface_pos_person_1aaac6c016900478988920eb0be5bc03cf">isOperableStorageMachine</references>
+        <referencedby refid="interface_pos_person_1aaac6c016900478988920eb0be5bc03cf">isOperableStorageMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a84c82730b259faa3c72b519bc50656b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::addAreaGroup</definition>
+        <argsstring>(in PosAreaGroup anAreaGroup)</argsstring>
+        <name>addAreaGroup</name>
+        <qualifiedname>PosPerson::addAreaGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+          <declname>anAreaGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_area_group_duplicate_signal" kindref="compound">AreaGroupDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="279" column="8"/>
+        <references refid="interface_pos_person_1a84c82730b259faa3c72b519bc50656b7">addAreaGroup</references>
+        <referencedby refid="interface_pos_person_1a84c82730b259faa3c72b519bc50656b7">addAreaGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a6ba5c9087e82a45656616dff174dbf36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::removeAreaGroup</definition>
+        <argsstring>(in PosAreaGroup anAreaGroup)</argsstring>
+        <name>removeAreaGroup</name>
+        <qualifiedname>PosPerson::removeAreaGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+          <declname>anAreaGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_area_group_not_found_signal" kindref="compound">AreaGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="286" column="8"/>
+        <references refid="interface_pos_person_1a6ba5c9087e82a45656616dff174dbf36">removeAreaGroup</references>
+        <referencedby refid="interface_pos_person_1a6ba5c9087e82a45656616dff174dbf36">removeAreaGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a7813362c49666e2e7393aebd04c2459e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a3529505c6721f8bf374e8d28accb5e26" kindref="member">PosAreaGroupSequence</ref></type>
+        <definition>PosAreaGroupSequence PosPerson::allAreaGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allAreaGroups</name>
+        <qualifiedname>PosPerson::allAreaGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="292" column="24"/>
+        <references refid="interface_pos_person_1a7813362c49666e2e7393aebd04c2459e">allAreaGroups</references>
+        <referencedby refid="interface_pos_person_1a7813362c49666e2e7393aebd04c2459e">allAreaGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a54c3cb09d605bc239928c4d8871f0474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+        <definition>PosAreaGroup PosPerson::findAreaGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findAreaGroupNamed</name>
+        <qualifiedname>PosPerson::findAreaGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="299" column="16"/>
+        <references refid="interface_pos_person_1a54c3cb09d605bc239928c4d8871f0474">findAreaGroupNamed</references>
+        <referencedby refid="interface_pos_person_1a54c3cb09d605bc239928c4d8871f0474">findAreaGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1acbe9f3b7fc0f74efa8bf70ab2d58c015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::removeAllAreaGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllAreaGroups</name>
+        <qualifiedname>PosPerson::removeAllAreaGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="306" column="8"/>
+        <references refid="interface_pos_person_1acbe9f3b7fc0f74efa8bf70ab2d58c015">removeAllAreaGroups</references>
+        <referencedby refid="interface_pos_person_1acbe9f3b7fc0f74efa8bf70ab2d58c015">removeAllAreaGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a78b31d5bf82dece336670c08739dd589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::isBRMReleasePermissionOn</definition>
+        <argsstring>()</argsstring>
+        <name>isBRMReleasePermissionOn</name>
+        <qualifiedname>PosPerson::isBRMReleasePermissionOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="312" column="11"/>
+        <references refid="interface_pos_person_1a78b31d5bf82dece336670c08739dd589">isBRMReleasePermissionOn</references>
+        <referencedby refid="interface_pos_person_1a78b31d5bf82dece336670c08739dd589">isBRMReleasePermissionOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a0e88e8b07c0ec904a287672169e2b5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeBRMReleasePermissionOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeBRMReleasePermissionOn</name>
+        <qualifiedname>PosPerson::makeBRMReleasePermissionOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="318" column="8"/>
+        <references refid="interface_pos_person_1a0e88e8b07c0ec904a287672169e2b5e6">makeBRMReleasePermissionOn</references>
+        <referencedby refid="interface_pos_person_1a0e88e8b07c0ec904a287672169e2b5e6">makeBRMReleasePermissionOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a3b091c7d71751b66b129083dbcc470d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeBRMReleasePermissionOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeBRMReleasePermissionOff</name>
+        <qualifiedname>PosPerson::makeBRMReleasePermissionOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="324" column="8"/>
+        <references refid="interface_pos_person_1a3b091c7d71751b66b129083dbcc470d9">makeBRMReleasePermissionOff</references>
+        <referencedby refid="interface_pos_person_1a3b091c7d71751b66b129083dbcc470d9">makeBRMReleasePermissionOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a3a5a3658da4132a15b5f76e616c15fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::isBRMDeletePermissionOn</definition>
+        <argsstring>()</argsstring>
+        <name>isBRMDeletePermissionOn</name>
+        <qualifiedname>PosPerson::isBRMDeletePermissionOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="330" column="11"/>
+        <references refid="interface_pos_person_1a3a5a3658da4132a15b5f76e616c15fdf">isBRMDeletePermissionOn</references>
+        <referencedby refid="interface_pos_person_1a3a5a3658da4132a15b5f76e616c15fdf">isBRMDeletePermissionOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1aa6d138e197c64474b714254a6228725c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeBRMDeletePermissionOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeBRMDeletePermissionOn</name>
+        <qualifiedname>PosPerson::makeBRMDeletePermissionOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="336" column="8"/>
+        <references refid="interface_pos_person_1aa6d138e197c64474b714254a6228725c">makeBRMDeletePermissionOn</references>
+        <referencedby refid="interface_pos_person_1aa6d138e197c64474b714254a6228725c">makeBRMDeletePermissionOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1aa0ac62c71585e102f80d9575aefe71aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeBRMDeletePermissionOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeBRMDeletePermissionOff</name>
+        <qualifiedname>PosPerson::makeBRMDeletePermissionOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="342" column="8"/>
+        <references refid="interface_pos_person_1aa0ac62c71585e102f80d9575aefe71aa">makeBRMDeletePermissionOff</references>
+        <referencedby refid="interface_pos_person_1aa0ac62c71585e102f80d9575aefe71aa">makeBRMDeletePermissionOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a7620fb852d309d9f90368791ec63e078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setEMailAddress</definition>
+        <argsstring>(in string anEMailAddress)</argsstring>
+        <name>setEMailAddress</name>
+        <qualifiedname>PosPerson::setEMailAddress</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anEMailAddress</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="348" column="8"/>
+        <references refid="interface_pos_person_1a7620fb852d309d9f90368791ec63e078">setEMailAddress</references>
+        <referencedby refid="interface_pos_person_1a7620fb852d309d9f90368791ec63e078">setEMailAddress</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1ac7246e939b5a5be5d5e76b0d7e9f2718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPerson::getEMailAddress</definition>
+        <argsstring>()</argsstring>
+        <name>getEMailAddress</name>
+        <qualifiedname>PosPerson::getEMailAddress</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="354" column="10"/>
+        <references refid="interface_pos_person_1ac7246e939b5a5be5d5e76b0d7e9f2718">getEMailAddress</references>
+        <referencedby refid="interface_pos_person_1ac7246e939b5a5be5d5e76b0d7e9f2718">getEMailAddress</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a3a632c76fa882149d5b77b2a823354df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setPhoneNumber</definition>
+        <argsstring>(in string aPhoneNumber)</argsstring>
+        <name>setPhoneNumber</name>
+        <qualifiedname>PosPerson::setPhoneNumber</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aPhoneNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="360" column="8"/>
+        <references refid="interface_pos_person_1a3a632c76fa882149d5b77b2a823354df">setPhoneNumber</references>
+        <referencedby refid="interface_pos_person_1a3a632c76fa882149d5b77b2a823354df">setPhoneNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a07710838b21487c4c7b0316d5cba312b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPerson::getPhoneNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getPhoneNumber</name>
+        <qualifiedname>PosPerson::getPhoneNumber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="366" column="10"/>
+        <references refid="interface_pos_person_1a07710838b21487c4c7b0316d5cba312b">getPhoneNumber</references>
+        <referencedby refid="interface_pos_person_1a07710838b21487c4c7b0316d5cba312b">getPhoneNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a602794880e7e92a44a8310f90ecd8df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::isSupervisorOn</definition>
+        <argsstring>()</argsstring>
+        <name>isSupervisorOn</name>
+        <qualifiedname>PosPerson::isSupervisorOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="372" column="11"/>
+        <references refid="interface_pos_person_1a602794880e7e92a44a8310f90ecd8df8">isSupervisorOn</references>
+        <referencedby refid="interface_pos_person_1a602794880e7e92a44a8310f90ecd8df8">isSupervisorOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a32eb3857e7d4c5326accc000fb2bfe4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeSupervisorOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeSupervisorOn</name>
+        <qualifiedname>PosPerson::makeSupervisorOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="378" column="8"/>
+        <references refid="interface_pos_person_1a32eb3857e7d4c5326accc000fb2bfe4f">makeSupervisorOn</references>
+        <referencedby refid="interface_pos_person_1a32eb3857e7d4c5326accc000fb2bfe4f">makeSupervisorOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a8e72d6293c6647edf4c54a70ae46ac83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::makeSupervisorOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeSupervisorOff</name>
+        <qualifiedname>PosPerson::makeSupervisorOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="384" column="8"/>
+        <references refid="interface_pos_person_1a8e72d6293c6647edf4c54a70ae46ac83">makeSupervisorOff</references>
+        <referencedby refid="interface_pos_person_1a8e72d6293c6647edf4c54a70ae46ac83">makeSupervisorOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a7b481453f63a2b0e627c38de64a0b3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setPassword</definition>
+        <argsstring>(in string aPassword)</argsstring>
+        <name>setPassword</name>
+        <qualifiedname>PosPerson::setPassword</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aPassword</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_illegal_password_signal" kindref="compound">IllegalPasswordSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="390" column="8"/>
+        <references refid="interface_pos_person_1a7b481453f63a2b0e627c38de64a0b3fc">setPassword</references>
+        <referencedby refid="interface_pos_person_1a7b481453f63a2b0e627c38de64a0b3fc">setPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a2d02790a882aa03b3e26a98c50666dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPerson::getPassword</definition>
+        <argsstring>()</argsstring>
+        <name>getPassword</name>
+        <qualifiedname>PosPerson::getPassword</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="396" column="10"/>
+        <references refid="interface_pos_person_1a2d02790a882aa03b3e26a98c50666dd8">getPassword</references>
+        <referencedby refid="interface_pos_person_1a2d02790a882aa03b3e26a98c50666dd8">getPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a75d2130528947ded5695c95438d44c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setEncryptedPassword</definition>
+        <argsstring>(in string encryptedPassword)</argsstring>
+        <name>setEncryptedPassword</name>
+        <qualifiedname>PosPerson::setEncryptedPassword</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>encryptedPassword</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="402" column="8"/>
+        <references refid="interface_pos_person_1a75d2130528947ded5695c95438d44c1c">setEncryptedPassword</references>
+        <referencedby refid="interface_pos_person_1a75d2130528947ded5695c95438d44c1c">setEncryptedPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a2b0cbd5a6216eda8242f528e1f37626f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPerson::verifyPassword</definition>
+        <argsstring>(in string aPassword)</argsstring>
+        <name>verifyPassword</name>
+        <qualifiedname>PosPerson::verifyPassword</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aPassword</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="409" column="11"/>
+        <references refid="interface_pos_person_1a2b0cbd5a6216eda8242f528e1f37626f">verifyPassword</references>
+        <referencedby refid="interface_pos_person_1a2b0cbd5a6216eda8242f528e1f37626f">verifyPassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a6f59d7c4ee2a932f1d6b604647642fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setUserInfo</definition>
+        <argsstring>(in brUserInfo anUserInfo)</argsstring>
+        <name>setUserInfo</name>
+        <qualifiedname>PosPerson::setUserInfo</qualifiedname>
+        <param>
+          <type>in brUserInfo</type>
+          <declname>anUserInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_set_user_info_failed_signal" kindref="compound">SetUserInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="415" column="8"/>
+        <references refid="interface_pos_person_1a6f59d7c4ee2a932f1d6b604647642fbf">setUserInfo</references>
+        <referencedby refid="interface_pos_person_1a6f59d7c4ee2a932f1d6b604647642fbf">setUserInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a28eec43ab475c972d89730eb704a35ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setExpiredPeriod</definition>
+        <argsstring>(in long aExpiredPeriod)</argsstring>
+        <name>setExpiredPeriod</name>
+        <qualifiedname>PosPerson::setExpiredPeriod</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>aExpiredPeriod</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="421" column="8"/>
+        <references refid="interface_pos_person_1a28eec43ab475c972d89730eb704a35ab">setExpiredPeriod</references>
+        <referencedby refid="interface_pos_person_1a28eec43ab475c972d89730eb704a35ab">setExpiredPeriod</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a68bdc04682f15443ac072485de52cd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosPerson::getExpiredPeriod</definition>
+        <argsstring>()</argsstring>
+        <name>getExpiredPeriod</name>
+        <qualifiedname>PosPerson::getExpiredPeriod</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="427" column="8"/>
+        <references refid="interface_pos_person_1a68bdc04682f15443ac072485de52cd00">getExpiredPeriod</references>
+        <referencedby refid="interface_pos_person_1a68bdc04682f15443ac072485de52cd00">getExpiredPeriod</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a4c4a6756b8eb4c8d6753afdb71934649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setPasswordChangeTimeStamp</definition>
+        <argsstring>(in TimeStamp aChangeTimpStamp)</argsstring>
+        <name>setPasswordChangeTimeStamp</name>
+        <qualifiedname>PosPerson::setPasswordChangeTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aChangeTimpStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="433" column="8"/>
+        <references refid="interface_pos_person_1a4c4a6756b8eb4c8d6753afdb71934649">setPasswordChangeTimeStamp</references>
+        <referencedby refid="interface_pos_person_1a4c4a6756b8eb4c8d6753afdb71934649">setPasswordChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a05b91aa2680c95834400ae9d68a2a0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPerson::getPasswordChangeTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getPasswordChangeTimeStamp</name>
+        <qualifiedname>PosPerson::getPasswordChangeTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="439" column="13"/>
+        <references refid="interface_pos_person_1a05b91aa2680c95834400ae9d68a2a0ac">getPasswordChangeTimeStamp</references>
+        <referencedby refid="interface_pos_person_1a05b91aa2680c95834400ae9d68a2a0ac">getPasswordChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1aef5fb64f3c384aa95e4b1ba29a86f278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosPerson::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosPerson::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="445" column="18"/>
+        <references refid="interface_pos_person_1aef5fb64f3c384aa95e4b1ba29a86f278">getPropertySet</references>
+        <referencedby refid="interface_pos_person_1aef5fb64f3c384aa95e4b1ba29a86f278">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a9569ed28725d3e9c31cada8ace075bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::addPrivilegeGroup</definition>
+        <argsstring>(in PosPrivilegeGroup aPrivilegeGroup)</argsstring>
+        <name>addPrivilegeGroup</name>
+        <qualifiedname>PosPerson::addPrivilegeGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+          <declname>aPrivilegeGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_privilege_group_duplicate_signal" kindref="compound">PrivilegeGroupDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="452" column="8"/>
+        <references refid="interface_pos_person_1a9569ed28725d3e9c31cada8ace075bf2">addPrivilegeGroup</references>
+        <referencedby refid="interface_pos_person_1a9569ed28725d3e9c31cada8ace075bf2">addPrivilegeGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1aa1dc7c5dd0bd9764c866c40808bddc51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::removePrivilegeGroup</definition>
+        <argsstring>(in PosPrivilegeGroup aPrivilegeGroup)</argsstring>
+        <name>removePrivilegeGroup</name>
+        <qualifiedname>PosPerson::removePrivilegeGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+          <declname>aPrivilegeGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_person_1_1_privilege_group_not_found_signal" kindref="compound">PrivilegeGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="459" column="8"/>
+        <references refid="interface_pos_person_1aa1dc7c5dd0bd9764c866c40808bddc51">removePrivilegeGroup</references>
+        <referencedby refid="interface_pos_person_1aa1dc7c5dd0bd9764c866c40808bddc51">removePrivilegeGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1afee75fa56ea94783d37acc40feb13daa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1aebb6d699799fa829132bcc7b30a4e492" kindref="member">PosPrivilegeGroupSequence</ref></type>
+        <definition>PosPrivilegeGroupSequence PosPerson::allPrivilegeGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allPrivilegeGroups</name>
+        <qualifiedname>PosPerson::allPrivilegeGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="465" column="29"/>
+        <references refid="interface_pos_person_1afee75fa56ea94783d37acc40feb13daa">allPrivilegeGroups</references>
+        <referencedby refid="interface_pos_person_1afee75fa56ea94783d37acc40feb13daa">allPrivilegeGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1ae72c98e59a0ba7d63f14317821107b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+        <definition>PosPrivilegeGroup PosPerson::findPrivilegeGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPrivilegeGroupNamed</name>
+        <qualifiedname>PosPerson::findPrivilegeGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="472" column="21"/>
+        <references refid="interface_pos_person_1ae72c98e59a0ba7d63f14317821107b87">findPrivilegeGroupNamed</references>
+        <referencedby refid="interface_pos_person_1ae72c98e59a0ba7d63f14317821107b87">findPrivilegeGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1af746aa0dcdffde2f6eafe48fd34ee661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::removeAllPrivilegeGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPrivilegeGroups</name>
+        <qualifiedname>PosPerson::removeAllPrivilegeGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="479" column="8"/>
+        <references refid="interface_pos_person_1af746aa0dcdffde2f6eafe48fd34ee661">removeAllPrivilegeGroups</references>
+        <referencedby refid="interface_pos_person_1af746aa0dcdffde2f6eafe48fd34ee661">removeAllPrivilegeGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a9c9ae7a7a31c4d368c19df95c4d36df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosPerson::allOperableSubSystems</definition>
+        <argsstring>()</argsstring>
+        <name>allOperableSubSystems</name>
+        <qualifiedname>PosPerson::allOperableSubSystems</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="486" column="18"/>
+        <references refid="interface_pos_person_1a9c9ae7a7a31c4d368c19df95c4d36df9">allOperableSubSystems</references>
+        <referencedby refid="interface_pos_person_1a9c9ae7a7a31c4d368c19df95c4d36df9">allOperableSubSystems</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a11e78a3b68f62cb92484236fd04c2c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a45f6950e85d8ea795a9593517bc8bdad" kindref="member">PosPrivilegeInfoSequence</ref></type>
+        <definition>PosPrivilegeInfoSequence PosPerson::allOperablePrivilegesFor</definition>
+        <argsstring>(in string subSystem, in string category)</argsstring>
+        <name>allOperablePrivilegesFor</name>
+        <qualifiedname>PosPerson::allOperablePrivilegesFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subSystem</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>category</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="493" column="28"/>
+        <references refid="interface_pos_person_1a11e78a3b68f62cb92484236fd04c2c38">allOperablePrivilegesFor</references>
+        <referencedby refid="interface_pos_person_1a11e78a3b68f62cb92484236fd04c2c38">allOperablePrivilegesFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1ad0f17d7d43271a914e4d8595148c0075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a85923ba0537d0a67ced4f22752e2a986" kindref="member">PosUserGroupSequence</ref></type>
+        <definition>PosUserGroupSequence PosPerson::getUserGroups</definition>
+        <argsstring>()</argsstring>
+        <name>getUserGroups</name>
+        <qualifiedname>PosPerson::getUserGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="499" column="24"/>
+        <references refid="interface_pos_person_1ad0f17d7d43271a914e4d8595148c0075">getUserGroups</references>
+        <referencedby refid="interface_pos_person_1ad0f17d7d43271a914e4d8595148c0075">getUserGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a66f515ebaeea275201150389c0ca3850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setUserGroups</definition>
+        <argsstring>(in PosUserGroupSequence aUserGroupSequence)</argsstring>
+        <name>setUserGroups</name>
+        <qualifiedname>PosPerson::setUserGroups</qualifiedname>
+        <param>
+          <type>in <ref refid="ppsmggl_8idl_1a85923ba0537d0a67ced4f22752e2a986" kindref="member">PosUserGroupSequence</ref></type>
+          <declname>aUserGroupSequence</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="505" column="8"/>
+        <references refid="interface_pos_person_1a66f515ebaeea275201150389c0ca3850">setUserGroups</references>
+        <referencedby refid="interface_pos_person_1a66f515ebaeea275201150389c0ca3850">setUserGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a2f69bf2f4dbabe5021715b3b9734cb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPerson::setCompany</definition>
+        <argsstring>(in string aCompany)</argsstring>
+        <name>setCompany</name>
+        <qualifiedname>PosPerson::setCompany</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aCompany</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="511" column="8"/>
+        <references refid="interface_pos_person_1a2f69bf2f4dbabe5021715b3b9734cb5f">setCompany</references>
+        <referencedby refid="interface_pos_person_1a2f69bf2f4dbabe5021715b3b9734cb5f">setCompany</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1ab5bce2dfb54f0999252322ecb7730100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPerson::getCompany</definition>
+        <argsstring>()</argsstring>
+        <name>getCompany</name>
+        <qualifiedname>PosPerson::getCompany</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="517" column="10"/>
+        <references refid="interface_pos_person_1ab5bce2dfb54f0999252322ecb7730100">getCompany</references>
+        <referencedby refid="interface_pos_person_1ab5bce2dfb54f0999252322ecb7730100">getCompany</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a5d8008792c97efdd0e3096d2fdb9978e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosPerson::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosPerson::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="523" column="18"/>
+        <references refid="interface_pos_person_1a5d8008792c97efdd0e3096d2fdb9978e">createPropertySet</references>
+        <referencedby refid="interface_pos_person_1a5d8008792c97efdd0e3096d2fdb9978e">createPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_person_1a76180df277e76e49d268ada5159dc153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a45f6950e85d8ea795a9593517bc8bdad" kindref="member">PosPrivilegeInfoSequence</ref></type>
+        <definition>PosPrivilegeInfoSequence PosPerson::allPrivilegesFor</definition>
+        <argsstring>(in string subSystem, in string category)</argsstring>
+        <name>allPrivilegesFor</name>
+        <qualifiedname>PosPerson::allPrivilegesFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>subSystem</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>category</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pperson.idl" line="530" column="28"/>
+        <references refid="interface_pos_person_1a76180df277e76e49d268ada5159dc153">allPrivilegesFor</references>
+        <referencedby refid="interface_pos_person_1a76180df277e76e49d268ada5159dc153">allPrivilegesFor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>Person</label>
+      </node>
+      <node id="1">
+        <label>PosPerson</label>
+        <link refid="interface_pos_person"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>Person</label>
+      </node>
+      <node id="1">
+        <label>PosPerson</label>
+        <link refid="interface_pos_person"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pperson.idl" line="62" column="11" bodyfile="poscimfw/include/pperson.idl" bodystart="62" bodyend="538"/>
+    <listofallmembers>
+      <member refid="interface_pos_person_1a84c82730b259faa3c72b519bc50656b7" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>addAreaGroup</name></member>
+      <member refid="interface_pos_person_1a9569ed28725d3e9c31cada8ace075bf2" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>addPrivilegeGroup</name></member>
+      <member refid="interface_pos_person_1a7813362c49666e2e7393aebd04c2459e" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>allAreaGroups</name></member>
+      <member refid="interface_pos_person_1a11e78a3b68f62cb92484236fd04c2c38" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>allOperablePrivilegesFor</name></member>
+      <member refid="interface_pos_person_1a9c9ae7a7a31c4d368c19df95c4d36df9" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>allOperableSubSystems</name></member>
+      <member refid="interface_pos_person_1afee75fa56ea94783d37acc40feb13daa" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>allPrivilegeGroups</name></member>
+      <member refid="interface_pos_person_1a76180df277e76e49d268ada5159dc153" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>allPrivilegesFor</name></member>
+      <member refid="interface_pos_person_1a5d8008792c97efdd0e3096d2fdb9978e" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_person_1a54c3cb09d605bc239928c4d8871f0474" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>findAreaGroupNamed</name></member>
+      <member refid="interface_pos_person_1ae72c98e59a0ba7d63f14317821107b87" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>findPrivilegeGroupNamed</name></member>
+      <member refid="interface_pos_person_1ab5bce2dfb54f0999252322ecb7730100" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getCompany</name></member>
+      <member refid="interface_pos_person_1ac7246e939b5a5be5d5e76b0d7e9f2718" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getEMailAddress</name></member>
+      <member refid="interface_pos_person_1a68bdc04682f15443ac072485de52cd00" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getExpiredPeriod</name></member>
+      <member refid="interface_pos_person_1a2d02790a882aa03b3e26a98c50666dd8" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getPassword</name></member>
+      <member refid="interface_pos_person_1a05b91aa2680c95834400ae9d68a2a0ac" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getPasswordChangeTimeStamp</name></member>
+      <member refid="interface_pos_person_1a07710838b21487c4c7b0316d5cba312b" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getPhoneNumber</name></member>
+      <member refid="interface_pos_person_1aef5fb64f3c384aa95e4b1ba29a86f278" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_person_1ad0f17d7d43271a914e4d8595148c0075" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>getUserGroups</name></member>
+      <member refid="interface_pos_person_1a3a5a3658da4132a15b5f76e616c15fdf" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>isBRMDeletePermissionOn</name></member>
+      <member refid="interface_pos_person_1a78b31d5bf82dece336670c08739dd589" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>isBRMReleasePermissionOn</name></member>
+      <member refid="interface_pos_person_1a5a4253938cd5dbbe1a4941a634b45ac1" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>isOperableMachine</name></member>
+      <member refid="interface_pos_person_1aaac6c016900478988920eb0be5bc03cf" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>isOperableStorageMachine</name></member>
+      <member refid="interface_pos_person_1a602794880e7e92a44a8310f90ecd8df8" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>isSupervisorOn</name></member>
+      <member refid="interface_pos_person_1aa0ac62c71585e102f80d9575aefe71aa" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeBRMDeletePermissionOff</name></member>
+      <member refid="interface_pos_person_1aa6d138e197c64474b714254a6228725c" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeBRMDeletePermissionOn</name></member>
+      <member refid="interface_pos_person_1a3b091c7d71751b66b129083dbcc470d9" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeBRMReleasePermissionOff</name></member>
+      <member refid="interface_pos_person_1a0e88e8b07c0ec904a287672169e2b5e6" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeBRMReleasePermissionOn</name></member>
+      <member refid="interface_pos_person_1a8e72d6293c6647edf4c54a70ae46ac83" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeSupervisorOff</name></member>
+      <member refid="interface_pos_person_1a32eb3857e7d4c5326accc000fb2bfe4f" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>makeSupervisorOn</name></member>
+      <member refid="interface_pos_person_1a5eab604b20c186d0c87ea8c807bcd07c" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>PosPerson_init</name></member>
+      <member refid="interface_pos_person_1acbe9f3b7fc0f74efa8bf70ab2d58c015" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>removeAllAreaGroups</name></member>
+      <member refid="interface_pos_person_1af746aa0dcdffde2f6eafe48fd34ee661" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>removeAllPrivilegeGroups</name></member>
+      <member refid="interface_pos_person_1a6ba5c9087e82a45656616dff174dbf36" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>removeAreaGroup</name></member>
+      <member refid="interface_pos_person_1aa1dc7c5dd0bd9764c866c40808bddc51" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>removePrivilegeGroup</name></member>
+      <member refid="interface_pos_person_1a2f69bf2f4dbabe5021715b3b9734cb5f" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setCompany</name></member>
+      <member refid="interface_pos_person_1a7620fb852d309d9f90368791ec63e078" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setEMailAddress</name></member>
+      <member refid="interface_pos_person_1a75d2130528947ded5695c95438d44c1c" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setEncryptedPassword</name></member>
+      <member refid="interface_pos_person_1a28eec43ab475c972d89730eb704a35ab" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setExpiredPeriod</name></member>
+      <member refid="interface_pos_person_1a7b481453f63a2b0e627c38de64a0b3fc" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setPassword</name></member>
+      <member refid="interface_pos_person_1a4c4a6756b8eb4c8d6753afdb71934649" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setPasswordChangeTimeStamp</name></member>
+      <member refid="interface_pos_person_1a3a632c76fa882149d5b77b2a823354df" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setPhoneNumber</name></member>
+      <member refid="interface_pos_person_1a66f515ebaeea275201150389c0ca3850" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setUserGroups</name></member>
+      <member refid="interface_pos_person_1a6f59d7c4ee2a932f1d6b604647642fbf" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>setUserInfo</name></member>
+      <member refid="interface_pos_person_1a2b0cbd5a6216eda8242f528e1f37626f" prot="public" virt="non-virtual"><scope>PosPerson</scope><name>verifyPassword</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

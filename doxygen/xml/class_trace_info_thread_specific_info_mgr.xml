@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_trace_info_thread_specific_info_mgr" kind="class" language="C++" prot="public">
+    <compoundname>TraceInfoThreadSpecificInfoMgr</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ThreadSpecificInfoMgrBase&lt; TraceInfoBase &gt;</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_trace_info_thread_specific_info_mgr_1adabfb3748375879621fa71192090bdac" prot="public" static="no" mutable="no">
+        <type>pthread_key_t</type>
+        <definition>pthread_key_t TraceInfoThreadSpecificInfoMgr::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="115" column="19" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_trace_info_thread_specific_info_mgr_1a4699c15a6ab969c1583d544f124e18e4" compoundref="sptrcinfohlpr_8cpp" startline="138" endline="141">getSpecific</referencedby>
+        <referencedby refid="class_trace_info_thread_specific_info_mgr_1a6886c051e0734a99db95472280959b8b" compoundref="sptrcinfohlpr_8cpp" startline="143" endline="146">setSpecific</referencedby>
+        <referencedby refid="class_trace_info_thread_specific_info_mgr_1acf486e3616fe648abeba2f31029bea1d" compoundref="sptrcinfohlpr_8cpp" startline="120" endline="123">TraceInfoThreadSpecificInfoMgr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_trace_info_thread_specific_info_mgr_1acf486e3616fe648abeba2f31029bea1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TraceInfoThreadSpecificInfoMgr::TraceInfoThreadSpecificInfoMgr</definition>
+        <argsstring>()</argsstring>
+        <name>TraceInfoThreadSpecificInfoMgr</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::TraceInfoThreadSpecificInfoMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="107" column="5" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="120" bodyend="123"/>
+        <references refid="class_trace_info_thread_specific_info_mgr_1adabfb3748375879621fa71192090bdac" compoundref="sptrcinfohlpr_8cpp" startline="115">key</references>
+        <references refid="class_trace_info_thread_specific_info_mgr_1a06d0061db6b0ab28323fd1f3c6d0d193" compoundref="sptrcinfohlpr_8cpp" startline="129" endline="136">TraceInfo_destructor</references>
+      </memberdef>
+      <memberdef kind="function" id="class_trace_info_thread_specific_info_mgr_1aa22640bf3239ae8a068b8c932b698694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TraceInfoThreadSpecificInfoMgr::~TraceInfoThreadSpecificInfoMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TraceInfoThreadSpecificInfoMgr</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::~TraceInfoThreadSpecificInfoMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="108" column="5" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trace_info_thread_specific_info_mgr_1a4699c15a6ab969c1583d544f124e18e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TraceInfoBase *</type>
+        <definition>TraceInfoBase * TraceInfoThreadSpecificInfoMgr::getSpecific</definition>
+        <argsstring>()</argsstring>
+        <name>getSpecific</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::getSpecific</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="110" column="20" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="138" bodyend="141"/>
+        <references refid="class_trace_info_thread_specific_info_mgr_1adabfb3748375879621fa71192090bdac" compoundref="sptrcinfohlpr_8cpp" startline="115">key</references>
+      </memberdef>
+      <memberdef kind="function" id="class_trace_info_thread_specific_info_mgr_1a6886c051e0734a99db95472280959b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TraceInfoThreadSpecificInfoMgr::setSpecific</definition>
+        <argsstring>(TraceInfoBase *ptr)</argsstring>
+        <name>setSpecific</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::setSpecific</qualifiedname>
+        <param>
+          <type>TraceInfoBase *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="111" column="10" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="143" bodyend="146"/>
+        <references refid="class_trace_info_thread_specific_info_mgr_1adabfb3748375879621fa71192090bdac" compoundref="sptrcinfohlpr_8cpp" startline="115">key</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_trace_info_thread_specific_info_mgr_1a06d0061db6b0ab28323fd1f3c6d0d193" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TraceInfoThreadSpecificInfoMgr::TraceInfo_destructor</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>TraceInfo_destructor</name>
+        <qualifiedname>TraceInfoThreadSpecificInfoMgr::TraceInfo_destructor</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="113" column="17" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="129" bodyend="136"/>
+        <references refid="sptrcinfohlpr_8cpp_1a2126b60af1ad0e78d9fb203fde9956ad" compoundref="sptrcinfohlpr_8cpp" startline="80">pDefaultFactory</references>
+        <referencedby refid="class_trace_info_thread_specific_info_mgr_1acf486e3616fe648abeba2f31029bea1d" compoundref="sptrcinfohlpr_8cpp" startline="120" endline="123">TraceInfoThreadSpecificInfoMgr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ThreadSpecificInfoMgrBase&lt; TraceInfoBase &gt;</label>
+      </node>
+      <node id="1">
+        <label>TraceInfoThreadSpecificInfoMgr</label>
+        <link refid="class_trace_info_thread_specific_info_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ThreadSpecificInfoMgrBase&lt; TraceInfoBase &gt;</label>
+      </node>
+      <node id="1">
+        <label>TraceInfoThreadSpecificInfoMgr</label>
+        <link refid="class_trace_info_thread_specific_info_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" line="104" column="1" bodyfile="smtchcmf/frmwrkgl/sptrcinfohlpr.cpp" bodystart="105" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_trace_info_thread_specific_info_mgr_1a4699c15a6ab969c1583d544f124e18e4" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>getSpecific</name></member>
+      <member refid="class_trace_info_thread_specific_info_mgr_1adabfb3748375879621fa71192090bdac" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>key</name></member>
+      <member refid="class_trace_info_thread_specific_info_mgr_1a6886c051e0734a99db95472280959b8b" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>setSpecific</name></member>
+      <member refid="class_trace_info_thread_specific_info_mgr_1a06d0061db6b0ab28323fd1f3c6d0d193" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>TraceInfo_destructor</name></member>
+      <member refid="class_trace_info_thread_specific_info_mgr_1acf486e3616fe648abeba2f31029bea1d" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>TraceInfoThreadSpecificInfoMgr</name></member>
+      <member refid="class_trace_info_thread_specific_info_mgr_1aa22640bf3239ae8a068b8c932b698694" prot="public" virt="non-virtual"><scope>TraceInfoThreadSpecificInfoMgr</scope><name>~TraceInfoThreadSpecificInfoMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

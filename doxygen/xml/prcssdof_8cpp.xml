@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="prcssdof_8cpp" kind="file" language="C++">
+    <compoundname>prcssdof.cpp</compoundname>
+    <includes local="yes">prcdfmgr.hpp</includes>
+    <includes local="yes">prcfwctx.hpp</includes>
+    <includes local="yes">prcoprsp.hpp</includes>
+    <includes local="yes">prcssdfn.hpp</includes>
+    <includes local="yes">prcssflw.hpp</includes>
+    <includes local="yes">prcssprt.hpp</includes>
+    <includes local="yes">prcssdof.hpp</includes>
+    <includes local="yes">spmacro.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>smtchcmf/prcssdfn/prcssdof.cpp</label>
+        <link refid="prcssdof_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>prcdfmgr.hpp</label>
+      </node>
+      <node id="3">
+        <label>prcfwctx.hpp</label>
+      </node>
+      <node id="4">
+        <label>prcoprsp.hpp</label>
+      </node>
+      <node id="5">
+        <label>prcssdfn.hpp</label>
+      </node>
+      <node id="8">
+        <label>prcssdof.hpp</label>
+      </node>
+      <node id="6">
+        <label>prcssflw.hpp</label>
+      </node>
+      <node id="7">
+        <label>prcssprt.hpp</label>
+      </node>
+      <node id="9">
+        <label>spmacro.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="prcssdof_8cpp_1a48ca0d51426ee0166d79e7903a4a8ff2" prot="public" static="no">
+        <name>PRCSSDOF_DECLSPEC_IMPL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/prcssdfn/prcssdof.cpp" line="20" column="9" bodyfile="smtchcmf/prcssdfn/prcssdof.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="prcssdof_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;%Z% %I% %W% %G% %U% [ %H% %T% ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/prcssdfn/prcssdof.cpp" line="2" column="13" bodyfile="smtchcmf/prcssdfn/prcssdof.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="prcssdof_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>prcssdof.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/22/04<sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>eBrokerMigration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="prcssdof_8cpp_1a48ca0d51426ee0166d79e7903a4a8ff2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRCSSDOF_DECLSPEC_IMPL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcdfmgr.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcfwctx.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcoprsp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcssdfn.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcssflw.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcssprt.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcssdof.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spmacro.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessDefinitionManager_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessDefinitionManager<sp/>(<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">ProcessDefinitionManager_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessDefinitionManager<sp/>(<sp/>CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessDefinitionManager<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT(<sp/>ProcessDefinitionManager<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessDefinitionManager<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessDefinition_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessDefinition<sp/>(<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>ProcessDefinition_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessDefinition<sp/>(<sp/>CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">ProcessDefinition_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessDefinition<sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessDefinition<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT(<sp/>ProcessDefinition<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessDefinition<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessFlow_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessFlow<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>ProcessFlow_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessFlow<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition<sp/>CORBAENV_LAST_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">ProcessFlow_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessFlow<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessFlow<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT_PARAM1(<sp/>ProcessFlow,<sp/>aProcessDefinition<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessFlow<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessFlowContext_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessFlowContext<sp/>(ProcessFlow_ptr<sp/>aProcessFlow,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">ProcessFlowContext_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessFlowContext<sp/>(ProcessFlow_ptr<sp/>aProcessFlow<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessFlowContext<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT_PARAM1(<sp/>ProcessFlowContext,<sp/>aProcessFlow<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessFlowContext<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessOperation_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperation<sp/>(ProcessOperationSpecification_ptr<sp/>aProcessOperationSpecification,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">ProcessOperation_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperation<sp/>(ProcessOperationSpecification_ptr<sp/>aProcessOperationSpecification<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperation<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT_PARAM1(<sp/>ProcessOperation,<sp/>aProcessOperationSpecification<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperation<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENABLE_MULTIPLE_PROCESSDEFINITIONS_PER_POS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinitionSequence&amp;<sp/>processDefinitions,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinitionSequence&amp;<sp/>processDefinitions<sp/>CORBAENV_LAST_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinitionSequence&amp;<sp/>processDefinitions,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperationSpecification<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT_PARAM1(<sp/>ProcessOperationSpecification,<sp/>processDefinitions<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperationSpecification<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition<sp/>CORBAENV_LAST_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">ProcessOperationSpecification_ptr<sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>newProcessOperationSpecification<sp/>(ProcessDefinition_ptr<sp/>aProcessDefinition,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperationSpecification<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_CIMOBJECT_PARAM1(<sp/>ProcessOperationSpecification,<sp/>aProcessDefinition<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::newProcessOperationSpecification<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CIMFWProcessDefinitionObjectFactory_i::<sp/>CIMFWProcessDefinitionObjectFactory_init()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::CIMFWProcessDefinitionObjectFactory_init&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::CIMFWProcessDefinitionObjectFactory_init&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">CIMFWProcessDefinitionObjectFactory_i::<sp/>CIMFWProcessDefinitionObjectFactory_i()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::CIMFWProcessDefinitionObjectFactory_i&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>CIMFWProcessDefinitionObjectFactory_init()<sp/>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::CIMFWProcessDefinitionObjectFactory_i&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">CIMFWProcessDefinitionObjectFactory_i::<sp/>~CIMFWProcessDefinitionObjectFactory_i()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::~CIMFWProcessDefinitionObjectFactory_i&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;CIMFWProcessDefinitionObjectFactory_i::~CIMFWProcessDefinitionObjectFactory_i&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/prcssdfn/prcssdof.cpp"/>
+  </compounddef>
+</doxygen>

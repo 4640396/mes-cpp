@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_what_next_logic_base" kind="interface" language="IDL" prot="public">
+    <compoundname>PosWhatNextLogicBase</compoundname>
+    <derivedcompoundref refid="interface_pos_what_next_durable_e_s_d" prot="public" virt="non-virtual">PosWhatNextDurableESD</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_durable_f_i_f_o" prot="public" virt="non-virtual">PosWhatNextDurableFIFO</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_durable_l_r_t" prot="public" virt="non-virtual">PosWhatNextDurableLRT</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_durable_max_q_time_f_i_f_o" prot="public" virt="non-virtual">PosWhatNextDurableMaxQTimeFIFO</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_durable_pre_comp_time" prot="public" virt="non-virtual">PosWhatNextDurablePreCompTime</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_durable_s_r_t" prot="public" virt="non-virtual">PosWhatNextDurableSRT</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_e_d_d" prot="public" virt="non-virtual">PosWhatNextEDD</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_e_s_d" prot="public" virt="non-virtual">PosWhatNextESD</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_eqp_monitor" prot="public" virt="non-virtual">PosWhatNextEqpMonitor</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_external_priority" prot="public" virt="non-virtual">PosWhatNextExternalPriority</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_f_i_f_o" prot="public" virt="non-virtual">PosWhatNextFIFO</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_flow_batch" prot="public" virt="non-virtual">PosWhatNextFlowBatch</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_internal_priority" prot="public" virt="non-virtual">PosWhatNextInternalPriority</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_l_r_t" prot="public" virt="non-virtual">PosWhatNextLRT</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_max_q_time_f_i_f_o" prot="public" virt="non-virtual">PosWhatNextMaxQTimeFIFO</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_plan_eqp" prot="public" virt="non-virtual">PosWhatNextPlanEqp</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_plan_start" prot="public" virt="non-virtual">PosWhatNextPlanStart</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_pre_comp_time" prot="public" virt="non-virtual">PosWhatNextPreCompTime</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_priority_class" prot="public" virt="non-virtual">PosWhatNextPriorityClass</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_q_time_target_time" prot="public" virt="non-virtual">PosWhatNextQTimeTargetTime</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_s_r_t" prot="public" virt="non-virtual">PosWhatNextSRT</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_s_s_t" prot="public" virt="non-virtual">PosWhatNextSST</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_what_next_u_t_s" prot="public" virt="non-virtual">PosWhatNextUTS</derivedcompoundref>
+    <includes refid="pwtbase_8idl" local="no">pwtbase.idl</includes>
+    <innerclass refid="exception_pos_what_next_logic_base_1_1_dispatch_for_failed_signal" prot="public">PosWhatNextLogicBase::DispatchForFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_what_next_logic_base_1ad9339cf30f425d842bab7c5d53545bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosWhatNextLogicBase::getLogicName</definition>
+        <argsstring>()</argsstring>
+        <name>getLogicName</name>
+        <qualifiedname>PosWhatNextLogicBase::getLogicName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwtbase.idl" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_what_next_logic_base_1a2286748e6f6dc20b5b1b532929378d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWhatNextLogicBase::touchMe</definition>
+        <argsstring>()</argsstring>
+        <name>touchMe</name>
+        <qualifiedname>PosWhatNextLogicBase::touchMe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwtbase.idl" line="92" column="8"/>
+        <references refid="interface_pos_what_next_logic_base_1a2286748e6f6dc20b5b1b532929378d17">touchMe</references>
+        <referencedby refid="interface_pos_what_next_logic_base_1a2286748e6f6dc20b5b1b532929378d17">touchMe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_what_next_logic_base_1adeb926d123f489256b84a45c4ded4486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>objectIdentifierSequence</type>
+        <definition>objectIdentifierSequence PosWhatNextLogicBase::dispatchFor_inSQL</definition>
+        <argsstring>(in string parameters, in objectIdentifierSequence lots, in PosMachine aMachine)</argsstring>
+        <name>dispatchFor_inSQL</name>
+        <qualifiedname>PosWhatNextLogicBase::dispatchFor_inSQL</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>in objectIdentifierSequence</type>
+          <declname>lots</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_what_next_logic_base_1_1_dispatch_for_failed_signal" kindref="compound">DispatchForFailedSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwtbase.idl" line="97" column="28"/>
+        <references refid="interface_pos_what_next_logic_base_1adeb926d123f489256b84a45c4ded4486">dispatchFor_inSQL</references>
+        <referencedby refid="interface_pos_what_next_logic_base_1adeb926d123f489256b84a45c4ded4486">dispatchFor_inSQL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_what_next_logic_base_1aa6abba791c9111414dbdfdbd889bd67e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>objectIdentifierSequence</type>
+        <definition>objectIdentifierSequence PosWhatNextLogicBase::dispatchForDurable_inSQL</definition>
+        <argsstring>(in string parameters, in string durableCategory, in objectIdentifierSequence durables, in PosMachine aMachine)</argsstring>
+        <name>dispatchForDurable_inSQL</name>
+        <qualifiedname>PosWhatNextLogicBase::dispatchForDurable_inSQL</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <param>
+          <type>in objectIdentifierSequence</type>
+          <declname>durables</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_what_next_logic_base_1_1_dispatch_for_failed_signal" kindref="compound">DispatchForFailedSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwtbase.idl" line="104" column="28"/>
+        <references refid="interface_pos_what_next_logic_base_1aa6abba791c9111414dbdfdbd889bd67e">dispatchForDurable_inSQL</references>
+        <referencedby refid="interface_pos_what_next_logic_base_1aa6abba791c9111414dbdfdbd889bd67e">dispatchForDurable_inSQL</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PosWhatNextDurableESD</label>
+        <link refid="interface_pos_what_next_durable_e_s_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PosWhatNextDurableFIFO</label>
+        <link refid="interface_pos_what_next_durable_f_i_f_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PosWhatNextDurableLRT</label>
+        <link refid="interface_pos_what_next_durable_l_r_t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PosWhatNextDurableMaxQTimeFIFO</label>
+        <link refid="interface_pos_what_next_durable_max_q_time_f_i_f_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PosWhatNextDurablePreCompTime</label>
+        <link refid="interface_pos_what_next_durable_pre_comp_time"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PosWhatNextDurableSRT</label>
+        <link refid="interface_pos_what_next_durable_s_r_t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PosWhatNextEDD</label>
+        <link refid="interface_pos_what_next_e_d_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PosWhatNextESD</label>
+        <link refid="interface_pos_what_next_e_s_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PosWhatNextEqpMonitor</label>
+        <link refid="interface_pos_what_next_eqp_monitor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>PosWhatNextExternalPriority</label>
+        <link refid="interface_pos_what_next_external_priority"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PosWhatNextFIFO</label>
+        <link refid="interface_pos_what_next_f_i_f_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>PosWhatNextFlowBatch</label>
+        <link refid="interface_pos_what_next_flow_batch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>PosWhatNextInternalPriority</label>
+        <link refid="interface_pos_what_next_internal_priority"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>PosWhatNextLRT</label>
+        <link refid="interface_pos_what_next_l_r_t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PosWhatNextLogicBase</label>
+        <link refid="interface_pos_what_next_logic_base"/>
+      </node>
+      <node id="16">
+        <label>PosWhatNextMaxQTimeFIFO</label>
+        <link refid="interface_pos_what_next_max_q_time_f_i_f_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>PosWhatNextPlanEqp</label>
+        <link refid="interface_pos_what_next_plan_eqp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>PosWhatNextPlanStart</label>
+        <link refid="interface_pos_what_next_plan_start"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>PosWhatNextPreCompTime</label>
+        <link refid="interface_pos_what_next_pre_comp_time"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>PosWhatNextPriorityClass</label>
+        <link refid="interface_pos_what_next_priority_class"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>PosWhatNextQTimeTargetTime</label>
+        <link refid="interface_pos_what_next_q_time_target_time"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>PosWhatNextSRT</label>
+        <link refid="interface_pos_what_next_s_r_t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>PosWhatNextSST</label>
+        <link refid="interface_pos_what_next_s_s_t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>PosWhatNextUTS</label>
+        <link refid="interface_pos_what_next_u_t_s"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="poscimfw/include/pwtbase.idl" line="43" column="11" bodyfile="poscimfw/include/pwtbase.idl" bodystart="43" bodyend="112"/>
+    <listofallmembers>
+      <member refid="interface_pos_what_next_logic_base_1adeb926d123f489256b84a45c4ded4486" prot="public" virt="non-virtual"><scope>PosWhatNextLogicBase</scope><name>dispatchFor_inSQL</name></member>
+      <member refid="interface_pos_what_next_logic_base_1aa6abba791c9111414dbdfdbd889bd67e" prot="public" virt="non-virtual"><scope>PosWhatNextLogicBase</scope><name>dispatchForDurable_inSQL</name></member>
+      <member refid="interface_pos_what_next_logic_base_1ad9339cf30f425d842bab7c5d53545bb5" prot="public" virt="non-virtual"><scope>PosWhatNextLogicBase</scope><name>getLogicName</name></member>
+      <member refid="interface_pos_what_next_logic_base_1a2286748e6f6dc20b5b1b532929378d17" prot="public" virt="non-virtual"><scope>PosWhatNextLogicBase</scope><name>touchMe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

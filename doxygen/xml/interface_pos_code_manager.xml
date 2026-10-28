@@ -1,0 +1,706 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_code_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosCodeManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pcdmgr_8idl" local="no">pcdmgr.idl</includes>
+    <innerclass refid="exception_pos_code_manager_1_1_category_not_found_signal" prot="public">PosCodeManager::CategoryNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_code_manager_1_1_script_not_found_signal" prot="public">PosCodeManager::ScriptNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_code_manager_1_1_system_message_code_not_found_signal" prot="public">PosCodeManager::SystemMessageCodeNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_code_manager_1_1_e10_state_not_found_signal" prot="public">PosCodeManager::E10StateNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_code_manager_1_1_raw_machine_state_set_not_found_signal" prot="public">PosCodeManager::RawMachineStateSetNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_code_manager_1_1_machine_operation_mode_not_found_signal" prot="public">PosCodeManager::MachineOperationModeNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_code_manager_1a40e4a1ed4d25b89550f377d86e9faa3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::PosCodeManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosCodeManager_init</name>
+        <qualifiedname>PosCodeManager::PosCodeManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="205" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a547f76bdef87b09fdff2b4c152bf7c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_category" kindref="compound">PosCategory</ref></type>
+        <definition>PosCategory PosCodeManager::createCategoryNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createCategoryNamed</name>
+        <qualifiedname>PosCodeManager::createCategoryNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="211" column="15"/>
+        <references refid="interface_pos_code_manager_1a547f76bdef87b09fdff2b4c152bf7c6b">createCategoryNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a547f76bdef87b09fdff2b4c152bf7c6b">createCategoryNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a9fb30c929cf76d18d68d6afc125a6291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeCategory</definition>
+        <argsstring>(in PosCategory aCategory)</argsstring>
+        <name>removeCategory</name>
+        <qualifiedname>PosCodeManager::removeCategory</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_category" kindref="compound">PosCategory</ref></type>
+          <declname>aCategory</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_category_not_found_signal" kindref="compound">CategoryNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="218" column="8"/>
+        <references refid="interface_pos_code_manager_1a9fb30c929cf76d18d68d6afc125a6291">removeCategory</references>
+        <referencedby refid="interface_pos_code_manager_1a9fb30c929cf76d18d68d6afc125a6291">removeCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a2b15001cd8350cdacf3b25ac7b2d9ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a7f34dafd4894752176b7a2fc6059406e" kindref="member">PosCategorySequence</ref></type>
+        <definition>PosCategorySequence PosCodeManager::allCategories</definition>
+        <argsstring>()</argsstring>
+        <name>allCategories</name>
+        <qualifiedname>PosCodeManager::allCategories</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="224" column="23"/>
+        <references refid="interface_pos_code_manager_1a2b15001cd8350cdacf3b25ac7b2d9ba9">allCategories</references>
+        <referencedby refid="interface_pos_code_manager_1a2b15001cd8350cdacf3b25ac7b2d9ba9">allCategories</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1acc22912f8107de7af65b4ba304d440fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a8b11f732cfb99f505ffbf54b5346377c" kindref="member">PosCodeSequence</ref></type>
+        <definition>PosCodeSequence PosCodeManager::allCodesFor</definition>
+        <argsstring>(in PosCategory aCategory)</argsstring>
+        <name>allCodesFor</name>
+        <qualifiedname>PosCodeManager::allCodesFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_category" kindref="compound">PosCategory</ref></type>
+          <declname>aCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="231" column="19"/>
+        <references refid="interface_pos_code_manager_1acc22912f8107de7af65b4ba304d440fa">allCodesFor</references>
+        <referencedby refid="interface_pos_code_manager_1acc22912f8107de7af65b4ba304d440fa">allCodesFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a070f2b5bf379c23724702187b7515cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_category" kindref="compound">PosCategory</ref></type>
+        <definition>PosCategory PosCodeManager::findCategoryNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findCategoryNamed</name>
+        <qualifiedname>PosCodeManager::findCategoryNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="237" column="15"/>
+        <references refid="interface_pos_code_manager_1a070f2b5bf379c23724702187b7515cdb">findCategoryNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a070f2b5bf379c23724702187b7515cdb">findCategoryNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a055722e8784ea642e77768f53b821790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllCategories</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllCategories</name>
+        <qualifiedname>PosCodeManager::removeAllCategories</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="244" column="8"/>
+        <references refid="interface_pos_code_manager_1a055722e8784ea642e77768f53b821790">removeAllCategories</references>
+        <referencedby refid="interface_pos_code_manager_1a055722e8784ea642e77768f53b821790">removeAllCategories</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a12f8123117b844fe0f9ac9f093cc36d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_script" kindref="compound">PosScript</ref></type>
+        <definition>PosScript PosCodeManager::createScriptNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createScriptNamed</name>
+        <qualifiedname>PosCodeManager::createScriptNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="250" column="13"/>
+        <references refid="interface_pos_code_manager_1a12f8123117b844fe0f9ac9f093cc36d6">createScriptNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a12f8123117b844fe0f9ac9f093cc36d6">createScriptNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a3d7d715e7b8e05d1f57570716acb25c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeScript</definition>
+        <argsstring>(in PosScript aScript)</argsstring>
+        <name>removeScript</name>
+        <qualifiedname>PosCodeManager::removeScript</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_script" kindref="compound">PosScript</ref></type>
+          <declname>aScript</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_script_not_found_signal" kindref="compound">ScriptNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="256" column="8"/>
+        <references refid="interface_pos_code_manager_1a3d7d715e7b8e05d1f57570716acb25c6">removeScript</references>
+        <referencedby refid="interface_pos_code_manager_1a3d7d715e7b8e05d1f57570716acb25c6">removeScript</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a2878c6791617e3ebc75ddc2a7dae5931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1af53f7768ff03815117fc2d3e5c866993" kindref="member">PosScriptSequence</ref></type>
+        <definition>PosScriptSequence PosCodeManager::allScripts</definition>
+        <argsstring>()</argsstring>
+        <name>allScripts</name>
+        <qualifiedname>PosCodeManager::allScripts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="262" column="21"/>
+        <references refid="interface_pos_code_manager_1a2878c6791617e3ebc75ddc2a7dae5931">allScripts</references>
+        <referencedby refid="interface_pos_code_manager_1a2878c6791617e3ebc75ddc2a7dae5931">allScripts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a7559cecd3efc38b8781ee8e2c5106138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_script" kindref="compound">PosScript</ref></type>
+        <definition>PosScript PosCodeManager::findScriptNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findScriptNamed</name>
+        <qualifiedname>PosCodeManager::findScriptNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="268" column="13"/>
+        <references refid="interface_pos_code_manager_1a7559cecd3efc38b8781ee8e2c5106138">findScriptNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a7559cecd3efc38b8781ee8e2c5106138">findScriptNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a03658894680903207b8c503e2c2fa86a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllScripts</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllScripts</name>
+        <qualifiedname>PosCodeManager::removeAllScripts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="275" column="8"/>
+        <references refid="interface_pos_code_manager_1a03658894680903207b8c503e2c2fa86a">removeAllScripts</references>
+        <referencedby refid="interface_pos_code_manager_1a03658894680903207b8c503e2c2fa86a">removeAllScripts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a3cb4039dc7afc4785db6d59f05d52331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_system_message_code" kindref="compound">PosSystemMessageCode</ref></type>
+        <definition>PosSystemMessageCode PosCodeManager::createSystemMessageCodeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createSystemMessageCodeNamed</name>
+        <qualifiedname>PosCodeManager::createSystemMessageCodeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="284" column="24"/>
+        <references refid="interface_pos_code_manager_1a3cb4039dc7afc4785db6d59f05d52331">createSystemMessageCodeNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a3cb4039dc7afc4785db6d59f05d52331">createSystemMessageCodeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1acf67b030a54e5c5d1c7e0be11541f1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeSystemMessageCode</definition>
+        <argsstring>(in PosSystemMessageCode aSystemMessageCode)</argsstring>
+        <name>removeSystemMessageCode</name>
+        <qualifiedname>PosCodeManager::removeSystemMessageCode</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_system_message_code" kindref="compound">PosSystemMessageCode</ref></type>
+          <declname>aSystemMessageCode</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_system_message_code_not_found_signal" kindref="compound">SystemMessageCodeNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="290" column="8"/>
+        <references refid="interface_pos_code_manager_1acf67b030a54e5c5d1c7e0be11541f1c9">removeSystemMessageCode</references>
+        <referencedby refid="interface_pos_code_manager_1acf67b030a54e5c5d1c7e0be11541f1c9">removeSystemMessageCode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a4ef08ddfb65296d6ff4f5a70fe97ec12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a14b2c8e1a19d49a99a025825e7d034b9" kindref="member">PosSystemMessageCodeSequence</ref></type>
+        <definition>PosSystemMessageCodeSequence PosCodeManager::allSystemMessageCodes</definition>
+        <argsstring>()</argsstring>
+        <name>allSystemMessageCodes</name>
+        <qualifiedname>PosCodeManager::allSystemMessageCodes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="296" column="32"/>
+        <references refid="interface_pos_code_manager_1a4ef08ddfb65296d6ff4f5a70fe97ec12">allSystemMessageCodes</references>
+        <referencedby refid="interface_pos_code_manager_1a4ef08ddfb65296d6ff4f5a70fe97ec12">allSystemMessageCodes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1ad53de3af8e5efdbb60d2ea0a868f0d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_system_message_code" kindref="compound">PosSystemMessageCode</ref></type>
+        <definition>PosSystemMessageCode PosCodeManager::findSystemMessageCodeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findSystemMessageCodeNamed</name>
+        <qualifiedname>PosCodeManager::findSystemMessageCodeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="302" column="24"/>
+        <references refid="interface_pos_code_manager_1ad53de3af8e5efdbb60d2ea0a868f0d3e">findSystemMessageCodeNamed</references>
+        <referencedby refid="interface_pos_code_manager_1ad53de3af8e5efdbb60d2ea0a868f0d3e">findSystemMessageCodeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a8b2f2037e21ea7192756f44ab00ba8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllSystemMessageCodes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllSystemMessageCodes</name>
+        <qualifiedname>PosCodeManager::removeAllSystemMessageCodes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="309" column="8"/>
+        <references refid="interface_pos_code_manager_1a8b2f2037e21ea7192756f44ab00ba8d2">removeAllSystemMessageCodes</references>
+        <referencedby refid="interface_pos_code_manager_1a8b2f2037e21ea7192756f44ab00ba8d2">removeAllSystemMessageCodes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a33864c863f5032251b5ce90147859d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a303ffd160cc6cc0f810d022409d75afb" kindref="member">PosE10StateSequence</ref></type>
+        <definition>PosE10StateSequence PosCodeManager::allE10States</definition>
+        <argsstring>()</argsstring>
+        <name>allE10States</name>
+        <qualifiedname>PosCodeManager::allE10States</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="315" column="23"/>
+        <references refid="interface_pos_code_manager_1a33864c863f5032251b5ce90147859d8b">allE10States</references>
+        <referencedby refid="interface_pos_code_manager_1a33864c863f5032251b5ce90147859d8b">allE10States</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a91ad98ef082f0c7d901880d79cad90aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a0161579adba3adab17bbd4e1163f5fb8" kindref="member">PosRawMachineStateSetSequence</ref></type>
+        <definition>PosRawMachineStateSetSequence PosCodeManager::allRawMachineStateSets</definition>
+        <argsstring>()</argsstring>
+        <name>allRawMachineStateSets</name>
+        <qualifiedname>PosCodeManager::allRawMachineStateSets</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="321" column="33"/>
+        <references refid="interface_pos_code_manager_1a91ad98ef082f0c7d901880d79cad90aa">allRawMachineStateSets</references>
+        <referencedby refid="interface_pos_code_manager_1a91ad98ef082f0c7d901880d79cad90aa">allRawMachineStateSets</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1ac218d25f77a2c9ae8f6809e1b0021c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_e10_state" kindref="compound">PosE10State</ref></type>
+        <definition>PosE10State PosCodeManager::createE10StateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createE10StateNamed</name>
+        <qualifiedname>PosCodeManager::createE10StateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="327" column="15"/>
+        <references refid="interface_pos_code_manager_1ac218d25f77a2c9ae8f6809e1b0021c1a">createE10StateNamed</references>
+        <referencedby refid="interface_pos_code_manager_1ac218d25f77a2c9ae8f6809e1b0021c1a">createE10StateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1aca28196b309233135def8bc6e1bfece1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref></type>
+        <definition>PosRawMachineStateSet PosCodeManager::createRawMachineStateSetNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createRawMachineStateSetNamed</name>
+        <qualifiedname>PosCodeManager::createRawMachineStateSetNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="333" column="25"/>
+        <references refid="interface_pos_code_manager_1aca28196b309233135def8bc6e1bfece1">createRawMachineStateSetNamed</references>
+        <referencedby refid="interface_pos_code_manager_1aca28196b309233135def8bc6e1bfece1">createRawMachineStateSetNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a7f9bdecefa89c1684c4138d4a8cbbd91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_e10_state" kindref="compound">PosE10State</ref></type>
+        <definition>PosE10State PosCodeManager::findE10StateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findE10StateNamed</name>
+        <qualifiedname>PosCodeManager::findE10StateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="339" column="15"/>
+        <references refid="interface_pos_code_manager_1a7f9bdecefa89c1684c4138d4a8cbbd91">findE10StateNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a7f9bdecefa89c1684c4138d4a8cbbd91">findE10StateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a392e2c0a72db83a441f94398e50393c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref></type>
+        <definition>PosRawMachineStateSet PosCodeManager::findRawMachineStateSetNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findRawMachineStateSetNamed</name>
+        <qualifiedname>PosCodeManager::findRawMachineStateSetNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="346" column="25"/>
+        <references refid="interface_pos_code_manager_1a392e2c0a72db83a441f94398e50393c0">findRawMachineStateSetNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a392e2c0a72db83a441f94398e50393c0">findRawMachineStateSetNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1ad29b1b35f1fab80b096078f98d64126c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllE10States</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllE10States</name>
+        <qualifiedname>PosCodeManager::removeAllE10States</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="352" column="8"/>
+        <references refid="interface_pos_code_manager_1ad29b1b35f1fab80b096078f98d64126c">removeAllE10States</references>
+        <referencedby refid="interface_pos_code_manager_1ad29b1b35f1fab80b096078f98d64126c">removeAllE10States</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a78d39b779b79019a1369eedd4f90b8ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllRawMachineStateSets</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllRawMachineStateSets</name>
+        <qualifiedname>PosCodeManager::removeAllRawMachineStateSets</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="358" column="8"/>
+        <references refid="interface_pos_code_manager_1a78d39b779b79019a1369eedd4f90b8ed">removeAllRawMachineStateSets</references>
+        <referencedby refid="interface_pos_code_manager_1a78d39b779b79019a1369eedd4f90b8ed">removeAllRawMachineStateSets</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1af49f31d963c8f7f910552ddcd9718e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeE10State</definition>
+        <argsstring>(in PosE10State aE10State)</argsstring>
+        <name>removeE10State</name>
+        <qualifiedname>PosCodeManager::removeE10State</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_e10_state" kindref="compound">PosE10State</ref></type>
+          <declname>aE10State</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_e10_state_not_found_signal" kindref="compound">E10StateNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="364" column="8"/>
+        <references refid="interface_pos_code_manager_1af49f31d963c8f7f910552ddcd9718e2d">removeE10State</references>
+        <referencedby refid="interface_pos_code_manager_1af49f31d963c8f7f910552ddcd9718e2d">removeE10State</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a800a3bd5d08cac20ca6961f45ad05b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeRawMachineStateSet</definition>
+        <argsstring>(in PosRawMachineStateSet aRawMachineStateSet)</argsstring>
+        <name>removeRawMachineStateSet</name>
+        <qualifiedname>PosCodeManager::removeRawMachineStateSet</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_raw_machine_state_set" kindref="compound">PosRawMachineStateSet</ref></type>
+          <declname>aRawMachineStateSet</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_raw_machine_state_set_not_found_signal" kindref="compound">RawMachineStateSetNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="370" column="8"/>
+        <references refid="interface_pos_code_manager_1a800a3bd5d08cac20ca6961f45ad05b4c">removeRawMachineStateSet</references>
+        <referencedby refid="interface_pos_code_manager_1a800a3bd5d08cac20ca6961f45ad05b4c">removeRawMachineStateSet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a7d87d48e6304ff4ad2bdca23b1e2ea9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref></type>
+        <definition>PosMachineOperationMode PosCodeManager::createMachineOperationModeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMachineOperationModeNamed</name>
+        <qualifiedname>PosCodeManager::createMachineOperationModeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="376" column="27"/>
+        <references refid="interface_pos_code_manager_1a7d87d48e6304ff4ad2bdca23b1e2ea9e">createMachineOperationModeNamed</references>
+        <referencedby refid="interface_pos_code_manager_1a7d87d48e6304ff4ad2bdca23b1e2ea9e">createMachineOperationModeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a3a8e16dd4a9f851f41e0e86fb5df2a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeMachineOperationMode</definition>
+        <argsstring>(in PosMachineOperationMode aMachineOperationMode)</argsstring>
+        <name>removeMachineOperationMode</name>
+        <qualifiedname>PosCodeManager::removeMachineOperationMode</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref></type>
+          <declname>aMachineOperationMode</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_code_manager_1_1_machine_operation_mode_not_found_signal" kindref="compound">MachineOperationModeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="383" column="8"/>
+        <references refid="interface_pos_code_manager_1a3a8e16dd4a9f851f41e0e86fb5df2a7b">removeMachineOperationMode</references>
+        <referencedby refid="interface_pos_code_manager_1a3a8e16dd4a9f851f41e0e86fb5df2a7b">removeMachineOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a6cb1ad58343de90939363a630403b2dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a0f3c37f14566be04c252a116d2a8ca01" kindref="member">PosMachineOperationModeSequence</ref></type>
+        <definition>PosMachineOperationModeSequence PosCodeManager::allMachineOperationModes</definition>
+        <argsstring>()</argsstring>
+        <name>allMachineOperationModes</name>
+        <qualifiedname>PosCodeManager::allMachineOperationModes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="390" column="35"/>
+        <references refid="interface_pos_code_manager_1a6cb1ad58343de90939363a630403b2dd">allMachineOperationModes</references>
+        <referencedby refid="interface_pos_code_manager_1a6cb1ad58343de90939363a630403b2dd">allMachineOperationModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1abbce48cd8a4a4db9b8aa6e48a8e74cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref></type>
+        <definition>PosMachineOperationMode PosCodeManager::findMachineOperationModeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMachineOperationModeNamed</name>
+        <qualifiedname>PosCodeManager::findMachineOperationModeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="398" column="27"/>
+        <references refid="interface_pos_code_manager_1abbce48cd8a4a4db9b8aa6e48a8e74cef">findMachineOperationModeNamed</references>
+        <referencedby refid="interface_pos_code_manager_1abbce48cd8a4a4db9b8aa6e48a8e74cef">findMachineOperationModeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_code_manager_1a5f07fe1e008a998c761e73ebf8b9ceba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCodeManager::removeAllMachineOperationModes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachineOperationModes</name>
+        <qualifiedname>PosCodeManager::removeAllMachineOperationModes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcdmgr.idl" line="406" column="8"/>
+        <references refid="interface_pos_code_manager_1a5f07fe1e008a998c761e73ebf8b9ceba">removeAllMachineOperationModes</references>
+        <referencedby refid="interface_pos_code_manager_1a5f07fe1e008a998c761e73ebf8b9ceba">removeAllMachineOperationModes</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosCodeManager</label>
+        <link refid="interface_pos_code_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosCodeManager</label>
+        <link refid="interface_pos_code_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pcdmgr.idl" line="56" column="11" bodyfile="poscimfw/include/pcdmgr.idl" bodystart="56" bodyend="414"/>
+    <listofallmembers>
+      <member refid="interface_pos_code_manager_1a2b15001cd8350cdacf3b25ac7b2d9ba9" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allCategories</name></member>
+      <member refid="interface_pos_code_manager_1acc22912f8107de7af65b4ba304d440fa" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allCodesFor</name></member>
+      <member refid="interface_pos_code_manager_1a33864c863f5032251b5ce90147859d8b" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allE10States</name></member>
+      <member refid="interface_pos_code_manager_1a6cb1ad58343de90939363a630403b2dd" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allMachineOperationModes</name></member>
+      <member refid="interface_pos_code_manager_1a91ad98ef082f0c7d901880d79cad90aa" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allRawMachineStateSets</name></member>
+      <member refid="interface_pos_code_manager_1a2878c6791617e3ebc75ddc2a7dae5931" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allScripts</name></member>
+      <member refid="interface_pos_code_manager_1a4ef08ddfb65296d6ff4f5a70fe97ec12" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>allSystemMessageCodes</name></member>
+      <member refid="interface_pos_code_manager_1a547f76bdef87b09fdff2b4c152bf7c6b" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createCategoryNamed</name></member>
+      <member refid="interface_pos_code_manager_1ac218d25f77a2c9ae8f6809e1b0021c1a" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createE10StateNamed</name></member>
+      <member refid="interface_pos_code_manager_1a7d87d48e6304ff4ad2bdca23b1e2ea9e" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createMachineOperationModeNamed</name></member>
+      <member refid="interface_pos_code_manager_1aca28196b309233135def8bc6e1bfece1" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createRawMachineStateSetNamed</name></member>
+      <member refid="interface_pos_code_manager_1a12f8123117b844fe0f9ac9f093cc36d6" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createScriptNamed</name></member>
+      <member refid="interface_pos_code_manager_1a3cb4039dc7afc4785db6d59f05d52331" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>createSystemMessageCodeNamed</name></member>
+      <member refid="interface_pos_code_manager_1a070f2b5bf379c23724702187b7515cdb" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findCategoryNamed</name></member>
+      <member refid="interface_pos_code_manager_1a7f9bdecefa89c1684c4138d4a8cbbd91" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findE10StateNamed</name></member>
+      <member refid="interface_pos_code_manager_1abbce48cd8a4a4db9b8aa6e48a8e74cef" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findMachineOperationModeNamed</name></member>
+      <member refid="interface_pos_code_manager_1a392e2c0a72db83a441f94398e50393c0" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findRawMachineStateSetNamed</name></member>
+      <member refid="interface_pos_code_manager_1a7559cecd3efc38b8781ee8e2c5106138" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findScriptNamed</name></member>
+      <member refid="interface_pos_code_manager_1ad53de3af8e5efdbb60d2ea0a868f0d3e" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>findSystemMessageCodeNamed</name></member>
+      <member refid="interface_pos_code_manager_1a40e4a1ed4d25b89550f377d86e9faa3a" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>PosCodeManager_init</name></member>
+      <member refid="interface_pos_code_manager_1a055722e8784ea642e77768f53b821790" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllCategories</name></member>
+      <member refid="interface_pos_code_manager_1ad29b1b35f1fab80b096078f98d64126c" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllE10States</name></member>
+      <member refid="interface_pos_code_manager_1a5f07fe1e008a998c761e73ebf8b9ceba" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllMachineOperationModes</name></member>
+      <member refid="interface_pos_code_manager_1a78d39b779b79019a1369eedd4f90b8ed" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllRawMachineStateSets</name></member>
+      <member refid="interface_pos_code_manager_1a03658894680903207b8c503e2c2fa86a" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllScripts</name></member>
+      <member refid="interface_pos_code_manager_1a8b2f2037e21ea7192756f44ab00ba8d2" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeAllSystemMessageCodes</name></member>
+      <member refid="interface_pos_code_manager_1a9fb30c929cf76d18d68d6afc125a6291" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeCategory</name></member>
+      <member refid="interface_pos_code_manager_1af49f31d963c8f7f910552ddcd9718e2d" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeE10State</name></member>
+      <member refid="interface_pos_code_manager_1a3a8e16dd4a9f851f41e0e86fb5df2a7b" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeMachineOperationMode</name></member>
+      <member refid="interface_pos_code_manager_1a800a3bd5d08cac20ca6961f45ad05b4c" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeRawMachineStateSet</name></member>
+      <member refid="interface_pos_code_manager_1a3d7d715e7b8e05d1f57570716acb25c6" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeScript</name></member>
+      <member refid="interface_pos_code_manager_1acf67b030a54e5c5d1c7e0be11541f1c9" prot="public" virt="non-virtual"><scope>PosCodeManager</scope><name>removeSystemMessageCode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

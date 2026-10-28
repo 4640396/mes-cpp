@@ -1,0 +1,9 @@
+var pdcsp_8idl =
+[
+    [ "PosDataCollectionSpecification", "interface_pos_data_collection_specification.html", "interface_pos_data_collection_specification" ],
+    [ "PosDataCollectionSpecification::SetDCSpecificationInfoFailedSignal", "exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal.html", "exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal" ],
+    [ "PosDataCollectionSpecification::DCItemSpecificationDuplicateSignal", "exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal.html", "exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal" ],
+    [ "PosDataCollectionSpecification::DCItemSpecificationNotFoundSignal", "exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal.html", "exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal" ],
+    [ "PosDataCollectionSpecification::DataCollectionDefinitionDuplicateSignal", "exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal.html", "exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal" ],
+    [ "PosDataCollectionSpecification::DataCollectionDefinitionNotFoundSignal", "exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal.html", "exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal" ]
+];

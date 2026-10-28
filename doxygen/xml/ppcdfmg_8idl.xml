@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="ppcdfmg_8idl" kind="file" language="IDL">
+    <compoundname>ppcdfmg.idl</compoundname>
+    <includes local="yes">MOFW.idl</includes>
+    <includes local="yes">prcdfmgr.idl</includes>
+    <includes refid="ppcdfgl_8idl" local="yes">ppcdfgl.idl</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>pfwgls.idl</label>
+        <link refid="pfwgls_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ppcdfgl.idl</label>
+        <link refid="ppcdfgl_8idl"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/ppcdfmg.idl</label>
+        <link refid="ppcdfmg_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="7">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="5">
+        <label>duration.idl</label>
+      </node>
+      <node id="6">
+        <label>fwcommon.idl</label>
+      </node>
+      <node id="9">
+        <label>fwglobls.idl</label>
+      </node>
+      <node id="3">
+        <label>prcdfmgr.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_pos_process_definition_manager" prot="public">PosProcessDefinitionManager</innerclass>
+    <innerclass refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" prot="public">PosProcessDefinitionManager::DurableProcessFlowContextNotFoundSignal</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosProcessDefinitionManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Specification_Management_Functional_Group::Siview_Process_Definition_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>Z:\R140-Rose\poscimfw\ppcdf\ppcdfmg.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosProcessDefinitionManager_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosProcessDefinitionManager_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MOFW.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prcdfmgr.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ppcdfgl_8idl" kindref="compound">ppcdfgl.idl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Process<sp/>Definition<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Process<sp/>Definition<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="interface_pos_process_definition_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_process_definition_manager" kindref="compound">PosProcessDefinitionManager</ref><sp/>:<sp/>ProcessDefinitionManager,<sp/>MOFW_ManagedObject<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosProcessDefinitionManager.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosProcessDefinitionManager.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" refkind="compound"><highlight class="normal"><sp/><sp/>exception<sp/><ref refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" kindref="compound">DurableProcessFlowContextNotFoundSignal</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DurableProcessFlowContextNotFoundSignal.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DurableProcessFlowContextNotFoundSignal.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal_1a6905e42c01202ad09aba9c7868d70c36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal_1a6905e42c01202ad09aba9c7868d70c36" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>DurableProcessFlowContextNotFoundSignal.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##end<sp/>DurableProcessFlowContextNotFoundSignal.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>PosProcessDefinitionManager_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Initializes<sp/>data<sp/>member<sp/>of<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="interface_pos_process_definition_manager_1a4993a21e6d3c2f3207c12ddfee3fe856" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a4993a21e6d3c2f3207c12ddfee3fe856" kindref="member">PosProcessDefinitionManager_init</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMainProcessDefinitionNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>main<sp/>PD.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2" refkind="member"><highlight class="normal"><sp/><sp/>ProcessDefinition<sp/><ref refid="interface_pos_process_definition_manager_1aaf02c12c7c40d4300905950792c930a2" kindref="member">findMainProcessDefinitionNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findModuleProcessDefinitionNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Finds<sp/>a<sp/>module<sp/>PD.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b" refkind="member"><highlight class="normal"><sp/><sp/>ProcessDefinition<sp/><ref refid="interface_pos_process_definition_manager_1a94b02b3b6b4fe5bbc097cfb40750517b" kindref="member">findModuleProcessDefinitionNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createProcessDefinitionNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>ProcessDefinition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f" refkind="member"><highlight class="normal"><sp/><sp/>ProcessDefinition<sp/><ref refid="interface_pos_process_definition_manager_1aa0179ffc544a0d68892aabeb28f7e62f" kindref="member">createProcessDefinitionNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DuplicateIdentifierSignal<sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createModuleProcessDefinitionNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>Module<sp/>ProcessDefinition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a" refkind="member"><highlight class="normal"><sp/><sp/>ProcessDefinition<sp/><ref refid="interface_pos_process_definition_manager_1ac2d6f5e48fb96d9dc3b6552c40bdbb6a" kindref="member">createModuleProcessDefinitionNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DuplicateIdentifierSignal<sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createMainProcessDefinitionNamed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>Main<sp/>ProcessDefinition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c" refkind="member"><highlight class="normal"><sp/><sp/>ProcessDefinition<sp/><ref refid="interface_pos_process_definition_manager_1a45794faf48984ea855bcf702bbe2ff2c" kindref="member">createMainProcessDefinitionNamed</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>identifier)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal,<sp/>DuplicateIdentifierSignal<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMaxReworkCountForProduct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>maximum<sp/>rework<sp/>count<sp/>allowed<sp/>for<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>product<sp/>specification<sp/>and<sp/>operation.<sp/>If<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>definition<sp/>is<sp/>not<sp/>found,<sp/>returns<sp/>0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1aad0112b73e3147be9594ba3fe6eacf55" kindref="member">findMaxReworkCountForProduct</ref>(in<sp/><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref><sp/>aProductSpecification,<sp/>in<sp/><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref><sp/>mainPOS,<sp/>in<sp/><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref><sp/>modulePOS)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>findMaxProcessCountForProduct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Returns<sp/>maximum<sp/>process<sp/>count<sp/>allowed<sp/>for<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>product<sp/>specification<sp/>and<sp/>the<sp/>responsible<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>specified<sp/>operation.<sp/>If<sp/>the<sp/>definition<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>found,<sp/>returns<sp/>0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ppcdfgl_8idl_1a0abf7833fd9227f7b9273cf48a6bc97f" kindref="member">PosMaxProcessCountSequence</ref><sp/><ref refid="interface_pos_process_definition_manager_1a2d7b35404907c8411a6ceba27aa06ee7" kindref="member">findMaxProcessCountForProduct</ref>(in<sp/><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref><sp/>aProductSpecification,<sp/>in<sp/><ref refid="interface_pos_process_flow" kindref="compound">PosProcessFlow</ref><sp/>mainPF,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref><sp/>mainPOS,<sp/>in<sp/><ref refid="interface_pos_process_operation_specification" kindref="compound">PosProcessOperationSpecification</ref><sp/>modulePOS)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setReworkRoutes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/11<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a3bf1d31519772c676da381a880c4fd7b" kindref="member">setReworkRoutes</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefinitionIds,<sp/>in<sp/>brSubFlowDataSequence<sp/>reworkProcessFlowConnections)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDefaultTimeRestrictions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1ada968d3fc5a4ef543045c710d5fb303a" kindref="member">setDefaultTimeRestrictions</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>brDefaultTimeRestrictionDataSequence<sp/>defaultTimeRestrictions)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setSubRoutes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a5e1822b4da29443d399cc8919ac41630" kindref="member">setSubRoutes</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>brSubFlowDataSequence<sp/>subProcessFlowConnections)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDeltaDCDefinitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1adf594aa1dba6295c85f09a01b8bdc5c7" kindref="member">setDeltaDCDefinitions</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>brDeltaDCDefinitionDataSequence<sp/>deltaDCDefinitions)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDefaultDeltaDCSpecifications</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a19d75aad223b58ed78420fcf6ede2381" kindref="member">setDefaultDeltaDCSpecifications</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>brDefaultDeltaDCSpecDataSequence<sp/>defaultDeltaDCSpecs)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setCorrespondingOperations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1abb5cb647dde13b7d38e742afa6fad42f" kindref="member">setCorrespondingOperations</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>correspondingOperation,<sp/>in<sp/>brCorrespondingOperationSequence__101<sp/>correspondingOperations)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setReworkSettings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a1fb76f68688e903a5c558a5e0c271fed" kindref="member">setReworkSettings</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>defaultReworkLimit,<sp/>in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>defaultProcessLimit,<sp/>in<sp/>stringSequence<sp/>responsibleOperationNumbers)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setProcessLagTimes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2012/12/25<sp/>DSN000061450<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a8434180681d4cf4f6f43f50fef70d673" kindref="member">setProcessLagTimes</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>defaultProcessLagTime)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setScripts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2014/02/13<sp/>DSN000084720<sp/>S.Kawabe<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1ae9005f7fefb6481b3d8ad369c25fad77" kindref="member">setScripts</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>objectIdentifier<sp/>pre1Script,<sp/>in<sp/>objectIdentifier<sp/>pre2Script,<sp/>in<sp/>objectIdentifier<sp/>postScript)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>setDefaultTimeRestrictions__150</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2014/06/04<sp/>DSN000085792<sp/>K.Yamaoku<sp/>Initial<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1abd59a172b8e4e697ea5df97f989f5309" kindref="member">setDefaultTimeRestrictions__150</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operationNumber,<sp/>in<sp/>stringSequence<sp/>mainProcessDefintionIds,<sp/>in<sp/>brDefaultTimeRestrictionDataSequence<sp/>defaultTimeRestrictions,<sp/>in<sp/><ref refid="ppcdfgl_8idl_1abe10fb22192be99cd12e33d6ac63370e" kindref="member">spDefaultReplaceTimeRestrictionDataSequence</ref><sp/>defaultReplaceTimeRestrictionsForSubRoute,<sp/>in<sp/><ref refid="ppcdfgl_8idl_1abe10fb22192be99cd12e33d6ac63370e" kindref="member">spDefaultReplaceTimeRestrictionDataSequence</ref><sp/>defaultReplaceTimeRestrictionsForReworkRoute)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>createDurableProcessFlowContextFor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>a<sp/>DurableProcessFlowContext<sp/>from<sp/>a<sp/>ProcessFlow.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e" refkind="member"><highlight class="normal"><sp/><sp/>ProcessFlowContext<sp/><ref refid="interface_pos_process_definition_manager_1a760db61f3dface734b588242b6fe2e5e" kindref="member">createDurableProcessFlowContextFor</ref>(in<sp/>ProcessFlow<sp/>aProcessFlow)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/>FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Operation:<sp/>removeDurableProcessFlowContext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Removes<sp/>specified<sp/>durable<sp/>process<sp/>flow<sp/>context<sp/>and<sp/>all</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>process<sp/>operations<sp/>which<sp/>are<sp/>in<sp/>the<sp/>context<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>durable<sp/>process<sp/>flow<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_pos_process_definition_manager_1a35227722cdf5a5d76bf517023cd54a48" kindref="member">removeDurableProcessFlowContext</ref>(in<sp/>ProcessFlowContext<sp/>aProcessFlowContext)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>raises(<sp/><ref refid="exception_pos_process_definition_manager_1_1_durable_process_flow_context_not_found_signal" kindref="compound">DurableProcessFlowContextNotFoundSignal</ref>,FrameworkErrorSignal<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>PosProcessDefinitionManager.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>PosProcessDefinitionManager.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/ppcdfmg.idl"/>
+  </compounddef>
+</doxygen>

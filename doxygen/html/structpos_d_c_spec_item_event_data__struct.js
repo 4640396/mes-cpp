@@ -1,0 +1,25 @@
+var structpos_d_c_spec_item_event_data__struct =
+[
+    [ "controlLowerActions", "structpos_d_c_spec_item_event_data__struct.html#aa83d736c2d169cd2d115f2045398fd16", null ],
+    [ "controlLowerLimit", "structpos_d_c_spec_item_event_data__struct.html#a787d9c191bef65c13753bbec694885fb", null ],
+    [ "controlLowerRequired", "structpos_d_c_spec_item_event_data__struct.html#adadeaa44edeeae17b1be7cadf8b81dc6", null ],
+    [ "controlUpeerLimit", "structpos_d_c_spec_item_event_data__struct.html#aa1e142bf8d034a7949f3ad880ab75482", null ],
+    [ "controlUpperActions", "structpos_d_c_spec_item_event_data__struct.html#a785c21abf9b57ec850b03da7542ef644", null ],
+    [ "controlUpperRequired", "structpos_d_c_spec_item_event_data__struct.html#aae0a54b89b6afbd2e485d18b8a564352", null ],
+    [ "dcItemName", "structpos_d_c_spec_item_event_data__struct.html#ab9459b0d8fd33b9019726d222d063b95", null ],
+    [ "dcItemTag", "structpos_d_c_spec_item_event_data__struct.html#a31653907ee39b5d6be224a83770b68c2", null ],
+    [ "dcItemTargetValue", "structpos_d_c_spec_item_event_data__struct.html#a3855fc38c5e6c465582d423b9dfc1fc7", null ],
+    [ "dcSpecGroup", "structpos_d_c_spec_item_event_data__struct.html#a589978476355f7d2de4865e5017668ad", null ],
+    [ "screenLowerActions", "structpos_d_c_spec_item_event_data__struct.html#a06e4febff4e81c23e71e7566f76e37e9", null ],
+    [ "screenLowerLimit", "structpos_d_c_spec_item_event_data__struct.html#ac56965522836ac2a973777b6e06a5038", null ],
+    [ "screenLowerRequired", "structpos_d_c_spec_item_event_data__struct.html#afae285ba9365f86a1ac270a6f6d614b1", null ],
+    [ "screenUpperActions", "structpos_d_c_spec_item_event_data__struct.html#ae37e409f21528238faa2f788285cd284", null ],
+    [ "screenUpperLimit", "structpos_d_c_spec_item_event_data__struct.html#a30994b582d3622a0839723d7ba09f88c", null ],
+    [ "screenUpperRequired", "structpos_d_c_spec_item_event_data__struct.html#a339d2ccda9d00065ffc195d1fdf3a75a", null ],
+    [ "specLowerActions", "structpos_d_c_spec_item_event_data__struct.html#a60c7126f84e886eb88f12c27fc6d24a6", null ],
+    [ "specLowerLimit", "structpos_d_c_spec_item_event_data__struct.html#a744787be035ae99db5042364965b6392", null ],
+    [ "specLowerRequired", "structpos_d_c_spec_item_event_data__struct.html#a47f3a646f630447fa6eda8a472317c44", null ],
+    [ "specUpperActions", "structpos_d_c_spec_item_event_data__struct.html#ac7653abe7ce1a99840c1bd2ba8725ef4", null ],
+    [ "specUpperLimit", "structpos_d_c_spec_item_event_data__struct.html#aaa16b5e0ba582977e32229f86c6382e2", null ],
+    [ "specUpperRequired", "structpos_d_c_spec_item_event_data__struct.html#abcd1f4343e92c123c58c3112e8786c0b", null ]
+];

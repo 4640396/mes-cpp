@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pcmpmgfc_8cpp" kind="file" language="C++">
+    <compoundname>pcmpmgfc.cpp</compoundname>
+    <includes local="yes">pcmpmgfc.hpp</includes>
+    <includes local="yes">spfwname.hpp</includes>
+    <includes local="yes">spmacro.hpp</includes>
+    <includes local="yes">sptrc.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/pcmpmg/pcmpmgfc.cpp</label>
+        <link refid="pcmpmgfc_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pcmpmgfc.hpp</label>
+      </node>
+      <node id="3">
+        <label>spfwname.hpp</label>
+      </node>
+      <node id="4">
+        <label>spmacro.hpp</label>
+      </node>
+      <node id="5">
+        <label>sptrc.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="pcmpmgfc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spclass/source/poscimfw/pcmpmg/pcmpmgfc.cpp, mm_srv_90e_spcl, mm_srv_90e_spcl 7/14/07 00:36:07 [ 7/14/07 00:36:08 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pcmpmg/pcmpmgfc.cpp" line="2" column="13" bodyfile="poscimfw/pcmpmg/pcmpmgfc.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="pcmpmgfc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spclass/source/poscimfw/pcmpmg/pcmpmgfc.cpp,<sp/>mm_srv_90e_spcl,<sp/>mm_srv_90e_spcl<sp/>7/14/07<sp/>00:36:07<sp/>[<sp/>7/14/07<sp/>00:36:08<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>pcmpmgfc.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------<sp/>--------<sp/>--------------<sp/>-------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/30/99<sp/>D9800383<sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/>Changed<sp/>ComponentManagers<sp/>from<sp/>CMO<sp/>to<sp/>M</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>05/11/99<sp/>D9900005<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>DAE<sp/>to<sp/>ORB<sp/>(R2.0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delete<sp/>CfmManager,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FactoryTransferJobManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SpcManager.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>12/09/99<sp/>D2200055<sp/>H.Katoh<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/>new<sp/>logic<sp/>for<sp/>entity<sp/>inhibit<sp/>manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>06/15/00<sp/>D2400004<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>add<sp/>new<sp/>logic<sp/>for<sp/>PosPartsManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/17/03<sp/>D5100006<sp/>K.Kido<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/>new<sp/>logic<sp/>for<sp/>PosPropertySet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/22/04<sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>eBroker<sp/>Migration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>11/09/04<sp/>D6000044<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delete<sp/>newDocumentManager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pcmpmgfc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spfwname.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spmacro.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sptrc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class:<sp/>PosComponentManagerObjectFactory_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>PosComponentManagerObjectFactory_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>is<sp/>a<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>none.<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameter:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>none.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Exception:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>none.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pseudo<sp/>code:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>N/A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">PosComponentManagerObjectFactory_i::<sp/>PosComponentManagerObjectFactory_i()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::<sp/>PosComponentManagerObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theMESFactory=<sp/>PosMESFactory::_nil();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theAuthenticationManager=<sp/>PosAuthenticationManager::_nil();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theCodeManager=<sp/>PosCodeManager::_nil();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theDataCollectionSpecificationManager=<sp/>PosDataCollectionSpecificationManager::_nil();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theDocumentManager=<sp/>PosDocumentManager::_nil();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theDispatchingManager=<sp/>PosDispatchingManager::_nil();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theDurableManager=<sp/>PosDurableManager::_nil();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theEventManager=<sp/>PosEventManager::_nil();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//D9900005<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theFactoryTransferJobManager=<sp/>PosFactoryTransferJobManager::_nil();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theMachineManager=<sp/>PosMachineManager::_nil();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theMessageDistributionManager=<sp/>PosMessageDistributionManager::_nil();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theProcessDefinitionManager=<sp/>PosProcessDefinitionManager::_nil();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theQTimeRestrictionManager=<sp/>PosQTimeRestrictionManager::_nil();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePlanManager=<sp/>PosPlanManager::_nil();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theProductManager=<sp/>PosProductManager::_nil();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theProductSpecificationManager=<sp/>PosProductSpecificationManager::_nil();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePersonManager=<sp/>PosPersonManager::_nil();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theRecipeManager=<sp/>PosRecipeManager::_nil();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theEntityInhibitManager=<sp/>PosEntityInhibitManager::_nil();<sp/><sp/></highlight><highlight class="comment">//D2200055</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePartsManager=<sp/>PosPartsManager::_nil();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePropertySetManager<sp/>=<sp/>PosPropertySetManager::_nil();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D5100006</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//D9900005<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theSpcManager=<sp/>PosSpcManager::_nil();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//D9900005<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theCfmManager=<sp/>PosCfmManager::_nil();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::<sp/>PosComponentManagerObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class:<sp/>PosComponentManagerObjectFactory_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>~PosComponentManagerObjectFactory_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>is<sp/>a<sp/>destructor.<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameter:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Exception:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pseudo<sp/>code:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>data<sp/>members.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">PosComponentManagerObjectFactory_i::<sp/>~PosComponentManagerObjectFactory_i()</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::<sp/>~PosComponentManagerObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::<sp/>~PosComponentManagerObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class:<sp/>PosComponentManagerObjectFactory_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service:<sp/>new<sp/>ComponentManager<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Creates<sp/>an<sp/>instance<sp/>of<sp/>ComponentManager<sp/>as<sp/>Managed<sp/>Object<sp/>(transient).<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>pointer<sp/>of<sp/>ComponentManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parameter:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>none.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Exception:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>raises<sp/>FrameworkErrorSignal<sp/>if<sp/>any<sp/>exception<sp/>is<sp/>received.<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pseudo<sp/>code:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>N/A.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosMESFactory_ptr<sp/>PosComponentManagerObjectFactory_i::newMESFactory<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">PosMESFactory_ptr<sp/>PosComponentManagerObjectFactory_i::newMESFactory<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMESFactory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_m_e_s_factory" kindref="compound">PosMESFactory</ref>,<sp/>theMESFactory)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMESFactory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosAuthenticationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newAuthenticationManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">PosAuthenticationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newAuthenticationManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newAuthenticationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_authentication_manager" kindref="compound">PosAuthenticationManager</ref>,<sp/>theAuthenticationManager)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newAuthenticationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosCodeManager_ptr<sp/>PosComponentManagerObjectFactory_i::newCodeManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">PosCodeManager_ptr<sp/>PosComponentManagerObjectFactory_i::newCodeManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newCodeManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_code_manager" kindref="compound">PosCodeManager</ref>,<sp/>theCodeManager)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newCodeManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosDataCollectionSpecificationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDataCollectionSpecificationManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">PosDataCollectionSpecificationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDataCollectionSpecificationManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDataCollectionSpecificationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_data_collection_specification_manager" kindref="compound">PosDataCollectionSpecificationManager</ref>,<sp/>theDataCollectionSpecificationManager)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDataCollectionSpecificationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosDocumentManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDocumentManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/>PosDocumentManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDocumentManager<sp/>(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(&quot;PosComponentManagerObjectFactory_i::newDocumentManager&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(PosDocumentManager,<sp/>theDocumentManager)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(&quot;PosComponentManagerObjectFactory_i::newDocumentManager&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//D6000044<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosDispatchingManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDispatchingManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">PosDispatchingManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDispatchingManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDispatchingManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_dispatching_manager" kindref="compound">PosDispatchingManager</ref>,<sp/>theDispatchingManager)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDispatchingManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosDurableManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDurableManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">PosDurableManager_ptr<sp/>PosComponentManagerObjectFactory_i::newDurableManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDurableManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_durable_manager" kindref="compound">PosDurableManager</ref>,<sp/>theDurableManager)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newDurableManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosEventManager_ptr<sp/>PosComponentManagerObjectFactory_i::newEventManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">PosEventManager_ptr<sp/>PosComponentManagerObjectFactory_i::newEventManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newEventManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_event_manager" kindref="compound">PosEventManager</ref>,<sp/>theEventManager)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newEventManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//D9900005<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>/*PosFactoryTransferJobManager_ptr<sp/>PosComponentManagerObjectFactory_i::newFactoryTransferJobManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">/*PosFactoryTransferJobManager_ptr<sp/>PosComponentManagerObjectFactory_i::newFactoryTransferJobManager<sp/>(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(PosFactoryTransferJobManager,<sp/>theFactoryTransferJobManager)</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosMachineManager_ptr<sp/>PosComponentManagerObjectFactory_i::newMachineManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">PosMachineManager_ptr<sp/>PosComponentManagerObjectFactory_i::newMachineManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMachineManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_machine_manager" kindref="compound">PosMachineManager</ref>,<sp/>theMachineManager)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMachineManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosMessageDistributionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newMessageDistributionManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">PosMessageDistributionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newMessageDistributionManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMessageDistributionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_message_distribution_manager" kindref="compound">PosMessageDistributionManager</ref>,<sp/>theMessageDistributionManager)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newMessageDistributionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosProcessDefinitionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProcessDefinitionManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">PosProcessDefinitionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProcessDefinitionManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProcessDefinitionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_process_definition_manager" kindref="compound">PosProcessDefinitionManager</ref>,<sp/>theProcessDefinitionManager)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProcessDefinitionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosQTimeRestrictionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newQTimeRestrictionManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">PosQTimeRestrictionManager_ptr<sp/>PosComponentManagerObjectFactory_i::newQTimeRestrictionManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newQTimeRestrictionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_q_time_restriction_manager" kindref="compound">PosQTimeRestrictionManager</ref>,<sp/>theQTimeRestrictionManager)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newQTimeRestrictionManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosPlanManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPlanManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">PosPlanManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPlanManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPlanManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_plan_manager" kindref="compound">PosPlanManager</ref>,<sp/>thePlanManager)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPlanManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosProductManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProductManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">PosProductManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProductManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProductManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_product_manager" kindref="compound">PosProductManager</ref>,<sp/>theProductManager)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProductManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosProductSpecificationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProductSpecificationManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">PosProductSpecificationManager_ptr<sp/>PosComponentManagerObjectFactory_i::newProductSpecificationManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProductSpecificationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_product_specification_manager" kindref="compound">PosProductSpecificationManager</ref>,<sp/>theProductSpecificationManager)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newProductSpecificationManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosPersonManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPersonManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">PosPersonManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPersonManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPersonManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_person_manager" kindref="compound">PosPersonManager</ref>,<sp/>thePersonManager)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPersonManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosRecipeManager_ptr<sp/>PosComponentManagerObjectFactory_i::newRecipeManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">PosRecipeManager_ptr<sp/>PosComponentManagerObjectFactory_i::newRecipeManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newRecipeManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_recipe_manager" kindref="compound">PosRecipeManager</ref>,<sp/>theRecipeManager)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newRecipeManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosEntityInhibitManager_ptr<sp/>PosComponentManagerObjectFactory_i::newEntityInhibitManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">PosEntityInhibitManager_ptr<sp/>PosComponentManagerObjectFactory_i::newEntityInhibitManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newEntityInhibitManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_entity_inhibit_manager" kindref="compound">PosEntityInhibitManager</ref>,<sp/>theEntityInhibitManager)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newEntityInhibitManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosPartsManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPartsManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)<sp/><sp/><sp/><sp/>//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">PosPartsManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPartsManager<sp/>(CORBAENV_ONLY_CPP)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPartsManager&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_parts_manager" kindref="compound">PosPartsManager</ref>,<sp/>thePartsManager)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPartsManager&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D2400004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//D5100006<sp/>add<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosPropertySetManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPropertySetManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">PosPropertySetManager_ptr<sp/>PosComponentManagerObjectFactory_i::newPropertySetManager<sp/>(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPropertySetManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(<ref refid="interface_pos_property_set_manager" kindref="compound">PosPropertySetManager</ref>,<sp/>thePropertySetManager)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;PosComponentManagerObjectFactory_i::newPropertySetManager&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">//D9900005<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>/*PosSpcManager_ptr<sp/>PosComponentManagerObjectFactory_i::newSpcManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">/*PosSpcManager_ptr<sp/>PosComponentManagerObjectFactory_i::newSpcManager<sp/>(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight></codeline>
+<codeline lineno="284"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(PosSpcManager,<sp/>theSpcManager)</highlight></codeline>
+<codeline lineno="286"><highlight class="comment">}*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>/*PosCfmManager_ptr<sp/>PosComponentManagerObjectFactory_i::newCfmManager<sp/>(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">/*PosCfmManager_ptr<sp/>PosComponentManagerObjectFactory_i::newCfmManager<sp/>(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight></codeline>
+<codeline lineno="290"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/><sp/><sp/><sp/>NEW_COMPONENTMANAGER(PosCfmManager,<sp/>theCfmManager)</highlight></codeline>
+<codeline lineno="292"><highlight class="comment">}*/</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//D9900005<sp/>removed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/pcmpmg/pcmpmgfc.cpp"/>
+  </compounddef>
+</doxygen>

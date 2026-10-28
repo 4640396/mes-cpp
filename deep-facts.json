@@ -1,0 +1,5268 @@
+{
+  "nodes": [
+    {
+      "id": "dispatcherNoopRule",
+      "type": "Rule",
+      "label": "普通 dispatcher 的 addToQueue/removeFromQueue 只保留跟踪，旧业务体已注释"
+    },
+    {
+      "id": "dispatcherRemove",
+      "type": "Method",
+      "label": "PosDispatcher_i::removeFromQueue"
+    },
+    {
+      "id": "whatNextMachine",
+      "type": "Method",
+      "label": "PosDispatcher_i::whatNextForMachine"
+    },
+    {
+      "id": "currentWhatNext",
+      "type": "Method",
+      "label": "PosDispatcher_i::currentWhatNextForMachine"
+    },
+    {
+      "id": "setWhatNext",
+      "type": "Method",
+      "label": "PosDispatcher_i::setEffectiveWhatNextLogic"
+    },
+    {
+      "id": "parseWhatNextParameters",
+      "type": "Method",
+      "label": "convertToLogicInfoFromParameters"
+    },
+    {
+      "id": "findWhatNextObject",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::findWhatNextLogicObjectNamed"
+    },
+    {
+      "id": "strategyDispatchContract",
+      "type": "Method",
+      "label": "PosWhatNextLogicBase::dispatchFor_inSQL（虚调用契约）"
+    },
+    {
+      "id": "FRLOT_EQP",
+      "type": "Table",
+      "label": "FRLOT_EQP"
+    },
+    {
+      "id": "dispatchCandidatesRule",
+      "type": "Rule",
+      "label": "按设备关联筛选 Waiting、NotOnHold、未预留的批次"
+    },
+    {
+      "id": "dispatchRuleOrder",
+      "type": "Rule",
+      "label": "过滤耐用品规则后反向组合执行，空配置回退 INT-PRIORITY"
+    },
+    {
+      "id": "dispatchCurrentTimeRule",
+      "type": "Rule",
+      "label": "达到 next effective time 后按列表顺序切换当前配置，并更新 next time"
+    },
+    {
+      "id": "dispatchSetFlagRule",
+      "type": "Rule",
+      "label": "SP_DEFAULT_DISPATCHINGRULE_USEFLAG 为 1 时清理当前配置；空参数回退默认"
+    },
+    {
+      "id": "dispatchParseRule",
+      "type": "Rule",
+      "label": "参数字符串按冒号分隔规则，括号部分作为参数；不是通用表达式解析器"
+    },
+    {
+      "id": "lotSetQueued",
+      "type": "Method",
+      "label": "PosLot_i::setQueuedMachines"
+    },
+    {
+      "id": "lotGetQueued",
+      "type": "Method",
+      "label": "PosLot_i::getQueuedMachines"
+    },
+    {
+      "id": "lotSetHoldQueued",
+      "type": "Method",
+      "label": "PosLot_i::setHoldQueuedMachines"
+    },
+    {
+      "id": "lotGetHoldQueued",
+      "type": "Method",
+      "label": "PosLot_i::getHoldQueuedMachines"
+    },
+    {
+      "id": "managerAddHold",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::addToHoldQueue"
+    },
+    {
+      "id": "managerRemoveHold",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::removeFromHoldQueue"
+    },
+    {
+      "id": "managerMoveWIP",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::moveToWIPQueue"
+    },
+    {
+      "id": "holdWhatNext",
+      "type": "Method",
+      "label": "PosDispatcher_i::whatNextHoldLotForMachine"
+    },
+    {
+      "id": "durableWhatNext",
+      "type": "Method",
+      "label": "PosDispatcher_i::whatNextDurableForMachine"
+    },
+    {
+      "id": "holdDurableWhatNext",
+      "type": "Method",
+      "label": "PosDispatcher_i::whatNextHoldDurableForMachine"
+    },
+    {
+      "id": "queueHelperSave",
+      "type": "Method",
+      "label": "CollectionHelper_FRLOT_EQP::save"
+    },
+    {
+      "id": "queueWriterInsert",
+      "type": "Method",
+      "label": "Writer_FRLOT_EQP::insertInto"
+    },
+    {
+      "id": "queueWriterSingle",
+      "type": "Method",
+      "label": "Writer_FRLOT_EQP::singleInsert"
+    },
+    {
+      "id": "queueWriterUpdate",
+      "type": "Method",
+      "label": "Writer_FRLOT_EQP::update"
+    },
+    {
+      "id": "queueReader",
+      "type": "Method",
+      "label": "Reader_FRLOT_EQP::Reader_FRLOT_EQP"
+    },
+    {
+      "id": "lotQueueCollection",
+      "type": "Collection",
+      "label": "BO:PosLot::theQueuedMachines"
+    },
+    {
+      "id": "lotHoldQueueCollection",
+      "type": "Collection",
+      "label": "BO:PosLot::theHoldQueuedMachines"
+    },
+    {
+      "id": "doQueueCollection",
+      "type": "Collection",
+      "label": "DO:PosLot::theDB_QueuedMachines"
+    },
+    {
+      "id": "FRLOT_HOLDEQP",
+      "type": "Table",
+      "label": "FRLOT_HOLDEQP"
+    },
+    {
+      "id": "FRCAST",
+      "type": "Table",
+      "label": "FRCAST"
+    },
+    {
+      "id": "FRCAST_EQP",
+      "type": "Table",
+      "label": "FRCAST_EQP"
+    },
+    {
+      "id": "FRDRBL",
+      "type": "Table",
+      "label": "FRDRBL"
+    },
+    {
+      "id": "FRDRBL_EQP",
+      "type": "Table",
+      "label": "FRDRBL_EQP"
+    },
+    {
+      "id": "FRRTCLPOD",
+      "type": "Table",
+      "label": "FRRTCLPOD"
+    },
+    {
+      "id": "FRRTCLPOD_EQP",
+      "type": "Table",
+      "label": "FRRTCLPOD_EQP"
+    },
+    {
+      "id": "queuedViewRule",
+      "type": "Rule",
+      "label": "暂停批次的普通队列 getter 返回空视图"
+    },
+    {
+      "id": "holdViewFallbackRule",
+      "type": "Rule",
+      "label": "暂停视图为空且 OnHold 时回退普通集合"
+    },
+    {
+      "id": "holdSelectionRule",
+      "type": "Rule",
+      "label": "暂停候选来自两个关联表，第一查询不强制 OnHold，方法内无显式去重"
+    },
+    {
+      "id": "durableSelectionRule",
+      "type": "Rule",
+      "label": "三类耐用品只使用耐用品前缀规则，默认常量值待核实"
+    },
+    {
+      "id": "queueSaveRule",
+      "type": "Rule",
+      "label": "按更新/部分更新配置选择差异操作或整体删除重插"
+    },
+    {
+      "id": "flowQueueAdd",
+      "type": "Method",
+      "label": "PosFlowBatchDispatcher_i::addToQueue"
+    },
+    {
+      "id": "flowQueueRemove",
+      "type": "Method",
+      "label": "PosFlowBatchDispatcher_i::removeFromQueue"
+    },
+    {
+      "id": "flowSqlAdd",
+      "type": "Method",
+      "label": "PosFlowBatchDispatcher_i::_addToQueue"
+    },
+    {
+      "id": "flowSqlRemove",
+      "type": "Method",
+      "label": "PosFlowBatchDispatcher_i::_removeFromQueue"
+    },
+    {
+      "id": "flowGetId",
+      "type": "Method",
+      "label": "PosFlowBatchDispatcher_i::getNextFlowBatchIdentifier"
+    },
+    {
+      "id": "getFlowDispatcher",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::getFlowBatchDispatcher"
+    },
+    {
+      "id": "sqlGetFlowDispatcher",
+      "type": "Method",
+      "label": "PosDispatchingManager_i::_getFlowBatchDispatcher"
+    },
+    {
+      "id": "flowSetLots",
+      "type": "Method",
+      "label": "PosFlowBatch_i::setLots"
+    },
+    {
+      "id": "flowSetMachine",
+      "type": "Method",
+      "label": "PosFlowBatch_i::setMachine"
+    },
+    {
+      "id": "flowRemoveLot",
+      "type": "Method",
+      "label": "PosFlowBatch_i::removeLot"
+    },
+    {
+      "id": "flowRemoveAllLots",
+      "type": "Method",
+      "label": "PosFlowBatch_i::removeAllLots"
+    },
+    {
+      "id": "lotSetFlowBatch",
+      "type": "Method",
+      "label": "PosLot_i::setFlowBatch"
+    },
+    {
+      "id": "FRFLWDP",
+      "type": "Table",
+      "label": "FRFLWDP"
+    },
+    {
+      "id": "FRFLWDP_LOT",
+      "type": "Table",
+      "label": "FRFLWDP_LOT"
+    },
+    {
+      "id": "flowQueueKeyScope",
+      "type": "Rule",
+      "label": "流程批队列按 LOT_KEY 查重和删除，不附加 dispatcher key 谓词"
+    },
+    {
+      "id": "flowIdRule",
+      "type": "Rule",
+      "label": "按日期和六位计数分配编号，跨日与 999999 回绕后重新加一"
+    },
+    {
+      "id": "flowDispatcherModeRule",
+      "type": "Rule",
+      "label": "非 TRANSIENT 空引用创建对象；TRANSIENT 查询数据库且多行异常"
+    },
+    {
+      "id": "flowSetLotsRule",
+      "type": "Rule",
+      "label": "已有成员拒绝重设，逐项防重复并绑定 Lot；首个 Lot 决定操作计数"
+    },
+    {
+      "id": "flowSizeRule",
+      "type": "Rule",
+      "label": "setLots 内的 FlowBatchSize 为各 Lot 第一只 container 标识去重数"
+    },
+    {
+      "id": "flowMachineRule",
+      "type": "Rule",
+      "label": "仍绑定其他有效设备时拒绝预留，空输入取消关系"
+    },
+    {
+      "id": "conditionalState",
+      "type": "Method",
+      "label": "PosMachineState_i::isConditionalAvailable"
+    },
+    {
+      "id": "conditionalSubtype",
+      "type": "Method",
+      "label": "PosMachineState_i::isConditionalAvailableFor"
+    },
+    {
+      "id": "machineAddFlow",
+      "type": "Method",
+      "label": "PosMachine_i::addFlowBatch"
+    },
+    {
+      "id": "machineRemoveFlow",
+      "type": "Method",
+      "label": "PosMachine_i::removeFlowBatch"
+    },
+    {
+      "id": "machineSetFlowMax",
+      "type": "Method",
+      "label": "PosMachine_i::setFlowBatchMaxCount"
+    },
+    {
+      "id": "recipeForLot",
+      "type": "Method",
+      "label": "PosLogicalRecipe_i::findMachineRecipeFor"
+    },
+    {
+      "id": "settingForLot",
+      "type": "Method",
+      "label": "PosLogicalRecipe_i::findDefaultSettingFor"
+    },
+    {
+      "id": "recipeParameters",
+      "type": "Method",
+      "label": "PosLogicalRecipe_i::findRecipeParametersForSubLotType"
+    },
+    {
+      "id": "defaultItems",
+      "type": "Method",
+      "label": "PosLogicalRecipe_i::findDefaultSettingItemsForSubLotType"
+    },
+    {
+      "id": "specificItems",
+      "type": "Method",
+      "label": "PosLogicalRecipe_i::findMachineSpecificItemsForSubLotType"
+    },
+    {
+      "id": "inhibitForEntities",
+      "type": "Method",
+      "label": "PosEntityInhibitManager_i::allEntityInhibitRecordsForLotEntities"
+    },
+    {
+      "id": "inhibitQuery",
+      "type": "Method",
+      "label": "PosEntityInhibitManager_i::getEntityInhibitRecordsFor"
+    },
+    {
+      "id": "lotException",
+      "type": "Method",
+      "label": "PosEntityInhibit_i::getExceptionLotRecord"
+    },
+    {
+      "id": "stateInfoDisabled",
+      "type": "Method",
+      "label": "PosMachineState_i::setEquipmentStateInfo"
+    },
+    {
+      "id": "resourceTruthRule",
+      "type": "Rule",
+      "label": "命名资源全部匹配；资源不存在总失败；条件可用按 subLotType 成员关系取正反"
+    },
+    {
+      "id": "flowModeRule",
+      "type": "Rule",
+      "label": "MaxCount 正数选择集合模式；addFlowBatch 本体无 count<max 校验"
+    },
+    {
+      "id": "flowModeSwitchRule",
+      "type": "Rule",
+      "label": "0 与正数互切且存在 FlowBatch 关联时拒绝"
+    },
+    {
+      "id": "parameterOverlayRule",
+      "type": "Rule",
+      "label": "按参数名覆盖：设备基础值 < 默认设置 < 设备专用设置"
+    },
+    {
+      "id": "lotRecipeInhibitRule",
+      "type": "Rule",
+      "label": "仅配置值1且非空资源要求匹配分支检查实体限制；任一限制无该 Lot 例外则跳过候选"
+    },
+    {
+      "id": "inhibitThresholdRule",
+      "type": "Rule",
+      "label": "阈值和实体候选行数决定逐条或动态 SQL 路径，时间及 subtype 筛选写法不同"
+    },
+    {
+      "id": "stateInfoDisabledRule",
+      "type": "Rule",
+      "label": "该版本 setEquipmentStateInfo 直接抛异常，不能以 __XXX 方法替代公开入口语义"
+    },
+    {
+      "id": "FRENTINHBT",
+      "type": "Table",
+      "label": "FRENTINHBT"
+    },
+    {
+      "id": "FRENTINHBT_ENTTY",
+      "type": "Table",
+      "label": "FRENTINHBT_ENTTY"
+    },
+    {
+      "id": "FRENTINHBT_SLOTTP",
+      "type": "Table",
+      "label": "FRENTINHBT_SLOTTP"
+    },
+    {
+      "id": "inhibitByKey",
+      "type": "Method",
+      "label": "PosEntityInhibitManager_i::findEntityInhibitRecordByKey"
+    },
+    {
+      "id": "eventRemove",
+      "type": "Method",
+      "label": "PosEventManager_i::removeEvent"
+    },
+    {
+      "id": "eventAddFIFO",
+      "type": "Method",
+      "label": "PosEventBase_i::addFIFOData"
+    },
+    {
+      "id": "eventRemoveFIFO",
+      "type": "Method",
+      "label": "PosEventBase_i::removeFIFOData"
+    },
+    {
+      "id": "eventAllFIFO",
+      "type": "Method",
+      "label": "PosEventBase_i::allFIFOData"
+    },
+    {
+      "id": "eventHoldSet",
+      "type": "Method",
+      "label": "PosLotHoldEvent_i::setEventData"
+    },
+    {
+      "id": "eventHoldGet",
+      "type": "Method",
+      "label": "PosLotHoldEvent_i::getEventData"
+    },
+    {
+      "id": "eventRegister",
+      "type": "Method",
+      "label": "PosEventManager_i::registWatchDog"
+    },
+    {
+      "id": "eventUnregister",
+      "type": "Method",
+      "label": "PosEventManager_i::unregistWatchDog"
+    },
+    {
+      "id": "eventHoldFactory",
+      "type": "Method",
+      "label": "SPEventManagementObjectFactory_i::newPosLotHoldEvent"
+    },
+    {
+      "id": "eventFifoSave",
+      "type": "Method",
+      "label": "CollectionHelper_FREVLHLD_FIFO::save"
+    },
+    {
+      "id": "eventFifoInsert",
+      "type": "Method",
+      "label": "Writer_FREVLHLD_FIFO::singleInsert"
+    },
+    {
+      "id": "eventFifoUpdate",
+      "type": "Method",
+      "label": "Writer_FREVLHLD_FIFO::update"
+    },
+    {
+      "id": "eventFifoDelete",
+      "type": "Method",
+      "label": "Writer_FREVLHLD_FIFO::deleteFrom"
+    },
+    {
+      "id": "eventFifoDeleteAll",
+      "type": "Method",
+      "label": "Writer_FREVLHLD_FIFO::deleteAll"
+    },
+    {
+      "id": "eventFifoEnqueue",
+      "type": "Method",
+      "label": "Writer_FREVLHLD_FIFO::insertInto"
+    },
+    {
+      "id": "eventNoSubscriberRule",
+      "type": "Rule",
+      "label": "没有匹配 watchdog 时 createEvent 返回 nil，之前已写记录创建时间"
+    },
+    {
+      "id": "eventDistributionRule",
+      "type": "Rule",
+      "label": "分流配置值1时查询 FIEVENT，正 MAX_COUNT 随机选择编号，否则保留原名"
+    },
+    {
+      "id": "eventFIFOKeyRule",
+      "type": "Rule",
+      "label": "按最终 watchdog 名防重复；已有同名项不覆盖"
+    },
+    {
+      "id": "eventCleanupRule",
+      "type": "Rule",
+      "label": "移除指定名称 FIFO 项后，无剩余项才删除事件"
+    },
+    {
+      "id": "eventRegisterNoopRule",
+      "type": "Rule",
+      "label": "watchdog 注册及注销当前实现均为空方法"
+    },
+    {
+      "id": "eventPayloadRule",
+      "type": "Rule",
+      "label": "LotHold 具体负载校验并复制；新建标志为真时禁止 getEventData"
+    },
+    {
+      "id": "eventFIFOCollection",
+      "type": "Collection",
+      "label": "PosEventBase_i::theFIFOList"
+    },
+    {
+      "id": "eventHoldDOFIFO",
+      "type": "Collection",
+      "label": "PosLotHoldEvent_DO_i::theDB_FIFOList"
+    },
+    {
+      "id": "FRWATCHDOG",
+      "type": "Table",
+      "label": "FRWATCHDOG"
+    },
+    {
+      "id": "FIEVENT",
+      "type": "Table",
+      "label": "FIEVENT"
+    },
+    {
+      "id": "FREVLHLD_FIFO",
+      "type": "Table",
+      "label": "FREVLHLD_FIFO"
+    },
+    {
+      "id": "dcValidate",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doValidCheck"
+    },
+    {
+      "id": "dcConvert",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doValueConversion"
+    },
+    {
+      "id": "dcCalculate",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalculation"
+    },
+    {
+      "id": "dcSet170",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::setDCDefinitionInfo__170"
+    },
+    {
+      "id": "dcSetInternal",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::setDCDefinitionInfo__XXX"
+    },
+    {
+      "id": "dcSpecSet",
+      "type": "Method",
+      "label": "PosDataCollectionSpecification_i::setDCSpecificationInfo"
+    },
+    {
+      "id": "dcSpecSet101",
+      "type": "Method",
+      "label": "PosDataCollectionSpecification_i::setDCSpecificationInfo__101"
+    },
+    {
+      "id": "dcSpecSetInternal",
+      "type": "Method",
+      "label": "PosDataCollectionSpecification_i::setDCSpecificationInfo__XXX"
+    },
+    {
+      "id": "dcTotal",
+      "type": "Method",
+      "label": "PosDataCollectionSpecification_i::getTotalResultForSpecCheck"
+    },
+    {
+      "id": "dcCalcMean",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcMean"
+    },
+    {
+      "id": "dcCalcStdDev",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcStdDev"
+    },
+    {
+      "id": "dcCalcRange",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcRange"
+    },
+    {
+      "id": "dcCalcMin",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcMin"
+    },
+    {
+      "id": "dcCalcMax",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcMax"
+    },
+    {
+      "id": "dcCalcUniformity",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcUniformity"
+    },
+    {
+      "id": "dcInputRule",
+      "type": "Rule",
+      "label": "Raw 校验跳过空及星号，检查长度、数值范围及尾字符"
+    },
+    {
+      "id": "dcConversionRule",
+      "type": "Rule",
+      "label": "Raw 转换独立于校验，星号标记缺失，不检查 sscanf 返回值"
+    },
+    {
+      "id": "dcCalculationRule",
+      "type": "Rule",
+      "label": "Derived 按输入顺序原地计算，空收集和标准差单样本为#"
+    },
+    {
+      "id": "dcSummaryRule",
+      "type": "Rule",
+      "label": "已有结果按字符串取较大值，全部星号或空输入为星号；动作码去重但不执行"
+    },
+    {
+      "id": "dcSpecDisabledRule",
+      "type": "Rule",
+      "label": "旧规格配置入口明确禁用；__101 调用 __XXX 重建集合"
+    },
+    {
+      "id": "dcUniformityRule",
+      "type": "Rule",
+      "label": "Uniformity=(max-min)/(2*mean)，不乘100或检查均值0"
+    },
+    {
+      "id": "dcDefinitionItems",
+      "type": "Collection",
+      "label": "PosDataCollectionDefinition_i::theDCItems"
+    },
+    {
+      "id": "dcSpecifications",
+      "type": "Collection",
+      "label": "PosDataCollectionSpecification_i::theDCSpecs"
+    },
+    {
+      "id": "dcSpecDefinitions",
+      "type": "Collection",
+      "label": "PosDataCollectionSpecification_i::theDataCollectionDefinitions"
+    },
+    {
+      "id": "dcDelta",
+      "type": "Method",
+      "label": "PosDataCollectionDefinition_i::doCalcDelta"
+    },
+    {
+      "id": "dcExpression",
+      "type": "Method",
+      "label": "convertFromCalculationExpression"
+    },
+    {
+      "id": "operationSpecCheck",
+      "type": "Method",
+      "label": "PosProcessOperation_i::doSpecCheck"
+    },
+    {
+      "id": "operationCollectedByWafer",
+      "type": "Method",
+      "label": "PosProcessOperation_i::findCollectedDataByWafer"
+    },
+    {
+      "id": "operationDCCollection",
+      "type": "Collection",
+      "label": "PosProcessOperation_i::theAssignedDataCollections"
+    },
+    {
+      "id": "operationLimitRule",
+      "type": "Rule",
+      "label": "工序规格快照判限：screen上/下、spec上/下、control上/下，命中即停，等于限值不越界"
+    },
+    {
+      "id": "dcDeltaRule",
+      "type": "Rule",
+      "label": "Delta 按表达式顺序决定前道减本次或本次减前道；前道结果5/6的排除取决配置"
+    },
+    {
+      "id": "operationGetDCDef",
+      "type": "Method",
+      "label": "PosProcessOperation_i::getAssignedDCDef"
+    },
+    {
+      "id": "operationSetDCDef",
+      "type": "Method",
+      "label": "PosProcessOperation_i::setAssignedDCDef"
+    },
+    {
+      "id": "operationSetDCInfo",
+      "type": "Method",
+      "label": "PosProcessOperation_i::setDataCollectionInfo"
+    },
+    {
+      "id": "operationSetStartInfo",
+      "type": "Method",
+      "label": "PosProcessOperation_i::setActualStartInfo"
+    },
+    {
+      "id": "operationGetStartInfo",
+      "type": "Method",
+      "label": "PosProcessOperation_i::getActualStartInfo"
+    },
+    {
+      "id": "operationSetDCItems",
+      "type": "Method",
+      "label": "PosProcessOperation_i::setAssignedDataCollectionItemInfo"
+    },
+    {
+      "id": "operationGetDCItems",
+      "type": "Method",
+      "label": "PosProcessOperation_i::getAssignedDataCollectionItemInfo"
+    },
+    {
+      "id": "dcDefinitionGetterRule",
+      "type": "Rule",
+      "label": "定义 getter 按已分配采集列表第0项查定义，不读取 setter 写入的独立字段"
+    },
+    {
+      "id": "dcSnapshotRule",
+      "type": "Rule",
+      "label": "开工和采集信息 setter 保存调用者提供的快照，本方法未重新构建最新规格限值"
+    },
+    {
+      "id": "dcItemsUpdateRule",
+      "type": "Rule",
+      "label": "局部更新仅替换首个匹配定义的 dcItems，未匹配不追加也不显式抛错，不刷新规格"
+    },
+    {
+      "id": "lotpoBase",
+      "type": "Method",
+      "label": "setLotPOBaseInfo"
+    },
+    {
+      "id": "lotpoSet",
+      "type": "Method",
+      "label": "setLotPO"
+    },
+    {
+      "id": "lotpoDelete",
+      "type": "Method",
+      "label": "deleteLotPO"
+    },
+    {
+      "id": "FRLOTPO",
+      "type": "Table",
+      "label": "FRLOTPO"
+    },
+    {
+      "id": "FRLOTPO_DC",
+      "type": "Table",
+      "label": "FRLOTPO_DC"
+    },
+    {
+      "id": "FRLOTPO_DRBL",
+      "type": "Table",
+      "label": "FRLOTPO_DRBL"
+    },
+    {
+      "id": "lotpoProjectionRule",
+      "type": "Rule",
+      "label": "维护表只投影采集定义/规格 ID；相同定义保留输入首项，不保存完整限值或测量值"
+    },
+    {
+      "id": "lotpoMissingRule",
+      "type": "Rule",
+      "label": "setLotPO 按 PO_OBJ 查不到主记录直接 rc=0，不执行插入"
+    },
+    {
+      "id": "lotpoBaseRule",
+      "type": "Rule",
+      "label": "基础信息刷新清空设备/配方 ID 及 DC/耐用品关系，不在本函数自动重建"
+    },
+    {
+      "id": "persistenceDeleteSample1",
+      "type": "Method",
+      "label": "Writer_FRPPPTSET::deleteFrom @poscimfw/pabcl/U_ppptsedo.sqx:79"
+    },
+    {
+      "id": "FRPPPTSET",
+      "type": "Table",
+      "label": "FRPPPTSET"
+    },
+    {
+      "id": "persistenceDeleteSample2",
+      "type": "Method",
+      "label": "Writer_FRPPPTSET_BASE::deleteFrom @poscimfw/pabcl/U_ppptsedo.sqx:171"
+    },
+    {
+      "id": "FRPPPTSET_BASE",
+      "type": "Table",
+      "label": "FRPPPTSET_BASE"
+    },
+    {
+      "id": "persistenceDeleteSample3",
+      "type": "Method",
+      "label": "Writer_FRCODE_UDATA::deleteFrom @poscimfw/pcdmg/U_pcodedo.sqx:205"
+    },
+    {
+      "id": "FRCODE_UDATA",
+      "type": "Table",
+      "label": "FRCODE_UDATA"
+    },
+    {
+      "id": "persistenceDeleteSample4",
+      "type": "Method",
+      "label": "Writer_FRRTCLSET_DF_RGRP::deleteFrom @poscimfw/pdrmg/U_prtclsdo.sqx:538"
+    },
+    {
+      "id": "FRRTCLSET_DF_RGRP",
+      "type": "Table",
+      "label": "FRRTCLSET_DF_RGRP"
+    },
+    {
+      "id": "persistenceDeleteSample5",
+      "type": "Method",
+      "label": "Writer_FRRTCLSET_DF_RGRP::deleteFrom @poscimfw/pdrmg/U_prtclsdo.sqx:559"
+    },
+    {
+      "id": "persistenceDeleteSample6",
+      "type": "Method",
+      "label": "Writer_FREQP_CAST_LOT::deleteFrom @poscimfw/pmcmg/U_pmcdo.sqx:1501"
+    },
+    {
+      "id": "FREQP_CAST_LOT",
+      "type": "Table",
+      "label": "FREQP_CAST_LOT"
+    },
+    {
+      "id": "persistenceDeleteSample7",
+      "type": "Method",
+      "label": "Writer_FREQP_CAST_LOT::deleteFrom @poscimfw/pmcmg/U_pmcdo.sqx:1522"
+    },
+    {
+      "id": "helperMarkerReturnRule",
+      "type": "Rule",
+      "label": "checkDirty 输出 SQL 计划，返回值是 oldTableMarker && !deleteAll，不是普通 dirty 标志"
+    },
+    {
+      "id": "helperSaveModeRule",
+      "type": "Rule",
+      "label": "按更新配置执行计划或全删重插；序列倒序遍历，嵌套序列分父子范围"
+    },
+    {
+      "id": "sequenceTravelRule",
+      "type": "Rule",
+      "label": "Travel 用 MERGE 复制到偏移目标，当前方法不删除源区间"
+    },
+    {
+      "id": "collectionReview0",
+      "type": "Method",
+      "label": "CollectionHelper_FRPPPTSET_BASE::load"
+    },
+    {
+      "id": "collectionReview1",
+      "type": "Method",
+      "label": "CollectionHelper_FRPPPTSET_BASE::checkDirty"
+    },
+    {
+      "id": "collectionReview2",
+      "type": "Method",
+      "label": "CollectionHelper_FRPPPTSET_BASE::save"
+    },
+    {
+      "id": "collectionReview3",
+      "type": "Method",
+      "label": "CollectionHelper_FRCODE_UDATA::load"
+    },
+    {
+      "id": "collectionReview4",
+      "type": "Method",
+      "label": "CollectionHelper_FRCODE_UDATA::checkDirty"
+    },
+    {
+      "id": "collectionReview5",
+      "type": "Method",
+      "label": "CollectionHelper_FRCODE_UDATA::save"
+    },
+    {
+      "id": "collectionReview6",
+      "type": "Method",
+      "label": "CollectionHelper_FRRTCLSET_DF_RGRP::load"
+    },
+    {
+      "id": "collectionReview7",
+      "type": "Method",
+      "label": "CollectionHelper_FRRTCLSET_DF_RGRP::checkDirty"
+    },
+    {
+      "id": "collectionReview8",
+      "type": "Method",
+      "label": "CollectionHelper_FRRTCLSET_DF_RGRP::save"
+    },
+    {
+      "id": "collectionReview9",
+      "type": "Method",
+      "label": "Writer_FRCODE_UDATA::shift"
+    },
+    {
+      "id": "collectionReview10",
+      "type": "Method",
+      "label": "Writer_FRCODE_UDATA::travel"
+    },
+    {
+      "id": "collectionReview11",
+      "type": "Method",
+      "label": "CIMFW_DO_SequenceHelperBase::searchOptimalSQL"
+    },
+    {
+      "id": "collectionReview12",
+      "type": "Method",
+      "label": "CIMFW_DO_SequenceInSequenceHelperBase::searchOptimalSQL"
+    },
+    {
+      "id": "plannerSearch",
+      "type": "Method",
+      "label": "doSearchOptimalSQL"
+    },
+    {
+      "id": "plannerThreshold",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::searchOptimalSQL(threshold)"
+    },
+    {
+      "id": "plannerCore",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::searchOptimalSQL(core)"
+    },
+    {
+      "id": "plannerAssemble",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::assembleSQL"
+    },
+    {
+      "id": "plannerCostRule",
+      "type": "Rule",
+      "label": "阈值=minCost+(maxCost-minCost)*配置比例，受编辑图和成本模型限制，不是数据库实测耗时"
+    },
+    {
+      "id": "plannerOutputRule",
+      "type": "Rule",
+      "label": "编辑图回溯生成 callback 计划，返回 deleteAll 标志，不等于 SQL 已执行"
+    },
+    {
+      "id": "plannerInitialize",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::initialize"
+    },
+    {
+      "id": "plannerMaxCost",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::maximalCost"
+    },
+    {
+      "id": "codeUDReader",
+      "type": "Method",
+      "label": "Reader_FRCODE_UDATA::Reader_FRCODE_UDATA"
+    },
+    {
+      "id": "codeUDCompare",
+      "type": "Method",
+      "label": "CollectionHelper_FRCODE_UDATA::compareCollectionItemToHostVars"
+    },
+    {
+      "id": "plannerGraphRule",
+      "type": "Rule",
+      "label": "搜索范围由头尾对角线和长度配置限制，不无条件枚举完整矩阵"
+    },
+    {
+      "id": "codeUDCompareRule",
+      "type": "Rule",
+      "label": "只比较 NAME/TYPE/VALUE/ORIG 的列长范围，nullptr 按空串，返回 true 表示存在差异"
+    },
+    {
+      "id": "plannerInitializeWrapper",
+      "type": "Method",
+      "label": "CIMFW_DO_EditGraph::initialize(3 arguments)"
+    },
+    {
+      "id": "cassetteAddWafer",
+      "type": "Method",
+      "label": "Cassette_i::addWafer_atPosition"
+    },
+    {
+      "id": "cassetteRemoveWafer",
+      "type": "Method",
+      "label": "Cassette_i::removeWafer_fromPosition"
+    },
+    {
+      "id": "cassetteTransfer",
+      "type": "Method",
+      "label": "Cassette_i::transferWafers_toCassette"
+    },
+    {
+      "id": "cassetteRemoveLot",
+      "type": "Method",
+      "label": "Cassette_i::removeLot"
+    },
+    {
+      "id": "cassetteUnloadLot",
+      "type": "Method",
+      "label": "PosCassette_i::unloadLot"
+    },
+    {
+      "id": "positionalAdd",
+      "type": "Method",
+      "label": "PositionalContainer_i::addMaterial_atPosition"
+    },
+    {
+      "id": "positionalRemove",
+      "type": "Method",
+      "label": "PositionalContainer_i::removeMaterial_fromPosition"
+    },
+    {
+      "id": "containerAdd",
+      "type": "Method",
+      "label": "MaterialContainer_i::addMaterial"
+    },
+    {
+      "id": "containerRemove",
+      "type": "Method",
+      "label": "MaterialContainer_i::removeMaterial"
+    },
+    {
+      "id": "materialSetContainer",
+      "type": "Method",
+      "label": "Material_i::setMaterialContainer"
+    },
+    {
+      "id": "lotAddContainer",
+      "type": "Method",
+      "label": "Lot_i::addMaterialContainer"
+    },
+    {
+      "id": "lotRemoveContainer",
+      "type": "Method",
+      "label": "Lot_i::removeMaterialContainer"
+    },
+    {
+      "id": "cassetteAvailable",
+      "type": "Method",
+      "label": "PosCassette_i::isLotProcessAvailable"
+    },
+    {
+      "id": "cassetteTransferRule",
+      "type": "Rule",
+      "label": "先检查目标空位数，再逐片源移除/目标添加，不在本方法原子回滚"
+    },
+    {
+      "id": "cassetteLotCountRule",
+      "type": "Rule",
+      "label": "首次Lot建计数并绑定反向载具，移除后计数恰0才解绑"
+    },
+    {
+      "id": "cassetteAvailabilityRule",
+      "type": "Rule",
+      "label": "Available/InUse 下按非空输入的所有subLotType检查条件可用；本方法不检查Hold/库存/容量"
+    },
+    {
+      "id": "lotContainerIdentityRule",
+      "type": "Rule",
+      "label": "Lot载具序列按字符串化对象引用去重，不是按业务标识"
+    },
+    {
+      "id": "cassetteUnloadRule",
+      "type": "Rule",
+      "label": "unloadLot按Lot物料位置移除，忽略若干位置/无容器异常，未逐项核对本盒ID"
+    },
+    {
+      "id": "splitBase",
+      "type": "Method",
+      "label": "ProductManager_i::createSplitLotsFrom"
+    },
+    {
+      "id": "splitPos",
+      "type": "Method",
+      "label": "PosProductManager_i::createSplitLotsFrom"
+    },
+    {
+      "id": "transferLotProducts",
+      "type": "Method",
+      "label": "Lot_i::transferProducts_toLot"
+    },
+    {
+      "id": "lotAddMaterial",
+      "type": "Method",
+      "label": "Lot_i::addMaterial"
+    },
+    {
+      "id": "productSetLot",
+      "type": "Method",
+      "label": "Product_i::setLot"
+    },
+    {
+      "id": "lotRefreshQuantity",
+      "type": "Method",
+      "label": "PosLot_i::refreshQuantity"
+    },
+    {
+      "id": "lotSplitState",
+      "type": "Method",
+      "label": "PosLot_i::setSplitLotState"
+    },
+    {
+      "id": "splitFirstChildRule",
+      "type": "Rule",
+      "label": "基类可遍历多个splitData，但Pos扩展只取retVal[0]处理，是否单子批约束待证"
+    },
+    {
+      "id": "splitQuantityRule",
+      "type": "Rule",
+      "label": "首子批originalQuantity设所有输入片数之和；父originalQuantity减该总数"
+    },
+    {
+      "id": "transferMembersRule",
+      "type": "Rule",
+      "label": "逐片源删除、目标加入、改Lot引用；不等于物理转盒或完整合批交易"
+    },
+    {
+      "id": "refreshQuantityRule",
+      "type": "Rule",
+      "label": "从实际成员重新统计Control/Product及未STBAllocated数量"
+    },
+    {
+      "id": "splitHoldRule",
+      "type": "Rule",
+      "label": "先复制父状态，再在首子批OnHold时清Hold状态；不能据中间状态推断最终值"
+    },
+    {
+      "id": "lotBaseInit",
+      "type": "Method",
+      "label": "Lot_i::Lot_init"
+    },
+    {
+      "id": "lotPosInit",
+      "type": "Method",
+      "label": "PosLot_i::PosLot_init"
+    },
+    {
+      "id": "joinBase",
+      "type": "Method",
+      "label": "ProductManager_i::joinAll_into"
+    },
+    {
+      "id": "joinPos",
+      "type": "Method",
+      "label": "PosProductManager_i::joinAll_into"
+    },
+    {
+      "id": "emptyLotBase",
+      "type": "Method",
+      "label": "Lot_i::makeEmptied"
+    },
+    {
+      "id": "emptyLotPos",
+      "type": "Method",
+      "label": "PosLot_i::makeEmptied"
+    },
+    {
+      "id": "lotInitializationRule",
+      "type": "Rule",
+      "label": "可见init设默认状态/空集合/零计数并记录splitFromLot，不是父属性全量复制"
+    },
+    {
+      "id": "joinQuantityRule",
+      "type": "Rule",
+      "label": "合批目标originalQuantity加源originalQuantity，再刷新两批当前数量；本方法不清源originalQuantity"
+    },
+    {
+      "id": "emptyLotRule",
+      "type": "Rule",
+      "label": "Active/Finished可设Emptied；Active先归档移出家族，家族无当前批可完成请求"
+    },
+    {
+      "id": "emptyStackedRule",
+      "type": "Rule",
+      "label": "Pos makeEmptied 在基类修改和可选维护表删除之后才检查Stacked"
+    },
+    {
+      "id": "planningCreateLotSchedule",
+      "type": "Method",
+      "label": "PosPlanManager_i::createLotScheduleNamed"
+    },
+    {
+      "id": "planningFindLotSchedule",
+      "type": "Method",
+      "label": "PosPlanManager_i::findLotScheduleNamed"
+    },
+    {
+      "id": "planningSqlFindLotSchedule",
+      "type": "Method",
+      "label": "PosPlanManager_i::_findLotScheduleNamed"
+    },
+    {
+      "id": "planningCreateOperationSchedule",
+      "type": "Method",
+      "label": "PosLotSchedule_i::createLotOperationScheduleNamed"
+    },
+    {
+      "id": "planningRemoveOperationSchedule",
+      "type": "Method",
+      "label": "PosLotSchedule_i::removeLotOperationSchedule"
+    },
+    {
+      "id": "planningRemoveAllOperations",
+      "type": "Method",
+      "label": "PosLotSchedule_i::removeAllLotOperationSchedules"
+    },
+    {
+      "id": "dispatchEDD",
+      "type": "Method",
+      "label": "PosWhatNextEDD_i::dispatchFor_inSQL"
+    },
+    {
+      "id": "operationScheduleDuplicateRule",
+      "type": "Rule",
+      "label": "子工序计划显式先检查标识重复；不能推广到管理器创建LotSchedule"
+    },
+    {
+      "id": "scheduleLookupRule",
+      "type": "Rule",
+      "label": "Transient重名时逐项查询FRLOT引用，无ORDER BY；不等同重名必异常"
+    },
+    {
+      "id": "dispatchEDDRule",
+      "type": "Rule",
+      "label": "EDD只读取FRLOT.PLAN_END_TIME作为排序key，SQL非0不加入结果，不读取工序计划列表"
+    },
+    {
+      "id": "FRLOTSCHE",
+      "type": "Table",
+      "label": "FRLOTSCHE"
+    },
+    {
+      "id": "ProductRequestPlanning",
+      "type": "StateDimension",
+      "label": "ProductRequest PlanningState"
+    },
+    {
+      "id": "ProductRequestProduction",
+      "type": "StateDimension",
+      "label": "ProductRequest ProductionState"
+    },
+    {
+      "id": "requestNotPlanned",
+      "type": "Method",
+      "label": "ProductRequest_i::makeNotPlanned"
+    },
+    {
+      "id": "requestNotPlannedRule",
+      "type": "Rule",
+      "label": "Undefined或Planned→NotPlanned"
+    },
+    {
+      "id": "requestPlanned",
+      "type": "Method",
+      "label": "ProductRequest_i::makePlanned"
+    },
+    {
+      "id": "requestPlannedRule",
+      "type": "Rule",
+      "label": "NotPlanned→Planned"
+    },
+    {
+      "id": "requestNotInRelease",
+      "type": "Method",
+      "label": "ProductRequest_i::makeNotInRelease"
+    },
+    {
+      "id": "requestNotInReleaseRule",
+      "type": "Rule",
+      "label": "Undefined→NotInRelease"
+    },
+    {
+      "id": "requestInRelease",
+      "type": "Method",
+      "label": "ProductRequest_i::makeInRelease"
+    },
+    {
+      "id": "requestInReleaseRule",
+      "type": "Rule",
+      "label": "NotInRelease→InRelease"
+    },
+    {
+      "id": "requestInWork",
+      "type": "Method",
+      "label": "ProductRequest_i::makeInWork"
+    },
+    {
+      "id": "requestInWorkRule",
+      "type": "Rule",
+      "label": "InRelease或OnHold→InWork"
+    },
+    {
+      "id": "requestMakeOnHold",
+      "type": "Method",
+      "label": "ProductRequest_i::makeOnHold"
+    },
+    {
+      "id": "requestMakeOnHoldRule",
+      "type": "Rule",
+      "label": "InWork→OnHold"
+    },
+    {
+      "id": "requestCompleted",
+      "type": "Method",
+      "label": "ProductRequest_i::makeCompleted"
+    },
+    {
+      "id": "requestCompletedRule",
+      "type": "Rule",
+      "label": "仅InWork→Completed，不在本方法比较请求数量"
+    },
+    {
+      "id": "requestVendorState",
+      "type": "Method",
+      "label": "PosProductRequest_i::setAllStatesForVendorLot"
+    },
+    {
+      "id": "requestVendorStateRule",
+      "type": "Rule",
+      "label": "Vendor入口直接设置Planned/Completed，绕过普通转换守卫"
+    },
+    {
+      "id": "lotInProduction",
+      "type": "Method",
+      "label": "Lot_i::makeInProduction"
+    },
+    {
+      "id": "lotUnholdBase",
+      "type": "Method",
+      "label": "Lot_i::makeNotOnHold"
+    },
+    {
+      "id": "lotCompletedBase",
+      "type": "Method",
+      "label": "Lot_i::makeCompleted"
+    },
+    {
+      "id": "personVerifyPassword",
+      "type": "Method",
+      "label": "PosPerson_i::verifyPassword"
+    },
+    {
+      "id": "verifyPasswordCrypt",
+      "type": "Method",
+      "label": "SPVerifyPassword"
+    },
+    {
+      "id": "personAllOperable",
+      "type": "Method",
+      "label": "PosPerson_i::allOperablePrivilegesFor"
+    },
+    {
+      "id": "personAllPrivileges",
+      "type": "Method",
+      "label": "PosPerson_i::allPrivilegesFor"
+    },
+    {
+      "id": "personAddGroup",
+      "type": "Method",
+      "label": "PosPerson_i::addPrivilegeGroup"
+    },
+    {
+      "id": "personRemoveGroup",
+      "type": "Method",
+      "label": "PosPerson_i::removePrivilegeGroup"
+    },
+    {
+      "id": "groupAddPerson",
+      "type": "Method",
+      "label": "PosPrivilegeGroup_i::addPerson"
+    },
+    {
+      "id": "groupRemovePerson",
+      "type": "Method",
+      "label": "PosPrivilegeGroup_i::removePerson"
+    },
+    {
+      "id": "groupPrivileges",
+      "type": "Method",
+      "label": "PosPrivilegeGroup_i::allPrivileges"
+    },
+    {
+      "id": "localAuthRule",
+      "type": "Rule",
+      "label": "本地先验密码再判有效期；Authserver启用时本入口抛错，不转发外部服务"
+    },
+    {
+      "id": "verifyPasswordRule",
+      "type": "Rule",
+      "label": "非空EncryptedPassword优先走SPVerifyPassword，否则比较Password字符串"
+    },
+    {
+      "id": "privilegeMergeRule",
+      "type": "Rule",
+      "label": "同category/privilege合并保留已有Access，新NoAccess不覆盖；不是拒绝优先"
+    },
+    {
+      "id": "privilegeAppendRule",
+      "type": "Rule",
+      "label": "allPrivilegesFor直接追加各匹配组条目，不合并，返回category取调用参数"
+    },
+    {
+      "id": "bomSetInfo",
+      "type": "Method",
+      "label": "PosBOM_i::setBOMInfo"
+    },
+    {
+      "id": "bomAddParts",
+      "type": "Method",
+      "label": "PosBOM_i::addParts"
+    },
+    {
+      "id": "bomFindParts",
+      "type": "Method",
+      "label": "PosBOM_i::findPartsFor"
+    },
+    {
+      "id": "specGetBOM",
+      "type": "Method",
+      "label": "PosProductSpecification_i::getBOM"
+    },
+    {
+      "id": "bomFind",
+      "type": "Method",
+      "label": "PosPartsManager_i::findBOMNamed"
+    },
+    {
+      "id": "bomSQLFind",
+      "type": "Method",
+      "label": "PosPartsManager_i::_findBOMNamed"
+    },
+    {
+      "id": "bomSQLAll",
+      "type": "Method",
+      "label": "PosPartsManager_i::_allBOMs"
+    },
+    {
+      "id": "bomPartSave",
+      "type": "Method",
+      "label": "CollectionHelper_FRBOM_PARTS::save"
+    },
+    {
+      "id": "bomPartInsert",
+      "type": "Method",
+      "label": "Writer_FRBOM_PARTS::singleInsert"
+    },
+    {
+      "id": "bomPartUpdate",
+      "type": "Method",
+      "label": "Writer_FRBOM_PARTS::update"
+    },
+    {
+      "id": "bomReplaceRule",
+      "type": "Rule",
+      "label": "setBOMInfo先清集合再解析产品规格，重复标识保留首项，不累加数量"
+    },
+    {
+      "id": "bomAddRule",
+      "type": "Rule",
+      "label": "addParts对相同parts标识抛重复，未在该方法执行库存扣减"
+    },
+    {
+      "id": "bomMissingRule",
+      "type": "Rule",
+      "label": "findPartsFor未找到分支为空，返回初始化结构，默认字段依赖宏"
+    },
+    {
+      "id": "bomPartsBO",
+      "type": "Collection",
+      "label": "PosBOM_i::theParts"
+    },
+    {
+      "id": "bomPartsDO",
+      "type": "Collection",
+      "label": "PosBOM_DO_i::theDB_Parts"
+    },
+    {
+      "id": "FRBOM",
+      "type": "Table",
+      "label": "FRBOM"
+    },
+    {
+      "id": "FRBOM_PARTS",
+      "type": "Table",
+      "label": "FRBOM_PARTS"
+    },
+    {
+      "id": "FRBOM_PARTS.QUANTITY",
+      "type": "Column",
+      "label": "QUANTITY"
+    },
+    {
+      "id": "FRBOM_PARTS.SERIALCTRL_FLAG",
+      "type": "Column",
+      "label": "SERIALCTRL_FLAG"
+    },
+    {
+      "id": "locationBankConfigure",
+      "type": "Method",
+      "label": "PosBank_i::setBankInfo__XXX"
+    },
+    {
+      "id": "locationAreaConfigure",
+      "type": "Method",
+      "label": "PosArea_i::setWorkAreaInfo__XXX"
+    },
+    {
+      "id": "locationBankCheckDeletion",
+      "type": "Method",
+      "label": "PosBank_i::checkForDeletion"
+    },
+    {
+      "id": "locationBankConfigRule",
+      "type": "Rule",
+      "label": "目的Bank及标志是配置；本地未执行搬运，失败恢复依赖事务"
+    },
+    {
+      "id": "locationAreaConfigRule",
+      "type": "Rule",
+      "label": "工作区集合清空重建；SLM优先于UTS，设备反向引用通过回调维护"
+    },
+    {
+      "id": "locationBankDeleteRule",
+      "type": "Rule",
+      "label": "四类占用各自限制消息数量；返回检查消息不等于执行删除门禁"
+    },
+    {
+      "id": "FRLOT",
+      "type": "Table",
+      "label": "FRLOT"
+    }
+  ],
+  "edges": [
+    {
+      "from": "dispatcherEnqueue",
+      "type": "HAS_RULE",
+      "to": "dispatcherNoopRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 419,
+          "end_line": 505
+        }
+      ],
+      "condition": "当前源文件旧业务体在块注释中；仅跟踪宏可执行"
+    },
+    {
+      "from": "dispatcherRemove",
+      "type": "HAS_RULE",
+      "to": "dispatcherNoopRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 549,
+          "end_line": 617
+        }
+      ]
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "READS",
+      "to": "FRLOT_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2370,
+          "end_line": 2394
+        }
+      ],
+      "condition": "设备 ID 与 system key 关联；COUNT 用于容量，不等于合格数"
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "READS",
+      "to": "FRLOT",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2386,
+          "end_line": 2394
+        }
+      ]
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "HAS_RULE",
+      "to": "dispatchCandidatesRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2360,
+          "end_line": 2394
+        }
+      ]
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "HAS_RULE",
+      "to": "dispatchRuleOrder",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2445,
+          "end_line": 2517
+        }
+      ],
+      "condition": "具体策略可能排序或过滤；不推断全部算法稳定性"
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "CALLS",
+      "to": "currentWhatNext",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2436,
+          "end_line": 2439
+        }
+      ]
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "CALLS",
+      "to": "parseWhatNextParameters",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2436,
+          "end_line": 2439
+        }
+      ]
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "CALLS",
+      "to": "findWhatNextObject",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2490,
+          "end_line": 2499
+        }
+      ],
+      "condition": "从后向前按规则名解析对象，空对象异常"
+    },
+    {
+      "from": "whatNextMachine",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "strategyDispatchContract",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 2499,
+          "end_line": 2512
+        }
+      ],
+      "condition": "由已查找到的策略对象决定实际目标，不直接认定为 FIFO"
+    },
+    {
+      "from": "currentWhatNext",
+      "type": "HAS_RULE",
+      "to": "dispatchCurrentTimeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 986,
+          "end_line": 1098
+        }
+      ],
+      "condition": "依赖 current 初始化与列表顺序；方法内会标脏与改变缓存"
+    },
+    {
+      "from": "setWhatNext",
+      "type": "HAS_RULE",
+      "to": "dispatchSetFlagRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 1375,
+          "end_line": 1498
+        }
+      ],
+      "condition": "宏清理语义与全未来列表初始值仍未知"
+    },
+    {
+      "from": "parseWhatNextParameters",
+      "type": "HAS_RULE",
+      "to": "dispatchParseRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfwgls/pfwgls.cpp",
+          "line": 406,
+          "end_line": 463
+        }
+      ]
+    },
+    {
+      "from": "lotSetQueued",
+      "type": "REPLACES_COLLECTION",
+      "to": "lotQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 10479,
+          "end_line": 10506
+        }
+      ],
+      "condition": "先清空和标脏，再逐项添加；异常前的变更是否回滚未知"
+    },
+    {
+      "from": "lotSetHoldQueued",
+      "type": "REPLACES_COLLECTION",
+      "to": "lotHoldQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16140,
+          "end_line": 16151
+        }
+      ]
+    },
+    {
+      "from": "lotGetQueued",
+      "type": "READS_COLLECTION",
+      "to": "lotQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 10591,
+          "end_line": 10601
+        }
+      ],
+      "condition": "仅非 OnHold 分支读取；OnHold 返回空序列"
+    },
+    {
+      "from": "lotGetQueued",
+      "type": "HAS_RULE",
+      "to": "queuedViewRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 10591,
+          "end_line": 10601
+        }
+      ]
+    },
+    {
+      "from": "lotGetHoldQueued",
+      "type": "READS_COLLECTION",
+      "to": "lotHoldQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16194,
+          "end_line": 16199
+        }
+      ]
+    },
+    {
+      "from": "lotGetHoldQueued",
+      "type": "READS_COLLECTION",
+      "to": "lotQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16202,
+          "end_line": 16211
+        }
+      ],
+      "condition": "暂停集合为空且批次 OnHold"
+    },
+    {
+      "from": "lotGetHoldQueued",
+      "type": "HAS_RULE",
+      "to": "holdViewFallbackRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16202,
+          "end_line": 16211
+        }
+      ]
+    },
+    {
+      "from": "managerAddHold",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotGetQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 2893,
+          "end_line": 2900
+        }
+      ],
+      "condition": "批次 isNotOnHold()"
+    },
+    {
+      "from": "managerAddHold",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotGetHoldQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 2902,
+          "end_line": 2909
+        }
+      ],
+      "condition": "其他状态分支"
+    },
+    {
+      "from": "managerAddHold",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetHoldQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 2916,
+          "end_line": 2919
+        }
+      ],
+      "condition": "取得的设备集合非空"
+    },
+    {
+      "from": "managerRemoveHold",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetHoldQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 2977,
+          "end_line": 2979
+        }
+      ],
+      "condition": "总是清空暂停集合"
+    },
+    {
+      "from": "managerRemoveHold",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 2982,
+          "end_line": 2985
+        }
+      ],
+      "condition": "批次仍 OnHold 时一并清空普通集合"
+    },
+    {
+      "from": "managerMoveWIP",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 3045,
+          "end_line": 3056
+        }
+      ],
+      "condition": "暂停视图非空"
+    },
+    {
+      "from": "managerMoveWIP",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetHoldQueued",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 3062,
+          "end_line": 3067
+        }
+      ],
+      "condition": "恢复普通集合后清空暂停集合"
+    },
+    {
+      "from": "queueHelperSave",
+      "type": "SAVES_COLLECTION",
+      "to": "doQueueCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 5712,
+          "end_line": 5786
+        }
+      ],
+      "condition": "DO 侧集合；BO 与 DO 数组桥接尚缺宏证据，不创建二者等价边"
+    },
+    {
+      "from": "queueHelperSave",
+      "type": "HAS_RULE",
+      "to": "queueSaveRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 5716,
+          "end_line": 5783
+        }
+      ]
+    },
+    {
+      "from": "queueHelperSave",
+      "type": "CALLS",
+      "to": "queueWriterInsert",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 5775,
+          "end_line": 5779
+        }
+      ],
+      "condition": "操作为 Insert"
+    },
+    {
+      "from": "queueHelperSave",
+      "type": "CALLS",
+      "to": "queueWriterUpdate",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 5781,
+          "end_line": 5783
+        }
+      ],
+      "condition": "其他非 None 操作"
+    },
+    {
+      "from": "queueWriterInsert",
+      "type": "CALLS",
+      "to": "queueWriterSingle",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 2542,
+          "end_line": 2548
+        }
+      ],
+      "condition": "未启用批量插入"
+    },
+    {
+      "from": "queueWriterSingle",
+      "type": "WRITES",
+      "to": "FRLOT_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 2563,
+          "end_line": 2564
+        }
+      ]
+    },
+    {
+      "from": "queueWriterUpdate",
+      "type": "WRITES",
+      "to": "FRLOT_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/U_plotdo.sqx",
+          "line": 2622,
+          "end_line": 2622
+        }
+      ]
+    },
+    {
+      "from": "queueReader",
+      "type": "READS",
+      "to": "FRLOT_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/R_plotdo.sqx",
+          "line": 1170,
+          "end_line": 1173
+        }
+      ],
+      "condition": "按 system key 查询 EQP_ID/EQP_OBJ"
+    },
+    {
+      "from": "holdWhatNext",
+      "type": "READS",
+      "to": "FRLOT_HOLDEQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3010,
+          "end_line": 3019
+        }
+      ],
+      "condition": "第一查询未显式限制 OnHold"
+    },
+    {
+      "from": "holdWhatNext",
+      "type": "READS",
+      "to": "FRLOT_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3064,
+          "end_line": 3074
+        }
+      ],
+      "condition": "第二查询要求 OnHold"
+    },
+    {
+      "from": "holdWhatNext",
+      "type": "HAS_RULE",
+      "to": "holdSelectionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3010,
+          "end_line": 3115
+        }
+      ]
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "HAS_RULE",
+      "to": "durableSelectionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 4037,
+          "end_line": 4086
+        }
+      ]
+    },
+    {
+      "from": "holdDurableWhatNext",
+      "type": "HAS_RULE",
+      "to": "durableSelectionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 4635,
+          "end_line": 4684
+        }
+      ]
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRCAST",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3842,
+          "end_line": 3849
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRCAST_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3842,
+          "end_line": 3849
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRDRBL",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3906,
+          "end_line": 3913
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRDRBL_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3906,
+          "end_line": 3913
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRRTCLPOD",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3970,
+          "end_line": 3977
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "durableWhatNext",
+      "type": "READS",
+      "to": "FRRTCLPOD_EQP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdp.sqx",
+          "line": 3970,
+          "end_line": 3977
+        }
+      ],
+      "condition": "类别对应分支，NotOnHold 且 Waiting"
+    },
+    {
+      "from": "flowQueueAdd",
+      "type": "CALLS",
+      "to": "flowSqlAdd",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdp.cpp",
+          "line": 1828,
+          "end_line": 1832
+        }
+      ]
+    },
+    {
+      "from": "flowQueueRemove",
+      "type": "CALLS",
+      "to": "flowSqlRemove",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdp.cpp",
+          "line": 1918,
+          "end_line": 1922
+        }
+      ]
+    },
+    {
+      "from": "flowSqlAdd",
+      "type": "READS",
+      "to": "FRFLWDP_LOT",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdpdb.sqx",
+          "line": 119,
+          "end_line": 123
+        }
+      ],
+      "condition": "按 Lot identifier 查数量"
+    },
+    {
+      "from": "flowSqlAdd",
+      "type": "WRITES",
+      "to": "FRFLWDP_LOT",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdpdb.sqx",
+          "line": 123,
+          "end_line": 140
+        }
+      ],
+      "condition": "SQLCODE==0 且 count==0；保存触发不等于已提交"
+    },
+    {
+      "from": "flowSqlRemove",
+      "type": "WRITES",
+      "to": "FRFLWDP_LOT",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdpdb.sqx",
+          "line": 214,
+          "end_line": 225
+        }
+      ],
+      "condition": "查到记录后 DELETE，接受 0/100"
+    },
+    {
+      "from": "flowSqlAdd",
+      "type": "HAS_RULE",
+      "to": "flowQueueKeyScope",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdpdb.sqx",
+          "line": 119,
+          "end_line": 140
+        }
+      ]
+    },
+    {
+      "from": "flowSqlRemove",
+      "type": "HAS_RULE",
+      "to": "flowQueueKeyScope",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdpdb.sqx",
+          "line": 211,
+          "end_line": 218
+        }
+      ]
+    },
+    {
+      "from": "flowGetId",
+      "type": "HAS_RULE",
+      "to": "flowIdRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwdp.cpp",
+          "line": 298,
+          "end_line": 349
+        }
+      ],
+      "condition": "并发串行化和持久化未知"
+    },
+    {
+      "from": "getFlowDispatcher",
+      "type": "CALLS",
+      "to": "sqlGetFlowDispatcher",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 1197,
+          "end_line": 1223
+        }
+      ],
+      "condition": "仅 TRANSIENT_MANAGER 编译分支"
+    },
+    {
+      "from": "getFlowDispatcher",
+      "type": "HAS_RULE",
+      "to": "flowDispatcherModeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmg.cpp",
+          "line": 1197,
+          "end_line": 1241
+        }
+      ]
+    },
+    {
+      "from": "sqlGetFlowDispatcher",
+      "type": "READS",
+      "to": "FRFLWDP",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pdpmgdb.sqx",
+          "line": 161,
+          "end_line": 187
+        }
+      ],
+      "condition": "count>1 显式异常；零行行为依赖转换宏"
+    },
+    {
+      "from": "flowSetLots",
+      "type": "HAS_RULE",
+      "to": "flowSetLotsRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 861,
+          "end_line": 901
+        }
+      ],
+      "condition": "添加本地成员后调用 Lot 绑定，异常事务恢复未证实"
+    },
+    {
+      "from": "flowSetLots",
+      "type": "HAS_RULE",
+      "to": "flowSizeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 1200,
+          "end_line": 1253
+        }
+      ],
+      "condition": "仅此方法计算口径，不是全生命周期不可变定义"
+    },
+    {
+      "from": "flowSetLots",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetFlowBatch",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 888,
+          "end_line": 901
+        }
+      ],
+      "condition": "Lot 已属于其他流程批时映射指派异常"
+    },
+    {
+      "from": "flowSetMachine",
+      "type": "HAS_RULE",
+      "to": "flowMachineRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 427,
+          "end_line": 481
+        }
+      ],
+      "condition": "已绑定同一设备时不进入替换分支"
+    },
+    {
+      "from": "flowRemoveLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSetFlowBatch",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 638,
+          "end_line": 647
+        }
+      ],
+      "condition": "先从本地集合移除，再清空 Lot 的反向引用"
+    },
+    {
+      "from": "flowRemoveAllLots",
+      "type": "CALLS",
+      "to": "flowRemoveLot",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pflwbch.cpp",
+          "line": 1441,
+          "end_line": 1456
+        }
+      ],
+      "condition": "逐项删除，忽略 LotNotFoundSignal"
+    },
+    {
+      "from": "lotSetFlowBatch",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "flowRemoveLot",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 2464,
+          "end_line": 2480
+        }
+      ],
+      "condition": "输入 nil 时先清空本地引用，再尝试移除旧反向关系"
+    },
+    {
+      "from": "resourceMatch",
+      "type": "HAS_RULE",
+      "to": "resourceTruthRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 13943,
+          "end_line": 14009
+        }
+      ]
+    },
+    {
+      "from": "resourceMatch",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "conditionalState",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 13935,
+          "end_line": 14016
+        }
+      ]
+    },
+    {
+      "from": "resourceMatch",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "conditionalSubtype",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 13935,
+          "end_line": 14016
+        }
+      ]
+    },
+    {
+      "from": "machineAddFlow",
+      "type": "HAS_RULE",
+      "to": "flowModeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 21427,
+          "end_line": 21536
+        }
+      ]
+    },
+    {
+      "from": "machineSetFlowMax",
+      "type": "HAS_RULE",
+      "to": "flowModeSwitchRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 21851,
+          "end_line": 21884
+        }
+      ]
+    },
+    {
+      "from": "machineAddFlow",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "flowSetMachine",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 21427,
+          "end_line": 21536
+        }
+      ],
+      "condition": "添加成功的相关分支维护反向关联"
+    },
+    {
+      "from": "machineRemoveFlow",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "flowSetMachine",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 21561,
+          "end_line": 21649
+        }
+      ],
+      "condition": "移除前按分支清空批次设备关联"
+    },
+    {
+      "from": "recipeParameters",
+      "type": "HAS_RULE",
+      "to": "parameterOverlayRule",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 6428,
+          "end_line": 6528
+        }
+      ]
+    },
+    {
+      "from": "recipeParameters",
+      "type": "CALLS",
+      "to": "defaultItems",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 6428,
+          "end_line": 6528
+        }
+      ]
+    },
+    {
+      "from": "recipeParameters",
+      "type": "CALLS",
+      "to": "specificItems",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 6428,
+          "end_line": 6528
+        }
+      ]
+    },
+    {
+      "from": "recipeForLot",
+      "type": "HAS_RULE",
+      "to": "lotRecipeInhibitRule",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 4599,
+          "end_line": 4876
+        }
+      ]
+    },
+    {
+      "from": "recipeForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "inhibitForEntities",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 4599,
+          "end_line": 4876
+        }
+      ],
+      "condition": "配置值1、非空资源匹配分支"
+    },
+    {
+      "from": "recipeForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotException",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 4599,
+          "end_line": 4876
+        }
+      ],
+      "condition": "逐条返回限制查找该 Lot 例外"
+    },
+    {
+      "from": "settingForLot",
+      "type": "HAS_RULE",
+      "to": "lotRecipeInhibitRule",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928
+        }
+      ]
+    },
+    {
+      "from": "settingForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "inhibitForEntities",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928
+        }
+      ],
+      "condition": "配置值1、非空资源匹配分支"
+    },
+    {
+      "from": "settingForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotException",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928
+        }
+      ],
+      "condition": "逐条返回限制查找该 Lot 例外"
+    },
+    {
+      "from": "inhibitForEntities",
+      "type": "CALLS",
+      "to": "inhibitQuery",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/peninmg.cpp",
+          "line": 2373,
+          "end_line": 2422
+        }
+      ],
+      "condition": "输入实体非空"
+    },
+    {
+      "from": "inhibitQuery",
+      "type": "HAS_RULE",
+      "to": "inhibitThresholdRule",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 3138,
+          "end_line": 4148
+        }
+      ],
+      "condition": "SQL 字符串存在格式参数疑点，未做运行等价验证"
+    },
+    {
+      "from": "inhibitQuery",
+      "type": "READS",
+      "to": "FRENTINHBT",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 3138,
+          "end_line": 4148
+        }
+      ],
+      "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
+    },
+    {
+      "from": "inhibitQuery",
+      "type": "READS",
+      "to": "FRENTINHBT_ENTTY",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 3138,
+          "end_line": 4148
+        }
+      ],
+      "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
+    },
+    {
+      "from": "inhibitQuery",
+      "type": "READS",
+      "to": "FRENTINHBT_SLOTTP",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 3138,
+          "end_line": 4148
+        }
+      ],
+      "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
+    },
+    {
+      "from": "stateInfoDisabled",
+      "type": "HAS_RULE",
+      "to": "stateInfoDisabledRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 981,
+          "end_line": 1000
+        }
+      ]
+    },
+    {
+      "from": "inhibitQuery",
+      "type": "CALLS",
+      "to": "inhibitByKey",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 4124,
+          "end_line": 4130
+        }
+      ],
+      "condition": "仅动态 SQL 路径按 key 重新读取记录及完整集合"
+    },
+    {
+      "from": "inhibitByKey",
+      "type": "READS",
+      "to": "FRENTINHBT",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 4278,
+          "end_line": 4492
+        }
+      ],
+      "condition": "按主记录 key 组装实体和批次类型集合"
+    },
+    {
+      "from": "inhibitByKey",
+      "type": "READS",
+      "to": "FRENTINHBT_ENTTY",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 4278,
+          "end_line": 4492
+        }
+      ],
+      "condition": "按主记录 key 组装实体和批次类型集合"
+    },
+    {
+      "from": "inhibitByKey",
+      "type": "READS",
+      "to": "FRENTINHBT_SLOTTP",
+      "sources": [
+        {
+          "path": "poscimfw/penmg/penindb.sqx",
+          "line": 4278,
+          "end_line": 4492
+        }
+      ],
+      "condition": "按主记录 key 组装实体和批次类型集合"
+    },
+    {
+      "from": "eventCreate",
+      "type": "HAS_RULE",
+      "to": "eventNoSubscriberRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1168,
+          "end_line": 1236
+        }
+      ]
+    },
+    {
+      "from": "eventCreate",
+      "type": "READS",
+      "to": "FRWATCHDOG",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1175,
+          "end_line": 1224
+        }
+      ]
+    },
+    {
+      "from": "eventCreate",
+      "type": "READS",
+      "to": "FIEVENT",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1814,
+          "end_line": 1818
+        }
+      ],
+      "condition": "仅分流配置解析为1"
+    },
+    {
+      "from": "eventCreate",
+      "type": "HAS_RULE",
+      "to": "eventDistributionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1774,
+          "end_line": 1889
+        }
+      ]
+    },
+    {
+      "from": "eventCreate",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "eventAddFIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1882,
+          "end_line": 1889
+        }
+      ],
+      "condition": "具体事件非空；最终名称可能为分流名称"
+    },
+    {
+      "from": "eventCreate",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "eventHoldFactory",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1283,
+          "end_line": 1288
+        }
+      ],
+      "condition": "Any 可解析为 LotHold 记录且存在订阅"
+    },
+    {
+      "from": "eventCreate",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "eventHoldSet",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 1762,
+          "end_line": 1767
+        }
+      ],
+      "condition": "仅具体创建目标为 LotHold；其他事件有自己的实现"
+    },
+    {
+      "from": "eventAddFIFO",
+      "type": "HAS_RULE",
+      "to": "eventFIFOKeyRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevbase.cpp",
+          "line": 479,
+          "end_line": 499
+        }
+      ]
+    },
+    {
+      "from": "eventAllFIFO",
+      "type": "READS_COLLECTION",
+      "to": "eventFIFOCollection",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevbase.cpp",
+          "line": 586,
+          "end_line": 600
+        }
+      ]
+    },
+    {
+      "from": "eventRemove",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "eventRemoveFIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 2026,
+          "end_line": 2027
+        }
+      ]
+    },
+    {
+      "from": "eventRemove",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "eventAllFIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 2029,
+          "end_line": 2033
+        }
+      ]
+    },
+    {
+      "from": "eventRemove",
+      "type": "HAS_RULE",
+      "to": "eventCleanupRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 2026,
+          "end_line": 2033
+        }
+      ]
+    },
+    {
+      "from": "eventRegister",
+      "type": "HAS_RULE",
+      "to": "eventRegisterNoopRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 2608,
+          "end_line": 2612
+        }
+      ]
+    },
+    {
+      "from": "eventUnregister",
+      "type": "HAS_RULE",
+      "to": "eventRegisterNoopRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevmg.sqx",
+          "line": 2641,
+          "end_line": 2645
+        }
+      ]
+    },
+    {
+      "from": "eventHoldSet",
+      "type": "HAS_RULE",
+      "to": "eventPayloadRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevlhld.cpp",
+          "line": 247,
+          "end_line": 277
+        }
+      ]
+    },
+    {
+      "from": "eventHoldGet",
+      "type": "HAS_RULE",
+      "to": "eventPayloadRule",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/pevlhld.cpp",
+          "line": 309,
+          "end_line": 327
+        }
+      ]
+    },
+    {
+      "from": "eventFifoSave",
+      "type": "SAVES_COLLECTION",
+      "to": "eventHoldDOFIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1561,
+          "end_line": 1635
+        }
+      ],
+      "condition": "DO 集合；与 BO 集合的桥接依赖缺失宏，不建立自动等价"
+    },
+    {
+      "from": "eventFifoSave",
+      "type": "CALLS",
+      "to": "eventFifoDeleteAll",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1579,
+          "end_line": 1581
+        }
+      ],
+      "condition": "按更新配置及操作序列分支"
+    },
+    {
+      "from": "eventFifoSave",
+      "type": "CALLS",
+      "to": "eventFifoDelete",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1583,
+          "end_line": 1585
+        }
+      ],
+      "condition": "按更新配置及操作序列分支"
+    },
+    {
+      "from": "eventFifoSave",
+      "type": "CALLS",
+      "to": "eventFifoEnqueue",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1626,
+          "end_line": 1628
+        }
+      ],
+      "condition": "按更新配置及操作序列分支"
+    },
+    {
+      "from": "eventFifoSave",
+      "type": "CALLS",
+      "to": "eventFifoUpdate",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1630,
+          "end_line": 1632
+        }
+      ],
+      "condition": "按更新配置及操作序列分支"
+    },
+    {
+      "from": "eventFifoInsert",
+      "type": "WRITES",
+      "to": "FREVLHLD_FIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 949,
+          "end_line": 950
+        }
+      ],
+      "condition": "不证明事务已提交"
+    },
+    {
+      "from": "eventFifoUpdate",
+      "type": "WRITES",
+      "to": "FREVLHLD_FIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 1020,
+          "end_line": 1020
+        }
+      ],
+      "condition": "不证明事务已提交"
+    },
+    {
+      "from": "eventFifoDelete",
+      "type": "WRITES",
+      "to": "FREVLHLD_FIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 908,
+          "end_line": 908
+        }
+      ],
+      "condition": "不证明事务已提交"
+    },
+    {
+      "from": "eventFifoDeleteAll",
+      "type": "WRITES",
+      "to": "FREVLHLD_FIFO",
+      "sources": [
+        {
+          "path": "poscimfw/pevmg/U_pevlhldo.sqx",
+          "line": 889,
+          "end_line": 889
+        }
+      ],
+      "condition": "不证明事务已提交"
+    },
+    {
+      "from": "dcValidate",
+      "type": "HAS_RULE",
+      "to": "dcInputRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 987,
+          "end_line": 1239
+        }
+      ]
+    },
+    {
+      "from": "dcConvert",
+      "type": "HAS_RULE",
+      "to": "dcConversionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1330,
+          "end_line": 1436
+        }
+      ]
+    },
+    {
+      "from": "dcCalculate",
+      "type": "HAS_RULE",
+      "to": "dcCalculationRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1634,
+          "end_line": 1972
+        }
+      ]
+    },
+    {
+      "from": "dcTotal",
+      "type": "HAS_RULE",
+      "to": "dcSummaryRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcsp.cpp",
+          "line": 1685,
+          "end_line": 1798
+        }
+      ]
+    },
+    {
+      "from": "dcSpecSet",
+      "type": "HAS_RULE",
+      "to": "dcSpecDisabledRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcsp.cpp",
+          "line": 834,
+          "end_line": 850
+        }
+      ]
+    },
+    {
+      "from": "dcCalcUniformity",
+      "type": "HAS_RULE",
+      "to": "dcUniformityRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 2953,
+          "end_line": 3003
+        }
+      ]
+    },
+    {
+      "from": "dcSet170",
+      "type": "CALLS",
+      "to": "dcSetInternal",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 5061,
+          "end_line": 5065
+        }
+      ]
+    },
+    {
+      "from": "dcSpecSet101",
+      "type": "CALLS",
+      "to": "dcSpecSetInternal",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcsp.cpp",
+          "line": 2599,
+          "end_line": 2603
+        }
+      ]
+    },
+    {
+      "from": "dcSetInternal",
+      "type": "REPLACES_COLLECTION",
+      "to": "dcDefinitionItems",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 4975,
+          "end_line": 5011
+        }
+      ]
+    },
+    {
+      "from": "dcSpecSetInternal",
+      "type": "REPLACES_COLLECTION",
+      "to": "dcSpecifications",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcsp.cpp",
+          "line": 2436,
+          "end_line": 2515
+        }
+      ]
+    },
+    {
+      "from": "dcSpecSetInternal",
+      "type": "REPLACES_COLLECTION",
+      "to": "dcSpecDefinitions",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcsp.cpp",
+          "line": 2523,
+          "end_line": 2549
+        }
+      ]
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcMean",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1783,
+          "end_line": 1786
+        }
+      ],
+      "condition": "收集非空"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcStdDev",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1790,
+          "end_line": 1800
+        }
+      ],
+      "condition": "收集多于1项"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcRange",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1804,
+          "end_line": 1807
+        }
+      ],
+      "condition": "收集非空"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcMin",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1811,
+          "end_line": 1814
+        }
+      ],
+      "condition": "收集非空"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcMax",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1818,
+          "end_line": 1821
+        }
+      ],
+      "condition": "收集非空"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcCalcUniformity",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1825,
+          "end_line": 1828
+        }
+      ],
+      "condition": "收集非空，但没有零均值保护"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcDelta",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1683,
+          "end_line": 1698
+        }
+      ],
+      "condition": "Delta 类型，找不到映射结果#"
+    },
+    {
+      "from": "dcCalculate",
+      "type": "CALLS",
+      "to": "dcExpression",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 1701,
+          "end_line": 1703
+        }
+      ],
+      "condition": "非 Delta 派生分支"
+    },
+    {
+      "from": "dcDelta",
+      "type": "CALLS",
+      "to": "dcExpression",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 2198,
+          "end_line": 2208
+        }
+      ],
+      "condition": "Delta 模式，恰好两项且来源不同"
+    },
+    {
+      "from": "dcDelta",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "operationCollectedByWafer",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 2374,
+          "end_line": 2386
+        }
+      ],
+      "condition": "前道工序非空，定义引用初始化为 nil"
+    },
+    {
+      "from": "dcDelta",
+      "type": "HAS_RULE",
+      "to": "dcDeltaRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdcmg/pdcdf.cpp",
+          "line": 2169,
+          "end_line": 2495
+        }
+      ]
+    },
+    {
+      "from": "operationSpecCheck",
+      "type": "HAS_RULE",
+      "to": "operationLimitRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 14828,
+          "end_line": 15341
+        }
+      ]
+    },
+    {
+      "from": "operationSpecCheck",
+      "type": "READS_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 14840,
+          "end_line": 14920
+        }
+      ]
+    },
+    {
+      "from": "operationCollectedByWafer",
+      "type": "READS_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 7104,
+          "end_line": 7197
+        }
+      ]
+    },
+    {
+      "from": "operationGetDCDef",
+      "type": "HAS_RULE",
+      "to": "dcDefinitionGetterRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 2554,
+          "end_line": 2605
+        }
+      ]
+    },
+    {
+      "from": "operationSetStartInfo",
+      "type": "HAS_RULE",
+      "to": "dcSnapshotRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6506,
+          "end_line": 6672
+        }
+      ]
+    },
+    {
+      "from": "operationSetDCInfo",
+      "type": "HAS_RULE",
+      "to": "dcSnapshotRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6841,
+          "end_line": 6848
+        }
+      ]
+    },
+    {
+      "from": "operationSetDCItems",
+      "type": "HAS_RULE",
+      "to": "dcItemsUpdateRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 17114,
+          "end_line": 17134
+        }
+      ]
+    },
+    {
+      "from": "operationGetDCDef",
+      "type": "READS_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 2569,
+          "end_line": 2595
+        }
+      ]
+    },
+    {
+      "from": "operationGetStartInfo",
+      "type": "READS_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6791,
+          "end_line": 6795
+        }
+      ]
+    },
+    {
+      "from": "operationGetDCItems",
+      "type": "READS_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 17184,
+          "end_line": 17199
+        }
+      ]
+    },
+    {
+      "from": "operationSetDCInfo",
+      "type": "REPLACES_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6846,
+          "end_line": 6848
+        }
+      ]
+    },
+    {
+      "from": "operationSetStartInfo",
+      "type": "REPLACES_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6506,
+          "end_line": 6672
+        }
+      ]
+    },
+    {
+      "from": "operationSetDCItems",
+      "type": "REPLACES_COLLECTION",
+      "to": "operationDCCollection",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 17114,
+          "end_line": 17132
+        }
+      ],
+      "condition": "仅匹配的定义替换 dcItems，其他条目复制保留"
+    },
+    {
+      "from": "operationCollectedByWafer",
+      "type": "CALLS",
+      "to": "operationGetDCDef",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 7086,
+          "end_line": 7089
+        }
+      ],
+      "condition": "输入定义引用 nil"
+    },
+    {
+      "from": "lotpoSet",
+      "type": "HAS_RULE",
+      "to": "lotpoProjectionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 348,
+          "end_line": 409
+        }
+      ]
+    },
+    {
+      "from": "lotpoSet",
+      "type": "HAS_RULE",
+      "to": "lotpoMissingRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 277,
+          "end_line": 308
+        }
+      ]
+    },
+    {
+      "from": "lotpoBase",
+      "type": "HAS_RULE",
+      "to": "lotpoBaseRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 81,
+          "end_line": 235
+        }
+      ]
+    },
+    {
+      "from": "lotpoSet",
+      "type": "READS",
+      "to": "FRLOTPO",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 290,
+          "end_line": 292
+        }
+      ],
+      "condition": "按 PO_OBJ 查 Lot，未找到返回0"
+    },
+    {
+      "from": "lotpoBase",
+      "type": "READS",
+      "to": "FRLOTPO",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 114,
+          "end_line": 116
+        }
+      ],
+      "condition": "按 LOT_ID 计数"
+    },
+    {
+      "from": "lotpoSet",
+      "type": "WRITES",
+      "to": "FRLOTPO",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 329,
+          "end_line": 334
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoSet",
+      "type": "WRITES",
+      "to": "FRLOTPO_DC",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 356,
+          "end_line": 399
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoSet",
+      "type": "WRITES",
+      "to": "FRLOTPO_DRBL",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 425,
+          "end_line": 505
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoBase",
+      "type": "WRITES",
+      "to": "FRLOTPO",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 132,
+          "end_line": 193
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoBase",
+      "type": "WRITES",
+      "to": "FRLOTPO_DC",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 207,
+          "end_line": 207
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoBase",
+      "type": "WRITES",
+      "to": "FRLOTPO_DRBL",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 222,
+          "end_line": 222
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoDelete",
+      "type": "WRITES",
+      "to": "FRLOTPO_DC",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 637,
+          "end_line": 637
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoDelete",
+      "type": "WRITES",
+      "to": "FRLOTPO_DRBL",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 652,
+          "end_line": 652
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "lotpoDelete",
+      "type": "WRITES",
+      "to": "FRLOTPO",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plotpodb.sqx",
+          "line": 667,
+          "end_line": 667
+        }
+      ],
+      "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
+    },
+    {
+      "from": "operationSetStartInfo",
+      "type": "CALLS",
+      "to": "lotpoSet",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6679,
+          "end_line": 6692
+        }
+      ],
+      "condition": "维护配置解析为1，ACTUALSTART 模式"
+    },
+    {
+      "from": "operationSetDCInfo",
+      "type": "CALLS",
+      "to": "lotpoSet",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcope.cpp",
+          "line": 6852,
+          "end_line": 6872
+        }
+      ],
+      "condition": "维护配置解析为1，DATACOLLECTION 模式"
+    },
+    {
+      "from": "persistenceDeleteSample1",
+      "type": "WRITES",
+      "to": "FRPPPTSET",
+      "sources": [
+        {
+          "path": "poscimfw/pabcl/U_ppptsedo.sqx",
+          "line": 79,
+          "end_line": 95
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample2",
+      "type": "WRITES",
+      "to": "FRPPPTSET_BASE",
+      "sources": [
+        {
+          "path": "poscimfw/pabcl/U_ppptsedo.sqx",
+          "line": 171,
+          "end_line": 188
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample3",
+      "type": "WRITES",
+      "to": "FRCODE_UDATA",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/U_pcodedo.sqx",
+          "line": 205,
+          "end_line": 223
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample4",
+      "type": "WRITES",
+      "to": "FRRTCLSET_DF_RGRP",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/U_prtclsdo.sqx",
+          "line": 538,
+          "end_line": 557
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample5",
+      "type": "WRITES",
+      "to": "FRRTCLSET_DF_RGRP",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/U_prtclsdo.sqx",
+          "line": 559,
+          "end_line": 577
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample6",
+      "type": "WRITES",
+      "to": "FREQP_CAST_LOT",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/U_pmcdo.sqx",
+          "line": 1501,
+          "end_line": 1520
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "persistenceDeleteSample7",
+      "type": "WRITES",
+      "to": "FREQP_CAST_LOT",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/U_pmcdo.sqx",
+          "line": 1522,
+          "end_line": 1539
+        }
+      ],
+      "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
+    },
+    {
+      "from": "collectionReview1",
+      "type": "HAS_RULE",
+      "to": "helperMarkerReturnRule",
+      "sources": [
+        {
+          "path": "poscimfw/pabcl/C_ppptsedo.cpp",
+          "line": 263,
+          "end_line": 368
+        }
+      ]
+    },
+    {
+      "from": "collectionReview2",
+      "type": "HAS_RULE",
+      "to": "helperSaveModeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pabcl/U_ppptsedo.sqx",
+          "line": 567,
+          "end_line": 641
+        }
+      ]
+    },
+    {
+      "from": "collectionReview4",
+      "type": "HAS_RULE",
+      "to": "helperMarkerReturnRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/C_pcodedo.cpp",
+          "line": 332,
+          "end_line": 371
+        }
+      ]
+    },
+    {
+      "from": "collectionReview5",
+      "type": "HAS_RULE",
+      "to": "helperSaveModeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/U_pcodedo.sqx",
+          "line": 673,
+          "end_line": 758
+        }
+      ]
+    },
+    {
+      "from": "collectionReview7",
+      "type": "HAS_RULE",
+      "to": "helperMarkerReturnRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/C_prtclsdo.cpp",
+          "line": 719,
+          "end_line": 781
+        }
+      ]
+    },
+    {
+      "from": "collectionReview8",
+      "type": "HAS_RULE",
+      "to": "helperSaveModeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/U_prtclsdo.sqx",
+          "line": 2078,
+          "end_line": 2227
+        }
+      ]
+    },
+    {
+      "from": "collectionReview10",
+      "type": "HAS_RULE",
+      "to": "sequenceTravelRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/U_pcodedo.sqx",
+          "line": 247,
+          "end_line": 273
+        }
+      ]
+    },
+    {
+      "from": "collectionReview10",
+      "type": "WRITES",
+      "to": "FRCODE_UDATA",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/U_pcodedo.sqx",
+          "line": 247,
+          "end_line": 273
+        }
+      ],
+      "condition": "MERGE 从同表源区间读取，未在该方法删除源"
+    },
+    {
+      "from": "collectionReview10",
+      "type": "READS",
+      "to": "FRCODE_UDATA",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/U_pcodedo.sqx",
+          "line": 247,
+          "end_line": 273
+        }
+      ]
+    },
+    {
+      "from": "plannerSearch",
+      "type": "CALLS",
+      "to": "plannerThreshold",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 2721,
+          "end_line": 2737
+        }
+      ]
+    },
+    {
+      "from": "plannerSearch",
+      "type": "CALLS",
+      "to": "plannerAssemble",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 2721,
+          "end_line": 2737
+        }
+      ]
+    },
+    {
+      "from": "plannerThreshold",
+      "type": "CALLS",
+      "to": "plannerCore",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 1845,
+          "end_line": 1855
+        }
+      ]
+    },
+    {
+      "from": "plannerThreshold",
+      "type": "HAS_RULE",
+      "to": "plannerCostRule",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 1845,
+          "end_line": 1855
+        }
+      ]
+    },
+    {
+      "from": "plannerAssemble",
+      "type": "HAS_RULE",
+      "to": "plannerOutputRule",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 2459,
+          "end_line": 2634
+        }
+      ]
+    },
+    {
+      "from": "plannerInitialize",
+      "type": "HAS_RULE",
+      "to": "plannerGraphRule",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 1205,
+          "end_line": 1318
+        }
+      ]
+    },
+    {
+      "from": "plannerThreshold",
+      "type": "CALLS",
+      "to": "plannerMaxCost",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 1845,
+          "end_line": 1855
+        }
+      ]
+    },
+    {
+      "from": "codeUDCompare",
+      "type": "HAS_RULE",
+      "to": "codeUDCompareRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/C_pcodedo.cpp",
+          "line": 373,
+          "end_line": 425
+        }
+      ]
+    },
+    {
+      "from": "codeUDReader",
+      "type": "READS",
+      "to": "FRCODE_UDATA",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/R_pcodedo.sqx",
+          "line": 101,
+          "end_line": 101
+        }
+      ],
+      "condition": "ORDER BY d_SeqNo DESC，缓存比较依赖顺序及序号约束"
+    },
+    {
+      "from": "plannerSearch",
+      "type": "CALLS",
+      "to": "plannerInitializeWrapper",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 2721,
+          "end_line": 2737
+        }
+      ]
+    },
+    {
+      "from": "plannerInitializeWrapper",
+      "type": "CALLS",
+      "to": "plannerInitialize",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwdo.cpp",
+          "line": 1086,
+          "end_line": 1090
+        }
+      ],
+      "condition": "转发时将 dLength 同时作为 dLength2"
+    },
+    {
+      "from": "cassetteAddWafer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "positionalAdd",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 87,
+          "end_line": 90
+        }
+      ],
+      "condition": "尺寸匹配后，实际覆盖目标依动态类型"
+    },
+    {
+      "from": "cassetteRemoveWafer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "positionalRemove",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 246,
+          "end_line": 254
+        }
+      ]
+    },
+    {
+      "from": "cassetteAddWafer",
+      "type": "HAS_RULE",
+      "to": "cassetteLotCountRule",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 92,
+          "end_line": 130
+        }
+      ]
+    },
+    {
+      "from": "cassetteRemoveWafer",
+      "type": "HAS_RULE",
+      "to": "cassetteLotCountRule",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 261,
+          "end_line": 297
+        }
+      ]
+    },
+    {
+      "from": "cassetteAddWafer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotAddContainer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 117,
+          "end_line": 121
+        }
+      ],
+      "condition": "首次该Lot"
+    },
+    {
+      "from": "cassetteRemoveWafer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotRemoveContainer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 287,
+          "end_line": 295
+        }
+      ],
+      "condition": "计数减到0"
+    },
+    {
+      "from": "positionalAdd",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "containerAdd",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/pstnlcnt.cpp",
+          "line": 90,
+          "end_line": 98
+        }
+      ]
+    },
+    {
+      "from": "positionalRemove",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "containerRemove",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/pstnlcnt.cpp",
+          "line": 200,
+          "end_line": 214
+        }
+      ]
+    },
+    {
+      "from": "containerAdd",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "materialSetContainer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/mtrlcntn.cpp",
+          "line": 140,
+          "end_line": 151
+        }
+      ],
+      "condition": "addUnique成功"
+    },
+    {
+      "from": "containerRemove",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "materialSetContainer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/mtrlcntn.cpp",
+          "line": 253,
+          "end_line": 263
+        }
+      ],
+      "condition": "物料存在，先删集合再清反向引用"
+    },
+    {
+      "from": "materialSetContainer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "containerRemove",
+      "sources": [
+        {
+          "path": "smtchcmf/mtrlmngm/material.cpp",
+          "line": 749,
+          "end_line": 787
+        }
+      ],
+      "condition": "标识变化且旧容器非空"
+    },
+    {
+      "from": "materialSetContainer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "containerAdd",
+      "sources": [
+        {
+          "path": "smtchcmf/mtrlmngm/material.cpp",
+          "line": 788,
+          "end_line": 797
+        }
+      ],
+      "condition": "新容器非空"
+    },
+    {
+      "from": "lotAddContainer",
+      "type": "HAS_RULE",
+      "to": "lotContainerIdentityRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 4467,
+          "end_line": 4494
+        }
+      ]
+    },
+    {
+      "from": "lotRemoveContainer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "cassetteRemoveLot",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 4607,
+          "end_line": 4622
+        }
+      ],
+      "condition": "先重建反向列表，可narrow为Cassette才回调"
+    },
+    {
+      "from": "cassetteTransfer",
+      "type": "HAS_RULE",
+      "to": "cassetteTransferRule",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 519,
+          "end_line": 609
+        }
+      ]
+    },
+    {
+      "from": "cassetteTransfer",
+      "type": "CALLS",
+      "to": "cassetteRemoveWafer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 560,
+          "end_line": 567
+        }
+      ],
+      "condition": "源盒找到位置"
+    },
+    {
+      "from": "cassetteTransfer",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "cassetteAddWafer",
+      "sources": [
+        {
+          "path": "smtchcmf/drblmngm/cassette.cpp",
+          "line": 567,
+          "end_line": 567
+        }
+      ],
+      "condition": "目标载具动态调用"
+    },
+    {
+      "from": "cassetteUnloadLot",
+      "type": "HAS_RULE",
+      "to": "cassetteUnloadRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/pcas.cpp",
+          "line": 3552,
+          "end_line": 3636
+        }
+      ]
+    },
+    {
+      "from": "cassetteAvailable",
+      "type": "HAS_RULE",
+      "to": "cassetteAvailabilityRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdrmg/pcas.cpp",
+          "line": 12250,
+          "end_line": 12294
+        }
+      ]
+    },
+    {
+      "from": "splitPos",
+      "type": "CALLS",
+      "to": "splitBase",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2297,
+          "end_line": 2297
+        }
+      ],
+      "condition": "显式基类调用，所有PreviousLot已先写"
+    },
+    {
+      "from": "splitBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "transferLotProducts",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/prdctmng.cpp",
+          "line": 1648,
+          "end_line": 1648
+        }
+      ],
+      "condition": "每个子批创建及基础字段完成后"
+    },
+    {
+      "from": "splitPos",
+      "type": "HAS_RULE",
+      "to": "splitFirstChildRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2297,
+          "end_line": 2324
+        }
+      ]
+    },
+    {
+      "from": "splitPos",
+      "type": "HAS_RULE",
+      "to": "splitQuantityRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2314,
+          "end_line": 2324
+        }
+      ]
+    },
+    {
+      "from": "splitPos",
+      "type": "HAS_RULE",
+      "to": "splitHoldRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2453,
+          "end_line": 2461
+        }
+      ]
+    },
+    {
+      "from": "splitPos",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotRefreshQuantity",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2314,
+          "end_line": 2318
+        }
+      ],
+      "condition": "父批及首子批"
+    },
+    {
+      "from": "splitPos",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotSplitState",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2453,
+          "end_line": 2453
+        }
+      ],
+      "condition": "首子批"
+    },
+    {
+      "from": "transferLotProducts",
+      "type": "HAS_RULE",
+      "to": "transferMembersRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 3130,
+          "end_line": 3171
+        }
+      ]
+    },
+    {
+      "from": "transferLotProducts",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotAddMaterial",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 3151,
+          "end_line": 3155
+        }
+      ],
+      "condition": "先源删，再目标动态调用"
+    },
+    {
+      "from": "transferLotProducts",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "productSetLot",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 3155,
+          "end_line": 3155
+        }
+      ]
+    },
+    {
+      "from": "lotAddMaterial",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "productSetLot",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 4238,
+          "end_line": 4238
+        }
+      ]
+    },
+    {
+      "from": "lotRefreshQuantity",
+      "type": "HAS_RULE",
+      "to": "refreshQuantityRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 1931,
+          "end_line": 1972
+        }
+      ]
+    },
+    {
+      "from": "lotPosInit",
+      "type": "CALLS",
+      "to": "lotBaseInit",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 602,
+          "end_line": 602
+        }
+      ]
+    },
+    {
+      "from": "lotBaseInit",
+      "type": "HAS_RULE",
+      "to": "lotInitializationRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 4829,
+          "end_line": 4881
+        }
+      ]
+    },
+    {
+      "from": "joinPos",
+      "type": "CALLS",
+      "to": "joinBase",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 1921,
+          "end_line": 1921
+        }
+      ]
+    },
+    {
+      "from": "joinBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "transferLotProducts",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/prdctmng.cpp",
+          "line": 1404,
+          "end_line": 1415
+        }
+      ],
+      "condition": "转移异常映射LotJoinFailed，不代表恢复"
+    },
+    {
+      "from": "joinBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "emptyLotBase",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/prdctmng.cpp",
+          "line": 1418,
+          "end_line": 1418
+        }
+      ],
+      "condition": "sourceLot动态调用，Pos覆盖目标另有后置检查"
+    },
+    {
+      "from": "joinPos",
+      "type": "HAS_RULE",
+      "to": "joinQuantityRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 1928,
+          "end_line": 1937
+        }
+      ]
+    },
+    {
+      "from": "joinPos",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotRefreshQuantity",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 1935,
+          "end_line": 1937
+        }
+      ]
+    },
+    {
+      "from": "emptyLotPos",
+      "type": "CALLS",
+      "to": "emptyLotBase",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 6977,
+          "end_line": 6977
+        }
+      ]
+    },
+    {
+      "from": "emptyLotPos",
+      "type": "CALLS",
+      "to": "lotpoDelete",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 6980,
+          "end_line": 6994
+        }
+      ],
+      "condition": "两个维护配置均1"
+    },
+    {
+      "from": "emptyLotBase",
+      "type": "HAS_RULE",
+      "to": "emptyLotRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 1647,
+          "end_line": 1763
+        }
+      ]
+    },
+    {
+      "from": "emptyLotPos",
+      "type": "HAS_RULE",
+      "to": "emptyStackedRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 6970,
+          "end_line": 7000
+        }
+      ]
+    },
+    {
+      "from": "planningCreateOperationSchedule",
+      "type": "HAS_RULE",
+      "to": "operationScheduleDuplicateRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pltsch.cpp",
+          "line": 282,
+          "end_line": 309
+        }
+      ]
+    },
+    {
+      "from": "planningRemoveAllOperations",
+      "type": "CALLS",
+      "to": "planningRemoveOperationSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pltsch.cpp",
+          "line": 476,
+          "end_line": 487
+        }
+      ],
+      "condition": "逐项处理，忽略找不到"
+    },
+    {
+      "from": "planningFindLotSchedule",
+      "type": "CALLS",
+      "to": "planningSqlFindLotSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pplmgr.cpp",
+          "line": 920,
+          "end_line": 925
+        }
+      ],
+      "condition": "仅TRANSIENT_MANAGER分支"
+    },
+    {
+      "from": "planningSqlFindLotSchedule",
+      "type": "READS",
+      "to": "FRLOTSCHE",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pplmgrdb.sqx",
+          "line": 380,
+          "end_line": 430
+        }
+      ]
+    },
+    {
+      "from": "planningSqlFindLotSchedule",
+      "type": "READS",
+      "to": "FRLOT",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pplmgrdb.sqx",
+          "line": 408,
+          "end_line": 417
+        }
+      ],
+      "condition": "重名时检查被Lot引用"
+    },
+    {
+      "from": "planningSqlFindLotSchedule",
+      "type": "HAS_RULE",
+      "to": "scheduleLookupRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pplmgrdb.sqx",
+          "line": 380,
+          "end_line": 433
+        }
+      ]
+    },
+    {
+      "from": "dispatchEDD",
+      "type": "READS",
+      "to": "FRLOT",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pwtedddb.sqx",
+          "line": 60,
+          "end_line": 61
+        }
+      ]
+    },
+    {
+      "from": "dispatchEDD",
+      "type": "HAS_RULE",
+      "to": "dispatchEDDRule",
+      "sources": [
+        {
+          "path": "poscimfw/pdp/pwtedddb.sqx",
+          "line": 49,
+          "end_line": 72
+        }
+      ]
+    },
+    {
+      "from": "splitPos",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "planningCreateLotSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2329,
+          "end_line": 2361
+        }
+      ],
+      "condition": "首子批且未配置跳过计划，父有计划"
+    },
+    {
+      "from": "splitPos",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "planningCreateOperationSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/pprmgr.cpp",
+          "line": 2369,
+          "end_line": 2414
+        }
+      ],
+      "condition": "逐项复制父工序计划到首子批"
+    },
+    {
+      "from": "ProductRequest",
+      "type": "HAS_STATE",
+      "to": "ProductRequestPlanning",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 1460,
+          "end_line": 1468
+        }
+      ]
+    },
+    {
+      "from": "ProductRequest",
+      "type": "HAS_STATE",
+      "to": "ProductRequestProduction",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 1460,
+          "end_line": 1468
+        }
+      ]
+    },
+    {
+      "from": "requestNotPlanned",
+      "type": "HAS_RULE",
+      "to": "requestNotPlannedRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 128,
+          "end_line": 174
+        }
+      ]
+    },
+    {
+      "from": "requestPlanned",
+      "type": "HAS_RULE",
+      "to": "requestPlannedRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 196,
+          "end_line": 234
+        }
+      ]
+    },
+    {
+      "from": "requestNotInRelease",
+      "type": "HAS_RULE",
+      "to": "requestNotInReleaseRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 256,
+          "end_line": 294
+        }
+      ]
+    },
+    {
+      "from": "requestInRelease",
+      "type": "HAS_RULE",
+      "to": "requestInReleaseRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 316,
+          "end_line": 354
+        }
+      ]
+    },
+    {
+      "from": "requestInWork",
+      "type": "HAS_RULE",
+      "to": "requestInWorkRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 376,
+          "end_line": 422
+        }
+      ]
+    },
+    {
+      "from": "requestMakeOnHold",
+      "type": "HAS_RULE",
+      "to": "requestMakeOnHoldRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 444,
+          "end_line": 482
+        }
+      ]
+    },
+    {
+      "from": "requestCompleted",
+      "type": "HAS_RULE",
+      "to": "requestCompletedRule",
+      "sources": [
+        {
+          "path": "smtchcmf/plnnngcm/prdctrqs.cpp",
+          "line": 504,
+          "end_line": 542
+        }
+      ]
+    },
+    {
+      "from": "requestVendorState",
+      "type": "HAS_RULE",
+      "to": "requestVendorStateRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppl/pprrq.cpp",
+          "line": 1730,
+          "end_line": 1745
+        }
+      ]
+    },
+    {
+      "from": "lotInProduction",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "requestInWork",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 757,
+          "end_line": 791
+        }
+      ],
+      "condition": "Released激活、OriginalLot且请求非空"
+    },
+    {
+      "from": "lotUnholdBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "requestInWork",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 1118,
+          "end_line": 1165
+        }
+      ],
+      "condition": "先前OnHold且家族全部NotOnHold，请求非InWork"
+    },
+    {
+      "from": "lotCompletedBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "requestCompleted",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 1310,
+          "end_line": 1335
+        }
+      ],
+      "condition": "家族currentLots为空且请求非空"
+    },
+    {
+      "from": "emptyLotBase",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "requestCompleted",
+      "sources": [
+        {
+          "path": "smtchcmf/prdctmng/lot.cpp",
+          "line": 1741,
+          "end_line": 1760
+        }
+      ],
+      "condition": "家族currentLots为空且请求非空"
+    },
+    {
+      "from": "authenticate",
+      "type": "HAS_RULE",
+      "to": "localAuthRule",
+      "sources": [
+        {
+          "path": "poscimfw/patmg/pathmgr.cpp",
+          "line": 312,
+          "end_line": 396
+        }
+      ]
+    },
+    {
+      "from": "authenticate",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "personVerifyPassword",
+      "sources": [
+        {
+          "path": "poscimfw/patmg/pathmgr.cpp",
+          "line": 386,
+          "end_line": 396
+        }
+      ]
+    },
+    {
+      "from": "personVerifyPassword",
+      "type": "HAS_RULE",
+      "to": "verifyPasswordRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 1862,
+          "end_line": 1884
+        }
+      ]
+    },
+    {
+      "from": "personVerifyPassword",
+      "type": "CALLS",
+      "to": "verifyPasswordCrypt",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 1869,
+          "end_line": 1872
+        }
+      ],
+      "condition": "仅存在非空加密字段，平台实现有编译条件"
+    },
+    {
+      "from": "personAllOperable",
+      "type": "HAS_RULE",
+      "to": "privilegeMergeRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 3313,
+          "end_line": 3364
+        }
+      ]
+    },
+    {
+      "from": "personAllPrivileges",
+      "type": "HAS_RULE",
+      "to": "privilegeAppendRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 3551,
+          "end_line": 3578
+        }
+      ]
+    },
+    {
+      "from": "personAllOperable",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "groupPrivileges",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 3313,
+          "end_line": 3319
+        }
+      ],
+      "condition": "subSystem相同且category匹配或参数为空"
+    },
+    {
+      "from": "personAllPrivileges",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "groupPrivileges",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 3560,
+          "end_line": 3566
+        }
+      ]
+    },
+    {
+      "from": "personAddGroup",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "groupAddPerson",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 2757,
+          "end_line": 2775
+        }
+      ],
+      "condition": "对侧找不到人员，忽略重复"
+    },
+    {
+      "from": "groupAddPerson",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "personAddGroup",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pprivgr.cpp",
+          "line": 685,
+          "end_line": 703
+        }
+      ],
+      "condition": "对侧找不到组，忽略重复"
+    },
+    {
+      "from": "personRemoveGroup",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "groupRemovePerson",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pperson.cpp",
+          "line": 2834,
+          "end_line": 2850
+        }
+      ],
+      "condition": "对侧仍有该人员时"
+    },
+    {
+      "from": "groupRemovePerson",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "personRemoveGroup",
+      "sources": [
+        {
+          "path": "poscimfw/ppsmg/pprivgr.cpp",
+          "line": 762,
+          "end_line": 781
+        }
+      ],
+      "condition": "对侧仍有该组时"
+    },
+    {
+      "from": "bomSetInfo",
+      "type": "HAS_RULE",
+      "to": "bomReplaceRule",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pbom.cpp",
+          "line": 738,
+          "end_line": 784
+        }
+      ]
+    },
+    {
+      "from": "bomSetInfo",
+      "type": "REPLACES_COLLECTION",
+      "to": "bomPartsBO",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pbom.cpp",
+          "line": 744,
+          "end_line": 784
+        }
+      ]
+    },
+    {
+      "from": "bomAddParts",
+      "type": "HAS_RULE",
+      "to": "bomAddRule",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pbom.cpp",
+          "line": 415,
+          "end_line": 424
+        }
+      ]
+    },
+    {
+      "from": "bomFindParts",
+      "type": "HAS_RULE",
+      "to": "bomMissingRule",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pbom.cpp",
+          "line": 473,
+          "end_line": 478
+        }
+      ]
+    },
+    {
+      "from": "bomFindParts",
+      "type": "READS_COLLECTION",
+      "to": "bomPartsBO",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pbom.cpp",
+          "line": 473,
+          "end_line": 478
+        }
+      ]
+    },
+    {
+      "from": "specGetBOM",
+      "type": "RETURNS_REFERENCE",
+      "to": "BOM",
+      "sources": [
+        {
+          "path": "poscimfw/pprsp/pprsp.cpp",
+          "line": 4585,
+          "end_line": 4596
+        }
+      ],
+      "condition": "GET_OBJECTIDENTIFIER宏契约，解析/异常语义待宏展开"
+    },
+    {
+      "from": "bomFind",
+      "type": "CALLS",
+      "to": "bomSQLFind",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pptsmg.cpp",
+          "line": 508,
+          "end_line": 513
+        }
+      ],
+      "condition": "仅TRANSIENT分支"
+    },
+    {
+      "from": "bomSQLFind",
+      "type": "READS",
+      "to": "FRBOM",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pptsmgdb.sqx",
+          "line": 97,
+          "end_line": 100
+        }
+      ]
+    },
+    {
+      "from": "bomSQLAll",
+      "type": "READS",
+      "to": "FRBOM",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/pptsmgdb.sqx",
+          "line": 179,
+          "end_line": 201
+        }
+      ]
+    },
+    {
+      "from": "bomPartSave",
+      "type": "SAVES_COLLECTION",
+      "to": "bomPartsDO",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 919,
+          "end_line": 993
+        }
+      ],
+      "condition": "DO侧保存，不证明BO桥接或事务已提交"
+    },
+    {
+      "from": "bomPartSave",
+      "type": "CALLS",
+      "to": "bomPartUpdate",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 988,
+          "end_line": 990
+        }
+      ],
+      "condition": "非Insert/None分支"
+    },
+    {
+      "from": "bomPartInsert",
+      "type": "WRITES",
+      "to": "FRBOM_PARTS",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 282,
+          "end_line": 283
+        }
+      ]
+    },
+    {
+      "from": "bomPartUpdate",
+      "type": "WRITES",
+      "to": "FRBOM_PARTS",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 359,
+          "end_line": 359
+        }
+      ]
+    },
+    {
+      "from": "FRBOM_PARTS",
+      "type": "STORES",
+      "to": "FRBOM_PARTS.QUANTITY",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 282,
+          "end_line": 283
+        }
+      ],
+      "condition": "清单需求字段，不是消耗流水"
+    },
+    {
+      "from": "FRBOM_PARTS",
+      "type": "STORES",
+      "to": "FRBOM_PARTS.SERIALCTRL_FLAG",
+      "sources": [
+        {
+          "path": "poscimfw/pptsmg/U_pbomdo.sqx",
+          "line": 282,
+          "end_line": 283
+        }
+      ],
+      "condition": "清单需求字段，不是消耗流水"
+    },
+    {
+      "from": "locationBankConfigure",
+      "type": "HAS_RULE",
+      "to": "locationBankConfigRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbank.cpp",
+          "line": 2194,
+          "end_line": 2247
+        }
+      ]
+    },
+    {
+      "from": "locationAreaConfigure",
+      "type": "HAS_RULE",
+      "to": "locationAreaConfigRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/parea.cpp",
+          "line": 2063,
+          "end_line": 2341
+        }
+      ]
+    },
+    {
+      "from": "locationBankCheckDeletion",
+      "type": "HAS_RULE",
+      "to": "locationBankDeleteRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbankdb.sqx",
+          "line": 100,
+          "end_line": 476
+        }
+      ]
+    },
+    {
+      "from": "locationBankCheckDeletion",
+      "type": "READS",
+      "to": "FRLOT",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbankdb.sqx",
+          "line": 100,
+          "end_line": 476
+        }
+      ],
+      "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    },
+    {
+      "from": "locationBankCheckDeletion",
+      "type": "READS",
+      "to": "FRCAST",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbankdb.sqx",
+          "line": 100,
+          "end_line": 476
+        }
+      ],
+      "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    },
+    {
+      "from": "locationBankCheckDeletion",
+      "type": "READS",
+      "to": "FRDRBL",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbankdb.sqx",
+          "line": 100,
+          "end_line": 476
+        }
+      ],
+      "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    },
+    {
+      "from": "locationBankCheckDeletion",
+      "type": "READS",
+      "to": "FRRTCLPOD",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/pbankdb.sqx",
+          "line": 100,
+          "end_line": 476
+        }
+      ],
+      "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    }
+  ]
+}

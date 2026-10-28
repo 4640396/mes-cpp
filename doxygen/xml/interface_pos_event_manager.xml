@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_event_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosEventManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pevmg_8idl" local="no">pevmg.idl</includes>
+    <innerclass refid="exception_pos_event_manager_1_1_invalid_event_record_type_signal" prot="public">PosEventManager::InvalidEventRecordTypeSignal</innerclass>
+    <innerclass refid="exception_pos_event_manager_1_1_event_not_found_signal" prot="public">PosEventManager::EventNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_event_manager_1a7889fecb9a87a4a1634d65926a9da950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_event_base" kindref="compound">PosEventBase</ref></type>
+        <definition>PosEventBase PosEventManager::createEvent</definition>
+        <argsstring>(in any eventRecord)</argsstring>
+        <name>createEvent</name>
+        <qualifiedname>PosEventManager::createEvent</qualifiedname>
+        <param>
+          <type>in any</type>
+          <declname>eventRecord</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_event_manager_1_1_invalid_event_record_type_signal" kindref="compound">InvalidEventRecordTypeSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmg.idl" line="123" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_manager_1a6cd3ef334485fc564e619bfd70b27453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventManager::removeEvent</definition>
+        <argsstring>(in PosEventBase anEvent, in string watchDogName)</argsstring>
+        <name>removeEvent</name>
+        <qualifiedname>PosEventManager::removeEvent</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_event_base" kindref="compound">PosEventBase</ref></type>
+          <declname>anEvent</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>watchDogName</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_event_manager_1_1_event_not_found_signal" kindref="compound">EventNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmg.idl" line="129" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_manager_1a9a8c92507af1d282fb7f38986e2eacab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventManager::PosEventManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosEventManager_init</name>
+        <qualifiedname>PosEventManager::PosEventManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmg.idl" line="135" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_manager_1aace05ead1e88a7648800e9da787be00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventManager::registWatchDog</definition>
+        <argsstring>(in string txid, in string watchDogName)</argsstring>
+        <name>registWatchDog</name>
+        <qualifiedname>PosEventManager::registWatchDog</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>txid</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>watchDogName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmg.idl" line="141" column="8"/>
+        <references refid="interface_pos_event_manager_1aace05ead1e88a7648800e9da787be00e">registWatchDog</references>
+        <referencedby refid="interface_pos_event_manager_1aace05ead1e88a7648800e9da787be00e">registWatchDog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_event_manager_1abfcbf7a6156a8d92e721ef83226382b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEventManager::unregistWatchDog</definition>
+        <argsstring>(in string txid, in string watchDogName)</argsstring>
+        <name>unregistWatchDog</name>
+        <qualifiedname>PosEventManager::unregistWatchDog</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>txid</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>watchDogName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmg.idl" line="147" column="8"/>
+        <references refid="interface_pos_event_manager_1abfcbf7a6156a8d92e721ef83226382b5">unregistWatchDog</references>
+        <referencedby refid="interface_pos_event_manager_1abfcbf7a6156a8d92e721ef83226382b5">unregistWatchDog</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosEventManager</label>
+        <link refid="interface_pos_event_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosEventManager</label>
+        <link refid="interface_pos_event_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmg.idl" line="57" column="11" bodyfile="poscimfw/include/pevmg.idl" bodystart="57" bodyend="155"/>
+    <listofallmembers>
+      <member refid="interface_pos_event_manager_1a7889fecb9a87a4a1634d65926a9da950" prot="public" virt="non-virtual"><scope>PosEventManager</scope><name>createEvent</name></member>
+      <member refid="interface_pos_event_manager_1a9a8c92507af1d282fb7f38986e2eacab" prot="public" virt="non-virtual"><scope>PosEventManager</scope><name>PosEventManager_init</name></member>
+      <member refid="interface_pos_event_manager_1aace05ead1e88a7648800e9da787be00e" prot="public" virt="non-virtual"><scope>PosEventManager</scope><name>registWatchDog</name></member>
+      <member refid="interface_pos_event_manager_1a6cd3ef334485fc564e619bfd70b27453" prot="public" virt="non-virtual"><scope>PosEventManager</scope><name>removeEvent</name></member>
+      <member refid="interface_pos_event_manager_1abfcbf7a6156a8d92e721ef83226382b5" prot="public" virt="non-virtual"><scope>PosEventManager</scope><name>unregistWatchDog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

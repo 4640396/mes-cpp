@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="prdctmsp_8idl" kind="file" language="IDL">
+    <compoundname>prdctmsp.idl</compoundname>
+    <includes local="yes">prdctmof.idl</includes>
+    <includes local="no">MOFW.idl</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/prdctmsp.idl</label>
+        <link refid="prdctmsp_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOFW.idl</label>
+      </node>
+      <node id="2">
+        <label>prdctmof.idl</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_s_p_product_management_object_factory" prot="public">SPProductManagementObjectFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SCCS<sp/>ID:<sp/>%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>prdctmof.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/30/96<sp/><sp/>25805<sp/><sp/><sp/>D.<sp/>Hidalgo<sp/><sp/><sp/><sp/><sp/>New<sp/>release.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>08/30/00<sp/>D3000020<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosControlJob<sp/>for<sp/>R3.0<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/19/02<sp/>D40A0009<sp/>M.Ameshita<sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosPlannedSplitJob.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/13/06<sp/>D7000173<sp/>F.Masada<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Add<sp/>newPosFutureReworkRequest.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;prdctmof.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MOFW.idl&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_note" kindref="compound">PosLotNote</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_operation_note" kindref="compound">PosLotOperationNote</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_comment" kindref="compound">PosLotComment</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_lot_type" kindref="compound">PosLotType</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_monitor_group" kindref="compound">PosMonitorGroup</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D3000020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//D40A0009</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//D7000173</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="interface_s_p_product_management_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_s_p_product_management_object_factory" kindref="compound">SPProductManagementObjectFactory</ref><sp/>:<sp/>CIMFWProductManagementObjectFactory,<sp/>MOFW_TransManagedObjectFactory</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="interface_s_p_product_management_object_factory_1ab6414ea44328ea01943becaf99e593fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_lot_note" kindref="compound">PosLotNote</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1ab6414ea44328ea01943becaf99e593fa" kindref="member">newPosLotNote</ref>();</highlight></codeline>
+<codeline lineno="37" refid="interface_s_p_product_management_object_factory_1a7fd2110480c983c6e99de9aac15f4d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_lot_operation_note" kindref="compound">PosLotOperationNote</ref><sp/><ref refid="interface_s_p_product_management_object_factory_1a7fd2110480c983c6e99de9aac15f4d3c" kindref="member">newPosLotOperationNote</ref>();</highlight></codeline>
+<codeline lineno="38" refid="interface_s_p_product_management_object_factory_1a6c57686449d8b65f6b446584cb2dddf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_lot_comment" kindref="compound">PosLotComment</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1a6c57686449d8b65f6b446584cb2dddf9" kindref="member">newPosLotComment</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>PosLotType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPosLotType();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="interface_s_p_product_management_object_factory_1ad21996c696c05af34af9823a1aef0296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_lot_type" kindref="compound">PosLotType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1ad21996c696c05af34af9823a1aef0296" kindref="member">newPosLotType</ref>(in<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>systemKey);<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="interface_s_p_product_management_object_factory_1a7219c76531dbcefea12e09e6e81d1165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_monitor_group" kindref="compound">PosMonitorGroup</ref><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1a7219c76531dbcefea12e09e6e81d1165" kindref="member">newPosMonitorGroup</ref>();</highlight></codeline>
+<codeline lineno="42" refid="interface_s_p_product_management_object_factory_1a063b8bb182a4aa1580e55e24398cc652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1a063b8bb182a4aa1580e55e24398cc652" kindref="member">newPosControlJob</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D3000020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="interface_s_p_product_management_object_factory_1a06502afe273672317c8a030c3a567513" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_planned_split_job" kindref="compound">PosPlannedSplitJob</ref><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1a06502afe273672317c8a030c3a567513" kindref="member">newPosPlannedSplitJob</ref>();<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D40A0009</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="interface_s_p_product_management_object_factory_1ab51a2291b4389a38a0cbd451c5300b7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_pos_future_rework_request" kindref="compound">PosFutureReworkRequest</ref><sp/><sp/><ref refid="interface_s_p_product_management_object_factory_1ab51a2291b4389a38a0cbd451c5300b7c" kindref="member">newPosFutureReworkRequest</ref>();<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D7000173</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/prdctmsp.idl"/>
+  </compounddef>
+</doxygen>

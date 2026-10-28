@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_property_base" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPropertyBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWBO</basecompoundref>
+    <derivedcompoundref refid="interface_pos_property_integer" prot="public" virt="non-virtual">PosPropertyInteger</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_property_real" prot="public" virt="non-virtual">PosPropertyReal</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_property_string" prot="public" virt="non-virtual">PosPropertyString</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_property_table_s_i" prot="public" virt="non-virtual">PosPropertyTableSI</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_property_table_s_r" prot="public" virt="non-virtual">PosPropertyTableSR</derivedcompoundref>
+    <derivedcompoundref refid="interface_pos_property_table_s_s" prot="public" virt="non-virtual">PosPropertyTableSS</derivedcompoundref>
+    <includes refid="pptybas_8idl" local="no">pptybas.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_property_base_1ac8268ca676328a9cbf6556de89d800f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyBase::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosPropertyBase::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptybas.idl" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_base_1aa80565da60664370f9253f0d5150dee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPropertyBase::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosPropertyBase::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptybas.idl" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216" kindref="member">posPropertyType</ref></type>
+        <definition>posPropertyType PosPropertyBase::getDataType</definition>
+        <argsstring>()</argsstring>
+        <name>getDataType</name>
+        <qualifiedname>PosPropertyBase::getDataType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptybas.idl" line="70" column="19"/>
+        <references refid="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47">getDataType</references>
+        <referencedby refid="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47">getDataType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertyBase::PosPropertyBase_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPropertyBase_init</name>
+        <qualifiedname>PosPropertyBase::PosPropertyBase_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pptybas.idl" line="73" column="8"/>
+        <references refid="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e">PosPropertyBase_init</references>
+        <referencedby refid="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e">PosPropertyBase_init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="1">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PosPropertyInteger</label>
+        <link refid="interface_pos_property_integer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PosPropertyReal</label>
+        <link refid="interface_pos_property_real"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PosPropertyString</label>
+        <link refid="interface_pos_property_string"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PosPropertyTableSI</label>
+        <link refid="interface_pos_property_table_s_i"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PosPropertyTableSR</label>
+        <link refid="interface_pos_property_table_s_r"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PosPropertyTableSS</label>
+        <link refid="interface_pos_property_table_s_s"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="1">
+        <label>PosPropertyBase</label>
+        <link refid="interface_pos_property_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pptybas.idl" line="39" column="11" bodyfile="poscimfw/include/pptybas.idl" bodystart="39" bodyend="83"/>
+    <listofallmembers>
+      <member refid="interface_pos_property_base_1a6338504f16765f92fb605b76a4c7fa47" prot="public" virt="non-virtual"><scope>PosPropertyBase</scope><name>getDataType</name></member>
+      <member refid="interface_pos_property_base_1aa80565da60664370f9253f0d5150dee6" prot="public" virt="non-virtual"><scope>PosPropertyBase</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_property_base_1a09637ba983c463400ba21b0d83734d7e" prot="public" virt="non-virtual"><scope>PosPropertyBase</scope><name>PosPropertyBase_init</name></member>
+      <member refid="interface_pos_property_base_1ac8268ca676328a9cbf6556de89d800f6" prot="public" virt="non-virtual"><scope>PosPropertyBase</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

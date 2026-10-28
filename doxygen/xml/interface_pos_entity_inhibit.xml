@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_entity_inhibit" kind="interface" language="IDL" prot="public">
+    <compoundname>PosEntityInhibit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWBO</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="penin_8idl" local="no">penin.idl</includes>
+    <innerclass refid="exception_pos_entity_inhibit_1_1_exception_lot_record_not_found_signal" prot="public">PosEntityInhibit::ExceptionLotRecordNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1aa5116e9c6f584a87ad6c130d81aa9f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setStartTimeStamp</definition>
+        <argsstring>(in TimeStamp startTimeStamp)</argsstring>
+        <name>setStartTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::setStartTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>startTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="82" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1ab6be742cb6763903fb0062d2e9040b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosEntityInhibit::getStartTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getStartTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::getStartTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="89" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a1c551a1beb17416a9f126d20fad117d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setEndTimeStamp</definition>
+        <argsstring>(in TimeStamp endTimeStamp)</argsstring>
+        <name>setEndTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::setEndTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>endTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="96" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a1c551a1beb17416a9f126d20fad117d0">setEndTimeStamp</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a1c551a1beb17416a9f126d20fad117d0">setEndTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a3e610bae900f289ac82a5a88965ad738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosEntityInhibit::getEndTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getEndTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::getEndTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="103" column="13"/>
+        <references refid="interface_pos_entity_inhibit_1a3e610bae900f289ac82a5a88965ad738">getEndTimeStamp</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a3e610bae900f289ac82a5a88965ad738">getEndTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a201124bd5f28a7f019a3c766309553ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setEntities</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities)</argsstring>
+        <name>setEntities</name>
+        <qualifiedname>PosEntityInhibit::setEntities</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="110" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a201124bd5f28a7f019a3c766309553ee">setEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a201124bd5f28a7f019a3c766309553ee">setEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a4eb02ef46a99005c15ca4c11a2e18161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+        <definition>PosEntityIdentifierSequence PosEntityInhibit::getEntities</definition>
+        <argsstring>()</argsstring>
+        <name>getEntities</name>
+        <qualifiedname>PosEntityInhibit::getEntities</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="116" column="31"/>
+        <references refid="interface_pos_entity_inhibit_1a4eb02ef46a99005c15ca4c11a2e18161">getEntities</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a4eb02ef46a99005c15ca4c11a2e18161">getEntities</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1aa4f2f0c7c1789236a47f3fd9b2b42b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setSubLotTypes</definition>
+        <argsstring>(in stringSequence sublottypes)</argsstring>
+        <name>setSubLotTypes</name>
+        <qualifiedname>PosEntityInhibit::setSubLotTypes</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="123" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1aa4f2f0c7c1789236a47f3fd9b2b42b59">setSubLotTypes</references>
+        <referencedby refid="interface_pos_entity_inhibit_1aa4f2f0c7c1789236a47f3fd9b2b42b59">setSubLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a5494b68cdae2f3b20961362d3770766f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosEntityInhibit::getSubLotTypes</definition>
+        <argsstring>()</argsstring>
+        <name>getSubLotTypes</name>
+        <qualifiedname>PosEntityInhibit::getSubLotTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="130" column="18"/>
+        <references refid="interface_pos_entity_inhibit_1a5494b68cdae2f3b20961362d3770766f">getSubLotTypes</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a5494b68cdae2f3b20961362d3770766f">getSubLotTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1af086fdae06daa735ec4835a1774b16ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setOwner</definition>
+        <argsstring>(in PosPerson owner)</argsstring>
+        <name>setOwner</name>
+        <qualifiedname>PosEntityInhibit::setOwner</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>owner</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="136" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1af086fdae06daa735ec4835a1774b16ed">setOwner</references>
+        <referencedby refid="interface_pos_entity_inhibit_1af086fdae06daa735ec4835a1774b16ed">setOwner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a4ffea01f1b8f49b4a1529515b7db2649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosEntityInhibit::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <qualifiedname>PosEntityInhibit::getOwner</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="143" column="13"/>
+        <references refid="interface_pos_entity_inhibit_1a4ffea01f1b8f49b4a1529515b7db2649">getOwner</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a4ffea01f1b8f49b4a1529515b7db2649">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1ad3a8104898557a222afc17310c305fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a841193ee39339f0b6afa712a9c748d7b" kindref="member">posEntityInhibitRecord</ref></type>
+        <definition>posEntityInhibitRecord PosEntityInhibit::getInhibitRecord</definition>
+        <argsstring>()</argsstring>
+        <name>getInhibitRecord</name>
+        <qualifiedname>PosEntityInhibit::getInhibitRecord</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="149" column="26"/>
+        <references refid="interface_pos_entity_inhibit_1ad3a8104898557a222afc17310c305fa1">getInhibitRecord</references>
+        <referencedby refid="interface_pos_entity_inhibit_1ad3a8104898557a222afc17310c305fa1">getInhibitRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a2c28344d543e5d200a504a9f9f3327a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setInhibitRecord</definition>
+        <argsstring>(in posEntityInhibitRecord entityRecord)</argsstring>
+        <name>setInhibitRecord</name>
+        <qualifiedname>PosEntityInhibit::setInhibitRecord</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a841193ee39339f0b6afa712a9c748d7b" kindref="member">posEntityInhibitRecord</ref></type>
+          <declname>entityRecord</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="155" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a2c28344d543e5d200a504a9f9f3327a6">setInhibitRecord</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a2c28344d543e5d200a504a9f9f3327a6">setInhibitRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a9d8bc18a721d3220bbb21e58762166e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosEntityInhibit::isInhibitFor</definition>
+        <argsstring>(in PosEntityIdentifierSequence entities, in stringSequence sublottypes)</argsstring>
+        <name>isInhibitFor</name>
+        <qualifiedname>PosEntityInhibit::isInhibitFor</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a80cae1ed74536ed24eedd9c254d6f61a" kindref="member">PosEntityIdentifierSequence</ref></type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>in stringSequence</type>
+          <declname>sublottypes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="162" column="11"/>
+        <references refid="interface_pos_entity_inhibit_1a9d8bc18a721d3220bbb21e58762166e0">isInhibitFor</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a9d8bc18a721d3220bbb21e58762166e0">isInhibitFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1ac64bb98a8340b64576d0be04f8941413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setChangedTimeStamp</definition>
+        <argsstring>(in TimeStamp changedTimeStamp)</argsstring>
+        <name>setChangedTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::setChangedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>changedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="169" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1ac64bb98a8340b64576d0be04f8941413">setChangedTimeStamp</references>
+        <referencedby refid="interface_pos_entity_inhibit_1ac64bb98a8340b64576d0be04f8941413">setChangedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a326f5687adc9a4499f240a69e9f429de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosEntityInhibit::getChangedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getChangedTimeStamp</name>
+        <qualifiedname>PosEntityInhibit::getChangedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="176" column="13"/>
+        <references refid="interface_pos_entity_inhibit_1a326f5687adc9a4499f240a69e9f429de">getChangedTimeStamp</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a326f5687adc9a4499f240a69e9f429de">getChangedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1adbe8dafa41519f4b81db2ee810347a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::PosEntityInhibit_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosEntityInhibit_init</name>
+        <qualifiedname>PosEntityInhibit::PosEntityInhibit_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="182" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1adbe8dafa41519f4b81db2ee810347a75">PosEntityInhibit_init</references>
+        <referencedby refid="interface_pos_entity_inhibit_1adbe8dafa41519f4b81db2ee810347a75">PosEntityInhibit_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a49d3596281b595e0429df42d652cfb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setDescription</definition>
+        <argsstring>(in string desc)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosEntityInhibit::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>desc</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="188" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a49d3596281b595e0429df42d652cfb44">setDescription</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a49d3596281b595e0429df42d652cfb44">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a9247567158c9ba7a2c89d135b0d4c492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosEntityInhibit::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosEntityInhibit::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="194" column="10"/>
+        <references refid="interface_pos_entity_inhibit_1a9247567158c9ba7a2c89d135b0d4c492">getDescription</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a9247567158c9ba7a2c89d135b0d4c492">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a92aea9d9e9d0097813e9e71d5cf66eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setCode</definition>
+        <argsstring>(in PosCode code)</argsstring>
+        <name>setCode</name>
+        <qualifiedname>PosEntityInhibit::setCode</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_code" kindref="compound">PosCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="200" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a92aea9d9e9d0097813e9e71d5cf66eca">setCode</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a92aea9d9e9d0097813e9e71d5cf66eca">setCode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a4755dfaf3b3c70f2ef3d1eccbff7bcee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_code" kindref="compound">PosCode</ref></type>
+        <definition>PosCode PosEntityInhibit::getCode</definition>
+        <argsstring>()</argsstring>
+        <name>getCode</name>
+        <qualifiedname>PosEntityInhibit::getCode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="206" column="11"/>
+        <references refid="interface_pos_entity_inhibit_1a4755dfaf3b3c70f2ef3d1eccbff7bcee">getCode</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a4755dfaf3b3c70f2ef3d1eccbff7bcee">getCode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a91785459428f200229074d0aaf5588a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setClaimMemo</definition>
+        <argsstring>(in string memo)</argsstring>
+        <name>setClaimMemo</name>
+        <qualifiedname>PosEntityInhibit::setClaimMemo</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>memo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="212" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a91785459428f200229074d0aaf5588a3">setClaimMemo</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a91785459428f200229074d0aaf5588a3">setClaimMemo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a7cd37409d8c0c0afcb99f0bedef07f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosEntityInhibit::getClaimMemo</definition>
+        <argsstring>()</argsstring>
+        <name>getClaimMemo</name>
+        <qualifiedname>PosEntityInhibit::getClaimMemo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="218" column="10"/>
+        <references refid="interface_pos_entity_inhibit_1a7cd37409d8c0c0afcb99f0bedef07f28">getClaimMemo</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a7cd37409d8c0c0afcb99f0bedef07f28">getClaimMemo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a32c630ea0b868fe414338ac3a8606deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setReasonDetailInfos</definition>
+        <argsstring>(in PosEntityInhibitReasonDetailInfoSequence reasonDetailInfos)</argsstring>
+        <name>setReasonDetailInfos</name>
+        <qualifiedname>PosEntityInhibit::setReasonDetailInfos</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a6602e4f1d8f6fd3eb9bd25a7ac8dfd2e" kindref="member">PosEntityInhibitReasonDetailInfoSequence</ref></type>
+          <declname>reasonDetailInfos</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="225" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a32c630ea0b868fe414338ac3a8606deb">setReasonDetailInfos</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a32c630ea0b868fe414338ac3a8606deb">setReasonDetailInfos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1ae381ddb9415425055a4926cc7cfb88dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a6602e4f1d8f6fd3eb9bd25a7ac8dfd2e" kindref="member">PosEntityInhibitReasonDetailInfoSequence</ref></type>
+        <definition>PosEntityInhibitReasonDetailInfoSequence PosEntityInhibit::getReasonDetailInfos</definition>
+        <argsstring>()</argsstring>
+        <name>getReasonDetailInfos</name>
+        <qualifiedname>PosEntityInhibit::getReasonDetailInfos</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="231" column="44"/>
+        <references refid="interface_pos_entity_inhibit_1ae381ddb9415425055a4926cc7cfb88dd">getReasonDetailInfos</references>
+        <referencedby refid="interface_pos_entity_inhibit_1ae381ddb9415425055a4926cc7cfb88dd">getReasonDetailInfos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a51241851920ede7c74e3a4d78e0d0d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::removeExceptionLot</definition>
+        <argsstring>(in objectIdentifier lotID)</argsstring>
+        <name>removeExceptionLot</name>
+        <qualifiedname>PosEntityInhibit::removeExceptionLot</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="237" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a51241851920ede7c74e3a4d78e0d0d88">removeExceptionLot</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a51241851920ede7c74e3a4d78e0d0d88">removeExceptionLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a88814cbc21b691754541bf0243a5b8f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::removeAllExceptionLots</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllExceptionLots</name>
+        <qualifiedname>PosEntityInhibit::removeAllExceptionLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="243" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a88814cbc21b691754541bf0243a5b8f1">removeAllExceptionLots</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a88814cbc21b691754541bf0243a5b8f1">removeAllExceptionLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a9252b4d86e3d74905d17feac384e63cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1a195d805b430e42da475762dbbaf05f49" kindref="member">PosExceptionLotRecordSequence</ref></type>
+        <definition>PosExceptionLotRecordSequence PosEntityInhibit::getExceptionLotRecords</definition>
+        <argsstring>()</argsstring>
+        <name>getExceptionLotRecords</name>
+        <qualifiedname>PosEntityInhibit::getExceptionLotRecords</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="249" column="33"/>
+        <references refid="interface_pos_entity_inhibit_1a9252b4d86e3d74905d17feac384e63cf">getExceptionLotRecords</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a9252b4d86e3d74905d17feac384e63cf">getExceptionLotRecords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a69cc6e075299a2d2e43459f31f411e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setExceptionLotRecords</definition>
+        <argsstring>(in PosExceptionLotRecordSequence records)</argsstring>
+        <name>setExceptionLotRecords</name>
+        <qualifiedname>PosEntityInhibit::setExceptionLotRecords</qualifiedname>
+        <param>
+          <type>in <ref refid="peningl_8idl_1a195d805b430e42da475762dbbaf05f49" kindref="member">PosExceptionLotRecordSequence</ref></type>
+          <declname>records</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="255" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a69cc6e075299a2d2e43459f31f411e73">setExceptionLotRecords</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a69cc6e075299a2d2e43459f31f411e73">setExceptionLotRecords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a7c12779c714ed9aba25b00666ae6ef4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="peningl_8idl_1aa217b7d528eb72f9c2216006741afdc1" kindref="member">posExceptionLotRecord</ref></type>
+        <definition>posExceptionLotRecord PosEntityInhibit::getExceptionLotRecord</definition>
+        <argsstring>(in objectIdentifier lotID)</argsstring>
+        <name>getExceptionLotRecord</name>
+        <qualifiedname>PosEntityInhibit::getExceptionLotRecord</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>lotID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, <ref refid="exception_pos_entity_inhibit_1_1_exception_lot_record_not_found_signal" kindref="compound">ExceptionLotRecordNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="261" column="25"/>
+        <references refid="interface_pos_entity_inhibit_1a7c12779c714ed9aba25b00666ae6ef4c">getExceptionLotRecord</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a7c12779c714ed9aba25b00666ae6ef4c">getExceptionLotRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_entity_inhibit_1a359e2d4fa6d7b091b053c3e2295c18fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEntityInhibit::setExceptionLotRecord</definition>
+        <argsstring>(in objectIdentifier lotID, in posExceptionLotRecord record)</argsstring>
+        <name>setExceptionLotRecord</name>
+        <qualifiedname>PosEntityInhibit::setExceptionLotRecord</qualifiedname>
+        <param>
+          <type>in objectIdentifier</type>
+          <declname>lotID</declname>
+        </param>
+        <param>
+          <type>in <ref refid="peningl_8idl_1aa217b7d528eb72f9c2216006741afdc1" kindref="member">posExceptionLotRecord</ref></type>
+          <declname>record</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/penin.idl" line="267" column="8"/>
+        <references refid="interface_pos_entity_inhibit_1a359e2d4fa6d7b091b053c3e2295c18fc">setExceptionLotRecord</references>
+        <referencedby refid="interface_pos_entity_inhibit_1a359e2d4fa6d7b091b053c3e2295c18fc">setExceptionLotRecord</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosEntityInhibit</label>
+        <link refid="interface_pos_entity_inhibit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosEntityInhibit</label>
+        <link refid="interface_pos_entity_inhibit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/penin.idl" line="42" column="11" bodyfile="poscimfw/include/penin.idl" bodystart="42" bodyend="275"/>
+    <listofallmembers>
+      <member refid="interface_pos_entity_inhibit_1a326f5687adc9a4499f240a69e9f429de" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getChangedTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1a7cd37409d8c0c0afcb99f0bedef07f28" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getClaimMemo</name></member>
+      <member refid="interface_pos_entity_inhibit_1a4755dfaf3b3c70f2ef3d1eccbff7bcee" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getCode</name></member>
+      <member refid="interface_pos_entity_inhibit_1a9247567158c9ba7a2c89d135b0d4c492" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getDescription</name></member>
+      <member refid="interface_pos_entity_inhibit_1a3e610bae900f289ac82a5a88965ad738" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getEndTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1a4eb02ef46a99005c15ca4c11a2e18161" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_1a7c12779c714ed9aba25b00666ae6ef4c" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getExceptionLotRecord</name></member>
+      <member refid="interface_pos_entity_inhibit_1a9252b4d86e3d74905d17feac384e63cf" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getExceptionLotRecords</name></member>
+      <member refid="interface_pos_entity_inhibit_1ad3a8104898557a222afc17310c305fa1" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getInhibitRecord</name></member>
+      <member refid="interface_pos_entity_inhibit_1a4ffea01f1b8f49b4a1529515b7db2649" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getOwner</name></member>
+      <member refid="interface_pos_entity_inhibit_1ae381ddb9415425055a4926cc7cfb88dd" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getReasonDetailInfos</name></member>
+      <member refid="interface_pos_entity_inhibit_1ab6be742cb6763903fb0062d2e9040b2e" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getStartTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1a5494b68cdae2f3b20961362d3770766f" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>getSubLotTypes</name></member>
+      <member refid="interface_pos_entity_inhibit_1a9d8bc18a721d3220bbb21e58762166e0" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>isInhibitFor</name></member>
+      <member refid="interface_pos_entity_inhibit_1adbe8dafa41519f4b81db2ee810347a75" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>PosEntityInhibit_init</name></member>
+      <member refid="interface_pos_entity_inhibit_1a88814cbc21b691754541bf0243a5b8f1" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>removeAllExceptionLots</name></member>
+      <member refid="interface_pos_entity_inhibit_1a51241851920ede7c74e3a4d78e0d0d88" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>removeExceptionLot</name></member>
+      <member refid="interface_pos_entity_inhibit_1ac64bb98a8340b64576d0be04f8941413" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setChangedTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1a91785459428f200229074d0aaf5588a3" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setClaimMemo</name></member>
+      <member refid="interface_pos_entity_inhibit_1a92aea9d9e9d0097813e9e71d5cf66eca" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setCode</name></member>
+      <member refid="interface_pos_entity_inhibit_1a49d3596281b595e0429df42d652cfb44" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setDescription</name></member>
+      <member refid="interface_pos_entity_inhibit_1a1c551a1beb17416a9f126d20fad117d0" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setEndTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1a201124bd5f28a7f019a3c766309553ee" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setEntities</name></member>
+      <member refid="interface_pos_entity_inhibit_1a359e2d4fa6d7b091b053c3e2295c18fc" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setExceptionLotRecord</name></member>
+      <member refid="interface_pos_entity_inhibit_1a69cc6e075299a2d2e43459f31f411e73" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setExceptionLotRecords</name></member>
+      <member refid="interface_pos_entity_inhibit_1a2c28344d543e5d200a504a9f9f3327a6" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setInhibitRecord</name></member>
+      <member refid="interface_pos_entity_inhibit_1af086fdae06daa735ec4835a1774b16ed" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setOwner</name></member>
+      <member refid="interface_pos_entity_inhibit_1a32c630ea0b868fe414338ac3a8606deb" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setReasonDetailInfos</name></member>
+      <member refid="interface_pos_entity_inhibit_1aa5116e9c6f584a87ad6c130d81aa9f5f" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setStartTimeStamp</name></member>
+      <member refid="interface_pos_entity_inhibit_1aa4f2f0c7c1789236a47f3fd9b2b42b59" prot="public" virt="non-virtual"><scope>PosEntityInhibit</scope><name>setSubLotTypes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

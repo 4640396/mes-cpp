@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pdcmggl_8idl" kind="file" language="IDL">
+    <compoundname>pdcmggl.idl</compoundname>
+    <includes local="yes">fwglobls.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includedby refid="pdcdf_8idl" local="yes">poscimfw/include/pdcdf.idl</includedby>
+    <includedby refid="pdcsp_8idl" local="yes">poscimfw/include/pdcsp.idl</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pdcmggl.idl</label>
+        <link refid="pdcmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="2">
+        <label>fwglobls.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pdcdf.idl</label>
+        <link refid="pdcdf_8idl"/>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pdcmggl.idl</label>
+        <link refid="pdcmggl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pdcsp.idl</label>
+        <link refid="pdcsp_8idl"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>poscimfw/include/pdpope.idl</label>
+        <link refid="pdpope_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/peninmg.idl</label>
+        <link refid="peninmg_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/plcrc.idl</label>
+        <link refid="plcrc_8idl"/>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/pmc.idl</label>
+        <link refid="pmc_8idl"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pmcrc.idl</label>
+        <link refid="pmcrc_8idl"/>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/ppcdf.idl</label>
+        <link refid="ppcdf_8idl"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>poscimfw/include/ppcope.idl</label>
+        <link refid="ppcope_8idl"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/pplspj.idl</label>
+        <link refid="pplspj_8idl"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/pprmgr.idl</label>
+        <link refid="pprmgr_8idl"/>
+      </node>
+      <node id="14">
+        <label>poscimfw/include/prcmg.idl</label>
+        <link refid="prcmg_8idl"/>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/prcmggl.idl</label>
+        <link refid="prcmggl_8idl"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_d_c_item_specification__struct" prot="public">posDCItemSpecification_struct</innerclass>
+    <innerclass refid="structpos_d_c_item_definition__struct" prot="public">posDCItemDefinition_struct</innerclass>
+    <innerclass refid="structpos_d_c_item_data__struct" prot="public">posDCItemData_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" prot="public" static="no">
+        <type><ref refid="structpos_d_c_item_specification__struct" kindref="compound">posDCItemSpecification_struct</ref></type>
+        <definition>typedef posDCItemSpecification_struct posDCItemSpecification</definition>
+        <argsstring></argsstring>
+        <name>posDCItemSpecification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="82" column="39" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a3f0308ed00c6661ad9e04befad94f020" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" kindref="member">posDCItemSpecification</ref> &gt;</type>
+        <definition>typedef sequence&lt;posDCItemSpecification&gt; PosDCItemSpecificationSequence</definition>
+        <argsstring></argsstring>
+        <name>PosDCItemSpecificationSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="91" column="19" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a85f9ec2aaffe5ff989386dbc46a0b3eb" prot="public" static="no">
+        <type><ref refid="structpos_d_c_item_definition__struct" kindref="compound">posDCItemDefinition_struct</ref></type>
+        <definition>typedef posDCItemDefinition_struct posDCItemDefinition</definition>
+        <argsstring></argsstring>
+        <name>posDCItemDefinition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="135" column="36" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a195590b0a25ec41d4010a041c1c74021" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdcmggl_8idl_1a85f9ec2aaffe5ff989386dbc46a0b3eb" kindref="member">posDCItemDefinition</ref> &gt;</type>
+        <definition>typedef sequence&lt;posDCItemDefinition&gt; PosDCItemDefinitionSequence</definition>
+        <argsstring></argsstring>
+        <name>PosDCItemDefinitionSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="144" column="18" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a62023e52daa1999a16cf90a60029ab6f" prot="public" static="no">
+        <type><ref refid="structpos_d_c_item_data__struct" kindref="compound">posDCItemData_struct</ref></type>
+        <definition>typedef posDCItemData_struct posDCItemData</definition>
+        <argsstring></argsstring>
+        <name>posDCItemData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="187" column="30" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a3adada56f60f962c4554864717064bdd" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pdcmggl_8idl_1a62023e52daa1999a16cf90a60029ab6f" kindref="member">posDCItemData</ref> &gt;</type>
+        <definition>typedef sequence&lt;posDCItemData&gt; PosDCItemDataSequence</definition>
+        <argsstring></argsstring>
+        <name>PosDCItemDataSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="196" column="19" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a4b6b250803954f518b7dc3a90f72fb81" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosDataCollectionDefinition&gt; PosDataCollectionDefinitionSequence</definition>
+        <argsstring></argsstring>
+        <name>PosDataCollectionDefinitionSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="205" column="18" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a4c63e7486e49a3897647a0fdfe2a2ec7" prot="public" static="no">
+        <type>brDCSpecificationInfo__101</type>
+        <definition>typedef brDCSpecificationInfo__101 spDCSpecificationInfo</definition>
+        <argsstring></argsstring>
+        <name>spDCSpecificationInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="214" column="36" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pdcmggl_8idl_1a62a1c3d1bdd09cea2a404f212627eb6d" prot="public" static="no">
+        <type>brDCDefinitionInfo__170</type>
+        <definition>typedef brDCDefinitionInfo__170 spDCDefinitionInfo</definition>
+        <argsstring></argsstring>
+        <name>spDCDefinitionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcmggl.idl" line="222" column="33" bodyfile="poscimfw/include/pdcmggl.idl" bodystart="222" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosDataCollectionSpecificationGlobals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Data_Collection_Specification_Functional_Group::Siview_Data_Collection_Management_Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\Program<sp/>Files\Rational\Rational<sp/>Rose<sp/>C++<sp/>4.0\poscimfw\pdcmg\pdcmggl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosDataCollectionSpecificationGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosDataCollectionSpecificationGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwglobls.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structpos_d_c_item_specification__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_d_c_item_specification__struct" kindref="compound">posDCItemSpecification_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemSpecification_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemSpecification_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structpos_d_c_item_specification__struct_1a882e1fdd7fc8223cf2ba93bace741623" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a882e1fdd7fc8223cf2ba93bace741623" kindref="member">dataItemName</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structpos_d_c_item_specification__struct_1aeaf04a6607fbb6a939323207a4403e02" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1aeaf04a6607fbb6a939323207a4403e02" kindref="member">screenLimitUpperRequired</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structpos_d_c_item_specification__struct_1a1c27f3297efaa7aab29a81e8cc4a5826" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a1c27f3297efaa7aab29a81e8cc4a5826" kindref="member">screenLimitUpper</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structpos_d_c_item_specification__struct_1a2a6975885207e23cc12d71483c5708b1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a2a6975885207e23cc12d71483c5708b1" kindref="member">actionCodes_uscrn</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structpos_d_c_item_specification__struct_1a442dc68edfac76168cee7be2300e4182" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a442dc68edfac76168cee7be2300e4182" kindref="member">screenLimitLowerRequired</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structpos_d_c_item_specification__struct_1a591e0fd36c0568254ffec7f4075c6146" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a591e0fd36c0568254ffec7f4075c6146" kindref="member">screenLimitLower</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structpos_d_c_item_specification__struct_1a2087f2f4519101ac677ac808b07ae492" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a2087f2f4519101ac677ac808b07ae492" kindref="member">actionCodes_lscrn</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structpos_d_c_item_specification__struct_1ad7e83806ee4adfefb8c07f4a3acd195c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1ad7e83806ee4adfefb8c07f4a3acd195c" kindref="member">specLimitUpperRequired</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structpos_d_c_item_specification__struct_1a80db29a648de028d604cf2f7d299d504" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a80db29a648de028d604cf2f7d299d504" kindref="member">specLimitUpper</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structpos_d_c_item_specification__struct_1aa7e8f5d004cdbec5900828e1efbdfddf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1aa7e8f5d004cdbec5900828e1efbdfddf" kindref="member">actionCodes_usl</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structpos_d_c_item_specification__struct_1a74f4dd1c59fcaa6027a73e64b4edd382" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a74f4dd1c59fcaa6027a73e64b4edd382" kindref="member">specLimitLowerRequired</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structpos_d_c_item_specification__struct_1a825dfce3635f6f829f30b368c96cd134" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a825dfce3635f6f829f30b368c96cd134" kindref="member">specLimitLower</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structpos_d_c_item_specification__struct_1a34a23c5af971b3c07fc2f7246e0633d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a34a23c5af971b3c07fc2f7246e0633d1" kindref="member">actionCodes_lsl</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structpos_d_c_item_specification__struct_1a65264bcd96d5d943ca71b1ba97a2d6c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a65264bcd96d5d943ca71b1ba97a2d6c1" kindref="member">controlLimitUpperRequired</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structpos_d_c_item_specification__struct_1a68fe3225ef596f3504785a2b9ee5e004" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a68fe3225ef596f3504785a2b9ee5e004" kindref="member">controlLimitUpper</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structpos_d_c_item_specification__struct_1ad48c5a1451ef41b24740d480d161a051" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1ad48c5a1451ef41b24740d480d161a051" kindref="member">actionCodes_ucl</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structpos_d_c_item_specification__struct_1ad344b651bd99da278ec6dbf70b6afc2c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1ad344b651bd99da278ec6dbf70b6afc2c" kindref="member">controlLimitLowerRequired</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structpos_d_c_item_specification__struct_1a573052c00a6d96210c4eed5f490dd756" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a573052c00a6d96210c4eed5f490dd756" kindref="member">controlLimitLower</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structpos_d_c_item_specification__struct_1afc000e470bbb1ac411e4cd05d041697a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1afc000e470bbb1ac411e4cd05d041697a" kindref="member">actionCodes_lcl</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structpos_d_c_item_specification__struct_1a49cecb1fc9253927b4ff50f4abb54c5b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a49cecb1fc9253927b4ff50f4abb54c5b" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structpos_d_c_item_specification__struct_1a34ed816034bfb3240e4d84c822415742" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a34ed816034bfb3240e4d84c822415742" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structpos_d_c_item_specification__struct_1a4b11abce4a55d0ba4e9a4dd3375134bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct_1a4b11abce4a55d0ba4e9a4dd3375134bd" kindref="member">dcSpecGroup</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemSpecification_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemSpecification_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posDCItemSpecification<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posDCItemSpecification_struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>posDCItemSpecification;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_specification__struct" kindref="compound">posDCItemSpecification_struct</ref><sp/><ref refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" kindref="member">posDCItemSpecification</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosDCItemSpecificationSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posDCItemSpecification&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosDCItemSpecificationSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="pdcmggl_8idl_1a3f0308ed00c6661ad9e04befad94f020" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;posDCItemSpecification&gt;<sp/><ref refid="pdcmggl_8idl_1a3f0308ed00c6661ad9e04befad94f020" kindref="member">PosDCItemSpecificationSequence</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structpos_d_c_item_definition__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_d_c_item_definition__struct" kindref="compound">posDCItemDefinition_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemDefinition_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemDefinition_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structpos_d_c_item_definition__struct_1a62003a06d374d0a20d39c5691eb3d434" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a62003a06d374d0a20d39c5691eb3d434" kindref="member">dataItemName</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structpos_d_c_item_definition__struct_1ae5df6eb3033d9bd3930868cf6513ddb8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1ae5df6eb3033d9bd3930868cf6513ddb8" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structpos_d_c_item_definition__struct_1a4334701d76626ff15f95f63cfcff6e87" refkind="member"><highlight class="normal"><sp/><sp/>unit<sp/><ref refid="structpos_d_c_item_definition__struct_1a4334701d76626ff15f95f63cfcff6e87" kindref="member">unitOfMeasure</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structpos_d_c_item_definition__struct_1a01561399f51973abbe9fcd1a8fe42ce9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a01561399f51973abbe9fcd1a8fe42ce9" kindref="member">valType</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structpos_d_c_item_definition__struct_1ab8eee82efc61ca7af1912b79f650005d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1ab8eee82efc61ca7af1912b79f650005d" kindref="member">itemType</ref>;</highlight></codeline>
+<codeline lineno="108" refid="structpos_d_c_item_definition__struct_1ad27a5263a664c7f2e131bdd298a003bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1ad27a5263a664c7f2e131bdd298a003bc" kindref="member">dataCollectionMethod</ref>;</highlight></codeline>
+<codeline lineno="109" refid="structpos_d_c_item_definition__struct_1a73e795da325a04075f71b19345b493fb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a73e795da325a04075f71b19345b493fb" kindref="member">measType</ref>;</highlight></codeline>
+<codeline lineno="110" refid="structpos_d_c_item_definition__struct_1ae60eeeeb4d125e7ef7ba18bbd960e16c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1ae60eeeeb4d125e7ef7ba18bbd960e16c" kindref="member">waferPosition</ref>;</highlight></codeline>
+<codeline lineno="111" refid="structpos_d_c_item_definition__struct_1a4eb3be97301e7ebb55d13bc6f4237493" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a4eb3be97301e7ebb55d13bc6f4237493" kindref="member">sitePosition</ref>;</highlight></codeline>
+<codeline lineno="112" refid="structpos_d_c_item_definition__struct_1a5bf22cb5279ab3768c27bbff5f5c8bda" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a5bf22cb5279ab3768c27bbff5f5c8bda" kindref="member">calculationType</ref>;</highlight></codeline>
+<codeline lineno="113" refid="structpos_d_c_item_definition__struct_1a8633849848b9cc3901b20d5303fbfff8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a8633849848b9cc3901b20d5303fbfff8" kindref="member">calculationExpression</ref>;</highlight></codeline>
+<codeline lineno="114" refid="structpos_d_c_item_definition__struct_1a2f7447979f1d2fe196956c6a55ebfd9b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a2f7447979f1d2fe196956c6a55ebfd9b" kindref="member">isStored</ref>;</highlight></codeline>
+<codeline lineno="115" refid="structpos_d_c_item_definition__struct_1a3c32e7fc255d9749ffa8cc25461a6613" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct_1a3c32e7fc255d9749ffa8cc25461a6613" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemDefinition_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemDefinition_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posDCItemDefinition<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posDCItemDefinition_struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>posDCItemDefinition;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="pdcmggl_8idl_1a85f9ec2aaffe5ff989386dbc46a0b3eb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_definition__struct" kindref="compound">posDCItemDefinition_struct</ref><sp/><ref refid="pdcmggl_8idl_1a85f9ec2aaffe5ff989386dbc46a0b3eb" kindref="member">posDCItemDefinition</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosDCItemDefinitionSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posDCItemDefinition&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosDCItemDefinitionSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="pdcmggl_8idl_1a195590b0a25ec41d4010a041c1c74021" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posDCItemDefinition&gt;<sp/><ref refid="pdcmggl_8idl_1a195590b0a25ec41d4010a041c1c74021" kindref="member">PosDCItemDefinitionSequence</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="structpos_d_c_item_data__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_d_c_item_data__struct" kindref="compound">posDCItemData_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemData_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemData_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="structpos_d_c_item_data__struct_1a7cb5467cc34bfe9a8f7b6c66c441c5a6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a7cb5467cc34bfe9a8f7b6c66c441c5a6" kindref="member">dataItemName</ref>;</highlight></codeline>
+<codeline lineno="157" refid="structpos_d_c_item_data__struct_1ae007619a5e890c8064c500f5d5003e5d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1ae007619a5e890c8064c500f5d5003e5d" kindref="member">waferPosition</ref>;</highlight></codeline>
+<codeline lineno="158" refid="structpos_d_c_item_data__struct_1a7a616d59cbc64e72c522bc1a0d68923f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a7a616d59cbc64e72c522bc1a0d68923f" kindref="member">sitePosition</ref>;</highlight></codeline>
+<codeline lineno="159" refid="structpos_d_c_item_data__struct_1a4014d59f8439d14d3e9b681910d9d40f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a4014d59f8439d14d3e9b681910d9d40f" kindref="member">valType</ref>;</highlight></codeline>
+<codeline lineno="160" refid="structpos_d_c_item_data__struct_1a46d73e70ac8c9009a24f5d934a434d1c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a46d73e70ac8c9009a24f5d934a434d1c" kindref="member">itemType</ref>;</highlight></codeline>
+<codeline lineno="161" refid="structpos_d_c_item_data__struct_1ab5d205486b8c37ec13c3498b81b66f5e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1ab5d205486b8c37ec13c3498b81b66f5e" kindref="member">calculationType</ref>;</highlight></codeline>
+<codeline lineno="162" refid="structpos_d_c_item_data__struct_1ab5d34477e06555c1d4b7f9328f965b11" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1ab5d34477e06555c1d4b7f9328f965b11" kindref="member">calculationExpression</ref>;</highlight></codeline>
+<codeline lineno="163" refid="structpos_d_c_item_data__struct_1a22781b3ba53ae15b416bc74c5d4cfbbd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a22781b3ba53ae15b416bc74c5d4cfbbd" kindref="member">inputValue</ref>;</highlight></codeline>
+<codeline lineno="164" refid="structpos_d_c_item_data__struct_1a0eae64219f9c9246301330182996446c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a0eae64219f9c9246301330182996446c" kindref="member">numValue</ref>;</highlight></codeline>
+<codeline lineno="165" refid="structpos_d_c_item_data__struct_1a3e723821da97374590dcfb613cb3f7a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a3e723821da97374590dcfb613cb3f7a8" kindref="member">specCheckResult</ref>;</highlight></codeline>
+<codeline lineno="166" refid="structpos_d_c_item_data__struct_1a093b499fce2e0a2eb6881250346581b2" refkind="member"><highlight class="normal"><sp/><sp/>stringSequence<sp/><ref refid="structpos_d_c_item_data__struct_1a093b499fce2e0a2eb6881250346581b2" kindref="member">actionCodes</ref>;</highlight></codeline>
+<codeline lineno="167" refid="structpos_d_c_item_data__struct_1a22ae08ca294f09bef5a08aff007cb5bb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1a22ae08ca294f09bef5a08aff007cb5bb" kindref="member">waferID</ref>;</highlight></codeline>
+<codeline lineno="168" refid="structpos_d_c_item_data__struct_1ae2ea43d10d36e7aad4091146de6e2a0a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct_1ae2ea43d10d36e7aad4091146de6e2a0a" kindref="member">measurementType</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posDCItemData_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posDCItemData_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posDCItemData<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posDCItemData_struct<sp/>posDCItemData;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="pdcmggl_8idl_1a62023e52daa1999a16cf90a60029ab6f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_d_c_item_data__struct" kindref="compound">posDCItemData_struct</ref><sp/><ref refid="pdcmggl_8idl_1a62023e52daa1999a16cf90a60029ab6f" kindref="member">posDCItemData</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosDCItemDataSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posDCItemData&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosDCItemDataSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="pdcmggl_8idl_1a3adada56f60f962c4554864717064bdd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence<sp/>&lt;posDCItemData&gt;<sp/><ref refid="pdcmggl_8idl_1a3adada56f60f962c4554864717064bdd" kindref="member">PosDCItemDataSequence</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosDataCollectionDefinitionSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosDataCollectionDefinition&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosDataCollectionDefinitionSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="pdcmggl_8idl_1a4b6b250803954f518b7dc3a90f72fb81" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosDataCollectionDefinition&gt;<sp/><ref refid="pdcmggl_8idl_1a4b6b250803954f518b7dc3a90f72fb81" kindref="member">PosDataCollectionDefinitionSequence</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>spDCSpecificationInfo<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>brDCSpecificationInfo__101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>spDCSpecificationInfo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="pdcmggl_8idl_1a4c63e7486e49a3897647a0fdfe2a2ec7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>brDCSpecificationInfo__101<sp/><ref refid="pdcmggl_8idl_1a4c63e7486e49a3897647a0fdfe2a2ec7" kindref="member">spDCSpecificationInfo</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>spDCDefinitionInfo<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>brDCDefinitionInfo__170<sp/>spDCDefinitionInfo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Data<sp/>Collection<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="pdcmggl_8idl_1a62a1c3d1bdd09cea2a404f212627eb6d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>brDCDefinitionInfo__170<sp/><ref refid="pdcmggl_8idl_1a62a1c3d1bdd09cea2a404f212627eb6d" kindref="member">spDCDefinitionInfo</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pdcmggl.idl"/>
+  </compounddef>
+</doxygen>

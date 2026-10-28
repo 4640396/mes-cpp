@@ -1,0 +1,26 @@
+var structpos_lot_operation_start_event_record__struct =
+[
+    [ "batchID", "structpos_lot_operation_start_event_record__struct.html#abaf950f0d8193981bc04f207d6f67301", null ],
+    [ "controlJobID", "structpos_lot_operation_start_event_record__struct.html#a0313d886cfed983d6947a830e7a6600c", null ],
+    [ "equipmentID", "structpos_lot_operation_start_event_record__struct.html#a9ce80fafb06289805a2a2411ca958c38", null ],
+    [ "eventCommon", "structpos_lot_operation_start_event_record__struct.html#abe0ba347d90acf3065da745a42912d4f", null ],
+    [ "fixtureIDs", "structpos_lot_operation_start_event_record__struct.html#acd2069beb4cc0d7d280c4998bd51c064", null ],
+    [ "locateBackFlag", "structpos_lot_operation_start_event_record__struct.html#ad3c5b7753e77b4f3261cad58deddfbb9", null ],
+    [ "logicalRecipeID", "structpos_lot_operation_start_event_record__struct.html#a8b38b952234f9560346bf91e53f0bbb5", null ],
+    [ "lotData", "structpos_lot_operation_start_event_record__struct.html#ade75c9ddf09ee66f12fd6f887499fd04", null ],
+    [ "machineRecipeID", "structpos_lot_operation_start_event_record__struct.html#a96fa41e99b2d0fe929e2c69387744996", null ],
+    [ "operationMode", "structpos_lot_operation_start_event_record__struct.html#a94bad295d15de068d55d74c46280d9b0", null ],
+    [ "physicalRecipeID", "structpos_lot_operation_start_event_record__struct.html#a51fa8b4f22b3e5068039073cfc860b0f", null ],
+    [ "previousObjrefMainPF", "structpos_lot_operation_start_event_record__struct.html#ad52c9ecbdf9facae5e45254f757ffedc", null ],
+    [ "previousObjrefModulePOS", "structpos_lot_operation_start_event_record__struct.html#a8faa02c16590f64610c05aa270674654", null ],
+    [ "previousObjrefPOS", "structpos_lot_operation_start_event_record__struct.html#a4f6ff634fb7ef2cfbc76e452c29bd285", null ],
+    [ "previousOperationID", "structpos_lot_operation_start_event_record__struct.html#ac83c1e2d6ee54c8f87a1d151e2c7f44a", null ],
+    [ "previousOperationNumber", "structpos_lot_operation_start_event_record__struct.html#a80501d406f51866829cd57488cbb2717", null ],
+    [ "previousOperationPassCount", "structpos_lot_operation_start_event_record__struct.html#aa9f2fbd6e735194d912238fe74507ea6", null ],
+    [ "previousRouteID", "structpos_lot_operation_start_event_record__struct.html#acf10f35c21f6a92a3b730fa5892a5070", null ],
+    [ "recipeParameters", "structpos_lot_operation_start_event_record__struct.html#a7c68e4f3066d931463ab933005f3c5bf", null ],
+    [ "reticleIDs", "structpos_lot_operation_start_event_record__struct.html#aac7eee338bf7f17d5c905962bd245665", null ],
+    [ "samplingWafers", "structpos_lot_operation_start_event_record__struct.html#a11ab14b1a77cfb2f328f0df88ff07a99", null ],
+    [ "testCriteriaResult", "structpos_lot_operation_start_event_record__struct.html#aa70dcd833a14e2921d4b56afd0209a3e", null ],
+    [ "waferLevelRecipe", "structpos_lot_operation_start_event_record__struct.html#ae6e4e01ba45a273ecd918e8d6916ba56", null ]
+];

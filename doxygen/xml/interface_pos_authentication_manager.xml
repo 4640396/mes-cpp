@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_authentication_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosAuthenticationManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ComponentManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pathmgr_8idl" local="no">pathmgr.idl</includes>
+    <innerclass refid="exception_pos_authentication_manager_1_1_user_id_not_found_signal" prot="public">PosAuthenticationManager::UserIdNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_authentication_manager_1_1_invalid_password_signal" prot="public">PosAuthenticationManager::InvalidPasswordSignal</innerclass>
+    <innerclass refid="exception_pos_authentication_manager_1_1_password_expired_signal" prot="public">PosAuthenticationManager::PasswordExpiredSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_authentication_manager_1a6c989c5d35ebc959b7bac27477e4701d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAuthenticationManager::authenticate</definition>
+        <argsstring>(in string UserId, in string password)</argsstring>
+        <name>authenticate</name>
+        <qualifiedname>PosAuthenticationManager::authenticate</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>password</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_authentication_manager_1_1_password_expired_signal" kindref="compound">PasswordExpiredSignal</ref>, <ref refid="exception_pos_authentication_manager_1_1_user_id_not_found_signal" kindref="compound">UserIdNotFoundSignal</ref>, <ref refid="exception_pos_authentication_manager_1_1_invalid_password_signal" kindref="compound">InvalidPasswordSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pathmgr.idl" line="133" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_authentication_manager_1a1d939bdb759680090103ace342f93d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAuthenticationManager::changePassword</definition>
+        <argsstring>(in string userId, in string currentPassword, in string newPassword)</argsstring>
+        <name>changePassword</name>
+        <qualifiedname>PosAuthenticationManager::changePassword</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>userId</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>currentPassword</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>newPassword</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_authentication_manager_1_1_invalid_password_signal" kindref="compound">InvalidPasswordSignal</ref>, <ref refid="exception_pos_authentication_manager_1_1_user_id_not_found_signal" kindref="compound">UserIdNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pathmgr.idl" line="139" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_authentication_manager_1ad9bc2218f96e7a0a7bdab6cfeb988450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAuthenticationManager::resetPassword</definition>
+        <argsstring>(in string userId, in string newPassword)</argsstring>
+        <name>resetPassword</name>
+        <qualifiedname>PosAuthenticationManager::resetPassword</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>userId</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>newPassword</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_authentication_manager_1_1_user_id_not_found_signal" kindref="compound">UserIdNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pathmgr.idl" line="145" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_authentication_manager_1a478ff1d3b12ab5f9fb3040d6ce08e8b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAuthenticationManager::PosAuthenticationManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosAuthenticationManager_init</name>
+        <qualifiedname>PosAuthenticationManager::PosAuthenticationManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pathmgr.idl" line="148" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosAuthenticationManager</label>
+        <link refid="interface_pos_authentication_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ComponentManager</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosAuthenticationManager</label>
+        <link refid="interface_pos_authentication_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pathmgr.idl" line="45" column="11" bodyfile="poscimfw/include/pathmgr.idl" bodystart="46" bodyend="159"/>
+    <listofallmembers>
+      <member refid="interface_pos_authentication_manager_1a6c989c5d35ebc959b7bac27477e4701d" prot="public" virt="non-virtual"><scope>PosAuthenticationManager</scope><name>authenticate</name></member>
+      <member refid="interface_pos_authentication_manager_1a1d939bdb759680090103ace342f93d5d" prot="public" virt="non-virtual"><scope>PosAuthenticationManager</scope><name>changePassword</name></member>
+      <member refid="interface_pos_authentication_manager_1a478ff1d3b12ab5f9fb3040d6ce08e8b4" prot="public" virt="non-virtual"><scope>PosAuthenticationManager</scope><name>PosAuthenticationManager_init</name></member>
+      <member refid="interface_pos_authentication_manager_1ad9bc2218f96e7a0a7bdab6cfeb988450" prot="public" virt="non-virtual"><scope>PosAuthenticationManager</scope><name>resetPassword</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+var structpos_wafer_info__struct =
+[
+    [ "badDiceQuantity", "structpos_wafer_info__struct.html#a9feb12c20d79e7f8d7648a4cc90df1cf", null ],
+    [ "controlWafer", "structpos_wafer_info__struct.html#aeed2764e5bf424db14c841f53bc379dc", null ],
+    [ "eqpMonitorUsedCount", "structpos_wafer_info__struct.html#a7aac6016f943939396494b9fab7c1f9b", null ],
+    [ "goodDiceQuantity", "structpos_wafer_info__struct.html#a9c4cbbedbb58d782ada279c6d37bd392", null ],
+    [ "lastClaimedPerson", "structpos_wafer_info__struct.html#adf57a49be0ebd0ab197f005f91201e40", null ],
+    [ "lastClaimedTimeStamp", "structpos_wafer_info__struct.html#ac55e584edfb2a387f6a918c97c617d08", null ],
+    [ "lotID", "structpos_wafer_info__struct.html#a3931cfdec565414d62c3b6e884c76433", null ],
+    [ "materialContainer", "structpos_wafer_info__struct.html#a19d37b75c99aae71905f78e0f36705e5", null ],
+    [ "nominalSize", "structpos_wafer_info__struct.html#ab06571293175594c7e4dc730bd81d423", null ],
+    [ "originalIdentifier", "structpos_wafer_info__struct.html#a06e75c5d5f36c9c2a9ee8e9d124f63b2", null ],
+    [ "partNumber", "structpos_wafer_info__struct.html#a4ea7e4824eb56c0c89383dea615c4ef9", null ],
+    [ "position", "structpos_wafer_info__struct.html#ae9f8e62319a206fabf6bb3c07720aaa0", null ],
+    [ "previousLot", "structpos_wafer_info__struct.html#a48633a1a2c3dc58d3b6f89703eceece6", null ],
+    [ "productSpecification", "structpos_wafer_info__struct.html#aaee7307bc0ef0de545bd244f02990aa2", null ],
+    [ "recycleCount", "structpos_wafer_info__struct.html#a4b26e44d9d3aa0c8b6b00684b1a08a0c", null ],
+    [ "recycleLimit", "structpos_wafer_info__struct.html#affec0ed3f3139903d6d0fe0a7c37a49c", null ],
+    [ "repairedDiceQuantity", "structpos_wafer_info__struct.html#ae599339a42eef3914bed490af6b90f0f", null ],
+    [ "scrapState", "structpos_wafer_info__struct.html#a1c01f720df59843f12f6d9f110a7f661", null ],
+    [ "serialNumber", "structpos_wafer_info__struct.html#aabaa7e8ced7537135d7db5745239a517", null ],
+    [ "stackedWafers", "structpos_wafer_info__struct.html#aad6cc37f810c804e562e3cd7b733d13a", null ],
+    [ "stbAllocated", "structpos_wafer_info__struct.html#ac2cef73e654f9a2c56dc1f3d8b17ad4e", null ],
+    [ "subProductSpecification", "structpos_wafer_info__struct.html#a0a222a12d2fb05aa34b87de01084e1ae", null ],
+    [ "totalDiceQuantity", "structpos_wafer_info__struct.html#af33c188ec69e353807587cca82c62dc6", null ],
+    [ "waferID", "structpos_wafer_info__struct.html#a1d4243eb6d2aaf47f77ea32fb74000bb", null ]
+];

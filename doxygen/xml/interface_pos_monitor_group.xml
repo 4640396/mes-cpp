@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_monitor_group" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMonitorGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmongrp_8idl" local="no">pmongrp.idl</includes>
+    <innerclass refid="exception_pos_monitor_group_1_1_lot_not_found_signal" prot="public">PosMonitorGroup::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_monitor_group_1_1_lot_duplicate_signal" prot="public">PosMonitorGroup::LotDuplicateSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_monitor_group_1aa4c67b5c14f18284d4364b7cb85a62b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::PosMonitorGroup_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMonitorGroup_init</name>
+        <qualifiedname>PosMonitorGroup::PosMonitorGroup_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="99" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1ac1e27904451ca6eb9afafb7c4d16b01f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a007d1091d20f732e9ceb37de473a38df" kindref="member">PosMonitoredLotSequence</ref></type>
+        <definition>PosMonitoredLotSequence PosMonitorGroup::allLots</definition>
+        <argsstring>()</argsstring>
+        <name>allLots</name>
+        <qualifiedname>PosMonitorGroup::allLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="105" column="27"/>
+        <references refid="interface_pos_monitor_group_1ac1e27904451ca6eb9afafb7c4d16b01f">allLots</references>
+        <referencedby refid="interface_pos_monitor_group_1ac1e27904451ca6eb9afafb7c4d16b01f">allLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a43dd9df76b7140cb9f576ed94668c013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a47c170c2888b9a88425a3fc57f886e73" kindref="member">posMonitoredLot</ref></type>
+        <definition>posMonitoredLot PosMonitorGroup::findLotNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLotNamed</name>
+        <qualifiedname>PosMonitorGroup::findLotNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_monitor_group_1_1_lot_not_found_signal" kindref="compound">LotNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="112" column="19"/>
+        <references refid="interface_pos_monitor_group_1a43dd9df76b7140cb9f576ed94668c013">findLotNamed</references>
+        <referencedby refid="interface_pos_monitor_group_1a43dd9df76b7140cb9f576ed94668c013">findLotNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a1ea8512d6aa9cec1d527b326c4997b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::addLot</definition>
+        <argsstring>(in posMonitoredLot aLot)</argsstring>
+        <name>addLot</name>
+        <qualifiedname>PosMonitorGroup::addLot</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1a47c170c2888b9a88425a3fc57f886e73" kindref="member">posMonitoredLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_monitor_group_1_1_lot_duplicate_signal" kindref="compound">LotDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="121" column="8"/>
+        <references refid="interface_pos_monitor_group_1a1ea8512d6aa9cec1d527b326c4997b0f">addLot</references>
+        <referencedby refid="interface_pos_monitor_group_1a1ea8512d6aa9cec1d527b326c4997b0f">addLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a4cceace24850f5cffe065861b024f8c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::removeLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeLot</name>
+        <qualifiedname>PosMonitorGroup::removeLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_monitor_group_1_1_lot_not_found_signal" kindref="compound">LotNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="128" column="8"/>
+        <references refid="interface_pos_monitor_group_1a4cceace24850f5cffe065861b024f8c6">removeLot</references>
+        <referencedby refid="interface_pos_monitor_group_1a4cceace24850f5cffe065861b024f8c6">removeLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a53646b56546a9d11b8080557b34e852e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::removeAllLots</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLots</name>
+        <qualifiedname>PosMonitorGroup::removeAllLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="135" column="8"/>
+        <references refid="interface_pos_monitor_group_1a53646b56546a9d11b8080557b34e852e">removeAllLots</references>
+        <referencedby refid="interface_pos_monitor_group_1a53646b56546a9d11b8080557b34e852e">removeAllLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a7c628b8a06451301c74e866defb70b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::setMonitorLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>setMonitorLot</name>
+        <qualifiedname>PosMonitorGroup::setMonitorLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="141" column="8"/>
+        <references refid="interface_pos_monitor_group_1a7c628b8a06451301c74e866defb70b3e">setMonitorLot</references>
+        <referencedby refid="interface_pos_monitor_group_1a7c628b8a06451301c74e866defb70b3e">setMonitorLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a71de581ebde44b07b21021843d8142bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosMonitorGroup::getMonitorLot</definition>
+        <argsstring>()</argsstring>
+        <name>getMonitorLot</name>
+        <qualifiedname>PosMonitorGroup::getMonitorLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="147" column="10"/>
+        <references refid="interface_pos_monitor_group_1a71de581ebde44b07b21021843d8142bc">getMonitorLot</references>
+        <referencedby refid="interface_pos_monitor_group_1a71de581ebde44b07b21021843d8142bc">getMonitorLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a7b139f9e9ec97d22910a712baaf54e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosMonitorGroup::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="153" column="8"/>
+        <references refid="interface_pos_monitor_group_1a7b139f9e9ec97d22910a712baaf54e3f">setIdentifier</references>
+        <referencedby refid="interface_pos_monitor_group_1a7b139f9e9ec97d22910a712baaf54e3f">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1ab9a0746f6babc75181ff2c59a1ca712e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMonitorGroup::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosMonitorGroup::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="159" column="10"/>
+        <references refid="interface_pos_monitor_group_1ab9a0746f6babc75181ff2c59a1ca712e">getIdentifier</references>
+        <referencedby refid="interface_pos_monitor_group_1ab9a0746f6babc75181ff2c59a1ca712e">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1ad2239f504a2b15d9aca002294c7bb690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMonitorGroup::getGeneratedFabID</definition>
+        <argsstring>()</argsstring>
+        <name>getGeneratedFabID</name>
+        <qualifiedname>PosMonitorGroup::getGeneratedFabID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="165" column="10"/>
+        <references refid="interface_pos_monitor_group_1ad2239f504a2b15d9aca002294c7bb690">getGeneratedFabID</references>
+        <referencedby refid="interface_pos_monitor_group_1ad2239f504a2b15d9aca002294c7bb690">getGeneratedFabID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_monitor_group_1a0dada2ace7373e5ed438bf5540d7b909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMonitorGroup::setGeneratedFabID</definition>
+        <argsstring>(in string fabID)</argsstring>
+        <name>setGeneratedFabID</name>
+        <qualifiedname>PosMonitorGroup::setGeneratedFabID</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>fabID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmongrp.idl" line="171" column="8"/>
+        <references refid="interface_pos_monitor_group_1a0dada2ace7373e5ed438bf5540d7b909">setGeneratedFabID</references>
+        <referencedby refid="interface_pos_monitor_group_1a0dada2ace7373e5ed438bf5540d7b909">setGeneratedFabID</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMonitorGroup</label>
+        <link refid="interface_pos_monitor_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMonitorGroup</label>
+        <link refid="interface_pos_monitor_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmongrp.idl" line="38" column="11" bodyfile="poscimfw/include/pmongrp.idl" bodystart="38" bodyend="179"/>
+    <listofallmembers>
+      <member refid="interface_pos_monitor_group_1a1ea8512d6aa9cec1d527b326c4997b0f" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>addLot</name></member>
+      <member refid="interface_pos_monitor_group_1ac1e27904451ca6eb9afafb7c4d16b01f" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>allLots</name></member>
+      <member refid="interface_pos_monitor_group_1a43dd9df76b7140cb9f576ed94668c013" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>findLotNamed</name></member>
+      <member refid="interface_pos_monitor_group_1ad2239f504a2b15d9aca002294c7bb690" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>getGeneratedFabID</name></member>
+      <member refid="interface_pos_monitor_group_1ab9a0746f6babc75181ff2c59a1ca712e" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_monitor_group_1a71de581ebde44b07b21021843d8142bc" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>getMonitorLot</name></member>
+      <member refid="interface_pos_monitor_group_1aa4c67b5c14f18284d4364b7cb85a62b5" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>PosMonitorGroup_init</name></member>
+      <member refid="interface_pos_monitor_group_1a53646b56546a9d11b8080557b34e852e" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>removeAllLots</name></member>
+      <member refid="interface_pos_monitor_group_1a4cceace24850f5cffe065861b024f8c6" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>removeLot</name></member>
+      <member refid="interface_pos_monitor_group_1a0dada2ace7373e5ed438bf5540d7b909" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>setGeneratedFabID</name></member>
+      <member refid="interface_pos_monitor_group_1a7b139f9e9ec97d22910a712baaf54e3f" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_monitor_group_1a7c628b8a06451301c74e866defb70b3e" prot="public" virt="non-virtual"><scope>PosMonitorGroup</scope><name>setMonitorLot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

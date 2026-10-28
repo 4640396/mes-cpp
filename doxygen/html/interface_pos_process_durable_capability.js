@@ -1,0 +1,25 @@
+var interface_pos_process_durable_capability =
+[
+    [ "ProcessDurableRetrievalFailedSignal", "exception_pos_process_durable_capability_1_1_process_durable_retrieval_failed_signal.html", "exception_pos_process_durable_capability_1_1_process_durable_retrieval_failed_signal" ],
+    [ "ProcessDurableDuplicateSignal", "exception_pos_process_durable_capability_1_1_process_durable_duplicate_signal.html", "exception_pos_process_durable_capability_1_1_process_durable_duplicate_signal" ],
+    [ "ProcessDurableNotFoundSignal", "exception_pos_process_durable_capability_1_1_process_durable_not_found_signal.html", "exception_pos_process_durable_capability_1_1_process_durable_not_found_signal" ],
+    [ "SetFixtureGroupInfoFailedSignal", "exception_pos_process_durable_capability_1_1_set_fixture_group_info_failed_signal.html", "exception_pos_process_durable_capability_1_1_set_fixture_group_info_failed_signal" ],
+    [ "SetReticleGroupInfoFailedSignal", "exception_pos_process_durable_capability_1_1_set_reticle_group_info_failed_signal.html", "exception_pos_process_durable_capability_1_1_set_reticle_group_info_failed_signal" ],
+    [ "addAssignedProcessDurable", "interface_pos_process_durable_capability.html#a2422fd832538b96c83b1adea3ef7fcb9", null ],
+    [ "allAssignedProcessDurables", "interface_pos_process_durable_capability.html#a4fb92589dd1026180153e0fd70f81ad4", null ],
+    [ "findAssignedProcessDurableNamed", "interface_pos_process_durable_capability.html#ad9119ba1eed2b8408d46fe0c1dd3148d", null ],
+    [ "findAvailableProcessDurableFor", "interface_pos_process_durable_capability.html#a11e6d9bb69f2433822aa64faadafb47b", null ],
+    [ "getCategory", "interface_pos_process_durable_capability.html#a5a5933cb3de35eab68467b979d3df90a", null ],
+    [ "getIdentifier", "interface_pos_process_durable_capability.html#a51744cf7071a4b4dcd56e3e8dc2acbc1", null ],
+    [ "getProcessDurableCapabilityDescription", "interface_pos_process_durable_capability.html#a91cd06dad3e8e39f99dd196d9dc058a5", null ],
+    [ "getSubCategory", "interface_pos_process_durable_capability.html#a0d3a7f8f53e95bb1115ebd530b3f862b", null ],
+    [ "PosProcessDurableCapability_init", "interface_pos_process_durable_capability.html#ab79032a1692a3a931d81e98abdfd0ac8", null ],
+    [ "removeAllAssignedProcessDurables", "interface_pos_process_durable_capability.html#a98cfc117975677fc3223abc193f34562", null ],
+    [ "removeAssignedProcessDurable", "interface_pos_process_durable_capability.html#ac8471d0475e74a74514d2d11075f8d01", null ],
+    [ "setCategory", "interface_pos_process_durable_capability.html#aecf7db4bb68a640e62c5255f845b8861", null ],
+    [ "setFixtureGroupInfo", "interface_pos_process_durable_capability.html#a089be4b02e7cf326592321aaf7ca2de5", null ],
+    [ "setIdentifier", "interface_pos_process_durable_capability.html#aec4036a75a950cca9e1c4d304cb84b78", null ],
+    [ "setProcessDurableCapabilityDescription", "interface_pos_process_durable_capability.html#a016d06830dadfceb36bf0fa3546e7b6e", null ],
+    [ "setReticleGroupInfo", "interface_pos_process_durable_capability.html#afc52e5800964c4edb710ecdbb3bd417d", null ],
+    [ "setSubCategory", "interface_pos_process_durable_capability.html#a1f29e411607ecaaaedc0d2730891f3dd", null ]
+];

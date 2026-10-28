@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_recipe_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosRecipeManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecipeManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="prcmg_8idl" local="no">prcmg.idl</includes>
+    <innerclass refid="exception_pos_recipe_manager_1_1_logical_recipe_not_found_signal" prot="public">PosRecipeManager::LogicalRecipeNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_recipe_manager_1a09fae488a89387288d1e5648c6a5d0d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRecipeManager::PosRecipeManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosRecipeManager_init</name>
+        <qualifiedname>PosRecipeManager::PosRecipeManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1ab0342fff056cab6297c0835a639f9aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRecipeManager::removeLogicalRecipe</definition>
+        <argsstring>(in PosLogicalRecipe aLogicalRecipe)</argsstring>
+        <name>removeLogicalRecipe</name>
+        <qualifiedname>PosRecipeManager::removeLogicalRecipe</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref></type>
+          <declname>aLogicalRecipe</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="85" column="8"/>
+        <references refid="interface_pos_recipe_manager_1ab0342fff056cab6297c0835a639f9aa1">removeLogicalRecipe</references>
+        <referencedby refid="interface_pos_recipe_manager_1ab0342fff056cab6297c0835a639f9aa1">removeLogicalRecipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1a2c934c1f5ca9a910060b57c35dce86b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1abc1347780db6847ab928e1d9118dbf68" kindref="member">PosLogicalRecipeSequence</ref></type>
+        <definition>PosLogicalRecipeSequence PosRecipeManager::allLogicalRecipes</definition>
+        <argsstring>()</argsstring>
+        <name>allLogicalRecipes</name>
+        <qualifiedname>PosRecipeManager::allLogicalRecipes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="91" column="28"/>
+        <references refid="interface_pos_recipe_manager_1a2c934c1f5ca9a910060b57c35dce86b0">allLogicalRecipes</references>
+        <referencedby refid="interface_pos_recipe_manager_1a2c934c1f5ca9a910060b57c35dce86b0">allLogicalRecipes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1ac7a01e96fbde203f573061a8b30c9a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref></type>
+        <definition>PosLogicalRecipe PosRecipeManager::findLogicalRecipeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findLogicalRecipeNamed</name>
+        <qualifiedname>PosRecipeManager::findLogicalRecipeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="98" column="20"/>
+        <references refid="interface_pos_recipe_manager_1ac7a01e96fbde203f573061a8b30c9a44">findLogicalRecipeNamed</references>
+        <referencedby refid="interface_pos_recipe_manager_1ac7a01e96fbde203f573061a8b30c9a44">findLogicalRecipeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1ab41c6b7d3ee2aaeea766c45862468951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRecipeManager::removeAllLogicalRecipes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLogicalRecipes</name>
+        <qualifiedname>PosRecipeManager::removeAllLogicalRecipes</qualifiedname>
+        <exceptions> raises ( <ref refid="exception_pos_recipe_manager_1_1_logical_recipe_not_found_signal" kindref="compound">LogicalRecipeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="104" column="8"/>
+        <references refid="interface_pos_recipe_manager_1ab41c6b7d3ee2aaeea766c45862468951">removeAllLogicalRecipes</references>
+        <referencedby refid="interface_pos_recipe_manager_1ab41c6b7d3ee2aaeea766c45862468951">removeAllLogicalRecipes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1adee9906240c3dbf6f1cc9e38b0212c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="prcmggl_8idl_1a3e2141eb69873060992841787ed8922a" kindref="member">PosMachineRecipeSequence</ref></type>
+        <definition>PosMachineRecipeSequence PosRecipeManager::allMachineRecipesFor</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>allMachineRecipesFor</name>
+        <qualifiedname>PosRecipeManager::allMachineRecipesFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="111" column="28"/>
+        <references refid="interface_pos_recipe_manager_1adee9906240c3dbf6f1cc9e38b0212c24">allMachineRecipesFor</references>
+        <referencedby refid="interface_pos_recipe_manager_1adee9906240c3dbf6f1cc9e38b0212c24">allMachineRecipesFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1a04171844770506ceee1d009bb287ace6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MachineRecipe</type>
+        <definition>MachineRecipe PosRecipeManager::createMachineRecipeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMachineRecipeNamed</name>
+        <qualifiedname>PosRecipeManager::createMachineRecipeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="117" column="17"/>
+        <references refid="interface_pos_recipe_manager_1a04171844770506ceee1d009bb287ace6">createMachineRecipeNamed</references>
+        <referencedby refid="interface_pos_recipe_manager_1a04171844770506ceee1d009bb287ace6">createMachineRecipeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_recipe_manager_1a593ad25a9343ffe8900ce7fd0e7ddbbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref></type>
+        <definition>PosLogicalRecipe PosRecipeManager::createLogicalRecipeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createLogicalRecipeNamed</name>
+        <qualifiedname>PosRecipeManager::createLogicalRecipeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcmg.idl" line="123" column="20"/>
+        <references refid="interface_pos_recipe_manager_1a593ad25a9343ffe8900ce7fd0e7ddbbf">createLogicalRecipeNamed</references>
+        <referencedby refid="interface_pos_recipe_manager_1a593ad25a9343ffe8900ce7fd0e7ddbbf">createLogicalRecipeNamed</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosRecipeManager</label>
+        <link refid="interface_pos_recipe_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RecipeManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosRecipeManager</label>
+        <link refid="interface_pos_recipe_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RecipeManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/prcmg.idl" line="39" column="11" bodyfile="poscimfw/include/prcmg.idl" bodystart="39" bodyend="131"/>
+    <listofallmembers>
+      <member refid="interface_pos_recipe_manager_1a2c934c1f5ca9a910060b57c35dce86b0" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>allLogicalRecipes</name></member>
+      <member refid="interface_pos_recipe_manager_1adee9906240c3dbf6f1cc9e38b0212c24" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>allMachineRecipesFor</name></member>
+      <member refid="interface_pos_recipe_manager_1a593ad25a9343ffe8900ce7fd0e7ddbbf" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>createLogicalRecipeNamed</name></member>
+      <member refid="interface_pos_recipe_manager_1a04171844770506ceee1d009bb287ace6" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>createMachineRecipeNamed</name></member>
+      <member refid="interface_pos_recipe_manager_1ac7a01e96fbde203f573061a8b30c9a44" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>findLogicalRecipeNamed</name></member>
+      <member refid="interface_pos_recipe_manager_1a09fae488a89387288d1e5648c6a5d0d2" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>PosRecipeManager_init</name></member>
+      <member refid="interface_pos_recipe_manager_1ab41c6b7d3ee2aaeea766c45862468951" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>removeAllLogicalRecipes</name></member>
+      <member refid="interface_pos_recipe_manager_1ab0342fff056cab6297c0835a639f9aa1" prot="public" virt="non-virtual"><scope>PosRecipeManager</scope><name>removeLogicalRecipe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

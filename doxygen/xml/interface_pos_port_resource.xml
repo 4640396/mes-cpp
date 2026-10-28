@@ -1,0 +1,2077 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_port_resource" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPortResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PortResource</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pportrs_8idl" local="no">pportrs.idl</includes>
+    <innerclass refid="exception_pos_port_resource_1_1_set_port_info_failed_signal" prot="public">PosPortResource::SetPortInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_port_resource_1a8e37a6a02e9da19303b2c67d05b4b6e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setAssociatedPort</definition>
+        <argsstring>(in PosPortResource anAssociatedPort)</argsstring>
+        <name>setAssociatedPort</name>
+        <qualifiedname>PosPortResource::setAssociatedPort</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+          <declname>anAssociatedPort</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="85" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1af82188441c26015f2e866bf9523d9648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+        <definition>PosPortResource PosPortResource::getAssociatedPort</definition>
+        <argsstring>()</argsstring>
+        <name>getAssociatedPort</name>
+        <qualifiedname>PosPortResource::getAssociatedPort</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="91" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1afdbe3da1ceff29d742a20756b590613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isLoadAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isLoadAvailable</name>
+        <qualifiedname>PosPortResource::isLoadAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="98" column="11"/>
+        <references refid="interface_pos_port_resource_1afdbe3da1ceff29d742a20756b590613a">isLoadAvailable</references>
+        <referencedby refid="interface_pos_port_resource_1afdbe3da1ceff29d742a20756b590613a">isLoadAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1adc480de13c5f8dbec8b5d0dbe306507f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeLoadAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>makeLoadAvailable</name>
+        <qualifiedname>PosPortResource::makeLoadAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="104" column="8"/>
+        <references refid="interface_pos_port_resource_1adc480de13c5f8dbec8b5d0dbe306507f">makeLoadAvailable</references>
+        <referencedby refid="interface_pos_port_resource_1adc480de13c5f8dbec8b5d0dbe306507f">makeLoadAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a47345a463fcd065620f527512719190a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isLoadRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isLoadRequired</name>
+        <qualifiedname>PosPortResource::isLoadRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="111" column="11"/>
+        <references refid="interface_pos_port_resource_1a47345a463fcd065620f527512719190a">isLoadRequired</references>
+        <referencedby refid="interface_pos_port_resource_1a47345a463fcd065620f527512719190a">isLoadRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5113e11b3cbff14fa7157271180f0fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeLoadRequired</definition>
+        <argsstring>()</argsstring>
+        <name>makeLoadRequired</name>
+        <qualifiedname>PosPortResource::makeLoadRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="117" column="8"/>
+        <references refid="interface_pos_port_resource_1a5113e11b3cbff14fa7157271180f0fdd">makeLoadRequired</references>
+        <referencedby refid="interface_pos_port_resource_1a5113e11b3cbff14fa7157271180f0fdd">makeLoadRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a115d098acae26696658d061ccfb5bc46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isLoadComp</definition>
+        <argsstring>()</argsstring>
+        <name>isLoadComp</name>
+        <qualifiedname>PosPortResource::isLoadComp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="124" column="11"/>
+        <references refid="interface_pos_port_resource_1a115d098acae26696658d061ccfb5bc46">isLoadComp</references>
+        <referencedby refid="interface_pos_port_resource_1a115d098acae26696658d061ccfb5bc46">isLoadComp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a8ee4ffa9386baee2181b3c35443ecf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeLoadComp</definition>
+        <argsstring>()</argsstring>
+        <name>makeLoadComp</name>
+        <qualifiedname>PosPortResource::makeLoadComp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="130" column="8"/>
+        <references refid="interface_pos_port_resource_1a8ee4ffa9386baee2181b3c35443ecf3d">makeLoadComp</references>
+        <referencedby refid="interface_pos_port_resource_1a8ee4ffa9386baee2181b3c35443ecf3d">makeLoadComp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a50efeae7b94a1979237428f2d4ec8641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUnloadRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isUnloadRequired</name>
+        <qualifiedname>PosPortResource::isUnloadRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="137" column="11"/>
+        <references refid="interface_pos_port_resource_1a50efeae7b94a1979237428f2d4ec8641">isUnloadRequired</references>
+        <referencedby refid="interface_pos_port_resource_1a50efeae7b94a1979237428f2d4ec8641">isUnloadRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac51f57e1e4460bcdbaa85cad55c43971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUnloadRequired</definition>
+        <argsstring>()</argsstring>
+        <name>makeUnloadRequired</name>
+        <qualifiedname>PosPortResource::makeUnloadRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="143" column="8"/>
+        <references refid="interface_pos_port_resource_1ac51f57e1e4460bcdbaa85cad55c43971">makeUnloadRequired</references>
+        <referencedby refid="interface_pos_port_resource_1ac51f57e1e4460bcdbaa85cad55c43971">makeUnloadRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac12ec4bab3d49b978868071eea9c5594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUnLoadComp</definition>
+        <argsstring>()</argsstring>
+        <name>isUnLoadComp</name>
+        <qualifiedname>PosPortResource::isUnLoadComp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="150" column="11"/>
+        <references refid="interface_pos_port_resource_1ac12ec4bab3d49b978868071eea9c5594">isUnLoadComp</references>
+        <referencedby refid="interface_pos_port_resource_1ac12ec4bab3d49b978868071eea9c5594">isUnLoadComp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae88f7b138c0e2a8c0b7481c0a9d502b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUnLoadComp</definition>
+        <argsstring>()</argsstring>
+        <name>makeUnLoadComp</name>
+        <qualifiedname>PosPortResource::makeUnLoadComp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="156" column="8"/>
+        <references refid="interface_pos_port_resource_1ae88f7b138c0e2a8c0b7481c0a9d502b8">makeUnLoadComp</references>
+        <referencedby refid="interface_pos_port_resource_1ae88f7b138c0e2a8c0b7481c0a9d502b8">makeUnLoadComp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1adc5118172a7eb566d6b48dea7b7a06f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setPortGroup</definition>
+        <argsstring>(in string aPortGroup)</argsstring>
+        <name>setPortGroup</name>
+        <qualifiedname>PosPortResource::setPortGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aPortGroup</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="162" column="8"/>
+        <references refid="interface_pos_port_resource_1adc5118172a7eb566d6b48dea7b7a06f8">setPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1adc5118172a7eb566d6b48dea7b7a06f8">setPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a80761108694245a45b1df336dbfe55ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getPortGroup</definition>
+        <argsstring>()</argsstring>
+        <name>getPortGroup</name>
+        <qualifiedname>PosPortResource::getPortGroup</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="168" column="10"/>
+        <references refid="interface_pos_port_resource_1a80761108694245a45b1df336dbfe55ea">getPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1a80761108694245a45b1df336dbfe55ea">getPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1abc71b87626e82ff7ff56dab64623065d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUsageTypeManual</definition>
+        <argsstring>()</argsstring>
+        <name>isUsageTypeManual</name>
+        <qualifiedname>PosPortResource::isUsageTypeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="174" column="11"/>
+        <references refid="interface_pos_port_resource_1abc71b87626e82ff7ff56dab64623065d">isUsageTypeManual</references>
+        <referencedby refid="interface_pos_port_resource_1abc71b87626e82ff7ff56dab64623065d">isUsageTypeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a9bc4636cf0ab7dbf0c18adbf37279395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUsageTypeManual</definition>
+        <argsstring>()</argsstring>
+        <name>makeUsageTypeManual</name>
+        <qualifiedname>PosPortResource::makeUsageTypeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="180" column="8"/>
+        <references refid="interface_pos_port_resource_1a9bc4636cf0ab7dbf0c18adbf37279395">makeUsageTypeManual</references>
+        <referencedby refid="interface_pos_port_resource_1a9bc4636cf0ab7dbf0c18adbf37279395">makeUsageTypeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a09108b9b366e3c1825c8ffa578db9f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUsageTypeAgv</definition>
+        <argsstring>()</argsstring>
+        <name>isUsageTypeAgv</name>
+        <qualifiedname>PosPortResource::isUsageTypeAgv</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="186" column="11"/>
+        <references refid="interface_pos_port_resource_1a09108b9b366e3c1825c8ffa578db9f31">isUsageTypeAgv</references>
+        <referencedby refid="interface_pos_port_resource_1a09108b9b366e3c1825c8ffa578db9f31">isUsageTypeAgv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a105bfa38d7b934cfc5908d27cac5b79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUsageTypeAgv</definition>
+        <argsstring>()</argsstring>
+        <name>makeUsageTypeAgv</name>
+        <qualifiedname>PosPortResource::makeUsageTypeAgv</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="192" column="8"/>
+        <references refid="interface_pos_port_resource_1a105bfa38d7b934cfc5908d27cac5b79e">makeUsageTypeAgv</references>
+        <referencedby refid="interface_pos_port_resource_1a105bfa38d7b934cfc5908d27cac5b79e">makeUsageTypeAgv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a027998e8f26469ea0f16365262a1a0ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUsageTypeCommon</definition>
+        <argsstring>()</argsstring>
+        <name>isUsageTypeCommon</name>
+        <qualifiedname>PosPortResource::isUsageTypeCommon</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="198" column="11"/>
+        <references refid="interface_pos_port_resource_1a027998e8f26469ea0f16365262a1a0ed">isUsageTypeCommon</references>
+        <referencedby refid="interface_pos_port_resource_1a027998e8f26469ea0f16365262a1a0ed">isUsageTypeCommon</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a77feaf107cee3cc1401c7c9b5bf4c0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUsageTypeCommon</definition>
+        <argsstring>()</argsstring>
+        <name>makeUsageTypeCommon</name>
+        <qualifiedname>PosPortResource::makeUsageTypeCommon</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="204" column="8"/>
+        <references refid="interface_pos_port_resource_1a77feaf107cee3cc1401c7c9b5bf4c0a7">makeUsageTypeCommon</references>
+        <referencedby refid="interface_pos_port_resource_1a77feaf107cee3cc1401c7c9b5bf4c0a7">makeUsageTypeCommon</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1af26ea2d031c34e71ba6a2b57bba7dd36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosPortResource::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="210" column="8"/>
+        <references refid="interface_pos_port_resource_1af26ea2d031c34e71ba6a2b57bba7dd36">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1af26ea2d031c34e71ba6a2b57bba7dd36">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a8447a9e984944ec5a50ff7bb73a90c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPortResource::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosPortResource::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="216" column="13"/>
+        <references refid="interface_pos_port_resource_1a8447a9e984944ec5a50ff7bb73a90c16">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1a8447a9e984944ec5a50ff7bb73a90c16">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5333259e03019c40deade23f5d60806f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aLastClaimedPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosPortResource::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastClaimedPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="222" column="8"/>
+        <references refid="interface_pos_port_resource_1a5333259e03019c40deade23f5d60806f">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_port_resource_1a5333259e03019c40deade23f5d60806f">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac4fc8247039c20182f1bfc91a3bf147e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosPortResource::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosPortResource::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="228" column="13"/>
+        <references refid="interface_pos_port_resource_1ac4fc8247039c20182f1bfc91a3bf147e">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_port_resource_1ac4fc8247039c20182f1bfc91a3bf147e">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a68e1d8502ff6ecd25684f0171652021a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastMaintenanceTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastMaintenanceTimeStamp)</argsstring>
+        <name>setLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosPortResource::setLastMaintenanceTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastMaintenanceTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="234" column="8"/>
+        <references refid="interface_pos_port_resource_1a68e1d8502ff6ecd25684f0171652021a">setLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1a68e1d8502ff6ecd25684f0171652021a">setLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac695552b78f519e94d94f542fcb58388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPortResource::getLastMaintenanceTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenanceTimeStamp</name>
+        <qualifiedname>PosPortResource::getLastMaintenanceTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="240" column="13"/>
+        <references refid="interface_pos_port_resource_1ac695552b78f519e94d94f542fcb58388">getLastMaintenanceTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1ac695552b78f519e94d94f542fcb58388">getLastMaintenanceTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a6faa4c0b9b8685c1b5cd47f015880621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastMaintenancePerson</definition>
+        <argsstring>(in PosPerson aLastMaintenancePerson)</argsstring>
+        <name>setLastMaintenancePerson</name>
+        <qualifiedname>PosPortResource::setLastMaintenancePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastMaintenancePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="246" column="8"/>
+        <references refid="interface_pos_port_resource_1a6faa4c0b9b8685c1b5cd47f015880621">setLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_port_resource_1a6faa4c0b9b8685c1b5cd47f015880621">setLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a90a53685313f4954589f652ea3c1aef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosPortResource::getLastMaintenancePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePerson</name>
+        <qualifiedname>PosPortResource::getLastMaintenancePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="252" column="13"/>
+        <references refid="interface_pos_port_resource_1a90a53685313f4954589f652ea3c1aef9">getLastMaintenancePerson</references>
+        <referencedby refid="interface_pos_port_resource_1a90a53685313f4954589f652ea3c1aef9">getLastMaintenancePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a183d56f27eb33bb4f8d76aab8257d1d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastStatusChangeTimeStamp</definition>
+        <argsstring>(in TimeStamp aLastStatusChangeTimeStamp)</argsstring>
+        <name>setLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosPortResource::setLastStatusChangeTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aLastStatusChangeTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="258" column="8"/>
+        <references refid="interface_pos_port_resource_1a183d56f27eb33bb4f8d76aab8257d1d5">setLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1a183d56f27eb33bb4f8d76aab8257d1d5">setLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a4175fa7c0e82e78cfc9a9a8cf6e70491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPortResource::getLastStatusChangeTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangeTimeStamp</name>
+        <qualifiedname>PosPortResource::getLastStatusChangeTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="264" column="13"/>
+        <references refid="interface_pos_port_resource_1a4175fa7c0e82e78cfc9a9a8cf6e70491">getLastStatusChangeTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1a4175fa7c0e82e78cfc9a9a8cf6e70491">getLastStatusChangeTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a509f7a9b885078547e3a8a76e65ee64e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastStatusChangePerson</definition>
+        <argsstring>(in PosPerson aLastStatusChangePerson)</argsstring>
+        <name>setLastStatusChangePerson</name>
+        <qualifiedname>PosPortResource::setLastStatusChangePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastStatusChangePerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="270" column="8"/>
+        <references refid="interface_pos_port_resource_1a509f7a9b885078547e3a8a76e65ee64e">setLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_port_resource_1a509f7a9b885078547e3a8a76e65ee64e">setLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aaeb9276faa055f1217d4b43c6e33f667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosPortResource::getLastStatusChangePerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePerson</name>
+        <qualifiedname>PosPortResource::getLastStatusChangePerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="276" column="13"/>
+        <references refid="interface_pos_port_resource_1aaeb9276faa055f1217d4b43c6e33f667">getLastStatusChangePerson</references>
+        <referencedby refid="interface_pos_port_resource_1aaeb9276faa055f1217d4b43c6e33f667">getLastStatusChangePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aa636d953aee749467073567ae7f47a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::PosPortResource_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPortResource_init</name>
+        <qualifiedname>PosPortResource::PosPortResource_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="282" column="8"/>
+        <references refid="interface_pos_port_resource_1aa636d953aee749467073567ae7f47a9d">PosPortResource_init</references>
+        <referencedby refid="interface_pos_port_resource_1aa636d953aee749467073567ae7f47a9d">PosPortResource_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1af6673d0eb9268c1788a9dbeaddcd4bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getUsageType</definition>
+        <argsstring>()</argsstring>
+        <name>getUsageType</name>
+        <qualifiedname>PosPortResource::getUsageType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="288" column="10"/>
+        <references refid="interface_pos_port_resource_1af6673d0eb9268c1788a9dbeaddcd4bd8">getUsageType</references>
+        <referencedby refid="interface_pos_port_resource_1af6673d0eb9268c1788a9dbeaddcd4bd8">getUsageType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1af7181710b038f86ff46f3a0ce9ccd313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getPortUsage</definition>
+        <argsstring>()</argsstring>
+        <name>getPortUsage</name>
+        <qualifiedname>PosPortResource::getPortUsage</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="294" column="10"/>
+        <references refid="interface_pos_port_resource_1af7181710b038f86ff46f3a0ce9ccd313">getPortUsage</references>
+        <referencedby refid="interface_pos_port_resource_1af7181710b038f86ff46f3a0ce9ccd313">getPortUsage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a1205293c86a35186bce4caab00cd7e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getPortState</definition>
+        <argsstring>()</argsstring>
+        <name>getPortState</name>
+        <qualifiedname>PosPortResource::getPortState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="300" column="10"/>
+        <references refid="interface_pos_port_resource_1a1205293c86a35186bce4caab00cd7e50">getPortState</references>
+        <referencedby refid="interface_pos_port_resource_1a1205293c86a35186bce4caab00cd7e50">getPortState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ad7e759e771aae41cb9377db77705b7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosPortResource::getLoadSeqInPortGroup</definition>
+        <argsstring>()</argsstring>
+        <name>getLoadSeqInPortGroup</name>
+        <qualifiedname>PosPortResource::getLoadSeqInPortGroup</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="307" column="8"/>
+        <references refid="interface_pos_port_resource_1ad7e759e771aae41cb9377db77705b7fb">getLoadSeqInPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1ad7e759e771aae41cb9377db77705b7fb">getLoadSeqInPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a78c0c63cef5514b1a619bdc1dbb29b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLoadSeqInPortGroup</definition>
+        <argsstring>(in long seqNumber)</argsstring>
+        <name>setLoadSeqInPortGroup</name>
+        <qualifiedname>PosPortResource::setLoadSeqInPortGroup</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>seqNumber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="313" column="8"/>
+        <references refid="interface_pos_port_resource_1a78c0c63cef5514b1a619bdc1dbb29b41">setLoadSeqInPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1a78c0c63cef5514b1a619bdc1dbb29b41">setLoadSeqInPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a014c38d7a716caa053bd4cabb22110a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLoadPurposeType</definition>
+        <argsstring>(in string loadPurposeType)</argsstring>
+        <name>setLoadPurposeType</name>
+        <qualifiedname>PosPortResource::setLoadPurposeType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>loadPurposeType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="319" column="8"/>
+        <references refid="interface_pos_port_resource_1a014c38d7a716caa053bd4cabb22110a0">setLoadPurposeType</references>
+        <referencedby refid="interface_pos_port_resource_1a014c38d7a716caa053bd4cabb22110a0">setLoadPurposeType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5db0acc0ea7cd2f3aa6d1c16e14b35ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getLoadPurposeType</definition>
+        <argsstring>()</argsstring>
+        <name>getLoadPurposeType</name>
+        <qualifiedname>PosPortResource::getLoadPurposeType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="325" column="10"/>
+        <references refid="interface_pos_port_resource_1a5db0acc0ea7cd2f3aa6d1c16e14b35ea">getLoadPurposeType</references>
+        <referencedby refid="interface_pos_port_resource_1a5db0acc0ea7cd2f3aa6d1c16e14b35ea">getLoadPurposeType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a8cff49afbf2f72d54b4b10f24f6ee7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setPortInfo</definition>
+        <argsstring>(in spPortResource aPortInfo)</argsstring>
+        <name>setPortInfo</name>
+        <qualifiedname>PosPortResource::setPortInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1aad1730510674c7846c380e2d62d609b3" kindref="member">spPortResource</ref></type>
+          <declname>aPortInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_port_resource_1_1_set_port_info_failed_signal" kindref="compound">SetPortInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="332" column="8"/>
+        <references refid="interface_pos_port_resource_1a8cff49afbf2f72d54b4b10f24f6ee7ed">setPortInfo</references>
+        <referencedby refid="interface_pos_port_resource_1a8cff49afbf2f72d54b4b10f24f6ee7ed">setPortInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a42d1592102b25816b09c9b0d43b05dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeDown</definition>
+        <argsstring>()</argsstring>
+        <name>makeDown</name>
+        <qualifiedname>PosPortResource::makeDown</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="338" column="8"/>
+        <references refid="interface_pos_port_resource_1a42d1592102b25816b09c9b0d43b05dc4">makeDown</references>
+        <referencedby refid="interface_pos_port_resource_1a42d1592102b25816b09c9b0d43b05dc4">makeDown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5ab5d1ac9517b5f84da8d880da44d8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isDown</definition>
+        <argsstring>()</argsstring>
+        <name>isDown</name>
+        <qualifiedname>PosPortResource::isDown</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="344" column="11"/>
+        <references refid="interface_pos_port_resource_1a5ab5d1ac9517b5f84da8d880da44d8fa">isDown</references>
+        <referencedby refid="interface_pos_port_resource_1a5ab5d1ac9517b5f84da8d880da44d8fa">isDown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a8459ce415e0aa65cf0209d681c4cf011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUnknown</definition>
+        <argsstring>()</argsstring>
+        <name>makeUnknown</name>
+        <qualifiedname>PosPortResource::makeUnknown</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="350" column="8"/>
+        <references refid="interface_pos_port_resource_1a8459ce415e0aa65cf0209d681c4cf011">makeUnknown</references>
+        <referencedby refid="interface_pos_port_resource_1a8459ce415e0aa65cf0209d681c4cf011">makeUnknown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a805f1bc0f025266c2b1df5793ba256bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUnknown</definition>
+        <argsstring>()</argsstring>
+        <name>isUnknown</name>
+        <qualifiedname>PosPortResource::isUnknown</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="357" column="11"/>
+        <references refid="interface_pos_port_resource_1a805f1bc0f025266c2b1df5793ba256bf">isUnknown</references>
+        <referencedby refid="interface_pos_port_resource_1a805f1bc0f025266c2b1df5793ba256bf">isUnknown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a037eca701ee10f947e125b1dffc1cc5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeUnloadAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>makeUnloadAvailable</name>
+        <qualifiedname>PosPortResource::makeUnloadAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="363" column="8"/>
+        <references refid="interface_pos_port_resource_1a037eca701ee10f947e125b1dffc1cc5d">makeUnloadAvailable</references>
+        <referencedby refid="interface_pos_port_resource_1a037eca701ee10f947e125b1dffc1cc5d">makeUnloadAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a229161280154d99f78fcae85d504a867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isUnloadAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isUnloadAvailable</name>
+        <qualifiedname>PosPortResource::isUnloadAvailable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="370" column="11"/>
+        <references refid="interface_pos_port_resource_1a229161280154d99f78fcae85d504a867">isUnloadAvailable</references>
+        <referencedby refid="interface_pos_port_resource_1a229161280154d99f78fcae85d504a867">isUnloadAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a80bd8e86807ca7b7cce8148d8eafc44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getClaimMode</definition>
+        <argsstring>()</argsstring>
+        <name>getClaimMode</name>
+        <qualifiedname>PosPortResource::getClaimMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="376" column="10"/>
+        <references refid="interface_pos_port_resource_1a80bd8e86807ca7b7cce8148d8eafc44d">getClaimMode</references>
+        <referencedby refid="interface_pos_port_resource_1a80bd8e86807ca7b7cce8148d8eafc44d">getClaimMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae137262873b7d020b211cca8c09e137e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isClaimModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>isClaimModeManual</name>
+        <qualifiedname>PosPortResource::isClaimModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="383" column="11"/>
+        <references refid="interface_pos_port_resource_1ae137262873b7d020b211cca8c09e137e">isClaimModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1ae137262873b7d020b211cca8c09e137e">isClaimModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5b3fa9fc2ec60a086ea9b7f06ed7ecb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isClaimModeTCS</definition>
+        <argsstring>()</argsstring>
+        <name>isClaimModeTCS</name>
+        <qualifiedname>PosPortResource::isClaimModeTCS</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="390" column="11"/>
+        <references refid="interface_pos_port_resource_1a5b3fa9fc2ec60a086ea9b7f06ed7ecb2">isClaimModeTCS</references>
+        <referencedby refid="interface_pos_port_resource_1a5b3fa9fc2ec60a086ea9b7f06ed7ecb2">isClaimModeTCS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a03469d2e7418eb55031de29b03d03c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeClaimModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>makeClaimModeManual</name>
+        <qualifiedname>PosPortResource::makeClaimModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="396" column="8"/>
+        <references refid="interface_pos_port_resource_1a03469d2e7418eb55031de29b03d03c5c">makeClaimModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1a03469d2e7418eb55031de29b03d03c5c">makeClaimModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae2e219acf2504d440f864035661fc9e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeClaimModeTCS</definition>
+        <argsstring>()</argsstring>
+        <name>makeClaimModeTCS</name>
+        <qualifiedname>PosPortResource::makeClaimModeTCS</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="402" column="8"/>
+        <references refid="interface_pos_port_resource_1ae2e219acf2504d440f864035661fc9e0">makeClaimModeTCS</references>
+        <referencedby refid="interface_pos_port_resource_1ae2e219acf2504d440f864035661fc9e0">makeClaimModeTCS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a199a8a63f004a1eb629aeaf56e02fb4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getTransferMode</definition>
+        <argsstring>()</argsstring>
+        <name>getTransferMode</name>
+        <qualifiedname>PosPortResource::getTransferMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="408" column="10"/>
+        <references refid="interface_pos_port_resource_1a199a8a63f004a1eb629aeaf56e02fb4c">getTransferMode</references>
+        <referencedby refid="interface_pos_port_resource_1a199a8a63f004a1eb629aeaf56e02fb4c">getTransferMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aa271903a491ce1ddfba0bfe7bf8496fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isTransferModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>isTransferModeManual</name>
+        <qualifiedname>PosPortResource::isTransferModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="415" column="11"/>
+        <references refid="interface_pos_port_resource_1aa271903a491ce1ddfba0bfe7bf8496fe">isTransferModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1aa271903a491ce1ddfba0bfe7bf8496fe">isTransferModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a81c892c646bf15d2c726fa505d43601e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isTransferModeAGV</definition>
+        <argsstring>()</argsstring>
+        <name>isTransferModeAGV</name>
+        <qualifiedname>PosPortResource::isTransferModeAGV</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="422" column="11"/>
+        <references refid="interface_pos_port_resource_1a81c892c646bf15d2c726fa505d43601e">isTransferModeAGV</references>
+        <referencedby refid="interface_pos_port_resource_1a81c892c646bf15d2c726fa505d43601e">isTransferModeAGV</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aedd4d33ea0e931b21460ef06427fe387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeTransferModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>makeTransferModeManual</name>
+        <qualifiedname>PosPortResource::makeTransferModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="429" column="8"/>
+        <references refid="interface_pos_port_resource_1aedd4d33ea0e931b21460ef06427fe387">makeTransferModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1aedd4d33ea0e931b21460ef06427fe387">makeTransferModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a31765111ea7063adc89fd267e3e993f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeTransferModeAGV</definition>
+        <argsstring>()</argsstring>
+        <name>makeTransferModeAGV</name>
+        <qualifiedname>PosPortResource::makeTransferModeAGV</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="435" column="8"/>
+        <references refid="interface_pos_port_resource_1a31765111ea7063adc89fd267e3e993f2">makeTransferModeAGV</references>
+        <referencedby refid="interface_pos_port_resource_1a31765111ea7063adc89fd267e3e993f2">makeTransferModeAGV</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a2269bc6be71ba624a3267870a870ab69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getLotSelectionMode</definition>
+        <argsstring>()</argsstring>
+        <name>getLotSelectionMode</name>
+        <qualifiedname>PosPortResource::getLotSelectionMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="441" column="10"/>
+        <references refid="interface_pos_port_resource_1a2269bc6be71ba624a3267870a870ab69">getLotSelectionMode</references>
+        <referencedby refid="interface_pos_port_resource_1a2269bc6be71ba624a3267870a870ab69">getLotSelectionMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a6d44021ec503bab18fcd82a0671dbbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isLotSelectionModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>isLotSelectionModeManual</name>
+        <qualifiedname>PosPortResource::isLotSelectionModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="448" column="11"/>
+        <references refid="interface_pos_port_resource_1a6d44021ec503bab18fcd82a0671dbbfb">isLotSelectionModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1a6d44021ec503bab18fcd82a0671dbbfb">isLotSelectionModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a063e0fae9f896d5c2074629ad1a8233c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isLotSelectionModeAuto</definition>
+        <argsstring>()</argsstring>
+        <name>isLotSelectionModeAuto</name>
+        <qualifiedname>PosPortResource::isLotSelectionModeAuto</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="455" column="11"/>
+        <references refid="interface_pos_port_resource_1a063e0fae9f896d5c2074629ad1a8233c">isLotSelectionModeAuto</references>
+        <referencedby refid="interface_pos_port_resource_1a063e0fae9f896d5c2074629ad1a8233c">isLotSelectionModeAuto</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a3f7e00b7d202aef56ac0bde828b02d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeLotSelectionModeManual</definition>
+        <argsstring>()</argsstring>
+        <name>makeLotSelectionModeManual</name>
+        <qualifiedname>PosPortResource::makeLotSelectionModeManual</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="462" column="8"/>
+        <references refid="interface_pos_port_resource_1a3f7e00b7d202aef56ac0bde828b02d3f">makeLotSelectionModeManual</references>
+        <referencedby refid="interface_pos_port_resource_1a3f7e00b7d202aef56ac0bde828b02d3f">makeLotSelectionModeManual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a21eccc511dcfb57c6641ca9ea838e525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeLotSelectionModeAuto</definition>
+        <argsstring>()</argsstring>
+        <name>makeLotSelectionModeAuto</name>
+        <qualifiedname>PosPortResource::makeLotSelectionModeAuto</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="469" column="8"/>
+        <references refid="interface_pos_port_resource_1a21eccc511dcfb57c6641ca9ea838e525">makeLotSelectionModeAuto</references>
+        <referencedby refid="interface_pos_port_resource_1a21eccc511dcfb57c6641ca9ea838e525">makeLotSelectionModeAuto</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5eac8bba29b81f690dcaf4d84996b37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getQueuingMode</definition>
+        <argsstring>()</argsstring>
+        <name>getQueuingMode</name>
+        <qualifiedname>PosPortResource::getQueuingMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="475" column="10"/>
+        <references refid="interface_pos_port_resource_1a5eac8bba29b81f690dcaf4d84996b37e">getQueuingMode</references>
+        <referencedby refid="interface_pos_port_resource_1a5eac8bba29b81f690dcaf4d84996b37e">getQueuingMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aafe314e2c503eacc682b04eb67d21571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isQueuingModeDisable</definition>
+        <argsstring>()</argsstring>
+        <name>isQueuingModeDisable</name>
+        <qualifiedname>PosPortResource::isQueuingModeDisable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="482" column="11"/>
+        <references refid="interface_pos_port_resource_1aafe314e2c503eacc682b04eb67d21571">isQueuingModeDisable</references>
+        <referencedby refid="interface_pos_port_resource_1aafe314e2c503eacc682b04eb67d21571">isQueuingModeDisable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a9dd96b69e3eb7d8abe355fb50c9ed485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isQueuingModeEnable</definition>
+        <argsstring>()</argsstring>
+        <name>isQueuingModeEnable</name>
+        <qualifiedname>PosPortResource::isQueuingModeEnable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="489" column="11"/>
+        <references refid="interface_pos_port_resource_1a9dd96b69e3eb7d8abe355fb50c9ed485">isQueuingModeEnable</references>
+        <referencedby refid="interface_pos_port_resource_1a9dd96b69e3eb7d8abe355fb50c9ed485">isQueuingModeEnable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a539b88ea8bacd63e1e8b09794888595c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeQueuingModeDisable</definition>
+        <argsstring>()</argsstring>
+        <name>makeQueuingModeDisable</name>
+        <qualifiedname>PosPortResource::makeQueuingModeDisable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="496" column="8"/>
+        <references refid="interface_pos_port_resource_1a539b88ea8bacd63e1e8b09794888595c">makeQueuingModeDisable</references>
+        <referencedby refid="interface_pos_port_resource_1a539b88ea8bacd63e1e8b09794888595c">makeQueuingModeDisable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aec1307bf8ac667b608814c82929c1489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeQueuingModeEnable</definition>
+        <argsstring>()</argsstring>
+        <name>makeQueuingModeEnable</name>
+        <qualifiedname>PosPortResource::makeQueuingModeEnable</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="503" column="8"/>
+        <references refid="interface_pos_port_resource_1aec1307bf8ac667b608814c82929c1489">makeQueuingModeEnable</references>
+        <referencedby refid="interface_pos_port_resource_1aec1307bf8ac667b608814c82929c1489">makeQueuingModeEnable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a7eba9a48d6e7363d48d0f31e007eec3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getDispatchState</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchState</name>
+        <qualifiedname>PosPortResource::getDispatchState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="509" column="10"/>
+        <references refid="interface_pos_port_resource_1a7eba9a48d6e7363d48d0f31e007eec3f">getDispatchState</references>
+        <referencedby refid="interface_pos_port_resource_1a7eba9a48d6e7363d48d0f31e007eec3f">getDispatchState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aa0570817c90811552763f74569d08f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isDispatchStateRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isDispatchStateRequired</name>
+        <qualifiedname>PosPortResource::isDispatchStateRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="516" column="11"/>
+        <references refid="interface_pos_port_resource_1aa0570817c90811552763f74569d08f19">isDispatchStateRequired</references>
+        <referencedby refid="interface_pos_port_resource_1aa0570817c90811552763f74569d08f19">isDispatchStateRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a42e4cee8c0dd96ec91d0940dc6dfba65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isDispatchStateDispatched</definition>
+        <argsstring>()</argsstring>
+        <name>isDispatchStateDispatched</name>
+        <qualifiedname>PosPortResource::isDispatchStateDispatched</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="523" column="11"/>
+        <references refid="interface_pos_port_resource_1a42e4cee8c0dd96ec91d0940dc6dfba65">isDispatchStateDispatched</references>
+        <referencedby refid="interface_pos_port_resource_1a42e4cee8c0dd96ec91d0940dc6dfba65">isDispatchStateDispatched</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a335149d06e61db0300a79024c14738d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeDispatchStateRequired</definition>
+        <argsstring>()</argsstring>
+        <name>makeDispatchStateRequired</name>
+        <qualifiedname>PosPortResource::makeDispatchStateRequired</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="530" column="8"/>
+        <references refid="interface_pos_port_resource_1a335149d06e61db0300a79024c14738d5">makeDispatchStateRequired</references>
+        <referencedby refid="interface_pos_port_resource_1a335149d06e61db0300a79024c14738d5">makeDispatchStateRequired</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5c772a37b733f8a644f72d68dad0a64f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeDispatchStateDispatched</definition>
+        <argsstring>()</argsstring>
+        <name>makeDispatchStateDispatched</name>
+        <qualifiedname>PosPortResource::makeDispatchStateDispatched</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="537" column="8"/>
+        <references refid="interface_pos_port_resource_1a5c772a37b733f8a644f72d68dad0a64f">makeDispatchStateDispatched</references>
+        <referencedby refid="interface_pos_port_resource_1a5c772a37b733f8a644f72d68dad0a64f">makeDispatchStateDispatched</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac3767ee1d6bb39083cdf8f48dedf2788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosPortResource::getLastDispatchRequiredTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastDispatchRequiredTimeStamp</name>
+        <qualifiedname>PosPortResource::getLastDispatchRequiredTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="543" column="13"/>
+        <references refid="interface_pos_port_resource_1ac3767ee1d6bb39083cdf8f48dedf2788">getLastDispatchRequiredTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1ac3767ee1d6bb39083cdf8f48dedf2788">getLastDispatchRequiredTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a485c7caa09d9868ccb2c8af4288e1ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastDispatchRequiredTimeStamp</definition>
+        <argsstring>(in TimeStamp lastDispatchRequiredTimeStamp)</argsstring>
+        <name>setLastDispatchRequiredTimeStamp</name>
+        <qualifiedname>PosPortResource::setLastDispatchRequiredTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>lastDispatchRequiredTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="550" column="8"/>
+        <references refid="interface_pos_port_resource_1a485c7caa09d9868ccb2c8af4288e1ece">setLastDispatchRequiredTimeStamp</references>
+        <referencedby refid="interface_pos_port_resource_1a485c7caa09d9868ccb2c8af4288e1ece">setLastDispatchRequiredTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a8c6cba75404d4cbb418149a6139b4d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosPortResource::getDispatchLoadLot</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchLoadLot</name>
+        <qualifiedname>PosPortResource::getDispatchLoadLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="556" column="10"/>
+        <references refid="interface_pos_port_resource_1a8c6cba75404d4cbb418149a6139b4d94">getDispatchLoadLot</references>
+        <referencedby refid="interface_pos_port_resource_1a8c6cba75404d4cbb418149a6139b4d94">getDispatchLoadLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae0ead007762a3e384c3a0ba2b0d8935b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setDispatchLoadLot</definition>
+        <argsstring>(in PosLot dispatchLoadLot)</argsstring>
+        <name>setDispatchLoadLot</name>
+        <qualifiedname>PosPortResource::setDispatchLoadLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>dispatchLoadLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="562" column="8"/>
+        <references refid="interface_pos_port_resource_1ae0ead007762a3e384c3a0ba2b0d8935b">setDispatchLoadLot</references>
+        <referencedby refid="interface_pos_port_resource_1ae0ead007762a3e384c3a0ba2b0d8935b">setDispatchLoadLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a884fc357a06ec77ce656b12ea4dce87b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setDispatchLoadCassette</definition>
+        <argsstring>(in PosCassette dispatchLoadCassette)</argsstring>
+        <name>setDispatchLoadCassette</name>
+        <qualifiedname>PosPortResource::setDispatchLoadCassette</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+          <declname>dispatchLoadCassette</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="569" column="8"/>
+        <references refid="interface_pos_port_resource_1a884fc357a06ec77ce656b12ea4dce87b">setDispatchLoadCassette</references>
+        <referencedby refid="interface_pos_port_resource_1a884fc357a06ec77ce656b12ea4dce87b">setDispatchLoadCassette</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5e4c69a6dbbe77b02d5c3fe1596b67d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+        <definition>PosCassette PosPortResource::getDispatchLoadCassette</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchLoadCassette</name>
+        <qualifiedname>PosPortResource::getDispatchLoadCassette</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="575" column="15"/>
+        <references refid="interface_pos_port_resource_1a5e4c69a6dbbe77b02d5c3fe1596b67d9">getDispatchLoadCassette</references>
+        <referencedby refid="interface_pos_port_resource_1a5e4c69a6dbbe77b02d5c3fe1596b67d9">getDispatchLoadCassette</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ab35fc1630576720a33cdf1851ef02b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosPortResource::getDispatchUnloadLot</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchUnloadLot</name>
+        <qualifiedname>PosPortResource::getDispatchUnloadLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="581" column="10"/>
+        <references refid="interface_pos_port_resource_1ab35fc1630576720a33cdf1851ef02b3e">getDispatchUnloadLot</references>
+        <referencedby refid="interface_pos_port_resource_1ab35fc1630576720a33cdf1851ef02b3e">getDispatchUnloadLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a3f55cf3f0aaad5f364a2e343a8e7a763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setDispatchUnloadLot</definition>
+        <argsstring>(in PosLot dispatchUnloadLot)</argsstring>
+        <name>setDispatchUnloadLot</name>
+        <qualifiedname>PosPortResource::setDispatchUnloadLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>dispatchUnloadLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="587" column="8"/>
+        <references refid="interface_pos_port_resource_1a3f55cf3f0aaad5f364a2e343a8e7a763">setDispatchUnloadLot</references>
+        <referencedby refid="interface_pos_port_resource_1a3f55cf3f0aaad5f364a2e343a8e7a763">setDispatchUnloadLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1abe588739c81d7ecde0a57933796e500a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+        <definition>PosCassette PosPortResource::getDispatchUnloadCassette</definition>
+        <argsstring>()</argsstring>
+        <name>getDispatchUnloadCassette</name>
+        <qualifiedname>PosPortResource::getDispatchUnloadCassette</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="593" column="15"/>
+        <references refid="interface_pos_port_resource_1abe588739c81d7ecde0a57933796e500a">getDispatchUnloadCassette</references>
+        <referencedby refid="interface_pos_port_resource_1abe588739c81d7ecde0a57933796e500a">getDispatchUnloadCassette</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a688f7bb8415c904a8bfe84780157acf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setDispatchUnloadCassette</definition>
+        <argsstring>(in PosCassette dispatchUnloadCassette)</argsstring>
+        <name>setDispatchUnloadCassette</name>
+        <qualifiedname>PosPortResource::setDispatchUnloadCassette</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+          <declname>dispatchUnloadCassette</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="600" column="8"/>
+        <references refid="interface_pos_port_resource_1a688f7bb8415c904a8bfe84780157acf5">setDispatchUnloadCassette</references>
+        <referencedby refid="interface_pos_port_resource_1a688f7bb8415c904a8bfe84780157acf5">setDispatchUnloadCassette</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a535acf426180e24ce273bcefa2f77847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosPortResource::getUnloadSeqInPortGroup</definition>
+        <argsstring>()</argsstring>
+        <name>getUnloadSeqInPortGroup</name>
+        <qualifiedname>PosPortResource::getUnloadSeqInPortGroup</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="606" column="8"/>
+        <references refid="interface_pos_port_resource_1a535acf426180e24ce273bcefa2f77847">getUnloadSeqInPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1a535acf426180e24ce273bcefa2f77847">getUnloadSeqInPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a9c755c84f11a4af9b02e0ddead5a38dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setUnloadSeqInPortGroup</definition>
+        <argsstring>(in long unloadSeq)</argsstring>
+        <name>setUnloadSeqInPortGroup</name>
+        <qualifiedname>PosPortResource::setUnloadSeqInPortGroup</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>unloadSeq</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="612" column="8"/>
+        <references refid="interface_pos_port_resource_1a9c755c84f11a4af9b02e0ddead5a38dd">setUnloadSeqInPortGroup</references>
+        <referencedby refid="interface_pos_port_resource_1a9c755c84f11a4af9b02e0ddead5a38dd">setUnloadSeqInPortGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a22347c5aefae8f5c37de3ce18ae6d5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeDispatchStateNotDispatched</definition>
+        <argsstring>()</argsstring>
+        <name>makeDispatchStateNotDispatched</name>
+        <qualifiedname>PosPortResource::makeDispatchStateNotDispatched</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="619" column="8"/>
+        <references refid="interface_pos_port_resource_1a22347c5aefae8f5c37de3ce18ae6d5cd">makeDispatchStateNotDispatched</references>
+        <referencedby refid="interface_pos_port_resource_1a22347c5aefae8f5c37de3ce18ae6d5cd">makeDispatchStateNotDispatched</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a57235301827042505ccee3bc36f62eeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosPortResource::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="625" column="10"/>
+        <references refid="interface_pos_port_resource_1a57235301827042505ccee3bc36f62eeb">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_port_resource_1a57235301827042505ccee3bc36f62eeb">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aa3925ed73fc192f0821cf6a61e4de20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getLastMaintenancePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastMaintenancePersonID</name>
+        <qualifiedname>PosPortResource::getLastMaintenancePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="631" column="10"/>
+        <references refid="interface_pos_port_resource_1aa3925ed73fc192f0821cf6a61e4de20a">getLastMaintenancePersonID</references>
+        <referencedby refid="interface_pos_port_resource_1aa3925ed73fc192f0821cf6a61e4de20a">getLastMaintenancePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a13197358b7b468af443c4b30e46a0099" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getLastStatusChangePersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStatusChangePersonID</name>
+        <qualifiedname>PosPortResource::getLastStatusChangePersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="637" column="10"/>
+        <references refid="interface_pos_port_resource_1a13197358b7b468af443c4b30e46a0099">getLastStatusChangePersonID</references>
+        <referencedby refid="interface_pos_port_resource_1a13197358b7b468af443c4b30e46a0099">getLastStatusChangePersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a9eeade631884d6e96efc9c09d4ae40e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setAccessModes</definition>
+        <argsstring>(in stringSequence accessModes)</argsstring>
+        <name>setAccessModes</name>
+        <qualifiedname>PosPortResource::setAccessModes</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>accessModes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="643" column="8"/>
+        <references refid="interface_pos_port_resource_1a9eeade631884d6e96efc9c09d4ae40e6">setAccessModes</references>
+        <referencedby refid="interface_pos_port_resource_1a9eeade631884d6e96efc9c09d4ae40e6">setAccessModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a35b5887f389a582b9c5fa156b2433cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosPortResource::getAccessModes</definition>
+        <argsstring>()</argsstring>
+        <name>getAccessModes</name>
+        <qualifiedname>PosPortResource::getAccessModes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="649" column="18"/>
+        <references refid="interface_pos_port_resource_1a35b5887f389a582b9c5fa156b2433cbd">getAccessModes</references>
+        <referencedby refid="interface_pos_port_resource_1a35b5887f389a582b9c5fa156b2433cbd">getAccessModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a200b1cde991a0dd1ab30310aaf408655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setCapableOperationModes</definition>
+        <argsstring>(in stringSequence capableOperationModes)</argsstring>
+        <name>setCapableOperationModes</name>
+        <qualifiedname>PosPortResource::setCapableOperationModes</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>capableOperationModes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="655" column="8"/>
+        <references refid="interface_pos_port_resource_1a200b1cde991a0dd1ab30310aaf408655">setCapableOperationModes</references>
+        <referencedby refid="interface_pos_port_resource_1a200b1cde991a0dd1ab30310aaf408655">setCapableOperationModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a9ec4f9ee96d15f71436d825ca2e192c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosPortResource::getCapableOperationModes</definition>
+        <argsstring>()</argsstring>
+        <name>getCapableOperationModes</name>
+        <qualifiedname>PosPortResource::getCapableOperationModes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="661" column="18"/>
+        <references refid="interface_pos_port_resource_1a9ec4f9ee96d15f71436d825ca2e192c6">getCapableOperationModes</references>
+        <referencedby refid="interface_pos_port_resource_1a9ec4f9ee96d15f71436d825ca2e192c6">getCapableOperationModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ab38e36764e61efebaae623a895e3150f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setOperationMode</definition>
+        <argsstring>(in string anOperationMode)</argsstring>
+        <name>setOperationMode</name>
+        <qualifiedname>PosPortResource::setOperationMode</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anOperationMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="667" column="8"/>
+        <references refid="interface_pos_port_resource_1ab38e36764e61efebaae623a895e3150f">setOperationMode</references>
+        <referencedby refid="interface_pos_port_resource_1ab38e36764e61efebaae623a895e3150f">setOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a590cb9a619e9649d32a1b9a92624a181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosPortResource::getOperationMode</definition>
+        <argsstring>()</argsstring>
+        <name>getOperationMode</name>
+        <qualifiedname>PosPortResource::getOperationMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="673" column="10"/>
+        <references refid="interface_pos_port_resource_1a590cb9a619e9649d32a1b9a92624a181">getOperationMode</references>
+        <referencedby refid="interface_pos_port_resource_1a590cb9a619e9649d32a1b9a92624a181">getOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ab439953544b13b4f4314be9cd78765a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref></type>
+        <definition>PosMachineOperationMode PosPortResource::getMachineOperationMode</definition>
+        <argsstring>()</argsstring>
+        <name>getMachineOperationMode</name>
+        <qualifiedname>PosPortResource::getMachineOperationMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="679" column="27"/>
+        <references refid="interface_pos_port_resource_1ab439953544b13b4f4314be9cd78765a8">getMachineOperationMode</references>
+        <referencedby refid="interface_pos_port_resource_1ab439953544b13b4f4314be9cd78765a8">getMachineOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a5cb391dd631a1078c8f3d2f5ef689c17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a0f3c37f14566be04c252a116d2a8ca01" kindref="member">PosMachineOperationModeSequence</ref></type>
+        <definition>PosMachineOperationModeSequence PosPortResource::getAllAllowedOperationMode</definition>
+        <argsstring>()</argsstring>
+        <name>getAllAllowedOperationMode</name>
+        <qualifiedname>PosPortResource::getAllAllowedOperationMode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="687" column="35"/>
+        <references refid="interface_pos_port_resource_1a5cb391dd631a1078c8f3d2f5ef689c17">getAllAllowedOperationMode</references>
+        <referencedby refid="interface_pos_port_resource_1a5cb391dd631a1078c8f3d2f5ef689c17">getAllAllowedOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a316784ce8e74e0adcd71d3eb67e19a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setMachineOperationMode</definition>
+        <argsstring>(in PosMachineOperationMode aMachineOperationMode)</argsstring>
+        <name>setMachineOperationMode</name>
+        <qualifiedname>PosPortResource::setMachineOperationMode</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_operation_mode" kindref="compound">PosMachineOperationMode</ref></type>
+          <declname>aMachineOperationMode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="693" column="8"/>
+        <references refid="interface_pos_port_resource_1a316784ce8e74e0adcd71d3eb67e19a7b">setMachineOperationMode</references>
+        <referencedby refid="interface_pos_port_resource_1a316784ce8e74e0adcd71d3eb67e19a7b">setMachineOperationMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae5eee42f8f85664222e9dcdbb8e78dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setPortGroupInfo</definition>
+        <argsstring>(in spPortGroup aPortGroupInfo)</argsstring>
+        <name>setPortGroupInfo</name>
+        <qualifiedname>PosPortResource::setPortGroupInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1a3438bb175e576b5a9b830532db9d8fda" kindref="member">spPortGroup</ref></type>
+          <declname>aPortGroupInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="700" column="8"/>
+        <references refid="interface_pos_port_resource_1ae5eee42f8f85664222e9dcdbb8e78dcc">setPortGroupInfo</references>
+        <referencedby refid="interface_pos_port_resource_1ae5eee42f8f85664222e9dcdbb8e78dcc">setPortGroupInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a565641d67e94028c39b79d837e057a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setDispatchState</definition>
+        <argsstring>(in string state)</argsstring>
+        <name>setDispatchState</name>
+        <qualifiedname>PosPortResource::setDispatchState</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>state</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="706" column="8"/>
+        <references refid="interface_pos_port_resource_1a565641d67e94028c39b79d837e057a58">setDispatchState</references>
+        <referencedby refid="interface_pos_port_resource_1a565641d67e94028c39b79d837e057a58">setDispatchState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aec658f288e002c3d56caf066739aa95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::makeDispatchStateError</definition>
+        <argsstring>()</argsstring>
+        <name>makeDispatchStateError</name>
+        <qualifiedname>PosPortResource::makeDispatchStateError</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="713" column="8"/>
+        <references refid="interface_pos_port_resource_1aec658f288e002c3d56caf066739aa95a">makeDispatchStateError</references>
+        <referencedby refid="interface_pos_port_resource_1aec658f288e002c3d56caf066739aa95a">makeDispatchStateError</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a66b661b072856e035fe451496fa94068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosPortResource::isDispatchStateError</definition>
+        <argsstring>()</argsstring>
+        <name>isDispatchStateError</name>
+        <qualifiedname>PosPortResource::isDispatchStateError</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="720" column="11"/>
+        <references refid="interface_pos_port_resource_1a66b661b072856e035fe451496fa94068">isDispatchStateError</references>
+        <referencedby refid="interface_pos_port_resource_1a66b661b072856e035fe451496fa94068">isDispatchStateError</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a194256abe87d9efb8139972192a23c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosPortResource::getCassetteCategoryCapability</definition>
+        <argsstring>()</argsstring>
+        <name>getCassetteCategoryCapability</name>
+        <qualifiedname>PosPortResource::getCassetteCategoryCapability</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="726" column="18"/>
+        <references refid="interface_pos_port_resource_1a194256abe87d9efb8139972192a23c44">getCassetteCategoryCapability</references>
+        <referencedby refid="interface_pos_port_resource_1a194256abe87d9efb8139972192a23c44">getCassetteCategoryCapability</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aa6c1190774e76fb6294bb4155cdef94d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setCassetteCategoryCapability</definition>
+        <argsstring>(in stringSequence aCassetteCategoryCapability)</argsstring>
+        <name>setCassetteCategoryCapability</name>
+        <qualifiedname>PosPortResource::setCassetteCategoryCapability</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>aCassetteCategoryCapability</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="732" column="8"/>
+        <references refid="interface_pos_port_resource_1aa6c1190774e76fb6294bb4155cdef94d">setCassetteCategoryCapability</references>
+        <referencedby refid="interface_pos_port_resource_1aa6c1190774e76fb6294bb4155cdef94d">setCassetteCategoryCapability</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1a96c29a97126077eb9d6ec05efec8c8ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setSpecialPortControls</definition>
+        <argsstring>(in stringSequence specialPortControls)</argsstring>
+        <name>setSpecialPortControls</name>
+        <qualifiedname>PosPortResource::setSpecialPortControls</qualifiedname>
+        <param>
+          <type>in stringSequence</type>
+          <declname>specialPortControls</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="739" column="8"/>
+        <references refid="interface_pos_port_resource_1a96c29a97126077eb9d6ec05efec8c8ed">setSpecialPortControls</references>
+        <referencedby refid="interface_pos_port_resource_1a96c29a97126077eb9d6ec05efec8c8ed">setSpecialPortControls</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1aff2a9f38cd4445c80086972a21ed65d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>stringSequence</type>
+        <definition>stringSequence PosPortResource::getSpecialPortControls</definition>
+        <argsstring>()</argsstring>
+        <name>getSpecialPortControls</name>
+        <qualifiedname>PosPortResource::getSpecialPortControls</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="746" column="18"/>
+        <references refid="interface_pos_port_resource_1aff2a9f38cd4445c80086972a21ed65d3">getSpecialPortControls</references>
+        <referencedby refid="interface_pos_port_resource_1aff2a9f38cd4445c80086972a21ed65d3">getSpecialPortControls</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ae4b0015a391e26ed1475d948e12571d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+        <definition>PosCassette PosPortResource::getLastM3CompCassette</definition>
+        <argsstring>()</argsstring>
+        <name>getLastM3CompCassette</name>
+        <qualifiedname>PosPortResource::getLastM3CompCassette</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="752" column="15"/>
+        <references refid="interface_pos_port_resource_1ae4b0015a391e26ed1475d948e12571d1">getLastM3CompCassette</references>
+        <referencedby refid="interface_pos_port_resource_1ae4b0015a391e26ed1475d948e12571d1">getLastM3CompCassette</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_port_resource_1ac03e27b312c9438b4a14e52be4521fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPortResource::setLastM3CompCassette</definition>
+        <argsstring>(in PosCassette reportedCassette)</argsstring>
+        <name>setLastM3CompCassette</name>
+        <qualifiedname>PosPortResource::setLastM3CompCassette</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_cassette" kindref="compound">PosCassette</ref></type>
+          <declname>reportedCassette</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pportrs.idl" line="758" column="8"/>
+        <references refid="interface_pos_port_resource_1ac03e27b312c9438b4a14e52be4521fbb">setLastM3CompCassette</references>
+        <referencedby refid="interface_pos_port_resource_1ac03e27b312c9438b4a14e52be4521fbb">setLastM3CompCassette</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PortResource</label>
+      </node>
+      <node id="1">
+        <label>PosPortResource</label>
+        <link refid="interface_pos_port_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>PortResource</label>
+      </node>
+      <node id="1">
+        <label>PosPortResource</label>
+        <link refid="interface_pos_port_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pportrs.idl" line="45" column="11" bodyfile="poscimfw/include/pportrs.idl" bodystart="45" bodyend="766"/>
+    <listofallmembers>
+      <member refid="interface_pos_port_resource_1a35b5887f389a582b9c5fa156b2433cbd" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getAccessModes</name></member>
+      <member refid="interface_pos_port_resource_1a5cb391dd631a1078c8f3d2f5ef689c17" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getAllAllowedOperationMode</name></member>
+      <member refid="interface_pos_port_resource_1af82188441c26015f2e866bf9523d9648" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getAssociatedPort</name></member>
+      <member refid="interface_pos_port_resource_1a9ec4f9ee96d15f71436d825ca2e192c6" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getCapableOperationModes</name></member>
+      <member refid="interface_pos_port_resource_1a194256abe87d9efb8139972192a23c44" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getCassetteCategoryCapability</name></member>
+      <member refid="interface_pos_port_resource_1a80bd8e86807ca7b7cce8148d8eafc44d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getClaimMode</name></member>
+      <member refid="interface_pos_port_resource_1a5e4c69a6dbbe77b02d5c3fe1596b67d9" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getDispatchLoadCassette</name></member>
+      <member refid="interface_pos_port_resource_1a8c6cba75404d4cbb418149a6139b4d94" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getDispatchLoadLot</name></member>
+      <member refid="interface_pos_port_resource_1a7eba9a48d6e7363d48d0f31e007eec3f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getDispatchState</name></member>
+      <member refid="interface_pos_port_resource_1abe588739c81d7ecde0a57933796e500a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getDispatchUnloadCassette</name></member>
+      <member refid="interface_pos_port_resource_1ab35fc1630576720a33cdf1851ef02b3e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getDispatchUnloadLot</name></member>
+      <member refid="interface_pos_port_resource_1ac4fc8247039c20182f1bfc91a3bf147e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_port_resource_1a57235301827042505ccee3bc36f62eeb" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_port_resource_1a8447a9e984944ec5a50ff7bb73a90c16" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1ac3767ee1d6bb39083cdf8f48dedf2788" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastDispatchRequiredTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1ae4b0015a391e26ed1475d948e12571d1" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastM3CompCassette</name></member>
+      <member refid="interface_pos_port_resource_1a90a53685313f4954589f652ea3c1aef9" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastMaintenancePerson</name></member>
+      <member refid="interface_pos_port_resource_1aa3925ed73fc192f0821cf6a61e4de20a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastMaintenancePersonID</name></member>
+      <member refid="interface_pos_port_resource_1ac695552b78f519e94d94f542fcb58388" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1aaeb9276faa055f1217d4b43c6e33f667" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastStatusChangePerson</name></member>
+      <member refid="interface_pos_port_resource_1a13197358b7b468af443c4b30e46a0099" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastStatusChangePersonID</name></member>
+      <member refid="interface_pos_port_resource_1a4175fa7c0e82e78cfc9a9a8cf6e70491" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLastStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1a5db0acc0ea7cd2f3aa6d1c16e14b35ea" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLoadPurposeType</name></member>
+      <member refid="interface_pos_port_resource_1ad7e759e771aae41cb9377db77705b7fb" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLoadSeqInPortGroup</name></member>
+      <member refid="interface_pos_port_resource_1a2269bc6be71ba624a3267870a870ab69" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getLotSelectionMode</name></member>
+      <member refid="interface_pos_port_resource_1ab439953544b13b4f4314be9cd78765a8" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getMachineOperationMode</name></member>
+      <member refid="interface_pos_port_resource_1a590cb9a619e9649d32a1b9a92624a181" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getOperationMode</name></member>
+      <member refid="interface_pos_port_resource_1a80761108694245a45b1df336dbfe55ea" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getPortGroup</name></member>
+      <member refid="interface_pos_port_resource_1a1205293c86a35186bce4caab00cd7e50" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getPortState</name></member>
+      <member refid="interface_pos_port_resource_1af7181710b038f86ff46f3a0ce9ccd313" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getPortUsage</name></member>
+      <member refid="interface_pos_port_resource_1a5eac8bba29b81f690dcaf4d84996b37e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getQueuingMode</name></member>
+      <member refid="interface_pos_port_resource_1aff2a9f38cd4445c80086972a21ed65d3" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getSpecialPortControls</name></member>
+      <member refid="interface_pos_port_resource_1a199a8a63f004a1eb629aeaf56e02fb4c" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getTransferMode</name></member>
+      <member refid="interface_pos_port_resource_1a535acf426180e24ce273bcefa2f77847" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getUnloadSeqInPortGroup</name></member>
+      <member refid="interface_pos_port_resource_1af6673d0eb9268c1788a9dbeaddcd4bd8" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>getUsageType</name></member>
+      <member refid="interface_pos_port_resource_1ae137262873b7d020b211cca8c09e137e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isClaimModeManual</name></member>
+      <member refid="interface_pos_port_resource_1a5b3fa9fc2ec60a086ea9b7f06ed7ecb2" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isClaimModeTCS</name></member>
+      <member refid="interface_pos_port_resource_1a42e4cee8c0dd96ec91d0940dc6dfba65" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isDispatchStateDispatched</name></member>
+      <member refid="interface_pos_port_resource_1a66b661b072856e035fe451496fa94068" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isDispatchStateError</name></member>
+      <member refid="interface_pos_port_resource_1aa0570817c90811552763f74569d08f19" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isDispatchStateRequired</name></member>
+      <member refid="interface_pos_port_resource_1a5ab5d1ac9517b5f84da8d880da44d8fa" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isDown</name></member>
+      <member refid="interface_pos_port_resource_1afdbe3da1ceff29d742a20756b590613a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isLoadAvailable</name></member>
+      <member refid="interface_pos_port_resource_1a115d098acae26696658d061ccfb5bc46" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isLoadComp</name></member>
+      <member refid="interface_pos_port_resource_1a47345a463fcd065620f527512719190a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isLoadRequired</name></member>
+      <member refid="interface_pos_port_resource_1a063e0fae9f896d5c2074629ad1a8233c" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isLotSelectionModeAuto</name></member>
+      <member refid="interface_pos_port_resource_1a6d44021ec503bab18fcd82a0671dbbfb" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isLotSelectionModeManual</name></member>
+      <member refid="interface_pos_port_resource_1aafe314e2c503eacc682b04eb67d21571" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isQueuingModeDisable</name></member>
+      <member refid="interface_pos_port_resource_1a9dd96b69e3eb7d8abe355fb50c9ed485" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isQueuingModeEnable</name></member>
+      <member refid="interface_pos_port_resource_1a81c892c646bf15d2c726fa505d43601e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isTransferModeAGV</name></member>
+      <member refid="interface_pos_port_resource_1aa271903a491ce1ddfba0bfe7bf8496fe" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isTransferModeManual</name></member>
+      <member refid="interface_pos_port_resource_1a805f1bc0f025266c2b1df5793ba256bf" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUnknown</name></member>
+      <member refid="interface_pos_port_resource_1a229161280154d99f78fcae85d504a867" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUnloadAvailable</name></member>
+      <member refid="interface_pos_port_resource_1ac12ec4bab3d49b978868071eea9c5594" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUnLoadComp</name></member>
+      <member refid="interface_pos_port_resource_1a50efeae7b94a1979237428f2d4ec8641" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUnloadRequired</name></member>
+      <member refid="interface_pos_port_resource_1a09108b9b366e3c1825c8ffa578db9f31" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUsageTypeAgv</name></member>
+      <member refid="interface_pos_port_resource_1a027998e8f26469ea0f16365262a1a0ed" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUsageTypeCommon</name></member>
+      <member refid="interface_pos_port_resource_1abc71b87626e82ff7ff56dab64623065d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>isUsageTypeManual</name></member>
+      <member refid="interface_pos_port_resource_1a03469d2e7418eb55031de29b03d03c5c" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeClaimModeManual</name></member>
+      <member refid="interface_pos_port_resource_1ae2e219acf2504d440f864035661fc9e0" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeClaimModeTCS</name></member>
+      <member refid="interface_pos_port_resource_1a5c772a37b733f8a644f72d68dad0a64f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeDispatchStateDispatched</name></member>
+      <member refid="interface_pos_port_resource_1aec658f288e002c3d56caf066739aa95a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeDispatchStateError</name></member>
+      <member refid="interface_pos_port_resource_1a22347c5aefae8f5c37de3ce18ae6d5cd" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeDispatchStateNotDispatched</name></member>
+      <member refid="interface_pos_port_resource_1a335149d06e61db0300a79024c14738d5" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeDispatchStateRequired</name></member>
+      <member refid="interface_pos_port_resource_1a42d1592102b25816b09c9b0d43b05dc4" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeDown</name></member>
+      <member refid="interface_pos_port_resource_1adc480de13c5f8dbec8b5d0dbe306507f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeLoadAvailable</name></member>
+      <member refid="interface_pos_port_resource_1a8ee4ffa9386baee2181b3c35443ecf3d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeLoadComp</name></member>
+      <member refid="interface_pos_port_resource_1a5113e11b3cbff14fa7157271180f0fdd" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeLoadRequired</name></member>
+      <member refid="interface_pos_port_resource_1a21eccc511dcfb57c6641ca9ea838e525" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeLotSelectionModeAuto</name></member>
+      <member refid="interface_pos_port_resource_1a3f7e00b7d202aef56ac0bde828b02d3f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeLotSelectionModeManual</name></member>
+      <member refid="interface_pos_port_resource_1a539b88ea8bacd63e1e8b09794888595c" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeQueuingModeDisable</name></member>
+      <member refid="interface_pos_port_resource_1aec1307bf8ac667b608814c82929c1489" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeQueuingModeEnable</name></member>
+      <member refid="interface_pos_port_resource_1a31765111ea7063adc89fd267e3e993f2" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeTransferModeAGV</name></member>
+      <member refid="interface_pos_port_resource_1aedd4d33ea0e931b21460ef06427fe387" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeTransferModeManual</name></member>
+      <member refid="interface_pos_port_resource_1a8459ce415e0aa65cf0209d681c4cf011" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUnknown</name></member>
+      <member refid="interface_pos_port_resource_1a037eca701ee10f947e125b1dffc1cc5d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUnloadAvailable</name></member>
+      <member refid="interface_pos_port_resource_1ae88f7b138c0e2a8c0b7481c0a9d502b8" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUnLoadComp</name></member>
+      <member refid="interface_pos_port_resource_1ac51f57e1e4460bcdbaa85cad55c43971" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUnloadRequired</name></member>
+      <member refid="interface_pos_port_resource_1a105bfa38d7b934cfc5908d27cac5b79e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUsageTypeAgv</name></member>
+      <member refid="interface_pos_port_resource_1a77feaf107cee3cc1401c7c9b5bf4c0a7" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUsageTypeCommon</name></member>
+      <member refid="interface_pos_port_resource_1a9bc4636cf0ab7dbf0c18adbf37279395" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>makeUsageTypeManual</name></member>
+      <member refid="interface_pos_port_resource_1aa636d953aee749467073567ae7f47a9d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>PosPortResource_init</name></member>
+      <member refid="interface_pos_port_resource_1a9eeade631884d6e96efc9c09d4ae40e6" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setAccessModes</name></member>
+      <member refid="interface_pos_port_resource_1a8e37a6a02e9da19303b2c67d05b4b6e5" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setAssociatedPort</name></member>
+      <member refid="interface_pos_port_resource_1a200b1cde991a0dd1ab30310aaf408655" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setCapableOperationModes</name></member>
+      <member refid="interface_pos_port_resource_1aa6c1190774e76fb6294bb4155cdef94d" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setCassetteCategoryCapability</name></member>
+      <member refid="interface_pos_port_resource_1a884fc357a06ec77ce656b12ea4dce87b" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setDispatchLoadCassette</name></member>
+      <member refid="interface_pos_port_resource_1ae0ead007762a3e384c3a0ba2b0d8935b" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setDispatchLoadLot</name></member>
+      <member refid="interface_pos_port_resource_1a565641d67e94028c39b79d837e057a58" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setDispatchState</name></member>
+      <member refid="interface_pos_port_resource_1a688f7bb8415c904a8bfe84780157acf5" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setDispatchUnloadCassette</name></member>
+      <member refid="interface_pos_port_resource_1a3f55cf3f0aaad5f364a2e343a8e7a763" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setDispatchUnloadLot</name></member>
+      <member refid="interface_pos_port_resource_1a5333259e03019c40deade23f5d60806f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_port_resource_1af26ea2d031c34e71ba6a2b57bba7dd36" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1a485c7caa09d9868ccb2c8af4288e1ece" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastDispatchRequiredTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1ac03e27b312c9438b4a14e52be4521fbb" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastM3CompCassette</name></member>
+      <member refid="interface_pos_port_resource_1a6faa4c0b9b8685c1b5cd47f015880621" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastMaintenancePerson</name></member>
+      <member refid="interface_pos_port_resource_1a68e1d8502ff6ecd25684f0171652021a" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastMaintenanceTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1a509f7a9b885078547e3a8a76e65ee64e" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastStatusChangePerson</name></member>
+      <member refid="interface_pos_port_resource_1a183d56f27eb33bb4f8d76aab8257d1d5" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLastStatusChangeTimeStamp</name></member>
+      <member refid="interface_pos_port_resource_1a014c38d7a716caa053bd4cabb22110a0" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLoadPurposeType</name></member>
+      <member refid="interface_pos_port_resource_1a78c0c63cef5514b1a619bdc1dbb29b41" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setLoadSeqInPortGroup</name></member>
+      <member refid="interface_pos_port_resource_1a316784ce8e74e0adcd71d3eb67e19a7b" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setMachineOperationMode</name></member>
+      <member refid="interface_pos_port_resource_1ab38e36764e61efebaae623a895e3150f" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setOperationMode</name></member>
+      <member refid="interface_pos_port_resource_1adc5118172a7eb566d6b48dea7b7a06f8" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setPortGroup</name></member>
+      <member refid="interface_pos_port_resource_1ae5eee42f8f85664222e9dcdbb8e78dcc" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setPortGroupInfo</name></member>
+      <member refid="interface_pos_port_resource_1a8cff49afbf2f72d54b4b10f24f6ee7ed" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setPortInfo</name></member>
+      <member refid="interface_pos_port_resource_1a96c29a97126077eb9d6ec05efec8c8ed" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setSpecialPortControls</name></member>
+      <member refid="interface_pos_port_resource_1a9c755c84f11a4af9b02e0ddead5a38dd" prot="public" virt="non-virtual"><scope>PosPortResource</scope><name>setUnloadSeqInPortGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

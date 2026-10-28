@@ -1,0 +1,1015 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_product_specification_manager" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProductSpecificationManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProductSpecificationManager</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pprspmg_8idl" local="no">pprspmg.idl</includes>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_technology_not_found_signal" prot="public">PosProductSpecificationManager::TechnologyNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_product_group_not_found_signal" prot="public">PosProductSpecificationManager::ProductGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_bin_definition_not_found_signal" prot="public">PosProductSpecificationManager::BinDefinitionNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_customer_not_found_signal" prot="public">PosProductSpecificationManager::CustomerNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_product_category_not_found_signal" prot="public">PosProductSpecificationManager::ProductCategoryNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_bin_specification_not_found_signal" prot="public">PosProductSpecificationManager::BinSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_test_type_not_found_signal" prot="public">PosProductSpecificationManager::TestTypeNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_test_specification_not_found_signal" prot="public">PosProductSpecificationManager::TestSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_manager_1_1_sample_specification_not_found_signal" prot="public">PosProductSpecificationManager::SampleSpecificationNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a337f5a76a3c4013524ead206deff1f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::PosProductSpecificationManager_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosProductSpecificationManager_init</name>
+        <qualifiedname>PosProductSpecificationManager::PosProductSpecificationManager_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="252" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a6eaca7c9c705ec495ac9358150c41b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_technology" kindref="compound">PosTechnology</ref></type>
+        <definition>PosTechnology PosProductSpecificationManager::createTechnologyNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createTechnologyNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createTechnologyNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="259" column="17"/>
+        <references refid="interface_pos_product_specification_manager_1a6eaca7c9c705ec495ac9358150c41b29">createTechnologyNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a6eaca7c9c705ec495ac9358150c41b29">createTechnologyNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a962cfb256cb6ffdf0fc58bc38fc2d6d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_technology" kindref="compound">PosTechnology</ref></type>
+        <definition>PosTechnology PosProductSpecificationManager::findTechnologyNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findTechnologyNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findTechnologyNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="266" column="17"/>
+        <references refid="interface_pos_product_specification_manager_1a962cfb256cb6ffdf0fc58bc38fc2d6d8">findTechnologyNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a962cfb256cb6ffdf0fc58bc38fc2d6d8">findTechnologyNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1abfa30647f9c4025a0355d880299e5eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1ac35a64ce412525ba3b4e0543d11f45af" kindref="member">PosTechnologySequence</ref></type>
+        <definition>PosTechnologySequence PosProductSpecificationManager::allTechnologies</definition>
+        <argsstring>()</argsstring>
+        <name>allTechnologies</name>
+        <qualifiedname>PosProductSpecificationManager::allTechnologies</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="273" column="25"/>
+        <references refid="interface_pos_product_specification_manager_1abfa30647f9c4025a0355d880299e5eca">allTechnologies</references>
+        <referencedby refid="interface_pos_product_specification_manager_1abfa30647f9c4025a0355d880299e5eca">allTechnologies</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1ad611eafe636131afad004c317e7f616b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeTechnology</definition>
+        <argsstring>(in PosTechnology aTechnology)</argsstring>
+        <name>removeTechnology</name>
+        <qualifiedname>PosProductSpecificationManager::removeTechnology</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_technology" kindref="compound">PosTechnology</ref></type>
+          <declname>aTechnology</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_technology_not_found_signal" kindref="compound">TechnologyNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="280" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1ad611eafe636131afad004c317e7f616b">removeTechnology</references>
+        <referencedby refid="interface_pos_product_specification_manager_1ad611eafe636131afad004c317e7f616b">removeTechnology</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a09b526961bf2ceb0229a6c18dbfb6f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref></type>
+        <definition>PosProductGroup PosProductSpecificationManager::createProductGroupNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createProductGroupNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createProductGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="287" column="19"/>
+        <references refid="interface_pos_product_specification_manager_1a09b526961bf2ceb0229a6c18dbfb6f9a">createProductGroupNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a09b526961bf2ceb0229a6c18dbfb6f9a">createProductGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a32a980f87bbf7bfe99ec51d29bad9741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref></type>
+        <definition>PosProductGroup PosProductSpecificationManager::findProductGroupNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findProductGroupNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findProductGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="294" column="19"/>
+        <references refid="interface_pos_product_specification_manager_1a32a980f87bbf7bfe99ec51d29bad9741">findProductGroupNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a32a980f87bbf7bfe99ec51d29bad9741">findProductGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a15a606279b5691ea7c71b616ad16a363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a28cef8e649645afbab9d84c343d1a3e5" kindref="member">PosProductGroupSequence</ref></type>
+        <definition>PosProductGroupSequence PosProductSpecificationManager::allProductGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allProductGroups</name>
+        <qualifiedname>PosProductSpecificationManager::allProductGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="301" column="27"/>
+        <references refid="interface_pos_product_specification_manager_1a15a606279b5691ea7c71b616ad16a363">allProductGroups</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a15a606279b5691ea7c71b616ad16a363">allProductGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a198c82a7324295208e5da71b99e8287e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeProductGroup</definition>
+        <argsstring>(in PosProductGroup aProductGroup)</argsstring>
+        <name>removeProductGroup</name>
+        <qualifiedname>PosProductSpecificationManager::removeProductGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref></type>
+          <declname>aProductGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_product_group_not_found_signal" kindref="compound">ProductGroupNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="308" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a198c82a7324295208e5da71b99e8287e">removeProductGroup</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a198c82a7324295208e5da71b99e8287e">removeProductGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a8d8feda77d4a338535b0f194710d850b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref></type>
+        <definition>PosBinDefinition PosProductSpecificationManager::createBinDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createBinDefinitionNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createBinDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="315" column="20"/>
+        <references refid="interface_pos_product_specification_manager_1a8d8feda77d4a338535b0f194710d850b">createBinDefinitionNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a8d8feda77d4a338535b0f194710d850b">createBinDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1aea7a06d4f9dda021e1d1e951d5cf5c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref></type>
+        <definition>PosBinDefinition PosProductSpecificationManager::findBinDefinitionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findBinDefinitionNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findBinDefinitionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="322" column="20"/>
+        <references refid="interface_pos_product_specification_manager_1aea7a06d4f9dda021e1d1e951d5cf5c46">findBinDefinitionNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1aea7a06d4f9dda021e1d1e951d5cf5c46">findBinDefinitionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a661165e8daf3b08b673f959c1d885721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1ac329ef7a9b76d93b29402cf39fd4812e" kindref="member">PosBinDefinitionSequence</ref></type>
+        <definition>PosBinDefinitionSequence PosProductSpecificationManager::allBinDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>allBinDefinitions</name>
+        <qualifiedname>PosProductSpecificationManager::allBinDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="329" column="28"/>
+        <references refid="interface_pos_product_specification_manager_1a661165e8daf3b08b673f959c1d885721">allBinDefinitions</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a661165e8daf3b08b673f959c1d885721">allBinDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1ad3a1b19aa858a78d47512f0aa3be8a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeBinDefinition</definition>
+        <argsstring>(in PosBinDefinition aBinDefinition)</argsstring>
+        <name>removeBinDefinition</name>
+        <qualifiedname>PosProductSpecificationManager::removeBinDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref></type>
+          <declname>aBinDefinition</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_bin_definition_not_found_signal" kindref="compound">BinDefinitionNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="336" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1ad3a1b19aa858a78d47512f0aa3be8a85">removeBinDefinition</references>
+        <referencedby refid="interface_pos_product_specification_manager_1ad3a1b19aa858a78d47512f0aa3be8a85">removeBinDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a5d04ce6905baccd4d0decbb25cb7676f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref></type>
+        <definition>PosCustomer PosProductSpecificationManager::createCustomerNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createCustomerNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createCustomerNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="343" column="15"/>
+        <references refid="interface_pos_product_specification_manager_1a5d04ce6905baccd4d0decbb25cb7676f">createCustomerNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a5d04ce6905baccd4d0decbb25cb7676f">createCustomerNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1afccf0e203c94429f34f354dec20e0f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref></type>
+        <definition>PosCustomer PosProductSpecificationManager::findCustomerNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findCustomerNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findCustomerNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_customer_not_found_signal" kindref="compound">CustomerNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="350" column="15"/>
+        <references refid="interface_pos_product_specification_manager_1afccf0e203c94429f34f354dec20e0f5c">findCustomerNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1afccf0e203c94429f34f354dec20e0f5c">findCustomerNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1aae527f695c1d804ef8184e6d86089569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a7a6bba5c3f789bac118b4806683a2adc" kindref="member">PosCustomerSequence</ref></type>
+        <definition>PosCustomerSequence PosProductSpecificationManager::allCustomers</definition>
+        <argsstring>()</argsstring>
+        <name>allCustomers</name>
+        <qualifiedname>PosProductSpecificationManager::allCustomers</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="357" column="23"/>
+        <references refid="interface_pos_product_specification_manager_1aae527f695c1d804ef8184e6d86089569">allCustomers</references>
+        <referencedby refid="interface_pos_product_specification_manager_1aae527f695c1d804ef8184e6d86089569">allCustomers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a3af3dba2534d820e3928dfab458e01cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeCustomer</definition>
+        <argsstring>(in PosCustomer aCustomer)</argsstring>
+        <name>removeCustomer</name>
+        <qualifiedname>PosProductSpecificationManager::removeCustomer</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref></type>
+          <declname>aCustomer</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_customer_not_found_signal" kindref="compound">CustomerNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="364" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a3af3dba2534d820e3928dfab458e01cc">removeCustomer</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a3af3dba2534d820e3928dfab458e01cc">removeCustomer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a7287a603288bf2736039cdc44db36727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref></type>
+        <definition>PosProductCategory PosProductSpecificationManager::createProductCategoryNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createProductCategoryNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createProductCategoryNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="371" column="22"/>
+        <references refid="interface_pos_product_specification_manager_1a7287a603288bf2736039cdc44db36727">createProductCategoryNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a7287a603288bf2736039cdc44db36727">createProductCategoryNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a6dc1b5e7102aaa40d408df6e838f6bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref></type>
+        <definition>PosProductCategory PosProductSpecificationManager::findProductCategoryNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findProductCategoryNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findProductCategoryNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="378" column="22"/>
+        <references refid="interface_pos_product_specification_manager_1a6dc1b5e7102aaa40d408df6e838f6bcf">findProductCategoryNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a6dc1b5e7102aaa40d408df6e838f6bcf">findProductCategoryNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1aa7f4a6d6a3e139d6fb66332006e2215b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a3868eeebe7f2611ae21a73f9664814d5" kindref="member">PosProductCategorySequence</ref></type>
+        <definition>PosProductCategorySequence PosProductSpecificationManager::allProductCategorys</definition>
+        <argsstring>()</argsstring>
+        <name>allProductCategorys</name>
+        <qualifiedname>PosProductSpecificationManager::allProductCategorys</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="385" column="30"/>
+        <references refid="interface_pos_product_specification_manager_1aa7f4a6d6a3e139d6fb66332006e2215b">allProductCategorys</references>
+        <referencedby refid="interface_pos_product_specification_manager_1aa7f4a6d6a3e139d6fb66332006e2215b">allProductCategorys</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a2189c7b53b7e3bd7a2b2ab8e0d5aa0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeProductCategory</definition>
+        <argsstring>(in PosProductCategory aProductCategory)</argsstring>
+        <name>removeProductCategory</name>
+        <qualifiedname>PosProductSpecificationManager::removeProductCategory</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref></type>
+          <declname>aProductCategory</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_product_category_not_found_signal" kindref="compound">ProductCategoryNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="392" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a2189c7b53b7e3bd7a2b2ab8e0d5aa0ea">removeProductCategory</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a2189c7b53b7e3bd7a2b2ab8e0d5aa0ea">removeProductCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1ae1739923f58088430eb20c3edc293d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllTechnologies</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllTechnologies</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllTechnologies</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="399" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1ae1739923f58088430eb20c3edc293d8e">removeAllTechnologies</references>
+        <referencedby refid="interface_pos_product_specification_manager_1ae1739923f58088430eb20c3edc293d8e">removeAllTechnologies</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1acc965cdfc426b587b49d2dc445218f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllProductGroups</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllProductGroups</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllProductGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="406" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1acc965cdfc426b587b49d2dc445218f19">removeAllProductGroups</references>
+        <referencedby refid="interface_pos_product_specification_manager_1acc965cdfc426b587b49d2dc445218f19">removeAllProductGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a4593e20c28c1fe4693821ed0884424c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllBinDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllBinDefinitions</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllBinDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="413" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a4593e20c28c1fe4693821ed0884424c4">removeAllBinDefinitions</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a4593e20c28c1fe4693821ed0884424c4">removeAllBinDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1afa5ec651e1750f0c52eba640770dd534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllCustomers</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllCustomers</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllCustomers</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="420" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1afa5ec651e1750f0c52eba640770dd534">removeAllCustomers</references>
+        <referencedby refid="interface_pos_product_specification_manager_1afa5ec651e1750f0c52eba640770dd534">removeAllCustomers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1aea77327bcdb21cf952b14a464f65eeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllProductCategories</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllProductCategories</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllProductCategories</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="427" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1aea77327bcdb21cf952b14a464f65eeb7">removeAllProductCategories</references>
+        <referencedby refid="interface_pos_product_specification_manager_1aea77327bcdb21cf952b14a464f65eeb7">removeAllProductCategories</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a22a0b62f205862ca09b71cc0150b5781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_specification" kindref="compound">PosTestSpecification</ref></type>
+        <definition>PosTestSpecification PosProductSpecificationManager::createTestSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createTestSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createTestSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="434" column="24"/>
+        <references refid="interface_pos_product_specification_manager_1a22a0b62f205862ca09b71cc0150b5781">createTestSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a22a0b62f205862ca09b71cc0150b5781">createTestSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a6de13025f12e77f5313c214add46c970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_specification" kindref="compound">PosTestSpecification</ref></type>
+        <definition>PosTestSpecification PosProductSpecificationManager::findTestSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findTestSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findTestSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="441" column="24"/>
+        <references refid="interface_pos_product_specification_manager_1a6de13025f12e77f5313c214add46c970">findTestSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a6de13025f12e77f5313c214add46c970">findTestSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a416731ef42a253edf26d1a24b28bb17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a82079664984cef24817a159edff0518e" kindref="member">PosTestSpecificationSequence</ref></type>
+        <definition>PosTestSpecificationSequence PosProductSpecificationManager::allTestSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>allTestSpecifications</name>
+        <qualifiedname>PosProductSpecificationManager::allTestSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="448" column="32"/>
+        <references refid="interface_pos_product_specification_manager_1a416731ef42a253edf26d1a24b28bb17e">allTestSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a416731ef42a253edf26d1a24b28bb17e">allTestSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a796a38f21e87379a8cc5fbc3b5900636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeTestSpecification</definition>
+        <argsstring>(in PosTestSpecification aTestSpecification)</argsstring>
+        <name>removeTestSpecification</name>
+        <qualifiedname>PosProductSpecificationManager::removeTestSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_test_specification" kindref="compound">PosTestSpecification</ref></type>
+          <declname>aTestSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_test_specification_not_found_signal" kindref="compound">TestSpecificationNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="455" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a796a38f21e87379a8cc5fbc3b5900636">removeTestSpecification</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a796a38f21e87379a8cc5fbc3b5900636">removeTestSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a7fb80ba1603d3aee191e7597388d8dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllTestSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllTestSpecifications</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllTestSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="463" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a7fb80ba1603d3aee191e7597388d8dc0">removeAllTestSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a7fb80ba1603d3aee191e7597388d8dc0">removeAllTestSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a3027a783488b0949fccdaeb569eb61f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bin_specification" kindref="compound">PosBinSpecification</ref></type>
+        <definition>PosBinSpecification PosProductSpecificationManager::createBinSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createBinSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createBinSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="470" column="23"/>
+        <references refid="interface_pos_product_specification_manager_1a3027a783488b0949fccdaeb569eb61f0">createBinSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a3027a783488b0949fccdaeb569eb61f0">createBinSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a53984f9b01990bd98dc536a713188230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bin_specification" kindref="compound">PosBinSpecification</ref></type>
+        <definition>PosBinSpecification PosProductSpecificationManager::findBinSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findBinSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findBinSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="477" column="23"/>
+        <references refid="interface_pos_product_specification_manager_1a53984f9b01990bd98dc536a713188230">findBinSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a53984f9b01990bd98dc536a713188230">findBinSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a03e5ad07640d738d054838281b7527a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a13bc721e70a312fcd33b109eda0178e2" kindref="member">PosBinSpecificationSequence</ref></type>
+        <definition>PosBinSpecificationSequence PosProductSpecificationManager::allBinSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>allBinSpecifications</name>
+        <qualifiedname>PosProductSpecificationManager::allBinSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="484" column="31"/>
+        <references refid="interface_pos_product_specification_manager_1a03e5ad07640d738d054838281b7527a4">allBinSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a03e5ad07640d738d054838281b7527a4">allBinSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1abab83af9a7b7acde8879eb3b48b79d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeBinSpecification</definition>
+        <argsstring>(in PosBinSpecification aBinSpecification)</argsstring>
+        <name>removeBinSpecification</name>
+        <qualifiedname>PosProductSpecificationManager::removeBinSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bin_specification" kindref="compound">PosBinSpecification</ref></type>
+          <declname>aBinSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_bin_specification_not_found_signal" kindref="compound">BinSpecificationNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="491" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1abab83af9a7b7acde8879eb3b48b79d96">removeBinSpecification</references>
+        <referencedby refid="interface_pos_product_specification_manager_1abab83af9a7b7acde8879eb3b48b79d96">removeBinSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a54f2ffd722cd05f3c7d9468be6a257b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllBinSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllBinSpecifications</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllBinSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="499" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a54f2ffd722cd05f3c7d9468be6a257b1">removeAllBinSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a54f2ffd722cd05f3c7d9468be6a257b1">removeAllBinSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a2ca1a79ddfd7663afd301c199ba3bbbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+        <definition>PosTestType PosProductSpecificationManager::createTestTypeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createTestTypeNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createTestTypeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="506" column="15"/>
+        <references refid="interface_pos_product_specification_manager_1a2ca1a79ddfd7663afd301c199ba3bbbc">createTestTypeNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a2ca1a79ddfd7663afd301c199ba3bbbc">createTestTypeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a9f95d98789cef948caea5807988896a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+        <definition>PosTestType PosProductSpecificationManager::findTestTypeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findTestTypeNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findTestTypeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="513" column="15"/>
+        <references refid="interface_pos_product_specification_manager_1a9f95d98789cef948caea5807988896a9">findTestTypeNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a9f95d98789cef948caea5807988896a9">findTestTypeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a80ac55b73acf36fec31e35f50e2ce92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a107e9f495b4218b87c8f27187d1e3778" kindref="member">PosTestTypeSequence</ref></type>
+        <definition>PosTestTypeSequence PosProductSpecificationManager::allTestTypes</definition>
+        <argsstring>()</argsstring>
+        <name>allTestTypes</name>
+        <qualifiedname>PosProductSpecificationManager::allTestTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="520" column="23"/>
+        <references refid="interface_pos_product_specification_manager_1a80ac55b73acf36fec31e35f50e2ce92c">allTestTypes</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a80ac55b73acf36fec31e35f50e2ce92c">allTestTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a9f8b229a17d4131c965d9ae30df9a175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeTestType</definition>
+        <argsstring>(in PosTestType aTestType)</argsstring>
+        <name>removeTestType</name>
+        <qualifiedname>PosProductSpecificationManager::removeTestType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+          <declname>aTestType</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_test_type_not_found_signal" kindref="compound">TestTypeNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="527" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1a9f8b229a17d4131c965d9ae30df9a175">removeTestType</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a9f8b229a17d4131c965d9ae30df9a175">removeTestType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1ac6cca04bb2b87a9fe80046837c03db03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllTestTypes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllTestTypes</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllTestTypes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="535" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1ac6cca04bb2b87a9fe80046837c03db03">removeAllTestTypes</references>
+        <referencedby refid="interface_pos_product_specification_manager_1ac6cca04bb2b87a9fe80046837c03db03">removeAllTestTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a51ddd9c7e8aecdc684730536f144979e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_sample_specification" kindref="compound">PosSampleSpecification</ref></type>
+        <definition>PosSampleSpecification PosProductSpecificationManager::createSampleSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createSampleSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createSampleSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="542" column="26"/>
+        <references refid="interface_pos_product_specification_manager_1a51ddd9c7e8aecdc684730536f144979e">createSampleSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a51ddd9c7e8aecdc684730536f144979e">createSampleSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1abf5796b89bff059b07b5c9959addc171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeSampleSpecification</definition>
+        <argsstring>(in PosSampleSpecification aSampleSpecification)</argsstring>
+        <name>removeSampleSpecification</name>
+        <qualifiedname>PosProductSpecificationManager::removeSampleSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_sample_specification" kindref="compound">PosSampleSpecification</ref></type>
+          <declname>aSampleSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_manager_1_1_sample_specification_not_found_signal" kindref="compound">SampleSpecificationNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="549" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1abf5796b89bff059b07b5c9959addc171">removeSampleSpecification</references>
+        <referencedby refid="interface_pos_product_specification_manager_1abf5796b89bff059b07b5c9959addc171">removeSampleSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a3a4004df6e2a700cc89fe12bacbbc1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1ad9a2925f259d7dfbbddc1023bea17ef5" kindref="member">PosSampleSpecificationSequence</ref></type>
+        <definition>PosSampleSpecificationSequence PosProductSpecificationManager::allSampleSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>allSampleSpecifications</name>
+        <qualifiedname>PosProductSpecificationManager::allSampleSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="556" column="34"/>
+        <references refid="interface_pos_product_specification_manager_1a3a4004df6e2a700cc89fe12bacbbc1a7">allSampleSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a3a4004df6e2a700cc89fe12bacbbc1a7">allSampleSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1ad8a86a3eae626165ef3f6b6063dec35c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_sample_specification" kindref="compound">PosSampleSpecification</ref></type>
+        <definition>PosSampleSpecification PosProductSpecificationManager::findSampleSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findSampleSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::findSampleSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="564" column="26"/>
+        <references refid="interface_pos_product_specification_manager_1ad8a86a3eae626165ef3f6b6063dec35c">findSampleSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1ad8a86a3eae626165ef3f6b6063dec35c">findSampleSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1adba5a9a89f13b397b6a4ad30fb532a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecificationManager::removeAllSampleSpecification</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllSampleSpecification</name>
+        <qualifiedname>PosProductSpecificationManager::removeAllSampleSpecification</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="572" column="8"/>
+        <references refid="interface_pos_product_specification_manager_1adba5a9a89f13b397b6a4ad30fb532a3a">removeAllSampleSpecification</references>
+        <referencedby refid="interface_pos_product_specification_manager_1adba5a9a89f13b397b6a4ad30fb532a3a">removeAllSampleSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_manager_1a4250c817ec9c3929df25b6b06a80dde6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProductSpecification</type>
+        <definition>ProductSpecification PosProductSpecificationManager::createProductSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createProductSpecificationNamed</name>
+        <qualifiedname>PosProductSpecificationManager::createProductSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspmg.idl" line="578" column="24"/>
+        <references refid="interface_pos_product_specification_manager_1a4250c817ec9c3929df25b6b06a80dde6">createProductSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_manager_1a4250c817ec9c3929df25b6b06a80dde6">createProductSpecificationNamed</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductSpecificationManager</label>
+        <link refid="interface_pos_product_specification_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductSpecificationManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductSpecificationManager</label>
+        <link refid="interface_pos_product_specification_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductSpecificationManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pprspmg.idl" line="44" column="11" bodyfile="poscimfw/include/pprspmg.idl" bodystart="44" bodyend="586"/>
+    <listofallmembers>
+      <member refid="interface_pos_product_specification_manager_1a661165e8daf3b08b673f959c1d885721" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allBinDefinitions</name></member>
+      <member refid="interface_pos_product_specification_manager_1a03e5ad07640d738d054838281b7527a4" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allBinSpecifications</name></member>
+      <member refid="interface_pos_product_specification_manager_1aae527f695c1d804ef8184e6d86089569" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allCustomers</name></member>
+      <member refid="interface_pos_product_specification_manager_1aa7f4a6d6a3e139d6fb66332006e2215b" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allProductCategorys</name></member>
+      <member refid="interface_pos_product_specification_manager_1a15a606279b5691ea7c71b616ad16a363" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allProductGroups</name></member>
+      <member refid="interface_pos_product_specification_manager_1a3a4004df6e2a700cc89fe12bacbbc1a7" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allSampleSpecifications</name></member>
+      <member refid="interface_pos_product_specification_manager_1abfa30647f9c4025a0355d880299e5eca" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allTechnologies</name></member>
+      <member refid="interface_pos_product_specification_manager_1a416731ef42a253edf26d1a24b28bb17e" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allTestSpecifications</name></member>
+      <member refid="interface_pos_product_specification_manager_1a80ac55b73acf36fec31e35f50e2ce92c" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>allTestTypes</name></member>
+      <member refid="interface_pos_product_specification_manager_1a8d8feda77d4a338535b0f194710d850b" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createBinDefinitionNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a3027a783488b0949fccdaeb569eb61f0" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createBinSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a5d04ce6905baccd4d0decbb25cb7676f" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createCustomerNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a7287a603288bf2736039cdc44db36727" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createProductCategoryNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a09b526961bf2ceb0229a6c18dbfb6f9a" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createProductGroupNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a4250c817ec9c3929df25b6b06a80dde6" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createProductSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a51ddd9c7e8aecdc684730536f144979e" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createSampleSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a6eaca7c9c705ec495ac9358150c41b29" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createTechnologyNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a22a0b62f205862ca09b71cc0150b5781" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createTestSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a2ca1a79ddfd7663afd301c199ba3bbbc" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>createTestTypeNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1aea7a06d4f9dda021e1d1e951d5cf5c46" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findBinDefinitionNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a53984f9b01990bd98dc536a713188230" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findBinSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1afccf0e203c94429f34f354dec20e0f5c" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findCustomerNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a6dc1b5e7102aaa40d408df6e838f6bcf" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findProductCategoryNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a32a980f87bbf7bfe99ec51d29bad9741" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findProductGroupNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1ad8a86a3eae626165ef3f6b6063dec35c" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findSampleSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a962cfb256cb6ffdf0fc58bc38fc2d6d8" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findTechnologyNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a6de13025f12e77f5313c214add46c970" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findTestSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a9f95d98789cef948caea5807988896a9" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>findTestTypeNamed</name></member>
+      <member refid="interface_pos_product_specification_manager_1a337f5a76a3c4013524ead206deff1f26" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>PosProductSpecificationManager_init</name></member>
+      <member refid="interface_pos_product_specification_manager_1a4593e20c28c1fe4693821ed0884424c4" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllBinDefinitions</name></member>
+      <member refid="interface_pos_product_specification_manager_1a54f2ffd722cd05f3c7d9468be6a257b1" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllBinSpecifications</name></member>
+      <member refid="interface_pos_product_specification_manager_1afa5ec651e1750f0c52eba640770dd534" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllCustomers</name></member>
+      <member refid="interface_pos_product_specification_manager_1aea77327bcdb21cf952b14a464f65eeb7" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllProductCategories</name></member>
+      <member refid="interface_pos_product_specification_manager_1acc965cdfc426b587b49d2dc445218f19" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllProductGroups</name></member>
+      <member refid="interface_pos_product_specification_manager_1adba5a9a89f13b397b6a4ad30fb532a3a" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllSampleSpecification</name></member>
+      <member refid="interface_pos_product_specification_manager_1ae1739923f58088430eb20c3edc293d8e" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllTechnologies</name></member>
+      <member refid="interface_pos_product_specification_manager_1a7fb80ba1603d3aee191e7597388d8dc0" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllTestSpecifications</name></member>
+      <member refid="interface_pos_product_specification_manager_1ac6cca04bb2b87a9fe80046837c03db03" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeAllTestTypes</name></member>
+      <member refid="interface_pos_product_specification_manager_1ad3a1b19aa858a78d47512f0aa3be8a85" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeBinDefinition</name></member>
+      <member refid="interface_pos_product_specification_manager_1abab83af9a7b7acde8879eb3b48b79d96" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeBinSpecification</name></member>
+      <member refid="interface_pos_product_specification_manager_1a3af3dba2534d820e3928dfab458e01cc" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeCustomer</name></member>
+      <member refid="interface_pos_product_specification_manager_1a2189c7b53b7e3bd7a2b2ab8e0d5aa0ea" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeProductCategory</name></member>
+      <member refid="interface_pos_product_specification_manager_1a198c82a7324295208e5da71b99e8287e" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeProductGroup</name></member>
+      <member refid="interface_pos_product_specification_manager_1abf5796b89bff059b07b5c9959addc171" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeSampleSpecification</name></member>
+      <member refid="interface_pos_product_specification_manager_1ad611eafe636131afad004c317e7f616b" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeTechnology</name></member>
+      <member refid="interface_pos_product_specification_manager_1a796a38f21e87379a8cc5fbc3b5900636" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeTestSpecification</name></member>
+      <member refid="interface_pos_product_specification_manager_1a9f8b229a17d4131c965d9ae30df9a175" prot="public" virt="non-virtual"><scope>PosProductSpecificationManager</scope><name>removeTestType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

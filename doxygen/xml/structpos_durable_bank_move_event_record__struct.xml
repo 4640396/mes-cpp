@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_durable_bank_move_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posDurableBankMoveEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_durable_bank_move_event_record__struct_1a32e435d74c7dc2c2f0349d7450f81205" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a3e022e68af218a9ef546e2a96da0f769" kindref="member">posDurableEventData</ref></type>
+        <definition>posDurableEventData posDurableBankMoveEventRecord_struct::durableData</definition>
+        <argsstring></argsstring>
+        <name>durableData</name>
+        <qualifiedname>posDurableBankMoveEventRecord_struct::durableData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4493" column="23" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_durable_bank_move_event_record__struct_1a9c519ae1521a4b2a4c07319b14a2a9fd" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posDurableBankMoveEventRecord_struct::previousBankID</definition>
+        <argsstring></argsstring>
+        <name>previousBankID</name>
+        <qualifiedname>posDurableBankMoveEventRecord_struct::previousBankID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4494" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_durable_bank_move_event_record__struct_1a9d254574a84a015d789fe819d47087c0" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posDurableBankMoveEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posDurableBankMoveEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4495" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4495" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>posDurableBankMoveEventRecord_struct</label>
+        <link refid="structpos_durable_bank_move_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>durableData</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>posDurableEventData_struct</label>
+        <link refid="structpos_durable_event_data__struct"/>
+      </node>
+      <node id="3">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="4487" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4487" bodyend="4507"/>
+    <listofallmembers>
+      <member refid="structpos_durable_bank_move_event_record__struct_1a32e435d74c7dc2c2f0349d7450f81205" prot="public" virt="non-virtual"><scope>posDurableBankMoveEventRecord_struct</scope><name>durableData</name></member>
+      <member refid="structpos_durable_bank_move_event_record__struct_1a9d254574a84a015d789fe819d47087c0" prot="public" virt="non-virtual"><scope>posDurableBankMoveEventRecord_struct</scope><name>eventCommon</name></member>
+      <member refid="structpos_durable_bank_move_event_record__struct_1a9c519ae1521a4b2a4c07319b14a2a9fd" prot="public" virt="non-virtual"><scope>posDurableBankMoveEventRecord_struct</scope><name>previousBankID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

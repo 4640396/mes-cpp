@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_parts_management_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPPartsManagementObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="partssp_8idl" local="no">partssp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_parts_management_object_factory_1acc796de68e8f3ab30dc2abecb852eb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+        <definition>PosBOM SPPartsManagementObjectFactory::newPosBOM</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosBOM</name>
+        <qualifiedname>SPPartsManagementObjectFactory::newPosBOM</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/partssp.idl" line="28" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPPartsManagementObjectFactory</label>
+        <link refid="interface_s_p_parts_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPPartsManagementObjectFactory</label>
+        <link refid="interface_s_p_parts_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/partssp.idl" line="25" column="11" bodyfile="poscimfw/include/partssp.idl" bodystart="26" bodyend="29"/>
+    <listofallmembers>
+      <member refid="interface_s_p_parts_management_object_factory_1acc796de68e8f3ab30dc2abecb852eb2e" prot="public" virt="non-virtual"><scope>SPPartsManagementObjectFactory</scope><name>newPosBOM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

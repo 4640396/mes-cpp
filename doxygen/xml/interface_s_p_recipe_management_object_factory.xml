@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_recipe_management_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPRecipeManagementObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWRecipeManagementObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="rcpmngsp_8idl" local="no">rcpmngsp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_recipe_management_object_factory_1af075ec6640a8df862fe844913ec30a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_logical_recipe" kindref="compound">PosLogicalRecipe</ref></type>
+        <definition>PosLogicalRecipe SPRecipeManagementObjectFactory::newLogicalRecipe</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newLogicalRecipe</name>
+        <qualifiedname>SPRecipeManagementObjectFactory::newLogicalRecipe</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/rcpmngsp.idl" line="34" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWRecipeManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPRecipeManagementObjectFactory</label>
+        <link refid="interface_s_p_recipe_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWRecipeManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPRecipeManagementObjectFactory</label>
+        <link refid="interface_s_p_recipe_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/rcpmngsp.idl" line="31" column="11" bodyfile="poscimfw/include/rcpmngsp.idl" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="interface_s_p_recipe_management_object_factory_1af075ec6640a8df862fe844913ec30a24" prot="public" virt="non-virtual"><scope>SPRecipeManagementObjectFactory</scope><name>newLogicalRecipe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

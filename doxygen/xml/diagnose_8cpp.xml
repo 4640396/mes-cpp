@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="diagnose_8cpp" kind="file" language="C++">
+    <compoundname>diagnose.cpp</compoundname>
+    <includes local="no">CORBA.h</includes>
+    <includes local="no">strstrea.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="yes">diagi.hpp</includes>
+    <includes local="yes">diagnose.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>CORBA.h</label>
+      </node>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/diagnose.cpp</label>
+        <link refid="diagnose_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>diagi.hpp</label>
+      </node>
+      <node id="6">
+        <label>diagnose.hpp</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>strstrea.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="diagnose_8cpp_1a843c3063310413a6e5e1d324bbc882f9" prot="public" static="no">
+        <name>DIAGNOSE_BUFFER_SIZE</name>
+        <initializer>(256)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/diagnose.cpp" line="36" column="9" bodyfile="smtchcmf/frmwrkgl/diagnose.cpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" compoundref="diagnose_8cpp" startline="56" endline="87">diagnoseImpl</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="diagnose_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/diagnose.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:34:14 [ 7/13/07 19:34:15 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/diagnose.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/diagnose.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="diagnose_8cpp_1aa09382ad61296e2cbe65dfadbfba9a12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initializeDiagInterface</definition>
+        <argsstring>()</argsstring>
+        <name>initializeDiagInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/diagnose.cpp" line="43" column="6" bodyfile="smtchcmf/frmwrkgl/diagnose.cpp" bodystart="43" bodyend="54"/>
+        <references refid="diagnose_8cpp_1aa09382ad61296e2cbe65dfadbfba9a12" compoundref="diagnose_8cpp" startline="43" endline="54">initializeDiagInterface</references>
+        <referencedby refid="diagnose_8cpp_1aa09382ad61296e2cbe65dfadbfba9a12" compoundref="diagnose_8cpp" startline="43" endline="54">initializeDiagInterface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * diagnoseImpl</definition>
+        <argsstring>(const char *cmd)</argsstring>
+        <name>diagnoseImpl</name>
+        <param>
+          <type>const char *</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/diagnose.cpp" line="56" column="6" bodyfile="smtchcmf/frmwrkgl/diagnose.cpp" bodystart="56" bodyend="87"/>
+        <references refid="diagnose_8cpp_1a843c3063310413a6e5e1d324bbc882f9" compoundref="diagnose_8cpp" startline="36">DIAGNOSE_BUFFER_SIZE</references>
+        <references refid="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" compoundref="diagnose_8cpp" startline="56" endline="87">diagnoseImpl</references>
+        <references refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" compoundref="standardoutlogger_8cpp" startline="242" endline="246">endl</references>
+        <referencedby refid="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" compoundref="diagnose_8cpp" startline="56" endline="87">diagnoseImpl</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="diagnose_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/diagnose.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:34:14<sp/>[<sp/>7/13/07<sp/>19:34:15<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SiView</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>diagnose.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>06/29/1999<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>Initial<sp/>CMVC<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>03/06/2000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>CORBA::Orbix.flushLookupCache(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/27/2000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kenji<sp/>Kindoh<sp/><sp/><sp/>Dropped<sp/>CORBA::Orbix.flushLookupCache(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>01/08/2000<sp/>D4100043<sp/>C.Tsuchiya<sp/><sp/><sp/>Set<sp/>marker<sp/>for<sp/>DiagInterface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/14/04<sp/><sp/><sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/>TIE<sp/>was<sp/>deleted<sp/>in<sp/>order<sp/>to<sp/>make<sp/>it<sp/>TIE<sp/>to<sp/>BOA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>11/17/04<sp/><sp/><sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/>Add<sp/>&lt;corba.h&gt;<sp/>for<sp/>eBrokerMigration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EBROKER<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;corba.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CORBA.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;strstream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;strstrea.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="diagnose_8cpp_1a843c3063310413a6e5e1d324bbc882f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAGNOSE_BUFFER_SIZE<sp/>(256)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;diagi.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;diagnose.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="diagnose_8cpp_1aa09382ad61296e2cbe65dfadbfba9a12" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="diagnose_8cpp_1aa09382ad61296e2cbe65dfadbfba9a12" kindref="member">initializeDiagInterface</ref>(){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D4100043<sp/>DiagInterface_ptr<sp/>theDiagInterface=<sp/>new<sp/>TIE_DiagInterface(DiagInterface_i)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D4100043<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(new<sp/>DiagInterface_i);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MO_BOA<sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>DiagInterface_ptr<sp/>theDiagInterface=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DiagInterface_i();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>theDiagInterface-&gt;_marker(</highlight><highlight class="stringliteral">&quot;theDiagInterface&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>DiagInterface_ptr<sp/>theDiagInterface=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TIE_DiagInterface(DiagInterface_i)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DiagInterface_i,<sp/></highlight><highlight class="stringliteral">&quot;theDiagInterface&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>initializeDiagInterface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="diagnose_8cpp_1a0a41ce083e6dd1772452f9f3e7c49874" kindref="member">diagnoseImpl</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cmd){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p=<sp/>CORBA::string_alloc(<ref refid="diagnose_8cpp_1a843c3063310413a6e5e1d324bbc882f9" kindref="member">DIAGNOSE_BUFFER_SIZE</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>ostrstream<sp/>os(p,<sp/><ref refid="diagnose_8cpp_1a843c3063310413a6e5e1d324bbc882f9" kindref="member">DIAGNOSE_BUFFER_SIZE</ref><sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>strcmp(<sp/>cmd,<sp/></highlight><highlight class="stringliteral">&quot;flush&quot;</highlight><highlight class="normal"><sp/>)<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>Before<sp/>doing<sp/>cache<sp/>flush&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p0=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p1=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>CORBA::Orbix.GetConfigValue(</highlight><highlight class="stringliteral">&quot;IT_FLUSH_CACHE&quot;</highlight><highlight class="normal"><sp/>,<sp/>p0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>CORBA::Orbix.GetConfigValue(</highlight><highlight class="stringliteral">&quot;IT_CACHE_LOOKUP&quot;</highlight><highlight class="normal">,<sp/>p1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>p0<sp/>==<sp/>0<sp/>)<sp/>p0=<sp/></highlight><highlight class="stringliteral">&quot;unset&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>p1<sp/>==<sp/>0<sp/>)<sp/>p1=<sp/></highlight><highlight class="stringliteral">&quot;unset&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>IT_FLUSH_CACHE=&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<sp/>p0<sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>IT_CACHE_LOOKUP=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>p1<sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rc=<sp/>CORBA::Orbix.flushLookupCache(0);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>rc<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>Flush<sp/>cache<sp/>complete<sp/>successfully.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Flushed<sp/>OK&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ends;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>Flush<sp/>cache<sp/>failed<sp/>with<sp/>rc=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rc<sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Flush<sp/>Failed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ends;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Diagnosed<sp/>OK&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ends;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>diagnoseImpl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/diagnose.cpp"/>
+  </compounddef>
+</doxygen>

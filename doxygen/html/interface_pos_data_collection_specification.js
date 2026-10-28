@@ -1,0 +1,27 @@
+var interface_pos_data_collection_specification =
+[
+    [ "SetDCSpecificationInfoFailedSignal", "exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal.html", "exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal" ],
+    [ "DCItemSpecificationDuplicateSignal", "exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal.html", "exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal" ],
+    [ "DCItemSpecificationNotFoundSignal", "exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal.html", "exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal" ],
+    [ "DataCollectionDefinitionDuplicateSignal", "exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal.html", "exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal" ],
+    [ "DataCollectionDefinitionNotFoundSignal", "exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal.html", "exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal" ],
+    [ "addDataCollectionDefinition", "interface_pos_data_collection_specification.html#aa9f5c6b357a6df9e245641d95691343c", null ],
+    [ "addDCSpec", "interface_pos_data_collection_specification.html#a15401d751944d62b8c7bbed9ce9063db", null ],
+    [ "allDataCollectionDefinitions", "interface_pos_data_collection_specification.html#a151b760bc94f2475a8e2930a36fb4c99", null ],
+    [ "allDCSpecs", "interface_pos_data_collection_specification.html#a53cae30c2bc80a01119b135fdbdd5946", null ],
+    [ "findDataCollectionDefinitionFor", "interface_pos_data_collection_specification.html#ac221eb9c2a2a09cc678dc46384e3e577", null ],
+    [ "findDCSpec", "interface_pos_data_collection_specification.html#a95df2ea8b1b916de4d41c231c8cf1027", null ],
+    [ "getDescription", "interface_pos_data_collection_specification.html#a623369e000fd234d1ccf41d8b984b376", null ],
+    [ "getFPCCategory", "interface_pos_data_collection_specification.html#a3f5fff540574be032606a417a6e8e69f", null ],
+    [ "getTotalResultForSpecCheck", "interface_pos_data_collection_specification.html#a6729b42e06ca1b6713776d10b9ff1a11", null ],
+    [ "isWhiteFlagOn", "interface_pos_data_collection_specification.html#a6a3c9992d1946c00558e74cf9b42f362", null ],
+    [ "makeWhiteFlagOff", "interface_pos_data_collection_specification.html#ab7d716d79fec1f51fe60b754387cc447", null ],
+    [ "makeWhiteFlagOn", "interface_pos_data_collection_specification.html#ae9cb502c9b21bab5f8c054c28a85a290", null ],
+    [ "PosDataCollectionSpecification_init", "interface_pos_data_collection_specification.html#af60cd6de21b655742b57f2002216ac0d", null ],
+    [ "removeDataCollectionDefinition", "interface_pos_data_collection_specification.html#ab05f627ec4a6d4c9860b9481d8d0e5a3", null ],
+    [ "removeDCSpec", "interface_pos_data_collection_specification.html#ae33a3785d045bdbf6013c65c85bfb2cf", null ],
+    [ "setDCSpecificationInfo", "interface_pos_data_collection_specification.html#a5a646a9dc60d0b4246f2abdabf096bde", null ],
+    [ "setDCSpecificationInfo__101", "interface_pos_data_collection_specification.html#ad51391e299bba4d3f584761ac44bda2d", null ],
+    [ "setDescription", "interface_pos_data_collection_specification.html#a32a9875cd1289963c0ff92ad8e303a1c", null ],
+    [ "setFPCCategory", "interface_pos_data_collection_specification.html#a7d605957a1fe884236f643ccaa1e1612", null ]
+];

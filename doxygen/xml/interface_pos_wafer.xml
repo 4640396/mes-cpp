@@ -1,0 +1,1365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_wafer" kind="interface" language="IDL" prot="public">
+    <compoundname>PosWafer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Wafer</basecompoundref>
+    <includes refid="pwafer_8idl" local="no">pwafer.idl</includes>
+    <innerclass refid="exception_pos_wafer_1_1_wafer_is_already_scrapped_signal" prot="public">PosWafer::WaferIsAlreadyScrappedSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_wafer_is_not_scrapped_signal" prot="public">PosWafer::WaferIsNotScrappedSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_no_sub_product_specification_signal" prot="public">PosWafer::NoSubProductSpecificationSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_illegal_quantity_signal" prot="public">PosWafer::IllegalQuantitySignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_illegal_wafer_type_signal" prot="public">PosWafer::IllegalWaferTypeSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_product_state_invalid_signal" prot="public">PosWafer::ProductStateInvalidSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_rework_counter_not_found_signal" prot="public">PosWafer::ReworkCounterNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_stacked_wafer_duplicate_signal" prot="public">PosWafer::StackedWaferDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_wafer_1_1_stacked_wafer_not_found_signal" prot="public">PosWafer::StackedWaferNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_wafer_1a869b689917cfc2d3a8dfff1605b14dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::PosWafer_init</definition>
+        <argsstring>(in long nominalSize)</argsstring>
+        <name>PosWafer_init</name>
+        <qualifiedname>PosWafer::PosWafer_init</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>nominalSize</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="277" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a63ac32fd69e45784ecce38b9cf3b07ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setRecycleCount</definition>
+        <argsstring>(in long recycleCount)</argsstring>
+        <name>setRecycleCount</name>
+        <qualifiedname>PosWafer::setRecycleCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>recycleCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="283" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1af8932391b95dbf69421f95a7ccfb7b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getRecycleCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRecycleCount</name>
+        <qualifiedname>PosWafer::getRecycleCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="289" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a3693f8bb368a86f9508b85e72cae27de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setTotalDiceQuantity</definition>
+        <argsstring>(in long totalDiceQuantity)</argsstring>
+        <name>setTotalDiceQuantity</name>
+        <qualifiedname>PosWafer::setTotalDiceQuantity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>totalDiceQuantity</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="296" column="8"/>
+        <references refid="interface_pos_wafer_1a3693f8bb368a86f9508b85e72cae27de">setTotalDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1a3693f8bb368a86f9508b85e72cae27de">setTotalDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ad16836701bfa04c53b957b5ff15d3c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getTotalDiceQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalDiceQuantity</name>
+        <qualifiedname>PosWafer::getTotalDiceQuantity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="302" column="8"/>
+        <references refid="interface_pos_wafer_1ad16836701bfa04c53b957b5ff15d3c5f">getTotalDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1ad16836701bfa04c53b957b5ff15d3c5f">getTotalDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ac4515495b16c713cfd57257806e7fa5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setGoodDiceQuantity</definition>
+        <argsstring>(in long goodDiceQuantity)</argsstring>
+        <name>setGoodDiceQuantity</name>
+        <qualifiedname>PosWafer::setGoodDiceQuantity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>goodDiceQuantity</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_illegal_quantity_signal" kindref="compound">IllegalQuantitySignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="308" column="8"/>
+        <references refid="interface_pos_wafer_1ac4515495b16c713cfd57257806e7fa5e">setGoodDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1ac4515495b16c713cfd57257806e7fa5e">setGoodDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6db5c69a2e4068fbc5f3b341814737e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getGoodDiceQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>getGoodDiceQuantity</name>
+        <qualifiedname>PosWafer::getGoodDiceQuantity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="314" column="8"/>
+        <references refid="interface_pos_wafer_1a6db5c69a2e4068fbc5f3b341814737e9">getGoodDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1a6db5c69a2e4068fbc5f3b341814737e9">getGoodDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a9bb20e3fe4590979b4c289792ccb2101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setRepairedDiceQuantity</definition>
+        <argsstring>(in long repairedDiceQuantity)</argsstring>
+        <name>setRepairedDiceQuantity</name>
+        <qualifiedname>PosWafer::setRepairedDiceQuantity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>repairedDiceQuantity</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_illegal_quantity_signal" kindref="compound">IllegalQuantitySignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="320" column="8"/>
+        <references refid="interface_pos_wafer_1a9bb20e3fe4590979b4c289792ccb2101">setRepairedDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1a9bb20e3fe4590979b4c289792ccb2101">setRepairedDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a837006f31fa209cfaaef4f3f5285b81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getRepairedDiceQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>getRepairedDiceQuantity</name>
+        <qualifiedname>PosWafer::getRepairedDiceQuantity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="326" column="8"/>
+        <references refid="interface_pos_wafer_1a837006f31fa209cfaaef4f3f5285b81e">getRepairedDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1a837006f31fa209cfaaef4f3f5285b81e">getRepairedDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1af57ec9982e4135076b1cb028a34fb761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setBadDiceQuantity</definition>
+        <argsstring>(in long badDiceQuantity)</argsstring>
+        <name>setBadDiceQuantity</name>
+        <qualifiedname>PosWafer::setBadDiceQuantity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>badDiceQuantity</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_illegal_quantity_signal" kindref="compound">IllegalQuantitySignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="332" column="8"/>
+        <references refid="interface_pos_wafer_1af57ec9982e4135076b1cb028a34fb761">setBadDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1af57ec9982e4135076b1cb028a34fb761">setBadDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a1bf72dfc707e0924b3af0c035c3a8bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getBadDiceQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>getBadDiceQuantity</name>
+        <qualifiedname>PosWafer::getBadDiceQuantity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="338" column="8"/>
+        <references refid="interface_pos_wafer_1a1bf72dfc707e0924b3af0c035c3a8bc1">getBadDiceQuantity</references>
+        <referencedby refid="interface_pos_wafer_1a1bf72dfc707e0924b3af0c035c3a8bc1">getBadDiceQuantity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a2617da2757c8d56c6bd338661ab20d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeControlWafer</definition>
+        <argsstring>()</argsstring>
+        <name>makeControlWafer</name>
+        <qualifiedname>PosWafer::makeControlWafer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="344" column="8"/>
+        <references refid="interface_pos_wafer_1a2617da2757c8d56c6bd338661ab20d96">makeControlWafer</references>
+        <referencedby refid="interface_pos_wafer_1a2617da2757c8d56c6bd338661ab20d96">makeControlWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a34f267dfe7ecd68b91a500ee4da9eabd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeNotControlWafer</definition>
+        <argsstring>()</argsstring>
+        <name>makeNotControlWafer</name>
+        <qualifiedname>PosWafer::makeNotControlWafer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="350" column="8"/>
+        <references refid="interface_pos_wafer_1a34f267dfe7ecd68b91a500ee4da9eabd">makeNotControlWafer</references>
+        <referencedby refid="interface_pos_wafer_1a34f267dfe7ecd68b91a500ee4da9eabd">makeNotControlWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ac1487a48b1e98797d2c1d211af2e075d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isControlWafer</definition>
+        <argsstring>()</argsstring>
+        <name>isControlWafer</name>
+        <qualifiedname>PosWafer::isControlWafer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="356" column="11"/>
+        <references refid="interface_pos_wafer_1ac1487a48b1e98797d2c1d211af2e075d">isControlWafer</references>
+        <referencedby refid="interface_pos_wafer_1ac1487a48b1e98797d2c1d211af2e075d">isControlWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ae5d8177804a9b330ba74a5f250577a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosWafer::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="363" column="8"/>
+        <references refid="interface_pos_wafer_1ae5d8177804a9b330ba74a5f250577a01">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_wafer_1ae5d8177804a9b330ba74a5f250577a01">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ad4dd34c60be034e2cc0852893a826f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosWafer::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosWafer::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="369" column="13"/>
+        <references refid="interface_pos_wafer_1ad4dd34c60be034e2cc0852893a826f94">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_wafer_1ad4dd34c60be034e2cc0852893a826f94">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1adf7fd6ebbcb2419c6f25938dcb014bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosWafer::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="376" column="8"/>
+        <references refid="interface_pos_wafer_1adf7fd6ebbcb2419c6f25938dcb014bd2">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_wafer_1adf7fd6ebbcb2419c6f25938dcb014bd2">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a094fc5e96a5d36e0a1fa1b77b9f24430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosWafer::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosWafer::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="382" column="13"/>
+        <references refid="interface_pos_wafer_1a094fc5e96a5d36e0a1fa1b77b9f24430">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_wafer_1a094fc5e96a5d36e0a1fa1b77b9f24430">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a4c05eccfeb60e1f121624ed16a289075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setOriginalIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setOriginalIdentifier</name>
+        <qualifiedname>PosWafer::setOriginalIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="388" column="8"/>
+        <references refid="interface_pos_wafer_1a4c05eccfeb60e1f121624ed16a289075">setOriginalIdentifier</references>
+        <referencedby refid="interface_pos_wafer_1a4c05eccfeb60e1f121624ed16a289075">setOriginalIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1acec5e3eb7fe39bc0e92129d7c65a6a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosWafer::getOriginalIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getOriginalIdentifier</name>
+        <qualifiedname>PosWafer::getOriginalIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="394" column="10"/>
+        <references refid="interface_pos_wafer_1acec5e3eb7fe39bc0e92129d7c65a6a2c">getOriginalIdentifier</references>
+        <referencedby refid="interface_pos_wafer_1acec5e3eb7fe39bc0e92129d7c65a6a2c">getOriginalIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a3a1cd336456c082c4050f2ba49b32cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeSTBAllocated</definition>
+        <argsstring>()</argsstring>
+        <name>makeSTBAllocated</name>
+        <qualifiedname>PosWafer::makeSTBAllocated</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="400" column="8"/>
+        <references refid="interface_pos_wafer_1a3a1cd336456c082c4050f2ba49b32cce">makeSTBAllocated</references>
+        <referencedby refid="interface_pos_wafer_1a3a1cd336456c082c4050f2ba49b32cce">makeSTBAllocated</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1af4538d824d9e59ae5ef3b487295de3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeNotSTBAllocated</definition>
+        <argsstring>()</argsstring>
+        <name>makeNotSTBAllocated</name>
+        <qualifiedname>PosWafer::makeNotSTBAllocated</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="406" column="8"/>
+        <references refid="interface_pos_wafer_1af4538d824d9e59ae5ef3b487295de3dd">makeNotSTBAllocated</references>
+        <referencedby refid="interface_pos_wafer_1af4538d824d9e59ae5ef3b487295de3dd">makeNotSTBAllocated</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a802d3e61b497d4d707729c5d3104dc5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isSTBAllocated</definition>
+        <argsstring>()</argsstring>
+        <name>isSTBAllocated</name>
+        <qualifiedname>PosWafer::isSTBAllocated</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="412" column="11"/>
+        <references refid="interface_pos_wafer_1a802d3e61b497d4d707729c5d3104dc5b">isSTBAllocated</references>
+        <referencedby refid="interface_pos_wafer_1a802d3e61b497d4d707729c5d3104dc5b">isSTBAllocated</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1aa2ab8105defbe7619707d575010c85b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::resetIdentifier</definition>
+        <argsstring>(in string newIdentifier)</argsstring>
+        <name>resetIdentifier</name>
+        <qualifiedname>PosWafer::resetIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>newIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="418" column="8"/>
+        <references refid="interface_pos_wafer_1aa2ab8105defbe7619707d575010c85b6">resetIdentifier</references>
+        <referencedby refid="interface_pos_wafer_1aa2ab8105defbe7619707d575010c85b6">resetIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a1e70991466166a26d97ed7c5884f3fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeActive</definition>
+        <argsstring>()</argsstring>
+        <name>makeActive</name>
+        <qualifiedname>PosWafer::makeActive</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="424" column="8"/>
+        <references refid="interface_pos_wafer_1a1e70991466166a26d97ed7c5884f3fe2">makeActive</references>
+        <referencedby refid="interface_pos_wafer_1a1e70991466166a26d97ed7c5884f3fe2">makeActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1aaf3553b53a752534d2cba7513d9cbfe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeScrap</definition>
+        <argsstring>()</argsstring>
+        <name>makeScrap</name>
+        <qualifiedname>PosWafer::makeScrap</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="430" column="8"/>
+        <references refid="interface_pos_wafer_1aaf3553b53a752534d2cba7513d9cbfe9">makeScrap</references>
+        <referencedby refid="interface_pos_wafer_1aaf3553b53a752534d2cba7513d9cbfe9">makeScrap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a1f8a1959485af462603f44fcd570efd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeGarbage</definition>
+        <argsstring>()</argsstring>
+        <name>makeGarbage</name>
+        <qualifiedname>PosWafer::makeGarbage</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="436" column="8"/>
+        <references refid="interface_pos_wafer_1a1f8a1959485af462603f44fcd570efd1">makeGarbage</references>
+        <referencedby refid="interface_pos_wafer_1a1f8a1959485af462603f44fcd570efd1">makeGarbage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a499a37b5d0fd58ba5bd69ed9ff98ea5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <qualifiedname>PosWafer::isActive</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="443" column="11"/>
+        <references refid="interface_pos_wafer_1a499a37b5d0fd58ba5bd69ed9ff98ea5e">isActive</references>
+        <referencedby refid="interface_pos_wafer_1a499a37b5d0fd58ba5bd69ed9ff98ea5e">isActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a8ba03cde32b9caca0a63dbdf9859e006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isScrap</definition>
+        <argsstring>()</argsstring>
+        <name>isScrap</name>
+        <qualifiedname>PosWafer::isScrap</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="450" column="11"/>
+        <references refid="interface_pos_wafer_1a8ba03cde32b9caca0a63dbdf9859e006">isScrap</references>
+        <referencedby refid="interface_pos_wafer_1a8ba03cde32b9caca0a63dbdf9859e006">isScrap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6f42bf31bb1cccfabb542300a645c110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isGarbage</definition>
+        <argsstring>()</argsstring>
+        <name>isGarbage</name>
+        <qualifiedname>PosWafer::isGarbage</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="457" column="11"/>
+        <references refid="interface_pos_wafer_1a6f42bf31bb1cccfabb542300a645c110">isGarbage</references>
+        <referencedby refid="interface_pos_wafer_1a6f42bf31bb1cccfabb542300a645c110">isGarbage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ab5143d81c65be50ccc5b16165d1d1406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a10a4a3c6285a5a50361092b02d949ea5" kindref="member">posWaferInfo</ref></type>
+        <definition>posWaferInfo PosWafer::getWaferInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getWaferInfo</name>
+        <qualifiedname>PosWafer::getWaferInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="463" column="16"/>
+        <references refid="interface_pos_wafer_1ab5143d81c65be50ccc5b16165d1d1406">getWaferInfo</references>
+        <referencedby refid="interface_pos_wafer_1ab5143d81c65be50ccc5b16165d1d1406">getWaferInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a95d134f8377d03d095abdec6302d8125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setRecycleLimit</definition>
+        <argsstring>(in long recycleLimit)</argsstring>
+        <name>setRecycleLimit</name>
+        <qualifiedname>PosWafer::setRecycleLimit</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>recycleLimit</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="470" column="8"/>
+        <references refid="interface_pos_wafer_1a95d134f8377d03d095abdec6302d8125">setRecycleLimit</references>
+        <referencedby refid="interface_pos_wafer_1a95d134f8377d03d095abdec6302d8125">setRecycleLimit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ad16f038f8108fe33e0a3cb4431b3f6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getRecycleLimit</definition>
+        <argsstring>()</argsstring>
+        <name>getRecycleLimit</name>
+        <qualifiedname>PosWafer::getRecycleLimit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="476" column="8"/>
+        <references refid="interface_pos_wafer_1ad16f038f8108fe33e0a3cb4431b3f6dd">getRecycleLimit</references>
+        <referencedby refid="interface_pos_wafer_1ad16f038f8108fe33e0a3cb4431b3f6dd">getRecycleLimit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a29ff2bb785d556e7a2979522ae4645d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setSubProductSpecification</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>setSubProductSpecification</name>
+        <qualifiedname>PosWafer::setSubProductSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="482" column="8"/>
+        <references refid="interface_pos_wafer_1a29ff2bb785d556e7a2979522ae4645d6">setSubProductSpecification</references>
+        <referencedby refid="interface_pos_wafer_1a29ff2bb785d556e7a2979522ae4645d6">setSubProductSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a24a734565ff1bb7c21d8cbbec163c999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+        <definition>PosProductSpecification PosWafer::getSubProductSpecification</definition>
+        <argsstring>()</argsstring>
+        <name>getSubProductSpecification</name>
+        <qualifiedname>PosWafer::getSubProductSpecification</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="488" column="27"/>
+        <references refid="interface_pos_wafer_1a24a734565ff1bb7c21d8cbbec163c999">getSubProductSpecification</references>
+        <referencedby refid="interface_pos_wafer_1a24a734565ff1bb7c21d8cbbec163c999">getSubProductSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a4e0bd57f27a8b03212202f2881491fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setPreviousLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>setPreviousLot</name>
+        <qualifiedname>PosWafer::setPreviousLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="495" column="8"/>
+        <references refid="interface_pos_wafer_1a4e0bd57f27a8b03212202f2881491fbc">setPreviousLot</references>
+        <referencedby refid="interface_pos_wafer_1a4e0bd57f27a8b03212202f2881491fbc">setPreviousLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6bfce3454f8b60f7c287f4ab20d20d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosWafer::getPreviousLot</definition>
+        <argsstring>()</argsstring>
+        <name>getPreviousLot</name>
+        <qualifiedname>PosWafer::getPreviousLot</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="502" column="10"/>
+        <references refid="interface_pos_wafer_1a6bfce3454f8b60f7c287f4ab20d20d63">getPreviousLot</references>
+        <referencedby refid="interface_pos_wafer_1a6bfce3454f8b60f7c287f4ab20d20d63">getPreviousLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a66df691089e4b57de08e5140f379fed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosWafer::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosWafer::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="508" column="10"/>
+        <references refid="interface_pos_wafer_1a66df691089e4b57de08e5140f379fed4">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_wafer_1a66df691089e4b57de08e5140f379fed4">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a64a22038fd92792ea117dd64a596832f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setAliasWaferName</definition>
+        <argsstring>(in string anAliasWaferName)</argsstring>
+        <name>setAliasWaferName</name>
+        <qualifiedname>PosWafer::setAliasWaferName</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anAliasWaferName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="514" column="8"/>
+        <references refid="interface_pos_wafer_1a64a22038fd92792ea117dd64a596832f">setAliasWaferName</references>
+        <referencedby refid="interface_pos_wafer_1a64a22038fd92792ea117dd64a596832f">setAliasWaferName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6b65a985fb72431110a165dd741c5257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosWafer::getAliasWaferName</definition>
+        <argsstring>()</argsstring>
+        <name>getAliasWaferName</name>
+        <qualifiedname>PosWafer::getAliasWaferName</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="520" column="10"/>
+        <references refid="interface_pos_wafer_1a6b65a985fb72431110a165dd741c5257">getAliasWaferName</references>
+        <referencedby refid="interface_pos_wafer_1a6b65a985fb72431110a165dd741c5257">getAliasWaferName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a3e671221a9c25ca2bafe3260ca747209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosWafer::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosWafer::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="527" column="18"/>
+        <references refid="interface_pos_wafer_1a3e671221a9c25ca2bafe3260ca747209">getPropertySet</references>
+        <referencedby refid="interface_pos_wafer_1a3e671221a9c25ca2bafe3260ca747209">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a41da037a01f927e4fecf785e3fb97b6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::increaseReworkCount</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>increaseReworkCount</name>
+        <qualifiedname>PosWafer::increaseReworkCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="535" column="8"/>
+        <references refid="interface_pos_wafer_1a41da037a01f927e4fecf785e3fb97b6f">increaseReworkCount</references>
+        <referencedby refid="interface_pos_wafer_1a41da037a01f927e4fecf785e3fb97b6f">increaseReworkCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6c77e96b955efc72e440d94a9bc28a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::decreaseReworkCount</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>decreaseReworkCount</name>
+        <qualifiedname>PosWafer::decreaseReworkCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_rework_counter_not_found_signal" kindref="compound">ReworkCounterNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="542" column="8"/>
+        <references refid="interface_pos_wafer_1a6c77e96b955efc72e440d94a9bc28a61">decreaseReworkCount</references>
+        <referencedby refid="interface_pos_wafer_1a6c77e96b955efc72e440d94a9bc28a61">decreaseReworkCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ae0e46aff2de2b440fd88cab86ecf71e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getReworkCount</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>getReworkCount</name>
+        <qualifiedname>PosWafer::getReworkCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="548" column="8"/>
+        <references refid="interface_pos_wafer_1ae0e46aff2de2b440fd88cab86ecf71e6">getReworkCount</references>
+        <referencedby refid="interface_pos_wafer_1ae0e46aff2de2b440fd88cab86ecf71e6">getReworkCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a04ce536b558baca527e90b6062f38c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1aa7247f2617f5007ce8e0f1b32260d5e8" kindref="member">PosWaferReworkCountSequence</ref></type>
+        <definition>PosWaferReworkCountSequence PosWafer::allReworkCounts</definition>
+        <argsstring>()</argsstring>
+        <name>allReworkCounts</name>
+        <qualifiedname>PosWafer::allReworkCounts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="554" column="31"/>
+        <references refid="interface_pos_wafer_1a04ce536b558baca527e90b6062f38c3d">allReworkCounts</references>
+        <referencedby refid="interface_pos_wafer_1a04ce536b558baca527e90b6062f38c3d">allReworkCounts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ae979fc61cf5095056a78e8cc610587f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setReworkCount</definition>
+        <argsstring>(in string key, in long reworkCount)</argsstring>
+        <name>setReworkCount</name>
+        <qualifiedname>PosWafer::setReworkCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>reworkCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="560" column="8"/>
+        <references refid="interface_pos_wafer_1ae979fc61cf5095056a78e8cc610587f6">setReworkCount</references>
+        <referencedby refid="interface_pos_wafer_1ae979fc61cf5095056a78e8cc610587f6">setReworkCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1aaa4940d4412aefcf18d93e4c409f3a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setSTBedCount</definition>
+        <argsstring>(in long STBedCount)</argsstring>
+        <name>setSTBedCount</name>
+        <qualifiedname>PosWafer::setSTBedCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>STBedCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="566" column="8"/>
+        <references refid="interface_pos_wafer_1aaa4940d4412aefcf18d93e4c409f3a4f">setSTBedCount</references>
+        <referencedby refid="interface_pos_wafer_1aaa4940d4412aefcf18d93e4c409f3a4f">setSTBedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1afafe36ce08c3c40265727f86b2614ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getSTBedCount</definition>
+        <argsstring>()</argsstring>
+        <name>getSTBedCount</name>
+        <qualifiedname>PosWafer::getSTBedCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="572" column="8"/>
+        <references refid="interface_pos_wafer_1afafe36ce08c3c40265727f86b2614ea8">getSTBedCount</references>
+        <referencedby refid="interface_pos_wafer_1afafe36ce08c3c40265727f86b2614ea8">getSTBedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a491a70ed9d1616ffd544395daa91739e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setSTBInfo</definition>
+        <argsstring>(in PosSTBInfoSequence STBInfo)</argsstring>
+        <name>setSTBInfo</name>
+        <qualifiedname>PosWafer::setSTBInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1ab58de936bb16f00e2cf9bed645f81b8c" kindref="member">PosSTBInfoSequence</ref></type>
+          <declname>STBInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="578" column="8"/>
+        <references refid="interface_pos_wafer_1a491a70ed9d1616ffd544395daa91739e">setSTBInfo</references>
+        <referencedby refid="interface_pos_wafer_1a491a70ed9d1616ffd544395daa91739e">setSTBInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ac2e21f040bf30b1538dc134defdd5004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1ab58de936bb16f00e2cf9bed645f81b8c" kindref="member">PosSTBInfoSequence</ref></type>
+        <definition>PosSTBInfoSequence PosWafer::getSTBInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getSTBInfo</name>
+        <qualifiedname>PosWafer::getSTBInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="584" column="22"/>
+        <references refid="interface_pos_wafer_1ac2e21f040bf30b1538dc134defdd5004">getSTBInfo</references>
+        <referencedby refid="interface_pos_wafer_1ac2e21f040bf30b1538dc134defdd5004">getSTBInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1af71cfec395d5d2637b0c09a03502201d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1a331941abaa7828fd0dc3d43eefd5b123" kindref="member">PosStackedWaferSequence</ref></type>
+        <definition>PosStackedWaferSequence PosWafer::allStackedWafers</definition>
+        <argsstring>()</argsstring>
+        <name>allStackedWafers</name>
+        <qualifiedname>PosWafer::allStackedWafers</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="590" column="27"/>
+        <references refid="interface_pos_wafer_1af71cfec395d5d2637b0c09a03502201d">allStackedWafers</references>
+        <referencedby refid="interface_pos_wafer_1af71cfec395d5d2637b0c09a03502201d">allStackedWafers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a432b4ef9ea98d302003fdf1c032196f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::addStackedWafer</definition>
+        <argsstring>(in posStackedWafer stackedWafer)</argsstring>
+        <name>addStackedWafer</name>
+        <qualifiedname>PosWafer::addStackedWafer</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1ad9b4211ac9d0cf538e1d48391f266f31" kindref="member">posStackedWafer</ref></type>
+          <declname>stackedWafer</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_stacked_wafer_duplicate_signal" kindref="compound">StackedWaferDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="596" column="8"/>
+        <references refid="interface_pos_wafer_1a432b4ef9ea98d302003fdf1c032196f5">addStackedWafer</references>
+        <referencedby refid="interface_pos_wafer_1a432b4ef9ea98d302003fdf1c032196f5">addStackedWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a58b3e86d29ceb216f3f5dfd0d415d657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::removeStackedWafer</definition>
+        <argsstring>(in posStackedWafer stackedWafer)</argsstring>
+        <name>removeStackedWafer</name>
+        <qualifiedname>PosWafer::removeStackedWafer</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1ad9b4211ac9d0cf538e1d48391f266f31" kindref="member">posStackedWafer</ref></type>
+          <declname>stackedWafer</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_wafer_1_1_stacked_wafer_not_found_signal" kindref="compound">StackedWaferNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="602" column="8"/>
+        <references refid="interface_pos_wafer_1a58b3e86d29ceb216f3f5dfd0d415d657">removeStackedWafer</references>
+        <referencedby refid="interface_pos_wafer_1a58b3e86d29ceb216f3f5dfd0d415d657">removeStackedWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a04c3270fda44797507f16d450ef5ac7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1ad9b4211ac9d0cf538e1d48391f266f31" kindref="member">posStackedWafer</ref></type>
+        <definition>posStackedWafer PosWafer::findStackedWafer</definition>
+        <argsstring>(in posStackedWafer stackedWafer)</argsstring>
+        <name>findStackedWafer</name>
+        <qualifiedname>PosWafer::findStackedWafer</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1ad9b4211ac9d0cf538e1d48391f266f31" kindref="member">posStackedWafer</ref></type>
+          <declname>stackedWafer</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="608" column="19"/>
+        <references refid="interface_pos_wafer_1a04c3270fda44797507f16d450ef5ac7c">findStackedWafer</references>
+        <referencedby refid="interface_pos_wafer_1a04c3270fda44797507f16d450ef5ac7c">findStackedWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a81b4095f760ed051d3ddd87d72c56434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::makeStacked</definition>
+        <argsstring>()</argsstring>
+        <name>makeStacked</name>
+        <qualifiedname>PosWafer::makeStacked</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="614" column="8"/>
+        <references refid="interface_pos_wafer_1a81b4095f760ed051d3ddd87d72c56434">makeStacked</references>
+        <referencedby refid="interface_pos_wafer_1a81b4095f760ed051d3ddd87d72c56434">makeStacked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ab6ba16f21f3937529a517700df1bb3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosWafer::isStacked</definition>
+        <argsstring>()</argsstring>
+        <name>isStacked</name>
+        <qualifiedname>PosWafer::isStacked</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="621" column="11"/>
+        <references refid="interface_pos_wafer_1ab6ba16f21f3937529a517700df1bb3ec">isStacked</references>
+        <referencedby refid="interface_pos_wafer_1ab6ba16f21f3937529a517700df1bb3ec">isStacked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a99be4fc37f077db59edccffc5ee8efe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosWafer::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosWafer::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="627" column="18"/>
+        <references refid="interface_pos_wafer_1a99be4fc37f077db59edccffc5ee8efe0">createPropertySet</references>
+        <referencedby refid="interface_pos_wafer_1a99be4fc37f077db59edccffc5ee8efe0">createPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a961727214706b84f22f135f552397e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getEqpMonitorUsedCount</definition>
+        <argsstring>()</argsstring>
+        <name>getEqpMonitorUsedCount</name>
+        <qualifiedname>PosWafer::getEqpMonitorUsedCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="633" column="8"/>
+        <references refid="interface_pos_wafer_1a961727214706b84f22f135f552397e1b">getEqpMonitorUsedCount</references>
+        <referencedby refid="interface_pos_wafer_1a961727214706b84f22f135f552397e1b">getEqpMonitorUsedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ab08083ce60adc15926fa43f40f6e9915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setEqpMonitorUsedCount</definition>
+        <argsstring>(in long eqpMonitorUsedCount)</argsstring>
+        <name>setEqpMonitorUsedCount</name>
+        <qualifiedname>PosWafer::setEqpMonitorUsedCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>eqpMonitorUsedCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="639" column="8"/>
+        <references refid="interface_pos_wafer_1ab08083ce60adc15926fa43f40f6e9915">setEqpMonitorUsedCount</references>
+        <referencedby refid="interface_pos_wafer_1ab08083ce60adc15926fa43f40f6e9915">setEqpMonitorUsedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1ae85aa75c6ff770abace6ed8e769606ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::increaseEqpMonitorUsedCount</definition>
+        <argsstring>()</argsstring>
+        <name>increaseEqpMonitorUsedCount</name>
+        <qualifiedname>PosWafer::increaseEqpMonitorUsedCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="645" column="8"/>
+        <references refid="interface_pos_wafer_1ae85aa75c6ff770abace6ed8e769606ba">increaseEqpMonitorUsedCount</references>
+        <referencedby refid="interface_pos_wafer_1ae85aa75c6ff770abace6ed8e769606ba">increaseEqpMonitorUsedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a1b859e9fb29b849a982d9881d9d5bc27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::decreaseEqpMonitorUsedCount</definition>
+        <argsstring>()</argsstring>
+        <name>decreaseEqpMonitorUsedCount</name>
+        <qualifiedname>PosWafer::decreaseEqpMonitorUsedCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="651" column="8"/>
+        <references refid="interface_pos_wafer_1a1b859e9fb29b849a982d9881d9d5bc27">decreaseEqpMonitorUsedCount</references>
+        <referencedby refid="interface_pos_wafer_1a1b859e9fb29b849a982d9881d9d5bc27">decreaseEqpMonitorUsedCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a481bcc751c5607641fac587ad12be4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::increasePassCount</definition>
+        <argsstring>(in string key, in long lotPassCount)</argsstring>
+        <name>increasePassCount</name>
+        <qualifiedname>PosWafer::increasePassCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>lotPassCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="657" column="8"/>
+        <references refid="interface_pos_wafer_1a481bcc751c5607641fac587ad12be4f9">increasePassCount</references>
+        <referencedby refid="interface_pos_wafer_1a481bcc751c5607641fac587ad12be4f9">increasePassCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a9c53ab3fc067e28ba674eabd648d36b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::decreasePassCount</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>decreasePassCount</name>
+        <qualifiedname>PosWafer::decreasePassCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="663" column="8"/>
+        <references refid="interface_pos_wafer_1a9c53ab3fc067e28ba674eabd648d36b0">decreasePassCount</references>
+        <referencedby refid="interface_pos_wafer_1a9c53ab3fc067e28ba674eabd648d36b0">decreasePassCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a6d5f46be745ad79d612b61dd7e07c738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosWafer::getPassCount</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>getPassCount</name>
+        <qualifiedname>PosWafer::getPassCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="669" column="8"/>
+        <references refid="interface_pos_wafer_1a6d5f46be745ad79d612b61dd7e07c738">getPassCount</references>
+        <referencedby refid="interface_pos_wafer_1a6d5f46be745ad79d612b61dd7e07c738">getPassCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1a904aac8108155092638eb789bb820739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosWafer::setPassCount</definition>
+        <argsstring>(in string key, in long passCount)</argsstring>
+        <name>setPassCount</name>
+        <qualifiedname>PosWafer::setPassCount</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>in long</type>
+          <declname>passCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="675" column="8"/>
+        <references refid="interface_pos_wafer_1a904aac8108155092638eb789bb820739">setPassCount</references>
+        <referencedby refid="interface_pos_wafer_1a904aac8108155092638eb789bb820739">setPassCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_wafer_1aac137fe1682c91a3455c8330c1fc0def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1aa114e4d93f800488387b257f81cd8941" kindref="member">PosWaferPassCountSequence</ref></type>
+        <definition>PosWaferPassCountSequence PosWafer::allPassCounts</definition>
+        <argsstring>()</argsstring>
+        <name>allPassCounts</name>
+        <qualifiedname>PosWafer::allPassCounts</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pwafer.idl" line="681" column="29"/>
+        <references refid="interface_pos_wafer_1aac137fe1682c91a3455c8330c1fc0def">allPassCounts</references>
+        <referencedby refid="interface_pos_wafer_1aac137fe1682c91a3455c8330c1fc0def">allPassCounts</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosWafer</label>
+        <link refid="interface_pos_wafer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Wafer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosWafer</label>
+        <link refid="interface_pos_wafer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Wafer</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pwafer.idl" line="48" column="11" bodyfile="poscimfw/include/pwafer.idl" bodystart="48" bodyend="689"/>
+    <listofallmembers>
+      <member refid="interface_pos_wafer_1a432b4ef9ea98d302003fdf1c032196f5" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>addStackedWafer</name></member>
+      <member refid="interface_pos_wafer_1aac137fe1682c91a3455c8330c1fc0def" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>allPassCounts</name></member>
+      <member refid="interface_pos_wafer_1a04ce536b558baca527e90b6062f38c3d" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>allReworkCounts</name></member>
+      <member refid="interface_pos_wafer_1af71cfec395d5d2637b0c09a03502201d" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>allStackedWafers</name></member>
+      <member refid="interface_pos_wafer_1a99be4fc37f077db59edccffc5ee8efe0" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_wafer_1a1b859e9fb29b849a982d9881d9d5bc27" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>decreaseEqpMonitorUsedCount</name></member>
+      <member refid="interface_pos_wafer_1a9c53ab3fc067e28ba674eabd648d36b0" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>decreasePassCount</name></member>
+      <member refid="interface_pos_wafer_1a6c77e96b955efc72e440d94a9bc28a61" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>decreaseReworkCount</name></member>
+      <member refid="interface_pos_wafer_1a04c3270fda44797507f16d450ef5ac7c" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>findStackedWafer</name></member>
+      <member refid="interface_pos_wafer_1a6b65a985fb72431110a165dd741c5257" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getAliasWaferName</name></member>
+      <member refid="interface_pos_wafer_1a1bf72dfc707e0924b3af0c035c3a8bc1" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getBadDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1a961727214706b84f22f135f552397e1b" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getEqpMonitorUsedCount</name></member>
+      <member refid="interface_pos_wafer_1a6db5c69a2e4068fbc5f3b341814737e9" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getGoodDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1a094fc5e96a5d36e0a1fa1b77b9f24430" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_wafer_1a66df691089e4b57de08e5140f379fed4" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_wafer_1ad4dd34c60be034e2cc0852893a826f94" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_wafer_1acec5e3eb7fe39bc0e92129d7c65a6a2c" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getOriginalIdentifier</name></member>
+      <member refid="interface_pos_wafer_1a6d5f46be745ad79d612b61dd7e07c738" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getPassCount</name></member>
+      <member refid="interface_pos_wafer_1a6bfce3454f8b60f7c287f4ab20d20d63" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getPreviousLot</name></member>
+      <member refid="interface_pos_wafer_1a3e671221a9c25ca2bafe3260ca747209" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_wafer_1af8932391b95dbf69421f95a7ccfb7b23" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getRecycleCount</name></member>
+      <member refid="interface_pos_wafer_1ad16f038f8108fe33e0a3cb4431b3f6dd" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getRecycleLimit</name></member>
+      <member refid="interface_pos_wafer_1a837006f31fa209cfaaef4f3f5285b81e" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getRepairedDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1ae0e46aff2de2b440fd88cab86ecf71e6" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getReworkCount</name></member>
+      <member refid="interface_pos_wafer_1afafe36ce08c3c40265727f86b2614ea8" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getSTBedCount</name></member>
+      <member refid="interface_pos_wafer_1ac2e21f040bf30b1538dc134defdd5004" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getSTBInfo</name></member>
+      <member refid="interface_pos_wafer_1a24a734565ff1bb7c21d8cbbec163c999" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getSubProductSpecification</name></member>
+      <member refid="interface_pos_wafer_1ad16836701bfa04c53b957b5ff15d3c5f" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getTotalDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1ab5143d81c65be50ccc5b16165d1d1406" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>getWaferInfo</name></member>
+      <member refid="interface_pos_wafer_1ae85aa75c6ff770abace6ed8e769606ba" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>increaseEqpMonitorUsedCount</name></member>
+      <member refid="interface_pos_wafer_1a481bcc751c5607641fac587ad12be4f9" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>increasePassCount</name></member>
+      <member refid="interface_pos_wafer_1a41da037a01f927e4fecf785e3fb97b6f" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>increaseReworkCount</name></member>
+      <member refid="interface_pos_wafer_1a499a37b5d0fd58ba5bd69ed9ff98ea5e" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isActive</name></member>
+      <member refid="interface_pos_wafer_1ac1487a48b1e98797d2c1d211af2e075d" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isControlWafer</name></member>
+      <member refid="interface_pos_wafer_1a6f42bf31bb1cccfabb542300a645c110" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isGarbage</name></member>
+      <member refid="interface_pos_wafer_1a8ba03cde32b9caca0a63dbdf9859e006" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isScrap</name></member>
+      <member refid="interface_pos_wafer_1ab6ba16f21f3937529a517700df1bb3ec" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isStacked</name></member>
+      <member refid="interface_pos_wafer_1a802d3e61b497d4d707729c5d3104dc5b" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>isSTBAllocated</name></member>
+      <member refid="interface_pos_wafer_1a1e70991466166a26d97ed7c5884f3fe2" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeActive</name></member>
+      <member refid="interface_pos_wafer_1a2617da2757c8d56c6bd338661ab20d96" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeControlWafer</name></member>
+      <member refid="interface_pos_wafer_1a1f8a1959485af462603f44fcd570efd1" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeGarbage</name></member>
+      <member refid="interface_pos_wafer_1a34f267dfe7ecd68b91a500ee4da9eabd" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeNotControlWafer</name></member>
+      <member refid="interface_pos_wafer_1af4538d824d9e59ae5ef3b487295de3dd" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeNotSTBAllocated</name></member>
+      <member refid="interface_pos_wafer_1aaf3553b53a752534d2cba7513d9cbfe9" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeScrap</name></member>
+      <member refid="interface_pos_wafer_1a81b4095f760ed051d3ddd87d72c56434" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeStacked</name></member>
+      <member refid="interface_pos_wafer_1a3a1cd336456c082c4050f2ba49b32cce" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>makeSTBAllocated</name></member>
+      <member refid="interface_pos_wafer_1a869b689917cfc2d3a8dfff1605b14dd6" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>PosWafer_init</name></member>
+      <member refid="interface_pos_wafer_1a58b3e86d29ceb216f3f5dfd0d415d657" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>removeStackedWafer</name></member>
+      <member refid="interface_pos_wafer_1aa2ab8105defbe7619707d575010c85b6" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>resetIdentifier</name></member>
+      <member refid="interface_pos_wafer_1a64a22038fd92792ea117dd64a596832f" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setAliasWaferName</name></member>
+      <member refid="interface_pos_wafer_1af57ec9982e4135076b1cb028a34fb761" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setBadDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1ab08083ce60adc15926fa43f40f6e9915" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setEqpMonitorUsedCount</name></member>
+      <member refid="interface_pos_wafer_1ac4515495b16c713cfd57257806e7fa5e" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setGoodDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1adf7fd6ebbcb2419c6f25938dcb014bd2" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_wafer_1ae5d8177804a9b330ba74a5f250577a01" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_wafer_1a4c05eccfeb60e1f121624ed16a289075" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setOriginalIdentifier</name></member>
+      <member refid="interface_pos_wafer_1a904aac8108155092638eb789bb820739" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setPassCount</name></member>
+      <member refid="interface_pos_wafer_1a4e0bd57f27a8b03212202f2881491fbc" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setPreviousLot</name></member>
+      <member refid="interface_pos_wafer_1a63ac32fd69e45784ecce38b9cf3b07ca" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setRecycleCount</name></member>
+      <member refid="interface_pos_wafer_1a95d134f8377d03d095abdec6302d8125" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setRecycleLimit</name></member>
+      <member refid="interface_pos_wafer_1a9bb20e3fe4590979b4c289792ccb2101" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setRepairedDiceQuantity</name></member>
+      <member refid="interface_pos_wafer_1ae979fc61cf5095056a78e8cc610587f6" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setReworkCount</name></member>
+      <member refid="interface_pos_wafer_1aaa4940d4412aefcf18d93e4c409f3a4f" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setSTBedCount</name></member>
+      <member refid="interface_pos_wafer_1a491a70ed9d1616ffd544395daa91739e" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setSTBInfo</name></member>
+      <member refid="interface_pos_wafer_1a29ff2bb785d556e7a2979522ae4645d6" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setSubProductSpecification</name></member>
+      <member refid="interface_pos_wafer_1a3693f8bb368a86f9508b85e72cae27de" prot="public" virt="non-virtual"><scope>PosWafer</scope><name>setTotalDiceQuantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

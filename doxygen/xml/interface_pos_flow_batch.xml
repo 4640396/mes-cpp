@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_flow_batch" kind="interface" language="IDL" prot="public">
+    <compoundname>PosFlowBatch</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pflwbch_8idl" local="no">pflwbch.idl</includes>
+    <innerclass refid="exception_pos_flow_batch_1_1_lots_existing_signal" prot="public">PosFlowBatch::LotsExistingSignal</innerclass>
+    <innerclass refid="exception_pos_flow_batch_1_1_already_reserved_signal" prot="public">PosFlowBatch::AlreadyReservedSignal</innerclass>
+    <innerclass refid="exception_pos_flow_batch_1_1_lot_duplicate_signal" prot="public">PosFlowBatch::LotDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_flow_batch_1_1_lot_not_found_signal" prot="public">PosFlowBatch::LotNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_flow_batch_1_1_flow_batch_already_assigned_signal" prot="public">PosFlowBatch::FlowBatchAlreadyAssignedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_flow_batch_1afc5cd47432981cde3d0af68c45ff0f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setMachine</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>setMachine</name>
+        <qualifiedname>PosFlowBatch::setMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_flow_batch_1_1_already_reserved_signal" kindref="compound">AlreadyReservedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="184" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1abcac5c66e56d9d802960c53431c2c0f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+        <definition>PosMachine PosFlowBatch::getMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getMachine</name>
+        <qualifiedname>PosFlowBatch::getMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="191" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a8917eb768d0cfc40cb9d22e5fd5289df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::removeLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeLot</name>
+        <qualifiedname>PosFlowBatch::removeLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_flow_batch_1_1_lot_not_found_signal" kindref="compound">LotNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="198" column="8"/>
+        <references refid="interface_pos_flow_batch_1a8917eb768d0cfc40cb9d22e5fd5289df">removeLot</references>
+        <referencedby refid="interface_pos_flow_batch_1a8917eb768d0cfc40cb9d22e5fd5289df">removeLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a48dbeec52bf5167a43f93a04cdb1f448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprmggl_8idl_1abf593fc7f7eb1cf39b56f37a66ea9981" kindref="member">PosLotSequence</ref></type>
+        <definition>PosLotSequence PosFlowBatch::allLots</definition>
+        <argsstring>()</argsstring>
+        <name>allLots</name>
+        <qualifiedname>PosFlowBatch::allLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="204" column="18"/>
+        <references refid="interface_pos_flow_batch_1a48dbeec52bf5167a43f93a04cdb1f448">allLots</references>
+        <referencedby refid="interface_pos_flow_batch_1a48dbeec52bf5167a43f93a04cdb1f448">allLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a2ae30f606a525ba8e577de0d5676abdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setLots</definition>
+        <argsstring>(in PosLotSequence aLotSequence, in boolean reFlowBatchFlag)</argsstring>
+        <name>setLots</name>
+        <qualifiedname>PosFlowBatch::setLots</qualifiedname>
+        <param>
+          <type>in <ref refid="pprmggl_8idl_1abf593fc7f7eb1cf39b56f37a66ea9981" kindref="member">PosLotSequence</ref></type>
+          <declname>aLotSequence</declname>
+        </param>
+        <param>
+          <type>in boolean</type>
+          <declname>reFlowBatchFlag</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_flow_batch_1_1_lot_duplicate_signal" kindref="compound">LotDuplicateSignal</ref>,<ref refid="exception_pos_flow_batch_1_1_lots_existing_signal" kindref="compound">LotsExistingSignal</ref>,<ref refid="exception_pos_flow_batch_1_1_flow_batch_already_assigned_signal" kindref="compound">FlowBatchAlreadyAssignedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="212" column="8"/>
+        <references refid="interface_pos_flow_batch_1a2ae30f606a525ba8e577de0d5676abdf">setLots</references>
+        <referencedby refid="interface_pos_flow_batch_1a2ae30f606a525ba8e577de0d5676abdf">setLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a707078c8e7a391b0a337f97d29524b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosFlowBatch::getOperationCount</definition>
+        <argsstring>()</argsstring>
+        <name>getOperationCount</name>
+        <qualifiedname>PosFlowBatch::getOperationCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="219" column="8"/>
+        <references refid="interface_pos_flow_batch_1a707078c8e7a391b0a337f97d29524b46">getOperationCount</references>
+        <referencedby refid="interface_pos_flow_batch_1a707078c8e7a391b0a337f97d29524b46">getOperationCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a3749fb3cea68b1c685707acd79598a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosFlowBatch::getFlowBatchSize</definition>
+        <argsstring>()</argsstring>
+        <name>getFlowBatchSize</name>
+        <qualifiedname>PosFlowBatch::getFlowBatchSize</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="225" column="8"/>
+        <references refid="interface_pos_flow_batch_1a3749fb3cea68b1c685707acd79598a4b">getFlowBatchSize</references>
+        <referencedby refid="interface_pos_flow_batch_1a3749fb3cea68b1c685707acd79598a4b">getFlowBatchSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a5a68582e5ba1ce14d962554e897fdd37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::removeAllLots</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLots</name>
+        <qualifiedname>PosFlowBatch::removeAllLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="232" column="8"/>
+        <references refid="interface_pos_flow_batch_1a5a68582e5ba1ce14d962554e897fdd37">removeAllLots</references>
+        <referencedby refid="interface_pos_flow_batch_1a5a68582e5ba1ce14d962554e897fdd37">removeAllLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a91c1905029e2842a1e6610ca4699295d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::PosFlowBatch_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosFlowBatch_init</name>
+        <qualifiedname>PosFlowBatch::PosFlowBatch_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="238" column="8"/>
+        <references refid="interface_pos_flow_batch_1a91c1905029e2842a1e6610ca4699295d">PosFlowBatch_init</references>
+        <referencedby refid="interface_pos_flow_batch_1a91c1905029e2842a1e6610ca4699295d">PosFlowBatch_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a8131646147fc2da30f41bcd23783cc28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+        <definition>PosLot PosFlowBatch::findLotNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findLotNamed</name>
+        <qualifiedname>PosFlowBatch::findLotNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="245" column="10"/>
+        <references refid="interface_pos_flow_batch_1a8131646147fc2da30f41bcd23783cc28">findLotNamed</references>
+        <referencedby refid="interface_pos_flow_batch_1a8131646147fc2da30f41bcd23783cc28">findLotNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a4a5dc19a4fd60dc2436ff6573977853a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setLastClaimedPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setLastClaimedPerson</name>
+        <qualifiedname>PosFlowBatch::setLastClaimedPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="251" column="8"/>
+        <references refid="interface_pos_flow_batch_1a4a5dc19a4fd60dc2436ff6573977853a">setLastClaimedPerson</references>
+        <referencedby refid="interface_pos_flow_batch_1a4a5dc19a4fd60dc2436ff6573977853a">setLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a3c50ab517e1ad7cf674c75f69d2664e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp aTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosFlowBatch::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="257" column="8"/>
+        <references refid="interface_pos_flow_batch_1a3c50ab517e1ad7cf674c75f69d2664e8">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_flow_batch_1a3c50ab517e1ad7cf674c75f69d2664e8">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a362cad2b03f34a02f5bb94e91269000c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosFlowBatch::getLastClaimedPerson</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPerson</name>
+        <qualifiedname>PosFlowBatch::getLastClaimedPerson</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="263" column="13"/>
+        <references refid="interface_pos_flow_batch_1a362cad2b03f34a02f5bb94e91269000c">getLastClaimedPerson</references>
+        <referencedby refid="interface_pos_flow_batch_1a362cad2b03f34a02f5bb94e91269000c">getLastClaimedPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a066e4f360b94f220e13777a2a1c2f9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosFlowBatch::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosFlowBatch::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="269" column="13"/>
+        <references refid="interface_pos_flow_batch_1a066e4f360b94f220e13777a2a1c2f9c3">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_flow_batch_1a066e4f360b94f220e13777a2a1c2f9c3">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a4fb8740964787e78d41d62999d6bb80d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosFlowBatch::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosFlowBatch::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="275" column="10"/>
+        <references refid="interface_pos_flow_batch_1a4fb8740964787e78d41d62999d6bb80d">getIdentifier</references>
+        <referencedby refid="interface_pos_flow_batch_1a4fb8740964787e78d41d62999d6bb80d">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1ae7ec13554f4217b2f4edc918a6d2ea39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosFlowBatch::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="281" column="8"/>
+        <references refid="interface_pos_flow_batch_1ae7ec13554f4217b2f4edc918a6d2ea39">setIdentifier</references>
+        <referencedby refid="interface_pos_flow_batch_1ae7ec13554f4217b2f4edc918a6d2ea39">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a5ccccecd24b5ecd36ef5569d0767dfc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::makeTargetOperationStarted</definition>
+        <argsstring>()</argsstring>
+        <name>makeTargetOperationStarted</name>
+        <qualifiedname>PosFlowBatch::makeTargetOperationStarted</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="287" column="8"/>
+        <references refid="interface_pos_flow_batch_1a5ccccecd24b5ecd36ef5569d0767dfc7">makeTargetOperationStarted</references>
+        <referencedby refid="interface_pos_flow_batch_1a5ccccecd24b5ecd36ef5569d0767dfc7">makeTargetOperationStarted</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1ac1b9af495af3c1c1d77c6e1a44aec234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::makeTargetOperationNotStarted</definition>
+        <argsstring>()</argsstring>
+        <name>makeTargetOperationNotStarted</name>
+        <qualifiedname>PosFlowBatch::makeTargetOperationNotStarted</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="293" column="8"/>
+        <references refid="interface_pos_flow_batch_1ac1b9af495af3c1c1d77c6e1a44aec234">makeTargetOperationNotStarted</references>
+        <referencedby refid="interface_pos_flow_batch_1ac1b9af495af3c1c1d77c6e1a44aec234">makeTargetOperationNotStarted</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a1c1251921442b329d74f4686ec84bfb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosFlowBatch::isTargetOperationStarted</definition>
+        <argsstring>()</argsstring>
+        <name>isTargetOperationStarted</name>
+        <qualifiedname>PosFlowBatch::isTargetOperationStarted</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="300" column="11"/>
+        <references refid="interface_pos_flow_batch_1a1c1251921442b329d74f4686ec84bfb5">isTargetOperationStarted</references>
+        <referencedby refid="interface_pos_flow_batch_1a1c1251921442b329d74f4686ec84bfb5">isTargetOperationStarted</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1ac2dfd23e6477e8f6652a20e72dfef9ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosFlowBatch::getLastClaimedPersonID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedPersonID</name>
+        <qualifiedname>PosFlowBatch::getLastClaimedPersonID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="306" column="10"/>
+        <references refid="interface_pos_flow_batch_1ac2dfd23e6477e8f6652a20e72dfef9ab">getLastClaimedPersonID</references>
+        <referencedby refid="interface_pos_flow_batch_1ac2dfd23e6477e8f6652a20e72dfef9ab">getLastClaimedPersonID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1aa9819b0da6c3ff0cae4e2c47b8f10a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setFlowBatchSize</definition>
+        <argsstring>(in long flowBatchSize)</argsstring>
+        <name>setFlowBatchSize</name>
+        <qualifiedname>PosFlowBatch::setFlowBatchSize</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>flowBatchSize</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="313" column="8"/>
+        <references refid="interface_pos_flow_batch_1aa9819b0da6c3ff0cae4e2c47b8f10a49">setFlowBatchSize</references>
+        <referencedby refid="interface_pos_flow_batch_1aa9819b0da6c3ff0cae4e2c47b8f10a49">setFlowBatchSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_1a661a54f668182d1d3fa08b85a7ea1457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatch::setOperationCount</definition>
+        <argsstring>(in long operationCount)</argsstring>
+        <name>setOperationCount</name>
+        <qualifiedname>PosFlowBatch::setOperationCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>operationCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwbch.idl" line="321" column="8"/>
+        <references refid="interface_pos_flow_batch_1a661a54f668182d1d3fa08b85a7ea1457">setOperationCount</references>
+        <referencedby refid="interface_pos_flow_batch_1a661a54f668182d1d3fa08b85a7ea1457">setOperationCount</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFlowBatch</label>
+        <link refid="interface_pos_flow_batch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFlowBatch</label>
+        <link refid="interface_pos_flow_batch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pflwbch.idl" line="46" column="11" bodyfile="poscimfw/include/pflwbch.idl" bodystart="46" bodyend="329"/>
+    <listofallmembers>
+      <member refid="interface_pos_flow_batch_1a48dbeec52bf5167a43f93a04cdb1f448" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>allLots</name></member>
+      <member refid="interface_pos_flow_batch_1a8131646147fc2da30f41bcd23783cc28" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>findLotNamed</name></member>
+      <member refid="interface_pos_flow_batch_1a3749fb3cea68b1c685707acd79598a4b" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getFlowBatchSize</name></member>
+      <member refid="interface_pos_flow_batch_1a4fb8740964787e78d41d62999d6bb80d" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_flow_batch_1a362cad2b03f34a02f5bb94e91269000c" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getLastClaimedPerson</name></member>
+      <member refid="interface_pos_flow_batch_1ac2dfd23e6477e8f6652a20e72dfef9ab" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getLastClaimedPersonID</name></member>
+      <member refid="interface_pos_flow_batch_1a066e4f360b94f220e13777a2a1c2f9c3" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_flow_batch_1abcac5c66e56d9d802960c53431c2c0f8" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getMachine</name></member>
+      <member refid="interface_pos_flow_batch_1a707078c8e7a391b0a337f97d29524b46" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>getOperationCount</name></member>
+      <member refid="interface_pos_flow_batch_1a1c1251921442b329d74f4686ec84bfb5" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>isTargetOperationStarted</name></member>
+      <member refid="interface_pos_flow_batch_1ac1b9af495af3c1c1d77c6e1a44aec234" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>makeTargetOperationNotStarted</name></member>
+      <member refid="interface_pos_flow_batch_1a5ccccecd24b5ecd36ef5569d0767dfc7" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>makeTargetOperationStarted</name></member>
+      <member refid="interface_pos_flow_batch_1a91c1905029e2842a1e6610ca4699295d" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>PosFlowBatch_init</name></member>
+      <member refid="interface_pos_flow_batch_1a5a68582e5ba1ce14d962554e897fdd37" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>removeAllLots</name></member>
+      <member refid="interface_pos_flow_batch_1a8917eb768d0cfc40cb9d22e5fd5289df" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>removeLot</name></member>
+      <member refid="interface_pos_flow_batch_1aa9819b0da6c3ff0cae4e2c47b8f10a49" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setFlowBatchSize</name></member>
+      <member refid="interface_pos_flow_batch_1ae7ec13554f4217b2f4edc918a6d2ea39" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_flow_batch_1a4a5dc19a4fd60dc2436ff6573977853a" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setLastClaimedPerson</name></member>
+      <member refid="interface_pos_flow_batch_1a3c50ab517e1ad7cf674c75f69d2664e8" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_flow_batch_1a2ae30f606a525ba8e577de0d5676abdf" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setLots</name></member>
+      <member refid="interface_pos_flow_batch_1afc5cd47432981cde3d0af68c45ff0f64" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setMachine</name></member>
+      <member refid="interface_pos_flow_batch_1a661a54f668182d1d3fa08b85a7ea1457" prot="public" virt="non-virtual"><scope>PosFlowBatch</scope><name>setOperationCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

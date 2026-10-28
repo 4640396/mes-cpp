@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="fctrycsp_8cpp" kind="file" language="C++">
+    <compoundname>fctrycsp.cpp</compoundname>
+    <includes local="yes">spobjfty.hpp</includes>
+    <includes local="yes">fctrycsp.hpp</includes>
+    <includes local="yes">pcaldat.hh</includes>
+    <includes local="yes">parea.hh</includes>
+    <includes local="yes">pfactry.hh</includes>
+    <includes local="yes">pfctrnt.hh</includes>
+    <includes local="yes">pbank.hh</includes>
+    <includes local="yes">pstage.hh</includes>
+    <includes local="yes">pstggrp.hh</includes>
+    <includes local="yes">pfwgls.hpp</includes>
+    <includes local="yes">cimfwerr.hpp</includes>
+    <includes local="yes">cimfwsyskey.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/pfa/fctrycsp.cpp</label>
+        <link refid="fctrycsp_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cimfwerr.hpp</label>
+      </node>
+      <node id="13">
+        <label>cimfwsyskey.hpp</label>
+      </node>
+      <node id="3">
+        <label>fctrycsp.hpp</label>
+      </node>
+      <node id="5">
+        <label>parea.hh</label>
+      </node>
+      <node id="8">
+        <label>pbank.hh</label>
+      </node>
+      <node id="4">
+        <label>pcaldat.hh</label>
+      </node>
+      <node id="6">
+        <label>pfactry.hh</label>
+      </node>
+      <node id="7">
+        <label>pfctrnt.hh</label>
+      </node>
+      <node id="11">
+        <label>pfwgls.hpp</label>
+      </node>
+      <node id="9">
+        <label>pstage.hh</label>
+      </node>
+      <node id="10">
+        <label>pstggrp.hh</label>
+      </node>
+      <node id="2">
+        <label>spobjfty.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fctrycsp_8cpp_1ab6409a8d75384c4df359571b6229613b" prot="public" static="no">
+        <name>FCTRYCSP_DECLSPEC_IMPL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfa/fctrycsp.cpp" line="23" column="9" bodyfile="poscimfw/pfa/fctrycsp.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="fctrycsp_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;%Z% %I% %W% %G% %U% [ %H% %T% ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/pfa/fctrycsp.cpp" line="2" column="13" bodyfile="poscimfw/pfa/fctrycsp.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="fctrycsp_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;%Z%<sp/>%I%<sp/>%W%<sp/>%G%<sp/>%U%<sp/>[<sp/>%H%<sp/>%T%<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>fctrycsp.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/13/97<sp/><sp/>25805<sp/><sp/><sp/>D.<sp/>Hidalgo<sp/><sp/><sp/><sp/><sp/>New<sp/>release.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>09/25/99<sp/>D9900218<sp/>Y.<sp/>Nagamine<sp/><sp/><sp/><sp/>Add<sp/>user<sp/>data<sp/>set<sp/>logic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/07/03<sp/>D5000148<sp/>C.Tsuchiya<sp/><sp/><sp/><sp/><sp/>Remove<sp/>catch<sp/>statement<sp/>for<sp/>unused<sp/>exceptions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/22/04<sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>eBroker<sp/>Migration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>07/26/07<sp/>D9000068<sp/>S.Takahashi<sp/><sp/><sp/><sp/>Systemkey<sp/>Generation<sp/>Logic<sp/>Enhancement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="fctrycsp_8cpp_1ab6409a8d75384c4df359571b6229613b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FCTRYCSP_DECLSPEC_IMPL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spobjfty.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fctrycsp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pcaldat.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;parea.hh&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pfactry.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pfctrnt.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pbank.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pstage.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pstggrp.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pfwgls.hpp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9900218</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwerr.hpp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9900218<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwsyskey.hpp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>MESFactory_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newMESFactory<sp/>(<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">MESFactory_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newMESFactory<sp/>(<sp/>CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newMESFactory&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(<ref refid="interface_pos_m_e_s_factory" kindref="compound">PosMESFactory</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newMESFactory&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>Area_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newArea<sp/>(<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>Area_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newArea<sp/>(<sp/>CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">Area_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newArea<sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newArea&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosArea);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/>PosArea<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_WITH_SYSKEY_NORETURN(<sp/><ref refid="interface_pos_area" kindref="compound">PosArea</ref>,<sp/>systemKey<sp/>)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosArea-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosArea<sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newArea&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>CalendarDate_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newCalendarDate<sp/>(<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>CalendarDate_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newCalendarDate<sp/>(<sp/>CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">CalendarDate_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newCalendarDate<sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newCalendarDate&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosCalendarDate);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/>PosCalendarDate<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_WITH_SYSKEY_NORETURN(<sp/><ref refid="interface_pos_calendar_date" kindref="compound">PosCalendarDate</ref>,<sp/>systemKey<sp/>)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosCalendarDate-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosCalendarDate<sp/>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newCalendarDate&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosBank_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosBank(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>PosBank_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosBank(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">PosBank_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosBank(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosBank&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosBank);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/>PosBank<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_WITH_SYSKEY_NORETURN(<sp/><ref refid="interface_pos_bank" kindref="compound">PosBank</ref>,<sp/>systemKey<sp/>)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosBank-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosBank<sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosBank&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosFactoryNote_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosFactoryNote(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">PosFactoryNote_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosFactoryNote(CORBAENV_ONLY_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosFactoryNote&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosFactoryNote);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/><ref refid="interface_pos_factory_note" kindref="compound">PosFactoryNote</ref><sp/>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosFactoryNote-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosFactoryNote<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosFactoryNote&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosStage_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStage(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>PosStage_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStage(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">PosStage_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosStage&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosStage);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/>PosStage<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_WITH_SYSKEY_NORETURN(<sp/><ref refid="interface_pos_stage" kindref="compound">PosStage</ref>,<sp/>systemKey<sp/>)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosStage-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosStage<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosStage&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>PosStageGroup_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStageGroup(CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/>PosStageGroup_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStageGroup(CORBAENV_ONLY_CPP)<sp/>//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">PosStageGroup_ptr<sp/>SPFactoryManagementObjectFactory_i::<sp/>newPosStageGroup(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>systemKey<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D9000068<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosStageGroup&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT(PosStageGroup);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//D9000068<sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_NORETURN(<sp/>PosStageGroup<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>CREATE_SPFWOBJECT_WITH_SYSKEY_NORETURN(<sp/><ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref>,<sp/>systemKey<sp/>)<sp/></highlight><highlight class="comment">//D9000068</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>thePosStageGroup-&gt;length();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len!=<sp/>0)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>-&gt;<sp/>setUserDataSetSequenceNamed(<sp/>*thePosStageGroup<sp/>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::newPosStageGroup&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RAS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">SPFactoryManagementObjectFactory_i::<sp/>SPFactoryManagementObjectFactory_i()</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::<sp/>SPFactoryManagementObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosArea<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosArea&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosCalendarDate<sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosCalendarDate&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosBank<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosBank&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosFactoryNote<sp/><sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosFactoryNote&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosStage<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosStage&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thePosStageGroup<sp/><sp/><sp/>=<sp/><ref refid="pfwgls_8cpp_1adb47fe7c196c5564ac115e299ec7d7ff" kindref="member">getUserDefAttrInfo</ref>(</highlight><highlight class="stringliteral">&quot;PosStageGroup&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_CATCH_FRAMEWORK_AND_SYSTEM_EXCEPTIONS_AND_PROPAGATE_CATCH()</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::<sp/>SPFactoryManagementObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sptrclog_8cpp_1ae15c89b75447e28ac328fb15cd518f89" kindref="member">SPFW_TRACE_VERBOSE</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//D9900218<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">SPFactoryManagementObjectFactory_i::<sp/>~SPFactoryManagementObjectFactory_i()</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::<sp/>~SPFactoryManagementObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::<sp/>~SPFactoryManagementObjectFactory_i&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IMIZED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>void<sp/>SPFactoryManagementObjectFactory_i::deleteCIMFWObject<sp/>(CORBA::Object_ptr<sp/>anObject,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SPFactoryManagementObjectFactory_i::deleteCIMFWObject<sp/>(CORBA::Object_ptr<sp/>anObject<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>SPFW_METHODTRACEENTRY_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::deleteCIMFWObject&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>MOFW_ManagedObjectBase_ptr<sp/>aCMOBO<sp/>=<sp/>MOFW_ManagedObjectBase::_narrow(<sp/>anObject<sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!CORBA::is_nil(aCMOBO))</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>CORBA::release(<sp/>aCMOBO<sp/>);<sp/></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>above<sp/>_narrow().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;CIMFWObjectFactory_i::deleteCIMFWObject<sp/>anObject&apos;s<sp/>ref<sp/>count<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>aCMOBO-&gt;_refCount()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>aCMOBO-&gt;remove();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;CIMFWObjectFactory_i::deleteCIMFWObject<sp/>anObject&apos;s<sp/>ref<sp/>count<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>aCMOBO-&gt;_refCount()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(</highlight><highlight class="stringliteral">&quot;SPFactoryManagementObjectFactory_i::deleteCIMFWObject&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//D5000148<sp/>CIMFW_CATCH_MAP_MFGBOS_BADREFERENCECOUNTSIGNAL_CATCH()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>CIMFW_CATCH_MAP_MFGBOS_UNINITIALIZATIONERRORSIGNAL_CATCH()</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//D5000148<sp/>CIMFW_CATCH_MAP_MFGBOS_MOMARKEDFORREMOVALSIGNAL_CATCH()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>catch(...)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//IT_env.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/>CIMFWBO_ptr<sp/>anObjectBO<sp/>=<sp/>CIMFWBO::_narrow(anObject);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">//P2300118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/>if<sp/>(!CORBA::is_nil(anObjectBO))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>CORBA::release(<sp/>anObjectBO<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//P2300118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>CORBA::ULong<sp/>k,<sp/>l<sp/>=<sp/>anObjectBO-&gt;_refCount();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//P2300118//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;CIMFWObjectFactory_i::deleteCIMFWObject<sp/>anObject&apos;s<sp/>ref<sp/>count<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>anObjectBO-&gt;_refCount()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(k<sp/>=<sp/>l;<sp/>k<sp/>&gt;<sp/>2;<sp/>k--)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORBA::release(<sp/>anObjectBO<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//P2300118//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;CIMFWObjectFactory_i::deleteCIMFWObject<sp/>anObject&apos;s<sp/>ref<sp/>count<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>anObject-&gt;_refCount()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>SPFW_METHODTRACEEXIT_FOR_FACTORY(&quot;SPFactoryManagementObjectFactory_i::deleteCIMFWObject&quot;);//<sp/>RAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>catch(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/><sp/><sp/>//IT_env.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//P2300118<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//D6000025<sp/>void<sp/>SPFactoryManagementObjectFactory_i::deleteCIMFWObject<sp/>(CORBA::Object_ptr<sp/>anObject,<sp/>CORBA::Environment<sp/>&amp;IT_env)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SPFactoryManagementObjectFactory_i::deleteCIMFWObject<sp/>(CORBA::Object_ptr<sp/>anObject<sp/>CORBAENV_LAST_CPP)<sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>CIMFWBO_ptr<sp/>anObjectBO<sp/>=<sp/>CIMFWBO::_narrow(anObject);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>CORBA::ULong<sp/>k,<sp/>l<sp/>=<sp/>anObjectBO-&gt;_refCount();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(k<sp/>=<sp/>l;<sp/>k<sp/>&gt;<sp/>2;<sp/>k--)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>CORBA::release(<sp/>anObjectBO<sp/>);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/pfa/fctrycsp.cpp"/>
+  </compounddef>
+</doxygen>

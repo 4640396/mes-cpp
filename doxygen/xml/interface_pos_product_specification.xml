@@ -1,0 +1,1223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_product_specification" kind="interface" language="IDL" prot="public">
+    <compoundname>PosProductSpecification</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ProductSpecification</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pprsp_8idl" local="no">pprsp.idl</includes>
+    <innerclass refid="exception_pos_product_specification_1_1_source_product_specification_not_found_signal" prot="public">PosProductSpecification::SourceProductSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_1_1_test_specification_not_found_signal" prot="public">PosProductSpecification::TestSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_1_1_set_product_info_failed_signal" prot="public">PosProductSpecification::SetProductInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_1_1_multi_p_d_duplicate_signal" prot="public">PosProductSpecification::MultiPDDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_product_specification_1_1_multi_main_p_d_not_found_signal" prot="public">PosProductSpecification::MultiMainPDNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_product_specification_1a22ce9ee3909a5f0b08d5b79c5fb4a9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::PosProductSpecification_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosProductSpecification_init</name>
+        <qualifiedname>PosProductSpecification::PosProductSpecification_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="174" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab7e71e3574bb552a81974768c4c08ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosProductSpecification::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="180" column="8"/>
+        <references refid="interface_pos_product_specification_1ab7e71e3574bb552a81974768c4c08ae7">setDescription</references>
+        <referencedby refid="interface_pos_product_specification_1ab7e71e3574bb552a81974768c4c08ae7">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a1d1af51752835f9040de9f8635296c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosProductSpecification::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="186" column="11"/>
+        <references refid="interface_pos_product_specification_1a1d1af51752835f9040de9f8635296c45">getDescription</references>
+        <referencedby refid="interface_pos_product_specification_1a1d1af51752835f9040de9f8635296c45">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a51789242bb5ee64a9a029352eca9722a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductGroup</definition>
+        <argsstring>(in PosProductGroup aProductGroup)</argsstring>
+        <name>setProductGroup</name>
+        <qualifiedname>PosProductSpecification::setProductGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref></type>
+          <declname>aProductGroup</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="192" column="8"/>
+        <references refid="interface_pos_product_specification_1a51789242bb5ee64a9a029352eca9722a">setProductGroup</references>
+        <referencedby refid="interface_pos_product_specification_1a51789242bb5ee64a9a029352eca9722a">setProductGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ada96de2a67b4553965e330535efa9d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref></type>
+        <definition>PosProductGroup PosProductSpecification::getProductGroup</definition>
+        <argsstring>()</argsstring>
+        <name>getProductGroup</name>
+        <qualifiedname>PosProductSpecification::getProductGroup</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="198" column="19"/>
+        <references refid="interface_pos_product_specification_1ada96de2a67b4553965e330535efa9d82">getProductGroup</references>
+        <referencedby refid="interface_pos_product_specification_1ada96de2a67b4553965e330535efa9d82">getProductGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aabde328b5dc4170aba85793ea27c6f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductType</definition>
+        <argsstring>(in string productType)</argsstring>
+        <name>setProductType</name>
+        <qualifiedname>PosProductSpecification::setProductType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>productType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="204" column="8"/>
+        <references refid="interface_pos_product_specification_1aabde328b5dc4170aba85793ea27c6f6c">setProductType</references>
+        <referencedby refid="interface_pos_product_specification_1aabde328b5dc4170aba85793ea27c6f6c">setProductType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9caea9ba2ea87e0cb6c02f1d592c4ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getProductType</definition>
+        <argsstring>()</argsstring>
+        <name>getProductType</name>
+        <qualifiedname>PosProductSpecification::getProductType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="210" column="10"/>
+        <references refid="interface_pos_product_specification_1a9caea9ba2ea87e0cb6c02f1d592c4ae1">getProductType</references>
+        <referencedby refid="interface_pos_product_specification_1a9caea9ba2ea87e0cb6c02f1d592c4ae1">getProductType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a6eb2626ab887d5873ef9ffccc710f64e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setOwnerUser</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>setOwnerUser</name>
+        <qualifiedname>PosProductSpecification::setOwnerUser</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="216" column="8"/>
+        <references refid="interface_pos_product_specification_1a6eb2626ab887d5873ef9ffccc710f64e">setOwnerUser</references>
+        <referencedby refid="interface_pos_product_specification_1a6eb2626ab887d5873ef9ffccc710f64e">setOwnerUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9eb2dffba999e59064f38c894efaa8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosProductSpecification::getOwnerUser</definition>
+        <argsstring>()</argsstring>
+        <name>getOwnerUser</name>
+        <qualifiedname>PosProductSpecification::getOwnerUser</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="222" column="13"/>
+        <references refid="interface_pos_product_specification_1a9eb2dffba999e59064f38c894efaa8b8">getOwnerUser</references>
+        <referencedby refid="interface_pos_product_specification_1a9eb2dffba999e59064f38c894efaa8b8">getOwnerUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab7976e51b750918f5935587f82685715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setSchedulerUserGroup</definition>
+        <argsstring>(in string ownerGroup)</argsstring>
+        <name>setSchedulerUserGroup</name>
+        <qualifiedname>PosProductSpecification::setSchedulerUserGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>ownerGroup</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="228" column="8"/>
+        <references refid="interface_pos_product_specification_1ab7976e51b750918f5935587f82685715">setSchedulerUserGroup</references>
+        <referencedby refid="interface_pos_product_specification_1ab7976e51b750918f5935587f82685715">setSchedulerUserGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ace567ce3aaf34e580f2b431b8c6301c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getSchedulerUserGroup</definition>
+        <argsstring>()</argsstring>
+        <name>getSchedulerUserGroup</name>
+        <qualifiedname>PosProductSpecification::getSchedulerUserGroup</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="235" column="10"/>
+        <references refid="interface_pos_product_specification_1ace567ce3aaf34e580f2b431b8c6301c3">getSchedulerUserGroup</references>
+        <referencedby refid="interface_pos_product_specification_1ace567ce3aaf34e580f2b431b8c6301c3">getSchedulerUserGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9653d1264914834e51dd39eac61ed4f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setReleaseBatchSize</definition>
+        <argsstring>(in long releaseBatchSize)</argsstring>
+        <name>setReleaseBatchSize</name>
+        <qualifiedname>PosProductSpecification::setReleaseBatchSize</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>releaseBatchSize</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="241" column="8"/>
+        <references refid="interface_pos_product_specification_1a9653d1264914834e51dd39eac61ed4f8">setReleaseBatchSize</references>
+        <referencedby refid="interface_pos_product_specification_1a9653d1264914834e51dd39eac61ed4f8">setReleaseBatchSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aa5de02fe2fc1a3076b27a7e9d26bcdc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosProductSpecification::getReleaseBatchSize</definition>
+        <argsstring>()</argsstring>
+        <name>getReleaseBatchSize</name>
+        <qualifiedname>PosProductSpecification::getReleaseBatchSize</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="247" column="8"/>
+        <references refid="interface_pos_product_specification_1aa5de02fe2fc1a3076b27a7e9d26bcdc3">getReleaseBatchSize</references>
+        <referencedby refid="interface_pos_product_specification_1aa5de02fe2fc1a3076b27a7e9d26bcdc3">getReleaseBatchSize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a97a325f99452c58bb10637b22f34b9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setPlannedCycleTime</definition>
+        <argsstring>(in Duration aDuration)</argsstring>
+        <name>setPlannedCycleTime</name>
+        <qualifiedname>PosProductSpecification::setPlannedCycleTime</qualifiedname>
+        <param>
+          <type>in Duration</type>
+          <declname>aDuration</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="253" column="8"/>
+        <references refid="interface_pos_product_specification_1a97a325f99452c58bb10637b22f34b9ac">setPlannedCycleTime</references>
+        <referencedby refid="interface_pos_product_specification_1a97a325f99452c58bb10637b22f34b9ac">setPlannedCycleTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a07ad1632b3e5bb85588ebac03a0f82da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductInfo__101</definition>
+        <argsstring>(in brProductInfo__101 productInfo__101)</argsstring>
+        <name>setProductInfo__101</name>
+        <qualifiedname>PosProductSpecification::setProductInfo__101</qualifiedname>
+        <param>
+          <type>in brProductInfo__101</type>
+          <declname>productInfo__101</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="256" column="8"/>
+        <references refid="interface_pos_product_specification_1a07ad1632b3e5bb85588ebac03a0f82da">setProductInfo__101</references>
+        <referencedby refid="interface_pos_product_specification_1a07ad1632b3e5bb85588ebac03a0f82da">setProductInfo__101</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a0966ccc8b59f9d34691f380140d6bd45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Duration</type>
+        <definition>Duration PosProductSpecification::getPlannedCycleTime</definition>
+        <argsstring>()</argsstring>
+        <name>getPlannedCycleTime</name>
+        <qualifiedname>PosProductSpecification::getPlannedCycleTime</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="262" column="12"/>
+        <references refid="interface_pos_product_specification_1a0966ccc8b59f9d34691f380140d6bd45">getPlannedCycleTime</references>
+        <referencedby refid="interface_pos_product_specification_1a0966ccc8b59f9d34691f380140d6bd45">getPlannedCycleTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1af2f9343c3a5b08b1b7fdc3f0b770099a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setPlannedYield</definition>
+        <argsstring>(in double plannedYield)</argsstring>
+        <name>setPlannedYield</name>
+        <qualifiedname>PosProductSpecification::setPlannedYield</qualifiedname>
+        <param>
+          <type>in double</type>
+          <declname>plannedYield</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="268" column="8"/>
+        <references refid="interface_pos_product_specification_1af2f9343c3a5b08b1b7fdc3f0b770099a">setPlannedYield</references>
+        <referencedby refid="interface_pos_product_specification_1af2f9343c3a5b08b1b7fdc3f0b770099a">setPlannedYield</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab2b12a86aebaec26aad506576fe5ab08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PosProductSpecification::getPlannedYield</definition>
+        <argsstring>()</argsstring>
+        <name>getPlannedYield</name>
+        <qualifiedname>PosProductSpecification::getPlannedYield</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="274" column="10"/>
+        <references refid="interface_pos_product_specification_1ab2b12a86aebaec26aad506576fe5ab08">getPlannedYield</references>
+        <referencedby refid="interface_pos_product_specification_1ab2b12a86aebaec26aad506576fe5ab08">getPlannedYield</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab9ad3c74b61851268c6ed285dbf7d34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setSafetyStockLevel</definition>
+        <argsstring>(in long safetyStockLevel)</argsstring>
+        <name>setSafetyStockLevel</name>
+        <qualifiedname>PosProductSpecification::setSafetyStockLevel</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>safetyStockLevel</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="280" column="8"/>
+        <references refid="interface_pos_product_specification_1ab9ad3c74b61851268c6ed285dbf7d34f">setSafetyStockLevel</references>
+        <referencedby refid="interface_pos_product_specification_1ab9ad3c74b61851268c6ed285dbf7d34f">setSafetyStockLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a905f3db8d971a71efe81d28299584572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosProductSpecification::getSafetyStockLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getSafetyStockLevel</name>
+        <qualifiedname>PosProductSpecification::getSafetyStockLevel</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="286" column="8"/>
+        <references refid="interface_pos_product_specification_1a905f3db8d971a71efe81d28299584572">getSafetyStockLevel</references>
+        <referencedby refid="interface_pos_product_specification_1a905f3db8d971a71efe81d28299584572">getSafetyStockLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1abe4e1d34627f69993e48c4c79ecb3b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeFinishedGoodFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeFinishedGoodFlagOn</name>
+        <qualifiedname>PosProductSpecification::makeFinishedGoodFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="292" column="8"/>
+        <references refid="interface_pos_product_specification_1abe4e1d34627f69993e48c4c79ecb3b25">makeFinishedGoodFlagOn</references>
+        <referencedby refid="interface_pos_product_specification_1abe4e1d34627f69993e48c4c79ecb3b25">makeFinishedGoodFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a4d9eabe233e58b1b7192dcdf53ce7ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeFinishedGoodFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeFinishedGoodFlagOff</name>
+        <qualifiedname>PosProductSpecification::makeFinishedGoodFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="298" column="8"/>
+        <references refid="interface_pos_product_specification_1a4d9eabe233e58b1b7192dcdf53ce7ac8">makeFinishedGoodFlagOff</references>
+        <referencedby refid="interface_pos_product_specification_1a4d9eabe233e58b1b7192dcdf53ce7ac8">makeFinishedGoodFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9f90587f0b2398679f4927741c52ea52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProductSpecification::isFinishedGoodFlag</definition>
+        <argsstring>()</argsstring>
+        <name>isFinishedGoodFlag</name>
+        <qualifiedname>PosProductSpecification::isFinishedGoodFlag</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="304" column="11"/>
+        <references refid="interface_pos_product_specification_1a9f90587f0b2398679f4927741c52ea52">isFinishedGoodFlag</references>
+        <referencedby refid="interface_pos_product_specification_1a9f90587f0b2398679f4927741c52ea52">isFinishedGoodFlag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a619539c588c1376fb785714e2e179b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setMFGLayer</definition>
+        <argsstring>(in string MFGLayer)</argsstring>
+        <name>setMFGLayer</name>
+        <qualifiedname>PosProductSpecification::setMFGLayer</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>MFGLayer</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="310" column="8"/>
+        <references refid="interface_pos_product_specification_1a619539c588c1376fb785714e2e179b9a">setMFGLayer</references>
+        <referencedby refid="interface_pos_product_specification_1a619539c588c1376fb785714e2e179b9a">setMFGLayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ad83af903d176680cff5f2ce6c25eacfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getMFGLayer</definition>
+        <argsstring>()</argsstring>
+        <name>getMFGLayer</name>
+        <qualifiedname>PosProductSpecification::getMFGLayer</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="316" column="10"/>
+        <references refid="interface_pos_product_specification_1ad83af903d176680cff5f2ce6c25eacfd">getMFGLayer</references>
+        <referencedby refid="interface_pos_product_specification_1ad83af903d176680cff5f2ce6c25eacfd">getMFGLayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab620da5a2fbb9176d6bb1b3739490086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setMarkingCharacter</definition>
+        <argsstring>(in string markingCharacter)</argsstring>
+        <name>setMarkingCharacter</name>
+        <qualifiedname>PosProductSpecification::setMarkingCharacter</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>markingCharacter</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="322" column="8"/>
+        <references refid="interface_pos_product_specification_1ab620da5a2fbb9176d6bb1b3739490086">setMarkingCharacter</references>
+        <referencedby refid="interface_pos_product_specification_1ab620da5a2fbb9176d6bb1b3739490086">setMarkingCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9b4c5802dd4df72da587982b727c9964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getMarkingCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>getMarkingCharacter</name>
+        <qualifiedname>PosProductSpecification::getMarkingCharacter</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="328" column="10"/>
+        <references refid="interface_pos_product_specification_1a9b4c5802dd4df72da587982b727c9964">getMarkingCharacter</references>
+        <referencedby refid="interface_pos_product_specification_1a9b4c5802dd4df72da587982b727c9964">getMarkingCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a33d120eb8dc175e9023de51c468f7c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::addSourceProductSpecification</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>addSourceProductSpecification</name>
+        <qualifiedname>PosProductSpecification::addSourceProductSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="335" column="8"/>
+        <references refid="interface_pos_product_specification_1a33d120eb8dc175e9023de51c468f7c05">addSourceProductSpecification</references>
+        <referencedby refid="interface_pos_product_specification_1a33d120eb8dc175e9023de51c468f7c05">addSourceProductSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab7288ceb5424809c30ca8f121ccb5d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+        <definition>PosProductSpecification PosProductSpecification::findSourceProductSpecificationNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findSourceProductSpecificationNamed</name>
+        <qualifiedname>PosProductSpecification::findSourceProductSpecificationNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="343" column="27"/>
+        <references refid="interface_pos_product_specification_1ab7288ceb5424809c30ca8f121ccb5d51">findSourceProductSpecificationNamed</references>
+        <referencedby refid="interface_pos_product_specification_1ab7288ceb5424809c30ca8f121ccb5d51">findSourceProductSpecificationNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1abe8179f8462905ef8aa47ecd2b13e2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a8d90748f47b916f6324184b9eaeea30f" kindref="member">PosProductSpecificationSequence</ref></type>
+        <definition>PosProductSpecificationSequence PosProductSpecification::allSourceProductSpecifications</definition>
+        <argsstring>()</argsstring>
+        <name>allSourceProductSpecifications</name>
+        <qualifiedname>PosProductSpecification::allSourceProductSpecifications</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="350" column="35"/>
+        <references refid="interface_pos_product_specification_1abe8179f8462905ef8aa47ecd2b13e2d3">allSourceProductSpecifications</references>
+        <referencedby refid="interface_pos_product_specification_1abe8179f8462905ef8aa47ecd2b13e2d3">allSourceProductSpecifications</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a67c5e03c75f0d4c2e8eca8f46aabed30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::removeSourceProductSpecification</definition>
+        <argsstring>(in PosProductSpecification aProductSpecification)</argsstring>
+        <name>removeSourceProductSpecification</name>
+        <qualifiedname>PosProductSpecification::removeSourceProductSpecification</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref></type>
+          <declname>aProductSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_source_product_specification_not_found_signal" kindref="compound">SourceProductSpecificationNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="357" column="8"/>
+        <references refid="interface_pos_product_specification_1a67c5e03c75f0d4c2e8eca8f46aabed30">removeSourceProductSpecification</references>
+        <referencedby refid="interface_pos_product_specification_1a67c5e03c75f0d4c2e8eca8f46aabed30">removeSourceProductSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aa24a0d482e691f9ade98bc592ccafffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductInfo</definition>
+        <argsstring>(in brProductInfo productInfo)</argsstring>
+        <name>setProductInfo</name>
+        <qualifiedname>PosProductSpecification::setProductInfo</qualifiedname>
+        <param>
+          <type>in brProductInfo</type>
+          <declname>productInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_set_product_info_failed_signal" kindref="compound">SetProductInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="363" column="8"/>
+        <references refid="interface_pos_product_specification_1aa24a0d482e691f9ade98bc592ccafffc">setProductInfo</references>
+        <referencedby refid="interface_pos_product_specification_1aa24a0d482e691f9ade98bc592ccafffc">setProductInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a02a8dddbe4de313e4fcf846a9df7a469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductCategory</definition>
+        <argsstring>(in PosProductCategory aProductCategory)</argsstring>
+        <name>setProductCategory</name>
+        <qualifiedname>PosProductSpecification::setProductCategory</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref></type>
+          <declname>aProductCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="369" column="8"/>
+        <references refid="interface_pos_product_specification_1a02a8dddbe4de313e4fcf846a9df7a469">setProductCategory</references>
+        <referencedby refid="interface_pos_product_specification_1a02a8dddbe4de313e4fcf846a9df7a469">setProductCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ad3d8c65f2a7882575e1791bc9734e5dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref></type>
+        <definition>PosProductCategory PosProductSpecification::getProductCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getProductCategory</name>
+        <qualifiedname>PosProductSpecification::getProductCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="375" column="22"/>
+        <references refid="interface_pos_product_specification_1ad3d8c65f2a7882575e1791bc9734e5dc">getProductCategory</references>
+        <referencedby refid="interface_pos_product_specification_1ad3d8c65f2a7882575e1791bc9734e5dc">getProductCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1afd874a9a2c48a2bf5a4fa9197e1a84d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setLotGenerationType</definition>
+        <argsstring>(in string lotGenerationType)</argsstring>
+        <name>setLotGenerationType</name>
+        <qualifiedname>PosProductSpecification::setLotGenerationType</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>lotGenerationType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="381" column="8"/>
+        <references refid="interface_pos_product_specification_1afd874a9a2c48a2bf5a4fa9197e1a84d6">setLotGenerationType</references>
+        <referencedby refid="interface_pos_product_specification_1afd874a9a2c48a2bf5a4fa9197e1a84d6">setLotGenerationType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9e354556a3775d08fd165c35a6bb62a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getLotGenerationType</definition>
+        <argsstring>()</argsstring>
+        <name>getLotGenerationType</name>
+        <qualifiedname>PosProductSpecification::getLotGenerationType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="387" column="10"/>
+        <references refid="interface_pos_product_specification_1a9e354556a3775d08fd165c35a6bb62a2">getLotGenerationType</references>
+        <referencedby refid="interface_pos_product_specification_1a9e354556a3775d08fd165c35a6bb62a2">getLotGenerationType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aa7d72f9da92e0853012715802cf319be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosProductSpecification::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosProductSpecification::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="394" column="18"/>
+        <references refid="interface_pos_product_specification_1aa7d72f9da92e0853012715802cf319be">getPropertySet</references>
+        <referencedby refid="interface_pos_product_specification_1aa7d72f9da92e0853012715802cf319be">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a90b4432325952e58703e80098873fb26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::addMultiPD</definition>
+        <argsstring>(in posMultiMainPD aMultiPD)</argsstring>
+        <name>addMultiPD</name>
+        <qualifiedname>PosProductSpecification::addMultiPD</qualifiedname>
+        <param>
+          <type>in <ref refid="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" kindref="member">posMultiMainPD</ref></type>
+          <declname>aMultiPD</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_multi_p_d_duplicate_signal" kindref="compound">MultiPDDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="400" column="8"/>
+        <references refid="interface_pos_product_specification_1a90b4432325952e58703e80098873fb26">addMultiPD</references>
+        <referencedby refid="interface_pos_product_specification_1a90b4432325952e58703e80098873fb26">addMultiPD</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aca34baec10eabdb26d5c471363be2f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1aefed6d29456dd4f2d286004f3e8cc445" kindref="member">PosMultiMainPDSequence</ref></type>
+        <definition>PosMultiMainPDSequence PosProductSpecification::allMultiPD</definition>
+        <argsstring>()</argsstring>
+        <name>allMultiPD</name>
+        <qualifiedname>PosProductSpecification::allMultiPD</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="407" column="26"/>
+        <references refid="interface_pos_product_specification_1aca34baec10eabdb26d5c471363be2f69">allMultiPD</references>
+        <referencedby refid="interface_pos_product_specification_1aca34baec10eabdb26d5c471363be2f69">allMultiPD</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a773a6dddd37d9f00d8dab1400d2a8827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" kindref="member">posMultiMainPD</ref></type>
+        <definition>posMultiMainPD PosProductSpecification::findMultiPDFor</definition>
+        <argsstring>(in string orderType)</argsstring>
+        <name>findMultiPDFor</name>
+        <qualifiedname>PosProductSpecification::findMultiPDFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>orderType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="414" column="18"/>
+        <references refid="interface_pos_product_specification_1a773a6dddd37d9f00d8dab1400d2a8827">findMultiPDFor</references>
+        <referencedby refid="interface_pos_product_specification_1a773a6dddd37d9f00d8dab1400d2a8827">findMultiPDFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a7012f3b2b462d5244e7c690b80aff908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::removeMultiPD</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>removeMultiPD</name>
+        <qualifiedname>PosProductSpecification::removeMultiPD</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_multi_main_p_d_not_found_signal" kindref="compound">MultiMainPDNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="421" column="8"/>
+        <references refid="interface_pos_product_specification_1a7012f3b2b462d5244e7c690b80aff908">removeMultiPD</references>
+        <referencedby refid="interface_pos_product_specification_1a7012f3b2b462d5244e7c690b80aff908">removeMultiPD</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1af00542c762911e2dfd8491c38460e47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::removeAllMultiPD</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMultiPD</name>
+        <qualifiedname>PosProductSpecification::removeAllMultiPD</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="428" column="8"/>
+        <references refid="interface_pos_product_specification_1af00542c762911e2dfd8491c38460e47b">removeAllMultiPD</references>
+        <referencedby refid="interface_pos_product_specification_1af00542c762911e2dfd8491c38460e47b">removeAllMultiPD</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a1d82fe7da4a1261e5b08a366e56d4b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setState</definition>
+        <argsstring>(in string state)</argsstring>
+        <name>setState</name>
+        <qualifiedname>PosProductSpecification::setState</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>state</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="434" column="8"/>
+        <references refid="interface_pos_product_specification_1a1d82fe7da4a1261e5b08a366e56d4b68">setState</references>
+        <referencedby refid="interface_pos_product_specification_1a1d82fe7da4a1261e5b08a366e56d4b68">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ad9f7038fe9a84a23af1f9a6207f62a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosProductSpecification::getState</definition>
+        <argsstring>()</argsstring>
+        <name>getState</name>
+        <qualifiedname>PosProductSpecification::getState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="440" column="11"/>
+        <references refid="interface_pos_product_specification_1ad9f7038fe9a84a23af1f9a6207f62a23">getState</references>
+        <referencedby refid="interface_pos_product_specification_1ad9f7038fe9a84a23af1f9a6207f62a23">getState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a48d7bde0c1e6a9120df30a482e15b520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setReticleSet</definition>
+        <argsstring>(in PosReticleSet aReticleSet)</argsstring>
+        <name>setReticleSet</name>
+        <qualifiedname>PosProductSpecification::setReticleSet</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref></type>
+          <declname>aReticleSet</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="446" column="8"/>
+        <references refid="interface_pos_product_specification_1a48d7bde0c1e6a9120df30a482e15b520">setReticleSet</references>
+        <referencedby refid="interface_pos_product_specification_1a48d7bde0c1e6a9120df30a482e15b520">setReticleSet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a5d35e7a04f024deb3cc4566277b3142a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_reticle_set" kindref="compound">PosReticleSet</ref></type>
+        <definition>PosReticleSet PosProductSpecification::getReticleSet</definition>
+        <argsstring>()</argsstring>
+        <name>getReticleSet</name>
+        <qualifiedname>PosProductSpecification::getReticleSet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="452" column="17"/>
+        <references refid="interface_pos_product_specification_1a5d35e7a04f024deb3cc4566277b3142a">getReticleSet</references>
+        <referencedby refid="interface_pos_product_specification_1a5d35e7a04f024deb3cc4566277b3142a">getReticleSet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a1c1c4d194ae81277121d53a5ec9a2de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeSerialManagementFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeSerialManagementFlagOff</name>
+        <qualifiedname>PosProductSpecification::makeSerialManagementFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="458" column="8"/>
+        <references refid="interface_pos_product_specification_1a1c1c4d194ae81277121d53a5ec9a2de8">makeSerialManagementFlagOff</references>
+        <referencedby refid="interface_pos_product_specification_1a1c1c4d194ae81277121d53a5ec9a2de8">makeSerialManagementFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a14bca048ff021915ccf169c26b7b8ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeSerialManagementFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeSerialManagementFlagOn</name>
+        <qualifiedname>PosProductSpecification::makeSerialManagementFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="464" column="8"/>
+        <references refid="interface_pos_product_specification_1a14bca048ff021915ccf169c26b7b8ea0">makeSerialManagementFlagOn</references>
+        <referencedby refid="interface_pos_product_specification_1a14bca048ff021915ccf169c26b7b8ea0">makeSerialManagementFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab014e3c2b1a634f00cd57c4a61e1a07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProductSpecification::isSerialManagementFlag</definition>
+        <argsstring>()</argsstring>
+        <name>isSerialManagementFlag</name>
+        <qualifiedname>PosProductSpecification::isSerialManagementFlag</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="470" column="11"/>
+        <references refid="interface_pos_product_specification_1ab014e3c2b1a634f00cd57c4a61e1a07e">isSerialManagementFlag</references>
+        <referencedby refid="interface_pos_product_specification_1ab014e3c2b1a634f00cd57c4a61e1a07e">isSerialManagementFlag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1af4730cd93ce8bbe5c769443e468a26b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeFPCAvailableFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeFPCAvailableFlagOn</name>
+        <qualifiedname>PosProductSpecification::makeFPCAvailableFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="476" column="8"/>
+        <references refid="interface_pos_product_specification_1af4730cd93ce8bbe5c769443e468a26b2">makeFPCAvailableFlagOn</references>
+        <referencedby refid="interface_pos_product_specification_1af4730cd93ce8bbe5c769443e468a26b2">makeFPCAvailableFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ab1d37f5201a274ba771545fe6adabb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::makeFPCAvailableFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeFPCAvailableFlagOff</name>
+        <qualifiedname>PosProductSpecification::makeFPCAvailableFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="482" column="8"/>
+        <references refid="interface_pos_product_specification_1ab1d37f5201a274ba771545fe6adabb18">makeFPCAvailableFlagOff</references>
+        <referencedby refid="interface_pos_product_specification_1ab1d37f5201a274ba771545fe6adabb18">makeFPCAvailableFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a531ccc4bb7fec23b1353252c79c5f781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosProductSpecification::isFPCAvailableFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>isFPCAvailableFlagOn</name>
+        <qualifiedname>PosProductSpecification::isFPCAvailableFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="488" column="11"/>
+        <references refid="interface_pos_product_specification_1a531ccc4bb7fec23b1353252c79c5f781">isFPCAvailableFlagOn</references>
+        <referencedby refid="interface_pos_product_specification_1a531ccc4bb7fec23b1353252c79c5f781">isFPCAvailableFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1ae7cb7c8c279fe2c0322e8b9cc1353d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductInfo__100</definition>
+        <argsstring>(in brProductInfo__100 productInfo__100)</argsstring>
+        <name>setProductInfo__100</name>
+        <qualifiedname>PosProductSpecification::setProductInfo__100</qualifiedname>
+        <param>
+          <type>in brProductInfo__100</type>
+          <declname>productInfo__100</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_set_product_info_failed_signal" kindref="compound">SetProductInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="495" column="8"/>
+        <references refid="interface_pos_product_specification_1ae7cb7c8c279fe2c0322e8b9cc1353d22">setProductInfo__100</references>
+        <referencedby refid="interface_pos_product_specification_1ae7cb7c8c279fe2c0322e8b9cc1353d22">setProductInfo__100</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a4d716fcb6978bbb31160203c9d22e471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setBOM</definition>
+        <argsstring>(in PosBOM aBOM)</argsstring>
+        <name>setBOM</name>
+        <qualifiedname>PosProductSpecification::setBOM</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+          <declname>aBOM</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="501" column="8"/>
+        <references refid="interface_pos_product_specification_1a4d716fcb6978bbb31160203c9d22e471">setBOM</references>
+        <referencedby refid="interface_pos_product_specification_1a4d716fcb6978bbb31160203c9d22e471">setBOM</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1aac59fe323d7d29987a1520795ee3f31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_b_o_m" kindref="compound">PosBOM</ref></type>
+        <definition>PosBOM PosProductSpecification::getBOM</definition>
+        <argsstring>()</argsstring>
+        <name>getBOM</name>
+        <qualifiedname>PosProductSpecification::getBOM</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="507" column="10"/>
+        <references refid="interface_pos_product_specification_1aac59fe323d7d29987a1520795ee3f31b">getBOM</references>
+        <referencedby refid="interface_pos_product_specification_1aac59fe323d7d29987a1520795ee3f31b">getBOM</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a9e410fecd2b299fa8d580167ee74bf2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosProductSpecification::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosProductSpecification::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="513" column="18"/>
+        <references refid="interface_pos_product_specification_1a9e410fecd2b299fa8d580167ee74bf2e">createPropertySet</references>
+        <referencedby refid="interface_pos_product_specification_1a9e410fecd2b299fa8d580167ee74bf2e">createPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a00bea36b8be60e00740a276abd34896f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosProductSpecification::setProductInfo__170</definition>
+        <argsstring>(in brProductInfo__170 productInfo__170)</argsstring>
+        <name>setProductInfo__170</name>
+        <qualifiedname>PosProductSpecification::setProductInfo__170</qualifiedname>
+        <param>
+          <type>in brProductInfo__170</type>
+          <declname>productInfo__170</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_product_specification_1_1_set_product_info_failed_signal" kindref="compound">SetProductInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="520" column="8"/>
+        <references refid="interface_pos_product_specification_1a00bea36b8be60e00740a276abd34896f">setProductInfo__170</references>
+        <referencedby refid="interface_pos_product_specification_1a00bea36b8be60e00740a276abd34896f">setProductInfo__170</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1a323cb118df7ee2e88d0907faef154ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1a8369057fa27350659460dcdb9a4fdbb1" kindref="member">posSourceProductSpecificationInfo</ref></type>
+        <definition>posSourceProductSpecificationInfo PosProductSpecification::findSourceProductSpecificationInfoNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findSourceProductSpecificationInfoNamed</name>
+        <qualifiedname>PosProductSpecification::findSourceProductSpecificationInfoNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="528" column="37"/>
+        <references refid="interface_pos_product_specification_1a323cb118df7ee2e88d0907faef154ca3">findSourceProductSpecificationInfoNamed</references>
+        <referencedby refid="interface_pos_product_specification_1a323cb118df7ee2e88d0907faef154ca3">findSourceProductSpecificationInfoNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_product_specification_1af8bb3dd0ca475c27f587d08f0a571fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pprspgl_8idl_1ab69fbdad35db73a18b5c686fbe5cac9d" kindref="member">PosSourceProductSpecificationInfoSequence</ref></type>
+        <definition>PosSourceProductSpecificationInfoSequence PosProductSpecification::allSourceProductSpecificationInfos</definition>
+        <argsstring>()</argsstring>
+        <name>allSourceProductSpecificationInfos</name>
+        <qualifiedname>PosProductSpecification::allSourceProductSpecificationInfos</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprsp.idl" line="536" column="45"/>
+        <references refid="interface_pos_product_specification_1af8bb3dd0ca475c27f587d08f0a571fc6">allSourceProductSpecificationInfos</references>
+        <referencedby refid="interface_pos_product_specification_1af8bb3dd0ca475c27f587d08f0a571fc6">allSourceProductSpecificationInfos</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductSpecification</label>
+        <link refid="interface_pos_product_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductSpecification</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosProductSpecification</label>
+        <link refid="interface_pos_product_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ProductSpecification</label>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pprsp.idl" line="50" column="11" bodyfile="poscimfw/include/pprsp.idl" bodystart="50" bodyend="544"/>
+    <listofallmembers>
+      <member refid="interface_pos_product_specification_1a90b4432325952e58703e80098873fb26" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>addMultiPD</name></member>
+      <member refid="interface_pos_product_specification_1a33d120eb8dc175e9023de51c468f7c05" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>addSourceProductSpecification</name></member>
+      <member refid="interface_pos_product_specification_1aca34baec10eabdb26d5c471363be2f69" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>allMultiPD</name></member>
+      <member refid="interface_pos_product_specification_1af8bb3dd0ca475c27f587d08f0a571fc6" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>allSourceProductSpecificationInfos</name></member>
+      <member refid="interface_pos_product_specification_1abe8179f8462905ef8aa47ecd2b13e2d3" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>allSourceProductSpecifications</name></member>
+      <member refid="interface_pos_product_specification_1a9e410fecd2b299fa8d580167ee74bf2e" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_product_specification_1a773a6dddd37d9f00d8dab1400d2a8827" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>findMultiPDFor</name></member>
+      <member refid="interface_pos_product_specification_1a323cb118df7ee2e88d0907faef154ca3" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>findSourceProductSpecificationInfoNamed</name></member>
+      <member refid="interface_pos_product_specification_1ab7288ceb5424809c30ca8f121ccb5d51" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>findSourceProductSpecificationNamed</name></member>
+      <member refid="interface_pos_product_specification_1aac59fe323d7d29987a1520795ee3f31b" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getBOM</name></member>
+      <member refid="interface_pos_product_specification_1a1d1af51752835f9040de9f8635296c45" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getDescription</name></member>
+      <member refid="interface_pos_product_specification_1a9e354556a3775d08fd165c35a6bb62a2" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getLotGenerationType</name></member>
+      <member refid="interface_pos_product_specification_1a9b4c5802dd4df72da587982b727c9964" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getMarkingCharacter</name></member>
+      <member refid="interface_pos_product_specification_1ad83af903d176680cff5f2ce6c25eacfd" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getMFGLayer</name></member>
+      <member refid="interface_pos_product_specification_1a9eb2dffba999e59064f38c894efaa8b8" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getOwnerUser</name></member>
+      <member refid="interface_pos_product_specification_1a0966ccc8b59f9d34691f380140d6bd45" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getPlannedCycleTime</name></member>
+      <member refid="interface_pos_product_specification_1ab2b12a86aebaec26aad506576fe5ab08" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getPlannedYield</name></member>
+      <member refid="interface_pos_product_specification_1ad3d8c65f2a7882575e1791bc9734e5dc" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getProductCategory</name></member>
+      <member refid="interface_pos_product_specification_1ada96de2a67b4553965e330535efa9d82" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getProductGroup</name></member>
+      <member refid="interface_pos_product_specification_1a9caea9ba2ea87e0cb6c02f1d592c4ae1" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getProductType</name></member>
+      <member refid="interface_pos_product_specification_1aa7d72f9da92e0853012715802cf319be" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_product_specification_1aa5de02fe2fc1a3076b27a7e9d26bcdc3" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getReleaseBatchSize</name></member>
+      <member refid="interface_pos_product_specification_1a5d35e7a04f024deb3cc4566277b3142a" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getReticleSet</name></member>
+      <member refid="interface_pos_product_specification_1a905f3db8d971a71efe81d28299584572" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getSafetyStockLevel</name></member>
+      <member refid="interface_pos_product_specification_1ace567ce3aaf34e580f2b431b8c6301c3" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getSchedulerUserGroup</name></member>
+      <member refid="interface_pos_product_specification_1ad9f7038fe9a84a23af1f9a6207f62a23" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>getState</name></member>
+      <member refid="interface_pos_product_specification_1a9f90587f0b2398679f4927741c52ea52" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>isFinishedGoodFlag</name></member>
+      <member refid="interface_pos_product_specification_1a531ccc4bb7fec23b1353252c79c5f781" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>isFPCAvailableFlagOn</name></member>
+      <member refid="interface_pos_product_specification_1ab014e3c2b1a634f00cd57c4a61e1a07e" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>isSerialManagementFlag</name></member>
+      <member refid="interface_pos_product_specification_1a4d9eabe233e58b1b7192dcdf53ce7ac8" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeFinishedGoodFlagOff</name></member>
+      <member refid="interface_pos_product_specification_1abe4e1d34627f69993e48c4c79ecb3b25" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeFinishedGoodFlagOn</name></member>
+      <member refid="interface_pos_product_specification_1ab1d37f5201a274ba771545fe6adabb18" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeFPCAvailableFlagOff</name></member>
+      <member refid="interface_pos_product_specification_1af4730cd93ce8bbe5c769443e468a26b2" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeFPCAvailableFlagOn</name></member>
+      <member refid="interface_pos_product_specification_1a1c1c4d194ae81277121d53a5ec9a2de8" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeSerialManagementFlagOff</name></member>
+      <member refid="interface_pos_product_specification_1a14bca048ff021915ccf169c26b7b8ea0" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>makeSerialManagementFlagOn</name></member>
+      <member refid="interface_pos_product_specification_1a22ce9ee3909a5f0b08d5b79c5fb4a9b9" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>PosProductSpecification_init</name></member>
+      <member refid="interface_pos_product_specification_1af00542c762911e2dfd8491c38460e47b" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>removeAllMultiPD</name></member>
+      <member refid="interface_pos_product_specification_1a7012f3b2b462d5244e7c690b80aff908" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>removeMultiPD</name></member>
+      <member refid="interface_pos_product_specification_1a67c5e03c75f0d4c2e8eca8f46aabed30" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>removeSourceProductSpecification</name></member>
+      <member refid="interface_pos_product_specification_1a4d716fcb6978bbb31160203c9d22e471" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setBOM</name></member>
+      <member refid="interface_pos_product_specification_1ab7e71e3574bb552a81974768c4c08ae7" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setDescription</name></member>
+      <member refid="interface_pos_product_specification_1afd874a9a2c48a2bf5a4fa9197e1a84d6" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setLotGenerationType</name></member>
+      <member refid="interface_pos_product_specification_1ab620da5a2fbb9176d6bb1b3739490086" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setMarkingCharacter</name></member>
+      <member refid="interface_pos_product_specification_1a619539c588c1376fb785714e2e179b9a" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setMFGLayer</name></member>
+      <member refid="interface_pos_product_specification_1a6eb2626ab887d5873ef9ffccc710f64e" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setOwnerUser</name></member>
+      <member refid="interface_pos_product_specification_1a97a325f99452c58bb10637b22f34b9ac" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setPlannedCycleTime</name></member>
+      <member refid="interface_pos_product_specification_1af2f9343c3a5b08b1b7fdc3f0b770099a" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setPlannedYield</name></member>
+      <member refid="interface_pos_product_specification_1a02a8dddbe4de313e4fcf846a9df7a469" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductCategory</name></member>
+      <member refid="interface_pos_product_specification_1a51789242bb5ee64a9a029352eca9722a" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductGroup</name></member>
+      <member refid="interface_pos_product_specification_1aa24a0d482e691f9ade98bc592ccafffc" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductInfo</name></member>
+      <member refid="interface_pos_product_specification_1ae7cb7c8c279fe2c0322e8b9cc1353d22" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductInfo__100</name></member>
+      <member refid="interface_pos_product_specification_1a07ad1632b3e5bb85588ebac03a0f82da" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductInfo__101</name></member>
+      <member refid="interface_pos_product_specification_1a00bea36b8be60e00740a276abd34896f" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductInfo__170</name></member>
+      <member refid="interface_pos_product_specification_1aabde328b5dc4170aba85793ea27c6f6c" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setProductType</name></member>
+      <member refid="interface_pos_product_specification_1a9653d1264914834e51dd39eac61ed4f8" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setReleaseBatchSize</name></member>
+      <member refid="interface_pos_product_specification_1a48d7bde0c1e6a9120df30a482e15b520" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setReticleSet</name></member>
+      <member refid="interface_pos_product_specification_1ab9ad3c74b61851268c6ed285dbf7d34f" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setSafetyStockLevel</name></member>
+      <member refid="interface_pos_product_specification_1ab7976e51b750918f5935587f82685715" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setSchedulerUserGroup</name></member>
+      <member refid="interface_pos_product_specification_1a1d82fe7da4a1261e5b08a366e56d4b68" prot="public" virt="non-virtual"><scope>PosProductSpecification</scope><name>setState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

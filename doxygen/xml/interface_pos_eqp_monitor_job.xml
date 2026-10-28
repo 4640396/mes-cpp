@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_eqp_monitor_job" kind="interface" language="IDL" prot="public">
+    <compoundname>PosEqpMonitorJob</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pemonj_8idl" local="no">pemonj.idl</includes>
+    <innerclass refid="exception_pos_eqp_monitor_job_1_1_set_eqp_monitor_job_info_failed_signal" prot="public">PosEqpMonitorJob::SetEqpMonitorJobInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_eqp_monitor_job_1_1_monitor_lot_duplicate_signal" prot="public">PosEqpMonitorJob::MonitorLotDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_eqp_monitor_job_1_1_monitor_lot_not_found_signal" prot="public">PosEqpMonitorJob::MonitorLotNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a716775e98c9cefa9c8d43804f420218d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::PosEqpMonitorJob_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosEqpMonitorJob_init</name>
+        <qualifiedname>PosEqpMonitorJob::PosEqpMonitorJob_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="122" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1afb50fee1f504c390dc249d919942fb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::PosEqpMonitorJob_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosEqpMonitorJob_uninit</name>
+        <qualifiedname>PosEqpMonitorJob::PosEqpMonitorJob_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="128" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1afb50fee1f504c390dc249d919942fb43">PosEqpMonitorJob_uninit</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1afb50fee1f504c390dc249d919942fb43">PosEqpMonitorJob_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1ab5067c855d461d3ec4313d7e4337e086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setEqpMonitorJobInfo</definition>
+        <argsstring>(in posEqpMonitorJobInfo aEqpMonitorJobInfo)</argsstring>
+        <name>setEqpMonitorJobInfo</name>
+        <qualifiedname>PosEqpMonitorJob::setEqpMonitorJobInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1acf87a90b5a82f453ddd99d6d3d7914c7" kindref="member">posEqpMonitorJobInfo</ref></type>
+          <declname>aEqpMonitorJobInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_eqp_monitor_job_1_1_set_eqp_monitor_job_info_failed_signal" kindref="compound">SetEqpMonitorJobInfoFailedSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="134" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1ab5067c855d461d3ec4313d7e4337e086">setEqpMonitorJobInfo</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1ab5067c855d461d3ec4313d7e4337e086">setEqpMonitorJobInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a533a138e67649dc8fb1ebe4d7c0abc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1acf87a90b5a82f453ddd99d6d3d7914c7" kindref="member">posEqpMonitorJobInfo</ref></type>
+        <definition>posEqpMonitorJobInfo PosEqpMonitorJob::getEqpMonitorJobInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getEqpMonitorJobInfo</name>
+        <qualifiedname>PosEqpMonitorJob::getEqpMonitorJobInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="140" column="24"/>
+        <references refid="interface_pos_eqp_monitor_job_1a533a138e67649dc8fb1ebe4d7c0abc68">getEqpMonitorJobInfo</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a533a138e67649dc8fb1ebe4d7c0abc68">getEqpMonitorJobInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a0c31735b1afc41642e30b06a860ee85d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosEqpMonitorJob::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="146" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a0c31735b1afc41642e30b06a860ee85d">setIdentifier</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a0c31735b1afc41642e30b06a860ee85d">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1aec3ab8f4625e81f94f94f1997afc3ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosEqpMonitorJob::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosEqpMonitorJob::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="152" column="10"/>
+        <references refid="interface_pos_eqp_monitor_job_1aec3ab8f4625e81f94f94f1997afc3ddb">getIdentifier</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1aec3ab8f4625e81f94f94f1997afc3ddb">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a7734f4e57d7cb2563ec721a8b75ef1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setMonitorJobStatus</definition>
+        <argsstring>(in string monitorJobStatus)</argsstring>
+        <name>setMonitorJobStatus</name>
+        <qualifiedname>PosEqpMonitorJob::setMonitorJobStatus</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>monitorJobStatus</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="158" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a7734f4e57d7cb2563ec721a8b75ef1fa">setMonitorJobStatus</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a7734f4e57d7cb2563ec721a8b75ef1fa">setMonitorJobStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a3eee8cf0a8dc04f585c5a0390efaaabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosEqpMonitorJob::getMonitorJobStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getMonitorJobStatus</name>
+        <qualifiedname>PosEqpMonitorJob::getMonitorJobStatus</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="164" column="10"/>
+        <references refid="interface_pos_eqp_monitor_job_1a3eee8cf0a8dc04f585c5a0390efaaabc">getMonitorJobStatus</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a3eee8cf0a8dc04f585c5a0390efaaabc">getMonitorJobStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a372084ea7b9cf99f11d658769c225b02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::addEqpMonitorLot</definition>
+        <argsstring>(in posEqpMonitorLotInfo aEqpMonitorLotInfo)</argsstring>
+        <name>addEqpMonitorLot</name>
+        <qualifiedname>PosEqpMonitorJob::addEqpMonitorLot</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1ab77262e27f8541ccdb88478782d3a411" kindref="member">posEqpMonitorLotInfo</ref></type>
+          <declname>aEqpMonitorLotInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_eqp_monitor_job_1_1_monitor_lot_duplicate_signal" kindref="compound">MonitorLotDuplicateSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="170" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a372084ea7b9cf99f11d658769c225b02">addEqpMonitorLot</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a372084ea7b9cf99f11d658769c225b02">addEqpMonitorLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a2045971e0c04cc056782577c54323e5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1ab77262e27f8541ccdb88478782d3a411" kindref="member">posEqpMonitorLotInfo</ref></type>
+        <definition>posEqpMonitorLotInfo PosEqpMonitorJob::findEqpMonitorLotFor</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>findEqpMonitorLotFor</name>
+        <qualifiedname>PosEqpMonitorJob::findEqpMonitorLotFor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="176" column="24"/>
+        <references refid="interface_pos_eqp_monitor_job_1a2045971e0c04cc056782577c54323e5d">findEqpMonitorLotFor</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a2045971e0c04cc056782577c54323e5d">findEqpMonitorLotFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1afdbd35ef6b861441c834c1bcde009119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a98f3de27f793c4f1bafa82dbb4ebb535" kindref="member">PosEqpMonitorLotInfoSequence</ref></type>
+        <definition>PosEqpMonitorLotInfoSequence PosEqpMonitorJob::allEqpMonitorLots</definition>
+        <argsstring>()</argsstring>
+        <name>allEqpMonitorLots</name>
+        <qualifiedname>PosEqpMonitorJob::allEqpMonitorLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="182" column="32"/>
+        <references refid="interface_pos_eqp_monitor_job_1afdbd35ef6b861441c834c1bcde009119">allEqpMonitorLots</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1afdbd35ef6b861441c834c1bcde009119">allEqpMonitorLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1ab8abf8f2641f2ddc3882c4ebe9411c2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::removeEqpMonitorLot</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeEqpMonitorLot</name>
+        <qualifiedname>PosEqpMonitorJob::removeEqpMonitorLot</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_eqp_monitor_job_1_1_monitor_lot_not_found_signal" kindref="compound">MonitorLotNotFoundSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="188" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1ab8abf8f2641f2ddc3882c4ebe9411c2d">removeEqpMonitorLot</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1ab8abf8f2641f2ddc3882c4ebe9411c2d">removeEqpMonitorLot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a8c16a55a9b85904a4a75cac64335ab55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::removeAllEqpMonitorLots</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllEqpMonitorLots</name>
+        <qualifiedname>PosEqpMonitorJob::removeAllEqpMonitorLots</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="195" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a8c16a55a9b85904a4a75cac64335ab55">removeAllEqpMonitorLots</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a8c16a55a9b85904a4a75cac64335ab55">removeAllEqpMonitorLots</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1ab69202c6e7f6aa8ab5a544f0e0aee53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setRetryCount</definition>
+        <argsstring>(in long retryCount)</argsstring>
+        <name>setRetryCount</name>
+        <qualifiedname>PosEqpMonitorJob::setRetryCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>retryCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="201" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1ab69202c6e7f6aa8ab5a544f0e0aee53d">setRetryCount</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1ab69202c6e7f6aa8ab5a544f0e0aee53d">setRetryCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a9aa9c7a8ef420177632cec0e9f142813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosEqpMonitorJob::getRetryCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRetryCount</name>
+        <qualifiedname>PosEqpMonitorJob::getRetryCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="207" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a9aa9c7a8ef420177632cec0e9f142813">getRetryCount</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a9aa9c7a8ef420177632cec0e9f142813">getRetryCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a9a5a6fd2e76276791696fa8748384411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setStartTimeStamp</definition>
+        <argsstring>(in TimeStamp startTimeStamp)</argsstring>
+        <name>setStartTimeStamp</name>
+        <qualifiedname>PosEqpMonitorJob::setStartTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>startTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="213" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a9a5a6fd2e76276791696fa8748384411">setStartTimeStamp</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a9a5a6fd2e76276791696fa8748384411">setStartTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a492f5d5ff011039a613f11a87d421fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosEqpMonitorJob::getStartTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getStartTimeStamp</name>
+        <qualifiedname>PosEqpMonitorJob::getStartTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="219" column="13"/>
+        <references refid="interface_pos_eqp_monitor_job_1a492f5d5ff011039a613f11a87d421fe0">getStartTimeStamp</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a492f5d5ff011039a613f11a87d421fe0">getStartTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a31bcc2dff3a969a984c77d5317e8523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp lastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosEqpMonitorJob::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>lastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="225" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a31bcc2dff3a969a984c77d5317e8523f">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a31bcc2dff3a969a984c77d5317e8523f">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1abaa9351b58ece2b0f5631043ee1f458e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosEqpMonitorJob::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosEqpMonitorJob::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="231" column="13"/>
+        <references refid="interface_pos_eqp_monitor_job_1abaa9351b58ece2b0f5631043ee1f458e">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1abaa9351b58ece2b0f5631043ee1f458e">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a4d4537f9b6affc2f2b14f95900bbed92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setMachine</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>setMachine</name>
+        <qualifiedname>PosEqpMonitorJob::setMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="237" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a4d4537f9b6affc2f2b14f95900bbed92">setMachine</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a4d4537f9b6affc2f2b14f95900bbed92">setMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a830060afa40c9ac3be01820583791a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+        <definition>PosMachine PosEqpMonitorJob::getMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getMachine</name>
+        <qualifiedname>PosEqpMonitorJob::getMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="243" column="14"/>
+        <references refid="interface_pos_eqp_monitor_job_1a830060afa40c9ac3be01820583791a0f">getMachine</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a830060afa40c9ac3be01820583791a0f">getMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a0b2784da1968cb14a3ebdc01e094c25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setChamber</definition>
+        <argsstring>(in PosProcessResource aChamber)</argsstring>
+        <name>setChamber</name>
+        <qualifiedname>PosEqpMonitorJob::setChamber</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_resource" kindref="compound">PosProcessResource</ref></type>
+          <declname>aChamber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="249" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a0b2784da1968cb14a3ebdc01e094c25c">setChamber</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a0b2784da1968cb14a3ebdc01e094c25c">setChamber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a0b55abe398b834330ca390daba477c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_resource" kindref="compound">PosProcessResource</ref></type>
+        <definition>PosProcessResource PosEqpMonitorJob::getChamber</definition>
+        <argsstring>()</argsstring>
+        <name>getChamber</name>
+        <qualifiedname>PosEqpMonitorJob::getChamber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="255" column="22"/>
+        <references refid="interface_pos_eqp_monitor_job_1a0b55abe398b834330ca390daba477c91">getChamber</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a0b55abe398b834330ca390daba477c91">getChamber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a3a37dd37abe04efc27af1b07c78b25e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setEqpMonitor</definition>
+        <argsstring>(in PosEqpMonitor aEqpMonitor)</argsstring>
+        <name>setEqpMonitor</name>
+        <qualifiedname>PosEqpMonitorJob::setEqpMonitor</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref></type>
+          <declname>aEqpMonitor</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="261" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a3a37dd37abe04efc27af1b07c78b25e2">setEqpMonitor</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a3a37dd37abe04efc27af1b07c78b25e2">setEqpMonitor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1ab2e0e8f94984df821c0ddc777b174d16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_eqp_monitor" kindref="compound">PosEqpMonitor</ref></type>
+        <definition>PosEqpMonitor PosEqpMonitorJob::getEqpMonitor</definition>
+        <argsstring>()</argsstring>
+        <name>getEqpMonitor</name>
+        <qualifiedname>PosEqpMonitorJob::getEqpMonitor</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="267" column="17"/>
+        <references refid="interface_pos_eqp_monitor_job_1ab2e0e8f94984df821c0ddc777b174d16">getEqpMonitor</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1ab2e0e8f94984df821c0ddc777b174d16">getEqpMonitor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1acbea522cbc339d1ff113b445fd829c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setStartUser</definition>
+        <argsstring>(in PosPerson aStartUser)</argsstring>
+        <name>setStartUser</name>
+        <qualifiedname>PosEqpMonitorJob::setStartUser</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aStartUser</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="273" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1acbea522cbc339d1ff113b445fd829c2f">setStartUser</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1acbea522cbc339d1ff113b445fd829c2f">setStartUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a8bfb42629866963c3091eb6d65e07cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosEqpMonitorJob::getStartUser</definition>
+        <argsstring>()</argsstring>
+        <name>getStartUser</name>
+        <qualifiedname>PosEqpMonitorJob::getStartUser</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="279" column="13"/>
+        <references refid="interface_pos_eqp_monitor_job_1a8bfb42629866963c3091eb6d65e07cbf">getStartUser</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a8bfb42629866963c3091eb6d65e07cbf">getStartUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1a9c246a8ab4c29aa6b3552bd7dd8ab6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosEqpMonitorJob::setLastClaimedUser</definition>
+        <argsstring>(in PosPerson aLastClaimedUser)</argsstring>
+        <name>setLastClaimedUser</name>
+        <qualifiedname>PosEqpMonitorJob::setLastClaimedUser</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastClaimedUser</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="285" column="8"/>
+        <references refid="interface_pos_eqp_monitor_job_1a9c246a8ab4c29aa6b3552bd7dd8ab6f9">setLastClaimedUser</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1a9c246a8ab4c29aa6b3552bd7dd8ab6f9">setLastClaimedUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_eqp_monitor_job_1add318ebd2b8dfbda38712d486c32ce97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosEqpMonitorJob::getLastClaimedUser</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedUser</name>
+        <qualifiedname>PosEqpMonitorJob::getLastClaimedUser</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pemonj.idl" line="291" column="13"/>
+        <references refid="interface_pos_eqp_monitor_job_1add318ebd2b8dfbda38712d486c32ce97">getLastClaimedUser</references>
+        <referencedby refid="interface_pos_eqp_monitor_job_1add318ebd2b8dfbda38712d486c32ce97">getLastClaimedUser</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosEqpMonitorJob</label>
+        <link refid="interface_pos_eqp_monitor_job"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosEqpMonitorJob</label>
+        <link refid="interface_pos_eqp_monitor_job"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pemonj.idl" line="40" column="11" bodyfile="poscimfw/include/pemonj.idl" bodystart="40" bodyend="299"/>
+    <listofallmembers>
+      <member refid="interface_pos_eqp_monitor_job_1a372084ea7b9cf99f11d658769c225b02" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>addEqpMonitorLot</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1afdbd35ef6b861441c834c1bcde009119" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>allEqpMonitorLots</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a2045971e0c04cc056782577c54323e5d" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>findEqpMonitorLotFor</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a0b55abe398b834330ca390daba477c91" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getChamber</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1ab2e0e8f94984df821c0ddc777b174d16" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getEqpMonitor</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a533a138e67649dc8fb1ebe4d7c0abc68" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getEqpMonitorJobInfo</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1aec3ab8f4625e81f94f94f1997afc3ddb" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1abaa9351b58ece2b0f5631043ee1f458e" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1add318ebd2b8dfbda38712d486c32ce97" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getLastClaimedUser</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a830060afa40c9ac3be01820583791a0f" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getMachine</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a3eee8cf0a8dc04f585c5a0390efaaabc" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getMonitorJobStatus</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a9aa9c7a8ef420177632cec0e9f142813" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getRetryCount</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a492f5d5ff011039a613f11a87d421fe0" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getStartTimeStamp</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a8bfb42629866963c3091eb6d65e07cbf" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>getStartUser</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a716775e98c9cefa9c8d43804f420218d" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>PosEqpMonitorJob_init</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1afb50fee1f504c390dc249d919942fb43" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>PosEqpMonitorJob_uninit</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a8c16a55a9b85904a4a75cac64335ab55" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>removeAllEqpMonitorLots</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1ab8abf8f2641f2ddc3882c4ebe9411c2d" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>removeEqpMonitorLot</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a0b2784da1968cb14a3ebdc01e094c25c" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setChamber</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a3a37dd37abe04efc27af1b07c78b25e2" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setEqpMonitor</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1ab5067c855d461d3ec4313d7e4337e086" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setEqpMonitorJobInfo</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a0c31735b1afc41642e30b06a860ee85d" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a31bcc2dff3a969a984c77d5317e8523f" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a9c246a8ab4c29aa6b3552bd7dd8ab6f9" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setLastClaimedUser</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a4d4537f9b6affc2f2b14f95900bbed92" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setMachine</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a7734f4e57d7cb2563ec721a8b75ef1fa" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setMonitorJobStatus</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1ab69202c6e7f6aa8ab5a544f0e0aee53d" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setRetryCount</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1a9a5a6fd2e76276791696fa8748384411" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setStartTimeStamp</name></member>
+      <member refid="interface_pos_eqp_monitor_job_1acbea522cbc339d1ff113b445fd829c2f" prot="public" virt="non-virtual"><scope>PosEqpMonitorJob</scope><name>setStartUser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

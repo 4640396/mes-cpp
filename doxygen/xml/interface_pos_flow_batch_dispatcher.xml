@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_flow_batch_dispatcher" kind="interface" language="IDL" prot="public">
+    <compoundname>PosFlowBatchDispatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="pflwdp_8idl" local="no">pflwdp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_flow_batch_dispatcher_1a609f95df11c7d5f83b99bd51e0ebc992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatchDispatcher::PosFlowBatchDispatcher_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosFlowBatchDispatcher_init</name>
+        <qualifiedname>PosFlowBatchDispatcher::PosFlowBatchDispatcher_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwdp.idl" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_dispatcher_1afe92a3daaf087411e89aa07dc3ecc4bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosFlowBatchDispatcher::getNextFlowBatchIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getNextFlowBatchIdentifier</name>
+        <qualifiedname>PosFlowBatchDispatcher::getNextFlowBatchIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwdp.idl" line="67" column="10"/>
+        <references refid="interface_pos_flow_batch_dispatcher_1afe92a3daaf087411e89aa07dc3ecc4bc">getNextFlowBatchIdentifier</references>
+        <referencedby refid="interface_pos_flow_batch_dispatcher_1afe92a3daaf087411e89aa07dc3ecc4bc">getNextFlowBatchIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_dispatcher_1ad1af2a9bbcd66afacd1ebccfc1474ab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatchDispatcher::addToQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>addToQueue</name>
+        <qualifiedname>PosFlowBatchDispatcher::addToQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwdp.idl" line="74" column="8"/>
+        <references refid="interface_pos_flow_batch_dispatcher_1ad1af2a9bbcd66afacd1ebccfc1474ab7">addToQueue</references>
+        <referencedby refid="interface_pos_flow_batch_dispatcher_1ad1af2a9bbcd66afacd1ebccfc1474ab7">addToQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_flow_batch_dispatcher_1add6191f534a6cfbdbac24ece91167844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosFlowBatchDispatcher::removeFromQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeFromQueue</name>
+        <qualifiedname>PosFlowBatchDispatcher::removeFromQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pflwdp.idl" line="81" column="8"/>
+        <references refid="interface_pos_flow_batch_dispatcher_1add6191f534a6cfbdbac24ece91167844">removeFromQueue</references>
+        <referencedby refid="interface_pos_flow_batch_dispatcher_1add6191f534a6cfbdbac24ece91167844">removeFromQueue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFlowBatchDispatcher</label>
+        <link refid="interface_pos_flow_batch_dispatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosFlowBatchDispatcher</label>
+        <link refid="interface_pos_flow_batch_dispatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pflwdp.idl" line="40" column="11" bodyfile="poscimfw/include/pflwdp.idl" bodystart="40" bodyend="89"/>
+    <listofallmembers>
+      <member refid="interface_pos_flow_batch_dispatcher_1ad1af2a9bbcd66afacd1ebccfc1474ab7" prot="public" virt="non-virtual"><scope>PosFlowBatchDispatcher</scope><name>addToQueue</name></member>
+      <member refid="interface_pos_flow_batch_dispatcher_1afe92a3daaf087411e89aa07dc3ecc4bc" prot="public" virt="non-virtual"><scope>PosFlowBatchDispatcher</scope><name>getNextFlowBatchIdentifier</name></member>
+      <member refid="interface_pos_flow_batch_dispatcher_1a609f95df11c7d5f83b99bd51e0ebc992" prot="public" virt="non-virtual"><scope>PosFlowBatchDispatcher</scope><name>PosFlowBatchDispatcher_init</name></member>
+      <member refid="interface_pos_flow_batch_dispatcher_1add6191f534a6cfbdbac24ece91167844" prot="public" virt="non-virtual"><scope>PosFlowBatchDispatcher</scope><name>removeFromQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_raw_machine_state_set" kind="interface" language="IDL" prot="public">
+    <compoundname>PosRawMachineStateSet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="prmsts_8idl" local="no">prmsts.idl</includes>
+    <innerclass refid="exception_pos_raw_machine_state_set_1_1_set_raw_machine_state_set_info_failed_signal" prot="public">PosRawMachineStateSet::SetRawMachineStateSetInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_raw_machine_state_set_1_1_machine_state_not_found_signal" prot="public">PosRawMachineStateSet::MachineStateNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a88b5e53dc4fe7e3478722b1bb9bba53b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRawMachineStateSet::PosRawMachineStateSet_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosRawMachineStateSet_init</name>
+        <qualifiedname>PosRawMachineStateSet::PosRawMachineStateSet_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="115" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1af0bd08581a1f2060b052b93bf3c34309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRawMachineStateSet::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosRawMachineStateSet::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="124" column="8"/>
+        <references refid="interface_pos_raw_machine_state_set_1af0bd08581a1f2060b052b93bf3c34309">setIdentifier</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1af0bd08581a1f2060b052b93bf3c34309">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a96276e12b3e78e0fc97c2cff70aee512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosRawMachineStateSet::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosRawMachineStateSet::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="130" column="10"/>
+        <references refid="interface_pos_raw_machine_state_set_1a96276e12b3e78e0fc97c2cff70aee512">getIdentifier</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1a96276e12b3e78e0fc97c2cff70aee512">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a59754b4632bc8937cb71453bbffa7f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRawMachineStateSet::setRawEquipmentStateSetInfo</definition>
+        <argsstring>(in brRawEquipmentStateSetInfo aRawEquipmentStateSetInfo)</argsstring>
+        <name>setRawEquipmentStateSetInfo</name>
+        <qualifiedname>PosRawMachineStateSet::setRawEquipmentStateSetInfo</qualifiedname>
+        <param>
+          <type>in brRawEquipmentStateSetInfo</type>
+          <declname>aRawEquipmentStateSetInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_raw_machine_state_set_1_1_set_raw_machine_state_set_info_failed_signal" kindref="compound">SetRawMachineStateSetInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="136" column="8"/>
+        <references refid="interface_pos_raw_machine_state_set_1a59754b4632bc8937cb71453bbffa7f93">setRawEquipmentStateSetInfo</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1a59754b4632bc8937cb71453bbffa7f93">setRawEquipmentStateSetInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a1cff769bd78e3681ef2345ad35665e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosRawMachineStateSet::findTranslatedMachineState</definition>
+        <argsstring>(in string rawMachineState)</argsstring>
+        <name>findTranslatedMachineState</name>
+        <qualifiedname>PosRawMachineStateSet::findTranslatedMachineState</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>rawMachineState</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="144" column="19"/>
+        <references refid="interface_pos_raw_machine_state_set_1a1cff769bd78e3681ef2345ad35665e34">findTranslatedMachineState</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1a1cff769bd78e3681ef2345ad35665e34">findTranslatedMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a9371cbc328cb82b8e9029b0b99f1bff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRawMachineStateSet::removeAllRawMachineStates</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllRawMachineStates</name>
+        <qualifiedname>PosRawMachineStateSet::removeAllRawMachineStates</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="151" column="8"/>
+        <references refid="interface_pos_raw_machine_state_set_1a9371cbc328cb82b8e9029b0b99f1bff8">removeAllRawMachineStates</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1a9371cbc328cb82b8e9029b0b99f1bff8">removeAllRawMachineStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_raw_machine_state_set_1a83d949711aea2a430949650da1fb02af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosRawMachineStateSet::removeRawMachineState</definition>
+        <argsstring>(in string aRawMachineState)</argsstring>
+        <name>removeRawMachineState</name>
+        <qualifiedname>PosRawMachineStateSet::removeRawMachineState</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aRawMachineState</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prmsts.idl" line="158" column="8"/>
+        <references refid="interface_pos_raw_machine_state_set_1a83d949711aea2a430949650da1fb02af">removeRawMachineState</references>
+        <referencedby refid="interface_pos_raw_machine_state_set_1a83d949711aea2a430949650da1fb02af">removeRawMachineState</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosRawMachineStateSet</label>
+        <link refid="interface_pos_raw_machine_state_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosRawMachineStateSet</label>
+        <link refid="interface_pos_raw_machine_state_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/prmsts.idl" line="57" column="11" bodyfile="poscimfw/include/prmsts.idl" bodystart="57" bodyend="166"/>
+    <listofallmembers>
+      <member refid="interface_pos_raw_machine_state_set_1a1cff769bd78e3681ef2345ad35665e34" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>findTranslatedMachineState</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1a96276e12b3e78e0fc97c2cff70aee512" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1a88b5e53dc4fe7e3478722b1bb9bba53b" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>PosRawMachineStateSet_init</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1a9371cbc328cb82b8e9029b0b99f1bff8" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>removeAllRawMachineStates</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1a83d949711aea2a430949650da1fb02af" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>removeRawMachineState</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1af0bd08581a1f2060b052b93bf3c34309" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_raw_machine_state_set_1a59754b4632bc8937cb71453bbffa7f93" prot="public" virt="non-virtual"><scope>PosRawMachineStateSet</scope><name>setRawEquipmentStateSetInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

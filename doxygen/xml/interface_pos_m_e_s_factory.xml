@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_m_e_s_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMESFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MESFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_ManagedObject</basecompoundref>
+    <includes refid="pfactry_8idl" local="no">pfactry.idl</includes>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_area_retrieval_failed_signal" prot="public">PosMESFactory::AreaRetrievalFailedSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_factory_note_duplicate_identifier_signal" prot="public">PosMESFactory::FactoryNoteDuplicateIdentifierSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_factory_note_remove_failed_signal" prot="public">PosMESFactory::FactoryNoteRemoveFailedSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_bank_duplicate_signal" prot="public">PosMESFactory::BankDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_bank_remove_failed_signal" prot="public">PosMESFactory::BankRemoveFailedSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_bank_not_found_signal" prot="public">PosMESFactory::BankNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_duplicate_signal" prot="public">PosMESFactory::StageDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_remove_failed_signal" prot="public">PosMESFactory::StageRemoveFailedSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_not_found_signal" prot="public">PosMESFactory::StageNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_group_duplicate_signal" prot="public">PosMESFactory::StageGroupDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_group_remove_failed_signal" prot="public">PosMESFactory::StageGroupRemoveFailedSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_group_not_found_signal" prot="public">PosMESFactory::StageGroupNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_factory_note_not_found_signal" prot="public">PosMESFactory::FactoryNoteNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_bank_duplicate_identifier_signal" prot="public">PosMESFactory::BankDuplicateIdentifierSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_duplicate_identifier_signal" prot="public">PosMESFactory::StageDuplicateIdentifierSignal</innerclass>
+    <innerclass refid="exception_pos_m_e_s_factory_1_1_stage_group_duplicate_identifier_signal" prot="public">PosMESFactory::StageGroupDuplicateIdentifierSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a5dbd8c7a1263bef6bdd1ea96437bb0c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_factory_note" kindref="compound">PosFactoryNote</ref></type>
+        <definition>PosFactoryNote PosMESFactory::createFactoryNote</definition>
+        <argsstring>(in TimeStamp aTimeStamp, in PosPerson aPerson)</argsstring>
+        <name>createFactoryNote</name>
+        <qualifiedname>PosMESFactory::createFactoryNote</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>aTimeStamp</declname>
+        </param>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_factory_note_duplicate_identifier_signal" kindref="compound">FactoryNoteDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="411" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a79cb20a1a50f66e6649744fde82a6d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::removeFactoryNote</definition>
+        <argsstring>(in PosFactoryNote aFactoryNote)</argsstring>
+        <name>removeFactoryNote</name>
+        <qualifiedname>PosMESFactory::removeFactoryNote</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_factory_note" kindref="compound">PosFactoryNote</ref></type>
+          <declname>aFactoryNote</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_factory_note_not_found_signal" kindref="compound">FactoryNoteNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="418" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a0c65980f6404cb33c306e8154f7b2fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1acbcd73261b4751011740013e660cdd27" kindref="member">PosFactoryNoteSequence</ref></type>
+        <definition>PosFactoryNoteSequence PosMESFactory::allFactoryNotes</definition>
+        <argsstring>()</argsstring>
+        <name>allFactoryNotes</name>
+        <qualifiedname>PosMESFactory::allFactoryNotes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="426" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1af047dd5712b70e426c632d0158dacdf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+        <definition>PosArea PosMESFactory::findAreaNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findAreaNamed</name>
+        <qualifiedname>PosMESFactory::findAreaNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_area_retrieval_failed_signal" kindref="compound">AreaRetrievalFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="433" column="11"/>
+        <references refid="interface_pos_m_e_s_factory_1af047dd5712b70e426c632d0158dacdf1">findAreaNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1af047dd5712b70e426c632d0158dacdf1">findAreaNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a1a3dc310a7fe4e6ebaf6c915e152eb9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1a84034f333e7a6b5ee5b9f8e405b5b260" kindref="member">PosAreaSequence</ref></type>
+        <definition>PosAreaSequence PosMESFactory::allWorkAreas</definition>
+        <argsstring>()</argsstring>
+        <name>allWorkAreas</name>
+        <qualifiedname>PosMESFactory::allWorkAreas</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="440" column="19"/>
+        <references refid="interface_pos_m_e_s_factory_1a1a3dc310a7fe4e6ebaf6c915e152eb9a">allWorkAreas</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a1a3dc310a7fe4e6ebaf6c915e152eb9a">allWorkAreas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a2664e29c10ca9ac19c07f0f055fe4098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank PosMESFactory::createBankNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createBankNamed</name>
+        <qualifiedname>PosMESFactory::createBankNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_bank_duplicate_identifier_signal" kindref="compound">BankDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="446" column="11"/>
+        <references refid="interface_pos_m_e_s_factory_1a2664e29c10ca9ac19c07f0f055fe4098">createBankNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a2664e29c10ca9ac19c07f0f055fe4098">createBankNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1aac7358854be65450322e2cbc83dd741f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::removeBank</definition>
+        <argsstring>(in PosBank aBank)</argsstring>
+        <name>removeBank</name>
+        <qualifiedname>PosMESFactory::removeBank</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+          <declname>aBank</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_bank_not_found_signal" kindref="compound">BankNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="452" column="8"/>
+        <references refid="interface_pos_m_e_s_factory_1aac7358854be65450322e2cbc83dd741f">removeBank</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1aac7358854be65450322e2cbc83dd741f">removeBank</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1ab37262c8079b98c9675c784c65522c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1ae572021b9f4dec9c84013b1a784bb1da" kindref="member">PosBankSequence</ref></type>
+        <definition>PosBankSequence PosMESFactory::allBanks</definition>
+        <argsstring>()</argsstring>
+        <name>allBanks</name>
+        <qualifiedname>PosMESFactory::allBanks</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="458" column="19"/>
+        <references refid="interface_pos_m_e_s_factory_1ab37262c8079b98c9675c784c65522c58">allBanks</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1ab37262c8079b98c9675c784c65522c58">allBanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a6987cb43849542b446bb10415bbab878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_bank" kindref="compound">PosBank</ref></type>
+        <definition>PosBank PosMESFactory::findBankNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findBankNamed</name>
+        <qualifiedname>PosMESFactory::findBankNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_bank_not_found_signal" kindref="compound">BankNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="466" column="11"/>
+        <references refid="interface_pos_m_e_s_factory_1a6987cb43849542b446bb10415bbab878">findBankNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a6987cb43849542b446bb10415bbab878">findBankNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1aaa4d1468f265f2fb5f77ce6f2ace118e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+        <definition>PosStage PosMESFactory::createStageNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createStageNamed</name>
+        <qualifiedname>PosMESFactory::createStageNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_duplicate_identifier_signal" kindref="compound">StageDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="473" column="12"/>
+        <references refid="interface_pos_m_e_s_factory_1aaa4d1468f265f2fb5f77ce6f2ace118e">createStageNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1aaa4d1468f265f2fb5f77ce6f2ace118e">createStageNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a9c9152fc7c58d4d5436be465f06a8a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::removeStage</definition>
+        <argsstring>(in PosStage aStage)</argsstring>
+        <name>removeStage</name>
+        <qualifiedname>PosMESFactory::removeStage</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+          <declname>aStage</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_not_found_signal" kindref="compound">StageNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="479" column="8"/>
+        <references refid="interface_pos_m_e_s_factory_1a9c9152fc7c58d4d5436be465f06a8a9b">removeStage</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a9c9152fc7c58d4d5436be465f06a8a9b">removeStage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a86464aa74b3f4cebada2f98693d59f1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1ad5c55283bcd484971798531a885b4553" kindref="member">PosStageSequence</ref></type>
+        <definition>PosStageSequence PosMESFactory::allStages</definition>
+        <argsstring>(in PosStageGroup aStageGroup)</argsstring>
+        <name>allStages</name>
+        <qualifiedname>PosMESFactory::allStages</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref></type>
+          <declname>aStageGroup</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="485" column="20"/>
+        <references refid="interface_pos_m_e_s_factory_1a86464aa74b3f4cebada2f98693d59f1c">allStages</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a86464aa74b3f4cebada2f98693d59f1c">allStages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a7de8a9ddf23ed7132eb8864787d84fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage" kindref="compound">PosStage</ref></type>
+        <definition>PosStage PosMESFactory::findStageNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findStageNamed</name>
+        <qualifiedname>PosMESFactory::findStageNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_not_found_signal" kindref="compound">StageNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="492" column="12"/>
+        <references refid="interface_pos_m_e_s_factory_1a7de8a9ddf23ed7132eb8864787d84fa4">findStageNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a7de8a9ddf23ed7132eb8864787d84fa4">findStageNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a13415f168c554f7eff8a1cbc554b17a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref></type>
+        <definition>PosStageGroup PosMESFactory::createStageGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>createStageGroupNamed</name>
+        <qualifiedname>PosMESFactory::createStageGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_group_duplicate_identifier_signal" kindref="compound">StageGroupDuplicateIdentifierSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="499" column="17"/>
+        <references refid="interface_pos_m_e_s_factory_1a13415f168c554f7eff8a1cbc554b17a2">createStageGroupNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a13415f168c554f7eff8a1cbc554b17a2">createStageGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a71999e566993ed761436700e5c9bbd24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::removeStageGroup</definition>
+        <argsstring>(in PosStageGroup aStageGroup)</argsstring>
+        <name>removeStageGroup</name>
+        <qualifiedname>PosMESFactory::removeStageGroup</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref></type>
+          <declname>aStageGroup</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_group_not_found_signal" kindref="compound">StageGroupNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="506" column="8"/>
+        <references refid="interface_pos_m_e_s_factory_1a71999e566993ed761436700e5c9bbd24">removeStageGroup</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a71999e566993ed761436700e5c9bbd24">removeStageGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a5896866fb73deebb16032f28d50e9d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1ab122b384a9280de6dd7e687b230c931a" kindref="member">PosStageGroupSequence</ref></type>
+        <definition>PosStageGroupSequence PosMESFactory::allStageGroups</definition>
+        <argsstring>()</argsstring>
+        <name>allStageGroups</name>
+        <qualifiedname>PosMESFactory::allStageGroups</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="513" column="25"/>
+        <references refid="interface_pos_m_e_s_factory_1a5896866fb73deebb16032f28d50e9d06">allStageGroups</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a5896866fb73deebb16032f28d50e9d06">allStageGroups</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a4afa02f39c66a328ab9680fcfa330712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_stage_group" kindref="compound">PosStageGroup</ref></type>
+        <definition>PosStageGroup PosMESFactory::findStageGroupNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findStageGroupNamed</name>
+        <qualifiedname>PosMESFactory::findStageGroupNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_m_e_s_factory_1_1_stage_group_not_found_signal" kindref="compound">StageGroupNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="519" column="17"/>
+        <references refid="interface_pos_m_e_s_factory_1a4afa02f39c66a328ab9680fcfa330712">findStageGroupNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a4afa02f39c66a328ab9680fcfa330712">findStageGroupNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a323fb9cf788a269bc619b52283da47c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::PosMESFactory_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMESFactory_init</name>
+        <qualifiedname>PosMESFactory::PosMESFactory_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="525" column="8"/>
+        <references refid="interface_pos_m_e_s_factory_1a323fb9cf788a269bc619b52283da47c2">PosMESFactory_init</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a323fb9cf788a269bc619b52283da47c2">PosMESFactory_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a9bb3c6a4c14bfa77b0ff5b531e97a0fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_code_manager" kindref="compound">PosCodeManager</ref></type>
+        <definition>PosCodeManager PosMESFactory::getCodeManager</definition>
+        <argsstring>()</argsstring>
+        <name>getCodeManager</name>
+        <qualifiedname>PosMESFactory::getCodeManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="531" column="18"/>
+        <references refid="interface_pos_m_e_s_factory_1a9bb3c6a4c14bfa77b0ff5b531e97a0fb">getCodeManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a9bb3c6a4c14bfa77b0ff5b531e97a0fb">getCodeManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a62f98e3c3447e5f390f98656dd5924f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_authentication_manager" kindref="compound">PosAuthenticationManager</ref></type>
+        <definition>PosAuthenticationManager PosMESFactory::getAuthenticationManager</definition>
+        <argsstring>()</argsstring>
+        <name>getAuthenticationManager</name>
+        <qualifiedname>PosMESFactory::getAuthenticationManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="537" column="28"/>
+        <references refid="interface_pos_m_e_s_factory_1a62f98e3c3447e5f390f98656dd5924f3">getAuthenticationManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a62f98e3c3447e5f390f98656dd5924f3">getAuthenticationManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1aec8577e64c3a923bad18b71fad6e4400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_message_distribution_manager" kindref="compound">PosMessageDistributionManager</ref></type>
+        <definition>PosMessageDistributionManager PosMESFactory::getMessageDistributionManager</definition>
+        <argsstring>()</argsstring>
+        <name>getMessageDistributionManager</name>
+        <qualifiedname>PosMESFactory::getMessageDistributionManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="543" column="33"/>
+        <references refid="interface_pos_m_e_s_factory_1aec8577e64c3a923bad18b71fad6e4400">getMessageDistributionManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1aec8577e64c3a923bad18b71fad6e4400">getMessageDistributionManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a77c6a12c5c665acafb25018942636e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_event_manager" kindref="compound">PosEventManager</ref></type>
+        <definition>PosEventManager PosMESFactory::getEventManager</definition>
+        <argsstring>()</argsstring>
+        <name>getEventManager</name>
+        <qualifiedname>PosMESFactory::getEventManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="549" column="19"/>
+        <references refid="interface_pos_m_e_s_factory_1a77c6a12c5c665acafb25018942636e95">getEventManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a77c6a12c5c665acafb25018942636e95">getEventManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a39368fa27fb58f6f39c6109a65716a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_q_time_restriction_manager" kindref="compound">PosQTimeRestrictionManager</ref></type>
+        <definition>PosQTimeRestrictionManager PosMESFactory::getQTimeRestrictionManager</definition>
+        <argsstring>()</argsstring>
+        <name>getQTimeRestrictionManager</name>
+        <qualifiedname>PosMESFactory::getQTimeRestrictionManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="555" column="30"/>
+        <references refid="interface_pos_m_e_s_factory_1a39368fa27fb58f6f39c6109a65716a63">getQTimeRestrictionManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a39368fa27fb58f6f39c6109a65716a63">getQTimeRestrictionManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1ac51b90c03d3bdd36ca1e5bedb6342611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMESFactory::setUserParameterManager</definition>
+        <argsstring>(in BRSVariableInfoIMizedMgr aMgr)</argsstring>
+        <name>setUserParameterManager</name>
+        <qualifiedname>PosMESFactory::setUserParameterManager</qualifiedname>
+        <param>
+          <type>in BRSVariableInfoIMizedMgr</type>
+          <declname>aMgr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="561" column="8"/>
+        <references refid="interface_pos_m_e_s_factory_1ac51b90c03d3bdd36ca1e5bedb6342611">setUserParameterManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1ac51b90c03d3bdd36ca1e5bedb6342611">setUserParameterManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1aeba33c27af80c078eca10226c2dbac8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BRSVariableInfoIMizedMgr</type>
+        <definition>BRSVariableInfoIMizedMgr PosMESFactory::getUserParameterManager</definition>
+        <argsstring>()</argsstring>
+        <name>getUserParameterManager</name>
+        <qualifiedname>PosMESFactory::getUserParameterManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="567" column="28"/>
+        <references refid="interface_pos_m_e_s_factory_1aeba33c27af80c078eca10226c2dbac8e">getUserParameterManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1aeba33c27af80c078eca10226c2dbac8e">getUserParameterManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a7724ee7ade3bdf6c3e20ef535007a96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosMESFactory::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosMESFactory::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="573" column="18"/>
+        <references refid="interface_pos_m_e_s_factory_1a7724ee7ade3bdf6c3e20ef535007a96e">getPropertySet</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a7724ee7ade3bdf6c3e20ef535007a96e">getPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1a965c6894688e25f07068c733d995a0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMESFactory::getVariableInfoManagerObjectReference</definition>
+        <argsstring>()</argsstring>
+        <name>getVariableInfoManagerObjectReference</name>
+        <qualifiedname>PosMESFactory::getVariableInfoManagerObjectReference</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="580" column="10"/>
+        <references refid="interface_pos_m_e_s_factory_1a965c6894688e25f07068c733d995a0b1">getVariableInfoManagerObjectReference</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1a965c6894688e25f07068c733d995a0b1">getVariableInfoManagerObjectReference</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1ae6cb4c53bd97ae144183ffb84febdac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_entity_inhibit_manager" kindref="compound">PosEntityInhibitManager</ref></type>
+        <definition>PosEntityInhibitManager PosMESFactory::getEntityInhibitManager</definition>
+        <argsstring>()</argsstring>
+        <name>getEntityInhibitManager</name>
+        <qualifiedname>PosMESFactory::getEntityInhibitManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="586" column="27"/>
+        <references refid="interface_pos_m_e_s_factory_1ae6cb4c53bd97ae144183ffb84febdac1">getEntityInhibitManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1ae6cb4c53bd97ae144183ffb84febdac1">getEntityInhibitManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1acb79d0a80863c5f0ec5377d7f43e431f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_calendar_date" kindref="compound">PosCalendarDate</ref></type>
+        <definition>PosCalendarDate PosMESFactory::findCalendarDateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findCalendarDateNamed</name>
+        <qualifiedname>PosMESFactory::findCalendarDateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="593" column="19"/>
+        <references refid="interface_pos_m_e_s_factory_1acb79d0a80863c5f0ec5377d7f43e431f">findCalendarDateNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1acb79d0a80863c5f0ec5377d7f43e431f">findCalendarDateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1aec742e79e02a543c4ba3ba57f7697fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_parts_manager" kindref="compound">PosPartsManager</ref></type>
+        <definition>PosPartsManager PosMESFactory::getPartsManager</definition>
+        <argsstring>()</argsstring>
+        <name>getPartsManager</name>
+        <qualifiedname>PosMESFactory::getPartsManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="599" column="19"/>
+        <references refid="interface_pos_m_e_s_factory_1aec742e79e02a543c4ba3ba57f7697fa7">getPartsManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1aec742e79e02a543c4ba3ba57f7697fa7">getPartsManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1af5b3fa4aa31ebbbdd25ed2ce15abc6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set_manager" kindref="compound">PosPropertySetManager</ref></type>
+        <definition>PosPropertySetManager PosMESFactory::getPropertySetManager</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySetManager</name>
+        <qualifiedname>PosMESFactory::getPropertySetManager</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="605" column="25"/>
+        <references refid="interface_pos_m_e_s_factory_1af5b3fa4aa31ebbbdd25ed2ce15abc6d0">getPropertySetManager</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1af5b3fa4aa31ebbbdd25ed2ce15abc6d0">getPropertySetManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1af8bf3904a5bddb78f07470e386e8e4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_factory_note" kindref="compound">PosFactoryNote</ref></type>
+        <definition>PosFactoryNote PosMESFactory::findFactoryNoteNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findFactoryNoteNamed</name>
+        <qualifiedname>PosMESFactory::findFactoryNoteNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="612" column="18"/>
+        <references refid="interface_pos_m_e_s_factory_1af8bf3904a5bddb78f07470e386e8e4bd">findFactoryNoteNamed</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1af8bf3904a5bddb78f07470e386e8e4bd">findFactoryNoteNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_m_e_s_factory_1ad11cc42b0d087e6ebc87825ed5f3a704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosMESFactory::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosMESFactory::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pfactry.idl" line="618" column="18"/>
+        <references refid="interface_pos_m_e_s_factory_1ad11cc42b0d087e6ebc87825ed5f3a704">createPropertySet</references>
+        <referencedby refid="interface_pos_m_e_s_factory_1ad11cc42b0d087e6ebc87825ed5f3a704">createPropertySet</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MESFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosMESFactory</label>
+        <link refid="interface_pos_m_e_s_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MESFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_ManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosMESFactory</label>
+        <link refid="interface_pos_m_e_s_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pfactry.idl" line="53" column="11" bodyfile="poscimfw/include/pfactry.idl" bodystart="53" bodyend="626"/>
+    <listofallmembers>
+      <member refid="interface_pos_m_e_s_factory_1ab37262c8079b98c9675c784c65522c58" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>allBanks</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a0c65980f6404cb33c306e8154f7b2fe3" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>allFactoryNotes</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a5896866fb73deebb16032f28d50e9d06" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>allStageGroups</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a86464aa74b3f4cebada2f98693d59f1c" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>allStages</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a1a3dc310a7fe4e6ebaf6c915e152eb9a" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>allWorkAreas</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a2664e29c10ca9ac19c07f0f055fe4098" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>createBankNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a5dbd8c7a1263bef6bdd1ea96437bb0c8" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>createFactoryNote</name></member>
+      <member refid="interface_pos_m_e_s_factory_1ad11cc42b0d087e6ebc87825ed5f3a704" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a13415f168c554f7eff8a1cbc554b17a2" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>createStageGroupNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1aaa4d1468f265f2fb5f77ce6f2ace118e" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>createStageNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1af047dd5712b70e426c632d0158dacdf1" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findAreaNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a6987cb43849542b446bb10415bbab878" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findBankNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1acb79d0a80863c5f0ec5377d7f43e431f" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findCalendarDateNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1af8bf3904a5bddb78f07470e386e8e4bd" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findFactoryNoteNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a4afa02f39c66a328ab9680fcfa330712" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findStageGroupNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a7de8a9ddf23ed7132eb8864787d84fa4" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>findStageNamed</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a62f98e3c3447e5f390f98656dd5924f3" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getAuthenticationManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a9bb3c6a4c14bfa77b0ff5b531e97a0fb" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getCodeManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1ae6cb4c53bd97ae144183ffb84febdac1" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getEntityInhibitManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a77c6a12c5c665acafb25018942636e95" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getEventManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1aec8577e64c3a923bad18b71fad6e4400" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getMessageDistributionManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1aec742e79e02a543c4ba3ba57f7697fa7" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getPartsManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a7724ee7ade3bdf6c3e20ef535007a96e" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_m_e_s_factory_1af5b3fa4aa31ebbbdd25ed2ce15abc6d0" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getPropertySetManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a39368fa27fb58f6f39c6109a65716a63" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getQTimeRestrictionManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1aeba33c27af80c078eca10226c2dbac8e" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getUserParameterManager</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a965c6894688e25f07068c733d995a0b1" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>getVariableInfoManagerObjectReference</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a323fb9cf788a269bc619b52283da47c2" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>PosMESFactory_init</name></member>
+      <member refid="interface_pos_m_e_s_factory_1aac7358854be65450322e2cbc83dd741f" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>removeBank</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a79cb20a1a50f66e6649744fde82a6d2e" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>removeFactoryNote</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a9c9152fc7c58d4d5436be465f06a8a9b" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>removeStage</name></member>
+      <member refid="interface_pos_m_e_s_factory_1a71999e566993ed761436700e5c9bbd24" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>removeStageGroup</name></member>
+      <member refid="interface_pos_m_e_s_factory_1ac51b90c03d3bdd36ca1e5bedb6342611" prot="public" virt="non-virtual"><scope>PosMESFactory</scope><name>setUserParameterManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

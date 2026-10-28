@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_e10_state" kind="interface" language="IDL" prot="public">
+    <compoundname>PosE10State</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pe10st_8idl" local="no">pe10st.idl</includes>
+    <innerclass refid="exception_pos_e10_state_1_1_machine_state_not_found_signal" prot="public">PosE10State::MachineStateNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_e10_state_1add7d79cc03a253bf8b5fe705d3e22310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::PosE10State_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosE10State_init</name>
+        <qualifiedname>PosE10State::PosE10State_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a4473d4c314993fb9ea053c4a69f25f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1acc9b194a25acb5dfee78d70a4a0e750f" kindref="member">PosMachineStateSequence</ref></type>
+        <definition>PosMachineStateSequence PosE10State::allMachineStates</definition>
+        <argsstring>()</argsstring>
+        <name>allMachineStates</name>
+        <qualifiedname>PosE10State::allMachineStates</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="88" column="27"/>
+        <references refid="interface_pos_e10_state_1a4473d4c314993fb9ea053c4a69f25f8a">allMachineStates</references>
+        <referencedby refid="interface_pos_e10_state_1a4473d4c314993fb9ea053c4a69f25f8a">allMachineStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a10abae33a99d57587aecad76940075d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosE10State::createMachineStateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createMachineStateNamed</name>
+        <qualifiedname>PosE10State::createMachineStateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="94" column="19"/>
+        <references refid="interface_pos_e10_state_1a10abae33a99d57587aecad76940075d0">createMachineStateNamed</references>
+        <referencedby refid="interface_pos_e10_state_1a10abae33a99d57587aecad76940075d0">createMachineStateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1acd6e2cb72d5b9351d921896db86eb2ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosE10State::findMachineStateNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMachineStateNamed</name>
+        <qualifiedname>PosE10State::findMachineStateNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="100" column="19"/>
+        <references refid="interface_pos_e10_state_1acd6e2cb72d5b9351d921896db86eb2ab">findMachineStateNamed</references>
+        <referencedby refid="interface_pos_e10_state_1acd6e2cb72d5b9351d921896db86eb2ab">findMachineStateNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a3eeb1c9a0361b3a5355e7c4ef8be391a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+        <definition>PosMachineState PosE10State::getDefaultMachineState</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultMachineState</name>
+        <qualifiedname>PosE10State::getDefaultMachineState</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="107" column="19"/>
+        <references refid="interface_pos_e10_state_1a3eeb1c9a0361b3a5355e7c4ef8be391a">getDefaultMachineState</references>
+        <referencedby refid="interface_pos_e10_state_1a3eeb1c9a0361b3a5355e7c4ef8be391a">getDefaultMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a17213d53d001f07c086bf139d692d815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::removeAllMachineStates</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachineStates</name>
+        <qualifiedname>PosE10State::removeAllMachineStates</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="113" column="8"/>
+        <references refid="interface_pos_e10_state_1a17213d53d001f07c086bf139d692d815">removeAllMachineStates</references>
+        <referencedby refid="interface_pos_e10_state_1a17213d53d001f07c086bf139d692d815">removeAllMachineStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1ab50b3f79a60225b5947c0de0fb0a1dcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::removeMachineState</definition>
+        <argsstring>(in PosMachineState aMachineState)</argsstring>
+        <name>removeMachineState</name>
+        <qualifiedname>PosE10State::removeMachineState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+          <declname>aMachineState</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_e10_state_1_1_machine_state_not_found_signal" kindref="compound">MachineStateNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="119" column="8"/>
+        <references refid="interface_pos_e10_state_1ab50b3f79a60225b5947c0de0fb0a1dcf">removeMachineState</references>
+        <referencedby refid="interface_pos_e10_state_1ab50b3f79a60225b5947c0de0fb0a1dcf">removeMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a101b2cc23ac2ec3073f9c3f4f9417c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosE10State::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosE10State::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="125" column="10"/>
+        <references refid="interface_pos_e10_state_1a101b2cc23ac2ec3073f9c3f4f9417c54">getIdentifier</references>
+        <referencedby refid="interface_pos_e10_state_1a101b2cc23ac2ec3073f9c3f4f9417c54">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1ac2cbbae5794dc7761d9cfdf2a7462e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosE10State::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="131" column="8"/>
+        <references refid="interface_pos_e10_state_1ac2cbbae5794dc7761d9cfdf2a7462e7f">setIdentifier</references>
+        <referencedby refid="interface_pos_e10_state_1ac2cbbae5794dc7761d9cfdf2a7462e7f">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a997daf452af78463206c872d64b0b240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::setDefaultMachineState</definition>
+        <argsstring>(in PosMachineState aMachineState)</argsstring>
+        <name>setDefaultMachineState</name>
+        <qualifiedname>PosE10State::setDefaultMachineState</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_state" kindref="compound">PosMachineState</ref></type>
+          <declname>aMachineState</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="139" column="8"/>
+        <references refid="interface_pos_e10_state_1a997daf452af78463206c872d64b0b240">setDefaultMachineState</references>
+        <referencedby refid="interface_pos_e10_state_1a997daf452af78463206c872d64b0b240">setDefaultMachineState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1acfdd6d6e8fba7294ecc017a83cf4bcf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosE10State::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosE10State::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="145" column="10"/>
+        <references refid="interface_pos_e10_state_1acfdd6d6e8fba7294ecc017a83cf4bcf3">getDescription</references>
+        <referencedby refid="interface_pos_e10_state_1acfdd6d6e8fba7294ecc017a83cf4bcf3">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_e10_state_1a92a7ec600138c3b6560d0ef89d2dda65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosE10State::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosE10State::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pe10st.idl" line="151" column="8"/>
+        <references refid="interface_pos_e10_state_1a92a7ec600138c3b6560d0ef89d2dda65">setDescription</references>
+        <referencedby refid="interface_pos_e10_state_1a92a7ec600138c3b6560d0ef89d2dda65">setDescription</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosE10State</label>
+        <link refid="interface_pos_e10_state"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosE10State</label>
+        <link refid="interface_pos_e10_state"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pe10st.idl" line="42" column="11" bodyfile="poscimfw/include/pe10st.idl" bodystart="42" bodyend="159"/>
+    <listofallmembers>
+      <member refid="interface_pos_e10_state_1a4473d4c314993fb9ea053c4a69f25f8a" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>allMachineStates</name></member>
+      <member refid="interface_pos_e10_state_1a10abae33a99d57587aecad76940075d0" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>createMachineStateNamed</name></member>
+      <member refid="interface_pos_e10_state_1acd6e2cb72d5b9351d921896db86eb2ab" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>findMachineStateNamed</name></member>
+      <member refid="interface_pos_e10_state_1a3eeb1c9a0361b3a5355e7c4ef8be391a" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>getDefaultMachineState</name></member>
+      <member refid="interface_pos_e10_state_1acfdd6d6e8fba7294ecc017a83cf4bcf3" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>getDescription</name></member>
+      <member refid="interface_pos_e10_state_1a101b2cc23ac2ec3073f9c3f4f9417c54" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_e10_state_1add7d79cc03a253bf8b5fe705d3e22310" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>PosE10State_init</name></member>
+      <member refid="interface_pos_e10_state_1a17213d53d001f07c086bf139d692d815" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>removeAllMachineStates</name></member>
+      <member refid="interface_pos_e10_state_1ab50b3f79a60225b5947c0de0fb0a1dcf" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>removeMachineState</name></member>
+      <member refid="interface_pos_e10_state_1a997daf452af78463206c872d64b0b240" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>setDefaultMachineState</name></member>
+      <member refid="interface_pos_e10_state_1a92a7ec600138c3b6560d0ef89d2dda65" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>setDescription</name></member>
+      <member refid="interface_pos_e10_state_1ac2cbbae5794dc7761d9cfdf2a7462e7f" prot="public" virt="non-virtual"><scope>PosE10State</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

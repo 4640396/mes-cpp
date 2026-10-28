@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_system_message_code" kind="interface" language="IDL" prot="public">
+    <compoundname>PosSystemMessageCode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <includes refid="psysmsg_8idl" local="no">psysmsg.idl</includes>
+    <innerclass refid="exception_pos_system_message_code_1_1_set_system_message_code_info_failed_signal" prot="public">PosSystemMessageCode::SetSystemMessageCodeInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_system_message_code_1a806dd7ffc2639316eeaa1e92ab24cb8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosSystemMessageCode::setSystemMessageCodeInfo</definition>
+        <argsstring>(in brSystemMessageCodeInfo systemMessageCodeInfo)</argsstring>
+        <name>setSystemMessageCodeInfo</name>
+        <qualifiedname>PosSystemMessageCode::setSystemMessageCodeInfo</qualifiedname>
+        <param>
+          <type>in brSystemMessageCodeInfo</type>
+          <declname>systemMessageCodeInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_system_message_code_1_1_set_system_message_code_info_failed_signal" kindref="compound">SetSystemMessageCodeInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="82" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1a0b606bfcf509dc7fa99f32c9baf002b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_message_definition" kindref="compound">PosMessageDefinition</ref></type>
+        <definition>PosMessageDefinition PosSystemMessageCode::getMessageDefinition</definition>
+        <argsstring>()</argsstring>
+        <name>getMessageDefinition</name>
+        <qualifiedname>PosSystemMessageCode::getMessageDefinition</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="89" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1a12a3bb372c50d85b23b84c4b315be352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosSystemMessageCode::PosSystemMessageCode_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosSystemMessageCode_init</name>
+        <qualifiedname>PosSystemMessageCode::PosSystemMessageCode_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="92" column="8"/>
+        <references refid="interface_pos_system_message_code_1a12a3bb372c50d85b23b84c4b315be352">PosSystemMessageCode_init</references>
+        <referencedby refid="interface_pos_system_message_code_1a12a3bb372c50d85b23b84c4b315be352">PosSystemMessageCode_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1ae3a937c47475a555436366fb07c8f375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosSystemMessageCode::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosSystemMessageCode::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="101" column="8"/>
+        <references refid="interface_pos_system_message_code_1ae3a937c47475a555436366fb07c8f375">setIdentifier</references>
+        <referencedby refid="interface_pos_system_message_code_1ae3a937c47475a555436366fb07c8f375">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1a7498eb5a5f92f6666aa431cd007898d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosSystemMessageCode::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosSystemMessageCode::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="107" column="10"/>
+        <references refid="interface_pos_system_message_code_1a7498eb5a5f92f6666aa431cd007898d7">getIdentifier</references>
+        <referencedby refid="interface_pos_system_message_code_1a7498eb5a5f92f6666aa431cd007898d7">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1ada1e66626cdc61bc454bd22b6ada65a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosSystemMessageCode::getSubsystemId</definition>
+        <argsstring>()</argsstring>
+        <name>getSubsystemId</name>
+        <qualifiedname>PosSystemMessageCode::getSubsystemId</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="113" column="10"/>
+        <references refid="interface_pos_system_message_code_1ada1e66626cdc61bc454bd22b6ada65a5">getSubsystemId</references>
+        <referencedby refid="interface_pos_system_message_code_1ada1e66626cdc61bc454bd22b6ada65a5">getSubsystemId</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1a5c71af3a44dc3a67480a3057cac17c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosSystemMessageCode::getMessageCode</definition>
+        <argsstring>()</argsstring>
+        <name>getMessageCode</name>
+        <qualifiedname>PosSystemMessageCode::getMessageCode</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="119" column="10"/>
+        <references refid="interface_pos_system_message_code_1a5c71af3a44dc3a67480a3057cac17c65">getMessageCode</references>
+        <referencedby refid="interface_pos_system_message_code_1a5c71af3a44dc3a67480a3057cac17c65">getMessageCode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_system_message_code_1a4ee45a3042ef87fa85ea0decac23f76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosSystemMessageCode::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosSystemMessageCode::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/psysmsg.idl" line="125" column="10"/>
+        <references refid="interface_pos_system_message_code_1a4ee45a3042ef87fa85ea0decac23f76b">getDescription</references>
+        <referencedby refid="interface_pos_system_message_code_1a4ee45a3042ef87fa85ea0decac23f76b">getDescription</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosSystemMessageCode</label>
+        <link refid="interface_pos_system_message_code"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="3">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosSystemMessageCode</label>
+        <link refid="interface_pos_system_message_code"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/psysmsg.idl" line="40" column="11" bodyfile="poscimfw/include/psysmsg.idl" bodystart="40" bodyend="133"/>
+    <listofallmembers>
+      <member refid="interface_pos_system_message_code_1a4ee45a3042ef87fa85ea0decac23f76b" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>getDescription</name></member>
+      <member refid="interface_pos_system_message_code_1a7498eb5a5f92f6666aa431cd007898d7" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_system_message_code_1a5c71af3a44dc3a67480a3057cac17c65" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>getMessageCode</name></member>
+      <member refid="interface_pos_system_message_code_1a0b606bfcf509dc7fa99f32c9baf002b5" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>getMessageDefinition</name></member>
+      <member refid="interface_pos_system_message_code_1ada1e66626cdc61bc454bd22b6ada65a5" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>getSubsystemId</name></member>
+      <member refid="interface_pos_system_message_code_1a12a3bb372c50d85b23b84c4b315be352" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>PosSystemMessageCode_init</name></member>
+      <member refid="interface_pos_system_message_code_1ae3a937c47475a555436366fb07c8f375" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_system_message_code_1a806dd7ffc2639316eeaa1e92ab24cb8f" prot="public" virt="non-virtual"><scope>PosSystemMessageCode</scope><name>setSystemMessageCodeInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

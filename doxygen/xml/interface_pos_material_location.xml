@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_material_location" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMaterialLocation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MaterialLocation</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmaloc_8idl" local="no">pmaloc.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_material_location_1ab95c986d070ee86107452f8ae4d859c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMaterialLocation::setCoordinate</definition>
+        <argsstring>(in posCoordinate3D aCoordinate)</argsstring>
+        <name>setCoordinate</name>
+        <qualifiedname>PosMaterialLocation::setCoordinate</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1acac6aa1decf35f8b05be46d4ee71ec97" kindref="member">posCoordinate3D</ref></type>
+          <declname>aCoordinate</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a08a20e2167043a3055dcfd4777914ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1acac6aa1decf35f8b05be46d4ee71ec97" kindref="member">posCoordinate3D</ref></type>
+        <definition>posCoordinate3D PosMaterialLocation::getCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getCoordinate</name>
+        <qualifiedname>PosMaterialLocation::getCoordinate</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="64" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a590c555cab8bc32769fe2fea026d5835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMaterialLocation::PosMaterialLocation_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMaterialLocation_init</name>
+        <qualifiedname>PosMaterialLocation::PosMaterialLocation_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="70" column="8"/>
+        <references refid="interface_pos_material_location_1a590c555cab8bc32769fe2fea026d5835">PosMaterialLocation_init</references>
+        <referencedby refid="interface_pos_material_location_1a590c555cab8bc32769fe2fea026d5835">PosMaterialLocation_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1acf63ca1eda6e47ef30cf029c988df600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MachineResource</type>
+        <definition>MachineResource PosMaterialLocation::getResource</definition>
+        <argsstring>()</argsstring>
+        <name>getResource</name>
+        <qualifiedname>PosMaterialLocation::getResource</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="77" column="19"/>
+        <references refid="interface_pos_material_location_1acf63ca1eda6e47ef30cf029c988df600">getResource</references>
+        <referencedby refid="interface_pos_material_location_1acf63ca1eda6e47ef30cf029c988df600">getResource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a618f1911ba92a69700a83cbaa64c329f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMaterialLocation::setReservedLoadPort</definition>
+        <argsstring>(in PosPortResource reservedLoadPort)</argsstring>
+        <name>setReservedLoadPort</name>
+        <qualifiedname>PosMaterialLocation::setReservedLoadPort</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+          <declname>reservedLoadPort</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="83" column="8"/>
+        <references refid="interface_pos_material_location_1a618f1911ba92a69700a83cbaa64c329f">setReservedLoadPort</references>
+        <referencedby refid="interface_pos_material_location_1a618f1911ba92a69700a83cbaa64c329f">setReservedLoadPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a2eeb09a72e6c9cfbe0bcceaabfc868be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMaterialLocation::setReservedUnloadPort</definition>
+        <argsstring>(in PosPortResource reservedUnloadPort)</argsstring>
+        <name>setReservedUnloadPort</name>
+        <qualifiedname>PosMaterialLocation::setReservedUnloadPort</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+          <declname>reservedUnloadPort</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="89" column="8"/>
+        <references refid="interface_pos_material_location_1a2eeb09a72e6c9cfbe0bcceaabfc868be">setReservedUnloadPort</references>
+        <referencedby refid="interface_pos_material_location_1a2eeb09a72e6c9cfbe0bcceaabfc868be">setReservedUnloadPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1ade3fab1651f3574f3fbb2fe75856c284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMaterialLocation::setControlJob</definition>
+        <argsstring>(in PosControlJob controlJob)</argsstring>
+        <name>setControlJob</name>
+        <qualifiedname>PosMaterialLocation::setControlJob</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref></type>
+          <declname>controlJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="95" column="8"/>
+        <references refid="interface_pos_material_location_1ade3fab1651f3574f3fbb2fe75856c284">setControlJob</references>
+        <referencedby refid="interface_pos_material_location_1ade3fab1651f3574f3fbb2fe75856c284">setControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a54c1c0ca3d34cf6982ea4a6f28088ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+        <definition>PosPortResource PosMaterialLocation::getReservedLoadPort</definition>
+        <argsstring>()</argsstring>
+        <name>getReservedLoadPort</name>
+        <qualifiedname>PosMaterialLocation::getReservedLoadPort</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="101" column="19"/>
+        <references refid="interface_pos_material_location_1a54c1c0ca3d34cf6982ea4a6f28088ca7">getReservedLoadPort</references>
+        <referencedby refid="interface_pos_material_location_1a54c1c0ca3d34cf6982ea4a6f28088ca7">getReservedLoadPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a237fe6b6f13f6f296ff8dded5f85b208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_port_resource" kindref="compound">PosPortResource</ref></type>
+        <definition>PosPortResource PosMaterialLocation::getReservedUnloadPort</definition>
+        <argsstring>()</argsstring>
+        <name>getReservedUnloadPort</name>
+        <qualifiedname>PosMaterialLocation::getReservedUnloadPort</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="107" column="19"/>
+        <references refid="interface_pos_material_location_1a237fe6b6f13f6f296ff8dded5f85b208">getReservedUnloadPort</references>
+        <referencedby refid="interface_pos_material_location_1a237fe6b6f13f6f296ff8dded5f85b208">getReservedUnloadPort</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1a99987a2be0c8d82e3f673a70e927ad4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_control_job" kindref="compound">PosControlJob</ref></type>
+        <definition>PosControlJob PosMaterialLocation::getControlJob</definition>
+        <argsstring>()</argsstring>
+        <name>getControlJob</name>
+        <qualifiedname>PosMaterialLocation::getControlJob</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="113" column="17"/>
+        <references refid="interface_pos_material_location_1a99987a2be0c8d82e3f673a70e927ad4b">getControlJob</references>
+        <referencedby refid="interface_pos_material_location_1a99987a2be0c8d82e3f673a70e927ad4b">getControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_material_location_1ab8391b5997a11e8f03525ed9b1155616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Material</type>
+        <definition>Material PosMaterialLocation::getAllocatedMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>getAllocatedMaterial</name>
+        <qualifiedname>PosMaterialLocation::getAllocatedMaterial</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmaloc.idl" line="119" column="12"/>
+        <references refid="interface_pos_material_location_1ab8391b5997a11e8f03525ed9b1155616">getAllocatedMaterial</references>
+        <referencedby refid="interface_pos_material_location_1ab8391b5997a11e8f03525ed9b1155616">getAllocatedMaterial</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>MaterialLocation</label>
+      </node>
+      <node id="1">
+        <label>PosMaterialLocation</label>
+        <link refid="interface_pos_material_location"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>MaterialLocation</label>
+      </node>
+      <node id="1">
+        <label>PosMaterialLocation</label>
+        <link refid="interface_pos_material_location"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmaloc.idl" line="40" column="11" bodyfile="poscimfw/include/pmaloc.idl" bodystart="40" bodyend="127"/>
+    <listofallmembers>
+      <member refid="interface_pos_material_location_1ab8391b5997a11e8f03525ed9b1155616" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getAllocatedMaterial</name></member>
+      <member refid="interface_pos_material_location_1a99987a2be0c8d82e3f673a70e927ad4b" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getControlJob</name></member>
+      <member refid="interface_pos_material_location_1a08a20e2167043a3055dcfd4777914ddb" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getCoordinate</name></member>
+      <member refid="interface_pos_material_location_1a54c1c0ca3d34cf6982ea4a6f28088ca7" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getReservedLoadPort</name></member>
+      <member refid="interface_pos_material_location_1a237fe6b6f13f6f296ff8dded5f85b208" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getReservedUnloadPort</name></member>
+      <member refid="interface_pos_material_location_1acf63ca1eda6e47ef30cf029c988df600" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>getResource</name></member>
+      <member refid="interface_pos_material_location_1a590c555cab8bc32769fe2fea026d5835" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>PosMaterialLocation_init</name></member>
+      <member refid="interface_pos_material_location_1ade3fab1651f3574f3fbb2fe75856c284" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>setControlJob</name></member>
+      <member refid="interface_pos_material_location_1ab95c986d070ee86107452f8ae4d859c6" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>setCoordinate</name></member>
+      <member refid="interface_pos_material_location_1a618f1911ba92a69700a83cbaa64c329f" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>setReservedLoadPort</name></member>
+      <member refid="interface_pos_material_location_1a2eeb09a72e6c9cfbe0bcceaabfc868be" prot="public" virt="non-virtual"><scope>PosMaterialLocation</scope><name>setReservedUnloadPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

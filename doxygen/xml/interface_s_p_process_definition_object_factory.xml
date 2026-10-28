@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_process_definition_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPProcessDefinitionObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWProcessDefinitionObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="prcssdsp_8idl" local="no">prcssdsp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_process_definition_object_factory_1a2b38f9688939492eb86c8bfb1f511386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_q_time_restriction" kindref="compound">PosQTimeRestriction</ref></type>
+        <definition>PosQTimeRestriction SPProcessDefinitionObjectFactory::newPosQTimeRestriction</definition>
+        <argsstring>()</argsstring>
+        <name>newPosQTimeRestriction</name>
+        <qualifiedname>SPProcessDefinitionObjectFactory::newPosQTimeRestriction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcssdsp.idl" line="27" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_process_definition_object_factory_1afa983817b5443168ec1d9de84b61d782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_q_time_restriction_manager" kindref="compound">PosQTimeRestrictionManager</ref></type>
+        <definition>PosQTimeRestrictionManager SPProcessDefinitionObjectFactory::newPosQTimeRestrictionManager</definition>
+        <argsstring>()</argsstring>
+        <name>newPosQTimeRestrictionManager</name>
+        <qualifiedname>SPProcessDefinitionObjectFactory::newPosQTimeRestrictionManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcssdsp.idl" line="28" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_process_definition_object_factory_1a4f68d4810c5eaa7cd693d66a06af4ff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessFlowContext</type>
+        <definition>ProcessFlowContext SPProcessDefinitionObjectFactory::newDurableProcessFlowContext</definition>
+        <argsstring>(in ProcessFlow aProcessFlow)</argsstring>
+        <name>newDurableProcessFlowContext</name>
+        <qualifiedname>SPProcessDefinitionObjectFactory::newDurableProcessFlowContext</qualifiedname>
+        <param>
+          <type>in ProcessFlow</type>
+          <declname>aProcessFlow</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcssdsp.idl" line="29" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_process_definition_object_factory_1aa7e4a5fa6f035be40d0151a506b0c74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ProcessOperation</type>
+        <definition>ProcessOperation SPProcessDefinitionObjectFactory::newDurableProcessOperation</definition>
+        <argsstring>(in ProcessOperationSpecification aProcessOperationSpecification)</argsstring>
+        <name>newDurableProcessOperation</name>
+        <qualifiedname>SPProcessDefinitionObjectFactory::newDurableProcessOperation</qualifiedname>
+        <param>
+          <type>in ProcessOperationSpecification</type>
+          <declname>aProcessOperationSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prcssdsp.idl" line="31" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWProcessDefinitionObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPProcessDefinitionObjectFactory</label>
+        <link refid="interface_s_p_process_definition_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWProcessDefinitionObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPProcessDefinitionObjectFactory</label>
+        <link refid="interface_s_p_process_definition_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/prcssdsp.idl" line="25" column="11" bodyfile="poscimfw/include/prcssdsp.idl" bodystart="26" bodyend="33"/>
+    <listofallmembers>
+      <member refid="interface_s_p_process_definition_object_factory_1a4f68d4810c5eaa7cd693d66a06af4ff2" prot="public" virt="non-virtual"><scope>SPProcessDefinitionObjectFactory</scope><name>newDurableProcessFlowContext</name></member>
+      <member refid="interface_s_p_process_definition_object_factory_1aa7e4a5fa6f035be40d0151a506b0c74a" prot="public" virt="non-virtual"><scope>SPProcessDefinitionObjectFactory</scope><name>newDurableProcessOperation</name></member>
+      <member refid="interface_s_p_process_definition_object_factory_1a2b38f9688939492eb86c8bfb1f511386" prot="public" virt="non-virtual"><scope>SPProcessDefinitionObjectFactory</scope><name>newPosQTimeRestriction</name></member>
+      <member refid="interface_s_p_process_definition_object_factory_1afa983817b5443168ec1d9de84b61d782" prot="public" virt="non-virtual"><scope>SPProcessDefinitionObjectFactory</scope><name>newPosQTimeRestrictionManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost" kind="class" language="C++" prot="public">
+    <compoundname>CIMFW_DO_SequenceInSequenceCost</compoundname>
+    <basecompoundref refid="class_c_i_m_f_w___d_o___sequence_cost" prot="public" virt="non-virtual">CIMFW_DO_SequenceCost</basecompoundref>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a241024c3e4ece046d8d2d40866d46454" prot="protected" static="no">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost" kindref="compound">CIMFW_DO_SequenceCost</ref></type>
+        <definition>typedef CIMFW_DO_SequenceCost CIMFW_DO_SequenceInSequenceCost::super_type</definition>
+        <argsstring></argsstring>
+        <name>super_type</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::super_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2801" column="47" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2801" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>const CostType CIMFW_DO_SequenceInSequenceCost::tableMarkerCost</definition>
+        <argsstring></argsstring>
+        <name>tableMarkerCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::tableMarkerCost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2802" column="33" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2802" bodyend="-1"/>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aa27eb3d152e51cb9f3bf62db50f52707" compoundref="cimfwdo_8cpp" startline="2806" endline="2811">CIMFW_DO_SequenceInSequenceCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a59a25e0815528d8dca3c19fe1ab32b91" compoundref="cimfwdo_8cpp" startline="2849" endline="2852">maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aeba9ebf6b5dae721a6596434cced097f" compoundref="cimfwdo_8cpp" startline="2838" endline="2843">maximalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a4015cc92c0e9907b233d6fd042d506ff" compoundref="cimfwdo_8cpp" startline="2818" endline="2823">minimalUpdateCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a5e7a6f4c9eb2fb36853c19e22116d43a" compoundref="cimfwdo_8cpp" startline="2845" endline="2848">moveCost</referencedby>
+        <referencedby refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a744560b5bb37d3938c684775562dd90e" compoundref="cimfwdo_8cpp" startline="2833" endline="2837">updateCost</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aa27eb3d152e51cb9f3bf62db50f52707" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CIMFW_DO_SequenceInSequenceCost::CIMFW_DO_SequenceInSequenceCost</definition>
+        <argsstring>(const SQLCostSetting &amp;setting, const ItemComparator &amp;comparator, CostType tableMarkerCost)</argsstring>
+        <name>CIMFW_DO_SequenceInSequenceCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::CIMFW_DO_SequenceInSequenceCost</qualifiedname>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___sequence_cost_1ab2780df7360d01fb0cff4c9d8f3a99df" kindref="member">SQLCostSetting</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a87e76ba7846808c46d6b78b250c6749e" kindref="member">ItemComparator</ref> &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+          <declname>tableMarkerCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2806" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2806" bodyend="2811"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1a7e71206f0c4a8cfcf803153b302a4275" compoundref="cimfwdo_8cpp" startline="2208" endline="2212">CIMFW_DO_SequenceCost::CIMFW_DO_SequenceCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1acd6fe8a601c8080722e655948f2776f0" compoundref="cimfwdo_8cpp" startline="2205">CIMFW_DO_SequenceCost::comparator</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1af133b9b630c4b435653757481d49851a" compoundref="cimfwdo_8cpp" startline="2204">CIMFW_DO_SequenceCost::setting</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a4015cc92c0e9907b233d6fd042d506ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_SequenceInSequenceCost::minimalUpdateCost</definition>
+        <argsstring>(UpdateCache &amp;result, CORBA::ULong dSeqNo, CORBA::ULong aSeqNo) const</argsstring>
+        <name>minimalUpdateCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::minimalUpdateCost</qualifiedname>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a60709b3c1eccbd17e746793ab874d0d0" kindref="member">UpdateCache</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aSeqNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2818" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2818" bodyend="2823"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1ae35f365a61af971949272efcc0555666" compoundref="cimfwdo_8cpp" startline="2243" endline="2247">CIMFW_DO_SequenceCost::minimalUpdateCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a744560b5bb37d3938c684775562dd90e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_SequenceInSequenceCost::updateCost</definition>
+        <argsstring>(UpdateCache &amp;result, CORBA::ULong dSeqNo, CORBA::ULong aSeqNo, CostType remainCost) const</argsstring>
+        <name>updateCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::updateCost</qualifiedname>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a60709b3c1eccbd17e746793ab874d0d0" kindref="member">UpdateCache</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aSeqNo</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+          <declname>remainCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2833" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2833" bodyend="2837"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1afc4f928c02f4b9d733d66bbf11b2540b" compoundref="cimfwdo_8cpp" startline="2248" endline="2255">CIMFW_DO_SequenceCost::updateCost</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aeba9ebf6b5dae721a6596434cced097f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_SequenceInSequenceCost::maximalUpdateCost</definition>
+        <argsstring>(UpdateCache result, CORBA::ULong dSeqNo, CORBA::ULong aSeqNo) const</argsstring>
+        <name>maximalUpdateCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::maximalUpdateCost</qualifiedname>
+        <param>
+          <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a60709b3c1eccbd17e746793ab874d0d0" kindref="member">UpdateCache</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aSeqNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2838" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2838" bodyend="2843"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1abfc6a9c2538f2c5cdfaddae5c79a9422" compoundref="cimfwdo_8cpp" startline="2256" endline="2260">CIMFW_DO_SequenceCost::maximalUpdateCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a5e7a6f4c9eb2fb36853c19e22116d43a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_SequenceInSequenceCost::moveCost</definition>
+        <argsstring>(CORBA::ULong dSeqNo, CORBA::ULong aSeqNo) const</argsstring>
+        <name>moveCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::moveCost</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aSeqNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2845" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2845" bodyend="2848"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1a0ea54d2113fa3f41419b2c71baf394d6" compoundref="cimfwdo_8cpp" startline="2238" endline="2241">CIMFW_DO_SequenceCost::moveCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a59a25e0815528d8dca3c19fe1ab32b91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" kindref="member">CostType</ref></type>
+        <definition>CostType CIMFW_DO_SequenceInSequenceCost::maximalUpdateCost</definition>
+        <argsstring>(CORBA::ULong dSeqNo, CORBA::ULong aSeqNo)</argsstring>
+        <name>maximalUpdateCost</name>
+        <qualifiedname>CIMFW_DO_SequenceInSequenceCost::maximalUpdateCost</qualifiedname>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>dSeqNo</declname>
+        </param>
+        <param>
+          <type>CORBA::ULong</type>
+          <declname>aSeqNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2849" column="14" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2849" bodyend="2852"/>
+        <references refid="class_c_i_m_f_w___d_o___sequence_cost_1abfc6a9c2538f2c5cdfaddae5c79a9422" compoundref="cimfwdo_8cpp" startline="2256" endline="2260">CIMFW_DO_SequenceCost::maximalUpdateCost</references>
+        <references refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" compoundref="cimfwdo_8cpp" startline="2802">tableMarkerCost</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFW_DO_SequenceCost</label>
+        <link refid="class_c_i_m_f_w___d_o___sequence_cost"/>
+      </node>
+      <node id="1">
+        <label>CIMFW_DO_SequenceInSequenceCost</label>
+        <link refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFW_DO_SequenceCost</label>
+        <link refid="class_c_i_m_f_w___d_o___sequence_cost"/>
+      </node>
+      <node id="1">
+        <label>CIMFW_DO_SequenceInSequenceCost</label>
+        <link refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="smtchcmf/frmwrkgl/cimfwdo.cpp" line="2785" column="1" bodyfile="smtchcmf/frmwrkgl/cimfwdo.cpp" bodystart="2786" bodyend="2854"/>
+    <listofallmembers>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a7e71206f0c4a8cfcf803153b302a4275" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>CIMFW_DO_SequenceCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aa27eb3d152e51cb9f3bf62db50f52707" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>CIMFW_DO_SequenceInSequenceCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1acd6fe8a601c8080722e655948f2776f0" prot="protected" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>comparator</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a9758915e0c3c7c3a6a0f28a76fc89907" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>CostType</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a99a5d759a22dbd91b32145c2466d262c" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>deleteCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a9dd0b094849471425ae5658320006568" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>deleteIssueCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a798fae1cc44388b69e1c207833275ab8" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>getEditCallback</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1aa691b0459093128fff3209cb27289a77" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>insertCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a87e76ba7846808c46d6b78b250c6749e" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>ItemComparator</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1ae7d13b9554cdf0daa4799c1089d26b19" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>MAX_COST</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1aeba9ebf6b5dae721a6596434cced097f" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>maximalUpdateCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a59a25e0815528d8dca3c19fe1ab32b91" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>maximalUpdateCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a8ef7a2c93ae5be2eeb74371cff047e39" prot="public" virt="non-virtual" ambiguityscope="CIMFW_DO_SequenceCost::"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>maximalUpdateCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a4015cc92c0e9907b233d6fd042d506ff" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>minimalUpdateCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a5e7a6f4c9eb2fb36853c19e22116d43a" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>moveCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a9105eab74448fecfa1efe8862a9c3d72" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>moveIssueCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a499f808dd034f1c15364c04fd874e2b6" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>replaceCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1aabe907b83d23bd802f6e60a452da10ca" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>replaceIssueCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1af133b9b630c4b435653757481d49851a" prot="protected" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>setting</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1ab2780df7360d01fb0cff4c9d8f3a99df" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>SQLCostSetting</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a241024c3e4ece046d8d2d40866d46454" prot="protected" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>super_type</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a51907984a1e76b22e1f90acd8fda6a03" prot="protected" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>tableMarkerCost</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_cost_1a60709b3c1eccbd17e746793ab874d0d0" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>UpdateCache</name></member>
+      <member refid="class_c_i_m_f_w___d_o___sequence_in_sequence_cost_1a744560b5bb37d3938c684775562dd90e" prot="public" virt="non-virtual"><scope>CIMFW_DO_SequenceInSequenceCost</scope><name>updateCost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

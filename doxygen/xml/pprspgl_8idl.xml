@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="pprspgl_8idl" kind="file" language="IDL">
+    <compoundname>pprspgl.idl</compoundname>
+    <includes local="yes">fwcommon.idl</includes>
+    <includes local="yes">brgbldef.idl</includes>
+    <includedby refid="pbindf_8idl" local="yes">poscimfw/include/pbindf.idl</includedby>
+    <includedby refid="pcustmr_8idl" local="yes">poscimfw/include/pcustmr.idl</includedby>
+    <includedby refid="pprsp_8idl" local="yes">poscimfw/include/pprsp.idl</includedby>
+    <includedby refid="pprspmg_8idl" local="yes">poscimfw/include/pprspmg.idl</includedby>
+    <includedby refid="ptestsp_8idl" local="yes">poscimfw/include/ptestsp.idl</includedby>
+    <includedby refid="ptesttp_8idl" local="yes">poscimfw/include/ptesttp.idl</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>poscimfw/include/pprspgl.idl</label>
+        <link refid="pprspgl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>brgbldef.idl</label>
+      </node>
+      <node id="2">
+        <label>fwcommon.idl</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>poscimfw/include/pbindf.idl</label>
+        <link refid="pbindf_8idl"/>
+      </node>
+      <node id="3">
+        <label>poscimfw/include/pcustmr.idl</label>
+        <link refid="pcustmr_8idl"/>
+      </node>
+      <node id="5">
+        <label>poscimfw/include/plot.idl</label>
+        <link refid="plot_8idl"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>poscimfw/include/ppcdr.idl</label>
+        <link refid="ppcdr_8idl"/>
+      </node>
+      <node id="7">
+        <label>poscimfw/include/pplspj.idl</label>
+        <link refid="pplspj_8idl"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>poscimfw/include/pprmgr.idl</label>
+        <link refid="pprmgr_8idl"/>
+      </node>
+      <node id="4">
+        <label>poscimfw/include/pprsp.idl</label>
+        <link refid="pprsp_8idl"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>poscimfw/include/pprspgl.idl</label>
+        <link refid="pprspgl_8idl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>poscimfw/include/pprspmg.idl</label>
+        <link refid="pprspmg_8idl"/>
+      </node>
+      <node id="10">
+        <label>poscimfw/include/ptestsp.idl</label>
+        <link refid="ptestsp_8idl"/>
+      </node>
+      <node id="11">
+        <label>poscimfw/include/ptesttp.idl</label>
+        <link refid="ptesttp_8idl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpos_bin_spec__struct" prot="public">posBinSpec_struct</innerclass>
+    <innerclass refid="structpos_multi_main_p_d__struct" prot="public">posMultiMainPD_struct</innerclass>
+    <innerclass refid="structpos_source_product_specification_info__struct" prot="public">posSourceProductSpecificationInfo_struct</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pprspgl_8idl_1ac35a64ce412525ba3b4e0543d11f45af" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_technology" kindref="compound">PosTechnology</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosTechnology&gt; PosTechnologySequence</definition>
+        <argsstring></argsstring>
+        <name>PosTechnologySequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="48" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a28cef8e649645afbab9d84c343d1a3e5" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosProductGroup&gt; PosProductGroupSequence</definition>
+        <argsstring></argsstring>
+        <name>PosProductGroupSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="57" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1ac329ef7a9b76d93b29402cf39fd4812e" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosBinDefinition&gt; PosBinDefinitionSequence</definition>
+        <argsstring></argsstring>
+        <name>PosBinDefinitionSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="66" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a7a6bba5c3f789bac118b4806683a2adc" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosCustomer&gt; PosCustomerSequence</definition>
+        <argsstring></argsstring>
+        <name>PosCustomerSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="74" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a82079664984cef24817a159edff0518e" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_test_specification" kindref="compound">PosTestSpecification</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosTestSpecification&gt; PosTestSpecificationSequence</definition>
+        <argsstring></argsstring>
+        <name>PosTestSpecificationSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="83" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1acc6dba5d6861249785d3c6dad65c8984" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosCustomerProduct&gt; PosCustomerProductSequence</definition>
+        <argsstring></argsstring>
+        <name>PosCustomerProductSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="92" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a8d90748f47b916f6324184b9eaeea30f" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosProductSpecification&gt; PosProductSpecificationSequence</definition>
+        <argsstring></argsstring>
+        <name>PosProductSpecificationSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="101" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a3868eeebe7f2611ae21a73f9664814d5" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosProductCategory&gt; PosProductCategorySequence</definition>
+        <argsstring></argsstring>
+        <name>PosProductCategorySequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="110" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a13bc721e70a312fcd33b109eda0178e2" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_bin_specification" kindref="compound">PosBinSpecification</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosBinSpecification&gt; PosBinSpecificationSequence</definition>
+        <argsstring></argsstring>
+        <name>PosBinSpecificationSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="119" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a107e9f495b4218b87c8f27187d1e3778" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosTestType&gt; PosTestTypeSequence</definition>
+        <argsstring></argsstring>
+        <name>PosTestTypeSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="127" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a59154147afa2a34ddce767b0be76a966" prot="public" static="no">
+        <type><ref refid="structpos_bin_spec__struct" kindref="compound">posBinSpec_struct</ref></type>
+        <definition>typedef posBinSpec_struct posBinSpec</definition>
+        <argsstring></argsstring>
+        <name>posBinSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="161" column="27" bodyfile="poscimfw/include/pprspgl.idl" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a3d0030db33d362a5f169af44f525de7b" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pprspgl_8idl_1a59154147afa2a34ddce767b0be76a966" kindref="member">posBinSpec</ref> &gt;</type>
+        <definition>typedef sequence&lt;posBinSpec&gt; PosBinSpecSequence</definition>
+        <argsstring></argsstring>
+        <name>PosBinSpecSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="169" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" prot="public" static="no">
+        <type><ref refid="structpos_multi_main_p_d__struct" kindref="compound">posMultiMainPD_struct</ref></type>
+        <definition>typedef posMultiMainPD_struct posMultiMainPD</definition>
+        <argsstring></argsstring>
+        <name>posMultiMainPD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="203" column="31" bodyfile="poscimfw/include/pprspgl.idl" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1aefed6d29456dd4f2d286004f3e8cc445" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" kindref="member">posMultiMainPD</ref> &gt;</type>
+        <definition>typedef sequence&lt;posMultiMainPD&gt; PosMultiMainPDSequence</definition>
+        <argsstring></argsstring>
+        <name>PosMultiMainPDSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="212" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1ad9a2925f259d7dfbbddc1023bea17ef5" prot="public" static="no">
+        <type>sequence&lt; <ref refid="interface_pos_sample_specification" kindref="compound">PosSampleSpecification</ref> &gt;</type>
+        <definition>typedef sequence&lt;PosSampleSpecification&gt; PosSampleSpecificationSequence</definition>
+        <argsstring></argsstring>
+        <name>PosSampleSpecificationSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="221" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a4c3bfd98ae1f14d2519888414883d25f" prot="public" static="no">
+        <type>brProductInfo__170</type>
+        <definition>typedef brProductInfo__170 spProductInfo</definition>
+        <argsstring></argsstring>
+        <name>spProductInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="227" column="28" bodyfile="poscimfw/include/pprspgl.idl" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1a8369057fa27350659460dcdb9a4fdbb1" prot="public" static="no">
+        <type><ref refid="structpos_source_product_specification_info__struct" kindref="compound">posSourceProductSpecificationInfo_struct</ref></type>
+        <definition>typedef posSourceProductSpecificationInfo_struct posSourceProductSpecificationInfo</definition>
+        <argsstring></argsstring>
+        <name>posSourceProductSpecificationInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="261" column="50" bodyfile="poscimfw/include/pprspgl.idl" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pprspgl_8idl_1ab69fbdad35db73a18b5c686fbe5cac9d" prot="public" static="no">
+        <type>sequence&lt; <ref refid="pprspgl_8idl_1a8369057fa27350659460dcdb9a4fdbb1" kindref="member">posSourceProductSpecificationInfo</ref> &gt;</type>
+        <definition>typedef sequence&lt;posSourceProductSpecificationInfo&gt; PosSourceProductSpecificationInfoSequence</definition>
+        <argsstring></argsstring>
+        <name>PosSourceProductSpecificationInfoSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pprspgl.idl" line="270" column="18" bodyfile="poscimfw/include/pprspgl.idl" bodystart="270" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//##<sp/>Module:<sp/>PosProductSpecificationGlobals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/><sp/>MM_FW::Siview_Specification_Management_Functional_Group::Siview_Product_Specification_Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Source<sp/>file:<sp/><sp/>C:\Rational_Rose\MM\R17.0\poscimfw\pprsp\pprspgl.idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cm<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>%X%<sp/><sp/>@(#)<sp/>superpos/src/spclass/source/posfw070.mdl,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>mm_srv_7_0_spcl,<sp/>mm_srv_7_0_spcl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.cp<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.cp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PosProductSpecificationGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PosProductSpecificationGlobals_idl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.additionalIncludes<sp/>preserve=no</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.additionalIncludes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//##begin<sp/>module.includes<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//##end<sp/>module.includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwcommon.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;brgbldef.idl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_specification" kindref="compound">PosProductSpecification</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_technology" kindref="compound">PosTechnology</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_bin_definition" kindref="compound">PosBinDefinition</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_test_specification" kindref="compound">PosTestSpecification</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_group" kindref="compound">PosProductGroup</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_customer_product" kindref="compound">PosCustomerProduct</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_product_category" kindref="compound">PosProductCategory</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_bin_specification" kindref="compound">PosBinSpecification</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_customer" kindref="compound">PosCustomer</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_sample_specification" kindref="compound">PosSampleSpecification</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTechnologySequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosTechnology&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosTechnologySequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="pprspgl_8idl_1ac35a64ce412525ba3b4e0543d11f45af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosTechnology&gt;<sp/><ref refid="pprspgl_8idl_1ac35a64ce412525ba3b4e0543d11f45af" kindref="member">PosTechnologySequence</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosProductGroupSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosProductGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosProductGroupSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="pprspgl_8idl_1a28cef8e649645afbab9d84c343d1a3e5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosProductGroup&gt;<sp/><ref refid="pprspgl_8idl_1a28cef8e649645afbab9d84c343d1a3e5" kindref="member">PosProductGroupSequence</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosBinDefinitionSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosBinDefinition&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosBinDefinitionSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="pprspgl_8idl_1ac329ef7a9b76d93b29402cf39fd4812e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosBinDefinition&gt;<sp/><ref refid="pprspgl_8idl_1ac329ef7a9b76d93b29402cf39fd4812e" kindref="member">PosBinDefinitionSequence</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosCustomerSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosCustomer&gt;<sp/>PosCustomerSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="pprspgl_8idl_1a7a6bba5c3f789bac118b4806683a2adc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosCustomer&gt;<sp/><ref refid="pprspgl_8idl_1a7a6bba5c3f789bac118b4806683a2adc" kindref="member">PosCustomerSequence</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTestSpecificationSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosTestSpecification&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosTestSpecificationSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="pprspgl_8idl_1a82079664984cef24817a159edff0518e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosTestSpecification&gt;<sp/><ref refid="pprspgl_8idl_1a82079664984cef24817a159edff0518e" kindref="member">PosTestSpecificationSequence</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosCustomerProductSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosCustomerProduct&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosCustomerProductSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="pprspgl_8idl_1acc6dba5d6861249785d3c6dad65c8984" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosCustomerProduct&gt;<sp/><ref refid="pprspgl_8idl_1acc6dba5d6861249785d3c6dad65c8984" kindref="member">PosCustomerProductSequence</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosProductSpecificationSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosProductSpecification&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosProductSpecificationSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="pprspgl_8idl_1a8d90748f47b916f6324184b9eaeea30f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosProductSpecification&gt;<sp/><ref refid="pprspgl_8idl_1a8d90748f47b916f6324184b9eaeea30f" kindref="member">PosProductSpecificationSequence</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosProductCategorySequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosProductCategory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosProductCategorySequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="pprspgl_8idl_1a3868eeebe7f2611ae21a73f9664814d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosProductCategory&gt;<sp/><ref refid="pprspgl_8idl_1a3868eeebe7f2611ae21a73f9664814d5" kindref="member">PosProductCategorySequence</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosBinSpecificationSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosBinSpecification&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosBinSpecificationSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="pprspgl_8idl_1a13bc721e70a312fcd33b109eda0178e2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosBinSpecification&gt;<sp/><ref refid="pprspgl_8idl_1a13bc721e70a312fcd33b109eda0178e2" kindref="member">PosBinSpecificationSequence</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosTestTypeSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosTestType&gt;<sp/>PosTestTypeSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="pprspgl_8idl_1a107e9f495b4218b87c8f27187d1e3778" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosTestType&gt;<sp/><ref refid="pprspgl_8idl_1a107e9f495b4218b87c8f27187d1e3778" kindref="member">PosTestTypeSequence</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structpos_bin_spec__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_bin_spec__struct" kindref="compound">posBinSpec_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posBinSpec_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posBinSpec_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="structpos_bin_spec__struct_1a253426d09cc662b45818c1460f6e375f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_bin_spec__struct_1a253426d09cc662b45818c1460f6e375f" kindref="member">binNumber</ref>;</highlight></codeline>
+<codeline lineno="140" refid="structpos_bin_spec__struct_1a7b32d2295848612ac6f51a713e24afb6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_bin_spec__struct_1a7b32d2295848612ac6f51a713e24afb6" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="141" refid="structpos_bin_spec__struct_1a136badfedb05959e6ea769e7d777a27a" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_bin_spec__struct_1a136badfedb05959e6ea769e7d777a27a" kindref="member">binSpecification</ref>;</highlight></codeline>
+<codeline lineno="142" refid="structpos_bin_spec__struct_1acf752defc3739e0c619ef85f8c864ddc" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_bin_spec__struct_1acf752defc3739e0c619ef85f8c864ddc" kindref="member">productSpecification</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posBinSpec_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posBinSpec_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posBinSpec<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posBinSpec_struct<sp/>posBinSpec;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="pprspgl_8idl_1a59154147afa2a34ddce767b0be76a966" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_bin_spec__struct" kindref="compound">posBinSpec_struct</ref><sp/><ref refid="pprspgl_8idl_1a59154147afa2a34ddce767b0be76a966" kindref="member">posBinSpec</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosBinSpecSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posBinSpec&gt;<sp/>PosBinSpecSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="pprspgl_8idl_1a3d0030db33d362a5f169af44f525de7b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posBinSpec&gt;<sp/><ref refid="pprspgl_8idl_1a3d0030db33d362a5f169af44f525de7b" kindref="member">PosBinSpecSequence</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="structpos_multi_main_p_d__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_multi_main_p_d__struct" kindref="compound">posMultiMainPD_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posMultiMainPD_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posMultiMainPD_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="structpos_multi_main_p_d__struct_1a7a79321208d8d0ec3ad9b569ed2af7ee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_multi_main_p_d__struct_1a7a79321208d8d0ec3ad9b569ed2af7ee" kindref="member">orderType</ref>;</highlight></codeline>
+<codeline lineno="182" refid="structpos_multi_main_p_d__struct_1adb494b37559675116a47a8aea4b24eae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_multi_main_p_d__struct_1adb494b37559675116a47a8aea4b24eae" kindref="member">mfgLayer</ref>;</highlight></codeline>
+<codeline lineno="183" refid="structpos_multi_main_p_d__struct_1a21982c9bcb22b715558cede125f031f4" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_multi_main_p_d__struct_1a21982c9bcb22b715558cede125f031f4" kindref="member">bom</ref>;</highlight></codeline>
+<codeline lineno="184" refid="structpos_multi_main_p_d__struct_1acbf86c381f6195654af088a0b8256738" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_multi_main_p_d__struct_1acbf86c381f6195654af088a0b8256738" kindref="member">mainProcessDefinition</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posMultiMainPD_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posMultiMainPD_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posMultiMainPD<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posMultiMainPD_struct<sp/>posMultiMainPD;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_multi_main_p_d__struct" kindref="compound">posMultiMainPD_struct</ref><sp/><ref refid="pprspgl_8idl_1a2d2db52346d0ae9b1c2479a4cfe32420" kindref="member">posMultiMainPD</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosMultiMainPDSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posMultiMainPD&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosMultiMainPDSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="pprspgl_8idl_1aefed6d29456dd4f2d286004f3e8cc445" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posMultiMainPD&gt;<sp/><ref refid="pprspgl_8idl_1aefed6d29456dd4f2d286004f3e8cc445" kindref="member">PosMultiMainPDSequence</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosSampleSpecificationSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;PosSampleSpecification&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosSampleSpecificationSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="pprspgl_8idl_1ad9a2925f259d7dfbbddc1023bea17ef5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;PosSampleSpecification&gt;<sp/><ref refid="pprspgl_8idl_1ad9a2925f259d7dfbbddc1023bea17ef5" kindref="member">PosSampleSpecificationSequence</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="pprspgl_8idl_1a4c3bfd98ae1f14d2519888414883d25f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>brProductInfo__170<sp/><ref refid="pprspgl_8idl_1a4c3bfd98ae1f14d2519888414883d25f" kindref="member">spProductInfo</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structpos_source_product_specification_info__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpos_source_product_specification_info__struct" kindref="compound">posSourceProductSpecificationInfo_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posSourceProductSpecificationInfo_struct.initialDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posSourceProductSpecificationInfo_struct.initialDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="structpos_source_product_specification_info__struct_1afa52b178cd61f636c2f972775d45fb59" refkind="member"><highlight class="normal"><sp/><sp/>objectIdentifier<sp/><ref refid="structpos_source_product_specification_info__struct_1afa52b178cd61f636c2f972775d45fb59" kindref="member">sourceProduct</ref>;</highlight></codeline>
+<codeline lineno="240" refid="structpos_source_product_specification_info__struct_1a5313f38b791c8ad2d0344e0d10ce709d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structpos_source_product_specification_info__struct_1a5313f38b791c8ad2d0344e0d10ce709d" kindref="member">priority</ref>;</highlight></codeline>
+<codeline lineno="241" refid="structpos_source_product_specification_info__struct_1ac71e2ec9bf1260c91c7ca122f0985dd5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structpos_source_product_specification_info__struct_1ac71e2ec9bf1260c91c7ca122f0985dd5" kindref="member">customField</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Relationships</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##begin<sp/>posSourceProductSpecificationInfo_struct.additionalDeclarations<sp/>preserve=yes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//##end<sp/>posSourceProductSpecificationInfo_struct.additionalDeclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>posSourceProductSpecificationInfo<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>posSourceProductSpecificationInfo_struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>posSourceProductSpecificationInfo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="pprspgl_8idl_1a8369057fa27350659460dcdb9a4fdbb1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structpos_source_product_specification_info__struct" kindref="compound">posSourceProductSpecificationInfo_struct</ref><sp/><ref refid="pprspgl_8idl_1a8369057fa27350659460dcdb9a4fdbb1" kindref="member">posSourceProductSpecificationInfo</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>PosSourceProductSpecificationInfoSequence<sp/>Documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>sequence&lt;posSourceProductSpecificationInfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>PosSourceProductSpecificationInfoSequence;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Category:<sp/>SiView<sp/>Product<sp/>Specification<sp/>Management<sp/>Component</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//##<sp/>Subsystem:<sp/>Siview<sp/>Product<sp/>Specification<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="pprspgl_8idl_1ab69fbdad35db73a18b5c686fbe5cac9d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sequence&lt;posSourceProductSpecificationInfo&gt;<sp/><ref refid="pprspgl_8idl_1ab69fbdad35db73a18b5c686fbe5cac9d" kindref="member">PosSourceProductSpecificationInfoSequence</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="poscimfw/include/pprspgl.idl"/>
+  </compounddef>
+</doxygen>

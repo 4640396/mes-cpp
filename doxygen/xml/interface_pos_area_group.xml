@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_area_group" kind="interface" language="IDL" prot="public">
+    <compoundname>PosAreaGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pareagr_8idl" local="no">pareagr.idl</includes>
+    <innerclass refid="exception_pos_area_group_1_1_not_authorized_machine_duplicate_signal" prot="public">PosAreaGroup::NotAuthorizedMachineDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_not_authorized_machine_not_found_signal" prot="public">PosAreaGroup::NotAuthorizedMachineNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_work_area_duplicate_signal" prot="public">PosAreaGroup::WorkAreaDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_work_area_not_found_signal" prot="public">PosAreaGroup::WorkAreaNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_person_duplicate_signal" prot="public">PosAreaGroup::PersonDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_person_not_found_signal" prot="public">PosAreaGroup::PersonNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_area_group_1_1_set_area_group_info_failed_signal" prot="public">PosAreaGroup::SetAreaGroupInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_area_group_1a17310353a6202d3ef9824d14811ffa13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::PosAreaGroup_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosAreaGroup_init</name>
+        <qualifiedname>PosAreaGroup::PosAreaGroup_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="209" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1af63bdacf281f9394830e710bd92d9f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosAreaGroup::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="218" column="8"/>
+        <references refid="interface_pos_area_group_1af63bdacf281f9394830e710bd92d9f7c">setIdentifier</references>
+        <referencedby refid="interface_pos_area_group_1af63bdacf281f9394830e710bd92d9f7c">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1aa318e6282c8eeda23902cc47fa5ea6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosAreaGroup::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosAreaGroup::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="224" column="10"/>
+        <references refid="interface_pos_area_group_1aa318e6282c8eeda23902cc47fa5ea6c7">getIdentifier</references>
+        <referencedby refid="interface_pos_area_group_1aa318e6282c8eeda23902cc47fa5ea6c7">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ae6572e5f9111031cae1f08f6da1f0dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosAreaGroup::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="230" column="8"/>
+        <references refid="interface_pos_area_group_1ae6572e5f9111031cae1f08f6da1f0dee">setDescription</references>
+        <referencedby refid="interface_pos_area_group_1ae6572e5f9111031cae1f08f6da1f0dee">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ac73886d97c3c28f0c6a53e2620f479cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosAreaGroup::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosAreaGroup::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="236" column="10"/>
+        <references refid="interface_pos_area_group_1ac73886d97c3c28f0c6a53e2620f479cd">getDescription</references>
+        <referencedby refid="interface_pos_area_group_1ac73886d97c3c28f0c6a53e2620f479cd">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1abdbb443b1dcf7c9ffda22ba91a03d847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::addWorkArea</definition>
+        <argsstring>(in PosArea aWorkArea)</argsstring>
+        <name>addWorkArea</name>
+        <qualifiedname>PosAreaGroup::addWorkArea</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+          <declname>aWorkArea</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_work_area_duplicate_signal" kindref="compound">WorkAreaDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="242" column="8"/>
+        <references refid="interface_pos_area_group_1abdbb443b1dcf7c9ffda22ba91a03d847">addWorkArea</references>
+        <referencedby refid="interface_pos_area_group_1abdbb443b1dcf7c9ffda22ba91a03d847">addWorkArea</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ab738d4f19eb358fb1350bb64064dc1f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::removeWorkArea</definition>
+        <argsstring>(in PosArea aWorkArea)</argsstring>
+        <name>removeWorkArea</name>
+        <qualifiedname>PosAreaGroup::removeWorkArea</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+          <declname>aWorkArea</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_work_area_not_found_signal" kindref="compound">WorkAreaNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="248" column="8"/>
+        <references refid="interface_pos_area_group_1ab738d4f19eb358fb1350bb64064dc1f5">removeWorkArea</references>
+        <referencedby refid="interface_pos_area_group_1ab738d4f19eb358fb1350bb64064dc1f5">removeWorkArea</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1a7b19a55fb2ded8f4342cebf2a1eef5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pfagl_8idl_1a84034f333e7a6b5ee5b9f8e405b5b260" kindref="member">PosAreaSequence</ref></type>
+        <definition>PosAreaSequence PosAreaGroup::allWorkAreas</definition>
+        <argsstring>()</argsstring>
+        <name>allWorkAreas</name>
+        <qualifiedname>PosAreaGroup::allWorkAreas</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="255" column="19"/>
+        <references refid="interface_pos_area_group_1a7b19a55fb2ded8f4342cebf2a1eef5b3">allWorkAreas</references>
+        <referencedby refid="interface_pos_area_group_1a7b19a55fb2ded8f4342cebf2a1eef5b3">allWorkAreas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1a40496509b5e3fe01d78992dc0f349f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area" kindref="compound">PosArea</ref></type>
+        <definition>PosArea PosAreaGroup::findWorkAreaNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findWorkAreaNamed</name>
+        <qualifiedname>PosAreaGroup::findWorkAreaNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="262" column="11"/>
+        <references refid="interface_pos_area_group_1a40496509b5e3fe01d78992dc0f349f0b">findWorkAreaNamed</references>
+        <referencedby refid="interface_pos_area_group_1a40496509b5e3fe01d78992dc0f349f0b">findWorkAreaNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1aa22c80c6cb8f8ceff7784a464f6fb14a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::addNotAuthorizedMachine</definition>
+        <argsstring>(in Machine aNotAuthorizedMachine)</argsstring>
+        <name>addNotAuthorizedMachine</name>
+        <qualifiedname>PosAreaGroup::addNotAuthorizedMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aNotAuthorizedMachine</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_not_authorized_machine_duplicate_signal" kindref="compound">NotAuthorizedMachineDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="269" column="8"/>
+        <references refid="interface_pos_area_group_1aa22c80c6cb8f8ceff7784a464f6fb14a">addNotAuthorizedMachine</references>
+        <referencedby refid="interface_pos_area_group_1aa22c80c6cb8f8ceff7784a464f6fb14a">addNotAuthorizedMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ab655e43157626c11a25e09eaf3c309f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::removeNotAuthorizedMachine</definition>
+        <argsstring>(in Machine aNotAuthorizedMachine)</argsstring>
+        <name>removeNotAuthorizedMachine</name>
+        <qualifiedname>PosAreaGroup::removeNotAuthorizedMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aNotAuthorizedMachine</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_not_authorized_machine_not_found_signal" kindref="compound">NotAuthorizedMachineNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="276" column="8"/>
+        <references refid="interface_pos_area_group_1ab655e43157626c11a25e09eaf3c309f0">removeNotAuthorizedMachine</references>
+        <referencedby refid="interface_pos_area_group_1ab655e43157626c11a25e09eaf3c309f0">removeNotAuthorizedMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1a98a3f8e21098e991e2244e0e57ece56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MachineSequence</type>
+        <definition>MachineSequence PosAreaGroup::allNotAuthorizedMachines</definition>
+        <argsstring>()</argsstring>
+        <name>allNotAuthorizedMachines</name>
+        <qualifiedname>PosAreaGroup::allNotAuthorizedMachines</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="283" column="19"/>
+        <references refid="interface_pos_area_group_1a98a3f8e21098e991e2244e0e57ece56a">allNotAuthorizedMachines</references>
+        <referencedby refid="interface_pos_area_group_1a98a3f8e21098e991e2244e0e57ece56a">allNotAuthorizedMachines</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1a4cb07397e74ab1210b8d4b5c5be12d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Machine</type>
+        <definition>Machine PosAreaGroup::findNotAuthorizedMachineNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findNotAuthorizedMachineNamed</name>
+        <qualifiedname>PosAreaGroup::findNotAuthorizedMachineNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="290" column="11"/>
+        <references refid="interface_pos_area_group_1a4cb07397e74ab1210b8d4b5c5be12d15">findNotAuthorizedMachineNamed</references>
+        <referencedby refid="interface_pos_area_group_1a4cb07397e74ab1210b8d4b5c5be12d15">findNotAuthorizedMachineNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1aef17902c8814b4b7d3927cd174536a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::addPerson</definition>
+        <argsstring>(in PosPerson aPerson)</argsstring>
+        <name>addPerson</name>
+        <qualifiedname>PosAreaGroup::addPerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_person_duplicate_signal" kindref="compound">PersonDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="296" column="8"/>
+        <references refid="interface_pos_area_group_1aef17902c8814b4b7d3927cd174536a90">addPerson</references>
+        <referencedby refid="interface_pos_area_group_1aef17902c8814b4b7d3927cd174536a90">addPerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ae6185c92c7c5dda7f51fc051be413751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::removePerson</definition>
+        <argsstring>(in PosPerson aPosPerson)</argsstring>
+        <name>removePerson</name>
+        <qualifiedname>PosAreaGroup::removePerson</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aPosPerson</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_person_not_found_signal" kindref="compound">PersonNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="302" column="8"/>
+        <references refid="interface_pos_area_group_1ae6185c92c7c5dda7f51fc051be413751">removePerson</references>
+        <referencedby refid="interface_pos_area_group_1ae6185c92c7c5dda7f51fc051be413751">removePerson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1ab646f3ecdf2a9e25cd27f46152b04586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ppsmggl_8idl_1a98b72832b19e1364e77e1b64057efb09" kindref="member">PosPersonSequence</ref></type>
+        <definition>PosPersonSequence PosAreaGroup::allPersons</definition>
+        <argsstring>()</argsstring>
+        <name>allPersons</name>
+        <qualifiedname>PosAreaGroup::allPersons</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="308" column="21"/>
+        <references refid="interface_pos_area_group_1ab646f3ecdf2a9e25cd27f46152b04586">allPersons</references>
+        <referencedby refid="interface_pos_area_group_1ab646f3ecdf2a9e25cd27f46152b04586">allPersons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1abfea42b59632cc29ee6f26d33db64e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosAreaGroup::findPersonNamed</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>findPersonNamed</name>
+        <qualifiedname>PosAreaGroup::findPersonNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="315" column="13"/>
+        <references refid="interface_pos_area_group_1abfea42b59632cc29ee6f26d33db64e76">findPersonNamed</references>
+        <referencedby refid="interface_pos_area_group_1abfea42b59632cc29ee6f26d33db64e76">findPersonNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1af802a9546793ff4686ee732a3201bb32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::removeAllPersons</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPersons</name>
+        <qualifiedname>PosAreaGroup::removeAllPersons</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="321" column="8"/>
+        <references refid="interface_pos_area_group_1af802a9546793ff4686ee732a3201bb32">removeAllPersons</references>
+        <referencedby refid="interface_pos_area_group_1af802a9546793ff4686ee732a3201bb32">removeAllPersons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_group_1aaad5780f41a1b62320e5252d51dfdf19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosAreaGroup::setAreaGroupInfo</definition>
+        <argsstring>(in brAreaGroupInfo anAreaGroupInfo)</argsstring>
+        <name>setAreaGroupInfo</name>
+        <qualifiedname>PosAreaGroup::setAreaGroupInfo</qualifiedname>
+        <param>
+          <type>in brAreaGroupInfo</type>
+          <declname>anAreaGroupInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_group_1_1_set_area_group_info_failed_signal" kindref="compound">SetAreaGroupInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pareagr.idl" line="327" column="8"/>
+        <references refid="interface_pos_area_group_1aaad5780f41a1b62320e5252d51dfdf19">setAreaGroupInfo</references>
+        <referencedby refid="interface_pos_area_group_1aaad5780f41a1b62320e5252d51dfdf19">setAreaGroupInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosAreaGroup</label>
+        <link refid="interface_pos_area_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosAreaGroup</label>
+        <link refid="interface_pos_area_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pareagr.idl" line="45" column="11" bodyfile="poscimfw/include/pareagr.idl" bodystart="46" bodyend="335"/>
+    <listofallmembers>
+      <member refid="interface_pos_area_group_1aa22c80c6cb8f8ceff7784a464f6fb14a" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>addNotAuthorizedMachine</name></member>
+      <member refid="interface_pos_area_group_1aef17902c8814b4b7d3927cd174536a90" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>addPerson</name></member>
+      <member refid="interface_pos_area_group_1abdbb443b1dcf7c9ffda22ba91a03d847" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>addWorkArea</name></member>
+      <member refid="interface_pos_area_group_1a98a3f8e21098e991e2244e0e57ece56a" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>allNotAuthorizedMachines</name></member>
+      <member refid="interface_pos_area_group_1ab646f3ecdf2a9e25cd27f46152b04586" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>allPersons</name></member>
+      <member refid="interface_pos_area_group_1a7b19a55fb2ded8f4342cebf2a1eef5b3" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>allWorkAreas</name></member>
+      <member refid="interface_pos_area_group_1a4cb07397e74ab1210b8d4b5c5be12d15" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>findNotAuthorizedMachineNamed</name></member>
+      <member refid="interface_pos_area_group_1abfea42b59632cc29ee6f26d33db64e76" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>findPersonNamed</name></member>
+      <member refid="interface_pos_area_group_1a40496509b5e3fe01d78992dc0f349f0b" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>findWorkAreaNamed</name></member>
+      <member refid="interface_pos_area_group_1ac73886d97c3c28f0c6a53e2620f479cd" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>getDescription</name></member>
+      <member refid="interface_pos_area_group_1aa318e6282c8eeda23902cc47fa5ea6c7" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_area_group_1a17310353a6202d3ef9824d14811ffa13" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>PosAreaGroup_init</name></member>
+      <member refid="interface_pos_area_group_1af802a9546793ff4686ee732a3201bb32" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>removeAllPersons</name></member>
+      <member refid="interface_pos_area_group_1ab655e43157626c11a25e09eaf3c309f0" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>removeNotAuthorizedMachine</name></member>
+      <member refid="interface_pos_area_group_1ae6185c92c7c5dda7f51fc051be413751" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>removePerson</name></member>
+      <member refid="interface_pos_area_group_1ab738d4f19eb358fb1350bb64064dc1f5" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>removeWorkArea</name></member>
+      <member refid="interface_pos_area_group_1aaad5780f41a1b62320e5252d51dfdf19" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>setAreaGroupInfo</name></member>
+      <member refid="interface_pos_area_group_1ae6572e5f9111031cae1f08f6da1f0dee" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>setDescription</name></member>
+      <member refid="interface_pos_area_group_1af63bdacf281f9394830e710bd92d9f7c" prot="public" virt="non-virtual"><scope>PosAreaGroup</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

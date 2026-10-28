@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_dispatcher" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDispatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Dispatcher</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pdp_8idl" local="no">pdp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_dispatcher_1ab356f3f6945bc166ea21f4f40648f658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::addToQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>addToQueue</name>
+        <qualifiedname>PosDispatcher::addToQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a6ec011d07d677cd9d09ccbf9d517e95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::removeFromQueue</definition>
+        <argsstring>(in PosLot aLot)</argsstring>
+        <name>removeFromQueue</name>
+        <qualifiedname>PosDispatcher::removeFromQueue</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_lot" kindref="compound">PosLot</ref></type>
+          <declname>aLot</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a897c04dbdc3a9326728dfe7c73956bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a3be32f8ef72343990fff55f1caec7add" kindref="member">posEffectiveWhatNextLogic</ref></type>
+        <definition>posEffectiveWhatNextLogic PosDispatcher::currentWhatNextForMachine</definition>
+        <argsstring>()</argsstring>
+        <name>currentWhatNextForMachine</name>
+        <qualifiedname>PosDispatcher::currentWhatNextForMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="91" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" kindref="member">PosEffectiveWhatNextLogicSequence</ref></type>
+        <definition>PosEffectiveWhatNextLogicSequence PosDispatcher::getEffectiveWhatNextLogic</definition>
+        <argsstring>()</argsstring>
+        <name>getEffectiveWhatNextLogic</name>
+        <qualifiedname>PosDispatcher::getEffectiveWhatNextLogic</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="98" column="37"/>
+        <references refid="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65">getEffectiveWhatNextLogic</references>
+        <referencedby refid="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65">getEffectiveWhatNextLogic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::setEffectiveWhatNextLogic</definition>
+        <argsstring>(in PosEffectiveWhatNextLogicSequence effectiveWhatNextLogic)</argsstring>
+        <name>setEffectiveWhatNextLogic</name>
+        <qualifiedname>PosDispatcher::setEffectiveWhatNextLogic</qualifiedname>
+        <param>
+          <type>in <ref refid="pdpgl_8idl_1a943977ce160ec40153aa990af9edcb53" kindref="member">PosEffectiveWhatNextLogicSequence</ref></type>
+          <declname>effectiveWhatNextLogic</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="108" column="8"/>
+        <references refid="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732">setEffectiveWhatNextLogic</references>
+        <referencedby refid="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732">setEffectiveWhatNextLogic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::PosDispatcher_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosDispatcher_init</name>
+        <qualifiedname>PosDispatcher::PosDispatcher_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="114" column="8"/>
+        <references refid="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea">PosDispatcher_init</references>
+        <referencedby refid="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea">PosDispatcher_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DispatchDecisionSequence</type>
+        <definition>DispatchDecisionSequence PosDispatcher::whatNextHoldLotForMachine</definition>
+        <argsstring>(in Machine aMachine)</argsstring>
+        <name>whatNextHoldLotForMachine</name>
+        <qualifiedname>PosDispatcher::whatNextHoldLotForMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DispatchableObjectNotInScopeSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="121" column="28"/>
+        <references refid="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04">whatNextHoldLotForMachine</references>
+        <referencedby refid="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04">whatNextHoldLotForMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDispatcher::getNextControlJobIdentifier</definition>
+        <argsstring>(in string equipmentID)</argsstring>
+        <name>getNextControlJobIdentifier</name>
+        <qualifiedname>PosDispatcher::getNextControlJobIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="128" column="10"/>
+        <references refid="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3">getNextControlJobIdentifier</references>
+        <referencedby refid="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3">getNextControlJobIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref></type>
+        <definition>posLastControlJob PosDispatcher::findLastControlJobFor</definition>
+        <argsstring>(in string equipmentID)</argsstring>
+        <name>findLastControlJobFor</name>
+        <qualifiedname>PosDispatcher::findLastControlJobFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="134" column="21"/>
+        <references refid="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da">findLastControlJobFor</references>
+        <referencedby refid="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da">findLastControlJobFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" kindref="member">PosLastControlJobSequence</ref></type>
+        <definition>PosLastControlJobSequence PosDispatcher::allLastControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>allLastControlJobs</name>
+        <qualifiedname>PosDispatcher::allLastControlJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="140" column="29"/>
+        <references refid="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847">allLastControlJobs</references>
+        <referencedby refid="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847">allLastControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::setLastControlJob</definition>
+        <argsstring>(in string equipmentID, in posLastControlJob aLastControlJob)</argsstring>
+        <name>setLastControlJob</name>
+        <qualifiedname>PosDispatcher::setLastControlJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <param>
+          <type>in <ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref></type>
+          <declname>aLastControlJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="146" column="8"/>
+        <references refid="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7">setLastControlJob</references>
+        <referencedby refid="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7">setLastControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDispatcher::getNextDurableControlJobIdentifier</definition>
+        <argsstring>(in string equipmentID)</argsstring>
+        <name>getNextDurableControlJobIdentifier</name>
+        <qualifiedname>PosDispatcher::getNextDurableControlJobIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="154" column="10"/>
+        <references refid="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf">getNextDurableControlJobIdentifier</references>
+        <referencedby refid="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf">getNextDurableControlJobIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref></type>
+        <definition>posLastControlJob PosDispatcher::findLastDurableControlJobFor</definition>
+        <argsstring>(in string equipmentID)</argsstring>
+        <name>findLastDurableControlJobFor</name>
+        <qualifiedname>PosDispatcher::findLastDurableControlJobFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="160" column="21"/>
+        <references refid="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb">findLastDurableControlJobFor</references>
+        <referencedby refid="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb">findLastDurableControlJobFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdpgl_8idl_1a49ae34e6ad7bf4bbea2281db1c4f0b7c" kindref="member">PosLastControlJobSequence</ref></type>
+        <definition>PosLastControlJobSequence PosDispatcher::allLastDurableControlJobs</definition>
+        <argsstring>()</argsstring>
+        <name>allLastDurableControlJobs</name>
+        <qualifiedname>PosDispatcher::allLastDurableControlJobs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="167" column="29"/>
+        <references refid="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c">allLastDurableControlJobs</references>
+        <referencedby refid="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c">allLastDurableControlJobs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDispatcher::setLastDurableControlJob</definition>
+        <argsstring>(in string equipmentID, in posLastControlJob aLastControlJob)</argsstring>
+        <name>setLastDurableControlJob</name>
+        <qualifiedname>PosDispatcher::setLastDurableControlJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>equipmentID</declname>
+        </param>
+        <param>
+          <type>in <ref refid="pdpgl_8idl_1a76689e04c031ce10c26a43e405770d0f" kindref="member">posLastControlJob</ref></type>
+          <declname>aLastControlJob</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="174" column="8"/>
+        <references refid="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32">setLastDurableControlJob</references>
+        <referencedby refid="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32">setLastDurableControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DispatchDecisionSequence</type>
+        <definition>DispatchDecisionSequence PosDispatcher::whatNextDurableForMachine</definition>
+        <argsstring>(in Machine aMachine, in string durableCategory)</argsstring>
+        <name>whatNextDurableForMachine</name>
+        <qualifiedname>PosDispatcher::whatNextDurableForMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DispatchableObjectNotInScopeSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="182" column="28"/>
+        <references refid="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b">whatNextDurableForMachine</references>
+        <referencedby refid="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b">whatNextDurableForMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DispatchDecisionSequence</type>
+        <definition>DispatchDecisionSequence PosDispatcher::whatNextHoldDurableForMachine</definition>
+        <argsstring>(in Machine aMachine, in string durableCategory)</argsstring>
+        <name>whatNextHoldDurableForMachine</name>
+        <qualifiedname>PosDispatcher::whatNextHoldDurableForMachine</qualifiedname>
+        <param>
+          <type>in Machine</type>
+          <declname>aMachine</declname>
+        </param>
+        <param>
+          <type>in string</type>
+          <declname>durableCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DispatchableObjectNotInScopeSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdp.idl" line="189" column="28"/>
+        <references refid="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d">whatNextHoldDurableForMachine</references>
+        <referencedby refid="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d">whatNextHoldDurableForMachine</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Dispatcher</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDispatcher</label>
+        <link refid="interface_pos_dispatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Dispatcher</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDispatcher</label>
+        <link refid="interface_pos_dispatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdp.idl" line="49" column="11" bodyfile="poscimfw/include/pdp.idl" bodystart="49" bodyend="197"/>
+    <listofallmembers>
+      <member refid="interface_pos_dispatcher_1ab356f3f6945bc166ea21f4f40648f658" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>addToQueue</name></member>
+      <member refid="interface_pos_dispatcher_1a1016ec5068365f306dfb3e17d51ef847" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>allLastControlJobs</name></member>
+      <member refid="interface_pos_dispatcher_1a2bc3d4008e00cb87a6f95dfaca3d906c" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>allLastDurableControlJobs</name></member>
+      <member refid="interface_pos_dispatcher_1a897c04dbdc3a9326728dfe7c73956bf9" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>currentWhatNextForMachine</name></member>
+      <member refid="interface_pos_dispatcher_1a8f678952727fe4064856b2a4eb5c20da" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>findLastControlJobFor</name></member>
+      <member refid="interface_pos_dispatcher_1a5bf72f53da6ff0218c9eeca2de3a96bb" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>findLastDurableControlJobFor</name></member>
+      <member refid="interface_pos_dispatcher_1a9260763629b6a67080e1a8b92b9dfc65" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>getEffectiveWhatNextLogic</name></member>
+      <member refid="interface_pos_dispatcher_1a39b422e7699e03cd46a7eb04c7b219f3" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>getNextControlJobIdentifier</name></member>
+      <member refid="interface_pos_dispatcher_1a8eacc121060fc1e1905ef93bf07780cf" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>getNextDurableControlJobIdentifier</name></member>
+      <member refid="interface_pos_dispatcher_1afa07e97417a9067a164b2113bcee35ea" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>PosDispatcher_init</name></member>
+      <member refid="interface_pos_dispatcher_1a6ec011d07d677cd9d09ccbf9d517e95f" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>removeFromQueue</name></member>
+      <member refid="interface_pos_dispatcher_1a889acf6d790347ef533f592ec3a4d732" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>setEffectiveWhatNextLogic</name></member>
+      <member refid="interface_pos_dispatcher_1a14dc062d5c6d84d0d434dfcd4564d7e7" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>setLastControlJob</name></member>
+      <member refid="interface_pos_dispatcher_1a77aae773283f60492a507836e3cdce32" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>setLastDurableControlJob</name></member>
+      <member refid="interface_pos_dispatcher_1abb0dc2c42a30de07e624aa56d11ad33b" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>whatNextDurableForMachine</name></member>
+      <member refid="interface_pos_dispatcher_1a73f669bcf5d09bb097d22a89d347c45d" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>whatNextHoldDurableForMachine</name></member>
+      <member refid="interface_pos_dispatcher_1aa812f3d27c8a662d0caba88e757c0d04" prot="public" virt="non-virtual"><scope>PosDispatcher</scope><name>whatNextHoldLotForMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

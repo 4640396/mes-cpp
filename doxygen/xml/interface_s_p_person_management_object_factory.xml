@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_s_p_person_management_object_factory" kind="interface" language="IDL" prot="public">
+    <compoundname>SPPersonManagementObjectFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWPersonManagementObjectFactory</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_TransManagedObjectFactory</basecompoundref>
+    <includes refid="prsnmnsp_8idl" local="no">prsnmnsp.idl</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_p_person_management_object_factory_1afec5697ae2d5ef7323c78ff27062591c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_area_group" kindref="compound">PosAreaGroup</ref></type>
+        <definition>PosAreaGroup SPPersonManagementObjectFactory::newPosAreaGroup</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosAreaGroup</name>
+        <qualifiedname>SPPersonManagementObjectFactory::newPosAreaGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prsnmnsp.idl" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_person_management_object_factory_1aa8b4b24e9c7d31e7871a7cf5aaf28508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_privilege_group" kindref="compound">PosPrivilegeGroup</ref></type>
+        <definition>PosPrivilegeGroup SPPersonManagementObjectFactory::newPosPrivilegeGroup</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosPrivilegeGroup</name>
+        <qualifiedname>SPPersonManagementObjectFactory::newPosPrivilegeGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prsnmnsp.idl" line="38" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_p_person_management_object_factory_1a3e2c8b7144b6a28a05dcc13449ff1897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_user_group" kindref="compound">PosUserGroup</ref></type>
+        <definition>PosUserGroup SPPersonManagementObjectFactory::newPosUserGroup</definition>
+        <argsstring>(in string systemKey)</argsstring>
+        <name>newPosUserGroup</name>
+        <qualifiedname>SPPersonManagementObjectFactory::newPosUserGroup</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>systemKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/prsnmnsp.idl" line="40" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWPersonManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPPersonManagementObjectFactory</label>
+        <link refid="interface_s_p_person_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWPersonManagementObjectFactory</label>
+      </node>
+      <node id="3">
+        <label>MOFW_TransManagedObjectFactory</label>
+      </node>
+      <node id="1">
+        <label>SPPersonManagementObjectFactory</label>
+        <link refid="interface_s_p_person_management_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/prsnmnsp.idl" line="33" column="11" bodyfile="poscimfw/include/prsnmnsp.idl" bodystart="34" bodyend="41"/>
+    <listofallmembers>
+      <member refid="interface_s_p_person_management_object_factory_1afec5697ae2d5ef7323c78ff27062591c" prot="public" virt="non-virtual"><scope>SPPersonManagementObjectFactory</scope><name>newPosAreaGroup</name></member>
+      <member refid="interface_s_p_person_management_object_factory_1aa8b4b24e9c7d31e7871a7cf5aaf28508" prot="public" virt="non-virtual"><scope>SPPersonManagementObjectFactory</scope><name>newPosPrivilegeGroup</name></member>
+      <member refid="interface_s_p_person_management_object_factory_1a3e2c8b7144b6a28a05dcc13449ff1897" prot="public" virt="non-virtual"><scope>SPPersonManagementObjectFactory</scope><name>newPosUserGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

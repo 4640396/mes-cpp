@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_property_set" kind="interface" language="IDL" prot="public">
+    <compoundname>PosPropertySet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CIMFWBO</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="ppptset_8idl" local="no">ppptset.idl</includes>
+    <innerclass refid="exception_pos_property_set_1_1_invalid_data_type_signal" prot="public">PosPropertySet::InvalidDataTypeSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_property_set_1ade673657080eb45703dcb2961eedf9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertySet::removeProperty</definition>
+        <argsstring>(in PosPropertyBase property)</argsstring>
+        <name>removeProperty</name>
+        <qualifiedname>PosPropertySet::removeProperty</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_property_base" kindref="compound">PosPropertyBase</ref></type>
+          <declname>property</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="95" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_1ae00c399106e6f236d3f98b17e64125b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pabclgl_8idl_1a326b51ee2048abb8190a76dab59a718d" kindref="member">PosPropertySequence</ref></type>
+        <definition>PosPropertySequence PosPropertySet::allProperties</definition>
+        <argsstring>()</argsstring>
+        <name>allProperties</name>
+        <qualifiedname>PosPropertySet::allProperties</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="101" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_1a79467ce095f05b472ccac2ff97d36d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_base" kindref="compound">PosPropertyBase</ref></type>
+        <definition>PosPropertyBase PosPropertySet::findPropertyNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findPropertyNamed</name>
+        <qualifiedname>PosPropertySet::findPropertyNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="108" column="19"/>
+        <references refid="interface_pos_property_set_1a79467ce095f05b472ccac2ff97d36d64">findPropertyNamed</references>
+        <referencedby refid="interface_pos_property_set_1a79467ce095f05b472ccac2ff97d36d64">findPropertyNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_1a749c7ca8ccf83d030c6ca5213939b621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertySet::PosPropertySet_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosPropertySet_init</name>
+        <qualifiedname>PosPropertySet::PosPropertySet_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="111" column="8"/>
+        <references refid="interface_pos_property_set_1a749c7ca8ccf83d030c6ca5213939b621">PosPropertySet_init</references>
+        <referencedby refid="interface_pos_property_set_1a749c7ca8ccf83d030c6ca5213939b621">PosPropertySet_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_1a1914355c6302e71a55105a7ae434183d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_base" kindref="compound">PosPropertyBase</ref></type>
+        <definition>PosPropertyBase PosPropertySet::createPropertyNamed</definition>
+        <argsstring>(in string identifier, in posPropertyType dataType)</argsstring>
+        <name>createPropertyNamed</name>
+        <qualifiedname>PosPropertySet::createPropertyNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type>in <ref refid="pabclgl_8idl_1a9a9de5057fff63b3ad797d42724bd216" kindref="member">posPropertyType</ref></type>
+          <declname>dataType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal, <ref refid="exception_pos_property_set_1_1_invalid_data_type_signal" kindref="compound">InvalidDataTypeSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="121" column="19"/>
+        <references refid="interface_pos_property_set_1a1914355c6302e71a55105a7ae434183d">createPropertyNamed</references>
+        <referencedby refid="interface_pos_property_set_1a1914355c6302e71a55105a7ae434183d">createPropertyNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_property_set_1ac6299b6dab337155d749b6c294641e49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosPropertySet::removeAllProperties</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllProperties</name>
+        <qualifiedname>PosPropertySet::removeAllProperties</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ppptset.idl" line="128" column="8"/>
+        <references refid="interface_pos_property_set_1ac6299b6dab337155d749b6c294641e49">removeAllProperties</references>
+        <referencedby refid="interface_pos_property_set_1ac6299b6dab337155d749b6c294641e49">removeAllProperties</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPropertySet</label>
+        <link refid="interface_pos_property_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CIMFWBO</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosPropertySet</label>
+        <link refid="interface_pos_property_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ppptset.idl" line="53" column="11" bodyfile="poscimfw/include/ppptset.idl" bodystart="53" bodyend="136"/>
+    <listofallmembers>
+      <member refid="interface_pos_property_set_1ae00c399106e6f236d3f98b17e64125b8" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>allProperties</name></member>
+      <member refid="interface_pos_property_set_1a1914355c6302e71a55105a7ae434183d" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>createPropertyNamed</name></member>
+      <member refid="interface_pos_property_set_1a79467ce095f05b472ccac2ff97d36d64" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>findPropertyNamed</name></member>
+      <member refid="interface_pos_property_set_1a749c7ca8ccf83d030c6ca5213939b621" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>PosPropertySet_init</name></member>
+      <member refid="interface_pos_property_set_1ac6299b6dab337155d749b6c294641e49" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>removeAllProperties</name></member>
+      <member refid="interface_pos_property_set_1ade673657080eb45703dcb2961eedf9ae" prot="public" virt="non-virtual"><scope>PosPropertySet</scope><name>removeProperty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

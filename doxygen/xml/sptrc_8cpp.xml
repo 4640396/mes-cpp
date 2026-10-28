@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="sptrc_8cpp" kind="file" language="C++">
+    <compoundname>sptrc.cpp</compoundname>
+    <includes local="no">iostream.h</includes>
+    <includes local="yes">cimfwnam.hpp</includes>
+    <includes local="yes">tracebuf.hpp</includes>
+    <includes local="yes">sptrc.hpp</includes>
+    <includes local="yes">cimfwbo.hh</includes>
+    <includes local="no">CORBA.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>CORBA.h</label>
+      </node>
+      <node id="1">
+        <label>smtchcmf/frmwrkgl/sptrc.cpp</label>
+        <link refid="sptrc_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cimfwbo.hh</label>
+      </node>
+      <node id="3">
+        <label>cimfwnam.hpp</label>
+      </node>
+      <node id="2">
+        <label>iostream.h</label>
+      </node>
+      <node id="5">
+        <label>sptrc.hpp</label>
+      </node>
+      <node id="4">
+        <label>tracebuf.hpp</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="sptrc_8cpp_1a38fbd0abe06b44b8074d63f369c4b686" prot="public" static="no">
+        <name>COMPONENTS_DECLARE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="24" column="9" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="sptrc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* sccsid</definition>
+        <argsstring></argsstring>
+        <name>sccsid</name>
+        <initializer>=  &quot;@(#) 1.1 superpos/src/spbase/source/smtchcmf/frmwrkgl/sptrc.cpp, mm_srv_90e_base, mm_srv_90e_base 7/13/07 19:37:02 [ 7/13/07 19:37:03 ]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="2" column="13" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="sptrc_8cpp_1af50aa550fae9ee4b15ae3c5bab3bb75e" prot="public" static="no" mutable="no">
+        <type>FrameWorkComponentTrace</type>
+        <definition>FrameWorkComponentTrace components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="34" column="33" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="sptrc_8cpp_1a320fb7cbe4458ef1ba48487517c10fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spfw_refcountcheck</definition>
+        <argsstring>(CIMFWBO_ptr anObj, void *aThis)</argsstring>
+        <name>spfw_refcountcheck</name>
+        <param>
+          <type>CIMFWBO_ptr</type>
+          <declname>anObj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>aThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="51" column="6" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="51" bodyend="68"/>
+        <references refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" compoundref="standardoutlogger_8cpp" startline="242" endline="246">endl</references>
+        <references refid="_i_i_o_p_helper_8hpp_1a2029c70cf0904f1e273f86f8c7093380" compoundref="_i_i_o_p_helper_8hpp" startline="37">SP_OBJECT_TO_STRING</references>
+        <references refid="sptrc_8cpp_1a320fb7cbe4458ef1ba48487517c10fec" compoundref="sptrc_8cpp" startline="51" endline="68">spfw_refcountcheck</references>
+        <referencedby refid="sptrc_8cpp_1a320fb7cbe4458ef1ba48487517c10fec" compoundref="sptrc_8cpp" startline="51" endline="68">spfw_refcountcheck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sptrc_8cpp_1a5ed9981da6e13ecfc3bfd42bd972e038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spfw_methodtraceentry</definition>
+        <argsstring>(const char *methodName, void *aThis)</argsstring>
+        <name>spfw_methodtraceentry</name>
+        <param>
+          <type>const char *</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>aThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="71" column="6" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="71" bodyend="87"/>
+        <references refid="time_8cpp_1a7d78bd551c9e66e605c389e3d13e0da7">PosTraceOn</references>
+        <references refid="sptrc_8cpp_1a5ed9981da6e13ecfc3bfd42bd972e038" compoundref="sptrc_8cpp" startline="71" endline="87">spfw_methodtraceentry</references>
+        <referencedby refid="sptrc_8cpp_1a5ed9981da6e13ecfc3bfd42bd972e038" compoundref="sptrc_8cpp" startline="71" endline="87">spfw_methodtraceentry</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sptrc_8cpp_1abb8603f0d1ad12becdc2241c2aacd550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spfw_methodtraceexit</definition>
+        <argsstring>(const char *methodName, void *aThis)</argsstring>
+        <name>spfw_methodtraceexit</name>
+        <param>
+          <type>const char *</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>aThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="smtchcmf/frmwrkgl/sptrc.cpp" line="89" column="6" bodyfile="smtchcmf/frmwrkgl/sptrc.cpp" bodystart="89" bodyend="103"/>
+        <references refid="time_8cpp_1a7d78bd551c9e66e605c389e3d13e0da7">PosTraceOn</references>
+        <references refid="sptrc_8cpp_1abb8603f0d1ad12becdc2241c2aacd550" compoundref="sptrc_8cpp" startline="89" endline="103">spfw_methodtraceexit</references>
+        <referencedby refid="sptrc_8cpp_1abb8603f0d1ad12becdc2241c2aacd550" compoundref="sptrc_8cpp" startline="89" endline="103">spfw_methodtraceexit</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>lint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="sptrc_8cpp_1ad23518eed5dff906b3a6f24e63edf414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="gen_i_o_r_8cpp_1ad23518eed5dff906b3a6f24e63edf414" kindref="member">sccsid</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;@(#)<sp/>1.1<sp/>superpos/src/spbase/source/smtchcmf/frmwrkgl/sptrc.cpp,<sp/>mm_srv_90e_base,<sp/>mm_srv_90e_base<sp/>7/13/07<sp/>19:37:02<sp/>[<sp/>7/13/07<sp/>19:37:03<sp/>]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>IBM<sp/>Japan<sp/>Services<sp/>Company<sp/>Ltd,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>Copyright:<sp/>International<sp/>Business<sp/>Machines<sp/>Corporation,<sp/>1997,<sp/>2008.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperPOSEIDON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/>FWGlobls.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>history:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Date<sp/><sp/><sp/><sp/>Defect#<sp/><sp/>Person<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//---------<sp/>--------<sp/>--------------<sp/>--------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>06/12/97<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A.<sp/>S.<sp/>Chauhan<sp/><sp/>New<sp/>Release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>04/26/99<sp/>D9900016<sp/>Y.Yamaguchi<sp/><sp/><sp/><sp/>Support<sp/>IIOP<sp/>(object_to_string<sp/>to<sp/>SP_OBJECT_TO_STRING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>12/02/99<sp/>D9900016<sp/>K.Kindoh<sp/><sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace_str_mm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>11/17/04<sp/>D6000025<sp/>K.Murakami<sp/><sp/><sp/><sp/><sp/>Add<sp/>&lt;corba.h&gt;<sp/>for<sp/>eBrokerMigration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>CIMFWTRACE_DECLARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPFWTRACE_DECLARE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="sptrc_8cpp_1a38fbd0abe06b44b8074d63f369c4b686" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMPONENTS_DECLARE<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>kk<sp/>for<sp/>shared<sp/>lib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwnam.hpp&quot;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>kk<sp/>for<sp/>shared<sp/>lib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tracebuf.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="sptrc_8cpp_1af50aa550fae9ee4b15ae3c5bab3bb75e" refkind="member"><highlight class="normal">FrameWorkComponentTrace<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sptrc_8cpp_1af50aa550fae9ee4b15ae3c5bab3bb75e" kindref="member">components</ref><sp/>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>kk<sp/>for<sp/>shared<sp/>lib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sptrc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cimfwbo.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spsystrc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EBROKER<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;corba.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CORBA.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D6000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#ifdef<sp/>SPFW_REFCOUNT_CHEECK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="sptrc_8cpp_1a320fb7cbe4458ef1ba48487517c10fec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sptrc_8cpp_1a320fb7cbe4458ef1ba48487517c10fec" kindref="member">spfw_refcountcheck</ref>(<sp/>CIMFWBO_ptr<sp/>anObj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>aThis){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>this<sp/>routine<sp/>is<sp/>debug<sp/>purpose<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>CORBA::is_nil(<sp/>anObj)<sp/>){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>anObj-&gt;_refCount()<sp/>&lt;<sp/>100<sp/>){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;######<sp/>Rference<sp/>count<sp/>short<sp/>refCount:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>anObj-&gt;_refCount()<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="_i_i_o_p_helper_8hpp_1a2029c70cf0904f1e273f86f8c7093380" kindref="member">SP_OBJECT_TO_STRING</ref>(anObj)<sp/>&lt;&lt;<sp/><ref refid="standardoutlogger_8cpp_1aeed153fbc5ef4b688f9bb110b61e07a2" kindref="member">endl</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace2(<sp/>SPSYSTRCID_MM_FATAL_ERROR,<sp/>aThis,<sp/></highlight><highlight class="stringliteral">&quot;too<sp/>little<sp/>refCount&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>spfw_referencecountcheck</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="sptrc_8cpp_1a5ed9981da6e13ecfc3bfd42bd972e038" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sptrc_8cpp_1a5ed9981da6e13ecfc3bfd42bd972e038" kindref="member">spfw_methodtraceentry</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>methodName,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>aThis<sp/>){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>nTraceVariableCountForDebug<sp/>=<sp/>0<sp/>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace2(<sp/>SPSYSTRCID_MM_METHOD_ENTRY,<sp/>aThis,<sp/>(void*)methodName);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace_str_mm(<sp/></highlight><highlight class="stringliteral">&quot;--&gt;&quot;</highlight><highlight class="normal">,<sp/>aThis,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)methodName);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="time_8cpp_1a7d78bd551c9e66e605c389e3d13e0da7" kindref="member">PosTraceOn</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_TRACE_THREAD_INFO<sp/>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Entering<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>methodName<sp/>==<sp/>NULL<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>:<sp/>methodName<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DisplayTime<sp/>aTime(&quot;Entry<sp/>time<sp/>is&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DisplayTime<sp/>aTime(</highlight><highlight class="stringliteral">&quot;<sp/>at<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>spfw_methodtraceentry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="sptrc_8cpp_1abb8603f0d1ad12becdc2241c2aacd550" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sptrc_8cpp_1abb8603f0d1ad12becdc2241c2aacd550" kindref="member">spfw_methodtraceexit</ref>(<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>methodName,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>aThis){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_AIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace2(<sp/>SPSYSTRCID_MM_METHOD_EXIT<sp/>,<sp/>aThis,<sp/>(void*)methodName);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sp_sys_trace_str_mm(<sp/></highlight><highlight class="stringliteral">&quot;&lt;--&quot;</highlight><highlight class="normal">,<sp/>aThis,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)methodName);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="time_8cpp_1a7d78bd551c9e66e605c389e3d13e0da7" kindref="member">PosTraceOn</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPFW_TRACE_THREAD_INFO<sp/>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Exiting<sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>methodName<sp/>==<sp/>NULL<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>:<sp/>methodName<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>DisplayTime<sp/>aTime(&quot;EXIT<sp/>time<sp/>is&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DisplayTime<sp/>aTime(</highlight><highlight class="stringliteral">&quot;<sp/>at<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>spfw_methodtraceexit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="smtchcmf/frmwrkgl/sptrc.cpp"/>
+  </compounddef>
+</doxygen>

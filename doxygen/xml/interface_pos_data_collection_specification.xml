@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_data_collection_specification" kind="interface" language="IDL" prot="public">
+    <compoundname>PosDataCollectionSpecification</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DataCollectionSpecification</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pdcsp_8idl" local="no">pdcsp.idl</includes>
+    <innerclass refid="exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal" prot="public">PosDataCollectionSpecification::SetDCSpecificationInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal" prot="public">PosDataCollectionSpecification::DCItemSpecificationDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal" prot="public">PosDataCollectionSpecification::DCItemSpecificationNotFoundSignal</innerclass>
+    <innerclass refid="exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal" prot="public">PosDataCollectionSpecification::DataCollectionDefinitionDuplicateSignal</innerclass>
+    <innerclass refid="exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal" prot="public">PosDataCollectionSpecification::DataCollectionDefinitionNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1af60cd6de21b655742b57f2002216ac0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::PosDataCollectionSpecification_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosDataCollectionSpecification_init</name>
+        <qualifiedname>PosDataCollectionSpecification::PosDataCollectionSpecification_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="173" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a32a9875cd1289963c0ff92ad8e303a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosDataCollectionSpecification::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="180" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1a32a9875cd1289963c0ff92ad8e303a1c">setDescription</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a32a9875cd1289963c0ff92ad8e303a1c">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a623369e000fd234d1ccf41d8b984b376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDataCollectionSpecification::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosDataCollectionSpecification::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="187" column="10"/>
+        <references refid="interface_pos_data_collection_specification_1a623369e000fd234d1ccf41d8b984b376">getDescription</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a623369e000fd234d1ccf41d8b984b376">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a15401d751944d62b8c7bbed9ce9063db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::addDCSpec</definition>
+        <argsstring>(in posDCItemSpecification dcItemSpecification)</argsstring>
+        <name>addDCSpec</name>
+        <qualifiedname>PosDataCollectionSpecification::addDCSpec</qualifiedname>
+        <param>
+          <type>in <ref refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" kindref="member">posDCItemSpecification</ref></type>
+          <declname>dcItemSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_d_c_item_specification_duplicate_signal" kindref="compound">DCItemSpecificationDuplicateSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="193" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1a15401d751944d62b8c7bbed9ce9063db">addDCSpec</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a15401d751944d62b8c7bbed9ce9063db">addDCSpec</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ae33a3785d045bdbf6013c65c85bfb2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::removeDCSpec</definition>
+        <argsstring>(in posDCItemSpecification dcItemSpecification)</argsstring>
+        <name>removeDCSpec</name>
+        <qualifiedname>PosDataCollectionSpecification::removeDCSpec</qualifiedname>
+        <param>
+          <type>in <ref refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" kindref="member">posDCItemSpecification</ref></type>
+          <declname>dcItemSpecification</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_d_c_item_specification_not_found_signal" kindref="compound">DCItemSpecificationNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="199" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1ae33a3785d045bdbf6013c65c85bfb2cf">removeDCSpec</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ae33a3785d045bdbf6013c65c85bfb2cf">removeDCSpec</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a53cae30c2bc80a01119b135fdbdd5946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdcmggl_8idl_1a3f0308ed00c6661ad9e04befad94f020" kindref="member">PosDCItemSpecificationSequence</ref></type>
+        <definition>PosDCItemSpecificationSequence PosDataCollectionSpecification::allDCSpecs</definition>
+        <argsstring>()</argsstring>
+        <name>allDCSpecs</name>
+        <qualifiedname>PosDataCollectionSpecification::allDCSpecs</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="206" column="34"/>
+        <references refid="interface_pos_data_collection_specification_1a53cae30c2bc80a01119b135fdbdd5946">allDCSpecs</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a53cae30c2bc80a01119b135fdbdd5946">allDCSpecs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a95df2ea8b1b916de4d41c231c8cf1027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdcmggl_8idl_1a762cf9c1b64fec948c807dd39f423682" kindref="member">posDCItemSpecification</ref></type>
+        <definition>posDCItemSpecification PosDataCollectionSpecification::findDCSpec</definition>
+        <argsstring>(in string dataItemName)</argsstring>
+        <name>findDCSpec</name>
+        <qualifiedname>PosDataCollectionSpecification::findDCSpec</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>dataItemName</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="213" column="26"/>
+        <references refid="interface_pos_data_collection_specification_1a95df2ea8b1b916de4d41c231c8cf1027">findDCSpec</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a95df2ea8b1b916de4d41c231c8cf1027">findDCSpec</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a5a646a9dc60d0b4246f2abdabf096bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::setDCSpecificationInfo</definition>
+        <argsstring>(in brDCSpecificationInfo dcSpecificationInfo)</argsstring>
+        <name>setDCSpecificationInfo</name>
+        <qualifiedname>PosDataCollectionSpecification::setDCSpecificationInfo</qualifiedname>
+        <param>
+          <type>in brDCSpecificationInfo</type>
+          <declname>dcSpecificationInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal" kindref="compound">SetDCSpecificationInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="221" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1a5a646a9dc60d0b4246f2abdabf096bde">setDCSpecificationInfo</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a5a646a9dc60d0b4246f2abdabf096bde">setDCSpecificationInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a6729b42e06ca1b6713776d10b9ff1a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::getTotalResultForSpecCheck</definition>
+        <argsstring>(in PosDCItemDataSequence dcItemData, out string totalResult, out stringSequence totalActionCodes)</argsstring>
+        <name>getTotalResultForSpecCheck</name>
+        <qualifiedname>PosDataCollectionSpecification::getTotalResultForSpecCheck</qualifiedname>
+        <param>
+          <type>in <ref refid="pdcmggl_8idl_1a3adada56f60f962c4554864717064bdd" kindref="member">PosDCItemDataSequence</ref></type>
+          <declname>dcItemData</declname>
+        </param>
+        <param>
+          <type>out string</type>
+          <declname>totalResult</declname>
+        </param>
+        <param>
+          <type>out stringSequence</type>
+          <declname>totalActionCodes</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="227" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1a6729b42e06ca1b6713776d10b9ff1a11">getTotalResultForSpecCheck</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a6729b42e06ca1b6713776d10b9ff1a11">getTotalResultForSpecCheck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1aa9f5c6b357a6df9e245641d95691343c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::addDataCollectionDefinition</definition>
+        <argsstring>(in PosDataCollectionDefinition aDataCollectionDefinition)</argsstring>
+        <name>addDataCollectionDefinition</name>
+        <qualifiedname>PosDataCollectionSpecification::addDataCollectionDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref></type>
+          <declname>aDataCollectionDefinition</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_data_collection_definition_duplicate_signal" kindref="compound">DataCollectionDefinitionDuplicateSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="234" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1aa9f5c6b357a6df9e245641d95691343c">addDataCollectionDefinition</references>
+        <referencedby refid="interface_pos_data_collection_specification_1aa9f5c6b357a6df9e245641d95691343c">addDataCollectionDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ac221eb9c2a2a09cc678dc46384e3e577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref></type>
+        <definition>PosDataCollectionDefinition PosDataCollectionSpecification::findDataCollectionDefinitionFor</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findDataCollectionDefinitionFor</name>
+        <qualifiedname>PosDataCollectionSpecification::findDataCollectionDefinitionFor</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal" kindref="compound">DataCollectionDefinitionNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="241" column="31"/>
+        <references refid="interface_pos_data_collection_specification_1ac221eb9c2a2a09cc678dc46384e3e577">findDataCollectionDefinitionFor</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ac221eb9c2a2a09cc678dc46384e3e577">findDataCollectionDefinitionFor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a151b760bc94f2475a8e2930a36fb4c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pdcmggl_8idl_1a4b6b250803954f518b7dc3a90f72fb81" kindref="member">PosDataCollectionDefinitionSequence</ref></type>
+        <definition>PosDataCollectionDefinitionSequence PosDataCollectionSpecification::allDataCollectionDefinitions</definition>
+        <argsstring>()</argsstring>
+        <name>allDataCollectionDefinitions</name>
+        <qualifiedname>PosDataCollectionSpecification::allDataCollectionDefinitions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="247" column="39"/>
+        <references refid="interface_pos_data_collection_specification_1a151b760bc94f2475a8e2930a36fb4c99">allDataCollectionDefinitions</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a151b760bc94f2475a8e2930a36fb4c99">allDataCollectionDefinitions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ab05f627ec4a6d4c9860b9481d8d0e5a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::removeDataCollectionDefinition</definition>
+        <argsstring>(in PosDataCollectionDefinition aDataCollectionDefinition)</argsstring>
+        <name>removeDataCollectionDefinition</name>
+        <qualifiedname>PosDataCollectionSpecification::removeDataCollectionDefinition</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_data_collection_definition" kindref="compound">PosDataCollectionDefinition</ref></type>
+          <declname>aDataCollectionDefinition</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_data_collection_definition_not_found_signal" kindref="compound">DataCollectionDefinitionNotFoundSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="254" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1ab05f627ec4a6d4c9860b9481d8d0e5a3">removeDataCollectionDefinition</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ab05f627ec4a6d4c9860b9481d8d0e5a3">removeDataCollectionDefinition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a7d605957a1fe884236f643ccaa1e1612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::setFPCCategory</definition>
+        <argsstring>(in string aFPCCategory)</argsstring>
+        <name>setFPCCategory</name>
+        <qualifiedname>PosDataCollectionSpecification::setFPCCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aFPCCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="260" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1a7d605957a1fe884236f643ccaa1e1612">setFPCCategory</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a7d605957a1fe884236f643ccaa1e1612">setFPCCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a3f5fff540574be032606a417a6e8e69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosDataCollectionSpecification::getFPCCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getFPCCategory</name>
+        <qualifiedname>PosDataCollectionSpecification::getFPCCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="266" column="10"/>
+        <references refid="interface_pos_data_collection_specification_1a3f5fff540574be032606a417a6e8e69f">getFPCCategory</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a3f5fff540574be032606a417a6e8e69f">getFPCCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ae9cb502c9b21bab5f8c054c28a85a290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::makeWhiteFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>makeWhiteFlagOn</name>
+        <qualifiedname>PosDataCollectionSpecification::makeWhiteFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="272" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1ae9cb502c9b21bab5f8c054c28a85a290">makeWhiteFlagOn</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ae9cb502c9b21bab5f8c054c28a85a290">makeWhiteFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ab7d716d79fec1f51fe60b754387cc447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::makeWhiteFlagOff</definition>
+        <argsstring>()</argsstring>
+        <name>makeWhiteFlagOff</name>
+        <qualifiedname>PosDataCollectionSpecification::makeWhiteFlagOff</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="278" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1ab7d716d79fec1f51fe60b754387cc447">makeWhiteFlagOff</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ab7d716d79fec1f51fe60b754387cc447">makeWhiteFlagOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1a6a3c9992d1946c00558e74cf9b42f362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean PosDataCollectionSpecification::isWhiteFlagOn</definition>
+        <argsstring>()</argsstring>
+        <name>isWhiteFlagOn</name>
+        <qualifiedname>PosDataCollectionSpecification::isWhiteFlagOn</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="284" column="11"/>
+        <references refid="interface_pos_data_collection_specification_1a6a3c9992d1946c00558e74cf9b42f362">isWhiteFlagOn</references>
+        <referencedby refid="interface_pos_data_collection_specification_1a6a3c9992d1946c00558e74cf9b42f362">isWhiteFlagOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_data_collection_specification_1ad51391e299bba4d3f584761ac44bda2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosDataCollectionSpecification::setDCSpecificationInfo__101</definition>
+        <argsstring>(in brDCSpecificationInfo__101 dcSpecificationInfo__101)</argsstring>
+        <name>setDCSpecificationInfo__101</name>
+        <qualifiedname>PosDataCollectionSpecification::setDCSpecificationInfo__101</qualifiedname>
+        <param>
+          <type>in brDCSpecificationInfo__101</type>
+          <declname>dcSpecificationInfo__101</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_data_collection_specification_1_1_set_d_c_specification_info_failed_signal" kindref="compound">SetDCSpecificationInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pdcsp.idl" line="292" column="8"/>
+        <references refid="interface_pos_data_collection_specification_1ad51391e299bba4d3f584761ac44bda2d">setDCSpecificationInfo__101</references>
+        <referencedby refid="interface_pos_data_collection_specification_1ad51391e299bba4d3f584761ac44bda2d">setDCSpecificationInfo__101</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DataCollectionSpecification</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDataCollectionSpecification</label>
+        <link refid="interface_pos_data_collection_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DataCollectionSpecification</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosDataCollectionSpecification</label>
+        <link refid="interface_pos_data_collection_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pdcsp.idl" line="40" column="11" bodyfile="poscimfw/include/pdcsp.idl" bodystart="40" bodyend="300"/>
+    <listofallmembers>
+      <member refid="interface_pos_data_collection_specification_1aa9f5c6b357a6df9e245641d95691343c" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>addDataCollectionDefinition</name></member>
+      <member refid="interface_pos_data_collection_specification_1a15401d751944d62b8c7bbed9ce9063db" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>addDCSpec</name></member>
+      <member refid="interface_pos_data_collection_specification_1a151b760bc94f2475a8e2930a36fb4c99" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>allDataCollectionDefinitions</name></member>
+      <member refid="interface_pos_data_collection_specification_1a53cae30c2bc80a01119b135fdbdd5946" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>allDCSpecs</name></member>
+      <member refid="interface_pos_data_collection_specification_1ac221eb9c2a2a09cc678dc46384e3e577" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>findDataCollectionDefinitionFor</name></member>
+      <member refid="interface_pos_data_collection_specification_1a95df2ea8b1b916de4d41c231c8cf1027" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>findDCSpec</name></member>
+      <member refid="interface_pos_data_collection_specification_1a623369e000fd234d1ccf41d8b984b376" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>getDescription</name></member>
+      <member refid="interface_pos_data_collection_specification_1a3f5fff540574be032606a417a6e8e69f" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>getFPCCategory</name></member>
+      <member refid="interface_pos_data_collection_specification_1a6729b42e06ca1b6713776d10b9ff1a11" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>getTotalResultForSpecCheck</name></member>
+      <member refid="interface_pos_data_collection_specification_1a6a3c9992d1946c00558e74cf9b42f362" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>isWhiteFlagOn</name></member>
+      <member refid="interface_pos_data_collection_specification_1ab7d716d79fec1f51fe60b754387cc447" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>makeWhiteFlagOff</name></member>
+      <member refid="interface_pos_data_collection_specification_1ae9cb502c9b21bab5f8c054c28a85a290" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>makeWhiteFlagOn</name></member>
+      <member refid="interface_pos_data_collection_specification_1af60cd6de21b655742b57f2002216ac0d" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>PosDataCollectionSpecification_init</name></member>
+      <member refid="interface_pos_data_collection_specification_1ab05f627ec4a6d4c9860b9481d8d0e5a3" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>removeDataCollectionDefinition</name></member>
+      <member refid="interface_pos_data_collection_specification_1ae33a3785d045bdbf6013c65c85bfb2cf" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>removeDCSpec</name></member>
+      <member refid="interface_pos_data_collection_specification_1a5a646a9dc60d0b4246f2abdabf096bde" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>setDCSpecificationInfo</name></member>
+      <member refid="interface_pos_data_collection_specification_1ad51391e299bba4d3f584761ac44bda2d" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>setDCSpecificationInfo__101</name></member>
+      <member refid="interface_pos_data_collection_specification_1a32a9875cd1289963c0ff92ad8e303a1c" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>setDescription</name></member>
+      <member refid="interface_pos_data_collection_specification_1a7d605957a1fe884236f643ccaa1e1612" prot="public" virt="non-virtual"><scope>PosDataCollectionSpecification</scope><name>setFPCCategory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

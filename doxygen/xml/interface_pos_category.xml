@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_category" kind="interface" language="IDL" prot="public">
+    <compoundname>PosCategory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pcatgry_8idl" local="no">pcatgry.idl</includes>
+    <innerclass refid="exception_pos_category_1_1_code_not_found_signal" prot="public">PosCategory::CodeNotFoundSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_category_1a4694ca00a4c8469b685ac47a4cc93a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCategory::PosCategory_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosCategory_init</name>
+        <qualifiedname>PosCategory::PosCategory_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="86" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1ad5cd4bf45dbcff1dd606f868414f6bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_code" kindref="compound">PosCode</ref></type>
+        <definition>PosCode PosCategory::createCodeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>createCodeNamed</name>
+        <qualifiedname>PosCategory::createCodeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( DuplicateIdentifierSignal, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="93" column="11"/>
+        <references refid="interface_pos_category_1ad5cd4bf45dbcff1dd606f868414f6bc2">createCodeNamed</references>
+        <referencedby refid="interface_pos_category_1ad5cd4bf45dbcff1dd606f868414f6bc2">createCodeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a86b0777cce7b77ab79f782ecaa2567f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCategory::removeCode</definition>
+        <argsstring>(in PosCode aCode)</argsstring>
+        <name>removeCode</name>
+        <qualifiedname>PosCategory::removeCode</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_code" kindref="compound">PosCode</ref></type>
+          <declname>aCode</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_category_1_1_code_not_found_signal" kindref="compound">CodeNotFoundSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="99" column="8"/>
+        <references refid="interface_pos_category_1a86b0777cce7b77ab79f782ecaa2567f8">removeCode</references>
+        <referencedby refid="interface_pos_category_1a86b0777cce7b77ab79f782ecaa2567f8">removeCode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a793fb2486b3698a72af4d9ed97466839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pcodegl_8idl_1a8b11f732cfb99f505ffbf54b5346377c" kindref="member">PosCodeSequence</ref></type>
+        <definition>PosCodeSequence PosCategory::allCodes</definition>
+        <argsstring>()</argsstring>
+        <name>allCodes</name>
+        <qualifiedname>PosCategory::allCodes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="105" column="19"/>
+        <references refid="interface_pos_category_1a793fb2486b3698a72af4d9ed97466839">allCodes</references>
+        <referencedby refid="interface_pos_category_1a793fb2486b3698a72af4d9ed97466839">allCodes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a3ae5c7f112e8092463fbd5397556aa76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_code" kindref="compound">PosCode</ref></type>
+        <definition>PosCode PosCategory::findCodeNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findCodeNamed</name>
+        <qualifiedname>PosCategory::findCodeNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="111" column="11"/>
+        <references refid="interface_pos_category_1a3ae5c7f112e8092463fbd5397556aa76">findCodeNamed</references>
+        <referencedby refid="interface_pos_category_1a3ae5c7f112e8092463fbd5397556aa76">findCodeNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a1a7b5ccd240ed754dafc0b42fd8a3893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCategory::setIdentifier</definition>
+        <argsstring>(in string anIdentifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosCategory::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>anIdentifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="117" column="8"/>
+        <references refid="interface_pos_category_1a1a7b5ccd240ed754dafc0b42fd8a3893">setIdentifier</references>
+        <referencedby refid="interface_pos_category_1a1a7b5ccd240ed754dafc0b42fd8a3893">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1aa5b81f19f40b6f51db4214ab4a5c3044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosCategory::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosCategory::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="123" column="10"/>
+        <references refid="interface_pos_category_1aa5b81f19f40b6f51db4214ab4a5c3044">getIdentifier</references>
+        <referencedby refid="interface_pos_category_1aa5b81f19f40b6f51db4214ab4a5c3044">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a21209433eec8c213154485b84baaf7ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCategory::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosCategory::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="129" column="8"/>
+        <references refid="interface_pos_category_1a21209433eec8c213154485b84baaf7ac">setDescription</references>
+        <referencedby refid="interface_pos_category_1a21209433eec8c213154485b84baaf7ac">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1ac9e2d10242e46e1047d9fd43e7a9039f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosCategory::createPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>createPropertySet</name>
+        <qualifiedname>PosCategory::createPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="135" column="18"/>
+        <references refid="interface_pos_category_1ac9e2d10242e46e1047d9fd43e7a9039f">createPropertySet</references>
+        <referencedby refid="interface_pos_category_1ac9e2d10242e46e1047d9fd43e7a9039f">createPropertySet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a861a984ccc92233b76525d59ed322b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosCategory::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosCategory::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="141" column="10"/>
+        <references refid="interface_pos_category_1a861a984ccc92233b76525d59ed322b74">getDescription</references>
+        <referencedby refid="interface_pos_category_1a861a984ccc92233b76525d59ed322b74">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a52ca224f4966eb608773ad0f997c7629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosCategory::removeAllCodes</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllCodes</name>
+        <qualifiedname>PosCategory::removeAllCodes</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="148" column="8"/>
+        <references refid="interface_pos_category_1a52ca224f4966eb608773ad0f997c7629">removeAllCodes</references>
+        <referencedby refid="interface_pos_category_1a52ca224f4966eb608773ad0f997c7629">removeAllCodes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_category_1a07a16dcff621e7ea1bccb656b2ea0f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_property_set" kindref="compound">PosPropertySet</ref></type>
+        <definition>PosPropertySet PosCategory::getPropertySet</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertySet</name>
+        <qualifiedname>PosCategory::getPropertySet</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pcatgry.idl" line="155" column="18"/>
+        <references refid="interface_pos_category_1a07a16dcff621e7ea1bccb656b2ea0f74">getPropertySet</references>
+        <referencedby refid="interface_pos_category_1a07a16dcff621e7ea1bccb656b2ea0f74">getPropertySet</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosCategory</label>
+        <link refid="interface_pos_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosCategory</label>
+        <link refid="interface_pos_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pcatgry.idl" line="45" column="11" bodyfile="poscimfw/include/pcatgry.idl" bodystart="45" bodyend="163"/>
+    <listofallmembers>
+      <member refid="interface_pos_category_1a793fb2486b3698a72af4d9ed97466839" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>allCodes</name></member>
+      <member refid="interface_pos_category_1ad5cd4bf45dbcff1dd606f868414f6bc2" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>createCodeNamed</name></member>
+      <member refid="interface_pos_category_1ac9e2d10242e46e1047d9fd43e7a9039f" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>createPropertySet</name></member>
+      <member refid="interface_pos_category_1a3ae5c7f112e8092463fbd5397556aa76" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>findCodeNamed</name></member>
+      <member refid="interface_pos_category_1a861a984ccc92233b76525d59ed322b74" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>getDescription</name></member>
+      <member refid="interface_pos_category_1aa5b81f19f40b6f51db4214ab4a5c3044" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_category_1a07a16dcff621e7ea1bccb656b2ea0f74" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>getPropertySet</name></member>
+      <member refid="interface_pos_category_1a4694ca00a4c8469b685ac47a4cc93a45" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>PosCategory_init</name></member>
+      <member refid="interface_pos_category_1a52ca224f4966eb608773ad0f997c7629" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>removeAllCodes</name></member>
+      <member refid="interface_pos_category_1a86b0777cce7b77ab79f782ecaa2567f8" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>removeCode</name></member>
+      <member refid="interface_pos_category_1a21209433eec8c213154485b84baaf7ac" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>setDescription</name></member>
+      <member refid="interface_pos_category_1a1a7b5ccd240ed754dafc0b42fd8a3893" prot="public" virt="non-virtual"><scope>PosCategory</scope><name>setIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

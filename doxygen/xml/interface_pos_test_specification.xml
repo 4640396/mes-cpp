@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_test_specification" kind="interface" language="IDL" prot="public">
+    <compoundname>PosTestSpecification</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="ptestsp_8idl" local="no">ptestsp.idl</includes>
+    <innerclass refid="exception_pos_test_specification_1_1_set_test_specification_info_failed_signal" prot="public">PosTestSpecification::SetTestSpecificationInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_test_specification_1_1_product_specification_already_assigned_signal" prot="public">PosTestSpecification::ProductSpecificationAlreadyAssignedSignal</innerclass>
+    <innerclass refid="exception_pos_test_specification_1_1_test_type_already_assigned_signal" prot="public">PosTestSpecification::TestTypeAlreadyAssignedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_test_specification_1ad73cb5e55a75b36816663683c81c5a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::PosTestSpecification_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosTestSpecification_init</name>
+        <qualifiedname>PosTestSpecification::PosTestSpecification_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="126" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a8c06cfa6e8fa7820f57156bbd82e72d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosTestSpecification::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="135" column="8"/>
+        <references refid="interface_pos_test_specification_1a8c06cfa6e8fa7820f57156bbd82e72d2">setDescription</references>
+        <referencedby refid="interface_pos_test_specification_1a8c06cfa6e8fa7820f57156bbd82e72d2">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a61618bbaf3909571da47ece20eb1394f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosTestSpecification::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosTestSpecification::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="141" column="10"/>
+        <references refid="interface_pos_test_specification_1a61618bbaf3909571da47ece20eb1394f">getDescription</references>
+        <referencedby refid="interface_pos_test_specification_1a61618bbaf3909571da47ece20eb1394f">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a90b65275abed44fadbabea25a66a0737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosTestSpecification::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="147" column="8"/>
+        <references refid="interface_pos_test_specification_1a90b65275abed44fadbabea25a66a0737">setIdentifier</references>
+        <referencedby refid="interface_pos_test_specification_1a90b65275abed44fadbabea25a66a0737">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1aa3f766fed6f8968c88e76580f988b596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosTestSpecification::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosTestSpecification::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="153" column="10"/>
+        <references refid="interface_pos_test_specification_1aa3f766fed6f8968c88e76580f988b596">getIdentifier</references>
+        <referencedby refid="interface_pos_test_specification_1aa3f766fed6f8968c88e76580f988b596">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a513db3082693a21b37d5c344a5285f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setLotYieldSpecification</definition>
+        <argsstring>(in double lotYieldSpecification)</argsstring>
+        <name>setLotYieldSpecification</name>
+        <qualifiedname>PosTestSpecification::setLotYieldSpecification</qualifiedname>
+        <param>
+          <type>in double</type>
+          <declname>lotYieldSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="159" column="8"/>
+        <references refid="interface_pos_test_specification_1a513db3082693a21b37d5c344a5285f48">setLotYieldSpecification</references>
+        <referencedby refid="interface_pos_test_specification_1a513db3082693a21b37d5c344a5285f48">setLotYieldSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1abb4233d6c22fca9e10a0157694631b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PosTestSpecification::getLotYieldSpecification</definition>
+        <argsstring>()</argsstring>
+        <name>getLotYieldSpecification</name>
+        <qualifiedname>PosTestSpecification::getLotYieldSpecification</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="166" column="10"/>
+        <references refid="interface_pos_test_specification_1abb4233d6c22fca9e10a0157694631b23">getLotYieldSpecification</references>
+        <referencedby refid="interface_pos_test_specification_1abb4233d6c22fca9e10a0157694631b23">getLotYieldSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1af1b180b1fcd399cf9b5c9f3f2badf09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setWaferYieldSpecification</definition>
+        <argsstring>(in double waferYieldSpecification)</argsstring>
+        <name>setWaferYieldSpecification</name>
+        <qualifiedname>PosTestSpecification::setWaferYieldSpecification</qualifiedname>
+        <param>
+          <type>in double</type>
+          <declname>waferYieldSpecification</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="172" column="8"/>
+        <references refid="interface_pos_test_specification_1af1b180b1fcd399cf9b5c9f3f2badf09c">setWaferYieldSpecification</references>
+        <referencedby refid="interface_pos_test_specification_1af1b180b1fcd399cf9b5c9f3f2badf09c">setWaferYieldSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1af2d2d68951f98dff8992a3f65a3f0870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PosTestSpecification::getWaferYieldSpecification</definition>
+        <argsstring>()</argsstring>
+        <name>getWaferYieldSpecification</name>
+        <qualifiedname>PosTestSpecification::getWaferYieldSpecification</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="179" column="10"/>
+        <references refid="interface_pos_test_specification_1af2d2d68951f98dff8992a3f65a3f0870">getWaferYieldSpecification</references>
+        <referencedby refid="interface_pos_test_specification_1af2d2d68951f98dff8992a3f65a3f0870">getWaferYieldSpecification</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a607a0179545ebc733cc441f329829dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setTestSpecificationInfo</definition>
+        <argsstring>(in brTestSpecificationInfo testSpecificationInfo)</argsstring>
+        <name>setTestSpecificationInfo</name>
+        <qualifiedname>PosTestSpecification::setTestSpecificationInfo</qualifiedname>
+        <param>
+          <type>in brTestSpecificationInfo</type>
+          <declname>testSpecificationInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_test_specification_1_1_set_test_specification_info_failed_signal" kindref="compound">SetTestSpecificationInfoFailedSignal</ref>,FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="185" column="8"/>
+        <references refid="interface_pos_test_specification_1a607a0179545ebc733cc441f329829dfa">setTestSpecificationInfo</references>
+        <referencedby refid="interface_pos_test_specification_1a607a0179545ebc733cc441f329829dfa">setTestSpecificationInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1af3c822e1f157fa9bb2f7a42544d2e245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setTargetTestType</definition>
+        <argsstring>(in PosTestType targetTestType)</argsstring>
+        <name>setTargetTestType</name>
+        <qualifiedname>PosTestSpecification::setTargetTestType</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+          <declname>targetTestType</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="191" column="8"/>
+        <references refid="interface_pos_test_specification_1af3c822e1f157fa9bb2f7a42544d2e245">setTargetTestType</references>
+        <referencedby refid="interface_pos_test_specification_1af3c822e1f157fa9bb2f7a42544d2e245">setTargetTestType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1a298b3dd2239f7b12a6d66bb3a20af666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_test_type" kindref="compound">PosTestType</ref></type>
+        <definition>PosTestType PosTestSpecification::getTargetTestType</definition>
+        <argsstring>()</argsstring>
+        <name>getTargetTestType</name>
+        <qualifiedname>PosTestSpecification::getTargetTestType</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="197" column="15"/>
+        <references refid="interface_pos_test_specification_1a298b3dd2239f7b12a6d66bb3a20af666">getTargetTestType</references>
+        <referencedby refid="interface_pos_test_specification_1a298b3dd2239f7b12a6d66bb3a20af666">getTargetTestType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1ac36016b60f1e9d6c7eb5b504e2efa1ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setLowYieldWaferCount</definition>
+        <argsstring>(in long lowYieldWaferCountSpec)</argsstring>
+        <name>setLowYieldWaferCount</name>
+        <qualifiedname>PosTestSpecification::setLowYieldWaferCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>lowYieldWaferCountSpec</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="203" column="8"/>
+        <references refid="interface_pos_test_specification_1ac36016b60f1e9d6c7eb5b504e2efa1ea">setLowYieldWaferCount</references>
+        <referencedby refid="interface_pos_test_specification_1ac36016b60f1e9d6c7eb5b504e2efa1ea">setLowYieldWaferCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1acc68e383c05e9e2fc0813eedfd0c53ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosTestSpecification::getLowYieldWaferCount</definition>
+        <argsstring>()</argsstring>
+        <name>getLowYieldWaferCount</name>
+        <qualifiedname>PosTestSpecification::getLowYieldWaferCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="210" column="8"/>
+        <references refid="interface_pos_test_specification_1acc68e383c05e9e2fc0813eedfd0c53ee">getLowYieldWaferCount</references>
+        <referencedby refid="interface_pos_test_specification_1acc68e383c05e9e2fc0813eedfd0c53ee">getLowYieldWaferCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1ae7b635f05fbae08b14d0c45693c716d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosTestSpecification::setCombinationCriteria</definition>
+        <argsstring>(in string combinationCriteriaCode)</argsstring>
+        <name>setCombinationCriteria</name>
+        <qualifiedname>PosTestSpecification::setCombinationCriteria</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>combinationCriteriaCode</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="216" column="8"/>
+        <references refid="interface_pos_test_specification_1ae7b635f05fbae08b14d0c45693c716d6">setCombinationCriteria</references>
+        <referencedby refid="interface_pos_test_specification_1ae7b635f05fbae08b14d0c45693c716d6">setCombinationCriteria</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_test_specification_1ad3cee0fe6d3bfbab5e30b82a037f8ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosTestSpecification::getCombinationCriteria</definition>
+        <argsstring>()</argsstring>
+        <name>getCombinationCriteria</name>
+        <qualifiedname>PosTestSpecification::getCombinationCriteria</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/ptestsp.idl" line="223" column="10"/>
+        <references refid="interface_pos_test_specification_1ad3cee0fe6d3bfbab5e30b82a037f8ee3">getCombinationCriteria</references>
+        <referencedby refid="interface_pos_test_specification_1ad3cee0fe6d3bfbab5e30b82a037f8ee3">getCombinationCriteria</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosTestSpecification</label>
+        <link refid="interface_pos_test_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosTestSpecification</label>
+        <link refid="interface_pos_test_specification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/ptestsp.idl" line="47" column="11" bodyfile="poscimfw/include/ptestsp.idl" bodystart="48" bodyend="231"/>
+    <listofallmembers>
+      <member refid="interface_pos_test_specification_1ad3cee0fe6d3bfbab5e30b82a037f8ee3" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getCombinationCriteria</name></member>
+      <member refid="interface_pos_test_specification_1a61618bbaf3909571da47ece20eb1394f" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getDescription</name></member>
+      <member refid="interface_pos_test_specification_1aa3f766fed6f8968c88e76580f988b596" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_test_specification_1abb4233d6c22fca9e10a0157694631b23" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getLotYieldSpecification</name></member>
+      <member refid="interface_pos_test_specification_1acc68e383c05e9e2fc0813eedfd0c53ee" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getLowYieldWaferCount</name></member>
+      <member refid="interface_pos_test_specification_1a298b3dd2239f7b12a6d66bb3a20af666" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getTargetTestType</name></member>
+      <member refid="interface_pos_test_specification_1af2d2d68951f98dff8992a3f65a3f0870" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>getWaferYieldSpecification</name></member>
+      <member refid="interface_pos_test_specification_1ad73cb5e55a75b36816663683c81c5a64" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>PosTestSpecification_init</name></member>
+      <member refid="interface_pos_test_specification_1ae7b635f05fbae08b14d0c45693c716d6" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setCombinationCriteria</name></member>
+      <member refid="interface_pos_test_specification_1a8c06cfa6e8fa7820f57156bbd82e72d2" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setDescription</name></member>
+      <member refid="interface_pos_test_specification_1a90b65275abed44fadbabea25a66a0737" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_test_specification_1a513db3082693a21b37d5c344a5285f48" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setLotYieldSpecification</name></member>
+      <member refid="interface_pos_test_specification_1ac36016b60f1e9d6c7eb5b504e2efa1ea" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setLowYieldWaferCount</name></member>
+      <member refid="interface_pos_test_specification_1af3c822e1f157fa9bb2f7a42544d2e245" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setTargetTestType</name></member>
+      <member refid="interface_pos_test_specification_1a607a0179545ebc733cc441f329829dfa" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setTestSpecificationInfo</name></member>
+      <member refid="interface_pos_test_specification_1af1b180b1fcd399cf9b5c9f3f2badf09c" prot="public" virt="non-virtual"><scope>PosTestSpecification</scope><name>setWaferYieldSpecification</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

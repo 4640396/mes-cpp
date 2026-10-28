@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_lot_reticle_set_change_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posLotReticleSetChangeEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_lot_reticle_set_change_event_record__struct_1a34f3fefd5d603debe37397a261dd188a" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a71e61d7bc3898b075078f751d0c23e6d" kindref="member">posLotEventData</ref></type>
+        <definition>posLotEventData posLotReticleSetChangeEventRecord_struct::lotData</definition>
+        <argsstring></argsstring>
+        <name>lotData</name>
+        <qualifiedname>posLotReticleSetChangeEventRecord_struct::lotData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="1536" column="19" bodyfile="poscimfw/include/pevmggl.idl" bodystart="1536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_lot_reticle_set_change_event_record__struct_1a720c1ba5532eb828a8e852e4ebbbd5e3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posLotReticleSetChangeEventRecord_struct::reticleSetID</definition>
+        <argsstring></argsstring>
+        <name>reticleSetID</name>
+        <qualifiedname>posLotReticleSetChangeEventRecord_struct::reticleSetID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="1540" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="1540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_lot_reticle_set_change_event_record__struct_1af95a5e9f2c6738914dac6108ae1430fa" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posLotReticleSetChangeEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posLotReticleSetChangeEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="1541" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="1541" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+      <node id="2">
+        <label>posLotEventData_struct</label>
+        <link refid="structpos_lot_event_data__struct"/>
+      </node>
+      <node id="1">
+        <label>posLotReticleSetChangeEventRecord_struct</label>
+        <link refid="structpos_lot_reticle_set_change_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lotData</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="1530" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="1530" bodyend="1553"/>
+    <listofallmembers>
+      <member refid="structpos_lot_reticle_set_change_event_record__struct_1af95a5e9f2c6738914dac6108ae1430fa" prot="public" virt="non-virtual"><scope>posLotReticleSetChangeEventRecord_struct</scope><name>eventCommon</name></member>
+      <member refid="structpos_lot_reticle_set_change_event_record__struct_1a34f3fefd5d603debe37397a261dd188a" prot="public" virt="non-virtual"><scope>posLotReticleSetChangeEventRecord_struct</scope><name>lotData</name></member>
+      <member refid="structpos_lot_reticle_set_change_event_record__struct_1a720c1ba5532eb828a8e852e4ebbbd5e3" prot="public" virt="non-virtual"><scope>posLotReticleSetChangeEventRecord_struct</scope><name>reticleSetID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

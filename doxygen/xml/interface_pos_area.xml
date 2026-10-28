@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_area" kind="interface" language="IDL" prot="public">
+    <compoundname>PosArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="parea_8idl" local="no">parea.idl</includes>
+    <innerclass refid="exception_pos_area_1_1_set_location_info_failed_signal" prot="public">PosArea::SetLocationInfoFailedSignal</innerclass>
+    <innerclass refid="exception_pos_area_1_1_set_work_area_info_failed_signal" prot="public">PosArea::SetWorkAreaInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_area_1a51f43b44af0b863753aefe3d656bcf6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosArea::getCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getCategory</name>
+        <qualifiedname>PosArea::getCategory</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a767708ebe955d38b3f138897e6077e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::setCategory</definition>
+        <argsstring>(in string aCategory)</argsstring>
+        <name>setCategory</name>
+        <qualifiedname>PosArea::setCategory</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aCategory</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="119" column="8"/>
+        <references refid="interface_pos_area_1a767708ebe955d38b3f138897e6077e86">setCategory</references>
+        <referencedby refid="interface_pos_area_1a767708ebe955d38b3f138897e6077e86">setCategory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a68ce80eafe70152048e78f6500777ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::setDescription</definition>
+        <argsstring>(in string aDescription)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosArea::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>aDescription</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="125" column="8"/>
+        <references refid="interface_pos_area_1a68ce80eafe70152048e78f6500777ad7">setDescription</references>
+        <referencedby refid="interface_pos_area_1a68ce80eafe70152048e78f6500777ad7">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a1dbc351561bcdb892a1e7957237cc224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosArea::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosArea::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="131" column="10"/>
+        <references refid="interface_pos_area_1a1dbc351561bcdb892a1e7957237cc224">getDescription</references>
+        <referencedby refid="interface_pos_area_1a1dbc351561bcdb892a1e7957237cc224">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1afd5f88b3cdb40a69b1fec26f3a901db4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeAllMachines</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachines</name>
+        <qualifiedname>PosArea::removeAllMachines</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="137" column="8"/>
+        <references refid="interface_pos_area_1afd5f88b3cdb40a69b1fec26f3a901db4">removeAllMachines</references>
+        <referencedby refid="interface_pos_area_1afd5f88b3cdb40a69b1fec26f3a901db4">removeAllMachines</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a4949f82ba3c8006949d270e81d5d85ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeAllStorageMachines</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllStorageMachines</name>
+        <qualifiedname>PosArea::removeAllStorageMachines</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="143" column="8"/>
+        <references refid="interface_pos_area_1a4949f82ba3c8006949d270e81d5d85ae">removeAllStorageMachines</references>
+        <referencedby refid="interface_pos_area_1a4949f82ba3c8006949d270e81d5d85ae">removeAllStorageMachines</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a7e2124ae2b250542b3f214ea0491311e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::setLocationInfo</definition>
+        <argsstring>(in brLocationInfo aLocationinfo)</argsstring>
+        <name>setLocationInfo</name>
+        <qualifiedname>PosArea::setLocationInfo</qualifiedname>
+        <param>
+          <type>in brLocationInfo</type>
+          <declname>aLocationinfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_1_1_set_location_info_failed_signal" kindref="compound">SetLocationInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="149" column="8"/>
+        <references refid="interface_pos_area_1a7e2124ae2b250542b3f214ea0491311e">setLocationInfo</references>
+        <referencedby refid="interface_pos_area_1a7e2124ae2b250542b3f214ea0491311e">setLocationInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a0220ac3aff62b5b0ad08871d8b61a1a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::setWorkAreaInfo</definition>
+        <argsstring>(in brWorkAreaInfo aWorkAreaInfo)</argsstring>
+        <name>setWorkAreaInfo</name>
+        <qualifiedname>PosArea::setWorkAreaInfo</qualifiedname>
+        <param>
+          <type>in brWorkAreaInfo</type>
+          <declname>aWorkAreaInfo</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_1_1_set_work_area_info_failed_signal" kindref="compound">SetWorkAreaInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="155" column="8"/>
+        <references refid="interface_pos_area_1a0220ac3aff62b5b0ad08871d8b61a1a4">setWorkAreaInfo</references>
+        <referencedby refid="interface_pos_area_1a0220ac3aff62b5b0ad08871d8b61a1a4">setWorkAreaInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a89d113be64e5d01f9b5f50df3508bc12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::PosArea_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosArea_init</name>
+        <qualifiedname>PosArea::PosArea_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="161" column="8"/>
+        <references refid="interface_pos_area_1a89d113be64e5d01f9b5f50df3508bc12">PosArea_init</references>
+        <referencedby refid="interface_pos_area_1a89d113be64e5d01f9b5f50df3508bc12">PosArea_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1aed3f73d417ddc76d52565a4603d9e3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+        <definition>PosMachine PosArea::findProcessMachineNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findProcessMachineNamed</name>
+        <qualifiedname>PosArea::findProcessMachineNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="168" column="14"/>
+        <references refid="interface_pos_area_1aed3f73d417ddc76d52565a4603d9e3e0">findProcessMachineNamed</references>
+        <referencedby refid="interface_pos_area_1aed3f73d417ddc76d52565a4603d9e3e0">findProcessMachineNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1ae2bffe531a6583103079d72bc2af9360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+        <definition>PosStorageMachine PosArea::findStorageMachineNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findStorageMachineNamed</name>
+        <qualifiedname>PosArea::findStorageMachineNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="175" column="21"/>
+        <references refid="interface_pos_area_1ae2bffe531a6583103079d72bc2af9360">findStorageMachineNamed</references>
+        <referencedby refid="interface_pos_area_1ae2bffe531a6583103079d72bc2af9360">findStorageMachineNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a23c8ec217c496d6dc04937c90ab87235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::addUnderTrackStorages</definition>
+        <argsstring>(in PosStorageMachine aUnderTrackStorage)</argsstring>
+        <name>addUnderTrackStorages</name>
+        <qualifiedname>PosArea::addUnderTrackStorages</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aUnderTrackStorage</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="181" column="8"/>
+        <references refid="interface_pos_area_1a23c8ec217c496d6dc04937c90ab87235">addUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1a23c8ec217c496d6dc04937c90ab87235">addUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a07b8b0fc68741963ffe15c8c437e4d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeUnderTrackStorages</definition>
+        <argsstring>(in PosStorageMachine aUnderTrackStorage)</argsstring>
+        <name>removeUnderTrackStorages</name>
+        <qualifiedname>PosArea::removeUnderTrackStorages</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aUnderTrackStorage</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="187" column="8"/>
+        <references refid="interface_pos_area_1a07b8b0fc68741963ffe15c8c437e4d96">removeUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1a07b8b0fc68741963ffe15c8c437e4d96">removeUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a9a1d81a01e183934f2437376bf89daed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a2cbb09fcb490d09cb8a4c72f97d379a5" kindref="member">PosStorageMachineSequence</ref></type>
+        <definition>PosStorageMachineSequence PosArea::allUnderTrackStorages</definition>
+        <argsstring>()</argsstring>
+        <name>allUnderTrackStorages</name>
+        <qualifiedname>PosArea::allUnderTrackStorages</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="193" column="29"/>
+        <references refid="interface_pos_area_1a9a1d81a01e183934f2437376bf89daed">allUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1a9a1d81a01e183934f2437376bf89daed">allUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1ae2c1e18db9d807d4392c94a379538b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeAllUnderTrackStorages</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllUnderTrackStorages</name>
+        <qualifiedname>PosArea::removeAllUnderTrackStorages</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="199" column="8"/>
+        <references refid="interface_pos_area_1ae2c1e18db9d807d4392c94a379538b86">removeAllUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1ae2c1e18db9d807d4392c94a379538b86">removeAllUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a6f23af4959bcb2f6612ae0d8102e6a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+        <definition>PosStorageMachine PosArea::findUnderTrackStoragesNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findUnderTrackStoragesNamed</name>
+        <qualifiedname>PosArea::findUnderTrackStoragesNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="205" column="21"/>
+        <references refid="interface_pos_area_1a6f23af4959bcb2f6612ae0d8102e6a23">findUnderTrackStoragesNamed</references>
+        <referencedby refid="interface_pos_area_1a6f23af4959bcb2f6612ae0d8102e6a23">findUnderTrackStoragesNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a12da1a1f886ae70a31df39ae64b163be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::addSLMUnderTrackStorages</definition>
+        <argsstring>(in PosStorageMachine aStorageMachine)</argsstring>
+        <name>addSLMUnderTrackStorages</name>
+        <qualifiedname>PosArea::addSLMUnderTrackStorages</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aStorageMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="211" column="8"/>
+        <references refid="interface_pos_area_1a12da1a1f886ae70a31df39ae64b163be">addSLMUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1a12da1a1f886ae70a31df39ae64b163be">addSLMUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1a35753ebe502b7fe3b52c7824e551d17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeSLMUnderTrackStorages</definition>
+        <argsstring>(in PosStorageMachine aStorageMachine)</argsstring>
+        <name>removeSLMUnderTrackStorages</name>
+        <qualifiedname>PosArea::removeSLMUnderTrackStorages</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+          <declname>aStorageMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="217" column="8"/>
+        <references refid="interface_pos_area_1a35753ebe502b7fe3b52c7824e551d17b">removeSLMUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1a35753ebe502b7fe3b52c7824e551d17b">removeSLMUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1ac13410f1e4943d6affd432223effed2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a2cbb09fcb490d09cb8a4c72f97d379a5" kindref="member">PosStorageMachineSequence</ref></type>
+        <definition>PosStorageMachineSequence PosArea::allSLMUnderTrackStorages</definition>
+        <argsstring>()</argsstring>
+        <name>allSLMUnderTrackStorages</name>
+        <qualifiedname>PosArea::allSLMUnderTrackStorages</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="223" column="29"/>
+        <references refid="interface_pos_area_1ac13410f1e4943d6affd432223effed2c">allSLMUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1ac13410f1e4943d6affd432223effed2c">allSLMUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1ac9d7fe374956bdd86574378b52e47692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::removeAllSLMUnderTrackStorages</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllSLMUnderTrackStorages</name>
+        <qualifiedname>PosArea::removeAllSLMUnderTrackStorages</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="229" column="8"/>
+        <references refid="interface_pos_area_1ac9d7fe374956bdd86574378b52e47692">removeAllSLMUnderTrackStorages</references>
+        <referencedby refid="interface_pos_area_1ac9d7fe374956bdd86574378b52e47692">removeAllSLMUnderTrackStorages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1aab0e18b02802f93c1f5d9fbd2809b65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_storage_machine" kindref="compound">PosStorageMachine</ref></type>
+        <definition>PosStorageMachine PosArea::findSLMUnderTrackStoragesNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findSLMUnderTrackStoragesNamed</name>
+        <qualifiedname>PosArea::findSLMUnderTrackStoragesNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="235" column="21"/>
+        <references refid="interface_pos_area_1aab0e18b02802f93c1f5d9fbd2809b65e">findSLMUnderTrackStoragesNamed</references>
+        <referencedby refid="interface_pos_area_1aab0e18b02802f93c1f5d9fbd2809b65e">findSLMUnderTrackStoragesNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_area_1af48f578ad7f0226e527f288c97d0479f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosArea::setWorkAreaInfo__100</definition>
+        <argsstring>(in brWorkAreaInfo__100 aWorkAreaInfo__100)</argsstring>
+        <name>setWorkAreaInfo__100</name>
+        <qualifiedname>PosArea::setWorkAreaInfo__100</qualifiedname>
+        <param>
+          <type>in brWorkAreaInfo__100</type>
+          <declname>aWorkAreaInfo__100</declname>
+        </param>
+        <exceptions> raises ( <ref refid="exception_pos_area_1_1_set_work_area_info_failed_signal" kindref="compound">SetWorkAreaInfoFailedSignal</ref>, FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/parea.idl" line="241" column="8"/>
+        <references refid="interface_pos_area_1af48f578ad7f0226e527f288c97d0479f">setWorkAreaInfo__100</references>
+        <referencedby refid="interface_pos_area_1af48f578ad7f0226e527f288c97d0479f">setWorkAreaInfo__100</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosArea</label>
+        <link refid="interface_pos_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area</label>
+      </node>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="1">
+        <label>PosArea</label>
+        <link refid="interface_pos_area"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/parea.idl" line="52" column="11" bodyfile="poscimfw/include/parea.idl" bodystart="52" bodyend="249"/>
+    <listofallmembers>
+      <member refid="interface_pos_area_1a12da1a1f886ae70a31df39ae64b163be" prot="public" virt="non-virtual"><scope>PosArea</scope><name>addSLMUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a23c8ec217c496d6dc04937c90ab87235" prot="public" virt="non-virtual"><scope>PosArea</scope><name>addUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1ac13410f1e4943d6affd432223effed2c" prot="public" virt="non-virtual"><scope>PosArea</scope><name>allSLMUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a9a1d81a01e183934f2437376bf89daed" prot="public" virt="non-virtual"><scope>PosArea</scope><name>allUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1aed3f73d417ddc76d52565a4603d9e3e0" prot="public" virt="non-virtual"><scope>PosArea</scope><name>findProcessMachineNamed</name></member>
+      <member refid="interface_pos_area_1aab0e18b02802f93c1f5d9fbd2809b65e" prot="public" virt="non-virtual"><scope>PosArea</scope><name>findSLMUnderTrackStoragesNamed</name></member>
+      <member refid="interface_pos_area_1ae2bffe531a6583103079d72bc2af9360" prot="public" virt="non-virtual"><scope>PosArea</scope><name>findStorageMachineNamed</name></member>
+      <member refid="interface_pos_area_1a6f23af4959bcb2f6612ae0d8102e6a23" prot="public" virt="non-virtual"><scope>PosArea</scope><name>findUnderTrackStoragesNamed</name></member>
+      <member refid="interface_pos_area_1a51f43b44af0b863753aefe3d656bcf6e" prot="public" virt="non-virtual"><scope>PosArea</scope><name>getCategory</name></member>
+      <member refid="interface_pos_area_1a1dbc351561bcdb892a1e7957237cc224" prot="public" virt="non-virtual"><scope>PosArea</scope><name>getDescription</name></member>
+      <member refid="interface_pos_area_1a89d113be64e5d01f9b5f50df3508bc12" prot="public" virt="non-virtual"><scope>PosArea</scope><name>PosArea_init</name></member>
+      <member refid="interface_pos_area_1afd5f88b3cdb40a69b1fec26f3a901db4" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeAllMachines</name></member>
+      <member refid="interface_pos_area_1ac9d7fe374956bdd86574378b52e47692" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeAllSLMUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a4949f82ba3c8006949d270e81d5d85ae" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeAllStorageMachines</name></member>
+      <member refid="interface_pos_area_1ae2c1e18db9d807d4392c94a379538b86" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeAllUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a35753ebe502b7fe3b52c7824e551d17b" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeSLMUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a07b8b0fc68741963ffe15c8c437e4d96" prot="public" virt="non-virtual"><scope>PosArea</scope><name>removeUnderTrackStorages</name></member>
+      <member refid="interface_pos_area_1a767708ebe955d38b3f138897e6077e86" prot="public" virt="non-virtual"><scope>PosArea</scope><name>setCategory</name></member>
+      <member refid="interface_pos_area_1a68ce80eafe70152048e78f6500777ad7" prot="public" virt="non-virtual"><scope>PosArea</scope><name>setDescription</name></member>
+      <member refid="interface_pos_area_1a7e2124ae2b250542b3f214ea0491311e" prot="public" virt="non-virtual"><scope>PosArea</scope><name>setLocationInfo</name></member>
+      <member refid="interface_pos_area_1a0220ac3aff62b5b0ad08871d8b61a1a4" prot="public" virt="non-virtual"><scope>PosArea</scope><name>setWorkAreaInfo</name></member>
+      <member refid="interface_pos_area_1af48f578ad7f0226e527f288c97d0479f" prot="public" virt="non-virtual"><scope>PosArea</scope><name>setWorkAreaInfo__100</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="structpos_eqp_monitor_count_event_record__struct" kind="struct" language="IDL" prot="public">
+    <compoundname>posEqpMonitorCountEventRecord_struct</compoundname>
+    <includes refid="pevmggl_8idl" local="no">pevmggl.idl</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos_eqp_monitor_count_event_record__struct_1a218a0e866e8275055636016dd6f2a378" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a795c9165119555e9577432fa7600ea5b" kindref="member">posEventData</ref></type>
+        <definition>posEventData posEqpMonitorCountEventRecord_struct::eventCommon</definition>
+        <argsstring></argsstring>
+        <name>eventCommon</name>
+        <qualifiedname>posEqpMonitorCountEventRecord_struct::eventCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4042" column="16" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_eqp_monitor_count_event_record__struct_1a1ac0927522a2d1af0727a155ec381bd6" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a71e61d7bc3898b075078f751d0c23e6d" kindref="member">posLotEventData</ref></type>
+        <definition>posLotEventData posEqpMonitorCountEventRecord_struct::lotData</definition>
+        <argsstring></argsstring>
+        <name>lotData</name>
+        <qualifiedname>posEqpMonitorCountEventRecord_struct::lotData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4043" column="19" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_eqp_monitor_count_event_record__struct_1abd7751e78360c0628d3342ca5906c073" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posEqpMonitorCountEventRecord_struct::equipmentID</definition>
+        <argsstring></argsstring>
+        <name>equipmentID</name>
+        <qualifiedname>posEqpMonitorCountEventRecord_struct::equipmentID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4044" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_eqp_monitor_count_event_record__struct_1af368dcff8d6d485de28c2d9689a11915" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string posEqpMonitorCountEventRecord_struct::controlJobID</definition>
+        <argsstring></argsstring>
+        <name>controlJobID</name>
+        <qualifiedname>posEqpMonitorCountEventRecord_struct::controlJobID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4045" column="10" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos_eqp_monitor_count_event_record__struct_1a56c03b77e65d11123c68a5d8584d44ff" prot="public" static="no" mutable="no">
+        <type><ref refid="pevmggl_8idl_1a4b9ca2e2c3532b3bed38059de90f68d8" kindref="member">PosEqpMonitorWaferCountEventDataSequence</ref></type>
+        <definition>PosEqpMonitorWaferCountEventDataSequence posEqpMonitorCountEventRecord_struct::wafers</definition>
+        <argsstring></argsstring>
+        <name>wafers</name>
+        <qualifiedname>posEqpMonitorCountEventRecord_struct::wafers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pevmggl.idl" line="4046" column="44" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4046" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>posEqpMonitorCountEventRecord_struct</label>
+        <link refid="structpos_eqp_monitor_count_event_record__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>eventCommon</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lotData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>posEventData_struct</label>
+        <link refid="structpos_event_data__struct"/>
+      </node>
+      <node id="3">
+        <label>posLotEventData_struct</label>
+        <link refid="structpos_lot_event_data__struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pevmggl.idl" line="4036" column="1" bodyfile="poscimfw/include/pevmggl.idl" bodystart="4036" bodyend="4058"/>
+    <listofallmembers>
+      <member refid="structpos_eqp_monitor_count_event_record__struct_1af368dcff8d6d485de28c2d9689a11915" prot="public" virt="non-virtual"><scope>posEqpMonitorCountEventRecord_struct</scope><name>controlJobID</name></member>
+      <member refid="structpos_eqp_monitor_count_event_record__struct_1abd7751e78360c0628d3342ca5906c073" prot="public" virt="non-virtual"><scope>posEqpMonitorCountEventRecord_struct</scope><name>equipmentID</name></member>
+      <member refid="structpos_eqp_monitor_count_event_record__struct_1a218a0e866e8275055636016dd6f2a378" prot="public" virt="non-virtual"><scope>posEqpMonitorCountEventRecord_struct</scope><name>eventCommon</name></member>
+      <member refid="structpos_eqp_monitor_count_event_record__struct_1a1ac0927522a2d1af0727a155ec381bd6" prot="public" virt="non-virtual"><scope>posEqpMonitorCountEventRecord_struct</scope><name>lotData</name></member>
+      <member refid="structpos_eqp_monitor_count_event_record__struct_1a56c03b77e65d11123c68a5d8584d44ff" prot="public" virt="non-virtual"><scope>posEqpMonitorCountEventRecord_struct</scope><name>wafers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

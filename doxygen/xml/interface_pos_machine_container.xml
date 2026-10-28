@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="interface_pos_machine_container" kind="interface" language="IDL" prot="public">
+    <compoundname>PosMachineContainer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NamedEntity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">MOFW_CachedManagedObject</basecompoundref>
+    <includes refid="pmcctn_8idl" local="no">pmcctn.idl</includes>
+    <innerclass refid="exception_pos_machine_container_1_1_set_machine_container_info_failed_signal" prot="public">PosMachineContainer::SetMachineContainerInfoFailedSignal</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_pos_machine_container_1abdc622882a1163a1c3cbfeb177a642c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::PosMachineContainer_init</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineContainer_init</name>
+        <qualifiedname>PosMachineContainer::PosMachineContainer_init</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a9144b277b33b123f200cc8ba74e527be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::PosMachineContainer_uninit</definition>
+        <argsstring>()</argsstring>
+        <name>PosMachineContainer_uninit</name>
+        <qualifiedname>PosMachineContainer::PosMachineContainer_uninit</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="85" column="8"/>
+        <references refid="interface_pos_machine_container_1a9144b277b33b123f200cc8ba74e527be">PosMachineContainer_uninit</references>
+        <referencedby refid="interface_pos_machine_container_1a9144b277b33b123f200cc8ba74e527be">PosMachineContainer_uninit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a41fd3b12a869a9e69633b688a7c7f897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setIdentifier</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>setIdentifier</name>
+        <qualifiedname>PosMachineContainer::setIdentifier</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="91" column="8"/>
+        <references refid="interface_pos_machine_container_1a41fd3b12a869a9e69633b688a7c7f897">setIdentifier</references>
+        <referencedby refid="interface_pos_machine_container_1a41fd3b12a869a9e69633b688a7c7f897">setIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a566b12ade6e6aa5935040c20b099e09a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineContainer::getIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentifier</name>
+        <qualifiedname>PosMachineContainer::getIdentifier</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="97" column="10"/>
+        <references refid="interface_pos_machine_container_1a566b12ade6e6aa5935040c20b099e09a">getIdentifier</references>
+        <referencedby refid="interface_pos_machine_container_1a566b12ade6e6aa5935040c20b099e09a">getIdentifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1af305a4306df40e72559819cf63be5150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setMachine</definition>
+        <argsstring>(in PosMachine aMachine)</argsstring>
+        <name>setMachine</name>
+        <qualifiedname>PosMachineContainer::setMachine</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+          <declname>aMachine</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="103" column="8"/>
+        <references refid="interface_pos_machine_container_1af305a4306df40e72559819cf63be5150">setMachine</references>
+        <referencedby refid="interface_pos_machine_container_1af305a4306df40e72559819cf63be5150">setMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a4f274cc08c96b25307f31f1b90f5fd45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine" kindref="compound">PosMachine</ref></type>
+        <definition>PosMachine PosMachineContainer::getMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getMachine</name>
+        <qualifiedname>PosMachineContainer::getMachine</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="109" column="14"/>
+        <references refid="interface_pos_machine_container_1a4f274cc08c96b25307f31f1b90f5fd45">getMachine</references>
+        <referencedby refid="interface_pos_machine_container_1a4f274cc08c96b25307f31f1b90f5fd45">getMachine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a79be12359aa45fc378f0252a9f269a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setChamber</definition>
+        <argsstring>(in PosProcessResource aChamber)</argsstring>
+        <name>setChamber</name>
+        <qualifiedname>PosMachineContainer::setChamber</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_process_resource" kindref="compound">PosProcessResource</ref></type>
+          <declname>aChamber</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="115" column="8"/>
+        <references refid="interface_pos_machine_container_1a79be12359aa45fc378f0252a9f269a5c">setChamber</references>
+        <referencedby refid="interface_pos_machine_container_1a79be12359aa45fc378f0252a9f269a5c">setChamber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a5bc49c3e0907ffb08c0d6d50e08e4db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_process_resource" kindref="compound">PosProcessResource</ref></type>
+        <definition>PosProcessResource PosMachineContainer::getChamber</definition>
+        <argsstring>()</argsstring>
+        <name>getChamber</name>
+        <qualifiedname>PosMachineContainer::getChamber</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="121" column="22"/>
+        <references refid="interface_pos_machine_container_1a5bc49c3e0907ffb08c0d6d50e08e4db2">getChamber</references>
+        <referencedby refid="interface_pos_machine_container_1a5bc49c3e0907ffb08c0d6d50e08e4db2">getChamber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a73c10df59529955130f30e5d93e7500c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setMachineContainerInfo</definition>
+        <argsstring>(in posMachineContainerInfo aMachineContainerInfo)</argsstring>
+        <name>setMachineContainerInfo</name>
+        <qualifiedname>PosMachineContainer::setMachineContainerInfo</qualifiedname>
+        <param>
+          <type>in <ref refid="pmcmggl_8idl_1a6f315e54813102e4928ba9cb3ddb6054" kindref="member">posMachineContainerInfo</ref></type>
+          <declname>aMachineContainerInfo</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal,<ref refid="exception_pos_machine_container_1_1_set_machine_container_info_failed_signal" kindref="compound">SetMachineContainerInfoFailedSignal</ref> )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="127" column="8"/>
+        <references refid="interface_pos_machine_container_1a73c10df59529955130f30e5d93e7500c">setMachineContainerInfo</references>
+        <referencedby refid="interface_pos_machine_container_1a73c10df59529955130f30e5d93e7500c">setMachineContainerInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a91a0628f802b2d8d6a7649611b697384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1a6f315e54813102e4928ba9cb3ddb6054" kindref="member">posMachineContainerInfo</ref></type>
+        <definition>posMachineContainerInfo PosMachineContainer::getMachineContainerInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getMachineContainerInfo</name>
+        <qualifiedname>PosMachineContainer::getMachineContainerInfo</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="133" column="27"/>
+        <references refid="interface_pos_machine_container_1a91a0628f802b2d8d6a7649611b697384">getMachineContainerInfo</references>
+        <referencedby refid="interface_pos_machine_container_1a91a0628f802b2d8d6a7649611b697384">getMachineContainerInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a26e7907002743310a1fc348a813f462f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setMaxCapacity</definition>
+        <argsstring>(in long maxCapability)</argsstring>
+        <name>setMaxCapacity</name>
+        <qualifiedname>PosMachineContainer::setMaxCapacity</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>maxCapability</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="139" column="8"/>
+        <references refid="interface_pos_machine_container_1a26e7907002743310a1fc348a813f462f">setMaxCapacity</references>
+        <referencedby refid="interface_pos_machine_container_1a26e7907002743310a1fc348a813f462f">setMaxCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1add079cadd6908939b0fa63be9d1ef956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosMachineContainer::getMaxCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxCapacity</name>
+        <qualifiedname>PosMachineContainer::getMaxCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="145" column="8"/>
+        <references refid="interface_pos_machine_container_1add079cadd6908939b0fa63be9d1ef956">getMaxCapacity</references>
+        <referencedby refid="interface_pos_machine_container_1add079cadd6908939b0fa63be9d1ef956">getMaxCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1ac8d26d642b27826bf15c950d7f110101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setMaxReserveCount</definition>
+        <argsstring>(in long maxReserveCount)</argsstring>
+        <name>setMaxReserveCount</name>
+        <qualifiedname>PosMachineContainer::setMaxReserveCount</qualifiedname>
+        <param>
+          <type>in long</type>
+          <declname>maxReserveCount</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="151" column="8"/>
+        <references refid="interface_pos_machine_container_1ac8d26d642b27826bf15c950d7f110101">setMaxReserveCount</references>
+        <referencedby refid="interface_pos_machine_container_1ac8d26d642b27826bf15c950d7f110101">setMaxReserveCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a5acd11d6846886f701822ec85b16a53a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosMachineContainer::getMaxReserveCount</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxReserveCount</name>
+        <qualifiedname>PosMachineContainer::getMaxReserveCount</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="158" column="8"/>
+        <references refid="interface_pos_machine_container_1a5acd11d6846886f701822ec85b16a53a">getMaxReserveCount</references>
+        <referencedby refid="interface_pos_machine_container_1a5acd11d6846886f701822ec85b16a53a">getMaxReserveCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a0ae5acfda562aaedcb52e6c1b2e3f80d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setDescription</definition>
+        <argsstring>(in string description)</argsstring>
+        <name>setDescription</name>
+        <qualifiedname>PosMachineContainer::setDescription</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>description</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="164" column="8"/>
+        <references refid="interface_pos_machine_container_1a0ae5acfda562aaedcb52e6c1b2e3f80d">setDescription</references>
+        <referencedby refid="interface_pos_machine_container_1a0ae5acfda562aaedcb52e6c1b2e3f80d">setDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a33c71b32f371370c353068ab1e22b81f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineContainer::getDescription</definition>
+        <argsstring>()</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>PosMachineContainer::getDescription</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="170" column="10"/>
+        <references refid="interface_pos_machine_container_1a33c71b32f371370c353068ab1e22b81f">getDescription</references>
+        <referencedby refid="interface_pos_machine_container_1a33c71b32f371370c353068ab1e22b81f">getDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1ad928467b6309436d2e7dfea6633f7e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setLastClaimedTimeStamp</definition>
+        <argsstring>(in TimeStamp lastClaimedTimeStamp)</argsstring>
+        <name>setLastClaimedTimeStamp</name>
+        <qualifiedname>PosMachineContainer::setLastClaimedTimeStamp</qualifiedname>
+        <param>
+          <type>in TimeStamp</type>
+          <declname>lastClaimedTimeStamp</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="176" column="8"/>
+        <references refid="interface_pos_machine_container_1ad928467b6309436d2e7dfea6633f7e42">setLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_machine_container_1ad928467b6309436d2e7dfea6633f7e42">setLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1ab14797b7d099b325b69df2275192038c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp PosMachineContainer::getLastClaimedTimeStamp</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedTimeStamp</name>
+        <qualifiedname>PosMachineContainer::getLastClaimedTimeStamp</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="182" column="13"/>
+        <references refid="interface_pos_machine_container_1ab14797b7d099b325b69df2275192038c">getLastClaimedTimeStamp</references>
+        <referencedby refid="interface_pos_machine_container_1ab14797b7d099b325b69df2275192038c">getLastClaimedTimeStamp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a6a1b68b4b65b9367524e5e732c10954b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::setLastClaimedUser</definition>
+        <argsstring>(in PosPerson aLastClaimedUser)</argsstring>
+        <name>setLastClaimedUser</name>
+        <qualifiedname>PosMachineContainer::setLastClaimedUser</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+          <declname>aLastClaimedUser</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="188" column="8"/>
+        <references refid="interface_pos_machine_container_1a6a1b68b4b65b9367524e5e732c10954b">setLastClaimedUser</references>
+        <referencedby refid="interface_pos_machine_container_1a6a1b68b4b65b9367524e5e732c10954b">setLastClaimedUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a8fe9a50f599750f28185e0910ddd1b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_person" kindref="compound">PosPerson</ref></type>
+        <definition>PosPerson PosMachineContainer::getLastClaimedUser</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedUser</name>
+        <qualifiedname>PosMachineContainer::getLastClaimedUser</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="194" column="13"/>
+        <references refid="interface_pos_machine_container_1a8fe9a50f599750f28185e0910ddd1b10">getLastClaimedUser</references>
+        <referencedby refid="interface_pos_machine_container_1a8fe9a50f599750f28185e0910ddd1b10">getLastClaimedUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a51957c6a223059cc67838d3344f68527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string PosMachineContainer::getLastClaimedUserID</definition>
+        <argsstring>()</argsstring>
+        <name>getLastClaimedUserID</name>
+        <qualifiedname>PosMachineContainer::getLastClaimedUserID</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="200" column="10"/>
+        <references refid="interface_pos_machine_container_1a51957c6a223059cc67838d3344f68527">getLastClaimedUserID</references>
+        <referencedby refid="interface_pos_machine_container_1a51957c6a223059cc67838d3344f68527">getLastClaimedUserID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a3d054b7f20046d34a79b394884e66c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosMachineContainer::getUsedCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getUsedCapacity</name>
+        <qualifiedname>PosMachineContainer::getUsedCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="206" column="8"/>
+        <references refid="interface_pos_machine_container_1a3d054b7f20046d34a79b394884e66c45">getUsedCapacity</references>
+        <referencedby refid="interface_pos_machine_container_1a3d054b7f20046d34a79b394884e66c45">getUsedCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a643a106a48afb86b4232a2cbefe59f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long PosMachineContainer::getVacantCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>getVacantCapacity</name>
+        <qualifiedname>PosMachineContainer::getVacantCapacity</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="212" column="8"/>
+        <references refid="interface_pos_machine_container_1a643a106a48afb86b4232a2cbefe59f4e">getVacantCapacity</references>
+        <referencedby refid="interface_pos_machine_container_1a643a106a48afb86b4232a2cbefe59f4e">getVacantCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1aa594dd8a7baad67442e994fe8b94bbbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref></type>
+        <definition>PosMachineContainerPosition PosMachineContainer::createMachineContainerPositionNamed</definition>
+        <argsstring>(in string key)</argsstring>
+        <name>createMachineContainerPositionNamed</name>
+        <qualifiedname>PosMachineContainer::createMachineContainerPositionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>key</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal, DuplicateIdentifierSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="219" column="31"/>
+        <references refid="interface_pos_machine_container_1aa594dd8a7baad67442e994fe8b94bbbe">createMachineContainerPositionNamed</references>
+        <referencedby refid="interface_pos_machine_container_1aa594dd8a7baad67442e994fe8b94bbbe">createMachineContainerPositionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1af3baeeef8f4a920e93750958738a4809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref></type>
+        <definition>PosMachineContainerPosition PosMachineContainer::findMachineContainerPositionNamed</definition>
+        <argsstring>(in string identifier)</argsstring>
+        <name>findMachineContainerPositionNamed</name>
+        <qualifiedname>PosMachineContainer::findMachineContainerPositionNamed</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>identifier</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="226" column="31"/>
+        <references refid="interface_pos_machine_container_1af3baeeef8f4a920e93750958738a4809">findMachineContainerPositionNamed</references>
+        <referencedby refid="interface_pos_machine_container_1af3baeeef8f4a920e93750958738a4809">findMachineContainerPositionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a16c693fd8fbac761ea6d6af908fe092f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref></type>
+        <definition>PosMachineContainerPosition PosMachineContainer::findMachineContainerPositionForWafer</definition>
+        <argsstring>(in string waferStr)</argsstring>
+        <name>findMachineContainerPositionForWafer</name>
+        <qualifiedname>PosMachineContainer::findMachineContainerPositionForWafer</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>waferStr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="233" column="31"/>
+        <references refid="interface_pos_machine_container_1a16c693fd8fbac761ea6d6af908fe092f">findMachineContainerPositionForWafer</references>
+        <referencedby refid="interface_pos_machine_container_1a16c693fd8fbac761ea6d6af908fe092f">findMachineContainerPositionForWafer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a787162921e19db6ed322868c66f2a912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aa4061af44daba9e85d05aa1a61f1acd2" kindref="member">PosMachineContainerPositionSequence</ref></type>
+        <definition>PosMachineContainerPositionSequence PosMachineContainer::findMachineContainerPositionForControlJob</definition>
+        <argsstring>(in string controlJobStr)</argsstring>
+        <name>findMachineContainerPositionForControlJob</name>
+        <qualifiedname>PosMachineContainer::findMachineContainerPositionForControlJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>controlJobStr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="241" column="39"/>
+        <references refid="interface_pos_machine_container_1a787162921e19db6ed322868c66f2a912">findMachineContainerPositionForControlJob</references>
+        <referencedby refid="interface_pos_machine_container_1a787162921e19db6ed322868c66f2a912">findMachineContainerPositionForControlJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a3660eac90f67550e3b0e512dd1f20b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aa4061af44daba9e85d05aa1a61f1acd2" kindref="member">PosMachineContainerPositionSequence</ref></type>
+        <definition>PosMachineContainerPositionSequence PosMachineContainer::findMachineContainerPositionForProcessJob</definition>
+        <argsstring>(in string processJobStr)</argsstring>
+        <name>findMachineContainerPositionForProcessJob</name>
+        <qualifiedname>PosMachineContainer::findMachineContainerPositionForProcessJob</qualifiedname>
+        <param>
+          <type>in string</type>
+          <declname>processJobStr</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="249" column="39"/>
+        <references refid="interface_pos_machine_container_1a3660eac90f67550e3b0e512dd1f20b3d">findMachineContainerPositionForProcessJob</references>
+        <referencedby refid="interface_pos_machine_container_1a3660eac90f67550e3b0e512dd1f20b3d">findMachineContainerPositionForProcessJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a3e7caa569f4d8349adb55968f75e0287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aa4061af44daba9e85d05aa1a61f1acd2" kindref="member">PosMachineContainerPositionSequence</ref></type>
+        <definition>PosMachineContainerPositionSequence PosMachineContainer::allMachineContainerPositions</definition>
+        <argsstring>()</argsstring>
+        <name>allMachineContainerPositions</name>
+        <qualifiedname>PosMachineContainer::allMachineContainerPositions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="256" column="39"/>
+        <references refid="interface_pos_machine_container_1a3e7caa569f4d8349adb55968f75e0287">allMachineContainerPositions</references>
+        <referencedby refid="interface_pos_machine_container_1a3e7caa569f4d8349adb55968f75e0287">allMachineContainerPositions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1abe867ac024c54e208e768d84173fa415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::removeMachineContainerPositionNamed</definition>
+        <argsstring>(in PosMachineContainerPosition aMachineContainerPosition)</argsstring>
+        <name>removeMachineContainerPositionNamed</name>
+        <qualifiedname>PosMachineContainer::removeMachineContainerPositionNamed</qualifiedname>
+        <param>
+          <type>in <ref refid="interface_pos_machine_container_position" kindref="compound">PosMachineContainerPosition</ref></type>
+          <declname>aMachineContainerPosition</declname>
+        </param>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="263" column="8"/>
+        <references refid="interface_pos_machine_container_1abe867ac024c54e208e768d84173fa415">removeMachineContainerPositionNamed</references>
+        <referencedby refid="interface_pos_machine_container_1abe867ac024c54e208e768d84173fa415">removeMachineContainerPositionNamed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a76078f9ccd0b938368cc2dac042247e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PosMachineContainer::removeAllMachineContainerPositions</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllMachineContainerPositions</name>
+        <qualifiedname>PosMachineContainer::removeAllMachineContainerPositions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="270" column="8"/>
+        <references refid="interface_pos_machine_container_1a76078f9ccd0b938368cc2dac042247e4">removeAllMachineContainerPositions</references>
+        <referencedby refid="interface_pos_machine_container_1a76078f9ccd0b938368cc2dac042247e4">removeAllMachineContainerPositions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_pos_machine_container_1a7f00af23f5dd8c2e78749a6b7a00c1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pmcmggl_8idl_1aa4061af44daba9e85d05aa1a61f1acd2" kindref="member">PosMachineContainerPositionSequence</ref></type>
+        <definition>PosMachineContainerPositionSequence PosMachineContainer::getVacantMachineContainerPositions</definition>
+        <argsstring>()</argsstring>
+        <name>getVacantMachineContainerPositions</name>
+        <qualifiedname>PosMachineContainer::getVacantMachineContainerPositions</qualifiedname>
+        <exceptions> raises ( FrameworkErrorSignal )</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="poscimfw/include/pmcctn.idl" line="277" column="39"/>
+        <references refid="interface_pos_machine_container_1a7f00af23f5dd8c2e78749a6b7a00c1ca">getVacantMachineContainerPositions</references>
+        <referencedby refid="interface_pos_machine_container_1a7f00af23f5dd8c2e78749a6b7a00c1ca">getVacantMachineContainerPositions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineContainer</label>
+        <link refid="interface_pos_machine_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>MOFW_CachedManagedObject</label>
+      </node>
+      <node id="2">
+        <label>NamedEntity</label>
+      </node>
+      <node id="1">
+        <label>PosMachineContainer</label>
+        <link refid="interface_pos_machine_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="poscimfw/include/pmcctn.idl" line="39" column="11" bodyfile="poscimfw/include/pmcctn.idl" bodystart="39" bodyend="285"/>
+    <listofallmembers>
+      <member refid="interface_pos_machine_container_1a3e7caa569f4d8349adb55968f75e0287" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>allMachineContainerPositions</name></member>
+      <member refid="interface_pos_machine_container_1aa594dd8a7baad67442e994fe8b94bbbe" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>createMachineContainerPositionNamed</name></member>
+      <member refid="interface_pos_machine_container_1a787162921e19db6ed322868c66f2a912" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>findMachineContainerPositionForControlJob</name></member>
+      <member refid="interface_pos_machine_container_1a3660eac90f67550e3b0e512dd1f20b3d" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>findMachineContainerPositionForProcessJob</name></member>
+      <member refid="interface_pos_machine_container_1a16c693fd8fbac761ea6d6af908fe092f" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>findMachineContainerPositionForWafer</name></member>
+      <member refid="interface_pos_machine_container_1af3baeeef8f4a920e93750958738a4809" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>findMachineContainerPositionNamed</name></member>
+      <member refid="interface_pos_machine_container_1a5bc49c3e0907ffb08c0d6d50e08e4db2" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getChamber</name></member>
+      <member refid="interface_pos_machine_container_1a33c71b32f371370c353068ab1e22b81f" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getDescription</name></member>
+      <member refid="interface_pos_machine_container_1a566b12ade6e6aa5935040c20b099e09a" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getIdentifier</name></member>
+      <member refid="interface_pos_machine_container_1ab14797b7d099b325b69df2275192038c" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_machine_container_1a8fe9a50f599750f28185e0910ddd1b10" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getLastClaimedUser</name></member>
+      <member refid="interface_pos_machine_container_1a51957c6a223059cc67838d3344f68527" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getLastClaimedUserID</name></member>
+      <member refid="interface_pos_machine_container_1a4f274cc08c96b25307f31f1b90f5fd45" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getMachine</name></member>
+      <member refid="interface_pos_machine_container_1a91a0628f802b2d8d6a7649611b697384" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getMachineContainerInfo</name></member>
+      <member refid="interface_pos_machine_container_1add079cadd6908939b0fa63be9d1ef956" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getMaxCapacity</name></member>
+      <member refid="interface_pos_machine_container_1a5acd11d6846886f701822ec85b16a53a" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getMaxReserveCount</name></member>
+      <member refid="interface_pos_machine_container_1a3d054b7f20046d34a79b394884e66c45" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getUsedCapacity</name></member>
+      <member refid="interface_pos_machine_container_1a643a106a48afb86b4232a2cbefe59f4e" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getVacantCapacity</name></member>
+      <member refid="interface_pos_machine_container_1a7f00af23f5dd8c2e78749a6b7a00c1ca" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>getVacantMachineContainerPositions</name></member>
+      <member refid="interface_pos_machine_container_1abdc622882a1163a1c3cbfeb177a642c1" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>PosMachineContainer_init</name></member>
+      <member refid="interface_pos_machine_container_1a9144b277b33b123f200cc8ba74e527be" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>PosMachineContainer_uninit</name></member>
+      <member refid="interface_pos_machine_container_1a76078f9ccd0b938368cc2dac042247e4" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>removeAllMachineContainerPositions</name></member>
+      <member refid="interface_pos_machine_container_1abe867ac024c54e208e768d84173fa415" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>removeMachineContainerPositionNamed</name></member>
+      <member refid="interface_pos_machine_container_1a79be12359aa45fc378f0252a9f269a5c" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setChamber</name></member>
+      <member refid="interface_pos_machine_container_1a0ae5acfda562aaedcb52e6c1b2e3f80d" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setDescription</name></member>
+      <member refid="interface_pos_machine_container_1a41fd3b12a869a9e69633b688a7c7f897" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setIdentifier</name></member>
+      <member refid="interface_pos_machine_container_1ad928467b6309436d2e7dfea6633f7e42" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setLastClaimedTimeStamp</name></member>
+      <member refid="interface_pos_machine_container_1a6a1b68b4b65b9367524e5e732c10954b" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setLastClaimedUser</name></member>
+      <member refid="interface_pos_machine_container_1af305a4306df40e72559819cf63be5150" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setMachine</name></member>
+      <member refid="interface_pos_machine_container_1a73c10df59529955130f30e5d93e7500c" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setMachineContainerInfo</name></member>
+      <member refid="interface_pos_machine_container_1a26e7907002743310a1fc348a813f462f" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setMaxCapacity</name></member>
+      <member refid="interface_pos_machine_container_1ac8d26d642b27826bf15c950d7f110101" prot="public" virt="non-virtual"><scope>PosMachineContainer</scope><name>setMaxReserveCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
