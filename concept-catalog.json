@@ -1,0 +1,611 @@
+{
+  "schemaVersion": "concept-catalog/0.1",
+  "projectSemanticsComplete": false,
+  "meaning": "接口映射与同名实现类完整阅读登记；不覆盖继承方法、宏展开或所有动态目标，不表示领域完成。",
+  "concepts": [
+    {
+      "id": "Lot",
+      "label": "批次",
+      "codeType": "PosLot",
+      "sources": [
+        {
+          "path": "poscimfw/include/plot.idl",
+          "line": 87,
+          "end_line": 87,
+          "fileSha256": "56bd57477585d815a3a54f80210e224f5751d8434422a8ec8d5131e688248705",
+          "rangeSha256": "79e1a5c4258bafad23da80f5928029c0fcfe76af40915bef5c039be9e0cfa963"
+        }
+      ],
+      "implementationReviewCount": 30,
+      "reports": [
+        "queue-storage-deep.md",
+        "flowbatch-deep.md",
+        "lot-split-deep.md",
+        "lot-join-init-deep.md",
+        "planning-deep.md",
+        "lot-bank-deep.md"
+      ],
+      "directFactRelations": 7,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Wafer",
+      "label": "晶圆",
+      "codeType": "PosWafer",
+      "sources": [
+        {
+          "path": "poscimfw/include/pwafer.idl",
+          "line": 48,
+          "end_line": 48,
+          "fileSha256": "89b5e46ee7af5af3eb83500d69831f3be7230986666c2687342d7bfa50304e70",
+          "rangeSha256": "2412894bdfaa33f59daabd21c97604b11201d1542dbfd260b4b57a611996dc1f"
+        }
+      ],
+      "implementationReviewCount": 0,
+      "reports": [],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Operation",
+      "label": "工序实例",
+      "codeType": "PosProcessOperation",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcope.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "c9f4d5eaa0d4ee64a4dd5c729e91172c472c7ac0e552ef3406804f60531ffe7e",
+          "rangeSha256": "c5292d32c5d59d5775d7681090235bc827a1869cad21ca653a8ea2e38bd9dc97"
+        }
+      ],
+      "implementationReviewCount": 11,
+      "reports": [
+        "data-collection-deep.md",
+        "dc-snapshot-deep.md"
+      ],
+      "directFactRelations": 4,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Context",
+      "label": "流程上下文",
+      "codeType": "PosProcessFlowContext",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcflwx.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "fb23179c5a6674af9b2a9e19ca93db727b1e3941834e0b31715b155cd9f28df8",
+          "rangeSha256": "89212fcb922c81b86a553b3c13be8531afb7430790e2f27dda1c74d3cdff3eea"
+        }
+      ],
+      "implementationReviewCount": 16,
+      "reports": [
+        "lot-bank-deep.md",
+        "route-next-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Flow",
+      "label": "工艺流程",
+      "codeType": "PosProcessFlow",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcflw.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "cd279732831612a2a7f4ea619ff953e908f5015c554c832c8d12f682175ff11b",
+          "rangeSha256": "aa0d2177300249c7c3ed97013b55cfa78570c1969a6152b5b774a4e8109ec6ac"
+        }
+      ],
+      "implementationReviewCount": 8,
+      "reports": [
+        "route-next-deep.md"
+      ],
+      "directFactRelations": 2,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Definition",
+      "label": "工艺定义",
+      "codeType": "PosProcessDefinition",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcdf.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "804c1bcb095d6d11b55461987fd5631d415ee09be6a560c7b16da77a0abca4ac",
+          "rangeSha256": "0e76d0566cabf631d95db365531931119f9aed4d0bc84891258c9ac5ff33804e"
+        }
+      ],
+      "implementationReviewCount": 0,
+      "reports": [],
+      "directFactRelations": 2,
+      "semanticsComplete": false
+    },
+    {
+      "id": "OperationSpecification",
+      "label": "工序规格",
+      "codeType": "PosProcessOperationSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/ppcopsp.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "2ee370567ab22ff6d85e2af69c6ddb6e5154b76f247c343b453b4d2fbae644f2",
+          "rangeSha256": "42427f7e90fcff11fd6163381f400947a6cdff707cbe75efaa71fc8b92695949"
+        }
+      ],
+      "implementationReviewCount": 0,
+      "reports": [],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Machine",
+      "label": "设备",
+      "codeType": "PosMachine",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmc.idl",
+          "line": 58,
+          "end_line": 58,
+          "fileSha256": "5bbe0fd828997b7df12f93048c9aba6b91e2ba4df948b916d57d0e913aed0e9d",
+          "rangeSha256": "7e6dc27cddb3f35cb0d82aafc275930a10a32fc1b7ef17e2a7c149876b065e70"
+        }
+      ],
+      "implementationReviewCount": 19,
+      "reports": [
+        "machine-resource-deep.md",
+        "factory-location-deep.md",
+        "machine-state-deep.md"
+      ],
+      "directFactRelations": 2,
+      "semanticsComplete": false
+    },
+    {
+      "id": "MachineState",
+      "label": "设备状态",
+      "codeType": "PosMachineState",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmstat.idl",
+          "line": 80,
+          "end_line": 80,
+          "fileSha256": "187b685a13c8882bef599bb91ac7145b5b8ba72279ec3b95aafb1ca73a3d7540",
+          "rangeSha256": "e1526c80cddb3689cf73ae9fa341f8c9be193ee37263e80ae7293ba17f84a3ec"
+        }
+      ],
+      "implementationReviewCount": 16,
+      "reports": [
+        "machine-resource-deep.md",
+        "machine-state-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "LogicalRecipe",
+      "label": "逻辑配方",
+      "codeType": "PosLogicalRecipe",
+      "sources": [
+        {
+          "path": "poscimfw/include/plcrc.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "bdc1f7408a31def7972cea2b5d56b0aa22916c3389e74e062ad99d4e35c7b611",
+          "rangeSha256": "53a0400ecf559c54cedfe0185a5134bbc8d98647a43beee34044bce468a0c901"
+        }
+      ],
+      "implementationReviewCount": 13,
+      "reports": [
+        "recipe-selection-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "MachineRecipe",
+      "label": "设备配方",
+      "codeType": "PosMachineRecipe",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmcrc.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "48b34f50bc3185bd6a5aa20c96245cbf8df98d6151da5b37270e0c70991e74f2",
+          "rangeSha256": "bc25478d894e30353bb9f8ee3c8dc81e58caa58e95491fa995f272c3ab6af1fe"
+        }
+      ],
+      "implementationReviewCount": 0,
+      "reports": [],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Cassette",
+      "label": "载具",
+      "codeType": "PosCassette",
+      "sources": [
+        {
+          "path": "poscimfw/include/pcas.idl",
+          "line": 55,
+          "end_line": 55,
+          "fileSha256": "1c19db8907e8bf22f42a1f65ff6e6c46b08b491627ec2939a57af3147baf2532",
+          "rangeSha256": "ffadde47679f307e1bcaa503855c4f315d784c2408bb7232b0c7900bb28004a3"
+        }
+      ],
+      "implementationReviewCount": 4,
+      "reports": [
+        "cassette-loading-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "DispatchManager",
+      "label": "派工管理",
+      "codeType": "PosDispatchingManager",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdpmg.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "efe33ef640ad5fe12091b2c43f1247566f44dd5b5b67694e74f823b444ab2a1a",
+          "rangeSha256": "75967a5dc18925750f096c0ae8c35b9a011044584bdca3ab4c3e9971b708732c"
+        }
+      ],
+      "implementationReviewCount": 8,
+      "reports": [
+        "dispatch-deep.md",
+        "queue-storage-deep.md",
+        "flowbatch-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "EventManager",
+      "label": "事件管理",
+      "codeType": "PosEventManager",
+      "sources": [
+        {
+          "path": "poscimfw/include/pevmg.idl",
+          "line": 57,
+          "end_line": 57,
+          "fileSha256": "98347775a8a0ced2cb8c956ec5eb82347c197326f62162b499bdbb667c3b17a2",
+          "rangeSha256": "f08168dcb0856a4f55f88ce11732bfdee87084a01c76e7b8a33db417b2227595"
+        }
+      ],
+      "implementationReviewCount": 4,
+      "reports": [
+        "event-delivery-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "DCDefinition",
+      "label": "数据采集定义",
+      "codeType": "PosDataCollectionDefinition",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdcdf.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "e137f1264a31129489e1bac3feea40f6228a311d9197d6ccf0f8d03d738f764a",
+          "rangeSha256": "e975c5d3aac672c521b2473fc187a590a1bf911885c27efbf341be8c4fa0c94f"
+        }
+      ],
+      "implementationReviewCount": 16,
+      "reports": [
+        "data-collection-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "DCSpecification",
+      "label": "数据采集规格",
+      "codeType": "PosDataCollectionSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/pdcsp.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "97829cdc11fb39ce95a39a9ab82b620bbfe4967a30fc52a481beb865fc393751",
+          "rangeSha256": "17d5c91f4051ff091c254d6845918940e36ffb01c20e3cf7587d3637d45e5b30"
+        }
+      ],
+      "implementationReviewCount": 7,
+      "reports": [
+        "data-collection-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "EntityInhibit",
+      "label": "实体限制",
+      "codeType": "PosEntityInhibit",
+      "sources": [
+        {
+          "path": "poscimfw/include/penin.idl",
+          "line": 42,
+          "end_line": 42,
+          "fileSha256": "837b5ecfd56ac94d9e3861487c03d2cce526fcca6808d170c291515bc5b49a07",
+          "rangeSha256": "465cf51828c8602b2471aa4a8b3973fa052a8022b227669efc0d1603c0eadd18"
+        }
+      ],
+      "implementationReviewCount": 1,
+      "reports": [
+        "recipe-selection-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "ProductSpecification",
+      "label": "产品规格",
+      "codeType": "PosProductSpecification",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprsp.idl",
+          "line": 50,
+          "end_line": 50,
+          "fileSha256": "cb4a51363861d5b99b4f8cc593b55246f53985c88e44b3245e04c0c183201240",
+          "rangeSha256": "cb8e56b8d0cac115d1fcb6dffca0d3cdcdb59c28dcf5ba55f8d5a3e7df496b82"
+        }
+      ],
+      "implementationReviewCount": 2,
+      "reports": [
+        "bom-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "LotSchedule",
+      "label": "批次计划",
+      "codeType": "PosLotSchedule",
+      "sources": [
+        {
+          "path": "poscimfw/include/pltsch.idl",
+          "line": 45,
+          "end_line": 45,
+          "fileSha256": "ad0790eb506e5bf77cbc6549489a45daa8223fe53c5d72d0022d35cfb8653170",
+          "rangeSha256": "8d05ce4dbb850a984ccd15c97d4bc83d95be4d94fbcbdf6098f7355cb4c7d010"
+        }
+      ],
+      "implementationReviewCount": 5,
+      "reports": [
+        "planning-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Person",
+      "label": "人员",
+      "codeType": "PosPerson",
+      "sources": [
+        {
+          "path": "poscimfw/include/pperson.idl",
+          "line": 62,
+          "end_line": 62,
+          "fileSha256": "16bca8a87e36c6d384f7dfde6e1826dfd60e871f8307cf222a39ed56cb74f845",
+          "rangeSha256": "a6a652bd69007072009e8350f154035026b74877330869d7178b3d24c3a6ffcc"
+        }
+      ],
+      "implementationReviewCount": 10,
+      "reports": [
+        "auth-privileges-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "PrivilegeGroup",
+      "label": "权限组",
+      "codeType": "PosPrivilegeGroup",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprivgr.idl",
+          "line": 37,
+          "end_line": 37,
+          "fileSha256": "da18ce2d5aca348182b727afa6df804a971aae6ed59ff56d93099e24c5e2b235",
+          "rangeSha256": "f4123fe3433ceaebf8502d677e9ae1d0cb24627f7e271f9ae4996d64995228f4"
+        }
+      ],
+      "implementationReviewCount": 7,
+      "reports": [
+        "auth-privileges-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "BOM",
+      "label": "物料清单",
+      "codeType": "PosBOM",
+      "sources": [
+        {
+          "path": "poscimfw/include/pbom.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "1ab61b43ffe07aa01f4027f596ad921c1fd26d4d8a2b11b225f1ad8669ca2796",
+          "rangeSha256": "214f970b8d790601052dd244703fd76ce9cd6052259c59df3e591fae55244702"
+        }
+      ],
+      "implementationReviewCount": 7,
+      "reports": [
+        "bom-deep.md"
+      ],
+      "directFactRelations": 2,
+      "semanticsComplete": false
+    },
+    {
+      "id": "FlowBatch",
+      "label": "流程批",
+      "codeType": "PosFlowBatch",
+      "sources": [
+        {
+          "path": "poscimfw/include/pflwbch.idl",
+          "line": 46,
+          "end_line": 46,
+          "fileSha256": "1807e7f73e6d231af0134ea2df700f7f568c92460227e8fac5020577fad8889a",
+          "rangeSha256": "febfb643cef62c932bf8fb82e4c48d8b589061023fc182f0479b6eecc04bbe78"
+        }
+      ],
+      "implementationReviewCount": 5,
+      "reports": [
+        "flowbatch-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "FlowBatchDispatcher",
+      "label": "流程批分发器",
+      "codeType": "PosFlowBatchDispatcher",
+      "sources": [
+        {
+          "path": "poscimfw/include/pflwdp.idl",
+          "line": 40,
+          "end_line": 40,
+          "fileSha256": "a206b3370ca9af68ac8c57157b2721567cab55a6f09b3b0e28db14dc8f41f13b",
+          "rangeSha256": "751ef730eb22451c4043fefabc50a1c593b13ab0931c34ccf6f666b8ff51944f"
+        }
+      ],
+      "implementationReviewCount": 5,
+      "reports": [
+        "flowbatch-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "ProductRequest",
+      "label": "生产请求",
+      "codeType": "PosProductRequest",
+      "sources": [
+        {
+          "path": "poscimfw/include/pprrq.idl",
+          "line": 53,
+          "end_line": 53,
+          "fileSha256": "1a9bc86c0733c85aaa22d148cd99327503e1fb784ddc677e87d0f83e504095d0",
+          "rangeSha256": "b571af47ead82f43ffd80b08889a651191446aa5b2cf093602aca5d7bbf628e8"
+        }
+      ],
+      "implementationReviewCount": 5,
+      "reports": [
+        "product-request-deep.md"
+      ],
+      "directFactRelations": 3,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Bank",
+      "label": "库区",
+      "codeType": "PosBank",
+      "sources": [
+        {
+          "path": "poscimfw/include/pbank.idl",
+          "line": 52,
+          "end_line": 52,
+          "fileSha256": "e43cb745d2369846388511a5d7d14231c1c79cf5f54a122b78552e71410514d3",
+          "rangeSha256": "2e0a7330fd12588eeb98ba9700a251fe01f32ad93a5f570f2de4776c6ce0147b"
+        }
+      ],
+      "implementationReviewCount": 10,
+      "reports": [
+        "factory-location-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "Area",
+      "label": "区域（Location/WorkArea类别）",
+      "codeType": "PosArea",
+      "sources": [
+        {
+          "path": "poscimfw/include/parea.idl",
+          "line": 52,
+          "end_line": 52,
+          "fileSha256": "38c94db411269728b8481d89330cc9374d459724dc8aafc84cfe3602c5b28714",
+          "rangeSha256": "aa62b6765f83ee5e655b561126c46d0b759af67cb2feefc04d1f64c306bdfe69"
+        }
+      ],
+      "implementationReviewCount": 13,
+      "reports": [
+        "factory-location-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "StorageMachine",
+      "label": "存储设备",
+      "codeType": "PosStorageMachine",
+      "sources": [
+        {
+          "path": "poscimfw/include/pstmc.idl",
+          "line": 48,
+          "end_line": 48,
+          "fileSha256": "a355f508b754790ce4fac2dd5d700017d6d845b73cb347c78754c6e42bcf1bd2",
+          "rangeSha256": "d63b9a58fbe4ed1ef8a9f925f6d34dcbb76ea8b0b1cf5076a3c64437156b7d39"
+        }
+      ],
+      "implementationReviewCount": 2,
+      "reports": [
+        "factory-location-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "MessageDistributionManager",
+      "label": "消息分发管理",
+      "codeType": "PosMessageDistributionManager",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmsdnmg.idl",
+          "line": 47,
+          "end_line": 47,
+          "fileSha256": "e2317a25dbadf76b946ccc9b443cb84a0a354244ceaa72e11f2faf076fac863d",
+          "rangeSha256": "11e384dc7c195888db66d5a6438c1f33b214af0d5f048297b125fc9a0f02f093"
+        }
+      ],
+      "implementationReviewCount": 12,
+      "reports": [
+        "message-requests-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    },
+    {
+      "id": "MessageDefinition",
+      "label": "消息定义",
+      "codeType": "PosMessageDefinition",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmsgdfn.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "ee4d67c48245be58a7530c45bfcb72d057e22d55de932e8e1113dade019f71ae",
+          "rangeSha256": "5e2fca281aac98ea92c6e5ec77e8a9e5b3d190e3f5230c5932d47740b52cd720"
+        }
+      ],
+      "implementationReviewCount": 21,
+      "reports": [
+        "message-requests-deep.md"
+      ],
+      "directFactRelations": 1,
+      "semanticsComplete": false
+    }
+  ]
+}

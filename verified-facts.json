@@ -403,6 +403,56 @@
       "label": "PosProductRequest"
     },
     {
+      "id": "Bank",
+      "type": "BusinessObject",
+      "label": "库区"
+    },
+    {
+      "id": "contract:PosBank",
+      "type": "Interface",
+      "label": "PosBank"
+    },
+    {
+      "id": "Area",
+      "type": "BusinessObject",
+      "label": "区域（Location/WorkArea类别）"
+    },
+    {
+      "id": "contract:PosArea",
+      "type": "Interface",
+      "label": "PosArea"
+    },
+    {
+      "id": "StorageMachine",
+      "type": "BusinessObject",
+      "label": "存储设备"
+    },
+    {
+      "id": "contract:PosStorageMachine",
+      "type": "Interface",
+      "label": "PosStorageMachine"
+    },
+    {
+      "id": "MessageDistributionManager",
+      "type": "BusinessObject",
+      "label": "消息分发管理"
+    },
+    {
+      "id": "contract:PosMessageDistributionManager",
+      "type": "Interface",
+      "label": "PosMessageDistributionManager"
+    },
+    {
+      "id": "MessageDefinition",
+      "type": "BusinessObject",
+      "label": "消息定义"
+    },
+    {
+      "id": "contract:PosMessageDefinition",
+      "type": "Interface",
+      "label": "PosMessageDefinition"
+    },
+    {
       "id": "machineSetState",
       "type": "Method",
       "label": "PosMachine_i::setCurrentMachineState"
@@ -2231,6 +2281,151 @@
       "id": "routeBackupBoundsRule",
       "type": "Rule",
       "label": "备份读取仅检查seqno小于长度，越界仍复制局部结构；调用约束和默认构造待验证"
+    },
+    {
+      "id": "routeBackupRemove",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::removeBackupOperation"
+    },
+    {
+      "id": "routeBackupLifetimeRule",
+      "type": "Rule",
+      "label": "移除备份后检查上下文和两类SQL引用，无引用才清理并删除工序对象"
+    },
+    {
+      "id": "FRPFX_POLIST",
+      "type": "Table",
+      "label": "FRPFX_POLIST"
+    },
+    {
+      "id": "FRPFX_BACKPOLIST",
+      "type": "Table",
+      "label": "FRPFX_BACKPOLIST"
+    },
+    {
+      "id": "messageRequestAddSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_addMessageRequest"
+    },
+    {
+      "id": "messageRequestFirstSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_firstMessageRequest"
+    },
+    {
+      "id": "messageRequestRemoveSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_removeMessageRequest"
+    },
+    {
+      "id": "messageRequestFirst",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::firstMessageRequest"
+    },
+    {
+      "id": "FRMSGREQ",
+      "type": "Table",
+      "label": "FRMSGREQ"
+    },
+    {
+      "id": "messageRequestTimeRule",
+      "type": "Rule",
+      "label": "数据库入队生成EVENT_TIME，未使用输入原事件时间"
+    },
+    {
+      "id": "messageRequestPeekRule",
+      "type": "Rule",
+      "label": "读取最小EVENT_TIME记录不删除，不证明原子领取或已投递"
+    },
+    {
+      "id": "messageRequestNullRule",
+      "type": "Rule",
+      "label": "非TRANSIENT_MANAGER首条读取解引用NULL返回指针；实际构建和触达待验证"
+    },
+    {
+      "id": "messageDefinitionConfigure",
+      "type": "Method",
+      "label": "PosMessageDefinition_i::setMessageDistributionInfo"
+    },
+    {
+      "id": "messageDefinitionRecipients",
+      "type": "Collection",
+      "label": "PosMessageDefinition_i::theDestinationPersons"
+    },
+    {
+      "id": "messageDefinitionConfigRule",
+      "type": "Rule",
+      "label": "先写配置再清空重建收件人，标识重复跳过；配置不执行模板渲染或消息发送"
+    },
+    {
+      "id": "messageDefinitionDeletionCheck",
+      "type": "Method",
+      "label": "PosMessageDefinition_i::checkForDeletion"
+    },
+    {
+      "id": "messageDefinitionRemove",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::removeMessageDefinition"
+    },
+    {
+      "id": "messageDefinitionDeleteRule",
+      "type": "Rule",
+      "label": "检查消息请求和待执行QTime通知引用，管理器删除未显式调用检查；宏和外层门禁待核实"
+    },
+    {
+      "id": "FRQTIME",
+      "type": "Table",
+      "label": "FRQTIME"
+    },
+    {
+      "id": "FRQTIME_ACTION",
+      "type": "Table",
+      "label": "FRQTIME_ACTION"
+    },
+    {
+      "id": "messageDeleteBaseClear",
+      "type": "Method",
+      "label": "CIMFWBO_i::CIMFW_clear"
+    },
+    {
+      "id": "messageDeleteBaseClearRule",
+      "type": "Rule",
+      "label": "可见基础清理体只有trace，没有删除占用检查或业务字段变更"
+    },
+    {
+      "id": "machineStateConfigure",
+      "type": "Method",
+      "label": "PosMachineState_i::setEquipmentStateInfo__XXX"
+    },
+    {
+      "id": "machineStateConditions",
+      "type": "Collection",
+      "label": "PosMachineState_i::theMachineStateConvertConditions"
+    },
+    {
+      "id": "machineStateNextStates",
+      "type": "Collection",
+      "label": "PosMachineState_i::theNextTransitionStates"
+    },
+    {
+      "id": "machineStateConfigOrderRule",
+      "type": "Rule",
+      "label": "转换条件按输入addLast，重复序号抛错，配置不执行转换逻辑"
+    },
+    {
+      "id": "machineStateTargetResolutionRule",
+      "type": "Rule",
+      "label": "下一状态逐E10组解析失败被忽略，循环后仍加入；输出有效性依赖宏"
+    },
+    {
+      "id": "machineCurrentStateSet",
+      "type": "Method",
+      "label": "PosMachine_i::setCurrentMachineState"
+    },
+    {
+      "id": "machineCurrentStateRule",
+      "type": "Rule",
+      "label": "当前状态setter更新引用、可用缓存和E10字符串，未显式检查转换列表；异常时恢复依赖事务"
     }
   ],
   "edges": [
@@ -3089,6 +3284,86 @@
     },
     {
       "id": "fact-53",
+      "from": "Bank",
+      "type": "HAS_CONTRACT",
+      "to": "contract:PosBank",
+      "evidence": "EXTRACTED",
+      "sources": [
+        {
+          "path": "poscimfw/include/pbank.idl",
+          "line": 52,
+          "end_line": 52,
+          "fileSha256": "e43cb745d2369846388511a5d7d14231c1c79cf5f54a122b78552e71410514d3",
+          "rangeSha256": "2e0a7330fd12588eeb98ba9700a251fe01f32ad93a5f570f2de4776c6ce0147b"
+        }
+      ]
+    },
+    {
+      "id": "fact-54",
+      "from": "Area",
+      "type": "HAS_CONTRACT",
+      "to": "contract:PosArea",
+      "evidence": "EXTRACTED",
+      "sources": [
+        {
+          "path": "poscimfw/include/parea.idl",
+          "line": 52,
+          "end_line": 52,
+          "fileSha256": "38c94db411269728b8481d89330cc9374d459724dc8aafc84cfe3602c5b28714",
+          "rangeSha256": "aa62b6765f83ee5e655b561126c46d0b759af67cb2feefc04d1f64c306bdfe69"
+        }
+      ]
+    },
+    {
+      "id": "fact-55",
+      "from": "StorageMachine",
+      "type": "HAS_CONTRACT",
+      "to": "contract:PosStorageMachine",
+      "evidence": "EXTRACTED",
+      "sources": [
+        {
+          "path": "poscimfw/include/pstmc.idl",
+          "line": 48,
+          "end_line": 48,
+          "fileSha256": "a355f508b754790ce4fac2dd5d700017d6d845b73cb347c78754c6e42bcf1bd2",
+          "rangeSha256": "d63b9a58fbe4ed1ef8a9f925f6d34dcbb76ea8b0b1cf5076a3c64437156b7d39"
+        }
+      ]
+    },
+    {
+      "id": "fact-56",
+      "from": "MessageDistributionManager",
+      "type": "HAS_CONTRACT",
+      "to": "contract:PosMessageDistributionManager",
+      "evidence": "EXTRACTED",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmsdnmg.idl",
+          "line": 47,
+          "end_line": 47,
+          "fileSha256": "e2317a25dbadf76b946ccc9b443cb84a0a354244ceaa72e11f2faf076fac863d",
+          "rangeSha256": "11e384dc7c195888db66d5a6438c1f33b214af0d5f048297b125fc9a0f02f093"
+        }
+      ]
+    },
+    {
+      "id": "fact-57",
+      "from": "MessageDefinition",
+      "type": "HAS_CONTRACT",
+      "to": "contract:PosMessageDefinition",
+      "evidence": "EXTRACTED",
+      "sources": [
+        {
+          "path": "poscimfw/include/pmsgdfn.idl",
+          "line": 43,
+          "end_line": 43,
+          "fileSha256": "ee4d67c48245be58a7530c45bfcb72d057e22d55de932e8e1113dade019f71ae",
+          "rangeSha256": "5e2fca281aac98ea92c6e5ec77e8a9e5b3d190e3f5230c5932d47740b52cd720"
+        }
+      ]
+    },
+    {
+      "id": "fact-58",
       "from": "machineSetState",
       "type": "CALLS",
       "to": "stateAvailable",
@@ -3105,7 +3380,7 @@
       "condition": "输入状态对象非空"
     },
     {
-      "id": "fact-54",
+      "id": "fact-59",
       "from": "machineAvailable",
       "type": "CALLS",
       "to": "stateAvailable",
@@ -3122,7 +3397,7 @@
       "condition": "当前状态非空；否则 FALSE"
     },
     {
-      "id": "fact-55",
+      "id": "fact-60",
       "from": "recipeSelect",
       "type": "CALLS",
       "to": "recipeApplicable",
@@ -3139,7 +3414,7 @@
       "condition": "逐项解析设备配方，配方引用非空"
     },
     {
-      "id": "fact-56",
+      "id": "fact-61",
       "from": "recipeSelect",
       "type": "CALLS",
       "to": "resourceMatch",
@@ -3156,7 +3431,7 @@
       "condition": "配方适用且该项资源状态列表非空"
     },
     {
-      "id": "fact-57",
+      "id": "fact-62",
       "from": "recipeApplicable",
       "type": "CHECKS_APPLICABILITY",
       "to": "Machine",
@@ -3173,7 +3448,7 @@
       "condition": "按 allMachines 中的 identifier 匹配；非执行中配方判断"
     },
     {
-      "id": "fact-58",
+      "id": "fact-63",
       "from": "dispatchEnqueue",
       "type": "CALLS",
       "to": "dispatcherEnqueue",
@@ -3190,7 +3465,7 @@
       "condition": "普通路径：逐一向 findMachinesFor 返回的设备 dispatcher 入队"
     },
     {
-      "id": "fact-59",
+      "id": "fact-64",
       "from": "fifoDispatch",
       "type": "READS",
       "to": "FRLOT",
@@ -3207,7 +3482,7 @@
       "condition": "逐个输入候选读取 QUEUED_TIME，仅 SQLCODE==0 加入排序容器"
     },
     {
-      "id": "fact-60",
+      "id": "fact-65",
       "from": "eventCreate",
       "type": "INVOKES_VIRTUAL_CONTRACT",
       "to": "eventSetData",
@@ -3224,7 +3499,7 @@
       "condition": "工厂创建的具体事件对象非空；仅记录基类契约，具体覆写目标未在此边解析"
     },
     {
-      "id": "fact-61",
+      "id": "fact-66",
       "from": "inhibitCreate",
       "type": "CALLS",
       "to": "inhibitCheckDuplicate",
@@ -3241,7 +3516,7 @@
       "condition": "发现相同记录时抛框架异常"
     },
     {
-      "id": "fact-62",
+      "id": "fact-67",
       "from": "machineOnline",
       "type": "HAS_RULE",
       "to": "onlineRule",
@@ -3258,7 +3533,7 @@
       "condition": "比较 theOnlineMode 与 Online；不代表可派工"
     },
     {
-      "id": "fact-63",
+      "id": "fact-68",
       "from": "recipeSelect",
       "type": "HAS_RULE",
       "to": "recipeSelectionRule",
@@ -3275,7 +3550,7 @@
       "condition": "空资源列表可直接选中，否则须匹配；Active 版本解析后返回"
     },
     {
-      "id": "fact-64",
+      "id": "fact-69",
       "from": "dcSetDisabled",
       "type": "HAS_RULE",
       "to": "disabledDCEntry",
@@ -3292,7 +3567,7 @@
       "condition": "FrameworkErrorSignal；旧写入实现已注释"
     },
     {
-      "id": "fact-65",
+      "id": "fact-70",
       "from": "waferIncreaseRework",
       "type": "HAS_RULE",
       "to": "waferCounterIncrease",
@@ -3309,7 +3584,7 @@
       "condition": "标记对象与集合为脏；未证明已提交"
     },
     {
-      "id": "fact-66",
+      "id": "fact-71",
       "from": "waferDecreaseRework",
       "type": "HAS_RULE",
       "to": "waferCounterDecrease",
@@ -3326,7 +3601,7 @@
       "condition": "原次数大于 1 才重新添加减一后的条目"
     },
     {
-      "id": "fact-67",
+      "id": "fact-72",
       "from": "lotCheckMaxRework",
       "type": "HAS_RULE",
       "to": "reworkLimitRule",
@@ -3343,7 +3618,7 @@
       "condition": "产品工序给出上限，计数按工艺/工序 key 获取"
     },
     {
-      "id": "fact-68",
+      "id": "fact-73",
       "from": "cassetteMakeHold",
       "type": "HAS_RULE",
       "to": "cassetteHoldRule",
@@ -3360,7 +3635,7 @@
       "condition": "isInBank() || !isOnHold()"
     },
     {
-      "id": "fact-69",
+      "id": "fact-74",
       "from": "authenticate",
       "type": "HAS_RULE",
       "to": "authModeRule",
@@ -3377,7 +3652,7 @@
       "condition": "外部服务模式行为未在此处实现"
     },
     {
-      "id": "fact-70",
+      "id": "fact-75",
       "evidence": "EXTRACTED",
       "from": "dispatcherEnqueue",
       "type": "HAS_RULE",
@@ -3394,7 +3669,7 @@
       "condition": "当前源文件旧业务体在块注释中；仅跟踪宏可执行"
     },
     {
-      "id": "fact-71",
+      "id": "fact-76",
       "evidence": "EXTRACTED",
       "from": "dispatcherRemove",
       "type": "HAS_RULE",
@@ -3410,7 +3685,7 @@
       ]
     },
     {
-      "id": "fact-72",
+      "id": "fact-77",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "READS",
@@ -3427,7 +3702,7 @@
       "condition": "设备 ID 与 system key 关联；COUNT 用于容量，不等于合格数"
     },
     {
-      "id": "fact-73",
+      "id": "fact-78",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "READS",
@@ -3443,7 +3718,7 @@
       ]
     },
     {
-      "id": "fact-74",
+      "id": "fact-79",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "HAS_RULE",
@@ -3459,7 +3734,7 @@
       ]
     },
     {
-      "id": "fact-75",
+      "id": "fact-80",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "HAS_RULE",
@@ -3476,7 +3751,7 @@
       "condition": "具体策略可能排序或过滤；不推断全部算法稳定性"
     },
     {
-      "id": "fact-76",
+      "id": "fact-81",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "CALLS",
@@ -3492,7 +3767,7 @@
       ]
     },
     {
-      "id": "fact-77",
+      "id": "fact-82",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "CALLS",
@@ -3508,7 +3783,7 @@
       ]
     },
     {
-      "id": "fact-78",
+      "id": "fact-83",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "CALLS",
@@ -3525,7 +3800,7 @@
       "condition": "从后向前按规则名解析对象，空对象异常"
     },
     {
-      "id": "fact-79",
+      "id": "fact-84",
       "evidence": "EXTRACTED",
       "from": "whatNextMachine",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3542,7 +3817,7 @@
       "condition": "由已查找到的策略对象决定实际目标，不直接认定为 FIFO"
     },
     {
-      "id": "fact-80",
+      "id": "fact-85",
       "evidence": "EXTRACTED",
       "from": "currentWhatNext",
       "type": "HAS_RULE",
@@ -3559,7 +3834,7 @@
       "condition": "依赖 current 初始化与列表顺序；方法内会标脏与改变缓存"
     },
     {
-      "id": "fact-81",
+      "id": "fact-86",
       "evidence": "EXTRACTED",
       "from": "setWhatNext",
       "type": "HAS_RULE",
@@ -3576,7 +3851,7 @@
       "condition": "宏清理语义与全未来列表初始值仍未知"
     },
     {
-      "id": "fact-82",
+      "id": "fact-87",
       "evidence": "EXTRACTED",
       "from": "parseWhatNextParameters",
       "type": "HAS_RULE",
@@ -3592,7 +3867,7 @@
       ]
     },
     {
-      "id": "fact-83",
+      "id": "fact-88",
       "evidence": "EXTRACTED",
       "from": "lotSetQueued",
       "type": "REPLACES_COLLECTION",
@@ -3609,7 +3884,7 @@
       "condition": "先清空和标脏，再逐项添加；异常前的变更是否回滚未知"
     },
     {
-      "id": "fact-84",
+      "id": "fact-89",
       "evidence": "EXTRACTED",
       "from": "lotSetHoldQueued",
       "type": "REPLACES_COLLECTION",
@@ -3625,7 +3900,7 @@
       ]
     },
     {
-      "id": "fact-85",
+      "id": "fact-90",
       "evidence": "EXTRACTED",
       "from": "lotGetQueued",
       "type": "READS_COLLECTION",
@@ -3642,7 +3917,7 @@
       "condition": "仅非 OnHold 分支读取；OnHold 返回空序列"
     },
     {
-      "id": "fact-86",
+      "id": "fact-91",
       "evidence": "EXTRACTED",
       "from": "lotGetQueued",
       "type": "HAS_RULE",
@@ -3658,7 +3933,7 @@
       ]
     },
     {
-      "id": "fact-87",
+      "id": "fact-92",
       "evidence": "EXTRACTED",
       "from": "lotGetHoldQueued",
       "type": "READS_COLLECTION",
@@ -3674,7 +3949,7 @@
       ]
     },
     {
-      "id": "fact-88",
+      "id": "fact-93",
       "evidence": "EXTRACTED",
       "from": "lotGetHoldQueued",
       "type": "READS_COLLECTION",
@@ -3691,7 +3966,7 @@
       "condition": "暂停集合为空且批次 OnHold"
     },
     {
-      "id": "fact-89",
+      "id": "fact-94",
       "evidence": "EXTRACTED",
       "from": "lotGetHoldQueued",
       "type": "HAS_RULE",
@@ -3707,7 +3982,7 @@
       ]
     },
     {
-      "id": "fact-90",
+      "id": "fact-95",
       "evidence": "EXTRACTED",
       "from": "managerAddHold",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3724,7 +3999,7 @@
       "condition": "批次 isNotOnHold()"
     },
     {
-      "id": "fact-91",
+      "id": "fact-96",
       "evidence": "EXTRACTED",
       "from": "managerAddHold",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3741,7 +4016,7 @@
       "condition": "其他状态分支"
     },
     {
-      "id": "fact-92",
+      "id": "fact-97",
       "evidence": "EXTRACTED",
       "from": "managerAddHold",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3758,7 +4033,7 @@
       "condition": "取得的设备集合非空"
     },
     {
-      "id": "fact-93",
+      "id": "fact-98",
       "evidence": "EXTRACTED",
       "from": "managerRemoveHold",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3775,7 +4050,7 @@
       "condition": "总是清空暂停集合"
     },
     {
-      "id": "fact-94",
+      "id": "fact-99",
       "evidence": "EXTRACTED",
       "from": "managerRemoveHold",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3792,7 +4067,7 @@
       "condition": "批次仍 OnHold 时一并清空普通集合"
     },
     {
-      "id": "fact-95",
+      "id": "fact-100",
       "evidence": "EXTRACTED",
       "from": "managerMoveWIP",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3809,7 +4084,7 @@
       "condition": "暂停视图非空"
     },
     {
-      "id": "fact-96",
+      "id": "fact-101",
       "evidence": "EXTRACTED",
       "from": "managerMoveWIP",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -3826,7 +4101,7 @@
       "condition": "恢复普通集合后清空暂停集合"
     },
     {
-      "id": "fact-97",
+      "id": "fact-102",
       "evidence": "EXTRACTED",
       "from": "queueHelperSave",
       "type": "SAVES_COLLECTION",
@@ -3843,7 +4118,7 @@
       "condition": "DO 侧集合；BO 与 DO 数组桥接尚缺宏证据，不创建二者等价边"
     },
     {
-      "id": "fact-98",
+      "id": "fact-103",
       "evidence": "EXTRACTED",
       "from": "queueHelperSave",
       "type": "HAS_RULE",
@@ -3859,7 +4134,7 @@
       ]
     },
     {
-      "id": "fact-99",
+      "id": "fact-104",
       "evidence": "EXTRACTED",
       "from": "queueHelperSave",
       "type": "CALLS",
@@ -3876,7 +4151,7 @@
       "condition": "操作为 Insert"
     },
     {
-      "id": "fact-100",
+      "id": "fact-105",
       "evidence": "EXTRACTED",
       "from": "queueHelperSave",
       "type": "CALLS",
@@ -3893,7 +4168,7 @@
       "condition": "其他非 None 操作"
     },
     {
-      "id": "fact-101",
+      "id": "fact-106",
       "evidence": "EXTRACTED",
       "from": "queueWriterInsert",
       "type": "CALLS",
@@ -3910,7 +4185,7 @@
       "condition": "未启用批量插入"
     },
     {
-      "id": "fact-102",
+      "id": "fact-107",
       "evidence": "EXTRACTED",
       "from": "queueWriterSingle",
       "type": "WRITES",
@@ -3926,7 +4201,7 @@
       ]
     },
     {
-      "id": "fact-103",
+      "id": "fact-108",
       "evidence": "EXTRACTED",
       "from": "queueWriterUpdate",
       "type": "WRITES",
@@ -3942,7 +4217,7 @@
       ]
     },
     {
-      "id": "fact-104",
+      "id": "fact-109",
       "evidence": "EXTRACTED",
       "from": "queueReader",
       "type": "READS",
@@ -3959,7 +4234,7 @@
       "condition": "按 system key 查询 EQP_ID/EQP_OBJ"
     },
     {
-      "id": "fact-105",
+      "id": "fact-110",
       "evidence": "EXTRACTED",
       "from": "holdWhatNext",
       "type": "READS",
@@ -3976,7 +4251,7 @@
       "condition": "第一查询未显式限制 OnHold"
     },
     {
-      "id": "fact-106",
+      "id": "fact-111",
       "evidence": "EXTRACTED",
       "from": "holdWhatNext",
       "type": "READS",
@@ -3993,7 +4268,7 @@
       "condition": "第二查询要求 OnHold"
     },
     {
-      "id": "fact-107",
+      "id": "fact-112",
       "evidence": "EXTRACTED",
       "from": "holdWhatNext",
       "type": "HAS_RULE",
@@ -4009,7 +4284,7 @@
       ]
     },
     {
-      "id": "fact-108",
+      "id": "fact-113",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "HAS_RULE",
@@ -4025,7 +4300,7 @@
       ]
     },
     {
-      "id": "fact-109",
+      "id": "fact-114",
       "evidence": "EXTRACTED",
       "from": "holdDurableWhatNext",
       "type": "HAS_RULE",
@@ -4041,7 +4316,7 @@
       ]
     },
     {
-      "id": "fact-110",
+      "id": "fact-115",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4058,7 +4333,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-111",
+      "id": "fact-116",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4075,7 +4350,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-112",
+      "id": "fact-117",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4092,7 +4367,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-113",
+      "id": "fact-118",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4109,7 +4384,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-114",
+      "id": "fact-119",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4126,7 +4401,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-115",
+      "id": "fact-120",
       "evidence": "EXTRACTED",
       "from": "durableWhatNext",
       "type": "READS",
@@ -4143,7 +4418,7 @@
       "condition": "类别对应分支，NotOnHold 且 Waiting"
     },
     {
-      "id": "fact-116",
+      "id": "fact-121",
       "evidence": "EXTRACTED",
       "from": "flowQueueAdd",
       "type": "CALLS",
@@ -4159,7 +4434,7 @@
       ]
     },
     {
-      "id": "fact-117",
+      "id": "fact-122",
       "evidence": "EXTRACTED",
       "from": "flowQueueRemove",
       "type": "CALLS",
@@ -4175,7 +4450,7 @@
       ]
     },
     {
-      "id": "fact-118",
+      "id": "fact-123",
       "evidence": "EXTRACTED",
       "from": "flowSqlAdd",
       "type": "READS",
@@ -4192,7 +4467,7 @@
       "condition": "按 Lot identifier 查数量"
     },
     {
-      "id": "fact-119",
+      "id": "fact-124",
       "evidence": "EXTRACTED",
       "from": "flowSqlAdd",
       "type": "WRITES",
@@ -4209,7 +4484,7 @@
       "condition": "SQLCODE==0 且 count==0；保存触发不等于已提交"
     },
     {
-      "id": "fact-120",
+      "id": "fact-125",
       "evidence": "EXTRACTED",
       "from": "flowSqlRemove",
       "type": "WRITES",
@@ -4226,7 +4501,7 @@
       "condition": "查到记录后 DELETE，接受 0/100"
     },
     {
-      "id": "fact-121",
+      "id": "fact-126",
       "evidence": "EXTRACTED",
       "from": "flowSqlAdd",
       "type": "HAS_RULE",
@@ -4242,7 +4517,7 @@
       ]
     },
     {
-      "id": "fact-122",
+      "id": "fact-127",
       "evidence": "EXTRACTED",
       "from": "flowSqlRemove",
       "type": "HAS_RULE",
@@ -4258,7 +4533,7 @@
       ]
     },
     {
-      "id": "fact-123",
+      "id": "fact-128",
       "evidence": "EXTRACTED",
       "from": "flowGetId",
       "type": "HAS_RULE",
@@ -4275,7 +4550,7 @@
       "condition": "并发串行化和持久化未知"
     },
     {
-      "id": "fact-124",
+      "id": "fact-129",
       "evidence": "EXTRACTED",
       "from": "getFlowDispatcher",
       "type": "CALLS",
@@ -4292,7 +4567,7 @@
       "condition": "仅 TRANSIENT_MANAGER 编译分支"
     },
     {
-      "id": "fact-125",
+      "id": "fact-130",
       "evidence": "EXTRACTED",
       "from": "getFlowDispatcher",
       "type": "HAS_RULE",
@@ -4308,7 +4583,7 @@
       ]
     },
     {
-      "id": "fact-126",
+      "id": "fact-131",
       "evidence": "EXTRACTED",
       "from": "sqlGetFlowDispatcher",
       "type": "READS",
@@ -4325,7 +4600,7 @@
       "condition": "count>1 显式异常；零行行为依赖转换宏"
     },
     {
-      "id": "fact-127",
+      "id": "fact-132",
       "evidence": "EXTRACTED",
       "from": "flowSetLots",
       "type": "HAS_RULE",
@@ -4342,7 +4617,7 @@
       "condition": "添加本地成员后调用 Lot 绑定，异常事务恢复未证实"
     },
     {
-      "id": "fact-128",
+      "id": "fact-133",
       "evidence": "EXTRACTED",
       "from": "flowSetLots",
       "type": "HAS_RULE",
@@ -4359,7 +4634,7 @@
       "condition": "仅此方法计算口径，不是全生命周期不可变定义"
     },
     {
-      "id": "fact-129",
+      "id": "fact-134",
       "evidence": "EXTRACTED",
       "from": "flowSetLots",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4376,7 +4651,7 @@
       "condition": "Lot 已属于其他流程批时映射指派异常"
     },
     {
-      "id": "fact-130",
+      "id": "fact-135",
       "evidence": "EXTRACTED",
       "from": "flowSetMachine",
       "type": "HAS_RULE",
@@ -4393,7 +4668,7 @@
       "condition": "已绑定同一设备时不进入替换分支"
     },
     {
-      "id": "fact-131",
+      "id": "fact-136",
       "evidence": "EXTRACTED",
       "from": "flowRemoveLot",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4410,7 +4685,7 @@
       "condition": "先从本地集合移除，再清空 Lot 的反向引用"
     },
     {
-      "id": "fact-132",
+      "id": "fact-137",
       "evidence": "EXTRACTED",
       "from": "flowRemoveAllLots",
       "type": "CALLS",
@@ -4427,7 +4702,7 @@
       "condition": "逐项删除，忽略 LotNotFoundSignal"
     },
     {
-      "id": "fact-133",
+      "id": "fact-138",
       "evidence": "EXTRACTED",
       "from": "lotSetFlowBatch",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4444,7 +4719,7 @@
       "condition": "输入 nil 时先清空本地引用，再尝试移除旧反向关系"
     },
     {
-      "id": "fact-134",
+      "id": "fact-139",
       "evidence": "EXTRACTED",
       "from": "resourceMatch",
       "type": "HAS_RULE",
@@ -4460,7 +4735,7 @@
       ]
     },
     {
-      "id": "fact-135",
+      "id": "fact-140",
       "evidence": "EXTRACTED",
       "from": "resourceMatch",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4476,7 +4751,7 @@
       ]
     },
     {
-      "id": "fact-136",
+      "id": "fact-141",
       "evidence": "EXTRACTED",
       "from": "resourceMatch",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4492,7 +4767,7 @@
       ]
     },
     {
-      "id": "fact-137",
+      "id": "fact-142",
       "evidence": "EXTRACTED",
       "from": "machineAddFlow",
       "type": "HAS_RULE",
@@ -4508,7 +4783,7 @@
       ]
     },
     {
-      "id": "fact-138",
+      "id": "fact-143",
       "evidence": "EXTRACTED",
       "from": "machineSetFlowMax",
       "type": "HAS_RULE",
@@ -4524,7 +4799,7 @@
       ]
     },
     {
-      "id": "fact-139",
+      "id": "fact-144",
       "evidence": "EXTRACTED",
       "from": "machineAddFlow",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4541,7 +4816,7 @@
       "condition": "添加成功的相关分支维护反向关联"
     },
     {
-      "id": "fact-140",
+      "id": "fact-145",
       "evidence": "EXTRACTED",
       "from": "machineRemoveFlow",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4558,7 +4833,7 @@
       "condition": "移除前按分支清空批次设备关联"
     },
     {
-      "id": "fact-141",
+      "id": "fact-146",
       "evidence": "EXTRACTED",
       "from": "recipeParameters",
       "type": "HAS_RULE",
@@ -4574,7 +4849,7 @@
       ]
     },
     {
-      "id": "fact-142",
+      "id": "fact-147",
       "evidence": "EXTRACTED",
       "from": "recipeParameters",
       "type": "CALLS",
@@ -4590,7 +4865,7 @@
       ]
     },
     {
-      "id": "fact-143",
+      "id": "fact-148",
       "evidence": "EXTRACTED",
       "from": "recipeParameters",
       "type": "CALLS",
@@ -4606,107 +4881,107 @@
       ]
     },
     {
-      "id": "fact-144",
-      "evidence": "EXTRACTED",
-      "from": "recipeForLot",
-      "type": "HAS_RULE",
-      "to": "lotRecipeInhibitRule",
-      "sources": [
-        {
-          "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 4599,
-          "end_line": 4876,
-          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
-        }
-      ]
-    },
-    {
-      "id": "fact-145",
-      "evidence": "EXTRACTED",
-      "from": "recipeForLot",
-      "type": "INVOKES_VIRTUAL_CONTRACT",
-      "to": "inhibitForEntities",
-      "sources": [
-        {
-          "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 4599,
-          "end_line": 4876,
-          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
-        }
-      ],
-      "condition": "配置值1、非空资源匹配分支"
-    },
-    {
-      "id": "fact-146",
-      "evidence": "EXTRACTED",
-      "from": "recipeForLot",
-      "type": "INVOKES_VIRTUAL_CONTRACT",
-      "to": "lotException",
-      "sources": [
-        {
-          "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 4599,
-          "end_line": 4876,
-          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
-        }
-      ],
-      "condition": "逐条返回限制查找该 Lot 例外"
-    },
-    {
-      "id": "fact-147",
-      "evidence": "EXTRACTED",
-      "from": "settingForLot",
-      "type": "HAS_RULE",
-      "to": "lotRecipeInhibitRule",
-      "sources": [
-        {
-          "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 5677,
-          "end_line": 5928,
-          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
-        }
-      ]
-    },
-    {
-      "id": "fact-148",
-      "evidence": "EXTRACTED",
-      "from": "settingForLot",
-      "type": "INVOKES_VIRTUAL_CONTRACT",
-      "to": "inhibitForEntities",
-      "sources": [
-        {
-          "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 5677,
-          "end_line": 5928,
-          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
-        }
-      ],
-      "condition": "配置值1、非空资源匹配分支"
-    },
-    {
       "id": "fact-149",
       "evidence": "EXTRACTED",
-      "from": "settingForLot",
-      "type": "INVOKES_VIRTUAL_CONTRACT",
-      "to": "lotException",
+      "from": "recipeForLot",
+      "type": "HAS_RULE",
+      "to": "lotRecipeInhibitRule",
       "sources": [
         {
           "path": "poscimfw/prcmg/plcrc.cpp",
-          "line": 5677,
-          "end_line": 5928,
+          "line": 4599,
+          "end_line": 4876,
           "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
-          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
+          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
         }
-      ],
-      "condition": "逐条返回限制查找该 Lot 例外"
+      ]
     },
     {
       "id": "fact-150",
+      "evidence": "EXTRACTED",
+      "from": "recipeForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "inhibitForEntities",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 4599,
+          "end_line": 4876,
+          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
+          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
+        }
+      ],
+      "condition": "配置值1、非空资源匹配分支"
+    },
+    {
+      "id": "fact-151",
+      "evidence": "EXTRACTED",
+      "from": "recipeForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotException",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 4599,
+          "end_line": 4876,
+          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
+          "rangeSha256": "2e9830fa5bdb0e940440b20434e7001e3383653b4f70d3ab111ce22ab0db12c5"
+        }
+      ],
+      "condition": "逐条返回限制查找该 Lot 例外"
+    },
+    {
+      "id": "fact-152",
+      "evidence": "EXTRACTED",
+      "from": "settingForLot",
+      "type": "HAS_RULE",
+      "to": "lotRecipeInhibitRule",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928,
+          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
+          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
+        }
+      ]
+    },
+    {
+      "id": "fact-153",
+      "evidence": "EXTRACTED",
+      "from": "settingForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "inhibitForEntities",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928,
+          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
+          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
+        }
+      ],
+      "condition": "配置值1、非空资源匹配分支"
+    },
+    {
+      "id": "fact-154",
+      "evidence": "EXTRACTED",
+      "from": "settingForLot",
+      "type": "INVOKES_VIRTUAL_CONTRACT",
+      "to": "lotException",
+      "sources": [
+        {
+          "path": "poscimfw/prcmg/plcrc.cpp",
+          "line": 5677,
+          "end_line": 5928,
+          "fileSha256": "78421744896fbbd4e04ad5bd589bac20a5623197b902fd24e52fd7e79b155cdc",
+          "rangeSha256": "9b371ee1811c29f2b777dcf69859b21f38bdd0da092cea4433bd02ab4fe612ac"
+        }
+      ],
+      "condition": "逐条返回限制查找该 Lot 例外"
+    },
+    {
+      "id": "fact-155",
       "evidence": "EXTRACTED",
       "from": "inhibitForEntities",
       "type": "CALLS",
@@ -4723,7 +4998,7 @@
       "condition": "输入实体非空"
     },
     {
-      "id": "fact-151",
+      "id": "fact-156",
       "evidence": "EXTRACTED",
       "from": "inhibitQuery",
       "type": "HAS_RULE",
@@ -4740,7 +5015,7 @@
       "condition": "SQL 字符串存在格式参数疑点，未做运行等价验证"
     },
     {
-      "id": "fact-152",
+      "id": "fact-157",
       "evidence": "EXTRACTED",
       "from": "inhibitQuery",
       "type": "READS",
@@ -4757,7 +5032,7 @@
       "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
     },
     {
-      "id": "fact-153",
+      "id": "fact-158",
       "evidence": "EXTRACTED",
       "from": "inhibitQuery",
       "type": "READS",
@@ -4774,7 +5049,7 @@
       "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
     },
     {
-      "id": "fact-154",
+      "id": "fact-159",
       "evidence": "EXTRACTED",
       "from": "inhibitQuery",
       "type": "READS",
@@ -4791,7 +5066,7 @@
       "condition": "动态 SQL 和逐条路径，不是 DDL 外键证明"
     },
     {
-      "id": "fact-155",
+      "id": "fact-160",
       "evidence": "EXTRACTED",
       "from": "stateInfoDisabled",
       "type": "HAS_RULE",
@@ -4807,7 +5082,7 @@
       ]
     },
     {
-      "id": "fact-156",
+      "id": "fact-161",
       "evidence": "EXTRACTED",
       "from": "inhibitQuery",
       "type": "CALLS",
@@ -4824,7 +5099,7 @@
       "condition": "仅动态 SQL 路径按 key 重新读取记录及完整集合"
     },
     {
-      "id": "fact-157",
+      "id": "fact-162",
       "evidence": "EXTRACTED",
       "from": "inhibitByKey",
       "type": "READS",
@@ -4841,7 +5116,7 @@
       "condition": "按主记录 key 组装实体和批次类型集合"
     },
     {
-      "id": "fact-158",
+      "id": "fact-163",
       "evidence": "EXTRACTED",
       "from": "inhibitByKey",
       "type": "READS",
@@ -4858,7 +5133,7 @@
       "condition": "按主记录 key 组装实体和批次类型集合"
     },
     {
-      "id": "fact-159",
+      "id": "fact-164",
       "evidence": "EXTRACTED",
       "from": "inhibitByKey",
       "type": "READS",
@@ -4875,7 +5150,7 @@
       "condition": "按主记录 key 组装实体和批次类型集合"
     },
     {
-      "id": "fact-160",
+      "id": "fact-165",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "HAS_RULE",
@@ -4891,7 +5166,7 @@
       ]
     },
     {
-      "id": "fact-161",
+      "id": "fact-166",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "READS",
@@ -4907,7 +5182,7 @@
       ]
     },
     {
-      "id": "fact-162",
+      "id": "fact-167",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "READS",
@@ -4924,7 +5199,7 @@
       "condition": "仅分流配置解析为1"
     },
     {
-      "id": "fact-163",
+      "id": "fact-168",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "HAS_RULE",
@@ -4940,7 +5215,7 @@
       ]
     },
     {
-      "id": "fact-164",
+      "id": "fact-169",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4957,7 +5232,7 @@
       "condition": "具体事件非空；最终名称可能为分流名称"
     },
     {
-      "id": "fact-165",
+      "id": "fact-170",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4974,7 +5249,7 @@
       "condition": "Any 可解析为 LotHold 记录且存在订阅"
     },
     {
-      "id": "fact-166",
+      "id": "fact-171",
       "evidence": "EXTRACTED",
       "from": "eventCreate",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -4991,7 +5266,7 @@
       "condition": "仅具体创建目标为 LotHold；其他事件有自己的实现"
     },
     {
-      "id": "fact-167",
+      "id": "fact-172",
       "evidence": "EXTRACTED",
       "from": "eventAddFIFO",
       "type": "HAS_RULE",
@@ -5007,7 +5282,7 @@
       ]
     },
     {
-      "id": "fact-168",
+      "id": "fact-173",
       "evidence": "EXTRACTED",
       "from": "eventAllFIFO",
       "type": "READS_COLLECTION",
@@ -5023,7 +5298,7 @@
       ]
     },
     {
-      "id": "fact-169",
+      "id": "fact-174",
       "evidence": "EXTRACTED",
       "from": "eventRemove",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -5039,7 +5314,7 @@
       ]
     },
     {
-      "id": "fact-170",
+      "id": "fact-175",
       "evidence": "EXTRACTED",
       "from": "eventRemove",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -5055,7 +5330,7 @@
       ]
     },
     {
-      "id": "fact-171",
+      "id": "fact-176",
       "evidence": "EXTRACTED",
       "from": "eventRemove",
       "type": "HAS_RULE",
@@ -5071,7 +5346,7 @@
       ]
     },
     {
-      "id": "fact-172",
+      "id": "fact-177",
       "evidence": "EXTRACTED",
       "from": "eventRegister",
       "type": "HAS_RULE",
@@ -5087,7 +5362,7 @@
       ]
     },
     {
-      "id": "fact-173",
+      "id": "fact-178",
       "evidence": "EXTRACTED",
       "from": "eventUnregister",
       "type": "HAS_RULE",
@@ -5103,7 +5378,7 @@
       ]
     },
     {
-      "id": "fact-174",
+      "id": "fact-179",
       "evidence": "EXTRACTED",
       "from": "eventHoldSet",
       "type": "HAS_RULE",
@@ -5119,7 +5394,7 @@
       ]
     },
     {
-      "id": "fact-175",
+      "id": "fact-180",
       "evidence": "EXTRACTED",
       "from": "eventHoldGet",
       "type": "HAS_RULE",
@@ -5135,7 +5410,7 @@
       ]
     },
     {
-      "id": "fact-176",
+      "id": "fact-181",
       "evidence": "EXTRACTED",
       "from": "eventFifoSave",
       "type": "SAVES_COLLECTION",
@@ -5152,7 +5427,7 @@
       "condition": "DO 集合；与 BO 集合的桥接依赖缺失宏，不建立自动等价"
     },
     {
-      "id": "fact-177",
+      "id": "fact-182",
       "evidence": "EXTRACTED",
       "from": "eventFifoSave",
       "type": "CALLS",
@@ -5169,7 +5444,7 @@
       "condition": "按更新配置及操作序列分支"
     },
     {
-      "id": "fact-178",
+      "id": "fact-183",
       "evidence": "EXTRACTED",
       "from": "eventFifoSave",
       "type": "CALLS",
@@ -5186,7 +5461,7 @@
       "condition": "按更新配置及操作序列分支"
     },
     {
-      "id": "fact-179",
+      "id": "fact-184",
       "evidence": "EXTRACTED",
       "from": "eventFifoSave",
       "type": "CALLS",
@@ -5203,7 +5478,7 @@
       "condition": "按更新配置及操作序列分支"
     },
     {
-      "id": "fact-180",
+      "id": "fact-185",
       "evidence": "EXTRACTED",
       "from": "eventFifoSave",
       "type": "CALLS",
@@ -5220,7 +5495,7 @@
       "condition": "按更新配置及操作序列分支"
     },
     {
-      "id": "fact-181",
+      "id": "fact-186",
       "evidence": "EXTRACTED",
       "from": "eventFifoInsert",
       "type": "WRITES",
@@ -5237,7 +5512,7 @@
       "condition": "不证明事务已提交"
     },
     {
-      "id": "fact-182",
+      "id": "fact-187",
       "evidence": "EXTRACTED",
       "from": "eventFifoUpdate",
       "type": "WRITES",
@@ -5254,7 +5529,7 @@
       "condition": "不证明事务已提交"
     },
     {
-      "id": "fact-183",
+      "id": "fact-188",
       "evidence": "EXTRACTED",
       "from": "eventFifoDelete",
       "type": "WRITES",
@@ -5271,7 +5546,7 @@
       "condition": "不证明事务已提交"
     },
     {
-      "id": "fact-184",
+      "id": "fact-189",
       "evidence": "EXTRACTED",
       "from": "eventFifoDeleteAll",
       "type": "WRITES",
@@ -5288,7 +5563,7 @@
       "condition": "不证明事务已提交"
     },
     {
-      "id": "fact-185",
+      "id": "fact-190",
       "evidence": "EXTRACTED",
       "from": "dcValidate",
       "type": "HAS_RULE",
@@ -5304,7 +5579,7 @@
       ]
     },
     {
-      "id": "fact-186",
+      "id": "fact-191",
       "evidence": "EXTRACTED",
       "from": "dcConvert",
       "type": "HAS_RULE",
@@ -5320,7 +5595,7 @@
       ]
     },
     {
-      "id": "fact-187",
+      "id": "fact-192",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "HAS_RULE",
@@ -5336,7 +5611,7 @@
       ]
     },
     {
-      "id": "fact-188",
+      "id": "fact-193",
       "evidence": "EXTRACTED",
       "from": "dcTotal",
       "type": "HAS_RULE",
@@ -5352,7 +5627,7 @@
       ]
     },
     {
-      "id": "fact-189",
+      "id": "fact-194",
       "evidence": "EXTRACTED",
       "from": "dcSpecSet",
       "type": "HAS_RULE",
@@ -5368,7 +5643,7 @@
       ]
     },
     {
-      "id": "fact-190",
+      "id": "fact-195",
       "evidence": "EXTRACTED",
       "from": "dcCalcUniformity",
       "type": "HAS_RULE",
@@ -5384,7 +5659,7 @@
       ]
     },
     {
-      "id": "fact-191",
+      "id": "fact-196",
       "evidence": "EXTRACTED",
       "from": "dcSet170",
       "type": "CALLS",
@@ -5400,7 +5675,7 @@
       ]
     },
     {
-      "id": "fact-192",
+      "id": "fact-197",
       "evidence": "EXTRACTED",
       "from": "dcSpecSet101",
       "type": "CALLS",
@@ -5416,7 +5691,7 @@
       ]
     },
     {
-      "id": "fact-193",
+      "id": "fact-198",
       "evidence": "EXTRACTED",
       "from": "dcSetInternal",
       "type": "REPLACES_COLLECTION",
@@ -5432,7 +5707,7 @@
       ]
     },
     {
-      "id": "fact-194",
+      "id": "fact-199",
       "evidence": "EXTRACTED",
       "from": "dcSpecSetInternal",
       "type": "REPLACES_COLLECTION",
@@ -5448,7 +5723,7 @@
       ]
     },
     {
-      "id": "fact-195",
+      "id": "fact-200",
       "evidence": "EXTRACTED",
       "from": "dcSpecSetInternal",
       "type": "REPLACES_COLLECTION",
@@ -5464,7 +5739,7 @@
       ]
     },
     {
-      "id": "fact-196",
+      "id": "fact-201",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5481,7 +5756,7 @@
       "condition": "收集非空"
     },
     {
-      "id": "fact-197",
+      "id": "fact-202",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5498,7 +5773,7 @@
       "condition": "收集多于1项"
     },
     {
-      "id": "fact-198",
+      "id": "fact-203",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5515,7 +5790,7 @@
       "condition": "收集非空"
     },
     {
-      "id": "fact-199",
+      "id": "fact-204",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5532,7 +5807,7 @@
       "condition": "收集非空"
     },
     {
-      "id": "fact-200",
+      "id": "fact-205",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5549,7 +5824,7 @@
       "condition": "收集非空"
     },
     {
-      "id": "fact-201",
+      "id": "fact-206",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5566,7 +5841,7 @@
       "condition": "收集非空，但没有零均值保护"
     },
     {
-      "id": "fact-202",
+      "id": "fact-207",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5583,7 +5858,7 @@
       "condition": "Delta 类型，找不到映射结果#"
     },
     {
-      "id": "fact-203",
+      "id": "fact-208",
       "evidence": "EXTRACTED",
       "from": "dcCalculate",
       "type": "CALLS",
@@ -5600,7 +5875,7 @@
       "condition": "非 Delta 派生分支"
     },
     {
-      "id": "fact-204",
+      "id": "fact-209",
       "evidence": "EXTRACTED",
       "from": "dcDelta",
       "type": "CALLS",
@@ -5617,7 +5892,7 @@
       "condition": "Delta 模式，恰好两项且来源不同"
     },
     {
-      "id": "fact-205",
+      "id": "fact-210",
       "evidence": "EXTRACTED",
       "from": "dcDelta",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -5634,7 +5909,7 @@
       "condition": "前道工序非空，定义引用初始化为 nil"
     },
     {
-      "id": "fact-206",
+      "id": "fact-211",
       "evidence": "EXTRACTED",
       "from": "dcDelta",
       "type": "HAS_RULE",
@@ -5650,7 +5925,7 @@
       ]
     },
     {
-      "id": "fact-207",
+      "id": "fact-212",
       "evidence": "EXTRACTED",
       "from": "operationSpecCheck",
       "type": "HAS_RULE",
@@ -5666,7 +5941,7 @@
       ]
     },
     {
-      "id": "fact-208",
+      "id": "fact-213",
       "evidence": "EXTRACTED",
       "from": "operationSpecCheck",
       "type": "READS_COLLECTION",
@@ -5682,7 +5957,7 @@
       ]
     },
     {
-      "id": "fact-209",
+      "id": "fact-214",
       "evidence": "EXTRACTED",
       "from": "operationCollectedByWafer",
       "type": "READS_COLLECTION",
@@ -5698,7 +5973,7 @@
       ]
     },
     {
-      "id": "fact-210",
+      "id": "fact-215",
       "evidence": "EXTRACTED",
       "from": "operationGetDCDef",
       "type": "HAS_RULE",
@@ -5714,7 +5989,7 @@
       ]
     },
     {
-      "id": "fact-211",
+      "id": "fact-216",
       "evidence": "EXTRACTED",
       "from": "operationSetStartInfo",
       "type": "HAS_RULE",
@@ -5730,7 +6005,7 @@
       ]
     },
     {
-      "id": "fact-212",
+      "id": "fact-217",
       "evidence": "EXTRACTED",
       "from": "operationSetDCInfo",
       "type": "HAS_RULE",
@@ -5746,7 +6021,7 @@
       ]
     },
     {
-      "id": "fact-213",
+      "id": "fact-218",
       "evidence": "EXTRACTED",
       "from": "operationSetDCItems",
       "type": "HAS_RULE",
@@ -5762,7 +6037,7 @@
       ]
     },
     {
-      "id": "fact-214",
+      "id": "fact-219",
       "evidence": "EXTRACTED",
       "from": "operationGetDCDef",
       "type": "READS_COLLECTION",
@@ -5778,7 +6053,7 @@
       ]
     },
     {
-      "id": "fact-215",
+      "id": "fact-220",
       "evidence": "EXTRACTED",
       "from": "operationGetStartInfo",
       "type": "READS_COLLECTION",
@@ -5794,7 +6069,7 @@
       ]
     },
     {
-      "id": "fact-216",
+      "id": "fact-221",
       "evidence": "EXTRACTED",
       "from": "operationGetDCItems",
       "type": "READS_COLLECTION",
@@ -5810,7 +6085,7 @@
       ]
     },
     {
-      "id": "fact-217",
+      "id": "fact-222",
       "evidence": "EXTRACTED",
       "from": "operationSetDCInfo",
       "type": "REPLACES_COLLECTION",
@@ -5826,7 +6101,7 @@
       ]
     },
     {
-      "id": "fact-218",
+      "id": "fact-223",
       "evidence": "EXTRACTED",
       "from": "operationSetStartInfo",
       "type": "REPLACES_COLLECTION",
@@ -5842,7 +6117,7 @@
       ]
     },
     {
-      "id": "fact-219",
+      "id": "fact-224",
       "evidence": "EXTRACTED",
       "from": "operationSetDCItems",
       "type": "REPLACES_COLLECTION",
@@ -5859,7 +6134,7 @@
       "condition": "仅匹配的定义替换 dcItems，其他条目复制保留"
     },
     {
-      "id": "fact-220",
+      "id": "fact-225",
       "evidence": "EXTRACTED",
       "from": "operationCollectedByWafer",
       "type": "CALLS",
@@ -5876,7 +6151,7 @@
       "condition": "输入定义引用 nil"
     },
     {
-      "id": "fact-221",
+      "id": "fact-226",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "HAS_RULE",
@@ -5892,7 +6167,7 @@
       ]
     },
     {
-      "id": "fact-222",
+      "id": "fact-227",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "HAS_RULE",
@@ -5908,7 +6183,7 @@
       ]
     },
     {
-      "id": "fact-223",
+      "id": "fact-228",
       "evidence": "EXTRACTED",
       "from": "lotpoBase",
       "type": "HAS_RULE",
@@ -5924,7 +6199,7 @@
       ]
     },
     {
-      "id": "fact-224",
+      "id": "fact-229",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "READS",
@@ -5941,7 +6216,7 @@
       "condition": "按 PO_OBJ 查 Lot，未找到返回0"
     },
     {
-      "id": "fact-225",
+      "id": "fact-230",
       "evidence": "EXTRACTED",
       "from": "lotpoBase",
       "type": "READS",
@@ -5958,7 +6233,7 @@
       "condition": "按 LOT_ID 计数"
     },
     {
-      "id": "fact-226",
+      "id": "fact-231",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "WRITES",
@@ -5975,7 +6250,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-227",
+      "id": "fact-232",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "WRITES",
@@ -5992,7 +6267,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-228",
+      "id": "fact-233",
       "evidence": "EXTRACTED",
       "from": "lotpoSet",
       "type": "WRITES",
@@ -6009,7 +6284,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-229",
+      "id": "fact-234",
       "evidence": "EXTRACTED",
       "from": "lotpoBase",
       "type": "WRITES",
@@ -6026,7 +6301,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-230",
+      "id": "fact-235",
       "evidence": "EXTRACTED",
       "from": "lotpoBase",
       "type": "WRITES",
@@ -6043,7 +6318,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-231",
+      "id": "fact-236",
       "evidence": "EXTRACTED",
       "from": "lotpoBase",
       "type": "WRITES",
@@ -6060,7 +6335,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-232",
+      "id": "fact-237",
       "evidence": "EXTRACTED",
       "from": "lotpoDelete",
       "type": "WRITES",
@@ -6077,7 +6352,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-233",
+      "id": "fact-238",
       "evidence": "EXTRACTED",
       "from": "lotpoDelete",
       "type": "WRITES",
@@ -6094,7 +6369,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-234",
+      "id": "fact-239",
       "evidence": "EXTRACTED",
       "from": "lotpoDelete",
       "type": "WRITES",
@@ -6111,7 +6386,7 @@
       "condition": "按配置模式及 SQL 返回分支；没有本地 COMMIT/ROLLBACK"
     },
     {
-      "id": "fact-235",
+      "id": "fact-240",
       "evidence": "EXTRACTED",
       "from": "operationSetStartInfo",
       "type": "CALLS",
@@ -6128,7 +6403,7 @@
       "condition": "维护配置解析为1，ACTUALSTART 模式"
     },
     {
-      "id": "fact-236",
+      "id": "fact-241",
       "evidence": "EXTRACTED",
       "from": "operationSetDCInfo",
       "type": "CALLS",
@@ -6145,7 +6420,7 @@
       "condition": "维护配置解析为1，DATACOLLECTION 模式"
     },
     {
-      "id": "fact-237",
+      "id": "fact-242",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample1",
       "type": "WRITES",
@@ -6162,7 +6437,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-238",
+      "id": "fact-243",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample2",
       "type": "WRITES",
@@ -6179,7 +6454,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-239",
+      "id": "fact-244",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample3",
       "type": "WRITES",
@@ -6196,7 +6471,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-240",
+      "id": "fact-245",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample4",
       "type": "WRITES",
@@ -6213,7 +6488,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-241",
+      "id": "fact-246",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample5",
       "type": "WRITES",
@@ -6230,7 +6505,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-242",
+      "id": "fact-247",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample6",
       "type": "WRITES",
@@ -6247,7 +6522,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-243",
+      "id": "fact-248",
       "evidence": "EXTRACTED",
       "from": "persistenceDeleteSample7",
       "type": "WRITES",
@@ -6264,7 +6539,7 @@
       "condition": "七种模式首个完整阅读代表；不自动推广同形成员"
     },
     {
-      "id": "fact-244",
+      "id": "fact-249",
       "evidence": "EXTRACTED",
       "from": "collectionReview1",
       "type": "HAS_RULE",
@@ -6280,7 +6555,7 @@
       ]
     },
     {
-      "id": "fact-245",
+      "id": "fact-250",
       "evidence": "EXTRACTED",
       "from": "collectionReview2",
       "type": "HAS_RULE",
@@ -6296,7 +6571,7 @@
       ]
     },
     {
-      "id": "fact-246",
+      "id": "fact-251",
       "evidence": "EXTRACTED",
       "from": "collectionReview4",
       "type": "HAS_RULE",
@@ -6312,7 +6587,7 @@
       ]
     },
     {
-      "id": "fact-247",
+      "id": "fact-252",
       "evidence": "EXTRACTED",
       "from": "collectionReview5",
       "type": "HAS_RULE",
@@ -6328,7 +6603,7 @@
       ]
     },
     {
-      "id": "fact-248",
+      "id": "fact-253",
       "evidence": "EXTRACTED",
       "from": "collectionReview7",
       "type": "HAS_RULE",
@@ -6344,7 +6619,7 @@
       ]
     },
     {
-      "id": "fact-249",
+      "id": "fact-254",
       "evidence": "EXTRACTED",
       "from": "collectionReview8",
       "type": "HAS_RULE",
@@ -6360,7 +6635,7 @@
       ]
     },
     {
-      "id": "fact-250",
+      "id": "fact-255",
       "evidence": "EXTRACTED",
       "from": "collectionReview10",
       "type": "HAS_RULE",
@@ -6376,7 +6651,7 @@
       ]
     },
     {
-      "id": "fact-251",
+      "id": "fact-256",
       "evidence": "EXTRACTED",
       "from": "collectionReview10",
       "type": "WRITES",
@@ -6393,7 +6668,7 @@
       "condition": "MERGE 从同表源区间读取，未在该方法删除源"
     },
     {
-      "id": "fact-252",
+      "id": "fact-257",
       "evidence": "EXTRACTED",
       "from": "collectionReview10",
       "type": "READS",
@@ -6409,7 +6684,7 @@
       ]
     },
     {
-      "id": "fact-253",
+      "id": "fact-258",
       "evidence": "EXTRACTED",
       "from": "plannerSearch",
       "type": "CALLS",
@@ -6425,7 +6700,7 @@
       ]
     },
     {
-      "id": "fact-254",
+      "id": "fact-259",
       "evidence": "EXTRACTED",
       "from": "plannerSearch",
       "type": "CALLS",
@@ -6441,7 +6716,7 @@
       ]
     },
     {
-      "id": "fact-255",
+      "id": "fact-260",
       "evidence": "EXTRACTED",
       "from": "plannerThreshold",
       "type": "CALLS",
@@ -6457,7 +6732,7 @@
       ]
     },
     {
-      "id": "fact-256",
+      "id": "fact-261",
       "evidence": "EXTRACTED",
       "from": "plannerThreshold",
       "type": "HAS_RULE",
@@ -6473,7 +6748,7 @@
       ]
     },
     {
-      "id": "fact-257",
+      "id": "fact-262",
       "evidence": "EXTRACTED",
       "from": "plannerAssemble",
       "type": "HAS_RULE",
@@ -6489,7 +6764,7 @@
       ]
     },
     {
-      "id": "fact-258",
+      "id": "fact-263",
       "evidence": "EXTRACTED",
       "from": "plannerInitialize",
       "type": "HAS_RULE",
@@ -6505,7 +6780,7 @@
       ]
     },
     {
-      "id": "fact-259",
+      "id": "fact-264",
       "evidence": "EXTRACTED",
       "from": "plannerThreshold",
       "type": "CALLS",
@@ -6521,7 +6796,7 @@
       ]
     },
     {
-      "id": "fact-260",
+      "id": "fact-265",
       "evidence": "EXTRACTED",
       "from": "codeUDCompare",
       "type": "HAS_RULE",
@@ -6537,7 +6812,7 @@
       ]
     },
     {
-      "id": "fact-261",
+      "id": "fact-266",
       "evidence": "EXTRACTED",
       "from": "codeUDReader",
       "type": "READS",
@@ -6554,7 +6829,7 @@
       "condition": "ORDER BY d_SeqNo DESC，缓存比较依赖顺序及序号约束"
     },
     {
-      "id": "fact-262",
+      "id": "fact-267",
       "evidence": "EXTRACTED",
       "from": "plannerSearch",
       "type": "CALLS",
@@ -6570,7 +6845,7 @@
       ]
     },
     {
-      "id": "fact-263",
+      "id": "fact-268",
       "evidence": "EXTRACTED",
       "from": "plannerInitializeWrapper",
       "type": "CALLS",
@@ -6587,7 +6862,7 @@
       "condition": "转发时将 dLength 同时作为 dLength2"
     },
     {
-      "id": "fact-264",
+      "id": "fact-269",
       "evidence": "EXTRACTED",
       "from": "cassetteAddWafer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6604,7 +6879,7 @@
       "condition": "尺寸匹配后，实际覆盖目标依动态类型"
     },
     {
-      "id": "fact-265",
+      "id": "fact-270",
       "evidence": "EXTRACTED",
       "from": "cassetteRemoveWafer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6620,7 +6895,7 @@
       ]
     },
     {
-      "id": "fact-266",
+      "id": "fact-271",
       "evidence": "EXTRACTED",
       "from": "cassetteAddWafer",
       "type": "HAS_RULE",
@@ -6636,7 +6911,7 @@
       ]
     },
     {
-      "id": "fact-267",
+      "id": "fact-272",
       "evidence": "EXTRACTED",
       "from": "cassetteRemoveWafer",
       "type": "HAS_RULE",
@@ -6652,7 +6927,7 @@
       ]
     },
     {
-      "id": "fact-268",
+      "id": "fact-273",
       "evidence": "EXTRACTED",
       "from": "cassetteAddWafer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6669,7 +6944,7 @@
       "condition": "首次该Lot"
     },
     {
-      "id": "fact-269",
+      "id": "fact-274",
       "evidence": "EXTRACTED",
       "from": "cassetteRemoveWafer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6686,7 +6961,7 @@
       "condition": "计数减到0"
     },
     {
-      "id": "fact-270",
+      "id": "fact-275",
       "evidence": "EXTRACTED",
       "from": "positionalAdd",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6702,7 +6977,7 @@
       ]
     },
     {
-      "id": "fact-271",
+      "id": "fact-276",
       "evidence": "EXTRACTED",
       "from": "positionalRemove",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6718,7 +6993,7 @@
       ]
     },
     {
-      "id": "fact-272",
+      "id": "fact-277",
       "evidence": "EXTRACTED",
       "from": "containerAdd",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6735,7 +7010,7 @@
       "condition": "addUnique成功"
     },
     {
-      "id": "fact-273",
+      "id": "fact-278",
       "evidence": "EXTRACTED",
       "from": "containerRemove",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6752,7 +7027,7 @@
       "condition": "物料存在，先删集合再清反向引用"
     },
     {
-      "id": "fact-274",
+      "id": "fact-279",
       "evidence": "EXTRACTED",
       "from": "materialSetContainer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6769,7 +7044,7 @@
       "condition": "标识变化且旧容器非空"
     },
     {
-      "id": "fact-275",
+      "id": "fact-280",
       "evidence": "EXTRACTED",
       "from": "materialSetContainer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6786,7 +7061,7 @@
       "condition": "新容器非空"
     },
     {
-      "id": "fact-276",
+      "id": "fact-281",
       "evidence": "EXTRACTED",
       "from": "lotAddContainer",
       "type": "HAS_RULE",
@@ -6802,7 +7077,7 @@
       ]
     },
     {
-      "id": "fact-277",
+      "id": "fact-282",
       "evidence": "EXTRACTED",
       "from": "lotRemoveContainer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6819,7 +7094,7 @@
       "condition": "先重建反向列表，可narrow为Cassette才回调"
     },
     {
-      "id": "fact-278",
+      "id": "fact-283",
       "evidence": "EXTRACTED",
       "from": "cassetteTransfer",
       "type": "HAS_RULE",
@@ -6835,7 +7110,7 @@
       ]
     },
     {
-      "id": "fact-279",
+      "id": "fact-284",
       "evidence": "EXTRACTED",
       "from": "cassetteTransfer",
       "type": "CALLS",
@@ -6852,7 +7127,7 @@
       "condition": "源盒找到位置"
     },
     {
-      "id": "fact-280",
+      "id": "fact-285",
       "evidence": "EXTRACTED",
       "from": "cassetteTransfer",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6869,7 +7144,7 @@
       "condition": "目标载具动态调用"
     },
     {
-      "id": "fact-281",
+      "id": "fact-286",
       "evidence": "EXTRACTED",
       "from": "cassetteUnloadLot",
       "type": "HAS_RULE",
@@ -6885,7 +7160,7 @@
       ]
     },
     {
-      "id": "fact-282",
+      "id": "fact-287",
       "evidence": "EXTRACTED",
       "from": "cassetteAvailable",
       "type": "HAS_RULE",
@@ -6901,7 +7176,7 @@
       ]
     },
     {
-      "id": "fact-283",
+      "id": "fact-288",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "CALLS",
@@ -6918,7 +7193,7 @@
       "condition": "显式基类调用，所有PreviousLot已先写"
     },
     {
-      "id": "fact-284",
+      "id": "fact-289",
       "evidence": "EXTRACTED",
       "from": "splitBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -6935,7 +7210,7 @@
       "condition": "每个子批创建及基础字段完成后"
     },
     {
-      "id": "fact-285",
+      "id": "fact-290",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "HAS_RULE",
@@ -6951,7 +7226,7 @@
       ]
     },
     {
-      "id": "fact-286",
+      "id": "fact-291",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "HAS_RULE",
@@ -6967,7 +7242,7 @@
       ]
     },
     {
-      "id": "fact-287",
+      "id": "fact-292",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "HAS_RULE",
@@ -6983,7 +7258,7 @@
       ]
     },
     {
-      "id": "fact-288",
+      "id": "fact-293",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7000,7 +7275,7 @@
       "condition": "父批及首子批"
     },
     {
-      "id": "fact-289",
+      "id": "fact-294",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7017,7 +7292,7 @@
       "condition": "首子批"
     },
     {
-      "id": "fact-290",
+      "id": "fact-295",
       "evidence": "EXTRACTED",
       "from": "transferLotProducts",
       "type": "HAS_RULE",
@@ -7033,7 +7308,7 @@
       ]
     },
     {
-      "id": "fact-291",
+      "id": "fact-296",
       "evidence": "EXTRACTED",
       "from": "transferLotProducts",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7050,7 +7325,7 @@
       "condition": "先源删，再目标动态调用"
     },
     {
-      "id": "fact-292",
+      "id": "fact-297",
       "evidence": "EXTRACTED",
       "from": "transferLotProducts",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7066,7 +7341,7 @@
       ]
     },
     {
-      "id": "fact-293",
+      "id": "fact-298",
       "evidence": "EXTRACTED",
       "from": "lotAddMaterial",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7082,7 +7357,7 @@
       ]
     },
     {
-      "id": "fact-294",
+      "id": "fact-299",
       "evidence": "EXTRACTED",
       "from": "lotRefreshQuantity",
       "type": "HAS_RULE",
@@ -7098,7 +7373,7 @@
       ]
     },
     {
-      "id": "fact-295",
+      "id": "fact-300",
       "evidence": "EXTRACTED",
       "from": "lotPosInit",
       "type": "CALLS",
@@ -7114,7 +7389,7 @@
       ]
     },
     {
-      "id": "fact-296",
+      "id": "fact-301",
       "evidence": "EXTRACTED",
       "from": "lotBaseInit",
       "type": "HAS_RULE",
@@ -7130,7 +7405,7 @@
       ]
     },
     {
-      "id": "fact-297",
+      "id": "fact-302",
       "evidence": "EXTRACTED",
       "from": "joinPos",
       "type": "CALLS",
@@ -7146,7 +7421,7 @@
       ]
     },
     {
-      "id": "fact-298",
+      "id": "fact-303",
       "evidence": "EXTRACTED",
       "from": "joinBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7163,7 +7438,7 @@
       "condition": "转移异常映射LotJoinFailed，不代表恢复"
     },
     {
-      "id": "fact-299",
+      "id": "fact-304",
       "evidence": "EXTRACTED",
       "from": "joinBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7180,7 +7455,7 @@
       "condition": "sourceLot动态调用，Pos覆盖目标另有后置检查"
     },
     {
-      "id": "fact-300",
+      "id": "fact-305",
       "evidence": "EXTRACTED",
       "from": "joinPos",
       "type": "HAS_RULE",
@@ -7196,7 +7471,7 @@
       ]
     },
     {
-      "id": "fact-301",
+      "id": "fact-306",
       "evidence": "EXTRACTED",
       "from": "joinPos",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7212,7 +7487,7 @@
       ]
     },
     {
-      "id": "fact-302",
+      "id": "fact-307",
       "evidence": "EXTRACTED",
       "from": "emptyLotPos",
       "type": "CALLS",
@@ -7228,7 +7503,7 @@
       ]
     },
     {
-      "id": "fact-303",
+      "id": "fact-308",
       "evidence": "EXTRACTED",
       "from": "emptyLotPos",
       "type": "CALLS",
@@ -7245,7 +7520,7 @@
       "condition": "两个维护配置均1"
     },
     {
-      "id": "fact-304",
+      "id": "fact-309",
       "evidence": "EXTRACTED",
       "from": "emptyLotBase",
       "type": "HAS_RULE",
@@ -7261,7 +7536,7 @@
       ]
     },
     {
-      "id": "fact-305",
+      "id": "fact-310",
       "evidence": "EXTRACTED",
       "from": "emptyLotPos",
       "type": "HAS_RULE",
@@ -7277,7 +7552,7 @@
       ]
     },
     {
-      "id": "fact-306",
+      "id": "fact-311",
       "evidence": "EXTRACTED",
       "from": "planningCreateOperationSchedule",
       "type": "HAS_RULE",
@@ -7293,7 +7568,7 @@
       ]
     },
     {
-      "id": "fact-307",
+      "id": "fact-312",
       "evidence": "EXTRACTED",
       "from": "planningRemoveAllOperations",
       "type": "CALLS",
@@ -7310,7 +7585,7 @@
       "condition": "逐项处理，忽略找不到"
     },
     {
-      "id": "fact-308",
+      "id": "fact-313",
       "evidence": "EXTRACTED",
       "from": "planningFindLotSchedule",
       "type": "CALLS",
@@ -7327,7 +7602,7 @@
       "condition": "仅TRANSIENT_MANAGER分支"
     },
     {
-      "id": "fact-309",
+      "id": "fact-314",
       "evidence": "EXTRACTED",
       "from": "planningSqlFindLotSchedule",
       "type": "READS",
@@ -7343,7 +7618,7 @@
       ]
     },
     {
-      "id": "fact-310",
+      "id": "fact-315",
       "evidence": "EXTRACTED",
       "from": "planningSqlFindLotSchedule",
       "type": "READS",
@@ -7360,7 +7635,7 @@
       "condition": "重名时检查被Lot引用"
     },
     {
-      "id": "fact-311",
+      "id": "fact-316",
       "evidence": "EXTRACTED",
       "from": "planningSqlFindLotSchedule",
       "type": "HAS_RULE",
@@ -7376,7 +7651,7 @@
       ]
     },
     {
-      "id": "fact-312",
+      "id": "fact-317",
       "evidence": "EXTRACTED",
       "from": "dispatchEDD",
       "type": "READS",
@@ -7392,7 +7667,7 @@
       ]
     },
     {
-      "id": "fact-313",
+      "id": "fact-318",
       "evidence": "EXTRACTED",
       "from": "dispatchEDD",
       "type": "HAS_RULE",
@@ -7408,7 +7683,7 @@
       ]
     },
     {
-      "id": "fact-314",
+      "id": "fact-319",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7425,7 +7700,7 @@
       "condition": "首子批且未配置跳过计划，父有计划"
     },
     {
-      "id": "fact-315",
+      "id": "fact-320",
       "evidence": "EXTRACTED",
       "from": "splitPos",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7442,7 +7717,7 @@
       "condition": "逐项复制父工序计划到首子批"
     },
     {
-      "id": "fact-316",
+      "id": "fact-321",
       "evidence": "EXTRACTED",
       "from": "ProductRequest",
       "type": "HAS_STATE",
@@ -7458,7 +7733,7 @@
       ]
     },
     {
-      "id": "fact-317",
+      "id": "fact-322",
       "evidence": "EXTRACTED",
       "from": "ProductRequest",
       "type": "HAS_STATE",
@@ -7474,7 +7749,7 @@
       ]
     },
     {
-      "id": "fact-318",
+      "id": "fact-323",
       "evidence": "EXTRACTED",
       "from": "requestNotPlanned",
       "type": "HAS_RULE",
@@ -7490,7 +7765,7 @@
       ]
     },
     {
-      "id": "fact-319",
+      "id": "fact-324",
       "evidence": "EXTRACTED",
       "from": "requestPlanned",
       "type": "HAS_RULE",
@@ -7506,7 +7781,7 @@
       ]
     },
     {
-      "id": "fact-320",
+      "id": "fact-325",
       "evidence": "EXTRACTED",
       "from": "requestNotInRelease",
       "type": "HAS_RULE",
@@ -7522,7 +7797,7 @@
       ]
     },
     {
-      "id": "fact-321",
+      "id": "fact-326",
       "evidence": "EXTRACTED",
       "from": "requestInRelease",
       "type": "HAS_RULE",
@@ -7538,7 +7813,7 @@
       ]
     },
     {
-      "id": "fact-322",
+      "id": "fact-327",
       "evidence": "EXTRACTED",
       "from": "requestInWork",
       "type": "HAS_RULE",
@@ -7554,7 +7829,7 @@
       ]
     },
     {
-      "id": "fact-323",
+      "id": "fact-328",
       "evidence": "EXTRACTED",
       "from": "requestMakeOnHold",
       "type": "HAS_RULE",
@@ -7570,7 +7845,7 @@
       ]
     },
     {
-      "id": "fact-324",
+      "id": "fact-329",
       "evidence": "EXTRACTED",
       "from": "requestCompleted",
       "type": "HAS_RULE",
@@ -7586,7 +7861,7 @@
       ]
     },
     {
-      "id": "fact-325",
+      "id": "fact-330",
       "evidence": "EXTRACTED",
       "from": "requestVendorState",
       "type": "HAS_RULE",
@@ -7602,7 +7877,7 @@
       ]
     },
     {
-      "id": "fact-326",
+      "id": "fact-331",
       "evidence": "EXTRACTED",
       "from": "lotInProduction",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7619,7 +7894,7 @@
       "condition": "Released激活、OriginalLot且请求非空"
     },
     {
-      "id": "fact-327",
+      "id": "fact-332",
       "evidence": "EXTRACTED",
       "from": "lotUnholdBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7636,7 +7911,7 @@
       "condition": "先前OnHold且家族全部NotOnHold，请求非InWork"
     },
     {
-      "id": "fact-328",
+      "id": "fact-333",
       "evidence": "EXTRACTED",
       "from": "lotCompletedBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7653,7 +7928,7 @@
       "condition": "家族currentLots为空且请求非空"
     },
     {
-      "id": "fact-329",
+      "id": "fact-334",
       "evidence": "EXTRACTED",
       "from": "emptyLotBase",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7670,7 +7945,7 @@
       "condition": "家族currentLots为空且请求非空"
     },
     {
-      "id": "fact-330",
+      "id": "fact-335",
       "evidence": "EXTRACTED",
       "from": "authenticate",
       "type": "HAS_RULE",
@@ -7686,7 +7961,7 @@
       ]
     },
     {
-      "id": "fact-331",
+      "id": "fact-336",
       "evidence": "EXTRACTED",
       "from": "authenticate",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7702,7 +7977,7 @@
       ]
     },
     {
-      "id": "fact-332",
+      "id": "fact-337",
       "evidence": "EXTRACTED",
       "from": "personVerifyPassword",
       "type": "HAS_RULE",
@@ -7718,7 +7993,7 @@
       ]
     },
     {
-      "id": "fact-333",
+      "id": "fact-338",
       "evidence": "EXTRACTED",
       "from": "personVerifyPassword",
       "type": "CALLS",
@@ -7735,7 +8010,7 @@
       "condition": "仅存在非空加密字段，平台实现有编译条件"
     },
     {
-      "id": "fact-334",
+      "id": "fact-339",
       "evidence": "EXTRACTED",
       "from": "personAllOperable",
       "type": "HAS_RULE",
@@ -7751,7 +8026,7 @@
       ]
     },
     {
-      "id": "fact-335",
+      "id": "fact-340",
       "evidence": "EXTRACTED",
       "from": "personAllPrivileges",
       "type": "HAS_RULE",
@@ -7767,7 +8042,7 @@
       ]
     },
     {
-      "id": "fact-336",
+      "id": "fact-341",
       "evidence": "EXTRACTED",
       "from": "personAllOperable",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7784,7 +8059,7 @@
       "condition": "subSystem相同且category匹配或参数为空"
     },
     {
-      "id": "fact-337",
+      "id": "fact-342",
       "evidence": "EXTRACTED",
       "from": "personAllPrivileges",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7800,7 +8075,7 @@
       ]
     },
     {
-      "id": "fact-338",
+      "id": "fact-343",
       "evidence": "EXTRACTED",
       "from": "personAddGroup",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7817,7 +8092,7 @@
       "condition": "对侧找不到人员，忽略重复"
     },
     {
-      "id": "fact-339",
+      "id": "fact-344",
       "evidence": "EXTRACTED",
       "from": "groupAddPerson",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7834,7 +8109,7 @@
       "condition": "对侧找不到组，忽略重复"
     },
     {
-      "id": "fact-340",
+      "id": "fact-345",
       "evidence": "EXTRACTED",
       "from": "personRemoveGroup",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7851,7 +8126,7 @@
       "condition": "对侧仍有该人员时"
     },
     {
-      "id": "fact-341",
+      "id": "fact-346",
       "evidence": "EXTRACTED",
       "from": "groupRemovePerson",
       "type": "INVOKES_VIRTUAL_CONTRACT",
@@ -7868,7 +8143,7 @@
       "condition": "对侧仍有该组时"
     },
     {
-      "id": "fact-342",
+      "id": "fact-347",
       "evidence": "EXTRACTED",
       "from": "bomSetInfo",
       "type": "HAS_RULE",
@@ -7884,7 +8159,7 @@
       ]
     },
     {
-      "id": "fact-343",
+      "id": "fact-348",
       "evidence": "EXTRACTED",
       "from": "bomSetInfo",
       "type": "REPLACES_COLLECTION",
@@ -7900,7 +8175,7 @@
       ]
     },
     {
-      "id": "fact-344",
+      "id": "fact-349",
       "evidence": "EXTRACTED",
       "from": "bomAddParts",
       "type": "HAS_RULE",
@@ -7916,7 +8191,7 @@
       ]
     },
     {
-      "id": "fact-345",
+      "id": "fact-350",
       "evidence": "EXTRACTED",
       "from": "bomFindParts",
       "type": "HAS_RULE",
@@ -7932,7 +8207,7 @@
       ]
     },
     {
-      "id": "fact-346",
+      "id": "fact-351",
       "evidence": "EXTRACTED",
       "from": "bomFindParts",
       "type": "READS_COLLECTION",
@@ -7948,7 +8223,7 @@
       ]
     },
     {
-      "id": "fact-347",
+      "id": "fact-352",
       "evidence": "EXTRACTED",
       "from": "specGetBOM",
       "type": "RETURNS_REFERENCE",
@@ -7965,7 +8240,7 @@
       "condition": "GET_OBJECTIDENTIFIER宏契约，解析/异常语义待宏展开"
     },
     {
-      "id": "fact-348",
+      "id": "fact-353",
       "evidence": "EXTRACTED",
       "from": "bomFind",
       "type": "CALLS",
@@ -7982,7 +8257,7 @@
       "condition": "仅TRANSIENT分支"
     },
     {
-      "id": "fact-349",
+      "id": "fact-354",
       "evidence": "EXTRACTED",
       "from": "bomSQLFind",
       "type": "READS",
@@ -7998,7 +8273,7 @@
       ]
     },
     {
-      "id": "fact-350",
+      "id": "fact-355",
       "evidence": "EXTRACTED",
       "from": "bomSQLAll",
       "type": "READS",
@@ -8014,7 +8289,7 @@
       ]
     },
     {
-      "id": "fact-351",
+      "id": "fact-356",
       "evidence": "EXTRACTED",
       "from": "bomPartSave",
       "type": "SAVES_COLLECTION",
@@ -8031,7 +8306,7 @@
       "condition": "DO侧保存，不证明BO桥接或事务已提交"
     },
     {
-      "id": "fact-352",
+      "id": "fact-357",
       "evidence": "EXTRACTED",
       "from": "bomPartSave",
       "type": "CALLS",
@@ -8048,7 +8323,7 @@
       "condition": "非Insert/None分支"
     },
     {
-      "id": "fact-353",
+      "id": "fact-358",
       "evidence": "EXTRACTED",
       "from": "bomPartInsert",
       "type": "WRITES",
@@ -8064,7 +8339,7 @@
       ]
     },
     {
-      "id": "fact-354",
+      "id": "fact-359",
       "evidence": "EXTRACTED",
       "from": "bomPartUpdate",
       "type": "WRITES",
@@ -8080,7 +8355,7 @@
       ]
     },
     {
-      "id": "fact-355",
+      "id": "fact-360",
       "evidence": "EXTRACTED",
       "from": "FRBOM_PARTS",
       "type": "STORES",
@@ -8097,7 +8372,7 @@
       "condition": "清单需求字段，不是消耗流水"
     },
     {
-      "id": "fact-356",
+      "id": "fact-361",
       "evidence": "EXTRACTED",
       "from": "FRBOM_PARTS",
       "type": "STORES",
@@ -8114,7 +8389,7 @@
       "condition": "清单需求字段，不是消耗流水"
     },
     {
-      "id": "fact-357",
+      "id": "fact-362",
       "evidence": "EXTRACTED",
       "from": "locationBankConfigure",
       "type": "HAS_RULE",
@@ -8130,7 +8405,7 @@
       ]
     },
     {
-      "id": "fact-358",
+      "id": "fact-363",
       "evidence": "EXTRACTED",
       "from": "locationAreaConfigure",
       "type": "HAS_RULE",
@@ -8146,7 +8421,7 @@
       ]
     },
     {
-      "id": "fact-359",
+      "id": "fact-364",
       "evidence": "EXTRACTED",
       "from": "locationBankCheckDeletion",
       "type": "HAS_RULE",
@@ -8162,7 +8437,7 @@
       ]
     },
     {
-      "id": "fact-360",
+      "id": "fact-365",
       "evidence": "EXTRACTED",
       "from": "locationBankCheckDeletion",
       "type": "READS",
@@ -8179,7 +8454,7 @@
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
     },
     {
-      "id": "fact-361",
+      "id": "fact-366",
       "evidence": "EXTRACTED",
       "from": "locationBankCheckDeletion",
       "type": "READS",
@@ -8196,7 +8471,7 @@
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
     },
     {
-      "id": "fact-362",
+      "id": "fact-367",
       "evidence": "EXTRACTED",
       "from": "locationBankCheckDeletion",
       "type": "READS",
@@ -8213,7 +8488,7 @@
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
     },
     {
-      "id": "fact-363",
+      "id": "fact-368",
       "evidence": "EXTRACTED",
       "from": "locationBankCheckDeletion",
       "type": "READS",
@@ -8230,7 +8505,7 @@
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
     },
     {
-      "id": "fact-364",
+      "id": "fact-369",
       "evidence": "EXTRACTED",
       "from": "locationStorageSetArea",
       "type": "HAS_RULE",
@@ -8246,7 +8521,7 @@
       ]
     },
     {
-      "id": "fact-365",
+      "id": "fact-370",
       "evidence": "EXTRACTED",
       "from": "locationStorageFind",
       "type": "HAS_RULE",
@@ -8262,7 +8537,7 @@
       ]
     },
     {
-      "id": "fact-366",
+      "id": "fact-371",
       "evidence": "EXTRACTED",
       "from": "lotBankSetReference",
       "type": "HAS_RULE",
@@ -8278,7 +8553,7 @@
       ]
     },
     {
-      "id": "fact-367",
+      "id": "fact-372",
       "evidence": "EXTRACTED",
       "from": "lotBankRequirementQuery",
       "type": "HAS_RULE",
@@ -8294,7 +8569,7 @@
       ]
     },
     {
-      "id": "fact-368",
+      "id": "fact-373",
       "evidence": "EXTRACTED",
       "from": "lotBankCancelReset",
       "type": "HAS_RULE",
@@ -8310,7 +8585,7 @@
       ]
     },
     {
-      "id": "fact-369",
+      "id": "fact-374",
       "evidence": "EXTRACTED",
       "from": "lotBankBaseInfo",
       "type": "HAS_RULE",
@@ -8326,7 +8601,7 @@
       ]
     },
     {
-      "id": "fact-370",
+      "id": "fact-375",
       "evidence": "EXTRACTED",
       "from": "lotBankLastOperation",
       "type": "CALLS",
@@ -8342,7 +8617,7 @@
       ]
     },
     {
-      "id": "fact-371",
+      "id": "fact-376",
       "evidence": "EXTRACTED",
       "from": "routeNextFor",
       "type": "CALLS",
@@ -8358,7 +8633,7 @@
       ]
     },
     {
-      "id": "fact-372",
+      "id": "fact-377",
       "evidence": "EXTRACTED",
       "from": "routeNextFor",
       "type": "CALLS",
@@ -8374,7 +8649,7 @@
       ]
     },
     {
-      "id": "fact-373",
+      "id": "fact-378",
       "evidence": "EXTRACTED",
       "from": "routeNextReturn",
       "type": "HAS_RULE",
@@ -8390,7 +8665,7 @@
       ]
     },
     {
-      "id": "fact-374",
+      "id": "fact-379",
       "evidence": "EXTRACTED",
       "from": "routeNextModule",
       "type": "HAS_RULE",
@@ -8406,7 +8681,7 @@
       ]
     },
     {
-      "id": "fact-375",
+      "id": "fact-380",
       "evidence": "EXTRACTED",
       "from": "routeVersionMapping",
       "type": "HAS_RULE",
@@ -8422,7 +8697,7 @@
       ]
     },
     {
-      "id": "fact-376",
+      "id": "fact-381",
       "evidence": "EXTRACTED",
       "from": "routeFirstDefault",
       "type": "HAS_RULE",
@@ -8438,7 +8713,7 @@
       ]
     },
     {
-      "id": "fact-377",
+      "id": "fact-382",
       "evidence": "EXTRACTED",
       "from": "routeBackupRecord",
       "type": "HAS_RULE",
@@ -8450,6 +8725,342 @@
           "end_line": 8283,
           "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
           "rangeSha256": "8e7287201787fcb87dde1b3db04bdeb64dba083ab1760ac0f1edf2a50233578e"
+        }
+      ]
+    },
+    {
+      "id": "fact-383",
+      "evidence": "EXTRACTED",
+      "from": "routeBackupRemove",
+      "type": "HAS_RULE",
+      "to": "routeBackupLifetimeRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1059,
+          "end_line": 1155,
+          "fileSha256": "e66416bff66829fc56aa5941722b7f3c117abeb8ecc357f2ec020bab84472e01",
+          "rangeSha256": "04c20d1b5ad8a35633befc404e5bf468a5d3f6b386594fe6db16c5c9799d59b1"
+        }
+      ]
+    },
+    {
+      "id": "fact-384",
+      "evidence": "EXTRACTED",
+      "from": "routeBackupRemove",
+      "type": "READS",
+      "to": "FRPFX_POLIST",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1118,
+          "end_line": 1134,
+          "fileSha256": "e66416bff66829fc56aa5941722b7f3c117abeb8ecc357f2ec020bab84472e01",
+          "rangeSha256": "14c8efe248f6a197b659c51fb7f0f4fba1522c4c52ebb1bbcb0a9210441a776a"
+        }
+      ]
+    },
+    {
+      "id": "fact-385",
+      "evidence": "EXTRACTED",
+      "from": "routeBackupRemove",
+      "type": "READS",
+      "to": "FRPFX_BACKPOLIST",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1118,
+          "end_line": 1134,
+          "fileSha256": "e66416bff66829fc56aa5941722b7f3c117abeb8ecc357f2ec020bab84472e01",
+          "rangeSha256": "14c8efe248f6a197b659c51fb7f0f4fba1522c4c52ebb1bbcb0a9210441a776a"
+        }
+      ]
+    },
+    {
+      "id": "fact-386",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestAddSQL",
+      "type": "WRITES",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 380,
+          "end_line": 414,
+          "fileSha256": "0da7144cbb4375ab5255c8297b032156434e33fe637fa3591e44042d2886ddfa",
+          "rangeSha256": "c23fc9d800e51d279d03459ec7971843ea263362b06ad149059403f3a5cc4ded"
+        }
+      ]
+    },
+    {
+      "id": "fact-387",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestAddSQL",
+      "type": "HAS_RULE",
+      "to": "messageRequestTimeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 380,
+          "end_line": 414,
+          "fileSha256": "0da7144cbb4375ab5255c8297b032156434e33fe637fa3591e44042d2886ddfa",
+          "rangeSha256": "c23fc9d800e51d279d03459ec7971843ea263362b06ad149059403f3a5cc4ded"
+        }
+      ]
+    },
+    {
+      "id": "fact-388",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestFirstSQL",
+      "type": "READS",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 503,
+          "end_line": 536,
+          "fileSha256": "0da7144cbb4375ab5255c8297b032156434e33fe637fa3591e44042d2886ddfa",
+          "rangeSha256": "ac20c1d7c9525ae18b5e13d25f5d0e448a4216b5e21e0d0f5d8657bf897a6593"
+        }
+      ]
+    },
+    {
+      "id": "fact-389",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestFirstSQL",
+      "type": "HAS_RULE",
+      "to": "messageRequestPeekRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 503,
+          "end_line": 613,
+          "fileSha256": "0da7144cbb4375ab5255c8297b032156434e33fe637fa3591e44042d2886ddfa",
+          "rangeSha256": "0fe7636591166f08a3ce6592ca75fe5fb036493a29dc9c53bea3204db8c6f6e9"
+        }
+      ]
+    },
+    {
+      "id": "fact-390",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestRemoveSQL",
+      "type": "WRITES",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 648,
+          "end_line": 653,
+          "fileSha256": "0da7144cbb4375ab5255c8297b032156434e33fe637fa3591e44042d2886ddfa",
+          "rangeSha256": "04d81bd913634dd83f9bb45aa5b94f72fdd97ff6e073da10b196a273b1b40bbe"
+        }
+      ]
+    },
+    {
+      "id": "fact-391",
+      "evidence": "EXTRACTED",
+      "from": "messageRequestFirst",
+      "type": "HAS_RULE",
+      "to": "messageRequestNullRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmg.cpp",
+          "line": 803,
+          "end_line": 812,
+          "fileSha256": "833e18e90928c92d461d722290fcb5337431406d25d8bdbe26a52fa91312b4a3",
+          "rangeSha256": "328d42b469ba97f2d9a292d892399ece959f150b6fcbbf2abd8b13854566217a"
+        }
+      ]
+    },
+    {
+      "id": "fact-392",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionConfigure",
+      "type": "HAS_RULE",
+      "to": "messageDefinitionConfigRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfn.cpp",
+          "line": 1300,
+          "end_line": 1364,
+          "fileSha256": "0a7e4c67cfdc54502b1679fc0bbedb47d76941ae23cd42664f047d85b65656a0",
+          "rangeSha256": "294c03d3472d11c2f1c244f18f77a41eb2f7f5aa6f3d2de57b1c07b8d20c63c1"
+        }
+      ]
+    },
+    {
+      "id": "fact-393",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "messageDefinitionRecipients",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfn.cpp",
+          "line": 1318,
+          "end_line": 1357,
+          "fileSha256": "0a7e4c67cfdc54502b1679fc0bbedb47d76941ae23cd42664f047d85b65656a0",
+          "rangeSha256": "9b0abc746174a66bddb1f6a06e5113961903432a8cd8a230b6311ffa367feb6a"
+        }
+      ]
+    },
+    {
+      "id": "fact-394",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionDeletionCheck",
+      "type": "HAS_RULE",
+      "to": "messageDefinitionDeleteRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 123,
+          "end_line": 268,
+          "fileSha256": "fdaf18b195cc7c4d19df9543eb403ae9f03b00bf70f17bb326d61590bc2e52bc",
+          "rangeSha256": "c97b5edd8cf7012335e4e7ef1fc27a611d527b4956d479f02913d8174b24c54f"
+        }
+      ]
+    },
+    {
+      "id": "fact-395",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230,
+          "fileSha256": "fdaf18b195cc7c4d19df9543eb403ae9f03b00bf70f17bb326d61590bc2e52bc",
+          "rangeSha256": "26ce4522dc28630a96d42a340478629e3b9367db74c855d9ea07c6897938226a"
+        }
+      ]
+    },
+    {
+      "id": "fact-396",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRQTIME",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230,
+          "fileSha256": "fdaf18b195cc7c4d19df9543eb403ae9f03b00bf70f17bb326d61590bc2e52bc",
+          "rangeSha256": "26ce4522dc28630a96d42a340478629e3b9367db74c855d9ea07c6897938226a"
+        }
+      ]
+    },
+    {
+      "id": "fact-397",
+      "evidence": "EXTRACTED",
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRQTIME_ACTION",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230,
+          "fileSha256": "fdaf18b195cc7c4d19df9543eb403ae9f03b00bf70f17bb326d61590bc2e52bc",
+          "rangeSha256": "26ce4522dc28630a96d42a340478629e3b9367db74c855d9ea07c6897938226a"
+        }
+      ]
+    },
+    {
+      "id": "fact-398",
+      "evidence": "EXTRACTED",
+      "from": "messageDeleteBaseClear",
+      "type": "HAS_RULE",
+      "to": "messageDeleteBaseClearRule",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwbo.cpp",
+          "line": 120,
+          "end_line": 124,
+          "fileSha256": "b06dad80d7e2e1d75bac3bbb5096403ce1c9657369b1569b2bd468c0c1bf5afc",
+          "rangeSha256": "28fac2bd606b3c3a628305abc7382ea0f4fa4d5dade23064dab6163ab8eaeea9"
+        }
+      ]
+    },
+    {
+      "id": "fact-399",
+      "evidence": "EXTRACTED",
+      "from": "machineStateConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "machineStateConditions",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1865,
+          "end_line": 1890,
+          "fileSha256": "6b31d4e60f56c1f5d384f04da4256a2a9142f5ec16dce5c849df8b4c4e32c58b",
+          "rangeSha256": "cac0569199cbad9a742f4470e3072816f45d7c82b720f27e476a0863e8853a7f"
+        }
+      ]
+    },
+    {
+      "id": "fact-400",
+      "evidence": "EXTRACTED",
+      "from": "machineStateConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "machineStateNextStates",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1892,
+          "end_line": 1926,
+          "fileSha256": "6b31d4e60f56c1f5d384f04da4256a2a9142f5ec16dce5c849df8b4c4e32c58b",
+          "rangeSha256": "2427e34506d745fb625e7d24ed5d7d5978b2ae04db591fe8b32f89df9abb7e89"
+        }
+      ]
+    },
+    {
+      "id": "fact-401",
+      "evidence": "EXTRACTED",
+      "from": "machineStateConfigure",
+      "type": "HAS_RULE",
+      "to": "machineStateConfigOrderRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1865,
+          "end_line": 1890,
+          "fileSha256": "6b31d4e60f56c1f5d384f04da4256a2a9142f5ec16dce5c849df8b4c4e32c58b",
+          "rangeSha256": "cac0569199cbad9a742f4470e3072816f45d7c82b720f27e476a0863e8853a7f"
+        }
+      ]
+    },
+    {
+      "id": "fact-402",
+      "evidence": "EXTRACTED",
+      "from": "machineStateConfigure",
+      "type": "HAS_RULE",
+      "to": "machineStateTargetResolutionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1902,
+          "end_line": 1924,
+          "fileSha256": "6b31d4e60f56c1f5d384f04da4256a2a9142f5ec16dce5c849df8b4c4e32c58b",
+          "rangeSha256": "9b549ae9f24b47959cfd4f6f4cf27e0ff8cf77923e75e66c0fa43b6806558476"
+        }
+      ]
+    },
+    {
+      "id": "fact-403",
+      "evidence": "EXTRACTED",
+      "from": "machineCurrentStateSet",
+      "type": "HAS_RULE",
+      "to": "machineCurrentStateRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 11694,
+          "end_line": 11714,
+          "fileSha256": "1d0e404a34a3a2e710598daff0992f4331884587096eeb18c912740365f4b17b",
+          "rangeSha256": "fa3c1af86a0ed602c112ad65488d2a60db02e63c7ba02be98000db9e23567dd1"
         }
       ]
     }

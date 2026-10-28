@@ -63,24 +63,26 @@
   "edges": 85111
 }
 运行 build-knowledge
-{"nodes":446,"facts":377,"typeAndSourceRangeValidation":"passed"}
+{"nodes":485,"facts":403,"typeAndSourceRangeValidation":"passed"}
 运行 build-semantic-coverage
 {
   "totalMethods": 26832,
   "applicationOrSupport": 6925,
   "generatedPersistence": 19907,
-  "registeredBodyReviews": 383,
+  "registeredBodyReviews": 444,
   "globalFunctionsReviewed": 8,
   "statuses": {
-    "indexed_only": 26435,
-    "body_reviewed_with_external_unknowns": 364,
-    "body_reviewed_no_explicit_business_mutation": 5,
-    "evidence_sampled_only": 28
+    "indexed_only": 26376,
+    "body_reviewed_with_external_unknowns": 424,
+    "body_reviewed_no_explicit_business_mutation": 6,
+    "evidence_sampled_only": 26
   },
   "templateDefinitionsReviewed": 6
 }
 运行 build-domain-coverage
-{"directories":41,"withBodyReviews":27,"withoutBodyReviews":14,"registeredBodyReviews":383,"indexedApplication":6925,"indexedGenerated":19907,"nonIndexedDefinitionsReviewed":14}
+{"directories":41,"withBodyReviews":29,"withoutBodyReviews":12,"registeredBodyReviews":444,"indexedApplication":6925,"indexedGenerated":19907,"nonIndexedDefinitionsReviewed":14}
+运行 build-concept-catalog
+{"concepts":30,"withImplementationReviews":26}
 运行 build-persistence-families
 {"methods":19907,"files":624,"families":387,"reviewedMembers":48,"largest":[{"id":"U:Writer:deleteFrom","count":730,"patterns":7},{"id":"R:Reader:constructor","count":695,"patterns":180},{"id":"R:Reader:destructor","count":695,"patterns":2},{"id":"U:Writer:constructor","count":678,"patterns":3},{"id":"U:Writer:destructor","count":678,"patterns":1},{"id":"U:Writer:insertInto","count":678,"patterns":158}]}
 运行 build-catalog
@@ -117,11 +119,11 @@
 运行 sync-metrics
 {"methods":26832,"sql":7853,"nodes":39537,"edges":85111}
 运行 build-report
-{"reports":38,"sourceLinks":1291,"explorerBytes":10442276,"namedTables":689,"symbolicTables":159}
+{"reports":42,"sourceLinks":1291,"explorerBytes":10455635,"namedTables":689,"symbolicTables":159}
 运行 check-explorer
 {
   "passed": true,
-  "htmlSha256": "fe3b0572d3272bbcc1f8b42167a07067957776049b96abd9146d39d56667f9b9",
+  "htmlSha256": "ea99aec5345cadfac7d2fec5624490e5484826a10d9f88e2f36a27bddc76f3ec",
   "mode": "generated-script-with-minimal-DOM-harness",
   "checks": [
     {
@@ -163,7 +165,7 @@
 {"passed":true,"commands":[{"mode":"search","q":"PosWhatNextFIFO_i::dispatchFor_inSQL","matches":1},{"mode":"table","q":"FRLOT","statements":134},{"mode":"facts","q":"recipeSelect","relations":3},{"mode":"facts","q":"inhibitQuery","relations":6}]}
 运行 validate
 {
-  "generatedAt": "2026-10-28T16:15:07.853Z",
+  "generatedAt": "2026-10-28T16:27:06.296Z",
   "passed": true,
   "checks": [
     {
@@ -201,8 +203,8 @@
       "label": "业务事实类型、源码文件及片段哈希验证",
       "passed": true,
       "details": {
-        "nodes": 446,
-        "edges": 377,
+        "nodes": 485,
+        "edges": 403,
         "factBad": 0
       }
     },
@@ -261,7 +263,7 @@
       "label": "总览、查询页和所有专题页面本地链接有效",
       "passed": true,
       "details": {
-        "links": 204,
+        "links": 271,
         "missing": []
       }
     },
@@ -302,12 +304,12 @@
       "label": "深入语义覆盖与结构索引分层且未误标项目完成",
       "passed": true,
       "details": {
-        "registeredBodyReviews": 383,
+        "registeredBodyReviews": 444,
         "statuses": {
-          "indexed_only": 26435,
-          "body_reviewed_with_external_unknowns": 364,
-          "body_reviewed_no_explicit_business_mutation": 5,
-          "evidence_sampled_only": 28
+          "indexed_only": 26376,
+          "body_reviewed_with_external_unknowns": 424,
+          "body_reviewed_no_explicit_business_mutation": 6,
+          "evidence_sampled_only": 26
         }
       }
     },
@@ -315,7 +317,7 @@
       "label": "索引外全局/模板定义独立计数，无遗漏或重复计入方法分母",
       "passed": true,
       "details": {
-        "indexedReviews": 369,
+        "indexedReviews": 430,
         "extraDefinitions": 14,
         "templates": 6
       }
@@ -336,7 +338,7 @@
     "sql": 7853,
     "namedTableCandidates": 689,
     "symbolicTables": 159,
-    "curatedFacts": 377
+    "curatedFacts": 403
   },
   "limits": [
     "未运行 MES 或连接数据库",

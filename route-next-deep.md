@@ -50,4 +50,16 @@ getReturnOperationFor(inseqno) 返回记录的 operationNumber 非 NULL 时，ou
 
 完整读取 firstProcessDefinitionOnDefault（8489–8569）：getFirstEntry 成功后处理 Active 版本标识并解析 activeObject。但 getFirstEntry 失败后仍把局部 key 复制到 outKey 并执行对象宏；key 在方法内未显式初始化。集合失败输出约定和宏行为决定实际影响，不把本地代码直接解释为可靠的空集合返回 nil。首工序和后继工序的失败语义需要分别验证。
 
-上述方法对异常清理部分输出并传播或映射，不执行 Lot 状态推进或入库。尚未展开默认路径装配、集合getAfter/getFirstEntry、记录默认构造和序号调用约束，也未验证外层交易和并发版本切换。图谱中的方法间调用只覆盖可见直接调用；对象动态调用目标仍保留边界。
+### 返回与备份的写入、维护及对象清理
+
+完整读取 ppcflwx.cpp addReturnOperation（3592–3670）、getReturnOperation（3705–3779）、removeReturnOperation（3835–3938）。添加以 processFlow 为键 addFirst，然后解析主/模块流程并累加返回剩余周期时间；解析失败时集合已经修改，恢复依赖事务。读取直接复制序列第0项，没有显式空集合判断。移除先取头部记录、计算剩余周期时间，将累计值减去该时间（不足则归零），再按 processFlow 键移除。这里不是按工序号排序；集合是否允许重复键仍需实现证据。
+
+完整读取 addBackupOperation（8097–8152）、getBackupOperation（8187–8218）：按 processOperation 键 addFirst，读取则初始化游标并取一次 getNextEntry，没有先检查长度或返回值。两类集合都采用头部插入，表明可见写入意图为后进先读，但两集合的长度、键对应关系并未由这些方法自身保证。
+
+完整读取 maintainBackupAndReturnOperation（8589–8730）：目标流程为空直接返回；当前与目标根定义对象字符串不同时，循环取返回及备份头部，移除返回记录和可解析的备份，直到返回记录根定义匹配目标，且 seqno=-1 或移除计数匹配。seqno=-1 在此是维护模式哨兵，不能据此推断其他按序读取接口也接受负数。循环读取备份发生在检查返回记录是否为空之前，空集合安全性仍取决于读取方法及宏。
+
+完整读取 removeAllReturnOperations（11475–11494）按初始长度重复单次移除；removeAllBackupOperations（11526–11552）按初始长度重复读取备份头部并调用移除。不是直接 removeAll，单次生命周期副作用仍执行。
+
+完整读取 ppcflxdb.sqx removeBackupOperation（1033–1163）：nil 工序直接返回，先按对象字符串键移除备份；如果 theContext 仍含该工序即返回。否则查询 FRPFX_POLIST 的所有引用及 FRPFX_BACKPOLIST 中其他上下文引用，两个计数都为0时调用工序 CIMFW_clear，然后检查工厂并删除对象。SQL检查不等于数据库约束；未验证并发新增引用、BO未提交集合与数据库视图的一致性，且工厂nil检查在clear之后。该方法会触发对象清理，不是单纯解绑备份。
+
+仍需展开默认路径装配、集合getAfter/getFirstEntry、记录默认构造和各调用方序号约束，并验证外层事务和并发版本切换。图谱中的方法间调用只覆盖可见直接调用；对象动态调用目标仍保留边界。

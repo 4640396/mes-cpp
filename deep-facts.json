@@ -1709,6 +1709,151 @@
       "id": "routeBackupBoundsRule",
       "type": "Rule",
       "label": "备份读取仅检查seqno小于长度，越界仍复制局部结构；调用约束和默认构造待验证"
+    },
+    {
+      "id": "routeBackupRemove",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::removeBackupOperation"
+    },
+    {
+      "id": "routeBackupLifetimeRule",
+      "type": "Rule",
+      "label": "移除备份后检查上下文和两类SQL引用，无引用才清理并删除工序对象"
+    },
+    {
+      "id": "FRPFX_POLIST",
+      "type": "Table",
+      "label": "FRPFX_POLIST"
+    },
+    {
+      "id": "FRPFX_BACKPOLIST",
+      "type": "Table",
+      "label": "FRPFX_BACKPOLIST"
+    },
+    {
+      "id": "messageRequestAddSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_addMessageRequest"
+    },
+    {
+      "id": "messageRequestFirstSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_firstMessageRequest"
+    },
+    {
+      "id": "messageRequestRemoveSQL",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::_removeMessageRequest"
+    },
+    {
+      "id": "messageRequestFirst",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::firstMessageRequest"
+    },
+    {
+      "id": "FRMSGREQ",
+      "type": "Table",
+      "label": "FRMSGREQ"
+    },
+    {
+      "id": "messageRequestTimeRule",
+      "type": "Rule",
+      "label": "数据库入队生成EVENT_TIME，未使用输入原事件时间"
+    },
+    {
+      "id": "messageRequestPeekRule",
+      "type": "Rule",
+      "label": "读取最小EVENT_TIME记录不删除，不证明原子领取或已投递"
+    },
+    {
+      "id": "messageRequestNullRule",
+      "type": "Rule",
+      "label": "非TRANSIENT_MANAGER首条读取解引用NULL返回指针；实际构建和触达待验证"
+    },
+    {
+      "id": "messageDefinitionConfigure",
+      "type": "Method",
+      "label": "PosMessageDefinition_i::setMessageDistributionInfo"
+    },
+    {
+      "id": "messageDefinitionRecipients",
+      "type": "Collection",
+      "label": "PosMessageDefinition_i::theDestinationPersons"
+    },
+    {
+      "id": "messageDefinitionConfigRule",
+      "type": "Rule",
+      "label": "先写配置再清空重建收件人，标识重复跳过；配置不执行模板渲染或消息发送"
+    },
+    {
+      "id": "messageDefinitionDeletionCheck",
+      "type": "Method",
+      "label": "PosMessageDefinition_i::checkForDeletion"
+    },
+    {
+      "id": "messageDefinitionRemove",
+      "type": "Method",
+      "label": "PosMessageDistributionManager_i::removeMessageDefinition"
+    },
+    {
+      "id": "messageDefinitionDeleteRule",
+      "type": "Rule",
+      "label": "检查消息请求和待执行QTime通知引用，管理器删除未显式调用检查；宏和外层门禁待核实"
+    },
+    {
+      "id": "FRQTIME",
+      "type": "Table",
+      "label": "FRQTIME"
+    },
+    {
+      "id": "FRQTIME_ACTION",
+      "type": "Table",
+      "label": "FRQTIME_ACTION"
+    },
+    {
+      "id": "messageDeleteBaseClear",
+      "type": "Method",
+      "label": "CIMFWBO_i::CIMFW_clear"
+    },
+    {
+      "id": "messageDeleteBaseClearRule",
+      "type": "Rule",
+      "label": "可见基础清理体只有trace，没有删除占用检查或业务字段变更"
+    },
+    {
+      "id": "machineStateConfigure",
+      "type": "Method",
+      "label": "PosMachineState_i::setEquipmentStateInfo__XXX"
+    },
+    {
+      "id": "machineStateConditions",
+      "type": "Collection",
+      "label": "PosMachineState_i::theMachineStateConvertConditions"
+    },
+    {
+      "id": "machineStateNextStates",
+      "type": "Collection",
+      "label": "PosMachineState_i::theNextTransitionStates"
+    },
+    {
+      "id": "machineStateConfigOrderRule",
+      "type": "Rule",
+      "label": "转换条件按输入addLast，重复序号抛错，配置不执行转换逻辑"
+    },
+    {
+      "id": "machineStateTargetResolutionRule",
+      "type": "Rule",
+      "label": "下一状态逐E10组解析失败被忽略，循环后仍加入；输出有效性依赖宏"
+    },
+    {
+      "id": "machineCurrentStateSet",
+      "type": "Method",
+      "label": "PosMachine_i::setCurrentMachineState"
+    },
+    {
+      "id": "machineCurrentStateRule",
+      "type": "Rule",
+      "label": "当前状态setter更新引用、可用缓存和E10字符串，未显式检查转换列表；异常时恢复依赖事务"
     }
   ],
   "edges": [
@@ -5554,6 +5699,258 @@
           "path": "poscimfw/ppcdf/ppcflwx.cpp",
           "line": 8260,
           "end_line": 8283
+        }
+      ]
+    },
+    {
+      "from": "routeBackupRemove",
+      "type": "HAS_RULE",
+      "to": "routeBackupLifetimeRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1059,
+          "end_line": 1155
+        }
+      ]
+    },
+    {
+      "from": "routeBackupRemove",
+      "type": "READS",
+      "to": "FRPFX_POLIST",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1118,
+          "end_line": 1134
+        }
+      ]
+    },
+    {
+      "from": "routeBackupRemove",
+      "type": "READS",
+      "to": "FRPFX_BACKPOLIST",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflxdb.sqx",
+          "line": 1118,
+          "end_line": 1134
+        }
+      ]
+    },
+    {
+      "from": "messageRequestAddSQL",
+      "type": "WRITES",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 380,
+          "end_line": 414
+        }
+      ]
+    },
+    {
+      "from": "messageRequestAddSQL",
+      "type": "HAS_RULE",
+      "to": "messageRequestTimeRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 380,
+          "end_line": 414
+        }
+      ]
+    },
+    {
+      "from": "messageRequestFirstSQL",
+      "type": "READS",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 503,
+          "end_line": 536
+        }
+      ]
+    },
+    {
+      "from": "messageRequestFirstSQL",
+      "type": "HAS_RULE",
+      "to": "messageRequestPeekRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 503,
+          "end_line": 613
+        }
+      ]
+    },
+    {
+      "from": "messageRequestRemoveSQL",
+      "type": "WRITES",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmgdb.sqx",
+          "line": 648,
+          "end_line": 653
+        }
+      ]
+    },
+    {
+      "from": "messageRequestFirst",
+      "type": "HAS_RULE",
+      "to": "messageRequestNullRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsdnmg.cpp",
+          "line": 803,
+          "end_line": 812
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionConfigure",
+      "type": "HAS_RULE",
+      "to": "messageDefinitionConfigRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfn.cpp",
+          "line": 1300,
+          "end_line": 1364
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "messageDefinitionRecipients",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfn.cpp",
+          "line": 1318,
+          "end_line": 1357
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionDeletionCheck",
+      "type": "HAS_RULE",
+      "to": "messageDefinitionDeleteRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 123,
+          "end_line": 268
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRMSGREQ",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRQTIME",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "from": "messageDefinitionDeletionCheck",
+      "type": "READS",
+      "to": "FRQTIME_ACTION",
+      "sources": [
+        {
+          "path": "poscimfw/pmsds/pmsgdfdb.sqx",
+          "line": 136,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "from": "messageDeleteBaseClear",
+      "type": "HAS_RULE",
+      "to": "messageDeleteBaseClearRule",
+      "sources": [
+        {
+          "path": "smtchcmf/frmwrkgl/cimfwbo.cpp",
+          "line": 120,
+          "end_line": 124
+        }
+      ]
+    },
+    {
+      "from": "machineStateConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "machineStateConditions",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1865,
+          "end_line": 1890
+        }
+      ]
+    },
+    {
+      "from": "machineStateConfigure",
+      "type": "REPLACES_COLLECTION",
+      "to": "machineStateNextStates",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1892,
+          "end_line": 1926
+        }
+      ]
+    },
+    {
+      "from": "machineStateConfigure",
+      "type": "HAS_RULE",
+      "to": "machineStateConfigOrderRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1865,
+          "end_line": 1890
+        }
+      ]
+    },
+    {
+      "from": "machineStateConfigure",
+      "type": "HAS_RULE",
+      "to": "machineStateTargetResolutionRule",
+      "sources": [
+        {
+          "path": "poscimfw/pcdmg/pmstat.cpp",
+          "line": 1902,
+          "end_line": 1924
+        }
+      ]
+    },
+    {
+      "from": "machineCurrentStateSet",
+      "type": "HAS_RULE",
+      "to": "machineCurrentStateRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pmc.cpp",
+          "line": 11694,
+          "end_line": 11714
         }
       ]
     }

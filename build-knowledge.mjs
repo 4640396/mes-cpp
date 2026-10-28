@@ -50,6 +50,8 @@ const concepts=[['Lot','批次','PosLot'],['Wafer','晶圆','PosWafer'],['Operat
 const interfaces=JSON.parse(fs.readFileSync(out+'/business-map.json')).interfaces;
 concepts.push(['FlowBatch','流程批','PosFlowBatch'],['FlowBatchDispatcher','流程批分发器','PosFlowBatchDispatcher']);
 concepts.push(['ProductRequest','生产请求','PosProductRequest']);
+concepts.push(['Bank','库区','PosBank'],['Area','区域（Location/WorkArea类别）','PosArea'],['StorageMachine','存储设备','PosStorageMachine']);
+concepts.push(['MessageDistributionManager','消息分发管理','PosMessageDistributionManager'],['MessageDefinition','消息定义','PosMessageDefinition']);
 nodes.find(n=>n.id==='requestMakeOnHold').label='ProductRequest_i::makeOnHold';
 ontology.businessConcepts=[];
 for(const [id,label,codeType] of concepts){if(!nodes.some(n=>n.id===id))node(id,'BusinessObject',label);const i=interfaces.find(i=>i.name===codeType);if(!i)throw Error('缺失概念契约 '+codeType);const contract='contract:'+codeType;node(contract,'Interface',codeType);const source=evidence(i.file,i.line,i.line);edge(id,'HAS_CONTRACT',contract,source);ontology.businessConcepts.push({id,label,codeType,sources:[source]});}

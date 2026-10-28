@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const out='analysis/mes-cpp',read=f=>JSON.parse(fs.readFileSync(out+'/'+f));
+const ontology=read('ontology.json'),facts=read('verified-facts.json'),reviews=read('deep-reviews.json').records;
+const rows=ontology.businessConcepts.map(c=>{const selected=reviews.filter(r=>r.qualified.startsWith(c.codeType+'_i::'));const contracts=facts.edges.filter(e=>e.from===c.id&&e.type==='HAS_CONTRACT');if(contracts.length!==1)throw Error('概念契约不唯一 '+c.id);return {...c,implementationReviewCount:selected.length,reports:[...new Set(selected.map(r=>r.report))],directFactRelations:facts.edges.filter(e=>e.from===c.id||e.to===c.id).length,semanticsComplete:false};});
+const result={schemaVersion:'concept-catalog/0.1',projectSemanticsComplete:false,meaning:'接口映射与同名实现类完整阅读登记；不覆盖继承方法、宏展开或所有动态目标，不表示领域完成。',concepts:rows};
+fs.writeFileSync(out+'/concept-catalog.json',JSON.stringify(result,null,2));
+const lines=['# 业务概念与证据对照','','这是当前本体的业务概念清单。接口证据只证明源码中存在相应契约；完整方法数量按同名实现类登记统计，不含继承或其他类协作。零项不等于没有代码，非零也不等于业务分析完成。','','[阅读指南](START-HERE.md) · [本体模型说明](ontology.md) · [领域覆盖与缺口](domain-coverage.md)','','| 概念 | 源码接口 | 接口证据 | 同名实现完整审阅 | 关联报告 |','|---|---|---|---|---|'];
+for(const c of rows)lines.push(`| ${c.label} | ${c.codeType} | ${c.sources.map(s=>s.path+':'+s.line).join('、')} | ${c.implementationReviewCount} | ${c.reports.map(r=>'['+r.replace('.md','')+']('+r+')').join('、')||'尚无同名实现审阅报告'} |`);
+lines.push('','## 使用边界','','概念之间的全部业务关系仍在补齐。当前事实图包含方法调用、状态、集合和SQL证据，尚未把每条业务规则都连接到所属概念；因此不能用概念节点的直接关系数量判断业务完整度。Location与WorkArea是Area设置的类别，当前不凭名称额外制造独立实体类。','','当前采用JSON模型和约束校验，没有部署OWL/RDF推理服务。');
+fs.writeFileSync(out+'/concept-catalog.md',lines.join('\n')+'\n');console.log(JSON.stringify({concepts:rows.length,withImplementationReviews:rows.filter(c=>c.implementationReviewCount>0).length}));

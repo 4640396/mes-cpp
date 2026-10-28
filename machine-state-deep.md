@@ -1,0 +1,39 @@
+# 设备状态定义、转换配置与可用性
+
+本报告依据 `poscimfw/pcdmg/pmstat.cpp` 完整方法体阅读，补充设备资源报告中的状态来源。MachineState是配置对象，不等于某台设备当前实时状态，也不能仅凭状态名称推断派工许可。
+
+## 版本入口和配置内容
+
+setEquipmentStateInfo（981–1000）抛当前MMS版本不支持异常；__100（1793–1811）标脏后调用 __XXX（1838–1954）。有效配置解析E10状态引用，设置描述、名称及设备可用、制造状态可变、允许跨E10进入/离开、条件可用五类标志，然后重建转换条件、下一状态和可用子Lot类型集合。
+
+isChangeFromOtherE10（816–827）、isMachineAvailable（853–864）、isManufacturingStateChangeable（890–901）、isChangeToOtherE10（927–938）、isConditionalAvailable（1347–1358）只返回各自保存字段。isConditionalAvailableFor（1590–1612）只检查子Lot类型是否在集合，不同时检查条件可用总标志或设备可用总标志。因此调用方如何组合这些查询，才决定实际可用性，不能把单个getter当成全部规则。
+
+## 转换条件列表
+
+__XXX 1865–1890先清集合，以 checkSequence 为键逐项添加，重复键抛 SetEquipmentStateInfoFailedSignal。convertLogic、attributeValue和目标状态一起保存，使用 addLast 保留输入添加顺序；方法内没有按checkSequence数值重新排序，也没有执行convertLogic。allConvertConditions（430–473）只通过宏返回序列。序号格式、逻辑解释及运行时遍历规则仍需调用方证据。
+
+## 下一状态列表的解析边界
+
+1892–1926清空下一状态集合，枚举全部E10组，对每个输入目标标识逐组尝试 findMachineStateNamed，成功即break；每次 SetEquipmentStateInfoFailedSignal 被忽略。循环结束后无独立的“已找到”检查，仍把anOI加入集合，且anOI在外层复用。若所有组查找失败，加入项具体包含什么引用取决于解析宏对失败输出的处理，存在条件风险；当前不能保证列表每项都成功解析，也不能据此断言实际存在坏数据。
+
+allMachineStateTransitions（499–544）仅返回 theNextTransitionStates 的标识序列，不做现场合法性检查。是否允许跨E10转换、是否检查目标列表和设备当前状态，不能从枚举方法推断。
+
+## 子Lot类型和失败恢复
+
+1929–1943清空可用子Lot类型集合，按字符串去重重建；这里没有验证类型是否在系统字典中，也未执行生产。配置多处先清空或写字段再解析，重复条件或未知目标中途失败的回滚需要外层事务，当前方法不提供本地恢复。
+
+## 本体与后续证据
+
+### 设备当前状态、实际状态与备份状态
+
+完整读取 `poscimfw/pmcmg/pmc.cpp` getRawMachineStateSet（11623–11632）、getCurrentMachineState（11656–11665）、getActualMachineState（11741–11750）、getBackupMachineState（24333–24342）：各自通过引用宏返回不同字段。Raw状态集合、当前状态、实际状态和备份状态不能按名称合并。
+
+完整读取 setCurrentMachineState（11690–11717）：先标脏并设置theCurrentMachineState，随后检查输入非nil，复制状态定义isMachineAvailable到theAvailableStateFlag，再取E10对象，非nil后复制其标识到theCurrentState字符串。输入nil或E10缺失时检查在部分修改之后，原子恢复依赖事务。完整读取状态定义getE10State（pmstat.cpp 744–754）确认其读取theE10State引用。
+
+当前setter没有读取转换条件、允许下一状态、跨E10进入/离开标志，也没有显式修改actual/backup引用或发送事件。这里不能直接认定整个系统没有门禁，外层交易仍可能执行检查。
+
+完整读取 setActualMachineState（11774–11786）及setBackupMachineState（24366–24378）：只标脏并设置各自引用，不自动改变当前状态或E10字符串。完整读取 isAvailableState（11812–11849）：取得当前状态，非nil时返回状态定义isMachineAvailable，nil返回FALSE；有效实现不读缓存theAvailableStateFlag。状态定义变更后缓存与查询值的同步需要其他调用方证据。
+
+当前可见C++/SQX对allConvertConditions和allMachineStateTransitions搜索仅定位到定义，未找到显式消费调用；这是材料与搜索边界，不证明外部交易、脚本或动态调用不存在。pmc.cpp 19826还出现资源setCurrentMachineState调用，尚未把该资源类调用当成设备本类setter的调用证据。
+
+本体需区分设备对象、设备状态定义、E10分类、设备当前状态引用、转换条件集合与转换目标集合。状态定义已有IDL契约，但配置列表不自动等于可执行状态机。后续追实际设备状态修改入口、convertLogic解释器、集合键和宏实现、外层事务及派工组合条件。当前未运行设备状态变更或生产交易。

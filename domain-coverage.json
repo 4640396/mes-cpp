@@ -5,9 +5,9 @@
   "meaning": "以当前41个有文件目录核对实际审阅登记，索引、采样、完整阅读分开；方法数不表示业务理解准确率。",
   "counts": {
     "directories": 41,
-    "withBodyReviews": 27,
-    "withoutBodyReviews": 14,
-    "registeredBodyReviews": 383,
+    "withBodyReviews": 29,
+    "withoutBodyReviews": 12,
+    "registeredBodyReviews": 444,
     "indexedApplication": 6925,
     "indexedGenerated": 19907,
     "nonIndexedDefinitionsReviewed": 14
@@ -95,19 +95,20 @@
       "files": 47,
       "indexedApplication": 206,
       "indexedGenerated": 600,
-      "indexedBodyReviewed": 17,
-      "applicationBodyReviewed": 9,
+      "indexedBodyReviewed": 24,
+      "applicationBodyReviewed": 16,
       "generatedBodyReviewed": 8,
       "nonIndexedDefinitionsReviewed": 0,
       "sampledOnly": 0,
-      "registeredReviews": 17,
+      "registeredReviews": 24,
       "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
       "reports": [
         "machine-resource-deep.md",
         "persistence-delete-deep.md",
         "persistence-collections-deep.md",
-        "persistence-planner-deep.md"
+        "persistence-planner-deep.md",
+        "machine-state-deep.md"
       ],
       "reviewKeys": [
         "poscimfw/pcdmg/pmstat.cpp:853-864",
@@ -126,7 +127,14 @@
         "poscimfw/pcdmg/U_pcodedo.sqx:225-245",
         "poscimfw/pcdmg/U_pcodedo.sqx:247-273",
         "poscimfw/pcdmg/C_pcodedo.cpp:373-425",
-        "poscimfw/pcdmg/R_pcodedo.sqx:91-112"
+        "poscimfw/pcdmg/R_pcodedo.sqx:91-112",
+        "poscimfw/pcdmg/pmstat.cpp:430-473",
+        "poscimfw/pcdmg/pmstat.cpp:499-544",
+        "poscimfw/pcdmg/pmstat.cpp:816-827",
+        "poscimfw/pcdmg/pmstat.cpp:890-901",
+        "poscimfw/pcdmg/pmstat.cpp:927-938",
+        "poscimfw/pcdmg/pmstat.cpp:1793-1811",
+        "poscimfw/pcdmg/pmstat.cpp:744-754"
       ]
     },
     {
@@ -404,18 +412,19 @@
       "files": 73,
       "indexedApplication": 908,
       "indexedGenerated": 1610,
-      "indexedBodyReviewed": 15,
-      "applicationBodyReviewed": 13,
+      "indexedBodyReviewed": 23,
+      "applicationBodyReviewed": 21,
       "generatedBodyReviewed": 2,
       "nonIndexedDefinitionsReviewed": 0,
-      "sampledOnly": 3,
-      "registeredReviews": 15,
+      "sampledOnly": 1,
+      "registeredReviews": 23,
       "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
       "reports": [
         "machine-resource-deep.md",
         "persistence-delete-deep.md",
-        "factory-location-deep.md"
+        "factory-location-deep.md",
+        "machine-state-deep.md"
       ],
       "reviewKeys": [
         "poscimfw/pmcmg/pmc.cpp:13935-14016",
@@ -432,7 +441,15 @@
         "poscimfw/pmcmg/pmc.cpp:1076-1085",
         "poscimfw/pmcmg/pmc.cpp:1160-1277",
         "poscimfw/pmcmg/pstmc.cpp:633-642",
-        "poscimfw/pmcmg/pstmc.cpp:1332-1518"
+        "poscimfw/pmcmg/pstmc.cpp:1332-1518",
+        "poscimfw/pmcmg/pmc.cpp:11623-11632",
+        "poscimfw/pmcmg/pmc.cpp:11656-11665",
+        "poscimfw/pmcmg/pmc.cpp:11690-11717",
+        "poscimfw/pmcmg/pmc.cpp:11741-11750",
+        "poscimfw/pmcmg/pmc.cpp:11774-11786",
+        "poscimfw/pmcmg/pmc.cpp:11812-11849",
+        "poscimfw/pmcmg/pmc.cpp:24333-24342",
+        "poscimfw/pmcmg/pmc.cpp:24366-24378"
       ]
     },
     {
@@ -440,28 +457,66 @@
       "files": 9,
       "indexedApplication": 59,
       "indexedGenerated": 89,
-      "indexedBodyReviewed": 0,
-      "applicationBodyReviewed": 0,
+      "indexedBodyReviewed": 35,
+      "applicationBodyReviewed": 35,
       "generatedBodyReviewed": 0,
       "nonIndexedDefinitionsReviewed": 0,
       "sampledOnly": 0,
-      "registeredReviews": 0,
-      "status": "仅结构定位，未登记完整方法",
+      "registeredReviews": 35,
+      "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
-      "reports": [],
-      "reviewKeys": []
+      "reports": [
+        "message-requests-deep.md"
+      ],
+      "reviewKeys": [
+        "poscimfw/pmsds/pmsdnmg.cpp:570-611",
+        "poscimfw/pmsds/pmsdnmg.cpp:652-683",
+        "poscimfw/pmsds/pmsdnmg.cpp:713-762",
+        "poscimfw/pmsds/pmsdnmg.cpp:798-851",
+        "poscimfw/pmsds/pmsdnmgdb.sqx:291-418",
+        "poscimfw/pmsds/pmsdnmgdb.sqx:448-613",
+        "poscimfw/pmsds/pmsdnmgdb.sqx:641-657",
+        "poscimfw/pmsds/pmsgdfn.cpp:1037-1055",
+        "poscimfw/pmsds/pmsgdfn.cpp:1085-1103",
+        "poscimfw/pmsds/pmsgdfn.cpp:1133-1178",
+        "poscimfw/pmsds/pmsgdfn.cpp:1208-1218",
+        "poscimfw/pmsds/pmsgdfn.cpp:1287-1394",
+        "poscimfw/pmsds/pmsgdfn.cpp:462-476",
+        "poscimfw/pmsds/pmsgdfn.cpp:505-515",
+        "poscimfw/pmsds/pmsgdfn.cpp:544-558",
+        "poscimfw/pmsds/pmsgdfn.cpp:587-597",
+        "poscimfw/pmsds/pmsgdfn.cpp:626-640",
+        "poscimfw/pmsds/pmsgdfn.cpp:669-679",
+        "poscimfw/pmsds/pmsgdfn.cpp:708-722",
+        "poscimfw/pmsds/pmsgdfn.cpp:751-761",
+        "poscimfw/pmsds/pmsgdfn.cpp:790-804",
+        "poscimfw/pmsds/pmsgdfn.cpp:833-843",
+        "poscimfw/pmsds/pmsgdfn.cpp:872-886",
+        "poscimfw/pmsds/pmsgdfn.cpp:915-925",
+        "poscimfw/pmsds/pmsgdfn.cpp:954-968",
+        "poscimfw/pmsds/pmsgdfn.cpp:997-1007",
+        "poscimfw/pmsds/pmsdnmg.cpp:314-337",
+        "poscimfw/pmsds/pmsdnmg.cpp:369-404",
+        "poscimfw/pmsds/pmsdnmg.cpp:515-531",
+        "poscimfw/pmsds/pmsdnmg.cpp:855-921",
+        "poscimfw/pmsds/pmsdnmgdb.sqx:107-160",
+        "poscimfw/pmsds/pmsgdfn.cpp:256-269",
+        "poscimfw/pmsds/pmsgdfdb.sqx:104-280",
+        "poscimfw/pmsds/msdsmnsp.cpp:97-153",
+        "poscimfw/pmsds/msdsmnsp.cpp:158-169"
+      ]
     },
     {
       "directory": "poscimfw/ppcdf",
       "files": 51,
       "indexedApplication": 793,
       "indexedGenerated": 3228,
-      "indexedBodyReviewed": 26,
-      "applicationBodyReviewed": 26,
+      "indexedBodyReviewed": 35,
+      "applicationBodyReviewed": 35,
       "generatedBodyReviewed": 0,
       "nonIndexedDefinitionsReviewed": 0,
       "sampledOnly": 9,
-      "registeredReviews": 26,
+      "registeredReviews": 35,
       "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
       "reports": [
@@ -496,7 +551,16 @@
         "poscimfw/ppcdf/ppcflwx.cpp:7313-7386",
         "poscimfw/ppcdf/ppcflwx.cpp:8253-8291",
         "poscimfw/ppcdf/ppcflw.cpp:8189-8297",
-        "poscimfw/ppcdf/ppcflw.cpp:8489-8569"
+        "poscimfw/ppcdf/ppcflw.cpp:8489-8569",
+        "poscimfw/ppcdf/ppcflwx.cpp:3592-3670",
+        "poscimfw/ppcdf/ppcflwx.cpp:3705-3779",
+        "poscimfw/ppcdf/ppcflwx.cpp:3835-3938",
+        "poscimfw/ppcdf/ppcflwx.cpp:8097-8152",
+        "poscimfw/ppcdf/ppcflwx.cpp:8187-8218",
+        "poscimfw/ppcdf/ppcflwx.cpp:8589-8730",
+        "poscimfw/ppcdf/ppcflwx.cpp:11475-11494",
+        "poscimfw/ppcdf/ppcflwx.cpp:11526-11552",
+        "poscimfw/ppcdf/ppcflxdb.sqx:1033-1163"
       ]
     },
     {
@@ -902,17 +966,18 @@
       "files": 29,
       "indexedApplication": 145,
       "indexedGenerated": 0,
-      "indexedBodyReviewed": 2,
-      "applicationBodyReviewed": 2,
+      "indexedBodyReviewed": 3,
+      "applicationBodyReviewed": 3,
       "generatedBodyReviewed": 0,
       "nonIndexedDefinitionsReviewed": 7,
       "sampledOnly": 0,
-      "registeredReviews": 9,
+      "registeredReviews": 10,
       "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
       "reports": [
         "persistence-collections-deep.md",
-        "persistence-planner-deep.md"
+        "persistence-planner-deep.md",
+        "message-requests-deep.md"
       ],
       "reviewKeys": [
         "smtchcmf/frmwrkgl/cimfwdo.cpp:2739-2782",
@@ -923,7 +988,8 @@
         "smtchcmf/frmwrkgl/cimfwdo.cpp:1868-2070",
         "smtchcmf/frmwrkgl/cimfwdo.cpp:2459-2634",
         "smtchcmf/frmwrkgl/cimfwdo.cpp:1205-1318",
-        "smtchcmf/frmwrkgl/cimfwdo.cpp:1325-1353"
+        "smtchcmf/frmwrkgl/cimfwdo.cpp:1325-1353",
+        "smtchcmf/frmwrkgl/cimfwbo.cpp:120-124"
       ]
     },
     {
@@ -1130,16 +1196,20 @@
       "files": 4,
       "indexedApplication": 43,
       "indexedGenerated": 0,
-      "indexedBodyReviewed": 0,
-      "applicationBodyReviewed": 0,
+      "indexedBodyReviewed": 1,
+      "applicationBodyReviewed": 1,
       "generatedBodyReviewed": 0,
       "nonIndexedDefinitionsReviewed": 0,
       "sampledOnly": 0,
-      "registeredReviews": 0,
-      "status": "仅结构定位，未登记完整方法",
+      "registeredReviews": 1,
+      "status": "部分方法及相关链已审阅，领域未完成",
       "semanticsComplete": false,
-      "reports": [],
-      "reviewKeys": []
+      "reports": [
+        "message-requests-deep.md"
+      ],
+      "reviewKeys": [
+        "smtchcmf/rsrcclss/nmdntity.cpp:209-218"
+      ]
     },
     {
       "directory": "smtchcmf/tmsrvcsc",

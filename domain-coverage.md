@@ -2,7 +2,7 @@
 
 **目标仍在进行，目录覆盖不等于领域语义完成。** 此表根据审阅登记自动生成，帮助定位薄弱领域，不以方法比例宣称完成度。
 
-当前 41 个源码目录中，27 个有完整方法/函数登记，14 个尚无；共 383 项登记，包含 14 项原索引外定义。
+当前 41 个源码目录中，29 个有完整方法/函数登记，12 个尚无；共 444 项登记，包含 14 项原索引外定义。
 
 ## 目录对照
 
@@ -12,7 +12,7 @@
 | poscimfw/include | 0 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | poscimfw/pabcl | 122 | 356 | 5 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[persistence-delete-deep](persistence-delete-deep.md)、[persistence-collections-deep](persistence-collections-deep.md) |
 | poscimfw/patmg | 16 | 0 | 1 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[auth-privileges-deep](auth-privileges-deep.md) |
-| poscimfw/pcdmg | 206 | 600 | 17 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[machine-resource-deep](machine-resource-deep.md)、[persistence-delete-deep](persistence-delete-deep.md)、[persistence-collections-deep](persistence-collections-deep.md)、[persistence-planner-deep](persistence-planner-deep.md) |
+| poscimfw/pcdmg | 206 | 600 | 24 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[machine-resource-deep](machine-resource-deep.md)、[persistence-delete-deep](persistence-delete-deep.md)、[persistence-collections-deep](persistence-collections-deep.md)、[persistence-planner-deep](persistence-planner-deep.md)、[machine-state-deep](machine-state-deep.md) |
 | poscimfw/pcmpmg | 21 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | poscimfw/pdcmg | 86 | 205 | 23 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[data-collection-deep](data-collection-deep.md) |
 | poscimfw/pdp | 201 | 352 | 31 / 1 | 2 | 部分方法及相关链已审阅，领域未完成；[dispatch-deep](dispatch-deep.md)、[queue-storage-deep](queue-storage-deep.md)、[dispatch-variants-deep](dispatch-variants-deep.md)、[flowbatch-deep](flowbatch-deep.md)、[planning-deep](planning-deep.md) |
@@ -21,9 +21,9 @@
 | poscimfw/pevmg | 634 | 7789 | 18 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[event-delivery-deep](event-delivery-deep.md) |
 | poscimfw/pfa | 206 | 554 | 23 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[factory-location-deep](factory-location-deep.md) |
 | poscimfw/pfwgls | 4 | 0 | 0 / 3 | 0 | 部分方法及相关链已审阅，领域未完成；[dispatch-deep](dispatch-deep.md)、[data-collection-deep](data-collection-deep.md)、[auth-privileges-deep](auth-privileges-deep.md) |
-| poscimfw/pmcmg | 908 | 1610 | 15 / 0 | 3 | 部分方法及相关链已审阅，领域未完成；[machine-resource-deep](machine-resource-deep.md)、[persistence-delete-deep](persistence-delete-deep.md)、[factory-location-deep](factory-location-deep.md) |
-| poscimfw/pmsds | 59 | 89 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
-| poscimfw/ppcdf | 793 | 3228 | 26 / 0 | 9 | 部分方法及相关链已审阅，领域未完成；[data-collection-deep](data-collection-deep.md)、[dc-snapshot-deep](dc-snapshot-deep.md)、[lot-bank-deep](lot-bank-deep.md)、[route-next-deep](route-next-deep.md) |
+| poscimfw/pmcmg | 908 | 1610 | 23 / 0 | 1 | 部分方法及相关链已审阅，领域未完成；[machine-resource-deep](machine-resource-deep.md)、[persistence-delete-deep](persistence-delete-deep.md)、[factory-location-deep](factory-location-deep.md)、[machine-state-deep](machine-state-deep.md) |
+| poscimfw/pmsds | 59 | 89 | 35 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[message-requests-deep](message-requests-deep.md) |
+| poscimfw/ppcdf | 793 | 3228 | 35 / 0 | 9 | 部分方法及相关链已审阅，领域未完成；[data-collection-deep](data-collection-deep.md)、[dc-snapshot-deep](dc-snapshot-deep.md)、[lot-bank-deep](lot-bank-deep.md)、[route-next-deep](route-next-deep.md) |
 | poscimfw/ppl | 110 | 261 | 21 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[planning-deep](planning-deep.md)、[product-request-deep](product-request-deep.md) |
 | poscimfw/pprmg | 658 | 1527 | 50 / 3 | 10 | 部分方法及相关链已审阅，领域未完成；[queue-storage-deep](queue-storage-deep.md)、[flowbatch-deep](flowbatch-deep.md)、[dc-snapshot-deep](dc-snapshot-deep.md)、[lot-split-deep](lot-split-deep.md)、[lot-join-init-deep](lot-join-init-deep.md)、[planning-deep](planning-deep.md)、[lot-bank-deep](lot-bank-deep.md) |
 | poscimfw/pprsp | 322 | 870 | 2 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[bom-deep](bom-deep.md) |
@@ -38,7 +38,7 @@
 | smtchcmf/dsptchng | 28 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | smtchcmf/dtcllctn | 39 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | smtchcmf/fctrycmp | 74 | 0 | 4 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[factory-location-deep](factory-location-deep.md) |
-| smtchcmf/frmwrkgl | 145 | 0 | 2 / 7 | 0 | 部分方法及相关链已审阅，领域未完成；[persistence-collections-deep](persistence-collections-deep.md)、[persistence-planner-deep](persistence-planner-deep.md) |
+| smtchcmf/frmwrkgl | 145 | 0 | 3 / 7 | 0 | 部分方法及相关链已审阅，领域未完成；[persistence-collections-deep](persistence-collections-deep.md)、[persistence-planner-deep](persistence-planner-deep.md)、[message-requests-deep](message-requests-deep.md) |
 | smtchcmf/mchnmngm | 178 | 0 | 1 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[machine-resource-deep](machine-resource-deep.md) |
 | smtchcmf/mtrlmngm | 36 | 0 | 8 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[cassette-loading-deep](cassette-loading-deep.md)、[lot-split-deep](lot-split-deep.md)、[lot-join-init-deep](lot-join-init-deep.md) |
 | smtchcmf/plnnngcm | 48 | 0 | 20 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[product-request-deep](product-request-deep.md) |
@@ -47,7 +47,7 @@
 | smtchcmf/prdctspc | 28 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | smtchcmf/prsnmngm | 34 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
 | smtchcmf/rcpmngmn | 31 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
-| smtchcmf/rsrcclss | 43 | 0 | 0 / 0 | 0 | 仅结构定位，未登记完整方法 |
+| smtchcmf/rsrcclss | 43 | 0 | 1 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[message-requests-deep](message-requests-deep.md) |
 | smtchcmf/tmsrvcsc | 52 | 0 | 4 / 0 | 0 | 部分方法及相关链已审阅，领域未完成；[auth-privileges-deep](auth-privileges-deep.md) |
 
 ## 未完成工作的判断
