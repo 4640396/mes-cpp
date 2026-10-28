@@ -1,0 +1,49 @@
+# 工厂、库区与工作区：配置关系及删除检查
+
+本报告依据现有源码完整方法体静态阅读。Bank 的配置、Area 的设备集合和设备的工作区引用是不同层次；没有把这些配置解释为一次实际搬运或生产交易成功。
+
+## Bank 配置
+
+`poscimfw/pfa/pbank.cpp` 的 setBankInfo（1933–1952）直接抛当前 MMS 版本不支持异常；有效的 __100 入口（2128–2146）委托 __XXX（2194–2247）。因此同名旧接口和带版本入口不能互换解释。
+
+__XXX 先清空目的 Bank 集合，再逐个通过工厂解析标识并加入，重复添加异常被忽略。随后设置描述、解析 stocker，复制 receive、stb、bankIn、ship、productType、waferIdAssignmentRequired、productionBank、recycleBank、controlWaferBank 等配置及用户数据。该方法没有在本地检查目的库区自引用、环路或容量，也没有执行 Lot 搬运。中途解析失败的回滚依赖外层事务，当前方法不能证明原集合会恢复。
+
+addDestinationBank（1339–1357）、removeDestinationBank（1387–1405）、allDestinationBanks（1435–1483）和 findDestinationBankNamed（1514–1523）依赖集合宏；set/getStorageMachine（857–871、900–910）依赖对象标识宏。宏实现、对象加载和异常映射仍是外部边界。
+
+## 工作区与设备双向关系
+
+`poscimfw/pfa/parea.cpp` addProcessMachine（676–759）先调用基类加入集合，然后在设备工作区为空或标识不同时调用设备 setWorkArea。removeProcessMachine（907–942）先调用基类移除；设备当前工作区只要非空，就调用 setWorkArea(nil)，本地没有再次比较当前工作区是否就是本 Area。
+
+基类 `smtchcmf/fctrycmp/area.cpp` addProcessMachine（120–142）与 removeProcessMachine（454–475）分别使用带 NOEXCEPTION 的集合宏。集合去重、未找到时行为仍应以宏展开为准。
+
+`poscimfw/pmcmg/pmc.cpp` getWorkArea（1076–1085）读取引用；setWorkArea（1160–1277）在置空时先清自己的引用，再检查旧 Area 集合并移除。在换工作区时先设置新引用，再移除旧集合成员，最后补入新集合。Area 与 Machine 的方法会互相调用；相同工作区标识分支不做集合修复。不能仅凭中间引用变化判断最终关系错误，最终状态还依赖回调、集合宏及异常事务边界。
+
+## 工作区整体配置
+
+setLocationInfo（1064–1100）设置描述、Location 类别和用户数据；旧 setWorkAreaInfo（1176–1197）抛版本不支持。__100（2369–2396）调用 __XXX（2063–2341）。
+
+__XXX 设置 WorkArea 类别，分别核对普通 stocker、UTS、SLM UTS 原集合，调用相应 remove 方法处理输入中不再保留的对象。随后清空三个集合，按输入重新解析并添加。添加分支优先判断 slmUnderTrackStorageFlag，再判断 underTrackStorageFlag，最后普通 stocker；两个标志同时为真时进入 SLM 分支。去重是各集合内按标识判断，不能推导成全局唯一或物理搬运约束。
+
+设备集合也先移除不再保留项，再整体清空并重建，通过 addProcessMachine 维护反向引用。末尾解析 location 到 theSuperarea，并替换用户数据。配置过程中多处先修改后解析，原子性及失败恢复需要外部事务证据。存储设备各 remove/add 的反向关系实现尚待单独追踪。
+
+## Bank 删除前检查
+
+`poscimfw/pfa/pbankdb.sqx` checkForDeletion（100–476）按 BANK_ID 查询 FRLOT、FRCAST、FRDRBL、FRRTCLPOD，分别计数并按对象标识排序提取检查消息。调整后的 CHECK_MSG_MAX_COUNT 分别用于每一类循环，并非四类共享一个全局消息上限。
+
+该方法返回占用消息，不删除 Bank，也不能证明调用方一定拒绝删除。这里只能确认四张表的检查，不能宣称覆盖目的 Bank 配置及其他所有引用。计数与后续游标查询的一致性、并发隔离、错误处理宏及调用方的删除门禁仍未验证。
+
+## 存储设备反向维护与集合差异
+
+完整读取 `parea.cpp` 普通 stocker add/remove（792–875、975–1010）、UTS add/remove（1876–1912、1943–1963）、SLM UTS add/remove（2515–2551、2582–2602），以及 `pstmc.cpp` getWorkArea（633–642）和 setWorkArea（1332–1518）。普通集合基类 add/remove 位于 `smtchcmf/fctrycmp/area.cpp` 353–375、532–553，依赖集合宏。
+
+三类 add 都在加入集合后检查存储设备的工作区，必要时调用 setWorkArea；三类 remove 都在移除后，只要设备工作区非空就调用 setWorkArea(nil)，不比较是否指向本 Area。普通 add 对 nil 提前返回，UTS/SLM add 先调用集合宏再判断 nil，不能直接假定三者空值行为相同。
+
+设备 setWorkArea 使用 SLM 标志优先、UTS 次之、否则普通 stocker 的规则选择 add/remove 目标。但移除旧成员和加入新成员之前，均通过 findStorageMachineNamed 探测；该方法（parea.cpp 1670–1680）只查询 theAreaStorageMachines，没有查询 UTS/SLM 集合。因此存在明确的查询集合与修改集合不一致。若专用集合中有成员而普通集合中没有，移除分支可能跳过；这是基于可见分支的条件推导，尚未在实际集合宏及数据约束下运行复现，不标为已确认生产故障。
+
+置空时先清设备自身引用，再进行旧集合探测。非空换工作区先设置新引用，再处理旧集合和新集合；同标识分支跳过维护。中途异常的原子恢复、两种类别标志是否可同时设置、已有数据是否允许跨集合重复仍待验证。
+
+## 本体表达及后续缺口
+
+Bank 的目的 Bank 集合表达配置关系；Area 的设备集合与 Machine 工作区引用表达相互关联的对象关系；Location 与 WorkArea 是本段代码设置的 Area 类别。它们不等于搬运事件、执行许可或互斥生产状态。
+
+仍需核实存储设备类别标志与集合宏约束、Bank 实际进入/离开交易、删除调用方门禁及事务提交。当前报告是这条配置链的证据，不是整个工厂模块完成证明。

@@ -2106,6 +2106,131 @@
       "id": "locationBankDeleteRule",
       "type": "Rule",
       "label": "四类占用各自限制消息数量；返回检查消息不等于执行删除门禁"
+    },
+    {
+      "id": "locationStorageSetArea",
+      "type": "Method",
+      "label": "PosStorageMachine_i::setWorkArea"
+    },
+    {
+      "id": "locationStorageFind",
+      "type": "Method",
+      "label": "PosArea_i::findStorageMachineNamed"
+    },
+    {
+      "id": "locationStorageLookupRule",
+      "type": "Rule",
+      "label": "工作区变更以普通stocker集合探测成员，再按SLM/UTS标志选择修改集合；运行影响待验证"
+    },
+    {
+      "id": "lotBankSetReference",
+      "type": "Method",
+      "label": "PosLot_i::setBank"
+    },
+    {
+      "id": "lotBankRequirementQuery",
+      "type": "Method",
+      "label": "PosLot_i::isBankInRequired"
+    },
+    {
+      "id": "lotBankCancelReset",
+      "type": "Method",
+      "label": "PosLot_i::setAllStateForBankInCancel"
+    },
+    {
+      "id": "lotBankReferenceRule",
+      "type": "Rule",
+      "label": "setBank只设置当前引用，不同步previous引用或库存状态"
+    },
+    {
+      "id": "lotBankRequirementRule",
+      "type": "Rule",
+      "label": "入库要求查询取流程末道判断，不读取theBankInRequired字段"
+    },
+    {
+      "id": "lotBankCancelRule",
+      "type": "Rule",
+      "label": "入库取消固定复位多状态，仅controlUse复制previous；事务恢复未知"
+    },
+    {
+      "id": "lotBankBaseInfo",
+      "type": "Method",
+      "label": "PosLot_i::getLotBaseInfo"
+    },
+    {
+      "id": "lotBankBaseInfoRule",
+      "type": "Rule",
+      "label": "基础信息返回保存的bankInRequired字段，与动态查询可不同"
+    },
+    {
+      "id": "lotBankLastOperation",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::isLastOperationForProcessFlow"
+    },
+    {
+      "id": "lotBankNextOperation",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecification"
+    },
+    {
+      "id": "routeNextFor",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextCurrent",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecificationOnCurrentRouteFor"
+    },
+    {
+      "id": "routeNextReturn",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getReturnProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextModule",
+      "type": "Method",
+      "label": "PosProcessFlow_i::getNextProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextReturnRule",
+      "type": "Rule",
+      "label": "当前路线无后续才查返回点；返回模式由SP_BRANCH_RETURN_ACTIVE_MODULE选择"
+    },
+    {
+      "id": "routeNextModuleRule",
+      "type": "Rule",
+      "label": "模块内无下一POS才查下一模块；newlyCreated流程回退previousActive"
+    },
+    {
+      "id": "routeVersionMapping",
+      "type": "Method",
+      "label": "PosProcessFlow_i::nextProcessOperationSpecification"
+    },
+    {
+      "id": "routeVersionMappingRule",
+      "type": "Rule",
+      "label": "非活动流程按工序号映射有效流程；部分映射失败分支保留旧流程下一工序"
+    },
+    {
+      "id": "routeFirstDefault",
+      "type": "Method",
+      "label": "ProcessFlow_i::firstProcessOperationSpecificationOnDefaultPath"
+    },
+    {
+      "id": "routeFirstDefaultRule",
+      "type": "Rule",
+      "label": "默认路径为空或首对象解析为空时抛获取失败异常，不视为正常末道"
+    },
+    {
+      "id": "routeBackupRecord",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getBackupOperationFor"
+    },
+    {
+      "id": "routeBackupBoundsRule",
+      "type": "Rule",
+      "label": "备份读取仅检查seqno小于长度，越界仍复制局部结构；调用约束和默认构造待验证"
     }
   ],
   "edges": [
@@ -8103,6 +8228,230 @@
         }
       ],
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    },
+    {
+      "id": "fact-364",
+      "evidence": "EXTRACTED",
+      "from": "locationStorageSetArea",
+      "type": "HAS_RULE",
+      "to": "locationStorageLookupRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pstmc.cpp",
+          "line": 1332,
+          "end_line": 1483,
+          "fileSha256": "5c8fe2fe949197315be087c6bef969e6da646d69971583056946028a1fb6d5da",
+          "rangeSha256": "86313b5eef81c54c134efd5505e9d6c0e317cff16633dfcbff30db7fa84fb56d"
+        }
+      ]
+    },
+    {
+      "id": "fact-365",
+      "evidence": "EXTRACTED",
+      "from": "locationStorageFind",
+      "type": "HAS_RULE",
+      "to": "locationStorageLookupRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/parea.cpp",
+          "line": 1670,
+          "end_line": 1680,
+          "fileSha256": "c82317ff9b90932548c65e97f78622052eca9c18e98368dc887014b27f6251bc",
+          "rangeSha256": "f79cb7166e652be15639576a48383835a6e829f3ccc1523d0fb33eed6b80e1cf"
+        }
+      ]
+    },
+    {
+      "id": "fact-366",
+      "evidence": "EXTRACTED",
+      "from": "lotBankSetReference",
+      "type": "HAS_RULE",
+      "to": "lotBankReferenceRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 1824,
+          "end_line": 1836,
+          "fileSha256": "194e3daca3ebd1d4f37c4fe0a9098ec2bee1cb0937aee206e33a64861b3d33ca",
+          "rangeSha256": "7ee9040a6b73643a8351b2161241d25e07d5ce0a9ed726d7f18695e5d837f5ea"
+        }
+      ]
+    },
+    {
+      "id": "fact-367",
+      "evidence": "EXTRACTED",
+      "from": "lotBankRequirementQuery",
+      "type": "HAS_RULE",
+      "to": "lotBankRequirementRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 8920,
+          "end_line": 8959,
+          "fileSha256": "194e3daca3ebd1d4f37c4fe0a9098ec2bee1cb0937aee206e33a64861b3d33ca",
+          "rangeSha256": "74438c869abdc6b82dc0dab64316084690cb466972cac59ec472c9b5ca0f50e9"
+        }
+      ]
+    },
+    {
+      "id": "fact-368",
+      "evidence": "EXTRACTED",
+      "from": "lotBankCancelReset",
+      "type": "HAS_RULE",
+      "to": "lotBankCancelRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 13259,
+          "end_line": 13345,
+          "fileSha256": "194e3daca3ebd1d4f37c4fe0a9098ec2bee1cb0937aee206e33a64861b3d33ca",
+          "rangeSha256": "1a298d8fb208f51a82ea8b607813a86c9fb139688b3670776e0a32b1ab30f498"
+        }
+      ]
+    },
+    {
+      "id": "fact-369",
+      "evidence": "EXTRACTED",
+      "from": "lotBankBaseInfo",
+      "type": "HAS_RULE",
+      "to": "lotBankBaseInfoRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16370,
+          "end_line": 16378,
+          "fileSha256": "194e3daca3ebd1d4f37c4fe0a9098ec2bee1cb0937aee206e33a64861b3d33ca",
+          "rangeSha256": "64ab8dd82dbc5a2b331386e38e4cefb8b16ee289b8be3bb664fa91c6a38e3fac"
+        }
+      ]
+    },
+    {
+      "id": "fact-370",
+      "evidence": "EXTRACTED",
+      "from": "lotBankLastOperation",
+      "type": "CALLS",
+      "to": "lotBankNextOperation",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 12154,
+          "end_line": 12164,
+          "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
+          "rangeSha256": "4219edc4e149c98eddc0c6e65845a8bd6d229cc66873d58702e5fdf25405f0e4"
+        }
+      ]
+    },
+    {
+      "id": "fact-371",
+      "evidence": "EXTRACTED",
+      "from": "routeNextFor",
+      "type": "CALLS",
+      "to": "routeNextCurrent",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 4682,
+          "end_line": 4688,
+          "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
+          "rangeSha256": "d789b72bf0a1d2f3f5f7cb1663adda761202a0fb09d5303d06e498d243bbfda6"
+        }
+      ]
+    },
+    {
+      "id": "fact-372",
+      "evidence": "EXTRACTED",
+      "from": "routeNextFor",
+      "type": "CALLS",
+      "to": "routeNextReturn",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 4692,
+          "end_line": 4697,
+          "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
+          "rangeSha256": "c20ccd5e9ff11c21b05aa70a7ff31b5ee15d04c8c9fdb0f78711dee389eb4af7"
+        }
+      ]
+    },
+    {
+      "id": "fact-373",
+      "evidence": "EXTRACTED",
+      "from": "routeNextReturn",
+      "type": "HAS_RULE",
+      "to": "routeNextReturnRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 9885,
+          "end_line": 10139,
+          "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
+          "rangeSha256": "d5b78e24c5145c87aabe5f2dabd6e2d63628bccd7a9116a2942b101be1c17556"
+        }
+      ]
+    },
+    {
+      "id": "fact-374",
+      "evidence": "EXTRACTED",
+      "from": "routeNextModule",
+      "type": "HAS_RULE",
+      "to": "routeNextModuleRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflw.cpp",
+          "line": 8913,
+          "end_line": 8949,
+          "fileSha256": "e3c8a76f767dad453c6da2e8c7cf373bb1a742322a3b27a656d2e2b2a2c52b8c",
+          "rangeSha256": "6aafe880bec53bdf7bacd00d918792637c531c3485d8ed9517d819af300d2266"
+        }
+      ]
+    },
+    {
+      "id": "fact-375",
+      "evidence": "EXTRACTED",
+      "from": "routeVersionMapping",
+      "type": "HAS_RULE",
+      "to": "routeVersionMappingRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflw.cpp",
+          "line": 2950,
+          "end_line": 3085,
+          "fileSha256": "e3c8a76f767dad453c6da2e8c7cf373bb1a742322a3b27a656d2e2b2a2c52b8c",
+          "rangeSha256": "050dc2078ca18a8b8c2215ca71ef2b0bd45beabbabd8e896f7e1fe6ddf734c40"
+        }
+      ]
+    },
+    {
+      "id": "fact-376",
+      "evidence": "EXTRACTED",
+      "from": "routeFirstDefault",
+      "type": "HAS_RULE",
+      "to": "routeFirstDefaultRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prcssdfn/prcssflw.cpp",
+          "line": 65,
+          "end_line": 80,
+          "fileSha256": "7e80580516ba9286e051fcdc475fe456a1b678215920e03de83353b302000e22",
+          "rangeSha256": "2390c4408b3afb2d379f7b2b2741b3a1dc129192ef4519e725f5c49ea49b6e62"
+        }
+      ]
+    },
+    {
+      "id": "fact-377",
+      "evidence": "EXTRACTED",
+      "from": "routeBackupRecord",
+      "type": "HAS_RULE",
+      "to": "routeBackupBoundsRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 8260,
+          "end_line": 8283,
+          "fileSha256": "24fc212eafcfd3aaf4c0eb122a14c56487e62eeb386aef3406233ff48ac3d0d9",
+          "rangeSha256": "8e7287201787fcb87dde1b3db04bdeb64dba083ab1760ac0f1edf2a50233578e"
+        }
+      ]
     }
   ],
   "unknowns": [

@@ -26,7 +26,7 @@
 
 `ontology.json` 是规则；`verified-facts.json` 是少量经核实的具体事实；`business-map.json` 和 SQL 索引是大范围候选材料。三者用途不同，名称匹配不能直接当作调用事实。
 
-当前本体词汇含 25 个业务对象概念，事实集有 421 个节点、363 条关系。来源文件和片段哈希锁定于 evidence-lock.json，防止源码变化后静默沿用旧结论。事件基类的虚调用使用 INVOKES_VIRTUAL_CONTRACT，避免冒充实际覆写调用目标。
+当前本体词汇含 25 个业务对象概念，事实集有 446 个节点、377 条关系。来源文件和片段哈希锁定于 evidence-lock.json，防止源码变化后静默沿用旧结论。事件基类的虚调用使用 INVOKES_VIRTUAL_CONTRACT，避免冒充实际覆写调用目标。
 
 另有全量结构图 source-graph.json：39,537 节点、85,111 条关系，包含 Module、SourceFile、Implementation、Interface、Method、SQLStatement、Table，类型约束记录在 ontology.json 的 sourceGraphModel。方法 ID 包含源文件、起点和签名哈希；它是文本定义索引，不是编译器统一符号 ID。结构边明确区分文本事实、名称候选和表引用候选，不自动生成 CALLS。
 

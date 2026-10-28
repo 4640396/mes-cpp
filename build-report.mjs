@@ -38,6 +38,8 @@ docs.push(['auth-privileges-deep','认证与权限深入追踪','身份校验、
 docs.push(['bom-deep','BOM深入追踪','产品规格零部件、数量/序列控制与配置保存边界']);
 docs.push(['domain-coverage','领域覆盖与缺口','41个目录的实际阅读、片段、索引及报告对照']);
 docs.push(['factory-location-deep','工厂与位置深入追踪','Bank配置、Area工作区双向维护及删除检查边界']);
+docs.push(['lot-bank-deep','Lot库区与入库取消','库区引用、库存状态、动态入库要求与取消复位']);
+docs.push(['route-next-deep','下一工序与支线返回','模块内推进、跨模块版本选择及环境控制的返回点']);
 for(const [file,title] of docs){if(!fs.existsSync(out+'/'+file+'.md'))continue;fs.writeFileSync(out+'/reports/'+file+'.html',page(title,'<nav><a href="../index.html">返回总览</a><a href="../explorer.html">源码与关系查询</a></nav><section>'+markdown(fs.readFileSync(out+'/'+file+'.md','utf8'))+'</section>'));}
 const tables=[...new Set(sql.flatMap(s=>s.tables))],symbolic=tables.filter(t=>t.includes('#')).length;
 if(!fs.existsSync(out+'/validation.json'))fs.writeFileSync(out+'/validation.json',JSON.stringify({passed:false,status:'pending-validator'}));

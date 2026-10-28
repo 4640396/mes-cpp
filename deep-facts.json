@@ -1584,6 +1584,131 @@
       "id": "FRLOT",
       "type": "Table",
       "label": "FRLOT"
+    },
+    {
+      "id": "locationStorageSetArea",
+      "type": "Method",
+      "label": "PosStorageMachine_i::setWorkArea"
+    },
+    {
+      "id": "locationStorageFind",
+      "type": "Method",
+      "label": "PosArea_i::findStorageMachineNamed"
+    },
+    {
+      "id": "locationStorageLookupRule",
+      "type": "Rule",
+      "label": "工作区变更以普通stocker集合探测成员，再按SLM/UTS标志选择修改集合；运行影响待验证"
+    },
+    {
+      "id": "lotBankSetReference",
+      "type": "Method",
+      "label": "PosLot_i::setBank"
+    },
+    {
+      "id": "lotBankRequirementQuery",
+      "type": "Method",
+      "label": "PosLot_i::isBankInRequired"
+    },
+    {
+      "id": "lotBankCancelReset",
+      "type": "Method",
+      "label": "PosLot_i::setAllStateForBankInCancel"
+    },
+    {
+      "id": "lotBankReferenceRule",
+      "type": "Rule",
+      "label": "setBank只设置当前引用，不同步previous引用或库存状态"
+    },
+    {
+      "id": "lotBankRequirementRule",
+      "type": "Rule",
+      "label": "入库要求查询取流程末道判断，不读取theBankInRequired字段"
+    },
+    {
+      "id": "lotBankCancelRule",
+      "type": "Rule",
+      "label": "入库取消固定复位多状态，仅controlUse复制previous；事务恢复未知"
+    },
+    {
+      "id": "lotBankBaseInfo",
+      "type": "Method",
+      "label": "PosLot_i::getLotBaseInfo"
+    },
+    {
+      "id": "lotBankBaseInfoRule",
+      "type": "Rule",
+      "label": "基础信息返回保存的bankInRequired字段，与动态查询可不同"
+    },
+    {
+      "id": "lotBankLastOperation",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::isLastOperationForProcessFlow"
+    },
+    {
+      "id": "lotBankNextOperation",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecification"
+    },
+    {
+      "id": "routeNextFor",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextCurrent",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getNextProcessOperationSpecificationOnCurrentRouteFor"
+    },
+    {
+      "id": "routeNextReturn",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getReturnProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextModule",
+      "type": "Method",
+      "label": "PosProcessFlow_i::getNextProcessOperationSpecificationFor"
+    },
+    {
+      "id": "routeNextReturnRule",
+      "type": "Rule",
+      "label": "当前路线无后续才查返回点；返回模式由SP_BRANCH_RETURN_ACTIVE_MODULE选择"
+    },
+    {
+      "id": "routeNextModuleRule",
+      "type": "Rule",
+      "label": "模块内无下一POS才查下一模块；newlyCreated流程回退previousActive"
+    },
+    {
+      "id": "routeVersionMapping",
+      "type": "Method",
+      "label": "PosProcessFlow_i::nextProcessOperationSpecification"
+    },
+    {
+      "id": "routeVersionMappingRule",
+      "type": "Rule",
+      "label": "非活动流程按工序号映射有效流程；部分映射失败分支保留旧流程下一工序"
+    },
+    {
+      "id": "routeFirstDefault",
+      "type": "Method",
+      "label": "ProcessFlow_i::firstProcessOperationSpecificationOnDefaultPath"
+    },
+    {
+      "id": "routeFirstDefaultRule",
+      "type": "Rule",
+      "label": "默认路径为空或首对象解析为空时抛获取失败异常，不视为正常末道"
+    },
+    {
+      "id": "routeBackupRecord",
+      "type": "Method",
+      "label": "PosProcessFlowContext_i::getBackupOperationFor"
+    },
+    {
+      "id": "routeBackupBoundsRule",
+      "type": "Rule",
+      "label": "备份读取仅检查seqno小于长度，越界仍复制局部结构；调用约束和默认构造待验证"
     }
   ],
   "edges": [
@@ -5263,6 +5388,174 @@
         }
       ],
       "condition": "按BANK_ID检查占用；调用方门禁未验证"
+    },
+    {
+      "from": "locationStorageSetArea",
+      "type": "HAS_RULE",
+      "to": "locationStorageLookupRule",
+      "sources": [
+        {
+          "path": "poscimfw/pmcmg/pstmc.cpp",
+          "line": 1332,
+          "end_line": 1483
+        }
+      ]
+    },
+    {
+      "from": "locationStorageFind",
+      "type": "HAS_RULE",
+      "to": "locationStorageLookupRule",
+      "sources": [
+        {
+          "path": "poscimfw/pfa/parea.cpp",
+          "line": 1670,
+          "end_line": 1680
+        }
+      ]
+    },
+    {
+      "from": "lotBankSetReference",
+      "type": "HAS_RULE",
+      "to": "lotBankReferenceRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 1824,
+          "end_line": 1836
+        }
+      ]
+    },
+    {
+      "from": "lotBankRequirementQuery",
+      "type": "HAS_RULE",
+      "to": "lotBankRequirementRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 8920,
+          "end_line": 8959
+        }
+      ]
+    },
+    {
+      "from": "lotBankCancelReset",
+      "type": "HAS_RULE",
+      "to": "lotBankCancelRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 13259,
+          "end_line": 13345
+        }
+      ]
+    },
+    {
+      "from": "lotBankBaseInfo",
+      "type": "HAS_RULE",
+      "to": "lotBankBaseInfoRule",
+      "sources": [
+        {
+          "path": "poscimfw/pprmg/plot.cpp",
+          "line": 16370,
+          "end_line": 16378
+        }
+      ]
+    },
+    {
+      "from": "lotBankLastOperation",
+      "type": "CALLS",
+      "to": "lotBankNextOperation",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 12154,
+          "end_line": 12164
+        }
+      ]
+    },
+    {
+      "from": "routeNextFor",
+      "type": "CALLS",
+      "to": "routeNextCurrent",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 4682,
+          "end_line": 4688
+        }
+      ]
+    },
+    {
+      "from": "routeNextFor",
+      "type": "CALLS",
+      "to": "routeNextReturn",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 4692,
+          "end_line": 4697
+        }
+      ]
+    },
+    {
+      "from": "routeNextReturn",
+      "type": "HAS_RULE",
+      "to": "routeNextReturnRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 9885,
+          "end_line": 10139
+        }
+      ]
+    },
+    {
+      "from": "routeNextModule",
+      "type": "HAS_RULE",
+      "to": "routeNextModuleRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflw.cpp",
+          "line": 8913,
+          "end_line": 8949
+        }
+      ]
+    },
+    {
+      "from": "routeVersionMapping",
+      "type": "HAS_RULE",
+      "to": "routeVersionMappingRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflw.cpp",
+          "line": 2950,
+          "end_line": 3085
+        }
+      ]
+    },
+    {
+      "from": "routeFirstDefault",
+      "type": "HAS_RULE",
+      "to": "routeFirstDefaultRule",
+      "sources": [
+        {
+          "path": "smtchcmf/prcssdfn/prcssflw.cpp",
+          "line": 65,
+          "end_line": 80
+        }
+      ]
+    },
+    {
+      "from": "routeBackupRecord",
+      "type": "HAS_RULE",
+      "to": "routeBackupBoundsRule",
+      "sources": [
+        {
+          "path": "poscimfw/ppcdf/ppcflwx.cpp",
+          "line": 8260,
+          "end_line": 8283
+        }
+      ]
     }
   ]
 }
